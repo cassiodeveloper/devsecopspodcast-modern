@@ -154,7 +154,7 @@ ol {
 	font-weight: 700;
 	padding: 14px 25px 12px;
 	color: #ffffff;
-	background: #6763fd;
+	background: #e2af2f;
 	border-radius: 5px;
 }
 
@@ -168,7 +168,7 @@ ol {
 	font-size: 15px;
 	color: #ffffff;
 	font-weight: 700;
-	background: #6763fd;
+	background: #e2af2f;
 	display: inline-block;
 	padding: 9px 26px 8px;
 	border-radius: 50px;
@@ -348,7 +348,7 @@ ol {
 	bottom: -2px;
 	width: 100%;
 	height: 2px;
-	background: #6763fd;
+	background: #e2af2f;
 	content: "";
 	-webkit-transform: scale(0);
 	-ms-transform: scale(0);
@@ -429,7 +429,7 @@ ol {
 }
 
 .header__right__social a:hover {
-	color: #6763fd;
+	color: #e2af2f;
 }
 
 .header__right__social a:last-child {
@@ -470,7 +470,7 @@ ol {
 }
 
 .hero__text h5 span {
-	color: #6763fd;
+	color: #e2af2f;
 	margin-right: 5px;
 }
 
@@ -542,7 +542,7 @@ ol {
 	width: 36px;
 	background: transparent;
 	border: none;
-	background: #6763fd;
+	background: #e2af2f;
 	border-radius: 50%;
 }
 
@@ -591,7 +591,7 @@ ol {
 .jp-play-bar {
 	position: relative;
 	height: 100%;
-	background: #6763fd;
+	background: #e2af2f;
 	overflow: visible !important;
 }
 
@@ -637,7 +637,7 @@ ol {
 }
 
 .jp-volume-bar-value {
-	background: #6763fd;
+	background: #e2af2f;
 	height: 100%;
 }
 
@@ -709,7 +709,7 @@ ol {
 }
 
 .podcast__top ul li.active {
-	color: #6763fd;
+	color: #e2af2f;
 }
 
 .podcast__top ul li.active:after {
@@ -724,7 +724,7 @@ ol {
 	bottom: 0;
 	width: 100%;
 	height: 2px;
-	background: #6763fd;
+	background: #e2af2f;
 	content: "";
 	-webkit-transform: scale(0);
 	-ms-transform: scale(0);
@@ -759,7 +759,7 @@ ol {
 	display: inline-block;
 	height: 36px;
 	width: 36px;
-	color: #6763fd;
+	color: #e2af2f;
 	border-radius: 50%;
 	line-height: 36px;
 	text-align: center;
@@ -773,7 +773,7 @@ ol {
 }
 
 .podcast__item__text .heart-icon:hover {
-	background: #6763fd;
+	background: #e2af2f;
 	color: #ffffff;
 }
 
@@ -798,7 +798,7 @@ ol {
 }
 
 .podcast__item__text ul li span {
-	color: #6763fd;
+	color: #e2af2f;
 	margin-right: 3px;
 }
 
@@ -976,7 +976,7 @@ ol {
 }
 
 .episodes__text p span {
-	color: #6763fd;
+	color: #e2af2f;
 }
 
 /*---------------------
@@ -988,7 +988,7 @@ ol {
 }
 
 .footer__subscriber {
-	background: #6763fd;
+	background: #e2af2f;
 	padding: 40px;
 	border-radius: 10px;
 	top: -65px;
@@ -1060,11 +1060,11 @@ ol {
 }
 
 .footer__copyright__text i {
-	color: #6763fd;
+	color: #e2af2f;
 }
 
 .footer__copyright__text a {
-	color: #6763fd;
+	color: #e2af2f;
 }
 
 .footer__social {
@@ -1082,7 +1082,7 @@ ol {
 }
 
 .footer__social a:hover {
-	color: #6763fd;
+	color: #e2af2f;
 }
 
 .footer__social a:last-child {
@@ -1139,7 +1139,7 @@ ol {
 }
 
 .breadcrumb__text.episodes__breadcrumb__text ul li span {
-	color: #6763fd;
+	color: #e2af2f;
 	margin-right: 3px;
 }
 
@@ -1197,7 +1197,7 @@ ol {
 }
 
 .about__text span {
-	color: #6763fd;
+	color: #e2af2f;
 	font-size: 16px;
 	font-weight: 700;
 	display: block;
@@ -1270,7 +1270,7 @@ ol {
 
 .team__item span {
 	font-size: 14px;
-	color: #6763fd;
+	color: #e2af2f;
 	font-weight: 700;
 	display: inline-block;
 	text-transform: uppercase;
@@ -1294,7 +1294,7 @@ ol {
 	color: #232323;
 	font-weight: 700;
 	display: inline-block;
-	border: 2px solid #6763fd;
+	border: 2px solid #e2af2f;
 	padding: 10px 35px;
 	border-radius: 50px;
 }
@@ -1389,12 +1389,12 @@ ol {
 
 .episodes__details__btns__item p {
 	font-weight: 700;
-	color: #6763fd;
+	color: #e2af2f;
 	margin-bottom: 5px;
 }
 
 .episodes__details__btns__item p span {
-	color: #6763fd;
+	color: #e2af2f;
 	font-weight: 700;
 	font-size: 17px;
 	position: relative;
@@ -1526,7 +1526,7 @@ ol {
 	font-size: 16px;
 	width: 46px;
 	height: 46px;
-	background: #6763fd;
+	background: #e2af2f;
 	border: none;
 	border-radius: 5px;
 	position: absolute;
@@ -1557,7 +1557,7 @@ ol {
 
 .sidebar__categories ul li a i {
 	font-size: 14px;
-	color: #6763fd;
+	color: #e2af2f;
 	margin-right: 12px;
 }
 
@@ -1598,7 +1598,7 @@ ol {
 }
 
 .sidebar__recent__item p span {
-	color: #6763fd;
+	color: #e2af2f;
 	margin-right: 5px;
 }
 
@@ -1690,7 +1690,7 @@ ol {
 }
 
 .blog__item__text .blog__date span {
-	color: #6763fd;
+	color: #e2af2f;
 }
 
 .blog__item__text h4 {
@@ -1713,7 +1713,7 @@ ol {
 }
 
 .blog__item__text ul li span {
-	color: #6763fd;
+	color: #e2af2f;
 	margin-right: 3px;
 }
 
@@ -1733,7 +1733,7 @@ ol {
 }
 
 .blog__item__text a span {
-	color: #6763fd;
+	color: #e2af2f;
 	margin-left: 5px;
 	font-weight: 700;
 	font-size: 18px;
@@ -1761,7 +1761,7 @@ ol {
 }
 
 .blog__pagination a:hover {
-	background: #6763fd;
+	background: #e2af2f;
 	color: #ffffff;
 }
 
@@ -1800,7 +1800,7 @@ ol {
 }
 
 .blog__hero__text ul li span {
-	color: #6763fd;
+	color: #e2af2f;
 	margin-right: 3px;
 }
 
@@ -1907,7 +1907,7 @@ ol {
 
 .blog__details__quote .icon span {
 	font-size: 80px;
-	color: #6763fd;
+	color: #e2af2f;
 }
 
 .blog__details__quote p {
@@ -1971,7 +1971,7 @@ ol {
 }
 
 .blog__details__tags a:hover {
-	color: #6763fd;
+	color: #e2af2f;
 }
 
 .blog__details__btns {
@@ -2000,12 +2000,12 @@ ol {
 
 .blog__details__btns__item p {
 	font-weight: 700;
-	color: #6763fd;
+	color: #e2af2f;
 	margin-bottom: 5px;
 }
 
 .blog__details__btns__item p span {
-	color: #6763fd;
+	color: #e2af2f;
 	font-weight: 700;
 	font-size: 17px;
 	position: relative;
@@ -2066,7 +2066,7 @@ ol {
 .blog__details__comment__item__text .comment__date {
 	display: inline;
 	font-size: 15px;
-	color: #6763fd;
+	color: #e2af2f;
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -2098,9 +2098,9 @@ ol {
 }
 
 .blog__details__comment__item__text a:hover {
-	background: #6763fd;
+	background: #e2af2f;
 	color: #ffffff;
-	border-color: #6763fd;
+	border-color: #e2af2f;
 }
 
 .blog__details__comment__form h4 {
@@ -2517,7 +2517,7 @@ ol {
 		transition: all, 0.3s;
 	}
 	.offcanvas__social a:hover {
-		color: #6763fd;
+		color: #e2af2f;
 	}
 	.offcanvas__social a:last-child {
 		margin-right: 0;
@@ -2686,7 +2686,7 @@ ol {
 		transition: all, 0.3s;
 	}
 	.offcanvas__social a:hover {
-		color: #6763fd;
+		color: #e2af2f;
 	}
 	.offcanvas__social a:last-child {
 		margin-right: 0;
