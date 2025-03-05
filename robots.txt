@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /js/
+Allow: /
+
+Sitemap: https://devsecopspodcast.com.br/sitemap.xml
