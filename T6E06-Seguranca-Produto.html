@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-37XY9E9BMP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-37XY9E9BMP');
+    </script>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">        
+    <meta charset="UTF-8" />
+    <meta name="description" content="O DevSecOps Podcast é uma jornada empolgante pelo mundo da cibersegurança, com um foco especial em Application Security e DevSecOps. Neste podcast cativante, exploramos as mais recentes tendências, melhores práticas e desafios que cercam a proteção de aplicações e a integração da segurança não somente desde o início do ciclo de desenvolvimento de software., mas em toda sua execução Junte-se a especialistas do setor e líderes visionários enquanto discutem estratégias, ferramentas e insights essenciais para garantir que sua organização esteja à frente das ameaças cibernéticas. Se você está interessado em manter suas aplicações seguras e atualizado com as práticas mais recentes em segurança de desenvolvimento, o DevSecOps Podcast é o seu guia confiável." />
+    <meta name="keywords" content="DevSecOps, Podcast, AppSec, Cássio, Pereira, InfoSec" />
+    <meta name="author" content="Cássio B. Pereira">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DevSecOps Podcast - T6E06 - Segurança de produto</title>
+    
+    <meta property="og:title" content="DevSecOps Podcast - T6E06 - Segurança de produto" />
+    <meta property="og:url" content="https://devsecopspodcast.com.br/T6E06-Seguranca-Produto.html"/>
+    <meta property="og:description" content="O DevSecOps Podcast é uma jornada empolgante pelo mundo da cibersegurança, com um foco especial em Application Security e DevSecOps. Neste podcast cativante, exploramos as mais recentes tendências, melhores práticas e desafios que cercam a proteção de aplicações e a integração da segurança não somente desde o início do ciclo de desenvolvimento de software., mas em toda sua execução Junte-se a especialistas do setor e líderes visionários enquanto discutem estratégias, ferramentas e insights essenciais para garantir que sua organização esteja à frente das ameaças cibernéticas. Se você está interessado em manter suas aplicações seguras e atualizado com as práticas mais recentes em segurança de desenvolvimento, o DevSecOps Podcast é o seu guia confiável."/>
+    <meta property="og:image" content="https://devsecopspodcast.com.br/img/logo.png"/>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+  </head>
+
+  <body>
+    <div id="preloder">
+      <div class="loader"></div>
+    </div>
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+      <div class="offcanvas__logo">
+        <a href="./index.html"><img src="img/logo.png" alt="DevSecOps Podcast" /></a>
+      </div>
+      <div id="mobile-menu-wrap"></div>
+      <div class="offcanvas__social">
+        <a target="_blank" href="https://facebook.com/cassiodeveloper"><i class="fa fa-facebook"></i></a>
+        <a target="_blank" href="https://x.com/cassiodeveloper"><i class="fa fa-twitter"></i></a>
+        <a target="_blank" href="https://www.instagram.com/cassiodeveloper"><i class="fa fa-instagram"></i></a>
+        <a target="_blank" href="https://www.youtube.com/playlist?list=PLC2UsZBhySmJU0EYM6kzgchnXikYXZzmi"><i class="fa fa-youtube-play"></i></a>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="header__logo">
+              <a href="./index.html"><img src="img/logo.png" alt="DevSecOps Podcast" /></a>
+            </div>
+            <nav class="header__menu mobile-menu">
+              <ul>
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">Sobre</a></li>
+                <li><a href="./episodes.html">Episódios</a></li>
+                <li><a href="./contact.html">Contato</a></li>
+                <li><a target="_blank" href="https://cassiodeveloper.com.br/devsecopspodcast/episodes.html">Old</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-4">
+            <div class="header__right">
+              <div class="header__right__social">
+                <a target="_blank" href="https://facebook.com/cassiodeveloper"><i class="fa fa-facebook"></i></a>
+                <a target="_blank" href="https://x.com/cassiodeveloper"><i class="fa fa-twitter"></i></a>
+                <a target="_blank" href="https://www.instagram.com/cassiodeveloper"><i class="fa fa-instagram"></i></a>
+                <a target="_blank" href="https://www.youtube.com/playlist?list=PLC2UsZBhySmJU0EYM6kzgchnXikYXZzmi"><i class="fa fa-youtube-play"></i></a>
+                <a target="_blank" href="https://www.spreaker.com/show/4179006/episodes/feed"><i class="fa fa-rss"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="canvas__open"><i class="fa fa-bars"></i></div>
+      </div>
+    </header>
+    <section class="breadcrumb-option spad set-bg" data-setbg="img/breadcrumb-bg.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="breadcrumb__text episodes__breadcrumb__text">
+              <ul>
+                <li><span class="icon_calendar"></span> 03 Mar 2025</li>
+                <li><span class="icon_profile"></span> por Cássio Pereira</li>
+              </ul>
+              <h2>T6E06 - Segurança de produto</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single__track">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="single__track__item">
+                <div class="single__track__item__pic">
+                  <img src="img/team/profile23.jpg" alt="Cássio B. Pereira" />
+                </div>
+                <div class="single__track__item__text">
+                  <h5>T6E06 - Segurança de produto</h5>
+                  <span>Cássio Pereira</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="single__track__option">
+                <div class="jp-jplayer jplayer" data-ancestor=".jp_container" data-url="music-files/606.mp3"></div>
+                <div class="jp-audio jp_container" role="application" aria-label="media player">
+                  <div class="jp-gui jp-interface">
+                    <div class="player_controls_box"><button class="jp-play player_button" tabindex="0"></button></div>
+                    <div class="player_bars">
+                      <div class="jp-progress">
+                        <div class="jp-seek-bar">
+                          <div>
+                            <div class="jp-play-bar">
+                              <div class="jp-current-time" role="timer" aria-label="time">0:00</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="jp-duration ml-auto" role="timer" aria-label="duration">00:00</div>
+                    </div>
+                    <div class="jp-volume-controls">
+                      <button class="jp-mute" tabindex="0">
+                        <span class="icon_volume-high"></span>
+                      </button>
+                      <div class="jp-volume-bar">
+                        <div class="jp-volume-bar-value" style="width: 0%"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="jp-btns">
+                    <a href="https://api.spreaker.com/v2/episodes/64558702/download.mp3"><i class="fa fa-download"></i> Download</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="episodes-details spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg">
+            <div class="episodes__details__content">
+              <div class="episodes__details__text">
+                <p>
+                  Paragrfo 1
+                </p>
+                <p>
+                  Paragrafo 2
+                </p>
+                <h4>Sub Título</h4>
+                <p>
+                  Paragrafo 3
+                </p>
+                <ul>
+                  <li>Item</li>
+                  <li>Item</li>
+                  <li>Item</li>
+                  <li>Item</li>
+                </ul>
+              </div>
+              <div class="episodes__details__pic">
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-6">
+                    <img src="img/episodes-single/eps-1.jpg" alt="" />
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-6">
+                    <img src="img/episodes-single/eps-2.jpg" alt="" />
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-6">
+                    <img src="img/episodes-single/eps-3.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="episodes__details__desc">
+                <p>
+                  Último paragrafo
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer set-bg" data-setbg="img/footer-bg.jpg">
+      <div class="container">
+        <div class="footer__subscriber">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="footer__subscriber__text">
+                <h3>Inscreva-se na newsletter!</h3>
+                <p>Inscreva-se para receber as últimas notícias e episódios do Podcast</p>
+              </div>
+            </div>
+            <div class="col-lg-5 offset-lg-2">
+              <form action="#" class="footer__subscriber__form">
+                <input type="text" placeholder="Seu melhor email" />
+                <button type="submit" class="site-btn">Inscrever</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-9 col-md-9">
+            <div class="footer__widget">
+              <p class="footer__copyright__text">
+                Copyright ©
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                Todos os direitos reservados | Feito com
+                <i class="fa fa-heart-o" aria-hidden="true"></i> por <a href="https://linktr.ee/cassiodeveloper" target="_blank">@cassiodeveloper</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <div class="footer__social">
+              <a target="_blank" href="https://facebook.com/cassiodeveloper"><i class="fa fa-facebook"></i></a>
+              <a target="_blank" href="https://x.com/cassiodeveloper"><i class="fa fa-twitter"></i></a>
+              <a target="_blank" href="https://www.instagram.com/cassiodeveloper"><i class="fa fa-instagram"></i></a>
+              <a target="_blank" href="https://www.youtube.com/playlist?list=PLC2UsZBhySmJU0EYM6kzgchnXikYXZzmi"><i class="fa fa-youtube-play"></i></a>
+              <a target="_blank" href="https://www.spreaker.com/show/4179006/episodes/feed"><i class="fa fa-rss"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.jplayer.min.js"></script>
+    <script src="js/jplayerInit.js"></script>
+  </body>
+</html>
