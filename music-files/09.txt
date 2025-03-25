@@ -1,0 +1,1040 @@
+Cássio Batista Pereira (00:21.66)
+Olá senhores, bem com vocês? Sejam muito bem-vindos a mais DevSecOps Podcast. Eu sou o Casio Pereira.
+
+Ben-Hur Santos Ott (00:30.67)
+Eu sou Ben Hur.
+
+Marcos Santos (00:31.932)
+E eu sou o Marcos Santos.
+
+Cássio Batista Pereira (00:33.308)
+o time de volta hoje, né? cabou as férias, o outro dormia o dia inteiro. Tá fácil, a vida de vocês tá fácil, meu cara. Puta que pariu.
+
+Marcos Santos (00:35.356)
+Boa!
+
+Marcos Santos (00:40.64)
+tá velho, tá recebendo bem né, gente acaba dormindo até mais tarde todo dia tá ótimo
+
+Cássio Batista Pereira (00:44.636)
+o que importa, o salário caiu na conta, o que importa. Bem, o urdescansou, deu tudo bem, deu tudo certo.
+
+Ben-Hur Santos Ott (00:52.238)
+Descancei, descansei. Quando cheguei na praia... Pobre pra praia é padrão, né cara? 10 dias na praia, previsão do tempo. 10 dias de chuva. Aí, por sorte, a nossa previsão do tempo é muito ruim. E acabou dando sol nos dias. E não chuva. Então, foi bom. Foi falso, positivo.
+
+Marcos Santos (01:03.932)
+Nossa, cara!
+
+Marcos Santos (01:10.236)
+É...
+
+Cássio Batista Pereira (01:12.924)
+boa, Falso, foi falso positivo. Falso, muito positivo, boa. A Kebra vivendo... Olha só. Ela tá vulnerabilidade aqui, 20 % que eu acho que é problema. Os outros 80 % depois gente vê isso.
+
+Marcos Santos (01:22.684)
+é aquele negócio né nível de certeza de 20 % né então tá tranquilo
+
+Ben-Hur Santos Ott (01:32.494)
+Ou como diz a galera de Machine Learning, problema que a tem 50 % de certeza. Que é o pior estatística dentro de Machine Learning, Porque se você tem 50%, tu não tem ideia! É Vai flipar a moeda! É muito pior do que tu ter saber ou não saber. 50 % o pior estatístico.
+
+Cássio Batista Pereira (01:38.812)
+Não tem nada,
+
+Marcos Santos (01:44.444)
+E-e-e-e-e-
+
+Cássio Batista Pereira (01:48.828)
+Caralho, velho. Boa, boa. Pessoal, vamos lá então para o episódio de hoje. Já vou falar episódio. O episódio, na verdade, vai ser uma série. A gente estava pensando, eu estava pensando aqui construir essa série já há algum tempo. A gente chegou a fazer até alguns ensaios. A fez uma série na época do Rodrigo, ainda grande Rodrigo Balbino, que gravou com a gente há bom tempo. A gente fez lá uma série do Microsoft SDL, fizemos uma série acho que do ASP, enfim. Uma série de séries que a gente chegou a fazer.
+
+Marcos Santos (01:52.7)
+Grrrr
+
+Cássio Batista Pereira (02:16.668)
+Mas essa aqui é uma que eu quero começar agora e gente vai fazer o seguinte, vai ser uma série de episódios, não sei quantos ainda, pelo menos uns cinco aí, pra gente montar programa de AppSec numa empresa imaginária. Vou dar cenário aqui e a gente vai montar programa de AppSec, né? Do zero aqui até uma aplicação lá produção, monitoramento, etc, etc. Sem envolver questões de cybersegurança geral, tocando, talvez a tenha que tocar alguns pontos, mas a ideia é aplication security. Então a vai fazer esse...
+
+essa série aqui com vocês e a ideia é tentar educá-los, tentar ensinar e aprender junto com os colegas como que gente faria esse programa de AppSec de uma maneira geral. Beleza? Todo mundo topa ou não tem opção? Tem que fazer. Então o negócio é seguinte, o cenário é o seguinte, a gente tem hospital, hospital privado, público, vamos lá, temos hospital e tem desenvolvimento de software interno.
+
+também externa, também a compra software, usa software de terceiros e tal. E a gente tem desenvolvedores tanto no próprio hospital, do próprio hospital, como desenvolvedores terceirizados também. E a gente constrói software para controlar o hospital inteiro, desde o paciente que vai bucar uma consulta, até o próprio controle administrativo do hospital, de funcionários, uma empresa mesmo.
+
+O pessoal está internado lá, então a administração hospitalar, tem alguém internado, os dados do paciente, aquela coisa toda. O paciente tem uma aplicação web ou mobile onde ele pode consultar ali o método histórico dele, ver os resultados de exames, conversar, repente trocar mensagens ali com o médico, aquela coisa toda. Então, acho que esse é o cenário, esse é o ambiente que a gente tem. E a gente foi contratado aqui como consultor. O DevSecOpsPodcast foi contratado como consultor para a gente fazer ali
+
+programa de AppSec para eles, precisam começar a proteger as aplicações, precisam proteger os dados, tem algumas questões regulamentacionais que eles precisam seguir, cuidar desses desenvolvedores, treinamento, enfim, né? Então, tudo. Dito isso, onde é que a gente começa? Eu acho que faz mais sentido a gente fazer o... Não nem o Shift Left, a já começa no Left, você não precisa fazer o Shift Left, você começa já no Left. Certo? Então...
+
+Marcos Santos (04:33.884)
+Hmm...
+
+Cássio Batista Pereira (04:38.684)
+Se vocês têm sugestão, eu posso dar uma sugestão já. O que vocês acham? Fala aí, Marco.
+
+Marcos Santos (04:42.492)
+pode dar sugestão porque pra mim é começar chorando né mas a gente pode começar por algum outro lugar não mas acho que bom lugar é começando ali pela modelagem de ameaças ou pelo design secure by design não sei
+
+Cássio Batista Pereira (04:45.468)
+Começa desconectando e falar, deixa quieto, vou fazer isso pra porra.
+
+Cássio Batista Pereira (05:00.252)
+Tá, boa, boa, boas
+
+Ben-Hur Santos Ott (05:06.51)
+Não tem nada. Nada. Nós vamos... Zero?
+
+Marcos Santos (05:08.284)
+Não, zero.
+
+Cássio Batista Pereira (05:08.572)
+Zero. Tá tudo... O hospital tá funcionando. É isso. O negócio tá funcionando.
+
+Ben-Hur Santos Ott (05:14.414)
+recong.
+
+Cássio Batista Pereira (05:16.54)
+Beleza?
+
+Marcos Santos (05:17.084)
+Uou...
+
+Ben-Hur Santos Ott (05:17.998)
+Tipo, o que que tem? O que que existe? Tecnologias, pessoas, áreas, processos, softwares. Recom. Recom.
+
+Marcos Santos (05:20.668)
+Não.
+
+Cássio Batista Pereira (05:28.38)
+Tá?
+
+Esse processo de recon seria tudo que a gente tem, de inventário, software, departamentos, pessoas e processos. Isso envolveria dinheiro? Quanto que a gente tem para começar a investir nisso? Faz sentido isso ou não?
+
+Ben-Hur Santos Ott (05:54.126)
+Na minha visão ele faz sentido.
+
+Porém tem uma questãozinha que é a gente vai falar de dinheiro antes de mostrar o risco ou o problema. aí a questão eu não sei se a resposta não muda depois tá ligado por exemplo assim olha a gente tem a gente tem 100 mil e aí o cara olha aquela panilha cheia de vermelho talvez de 200 entende. Não sei não sei não sei como é muito mas não a gente quer para Nali.
+
+Marcos Santos (06:10.94)
+E aí?
+
+Cássio Batista Pereira (06:16.476)
+Tá?
+
+Cássio Batista Pereira (06:24.572)
+Tá, tá bom, tá bom.
+
+Ben-Hur Santos Ott (06:32.462)
+recon assim para tipo o que existe aqui, né? que são as skills que a tem dentro de casa? Qual é o software que a tem dentro de casa? O que que já tem? O que que já faz? Sabe? E aí?
+
+Cássio Batista Pereira (06:35.164)
+Uhum.
+
+Cássio Batista Pereira (06:44.508)
+Então vou tentar trazer pouco desse contexto pra gente elucidar essa etapa e de repente trazer alguma coisa que a gente poderia fazer pra ajudar a galera. pouco de inventário, tudo que a faz aqui vai .NET, pra facilitar, tudo aqui é .NET e React Front-end, então não tem nada diferente disso.
+
+Marcos Santos (07:02.46)
+Então...
+
+Ben-Hur Santos Ott (07:06.862)
+Inclusive, se está sendo feito com Nexus, tem a OVNLWD crítica aí pra corrigir, né? Né?
+
+Cássio Batista Pereira (07:10.076)
+Quem tinha, né? Quem tinha, né? A gente tem 100 desenvolvedores, tem 100 pessoas aqui dentro de casa e mais 20... 100 devs e mais 20 externos. hospital muito grande, uma rede de hospitais, vai, uma rede de hospitais e mais 20 desenvolvedores terceirizados que a gente contrata via consultoria, tá? Então tem 100 devs casa, toda a stack.net, tudo... Vou colocar assim, ó, stack Microsoft.
+
+Marcos Santos (07:10.972)
+Isso que é falar agora, saiu notícia.
+
+Cássio Batista Pereira (07:40.316)
+Dotnet, linguagem C sharp, dotnet framework, banco de dados SQL Server, tudo hospedado no Azure. Facilita pouco a nossa vida aqui. Departamentos como empresas que tinha colocado, que, sei o tem no hospital, RH, marketing, tem que ter pouco ali de venda envolvido, todo time de financeiro, para pagamento, recebimento das contas, tem time de...
+
+vou colocar auxiliar, mas é aquele time de back office mesmo que cuida dos agendamentos, que faz atendimento ao cliente, recepção, aquela coisa toda, Olha para o hospital dessa maneira. A gente tem alguns softwares terceiros do tipo, a gente usa bibliotecas para gerar PDF, comercial, biblioteca comercial, porque a gente precisa gerar PDF para os exames ou para gerar ali para informação para os pacientes.
+
+Tem alguns softwares, por exemplo, cara faz lá raio X. Tem software lá da máquina que usa que integra com nossos sistemas, pra gente poder pegar aquela imagem lá do raio X que o cara fez e salvar no nosso banco de dados, por exemplo. Então tem software que foge pouco do nosso controle, a gente nem sabe que tecnologia é que é lá. A gente compra a máquina importada e tá lá o negócio lá dentro. Ponto. E não tem opção, é esse? Isso é detalhe, não tem opção. É o único no mercado, só tem na China, só tem essa máquina e é essa que vai funcionar.
+
+Por que eu tô colocando isso? Porque às vezes vai ter problema ali que não vai conseguir resolver, você tem que mitigar ele de outra forma. Porque seria fácil falar, faz upgrade, eu troco, mas não vai ser. Já tô dificultando algumas coisas. Que mais? No mobile a gente tem nativo, porque tem o aplicativo, então tem Android e Java. Java não, vamos colocar lá o é o nome, Xcode, o novo. Swift, Swift, Swift, Swift, Swift.
+
+Marcos Santos (09:25.084)
+não, Swift, Swift Kotlin
+
+Cássio Batista Pereira (09:29.276)
+Então Swift para iOS e o Javin veio lá pro Android. Que mais?
+
+Tá bom, rapazinho? O que mais? O que tá faltando?
+
+Ben-Hur Santos Ott (09:42.254)
+Acho que tem algumas questões que seria legal entender. A gente falou aí de ter algum aplicativo para os clientes do hospital ou usam coisa do plano de saúde.
+
+Cássio Batista Pereira (09:44.7)
+bota ai bota ai
+
+Marcos Santos (09:55.196)
+tem, foi... Não, o que ele falou foi do aplicativo que a tem lá no mobile, né? Que é o Swift pra iOS e Kotlin ali pro Android. Então tem o aplicativo do Hospital.
+
+Cássio Batista Pereira (10:05.436)
+Isso!
+
+Ben-Hur Santos Ott (10:07.054)
+Isso, mas o aplicativo é interno para hospital ou é para os clientes? Para o cliente. Tá, ok.
+
+Cássio Batista Pereira (10:10.524)
+Não, não, pro cliente, pros clientes. Na verdade, assim, vamos facilitar, vamos lá. O médico tá ali na sala com o cara, ele tem tabletzinho que ele tá vendo algumas coisas. Tudo isso tá integrado. Então ele tem a versão do médico, ele vai ter a versão da vez de recepcionista que nem necessariamente está no computador, pode estar ali com tabletzinho. E tem o do cliente que vai bucar, vai ver, que vai ver, é resultado de exam, aquela coisa toda. Não é só interno, não. Assim como o portal web, o portal web pro cliente, ele pode estar na internet, nem necessariamente no aplicativo, instalado.
+
+Marcos Santos (10:11.58)
+Não, pro cliente.
+
+Marcos Santos (10:15.74)
+Hum.
+
+Ben-Hur Santos Ott (10:20.046)
+Uhum.
+
+Cássio Batista Pereira (10:41.308)
+Ahem!
+
+Ben-Hur Santos Ott (10:42.03)
+show a a infra ela é é o que é cloud é prêmio se
+
+Marcos Santos (10:43.42)
+Cérebro...
+
+Cássio Batista Pereira (10:49.404)
+Tudo cloud. Tudo, tudo, tudo, tudo cloud. 100 % cloud. Tudo azure. Tudo azure. Pra facilitar, né? Eu tô facilitando algumas coisas, né? Tudo azure. Tudo... É, é, é... Não, mas tá tudo cloud, nada on-premise. Pra não falar nada on-premise, tem outro servidor ali, aquela coisa, né? Fire de perímetro e tal, mas não vamos entrar nesse detalhe, tá? Mas tem umas coisinhas ali, mas... Hospedagem de aplicação?
+
+Marcos Santos (10:52.636)
+Então, Multicloud, Single Cloud, tudo aí.
+
+Ben-Hur Santos Ott (11:00.942)
+É, facilita na vida do cliente também, Porque vai estar multi cloud com 120 dev e vai matar os caras.
+
+Cássio Batista Pereira (11:19.068)
+tudo cloud nada casa. detalhe tem pagamento então o cliente por exemplo é hospital particular ele vai lá baixa o aplicativo se cadastra quer agendar uma consulta custa tanto ele paga ali já online via o PIX boleto cartão que for consulta é confirmada então tem pagamento envolvido obviamente a gente não desenvolveu o pagamento não sou hospital a gente usa gateway que lá qualquer e paypal qualquer
+
+qualquer nome tanto faz, usa É isso.
+
+Ben-Hur Santos Ott (11:55.214)
+ok ok ok ok depois de entender pouquinho a tecnologia porque por exemplo a gente começou vamos falar com alguém, o CTO, talvez o arquiteto principal né
+
+Cássio Batista Pereira (11:57.564)
+Tá fácil.
+
+Cássio Batista Pereira (12:12.572)
+Uhum, uhum, uhum, uhum, uhum.
+
+Ben-Hur Santos Ott (12:15.918)
+Uma coisa que eu acho importante é mapear quem são as principais pessoas das principais áreas. para para manter uns contatos ou tirar dúvidas mais rápido tá ligado tipo assim ó cara quem é que é o cara dos back end né quem é que são os tech lead quem é que são os menegers tá ligado. Então eu mapearia as pessoas para ter a minha rede de contato e conversa.
+
+Cássio Batista Pereira (12:22.172)
+Tá?
+
+Marcos Santos (12:22.204)
+As pessoas-chaves,
+
+Cássio Batista Pereira (12:35.932)
+Tá?
+
+Ben-Hur Santos Ott (12:45.998)
+obtenção de informação mais rápido, tá ligado? Porque como são 120 pessoas, eu acho que isso é possível. Se você vai entrar numa empresa que tem 10 mil funcionários de TI e tu ainda não tem nada de segurança, cara, é estranho. É meio estranho ter uma empresa grande com exato. Mas uma empresa de 120 você consegue mapear, porque deve ter mais ou menos assim umas 7, 8 pessoas nesse jogo aí que são mais mais chave, né?
+
+Cássio Batista Pereira (12:48.764)
+Cássio Batista Pereira (12:52.988)
+Tá?
+
+Cássio Batista Pereira (13:00.476)
+Então é uma coisa muito errada,
+
+Marcos Santos (13:01.692)
+Ehh
+
+Cássio Batista Pereira (13:13.212)
+mais chave,
+
+Ben-Hur Santos Ott (13:15.918)
+E aí normalmente, cento e poucas pessoas, tu vai ter uns dois, três arquitetos assim, que são responsáveis por tudo, Normalmente tu vai ter cara de cloud, tu vai ter ou dois cara de dev, ou cara pra cada frente, tá ligado?
+
+Cássio Batista Pereira (13:28.22)
+para essa 120 pessoas a gente tem 12 cabeças então são 10 times, 12 times né então você teria 12 pessoas chaves dentro desses times então por exemplo você vai ter time
+
+Marcos Santos (13:43.676)
+Eu faço ali, com 10 aí, divide certinho de 10 pessoas no time, né?
+
+Cássio Batista Pereira (13:46.844)
+120 por 10, 12, dá na mesma. Mas tem que ter alguém para cuidar dos externos, Tem que alguém que faz as interfaces aí. Então considera 11, para ficar mais difícil sua conta agora. 11 interna, 1 externo. Mas vamos lá, você tem Cada time é uma área. Você tem time que vai cuidar da parte mobile. Você vai ter time que vai cuidar só de APIs ou integrações, time só de pagamento, time corporativo, que aí é a galera que está olhando pro hospital si.
+
+Marcos Santos (13:49.18)
+Não, é porque 20 é externo, E nem sempre eles estão ali, né? É... Tá parecido, tá?
+
+Cássio Batista Pereira (14:15.324)
+Outro time que vai cuidar das coisas do paciente, exemplo. time de operação. Esse time operação seria, por exemplo, cara está ali fazendo uma cirurgia. O que tem de aplicação ali? O médico tem que olhar o que, que ver o que, que dado tem que ter. Tem dashboard ali na tela, alguma coisa assim. Só para tentar elucidar algumas coisas. Mas vamos lá. Mapiamos, 12 pessoas-chaves, além do executivo. E o executivo já falou...
+
+não temos a desenvolvimento seguro, vamos implantar, todo o suporte executivo para fazer isso. Então seja comunicação, seja processo, seja treinamento, budget obviamente, mas vai ser discutido quanto, obviamente tem todo suporte executivo para fazer tudo isso. Porque o hospital agora quer se modernizar, vamos colocar assim. Melhorou?
+
+Tá ficando bonito isso aqui, hein cara?
+
+Marcos Santos (15:07.42)
+Tá...
+
+Então podemos chamar esses dois de tech leads pra facilitar o contexto pra galera Não, só pra facilitar o contexto, o nome que outro vai mudar e vai ser pessoa chave do mesmo jeito né mas...
+
+Cássio Batista Pereira (15:14.428)
+Pode ser, pode ser, pode ser TechLid, pode ser. Pode ser. Pode ser, pode ser.
+
+Pode ser. Pessoas-chave, é isso aí. É isso que o Ben Hur colocou. O que mais vocês acham? alguma coisa? Marcos, alguma ideia? Alguma coisa que faltando? Ben Hur? Não tem o mapeamento aí? Falta processo, né? Uma sugestão minha agora, acho que a gente poderia usar o Sam, o asp-Sam, para entrevistar essas pessoas-chave e entender o nível de maturidade que eles estão. Porque assim, não tem nada a princípio, né? Pô, tem log algum lugar, né? Não tem como não ter. Tem log algum lugar.
+
+tem processo de teste, tem uma criptografia de senha, talvez tem CISD, boa, Então, minha sugestão é essa, eu farei sanzinho ali com eles para entender pouquinho mais o detalhe.
+
+Ben-Hur Santos Ott (15:52.526)
+Tem processo de teste, talvez não de segurança. Talvez tenha CACD e alguma coisa já.
+
+Marcos Santos (15:55.292)
+Hmm...
+
+Marcos Santos (15:59.708)
+Perdido, hein?
+
+Ben-Hur Santos Ott (16:02.03)
+É porque...
+
+Marcos Santos (16:04.06)
+uma coisa que a gente estava falando, que não sei se vale entrar no contexto agora nesse nível técnico, mas qual tipo de repositório? Se é SVN, se é Git, se é TFS da vida?
+
+Cássio Batista Pereira (16:14.876)
+Hmm.
+
+Cássio Batista Pereira (16:20.988)
+Talvez não seja o momento, mas eu falei tudo azul e tal, então imagina que tá usando... é tudo Microsoft? GitHub é Microsoft agora, Tá tudo no GitHub.
+
+Marcos Santos (16:22.94)
+Ok.
+
+Marcos Santos (16:34.012)
+Então pode ser, me vê GitHub. Sim. Sim.
+
+Cássio Batista Pereira (16:34.652)
+Eu falei Azure como Cloud, então vamos imaginar, vai. Servidor, máquina, paygater, tá tudo Azure. Desenvolvimento é GitHub. Então, pipeline, CACG, tá tudo no GitHub. Só facilitando, A empresa que eu trabalho hoje tem Bitbucket, GitLab, GitHub, Azure, CirceSafe, Zip Impasta, cara, tem tudo, puta que pariu.
+
+Marcos Santos (16:49.212)
+E
+
+Marcos Santos (16:57.852)
+a empresa que eu tô saindo é Jenkins, é Team City tem Bitbuck porque a gente tem o Atlasian também é uma desgrama nem sei porque tem o Team City, meu maior broco com o Team City pra você saber, é mais treto de configurar enfiou no seu enfiou no seu
+
+Cássio Batista Pereira (17:01.916)
+Nossa... Circle C, aí, uns bagulho que nem sei para que existe ainda, fecha, deixa só o GitHub aí, tá bom, mas enfim... E o bambu? E o bambu?
+
+Ben-Hur Santos Ott (17:15.246)
+E o bambu, cara... demorei pra pegar a referência.
+
+Cássio Batista Pereira (17:20.124)
+E o bambu, né? Tem o bambu também, cara. P*** que pariu.
+
+Marcos Santos (17:25.308)
+A turista é só a dificulta nessa vida, velho.
+
+Ben-Hur Santos Ott (17:26.126)
+É verdade.
+
+Cássio Batista Pereira (17:28.956)
+Boa, boa, boa. Então vamos lá, facilitei a vida. O bambu foi sensacional.
+
+Marcos Santos (17:30.492)
+Ué...
+
+Ben-Hur Santos Ott (17:34.574)
+E vai ter uma coisa que cara, tem uma coisa que vamos botar pouquinho, chorar pouco as pitangas, como a fala aqui no interior do Brasil, que é o como a galera aplica o ASP.SAN, né? Porque eu tenho visto muita gente pegar os formulários de ASP.SAN, pegar e mandar para o cliente responder. O arquiteto responde o formulário do ASP.SAN, tá ligado?
+
+Cássio Batista Pereira (17:41.916)
+Então,
+
+Marcos Santos (17:42.94)
+Ok.
+
+Cássio Batista Pereira (17:45.884)
+Ahem.
+
+Cássio Batista Pereira (17:50.268)
+Boa!
+
+Cássio Batista Pereira (18:01.615)
+Aí não precisa do cara, não precisa nem do consultor,
+
+Marcos Santos (18:02.62)
+Cara, eu vi uma pesquisa até falando disso, Benhor, que mundialmente falando, a maioria das empresas tá no nível 1, não consegue chegar nem no nível 2 do Asp.San, quando é aplicado da maneira correta.
+
+Ben-Hur Santos Ott (18:15.63)
+É porque os caras não... É difícil até para eles lerem, né? Às vezes até o formulário, assim. E uma coisa que eles até... Às vezes eles marcam incorretamente por medo de estarem sendo avaliados daquela forma, né? Então, tu coloca o cara numa posição difícil, porque, por exemplo, assim, ó... Quando tu pega o áspero aí, joga para pessoal responder, nunca foi...
+
+Marcos Santos (18:19.196)
+Sim?
+
+Marcos Santos (18:32.988)
+Sim.
+
+Ben-Hur Santos Ott (18:45.166)
+conversado com eles sobre isso nunca e aí nunca foi priorizado isso dentro da empresa e agora chega forma de avaliação
+
+Cássio Batista Pereira (18:59.228)
+É estranho,
+
+Ben-Hur Santos Ott (19:00.174)
+Entendeu como é que é que se qual é que os profissionais são avaliados se sentem nesse momento sabe meio complicado sabe então por exemplo quando a empresa ela tá num tamanho menor assim eu eu praticamente prefiro ter o asp sã sabe aquela coisa tô com uma página branco embaixo da página branco eu tô com asp sã entendeu e eu vou perguntando pro cara o que que ele tem e como é como se eu fosse deve que vai trabalhar lá
+
+Cássio Batista Pereira (19:21.404)
+Uhum, uhum.
+
+Cássio Batista Pereira (19:25.404)
+Uhum.
+
+Ben-Hur Santos Ott (19:29.55)
+ou alguém que está mapeando a empresa para conhecer a empresa. E depois disso, como consultor mesmo vou no Asp.Sã para... Olha, isso aqui, cara, está no nível X, essa aqui está na Lane A nesse cara, tem pouco da Lane B nesse cara. E às vezes o Asp.Sã não é formulário. Por que eu digo isso?
+
+Cássio Batista Pereira (19:33.212)
+Uhum.
+
+Cássio Batista Pereira (19:51.516)
+Uhum.
+
+Ben-Hur Santos Ott (19:57.358)
+Às vezes as verticais das equipes são diferentes.
+
+Cássio Batista Pereira (20:01.884)
+E como você está valendo? Nesse caso, a vai fazer acessamente corporativo da empresa como todo. Às vezes time está no nível 10 do negócio, nem tem, mas está no nível ultra lá. E o outro time está zero. Então a empresa está qual? Ela não pode estar no melhor cenário. Nesse caso, sempre o pior cenário. Não tem como considerar o melhor cenário. Nesse caso, você tem que nivelar por baixo porque é acessamento corporativo. Então, você está comprado ou não está, mas é todo mundo. Nesse contexto, é todo mundo. Então, não pode arredondar para cima.
+
+Ben-Hur Santos Ott (20:18.926)
+É, exatamente.
+
+Cássio Batista Pereira (20:31.74)
+Então você tem que pegar a galera de baixo. Mas gostei desse aporte do Beirut. Então vamos lá. Na prática, eu sugeriria a gente fazer o seguinte. Vamos marcar reunião com esses 12. Esses 12. os... Cara, eu não sei por quê, mas eu não gosto dessa palavra desde que eu me entendo por gente. Os 12 e os stakeholders. Cara, eu não gosto dessa palavra, eu não sei por quê. Não tem nada de ruim com ela, mas eu não gosto. Enfim. Vamos marcar reunião com esses 12 aí.
+
+Marcos Santos (20:51.612)
+Ai caralho!
+
+Cássio Batista Pereira (20:59.516)
+mais os stakeholders, o C-level, para explicar o que a gente vai fazer, que a gente vai precisar de tempo deles para fazer... Pode falar de entrevista, Benro? O que você acha? O que você falou? Eu vou lá trocar ideia com o papel branco e fala de entrevista.
+
+Ben-Hur Santos Ott (21:13.742)
+Sim, a avaliação assusta.
+
+Cássio Batista Pereira (21:16.22)
+Porque a avaliação assusta, palavra avaliação assusta, né?
+
+Marcos Santos (21:17.66)
+Hmm.
+
+Marcos Santos (21:21.308)
+Assusta e o nego vai ficar muito nervoso pra trocar uma ideia mais realista ali contigo
+
+Cássio Batista Pereira (21:24.38)
+Hmm... Uhum...
+
+Ben-Hur Santos Ott (21:26.19)
+É, então... Assim... Isso, isso, isso aí, para que é conhecimento da empresa, né? O objetivo é... Cara, quero conhecer a sua área porque... O porquê, né? O porquê acho que tem que estar claro, porque daí você não assusta pela falta de clareza, propósito, né? Pô, o cara está vindo daqui fazer isso, porquê, né?
+
+Cássio Batista Pereira (21:28.924)
+Intervista de processos, vamos chamar de entrevista de processos?
+
+Cássio Batista Pereira (21:43.132)
+Boa!
+
+Cássio Batista Pereira (21:47.1)
+De propósito, né? Boa.
+
+Uhum, uhum.
+
+Ben-Hur Santos Ott (21:52.494)
+Cara, a gente está implementando programa de segurança dentro da empresa e tem coisas que impactam o desenvolvimento de softwares, como por exemplo, escolha de ferramentas que a gente vai usar para segurança e a gente precisa ver o que melhor integra para não não ter incompatibilidade com o que a gente tem hoje. E aí a quer conhecer mais nessa pegada de conhecer. Por baixo a vai estar avaliando, mas não vamos estar avaliando as pessoas. É aí que está o detalhe.
+
+Marcos Santos (21:53.436)
+vou deixar o meu saco aqui
+
+Cássio Batista Pereira (22:17.916)
+Boa!
+
+Sim.
+
+Ben-Hur Santos Ott (22:22.318)
+Vai avaliando profissionais, vai estar avaliando o que está ali, tecnologias e tal.
+
+Cássio Batista Pereira (22:25.788)
+processo que elas estão ali. Boa. Então vamos lá, na prática, tentar montar plano para a galera aqui. Reunião número 1 com os 12 stakeholders para falar o porquê estamos fazendo isso, estratégicamente o que é, Dá para falar, falou entrevista, papel branco, mas a gente vai usar tal metodologia, o aspSAN, por exemplo, né? Ou qualquer outra, mas vamos colocar o aspSAN aqui. Então reunião número 1 com essa audiência e com esse objetivo.
+
+Aí eu faria uma reunião dois só com os 12 para falar pouco mais tecnicamente como vai ser feito isso. Então olha que nossos consultores vão falar com vocês de forma individual, com o número 1, com o número 2, com o número 3, até o 12 para pegar essas informações e criar esse mapeamento. E aí sim outras 12, então são 14 reuniões já, né? Outras 12 reuniões uma com cada Se a gente está nós três aqui dá para dividir fica mais fácil, né?
+
+Você é cara só, 12 reuniões, tal, tal, tal. Pra conversar com essas cabeças-chave, não me fala aí como é o seu departamento, como é o seu dia a dia, o que seu time faz, qual é a criticidade. Porque você vai ter lá, a gente hospital, né, depressão, tudo é crítico. O pagamento é crítico, os dados do paciente é crítico, tudo é crítico. Mas às vezes tem cara ali, o cara cuida do back office, sei lá, da recepção, sei lá o quê, sei lá, das copas de xerox, não sei. Pode ter alguma coisa ali que não necessariamente seja tão crítico. Então talvez pra esse cara algumas regras se apliquem diferente. Mas enfim, então seria o aí,
+
+plano de 14 reuniões, 15 vai uma de fechamento com todo mundo, acabamos de estar aqui os resultados. Apresentar o resultado, vocês estão no nível XPT, olhando para o ASP, SANA, vocês estão no nível 1, 2, 3. Vamos colocar no nosso cenário aqui que está no nível 0. Tinha nada. Uma outra coisinha ali que faz, mas está no nível mais baixo. A gente precisa melhorar. E aí nessa última reunião também, uma apresentação do plano de como que gente vai fazer isso. Que é o que gente vai discutir ao longo dessa série aqui dos episódios. Então, cada episódio vai falar, seria a execução desse plano.
+
+Mas nesse primeiro momento, acessimente aí que o Benyur, nesse recon que o Benyur falou, acho que seria plano prático. Reunião com os stakeholders. Eu não gosto da palavra, já usei mais do que deveria. Reunião com os stakeholders e os 12, os 12 apóstolos ali. Depois reuniões individuais com eles e uma de apresentação final desse resultado e como será feito. Vocês concordam o que é adicional? Tirar alguma coisa daqui?
+
+Ben-Hur Santos Ott (24:50.67)
+Eu concordo, gente já tem a lista de pessoas, tecnologias, se a gente tem uma lista de repositórios, se a gente já tem essa informação, a gente tem alguma coisa de CICD que acho que legal, pudesse discutir pouquinho aqui. quais são as perguntas que não podem faltar?
+
+Marcos Santos (24:51.388)
+Acho que está bom, caras. Por favor.
+
+Cássio Batista Pereira (24:57.66)
+E
+
+Ben-Hur Santos Ott (25:18.478)
+nesse processo de reconhecimento. Qual que seria para vocês?
+
+Cássio Batista Pereira (25:22.14)
+Você colocou bem, exemplo. Eu acho que essas perguntas fariam parte dessa entrevista. Porque, por exemplo, talvez algumas coisas não estejam lá no Asp.se especificamente, mas a pode usar esse tempo dessa entrevista para fazer esse acesso mentir nosso. Você falou, tá bom, time número quais são os seus repositórios aí, suas pipelines, tal, beleza, são esse, esse, esse, Porque se os caras não têm nada, esse bobeiro, inventário não vai estar lugar nenhum. Tem que abrir lá o GitHub e listar por não tem make-don, aquela coisa toda.
+
+Eu acho que eu usaria essas reuniões pra fazer isso e... Bom, beleza, acho que era isso. Aí você perguntou, Quais seriam essas perguntas? Fala aí, Marco.
+
+Marcos Santos (25:57.052)
+Só que uma pergunta principal que eu faria todas elas é qual sua principal dor, né? Pra tentar entender o que o cara mais sente dificuldade internamente, né? Se é no momento de codificação, se é no momento de pipeline, se é no momento do processo de comunicação.
+
+Então, acho que qual a principal dor dele, acho que seria uma das principais perguntas aí, né? Nesse âmbito.
+
+Cássio Batista Pereira (26:27.804)
+Boa, você pode... Vou colocar uma pimenta nesse tópico aí, por exemplo, você pode pegar time que, como eu falei, o cara tem uma máquina de raio-x e tem uma DLL, sei lá o quê, que precisa importar e pegar as imagens e tal, tal, tal. E, cara, essa DLL é muito pesada e toda uma exemplo, não sei se isso existe, mas é exemplo que, no caso real, pode acontecer. E toda vez que a vai compilar essa aplicação para gerar uma versão, nem que seja desenvolvimento ou produção, tanto vai. Cara, vai demorar uma hora para compilar essa aplicação. Então o pipeline dela já demora uma hora.
+
+Marcos Santos (26:43.836)
+Sim.
+
+Cássio Batista Pereira (26:56.956)
+Beleza? É uma particularidade de time X ali. Legal a gente ter essa informação mente porque isso vai fazer diferença lá na frente quando gente for testar o pipeline e tudo mais, né? Mas pus aqui uma particularidade. Outra coisa que eu queria trazer é... Nessa entrevista aí, Beiru, com esses 12, deles não soube responder tudo pra gente. Ele falou assim, ó, ou dois ou três, mas vamos lá, Ele falou, cara, você fez aqui algumas perguntas, aí pode ser perguntas do Asp.San, por exemplo, ou essa, qual é o seu inventário, o que quer que seja.
+
+cara, não tenho tudo isso. Como que gente abordaria esse cara? Porque ele falou, eu não tenho todas as informações. Ele vai falar assim, eu preciso do meu time.
+
+Ben-Hur Santos Ott (27:37.358)
+O que pode acontecer com uma frequência
+
+Cássio Batista Pereira (27:38.62)
+Isso eu diria que é normal, a exceção é os caras que sabem tudo.
+
+Ben-Hur Santos Ott (27:44.142)
+É porque dificilmente lideranças hoje conseguem ter a visão do todo devido a uma desvirtuada da função assim, Que pedem tanta coisa para os caras que o cara precisa delegar muitas partes e coisas que eles acabam não ter conhecimento, né? Agora a questão é uma das partes do asp sã é ter a padronização dessas coisas, né?
+
+Então assim a questão é se cara não sabe tudo. Ok a gente precisa ele precisa ter uma ação de trazer para a gente as informações ele precisa ter. Agora a questão é. Ou a sessão a entrevista ela não é feita hoje e ela morre. E depois de ano você vai fazer de novo porque cara vários repositórios ser criados várias pessoas vão.
+
+Cássio Batista Pereira (28:24.444)
+Então...
+
+Cássio Batista Pereira (28:37.564)
+Exato.
+
+Ben-Hur Santos Ott (28:43.886)
+vão ser trocadas de equipe ou vai ter uma rotação de pessoas ali. Enfim, vai ter uma série de mudanças. Agora a questão é.
+
+Cássio Batista Pereira (28:51.324)
+Uhum.
+
+Ben-Hur Santos Ott (28:55.918)
+esse processo de conhecer as coisas que tem. Ele pode ser processo para a empresa ou não pode ser processo para a empresa?
+
+Cássio Batista Pereira (29:05.691)
+padronizado eu diria que sim eu diria que sim mas assim
+
+Ben-Hur Santos Ott (29:07.822)
+E...
+
+Por exemplo, repositórios eles devem todos os repositórios devem estar algum lugar tipo a todos os repositórios tem que estar no GitHub. Só tem GitHub e beleza, tem lugares tem tem outros casos que não tem né entende? Então ou seja o que ele o que ele não sabe. Todos saberem deveria ser padrão.
+
+Cássio Batista Pereira (29:21.148)
+no é no nosso caso sim tá entendi entendi que você falou tá bom
+
+Cássio Batista Pereira (29:37.372)
+Entendi o que você falou. Eu acho que sim, isso vai estar no nosso plano de ir mais pra frente, do tipo, como guia, como boas práticas, algum lugar, o workbook, não, como que chama? É workbook, Do cara, olha, todo repositório tem que estar aqui, tem que estar documentado algum lugar que seja, por exemplo. Mas, pra esse momento, eu diria que uma sugestão talvez seria, junto com esse cara, marcar uma reuniãozinha com o time dele.
+
+e estender essa entrevista não só a ele, mas ao time. Porque você pode estar... Até esse conhecimento pode estar espalhado no time. Então, tem cara aqui do time que é responsável por criar os logs da aplicação. Então, todo pull request ele vai ali e se não tem alguma coisa ele vai lá e incrementa, então o log vai estar lá. Esse cara que faz. Logo é ele que sabe para onde vai, para onde vem, para onde não vem. O outro cara não sabe. Então, a resposta de... lá no Asp.San,
+
+Com que frequência você loga sua aplicação? Eu logo, eu não logo, eu logo e não olho os logs, eu olho os logs e tá automatizado, eu tenho alerta automatizada, tem uns níveis de alerta de cabeça. Mas eu estenderia essa entrevista pro time, eu dei o exemplo de cara, de caso. Eu estenderia a entrevista pro time e faria com ele, com eles nesse caso, pra tentar pegar esses dados. E aí, como você falou, mapeamento...
+
+padronização, está o repositório, coisa. Estende a entrevista para eles. Fala, Marcos.
+
+Marcos Santos (31:00.636)
+tá, uma outra dúvida cara como a já viu que a empresa está pouco bagunçada como que está a questão de documentação tem não tem? tá boa
+
+Cássio Batista Pereira (31:14.652)
+Tem documentação das aplicações, o que é cada aplicação, para que ela existe, nem todas tem diagrama da FD da vida, todas tem ML, mas tem uma pagina lá no GitHub Wiki, onde quer, no conference, escolhe o que quiser, tem uma pagina lá falando de cada time, de cada aplicação, isso tem bem organizado. Não tem segurança, mas isso tem bem organizado.
+
+Marcos Santos (31:25.756)
+Não, mas só estender o cão te ajuda.
+
+Marcos Santos (31:42.524)
+Então, lá você vai.
+
+Cássio Batista Pereira (31:43.804)
+Mas, por exemplo, não tenho inventório de repositórios. Então, no meu time X, não tenho. Tenho 10 repositórios ou 20 repositórios. Não tenho. Eu sou o produto pagamento. Ponto. Entendeu?
+
+Marcos Santos (31:54.46)
+Agora quantos repositórios tem por baixo? Foda-se.
+
+Cássio Batista Pereira (31:56.732)
+Isso eu fodo, sério, não tem. Eu sou o time de pagamento, a gente é responsável por processar os pagamentos dos clientes, dos pacientes, deixa de ser cliente, fornecedores, folha de pagamento de funcionário, tem departamento que cuida de tudo isso, sistema faz isso. Ele existe pra isso.
+
+Marcos Santos (32:12.412)
+Eu bem queria falar alguma coisa e vim.
+
+Ben-Hur Santos Ott (32:16.942)
+É o porque as vezes o repositório pode ser metido por mais de time, né? Mais de uma pessoa, né? Então isso a gente chegou número aproximado de repositórios.
+
+Cássio Batista Pereira (32:23.484)
+Também. Também.
+
+Marcos Santos (32:29.564)
+Até agora não.
+
+Cássio Batista Pereira (32:30.012)
+Não falamos, é uma boa pergunta, não falamos. Vamos fazer uma conta burra aqui? lá, a falou de 120 devs, né?
+
+Marcos Santos (32:37.34)
+É, 129, gente já falou que a tem o back-end C Sharp. É. Isso.
+
+Cássio Batista Pereira (32:39.772)
+Divididos entre 12 produtos, 12 times, vamos colocar assim, cada responsável por uma coisa. Cada tem 10 também? 120 repositório? Não, muita coisa. é pouca coisa? Não sei, estou por fora.
+
+Ben-Hur Santos Ott (32:50.254)
+dá quase mil repositórios. Vou botar aqui 500 repositórios. aí tem aquela outra coisa. O que é repositório de produção, o é repositório de teste? O que é repositório de aplicação que vai à produção? O que é repositório de script?
+
+Cássio Batista Pereira (32:56.732)
+Vamos botar 500? Tá. É razoável, Razoável.
+
+Marcos Santos (33:04.572)
+É.
+
+Cássio Batista Pereira (33:15.26)
+Uhum.
+
+Ben-Hur Santos Ott (33:18.542)
+que entende, seja, o que é produto, o que é isso aí é pós, mas fica aí para ficar a dica que tem, para quem está escutando a gente, que tem essa complexidade também. Não é porque tem 500 repositórios que os 500 são repositórios de aplicação que vão à produção. E pode ser que repositório ou outro seja uma lib cross, framework cross.
+
+Cássio Batista Pereira (33:20.828)
+Sim, sim, sim, sim.
+
+Marcos Santos (33:38.876)
+Sim.
+
+Ben-Hur Santos Ott (33:48.206)
+Aquele boi velho útils. Útils que vai para todos os lugares. Então ele tem uma cidade interessante também.
+
+Marcos Santos (33:50.524)
+Nossa, que legal.
+
+Cássio Batista Pereira (33:50.78)
+Últimos, bom e velho útils.
+
+Marcos Santos (33:58.684)
+Eu já vi o cara, tem repositório só para workflow, para fazer a injeção da pipeline.
+
+Ben-Hur Santos Ott (34:05.038)
+É bem comum.
+
+Marcos Santos (34:07.548)
+Então beleza, 500 rapos mas a não sabe a separação.
+
+Ben-Hur Santos Ott (34:10.19)
+Então...
+
+Cássio Batista Pereira (34:15.196)
+Vocês pausaram, soltei a vinheta, a vinheta atrasou, vocês voltaram a falar. Enfim, aproveitar que eu cortei vocês, deixa eu cortar com estilo então. Pessoal, vamos lembrar que o DevCell Cosmo Podcast tem o apoio da Checkmarks, Sneak e da Nova8, que são especializadas segurança de sistemas e código seguro. O link da Nova8, é a distribuidora da Checkmarks e Sneak no Brasil, está abaixo da descrição do episódio. Você está buscando soluções de EPSEC? A DigitalWoo que tem portfólio completo para você. E se você já se perguntou se estou sobre ataque...
+
+Marcos Santos (34:17.5)
+Top!
+
+Cássio Batista Pereira (34:43.004)
+algum dado ou informação sensível foi roubado ou ainda estou risco, a Purple Bird Security tem todas as respostas pra você. Fala com pessoal da Purple Bird que eles são absurdamente fodas. Inclusive o dono da Purple Bird, grande Jefferson Souza Macedo, ou Macedo Souza, eu inverto aí, já gravou com a gente aqui. Produção, resgata aí, Produção. Acho que foi lá na primeira temporada, segunda temporada, mas...
+
+Marcos Santos (35:05.852)
+Ai que...
+
+Cássio Batista Pereira (35:11.068)
+falamos de resposta incidente, falamos de... Enfim, enquanto a produção caça pra nós, eu queria trazer também, antes da gente continuar aqui, temos... Tinha novidade, você lembra que tinha novidade? Até vinheta.
+
+Marcos Santos (35:11.708)
+É...
+
+Marcos Santos (35:30.364)
+Que porra é essa, Cássio? Só pra falar, o Jefferson participou na primeira temporada do episódio 7, Fraude Software. Isso existe?
+
+Ben-Hur Santos Ott (35:32.526)
+Meu Deus, vou botar esse despertador, cara!
+
+Cássio Batista Pereira (35:41.98)
+Olha só, cara, essa produção é absurdo. Vou dar aumento pra essa produção agora. Vai ter mais episódio pra você gravar a produção. Episódio 1, de novo, episódio 1... Não, temporada 1, episódio 7. Boa. Muito boa, muito boa. E tá pra gravar de novo com a gente aqui, já foi convidado agora que é patrocinador, então logo, logo vai estar gravando aqui com a gente pra falar pouquinho sobre esse tema também. Mas bom, gostaram da vinheta? Vou até pôr de novo, hein? Vou até pôr de novo.
+
+Marcos Santos (35:51.004)
+Porra, que engano Não, não, primeiro e esse episódio 7 Fraude software, isso existe?
+
+Marcos Santos (36:00.54)
+Uhum.
+
+Cássio Batista Pereira (36:15.484)
+Isso é Dave chorando, Marcão. O Dave tá chorando, quer dizer que ele tá com medo de alguma coisa, assustado, perplexo. Algo aconteceu com esse Dave, que é o Dave May Cry. Qual a sugestão? Eu nem lembro do episódio passado, a gravou com o Ronaldo, E a ideia dele era do AF, né? A gente fez o Dave chorar com o AF desenvolvimento. Era isso, o AF ambiente de desenvolvimento pra fazer o Dave chorar. O que vocês acham que gente deveria fazer o Dave chorar hoje? Vocês querem chutar uma pedrada no Dave?
+
+Marcos Santos (36:16.636)
+Despertador!
+
+Cássio Batista Pereira (36:45.308)
+Aqueles dev milindre que não gosta de nada, não quer fazer nada...
+
+Ben-Hur Santos Ott (36:48.398)
+Quer fazer... Joga pra ele o resultado de scan do Triv, de Docker container pra ele e deixa...
+
+Marcos Santos (36:54.844)
+Nossa, sacanagem cara
+
+Cássio Batista Pereira (36:55.516)
+E deixa...
+
+Ben-Hur Santos Ott (36:57.646)
+Isso, sem filtro nenhum, sem filtro nenhum, só roda e joga.
+
+Marcos Santos (37:02.492)
+Só vai voar tanto falso positivo na cara dele que não sabe nem por onde começar, velho.
+
+Cássio Batista Pereira (37:03.836)
+Boa. Boa. Mas já joga o Rescanse, resultado, o output, ou já cria o tic-tino gira, já crítico?
+
+Ben-Hur Santos Ott (37:05.55)
+É... É... É... É... É... É... É...
+
+Ben-Hur Santos Ott (37:16.686)
+que gente depende do do workflow de gestão de vune não e daí tu faz o seguinte automatiza isso só sua chumba e aqui faz o que ele tu cria ticket por vune no container
+
+Cássio Batista Pereira (37:26.14)
+Só chuma.
+
+Marcos Santos (37:27.804)
+Rodou ou abre? Nossa cara...
+
+Cássio Batista Pereira (37:30.044)
+Boa, gostei, gostei. Esse foi o nosso DevMake Ride de hoje. faz scan do trívio da imagem de conteúdo e joga pro cara. ele chorando lá. Beleza. Fechamos o nosso quadro DevMake Ride de hoje. Vamos voltar ao nosso tópico aqui. Acho que a esqueceu ponto. Estava aqui processando e a esqueceu uma coisa. Não seria legal a gente, junto com os stakeholders ou os sponsors desse projeto, não seria legal a fazer comunicado pra empresa como todo.
+
+Marcos Santos (37:39.804)
+J'ai c'est vu, là.
+
+Marcos Santos (37:47.356)
+Hmm.
+
+Marcos Santos (37:54.236)
+E
+
+Cássio Batista Pereira (38:00.558)
+obviamente com as devidas audiências falando, olha, hospital agora vai começar a olhar para o desenvolvimento seguro e upsac, pelo menos para as áreas tecnológicas, Tem talvez moça da limpeza, talvez médico, enfim, não faça sentido ter essa comunicação, Mas vamos lá, comunicar para as devidas audiências que agora, a partir de agora, vai ter uma consultoria e a empresa vai estar olhando para isso. Quer dizer que vai envolver entrevistas, vai envolver mais algumas demandas fora do dia dia que eles já estão acostumados.
+
+Marcos Santos (38:08.348)
+Muito
+
+Cássio Batista Pereira (38:28.284)
+colaboração deles de passar informação para as devidas pessoas, no nosso caso, nós três como consultores. O que mais? Acho que eu diria que essa comunicação é importante do nível executivo da empresa, não do nosso como consultores, mas o CTO, por exemplo, falando, vamos a partir de agora fazer isso, e aí o Bayer colocou muito bem. Para quê? Por que estamos fazendo isso?
+
+Marcos Santos (38:53.66)
+Hum.
+
+Cássio Batista Pereira (38:53.692)
+O hospital está modernizando, a precisa ter mais compliance, mais segurança natural. Então a gente contratou a consultoria que vai estar fazendo isso. Acho que seria legal ter essa, primeiro de tudo, essa comunicação corporativa pros envolvidos de que isso vai começar a acontecer, pra que as pessoas não fiquem hesitantes ali durante o processo, entendeu?
+
+Marcos Santos (39:09.532)
+Tá, tem
+
+Eu tenho uma pergunta antes da comunicação, o hospital tem alguma meta como tirar uma certificação ISO? Ou ele tem alguma coisa que ele pense fazer background? que? Muitas vezes mais motivo pessoal ali a ajudar no compartilhamento de informação, não que seja o ponto principal. Mas sei lá, vai se adequar ao GPD por exemplo?
+
+Cássio Batista Pereira (39:14.812)
+Ahem.
+
+Cássio Batista Pereira (39:34.652)
+Hum?
+
+Não.
+
+Marcos Santos (39:41.948)
+ou precisa da Isoly. Então isso aí normalmente motiva e ajuda mais do que só falar. A só vai pensar desenvolvimento seguro. É o meu ver, tá?
+
+Cássio Batista Pereira (39:51.1)
+é seguinte eu vou facilitar nossa vida é ironia tá lógico não vou facilitar mas a gente vai implantar ISO as relevantes 27000 e 2, 1 e 2 e 3 se não me engano a gente vai ter o HIPAA né que é o do dados de hospital lá internacional HIPAA lá a vai ter isso daí porque a gente atende clientes de fora do país a gente tem reunião
+
+Marcos Santos (40:10.524)
+E se o agaipe...
+
+Marcos Santos (40:19.612)
+Uhum.
+
+Cássio Batista Pereira (40:20.06)
+Reunião não, não fala, integração, logo a gente atende pessoas do mundo inteiro e os dados delas precisam ser protegidos como cidadãos europeus, americanos, enfim. Além do marco civil da internet, LGPD, que são leis brasileiras, a gente opera no Brasil, a precisa estar compliance com elas também. Beleza?
+
+Marcos Santos (40:27.612)
+Uhum.
+
+Marcos Santos (40:35.772)
+beleza então tem uma certificação aí por trás assim e aí não tem que fazer não fiz o hospital fecha beleza
+
+Cássio Batista Pereira (40:39.868)
+Tem algumas, tem certificação, tem auditoria, tem lei. lei, Leia lei. Beleza? É com relação à comunicação Bayer, algum ponto aí? Acho que é isso mesmo.
+
+Ben-Hur Santos Ott (40:55.63)
+Acho de boas!
+
+Cássio Batista Pereira (40:57.596)
+Porra, beleza.
+
+Ben-Hur Santos Ott (40:58.734)
+Porque aqui acho que gente atinge os seguintes pilares, né? A gente atinge a questão de alinhamos com a empresa a atuação, comunicamos para a empresa a atuação, todo mundo está sabendo o que está acontecendo e agora a está conectando com as pessoas para entender como é que funciona negócio, tanto conhecendo os produtos quanto conhecendo as tecnologias e processos por trás dos produtos, né? E aí gente tem panorama da empresa.
+
+Cássio Batista Pereira (41:25.596)
+Boa. Naquela... Eu tinha perguntado aquela hora, na que pergunta não pode faltar. A acabou estoando e vou voltar nela. Uma pergunta que eu adicionaria é... Qual a importância do teu produto, do teu software aqui na empresa? Qual a importância no sentido de negócio? Pô, cara, eu tomo aqui o som dos pagamentos. Sem isso a gente não recebe dinheiro ou paga as pessoas. Ponto. Por isso só já define a importância. Não sei se essa pergunta também já responde...
+
+Não sei se essa resposta já responde uma próxima pergunta ou se teria que uma segunda pergunta que é, qual a criticidade então do produto ou projeto aqui dentro? No caso do pagamento, ele é importante obviamente para o business, nesse contexto de pagamento ele também é crítico, crítico porque é importante para o negócio e crítico porque ele dá com dados de pagamento, não pode parar, se parar a tem problema operacional muito grande etc. Mas você pode ter sistema por exemplo, sistema de...
+
+de agendamento de paciente também. Do mesmo jeito que ele é crítico, ele está trazendo o cliente a operação toda, que vai gerar receita e também tem dados sensíveis, acaba sendo importante e crítico ao mesmo tempo. Mas eu posso ter algum contexto que ele seja importante e não crítico. Percebe? Não crítico do ponto de vista de dados sensíveis, esse tipo de coisa. Então é uma pergunta que eu farei nessa entrevista. Isso não está no asp sã, se não me engano, nesse nível de detalhe, estou buscando aqui, mas acho que não. Mas eu perguntaria esse tipo de coisa.
+
+Ahem.
+
+Ben-Hur Santos Ott (42:51.182)
+Até bom ponto colocar sobre essa pergunta não está no Asp.Sã, né? Eu vejo muitas pessoas sendo muito estritas com o Asp.Sã, né? E ele é guia, né? Ele é cara que está do teu lado para te acompanhar, mas não significa que ele seja limitado exclusivamente a isso, né? Ele pode adicionar...
+
+Cássio Batista Pereira (42:59.356)
+Uhum, uhum.
+
+Ben-Hur Santos Ott (43:19.79)
+perguntas de contexto, você pode adicionar outras questões de métricas que você queira dentro da sua organização, né? É obrigatório chegar... o Asp.Sanho que não está aqui não importa. Não, não é assim. Não é assim, não é essa a proposta.
+
+Cássio Batista Pereira (43:35.004)
+Boa. Vou até aproveitar esse pedaço aí pra evangelizar. Toda oportunidade que eu tenho de evangelizar agora eu faço, mas sei que toma muito tempo também. a igreja... Nós somos católicos, Muita gente às vezes quer falar, conversar alguma coisa. mas tá na Bíblia. Mas não tá na Bíblia, então não sei o quê, né? Então, na igreja católica nem tudo tá na Bíblia. Você tem a tradição da igreja católica, a Bíblia e o magistério. Então, são três pilares que guiam toda a fé.
+
+Outras religiões só se baseiam na Bíblia, por exemplo, e outras nem na Bíblia, enfim. Mas nem tudo está na Bíblia. Eu queria fazer essa analogia que o Bayer colocou. Nem tudo vai estar na ASP.SAM e nada entende a gente fazer perguntas extras. Naturalmente a gente vai pegar informações ali que não estão lá, mas que são relevantes para o nosso trabalho. O ASP.SAM vai dar o resultado de maturidade, mas a gente, por exemplo, faz uma pergunta dessa. tudo que você tem aqui é muito crítico.
+
+do ponto de vista de business e dados, isso para a gente vai dar norte de como operar lá na frente, quais proteções colocar, aquela coisa toda.
+
+Marcos Santos (44:41.98)
+É até só pra complementar, tem muita consultoria que pega ASP.SAM, usa como base e queria ser o próprio assessment. Nada impede de você fazer isso também. Com mais perguntas, vou tirar algumas perguntas pra fazer isso.
+
+Cássio Batista Pereira (44:48.988)
+Bom, ele é framework, você pode estender ele. Inclusive, oficialmente eu não sei se ele tem português. Eu sei que tem inglês, não sei se tem oficialmente português.
+
+Marcos Santos (45:00.06)
+Eu acho que não, acho que só inglês cara
+
+Ben-Hur Santos Ott (45:04.494)
+Eu acho que tem umas traduções, né? Mas eu não sei se o quão oficial e atualizada isso está dentro do... Dentro do assunção mesmo, Forma oficial, isso eu não tenho.
+
+Cássio Batista Pereira (45:13.468)
+Uhum, uhum.
+
+Cássio Batista Pereira (45:20.38)
+Boa. Eu lembro que na Nova 8, uns anos atrás, a gente traduziu para português para que alguns clientes a precisava e gente acabou usando. Mas era uma versão nossa, baixou lá o oficial e traduziu. Até traduziu porcamente, diria. Porcamente no bom sentido da palavra. Porque algumas coisas você não se traduz. Deploy. Log.
+
+Marcos Santos (45:32.156)
+Sim.
+
+Marcos Santos (45:36.732)
+Hum.
+
+Marcos Santos (45:42.46)
+E
+
+Cássio Batista Pereira (45:43.26)
+Cara, você não traduz algumas coisas, Então a gente fez uma tradução que no fim das contas traduziu tudo, mas depois a gente voltou algumas coisas que, cara, mais fácil até entender, né? Do que é inglês do que português. outro... Uma outra pincelada que eu queria colocar aqui é... Nessas entrevistas que a gente tá fazendo com esse pessoal, é legal explicar as perguntas. O Ben Hur colocou bem, né? Eu tô com uma folha branco e por trás ali o asp sã.
+
+Marcos Santos (45:57.98)
+Hum.
+
+Cássio Batista Pereira (46:10.012)
+Mas às vezes, porque se o cara só ler, você registra o log da sua aplicação? sim. pera, mas você registra... É, console.log, sim, faça o log. Não, mas peraí, você faz log de dados relevantes para monitoramento de segurança? Você visualiza esses logs com frequência? Aí você vai evoluindo. Então é legal explicar a pergunta, não é só, faz log, não fácil? Ou você tem scan de código? tenho, a gente usa o sonar. Então tem todo
+
+Ben-Hur Santos Ott (46:16.078)
+console log.
+
+Marcos Santos (46:17.819)
+É.
+
+Cássio Batista Pereira (46:37.692)
+passo atrás de nessa entrevista explicar cada questão, o que a gente tá querendo absorver de dados com aquela questão e não só jogar pergunta pro cara, que vai ser só problema pra ele na verdade. Bom, beleza, e aí, que mais? Pera aí. Ai cara, ele precisa de uma produção aqui.
+
+Marcos Santos (46:50.364)
+eu ia falar pra gente terminar alta pra gente não ia falar pra gente terminar alta e depois a gente voltar e com mais coisas até porque se a vai passar de uma hora falando aqui
+
+Ben-Hur Santos Ott (47:02.414)
+2 hit combo
+
+Cássio Batista Pereira (47:11.292)
+Boa, boa, 47 minutos já. Boa? Eu concordo. Mas vamos matar esse tema, tem mais alguma coisa nesse tema de assessment, o recon que o Beiru colocou muito bem. Eu acho que acabamos isso, apresentamos ali o resultado, entendemos que vocês estão no nível zero, e está aqui o plano, esse é o plano que gente vai executar agora nos próximos x meses, anos, pra chegar no nível 1, por exemplo, ou 2, de repente.
+
+Marcos Santos (47:21.884)
+Está bom?
+
+sim.
+
+Cássio Batista Pereira (47:37.596)
+E aí o plano a vai discutir nos próximos episódios. Alguma outra coisa a colocar aqui nesse recon?
+
+Marcos Santos (47:42.332)
+vai precisar do PCIe da SES porque a gente tá mexendo com o pagamento, né?
+
+Cássio Batista Pereira (47:47.804)
+Mas eu falei que a usava Gateway. Então o Gateway resolve.
+
+Marcos Santos (47:50.556)
+Mas mesmo assim, na API você não vai mandar dados sensíveis ali, cartão, número...
+
+Cássio Batista Pereira (47:55.388)
+Manda, mas não é escopo de PCI não É? Eu acho que não é.
+
+Ben-Hur Santos Ott (47:56.238)
+é assim se na se na peito manda assim que acontece quando que não é escopo de pci né posso falar uma besteira aqui mas quando tu clica pagar e tu redireciona
+
+Cássio Batista Pereira (48:06.396)
+Hmm.
+
+Marcos Santos (48:15.612)
+pro meio de pagamento.
+
+Cássio Batista Pereira (48:16.028)
+pro gateway.
+
+Ben-Hur Santos Ott (48:16.814)
+pro Gateway. Agora qualquer momento que tem qualquer dado de cartão. Na tua infraestrutura vou dar o exemplo principal vamos criar uma telinha customizada para o cartão para ser bonitinho e ficar dentro da UX. Os cara não tem ideia da bucha que é escolher fazer isso. Não é porque o Gateway não tem a telinha não tem o mesmo design da gente então vamos fazer o nosso. Daí não sabe que agora só por causa dessa decisão.
+
+Marcos Santos (48:23.484)
+Você manda viapai.
+
+Marcos Santos (48:28.124)
+Puta!
+
+Cássio Batista Pereira (48:32.092)
+Uhum. Uhum.
+
+Marcos Santos (48:34.396)
+e
+
+É.
+
+Cássio Batista Pereira (48:40.38)
+e não dá pra customizar.
+
+Ben-Hur Santos Ott (48:46.318)
+de UI você acabou abarcando todo compliance e uma regulação cima.
+
+Marcos Santos (48:48.124)
+O rapizado pisar.
+
+Cássio Batista Pereira (48:48.476)
+Uhum.
+
+Cássio Batista Pereira (48:53.724)
+Eu vou refutar isso, eu também posso estar falando besteira, vamos deixar aberto. Mas quando eu trabalhei dos e-commerce grandes, que eu não quero dar nome, o cara pagava online. A pegava o cartão e a compra não era ao vivo, era ao vivo assim, para daqui uns cinco minutos ia ser processado o cartão do cara. Quem raspa o cartão dele era o, sei lá, o PayPal, exemplo. Então a gente mandava isso para o cara.
+
+Marcos Santos (48:57.756)
+E... tá.
+
+Cássio Batista Pereira (49:22.46)
+armazenava por tempo e mandava isso pro cara, ele processava e depois apagava do nosso lado. A gente não era PCI, não era escopo PCI. É só quem raspa o cartão.
+
+Marcos Santos (49:30.076)
+Cara, depois dá uma olhada no PCI DSS 4.0 Acho que é uma lição de casa pra gente olhar Só que eu tô do lado do Beyr, tá? Só pra ser sincero
+
+Cássio Batista Pereira (49:35.452)
+posso estar errado ou a gente estava fazendo tudo errado lá. Eu também, tô dando só exemplo que eu vivi, mas eu concordo com o Ben Hur.
+
+Ben-Hur Santos Ott (49:41.134)
+É porque...
+
+Ben-Hur Santos Ott (49:47.182)
+Porque no momento que entro na tua infra...
+
+Marcos Santos (49:49.276)
+Sim, qualquer dado de cartão no cara ali
+
+Cássio Batista Pereira (49:51.452)
+Armazenou já era, né?
+
+Ben-Hur Santos Ott (49:52.814)
+cartão de crédito cara ele bateu sei lá bateu no teu no teu e pi gateway entendeu se ele entrou número que não número né o com com o isso completo do cartão de crédito as informações entraram na tua infra é psi entendeu que é tu não quer ser psi isso aí que não quer ser psi a partir do teu front end
+
+Cássio Batista Pereira (50:00.572)
+Uhum.
+
+Cássio Batista Pereira (50:04.38)
+O BING! O BING!
+
+Uhum.
+
+Marcos Santos (50:12.892)
+É número, CVV e validade. abraço.
+
+Cássio Batista Pereira (50:15.196)
+Não faça isso. Tá bom.
+
+Ben-Hur Santos Ott (50:21.038)
+Beleza, você pode enviar os dados da compra para o teu back-end. O teu back-end vai integrar com o gateway e vai pegar o URL daquela compra e tu vai daquele item no gateway de pagamento, daquela cobrança no item de pagamento e daí você redireciona o cara no front-end para aquela URL do gateway.
+
+Cássio Batista Pereira (50:24.732)
+Uhum.
+
+Cássio Batista Pereira (50:40.348)
+No nosso caso não era assim. cara clicou no pagar, compra finalizada com sucesso. Daqui 10 minutos ele ia receber, ó, pagamento aprovado. Então a gente armazenava o cartão e mandava isso pro gate, a gente não raspava o cartão. Não era PCI... Aliás, não era e nem é PCI, dos maiores e-commerce da América Latina hoje. Ainda funciona assim. Vou dar o nome depois do desofral, compra lá pra você ver como é que acontece. Se o seu cartão não é clonado...
+
+Marcos Santos (50:49.468)
+Ré.
+
+Ben-Hur Santos Ott (50:50.35)
+É... Aí...
+
+Marcos Santos (50:53.724)
+Certo, eu que o Shepty se aí...
+
+Marcos Santos (51:02.684)
+Claro.
+
+Ben-Hur Santos Ott (51:06.958)
+Assim, gostaria... Aí é que entra a questão, Quem é que foi que disse que não era o Escopo PCI? Foi cara do PCI? Ou foi o cara lá, tipo, arquiteto X que falou, isso, isso, não...
+
+Cássio Batista Pereira (51:16.508)
+Exatamente.
+
+Marcos Santos (51:16.732)
+É.
+
+Marcos Santos (51:21.724)
+Fui Zezinho, dois, três, deve.
+
+Cássio Batista Pereira (51:22.94)
+É, exato. Na minha época lá, o nosso gerente de segurança falou, não somos escopo porque não raspamos o cartão. A gente só pega o cartão para passar para o terceiro. Isso não engloba escopo. De novo, não lia os requisitos do PCI e não sei, eles não trabalham mais lá, podem estar fazendo tudo errado ou pode estar certo e gente não sabe. Eu ainda concordo com vocês. Cara, você pegou o dado e armazenou num log que seja...
+
+Marcos Santos (51:36.668)
+assim
+
+Cássio Batista Pereira (51:52.86)
+você já está no escopo, ainda que seja para aquele contexto ali, mas é esse corpo teu. Mas você que está nos ouvindo, manja de PCI, manda aí nos comentários então, que aí a vai tirar essa dúvida e trazer pouco mais mastigada essa informação, de novo, que ler os requisitos do PCI para entender. Vamos fazer uma lição de casa. Bom, fechamos então hoje. Ou quer colocar mais coisa aí? Tá fácil esse projeto aqui, vai ficar fácil esse hospital.
+
+Marcos Santos (51:55.004)
+Sim.
+
+Marcos Santos (52:18.94)
+Minha anotação aqui tá gigantesca já, mas tá tranquilo.
+
+Cássio Batista Pereira (52:21.852)
+você que está ouvindo a gente também, que suas anotações também estejam gigantescos porque é assim que funciona, bastante coisa que a gente trouxe hoje, planinho de fazer recon, como o Benyur falou muito bem, entender o cenário, que tem, quem são as pessoas, por que pra que, comunicação, Próximo episódio é falar sobre... não sei, tem que lembrar o que a está fazendo no próximo episódio e gente vai se ver na semana que vem.
+
+Ben-Hur Santos Ott (52:49.582)
+tem que fazer o levantamento do que tem e o que não tem relacionado a nossa variação. Agora é o momento de descobrir que temos que trabalhar. Porque a primeira parte é, deixa eu entender o que existe, quem são as pessoas, são os processos, quais são as tecnologias envolvidas.
+
+Como é que o fluxo de desenvolvimento, né? Como é que a galera coloca a aplicação produção? O que que a gente tem produção? Primeiro que a gente entendeu isso, beleza, agora gente vai ter o que a gente tem versus o que fala lá o WhatsApp, exemplo, né? Tá na hora de ver onde é que dá o diff.
+
+Cássio Batista Pereira (53:39.836)
+Boa!
+
+Ben-Hur Santos Ott (53:40.462)
+é só...
+
+Marcos Santos (53:40.7)
+não boa? Gostei, gostei da ideia
+
+Cássio Batista Pereira (53:42.364)
+Então nos vemos no próximo episódio, perca essa série vai ficar... mano, eu falei cinco episódios, virou dez já aqui na minha cabeça. Já virou dez. Fácil que já dobrou já. Bom, então é isso jovens, a gente se vê na próxima semana. Não se esqueçam da Nova 8 Digital Walk Purple Security, que são os nossos parceiros, estão sempre aqui conosco. Time completo para esse episódio, eu sou o Cássio Pereira.
+
+Marcos Santos (53:49.628)
+Ai, que acidente...
+
+Ben-Hur Santos Ott (54:07.118)
+Eu sou Benhor.
+
+Marcos Santos (54:08.412)
+E eu sou Marcos Santos.
+
+Cássio Batista Pereira (54:09.723)
+e a gente se vê na semana que vem. Tchau tchau!
+
+Marcos Santos (54:12.38)
+Beijos de luz.
+
+Cássio Batista Pereira (54:15.772)
+Ahem.
+
