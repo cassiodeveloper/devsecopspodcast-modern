@@ -1,0 +1,3091 @@
+1
+00:00:13,548 --> 00:00:15,828
+vou fazer pouco de share.
+
+2
+00:00:23,916 --> 00:00:36,716
+Eu tava com saudade desse vinhetinho, ano já que gente não grava, todo mundo de férias,
+passeando, vai pro Brasil, o outro já tá no Brasil, virou uma bagunça isso aqui.
+
+3
+00:00:36,716 --> 00:00:41,456
+A verdade é que estamos de volta pra mais episódio de Devisecops Podcast.
+
+4
+00:00:41,456 --> 00:00:43,252
+Eu sou o Cássio Pereira.
+
+5
+00:00:43,406 --> 00:00:44,563
+Eu sou o Ben Hur.
+
+6
+00:00:44,563 --> 00:00:45,932
+E eu sou Marcos Santos.
+
+7
+00:00:45,932 --> 00:00:47,402
+Aí, o time completo.
+
+8
+00:00:47,402 --> 00:00:48,272
+Como é foi as férias?
+
+9
+00:00:48,272 --> 00:00:49,332
+Vocês descansaram?
+
+10
+00:00:49,332 --> 00:00:50,492
+Férias remuneradas?
+
+11
+00:00:50,492 --> 00:00:52,672
+Porque aqui é tudo ordem.
+
+12
+00:00:57,472 --> 00:01:03,512
+Boa, Boa.
+
+13
+00:01:04,272 --> 00:01:05,162
+Pô, tá marcado.
+
+14
+00:01:05,162 --> 00:01:06,112
+Os espois aí, cara.
+
+15
+00:01:06,112 --> 00:01:08,092
+Não pode ter esse tipo de conversa entre funcionários.
+
+16
+00:01:08,092 --> 00:01:08,887
+Deu treta.
+
+17
+00:01:08,887 --> 00:01:15,083
+aí, eu recebo em papel higiênico, se não tá ligado.
+
+18
+00:01:15,264 --> 00:01:17,724
+Essa é mercadoria, é mercadoria.
+
+19
+00:01:17,724 --> 00:01:26,524
+Cara, é bom estar de volta porque eu passei três semanas aí no Brasil, Viver família e
+tal, deu pra descansar bastante, eu vou tomar um sol, que como vocês podem ver, quem tá
+
+20
+00:01:26,524 --> 00:01:36,364
+vendo no vídeo aí, vê que já tirou, já tô branco de voltei a ficar branco de novo, famoso
+branco europeu, Já não tenho mais o sol de novo, mas deu pra descansar, os meninos também
+
+21
+00:01:36,364 --> 00:01:39,224
+deram uma boa descansada, eu creio.
+
+22
+00:01:39,444 --> 00:01:40,940
+E a gente não esqueceu...
+
+23
+00:01:40,940 --> 00:01:45,800
+daquela série que a gente estava fazendo de montar programa de Epsec do zero.
+
+24
+00:01:45,800 --> 00:01:52,490
+Então a gente já teve dois episódios, hoje é o terceiro episódio, onde a vai falar
+pouquinho mais sobre o próximo passo nessa jornada.
+
+25
+00:01:52,490 --> 00:01:53,550
+Que jornada é essa?
+
+26
+00:01:53,550 --> 00:02:02,080
+Você vai escutar no episódio número episódio número dois, anteriores a esse, onde gente
+começa a falar ali sobre como montar programa de Epsec, não vou fazer resumo não, você vai
+
+27
+00:02:02,080 --> 00:02:05,240
+lá e deixa de ser preguiçoso, lá, escuta, assiste, enfim.
+
+28
+00:02:05,340 --> 00:02:09,292
+Bom, para começar o episódio de hoje, eu queria...
+
+29
+00:02:09,292 --> 00:02:14,972
+antes de começar o episódio, verdade, anunciar aqui os nossos parceiros, os nossos
+patrocinadores.
+
+30
+00:02:15,012 --> 00:02:23,782
+Então, o DevSecOps Podcast tem sempre o apoio da Checkmarks, SNIC e da Nova8, que são
+especializadas em segurança de sistemas e código seguro.
+
+31
+00:02:23,782 --> 00:02:33,092
+O link da Nova8, é a distribuidora da Checkmarks no Brasil, está abaixo na descrição do
+episódio no YouTube e também no nosso site, devsecopspodcast.com.br.
+
+32
+00:02:33,092 --> 00:02:36,460
+Inclusive, site novo, caso você ainda não tenha acessado.
+
+33
+00:02:36,460 --> 00:02:40,500
+Se você está buscando soluções de AppSec, a DigitalWoke tem portfólio completo para você.
+
+34
+00:02:40,500 --> 00:02:51,480
+E se você já se perguntou, estou sob ataque, algum dado ou informação sensível foi roubado
+ou ainda estou risco, a Purple Bird Security tem as respostas para você.
+
+35
+00:02:51,480 --> 00:02:55,940
+Fale com a Purple Bird que o pessoal é especialista forense, investigação, mano.
+
+36
+00:02:55,940 --> 00:02:58,310
+Inclusive, se você fez merda, fala com os caras.
+
+37
+00:02:58,310 --> 00:02:58,940
+Não, não é brincadeira.
+
+38
+00:02:58,940 --> 00:03:01,880
+Se você fez merda, você vai responder à justiça, vai falar com ninguém, não.
+
+39
+00:03:02,140 --> 00:03:04,142
+Pessoal, negócio é seguinte, vamos lá.
+
+40
+00:03:04,152 --> 00:03:11,782
+primeiros dois episódios, a falou pouco de como começar programa de AppSec, e gente chegou
+no terceiro episódio, que é tema que eu gosto bastante, mas é tema polêmico.
+
+41
+00:03:11,782 --> 00:03:12,692
+Por quê?
+
+42
+00:03:12,692 --> 00:03:17,792
+Modelagem de ameaças, eu adoro, gosto muito de...
+
+43
+00:03:17,792 --> 00:03:24,252
+Eu brinco que é a arte de encontrar problemas antes do software existir, modelagem de
+ameaças.
+
+44
+00:03:24,252 --> 00:03:26,992
+Existem vários frameworks, a gente vai discutir isso hoje.
+
+45
+00:03:26,992 --> 00:03:28,282
+Mas por que é tema polêmico?
+
+46
+00:03:28,282 --> 00:03:30,812
+Porque muita gente fala, mas pouca gente faz.
+
+47
+00:03:30,892 --> 00:03:32,908
+E eu tenho uma opinião pessoal e eu vou...
+
+48
+00:03:32,908 --> 00:03:35,908
+pegar essa opinião já como primeiro tópico aqui pra gente discutir.
+
+49
+00:03:35,908 --> 00:03:39,788
+E aí eu queria começar pelo Benyur e depois o Marcos, dar resposta dele.
+
+50
+00:03:39,888 --> 00:03:43,908
+A minha visão é que ninguém faz porque é trabalho manual.
+
+51
+00:03:44,268 --> 00:03:51,328
+Não tem nada, tem uma outra ferramenta aí que ajuda a criar pelo menos diagrama, gerar ali
+alguns requisitos.
+
+52
+00:03:51,328 --> 00:03:58,388
+Mas é trabalho de você sentar a bunda e dar input ali pra ferramenta, pro framework, o que
+quer que seja, pra ter output disso.
+
+53
+00:03:58,388 --> 00:04:02,348
+esse trabalho empírico manual extra...
+
+54
+00:04:02,348 --> 00:04:11,648
+Extra no sentido de completamente barra fora do desenvolvimento, não é fora porque a gente
+sabe que deveria estar embutido e essa é ideia aqui, mas pouca gente faz porque ele está
+
+55
+00:04:11,648 --> 00:04:18,228
+ali fora e demanda tempo, de fato, e a galera não está disposta a pagar esse preço de
+tempo.
+
+56
+00:04:18,248 --> 00:04:25,328
+Essa é minha opinião, porque a galera não faz Street Modeling, porque o que não falta é
+framework, não falta é ferramenta, que não falta é informação, inclusive tem uma que eu
+
+57
+00:04:25,328 --> 00:04:29,508
+descobri esse disco que eu vou passar daqui a pouco, a pergunta é essa, o que você acha,
+Bimber?
+
+58
+00:04:29,508 --> 00:04:32,076
+Você acha que por ser trabalho manual...
+
+59
+00:04:32,076 --> 00:04:36,964
+a galera não faz, evita, ou é falta de conhecimento, como que você enxerga isso aí?
+
+60
+00:04:38,062 --> 00:04:49,322
+O que eu acho, que a galera não faz modelagem de ameaças, é porque eles têm pouca
+confiança sobre o resultado que eles mesmos vão gerar com esse trabalho, se eles fizerem
+
+61
+00:04:49,322 --> 00:04:50,582
+por eles mesmos.
+
+62
+00:04:50,582 --> 00:05:01,282
+Então tipo assim, por exemplo, pega desenvolvedor e coloca ele pra fazer uma modelagem de
+ameaças, a primeira coisa que ele vai olhar é, cara, será que eu vi tudo?
+
+63
+00:05:02,042 --> 00:05:04,302
+Será que eu sei fazer isso aqui?
+
+64
+00:05:04,582 --> 00:05:07,630
+Será que eu tenho conhecimento sobre as...
+
+65
+00:05:07,630 --> 00:05:12,170
+Porque a modidade de ameaça é você pegar ameaças e modelar ela lendo software, né?
+
+66
+00:05:12,170 --> 00:05:14,830
+Eu conheço as ameaças?
+
+67
+00:05:14,830 --> 00:05:16,470
+Muitas vezes eles não conhecem.
+
+68
+00:05:16,470 --> 00:05:22,890
+Então, eles olham assim, cara, eu vou fazer, mas eu posso não ser 30 % eficiente.
+
+69
+00:05:22,910 --> 00:05:24,590
+20 % eficiente.
+
+70
+00:05:24,590 --> 00:05:28,830
+Aí a questão é, se eu vou fazer algo que eu não sei que eu sou eficiente, por que eu vou
+fazê-lo?
+
+71
+00:05:29,550 --> 00:05:31,170
+Por que eu vou fazer isso aqui?
+
+72
+00:05:31,170 --> 00:05:31,676
+Né?
+
+73
+00:05:31,676 --> 00:05:33,162
+ponto, bom ponto.
+
+74
+00:05:33,991 --> 00:05:36,761
+Bom ponto, que eu ainda vou pouquinho mais além.
+
+75
+00:05:36,761 --> 00:05:40,111
+acho que é porque o cara não sabe nem por onde começar.
+
+76
+00:05:40,551 --> 00:05:51,741
+Eu acho que quando o cara começa ali, pô, tem Stride, tem Octave, tem Dread, tem 500
+frameworks ali e o cara não conhece nenhum, fica até mais difícil.
+
+77
+00:05:51,741 --> 00:05:54,451
+Então eu acho que o principal problema é esse.
+
+78
+00:05:54,451 --> 00:05:58,831
+Que a tem ali, sei lá, o Microsoft Threat Modeler Tools que vai usar Stride.
+
+79
+00:05:58,831 --> 00:06:02,599
+A gente tem ferramentas no mercado como Threat Modeler, tem o próprio
+
+80
+00:06:02,611 --> 00:06:06,911
+a própria metodologia, Então o cara fica perdido, fala, por qual que eu começo?
+
+81
+00:06:07,391 --> 00:06:13,163
+Aí tem empresas que até hoje usam bisagem ainda, não sei por que, mas já vi muito isso.
+
+82
+00:06:13,240 --> 00:06:14,600
+de Process Modeler.
+
+83
+00:06:14,600 --> 00:06:16,440
+Caralho, isso na faculdade, velho.
+
+84
+00:06:16,440 --> 00:06:17,230
+Anos atrás.
+
+85
+00:06:17,230 --> 00:06:18,375
+Puta que pariu.
+
+86
+00:06:18,375 --> 00:06:30,395
+acho que isso dificulta, além do cara ser manual, ter toda essa dificuldade, eu acho que
+essa distribuição de frameworks e o cara não saber por onde começar também acaba
+
+87
+00:06:30,395 --> 00:06:32,971
+dificultando fazer uma modelagem de ameaças.
+
+88
+00:06:33,228 --> 00:06:40,268
+Vou fazer comentário cima disso que o Ben Hur comentou, que é o seguinte, cara...
+
+89
+00:06:40,268 --> 00:06:46,528
+Você pôs ponto importante, cara falou assim, eu sou 20%, 30 % eficiente nisso, então pra
+que que eu vou fazer?
+
+90
+00:06:46,528 --> 00:06:47,968
+Eu acho que quando...
+
+91
+00:06:47,968 --> 00:06:49,988
+ótimo colocação.
+
+92
+00:06:49,988 --> 00:06:57,628
+Mas acho que o cara tinha que pensar proativamente, porra, minha mãe dizia muito, melhor
+pingar do que secar.
+
+93
+00:06:57,628 --> 00:07:02,938
+No quanto a segurança, é melhor você ter 20 % ou 30 % de efetividade ou 0 % de
+efetividade?
+
+94
+00:07:03,372 --> 00:07:07,572
+Então vou fazer um pouquinho aqui, vou fazer esse pouquinho.
+
+95
+00:07:07,812 --> 00:07:09,052
+Depois talvez eu vou aprender mais.
+
+96
+00:07:09,052 --> 00:07:12,432
+O Marcos trouxe outro ponto também que eu acho que é uma falha.
+
+97
+00:07:12,732 --> 00:07:19,572
+Eu não vou dizer nossa, porque a gente tenta educar e passa bastante sobre isso, mas uma
+falha pouco do pessoal de proativamente.
+
+98
+00:07:19,572 --> 00:07:25,272
+Então pera aí, eu entender isso, deixa eu pegar framework aqui, deixa eu fazer Hello World
+aqui numa ferramenta.
+
+99
+00:07:25,272 --> 00:07:33,216
+Tem o Asp.ThreatDragon também que implementa três frameworks por trás dele, acho que o
+Pasta, o Lindoon e tem outro lá que eles implementam que eu esqueci agora.
+
+100
+00:07:33,452 --> 00:07:35,992
+Mas assim, acho que falta pouquinho dessa proatividade pra...
+
+101
+00:07:35,992 --> 00:07:39,932
+Deixa eu ver o que é isso, Então vejo todo mundo falando, mas eu não sei, eu...
+
+102
+00:07:39,932 --> 00:07:47,512
+Acho que como tudo, tem coisa que a gente simplesmente para e fala, não, deixa eu entender
+pouco melhor isso aqui, deixa eu ir pra cima, porque isso vai me beneficiar e beneficiar
+
+103
+00:07:47,512 --> 00:07:49,272
+empresa de uma maneira geral, né?
+
+104
+00:07:49,492 --> 00:07:53,652
+Mas enfim, algum comentário é, se vocês querem fazer, se não, eu já vou suitar aqui pro
+próximo top.
+
+105
+00:07:53,652 --> 00:07:54,902
+Manda aí, Bayer, manda aí.
+
+106
+00:07:54,902 --> 00:08:04,662
+tem que eu acho que é importante para levar consideração, que acho que o Mario comentou,
+que é dos, realmente, de muitas dinâmicas que já realizei com os times de desenvolvimento
+
+107
+00:08:04,662 --> 00:08:09,322
+sobre track modeling, acho que esse é o principal ponto, que é o cara, por onde que eu
+começo, né?
+
+108
+00:08:09,862 --> 00:08:18,002
+E várias dinâmicas, pode ver, quer ver, ó, pega vários devs, porque eu fiz isso uma série
+de vezes e é realmente verdade, pega vários devs e coloca numa sala e tipo assim, ó
+
+109
+00:08:18,002 --> 00:08:20,862
+pessoal, vamos aprender a fazer track modeling, né?
+
+110
+00:08:20,862 --> 00:08:22,002
+Vamos lá.
+
+111
+00:08:22,990 --> 00:08:24,970
+ninguém sabe por onde começar.
+
+112
+00:08:25,010 --> 00:08:36,010
+E aí vamos entender os níveis dos threat modeling, Porque uma coisa também que é bem comum
+é dentro de do processo de hiring dos caras de APSEC ter exercício de threat modeling.
+
+113
+00:08:36,010 --> 00:08:38,370
+Pra mim esse é o bagulho mais trique que existe, né?
+
+114
+00:08:38,370 --> 00:08:41,850
+Porque olha só, vamos lá, tu tá fazendo threat modeling do quê?
+
+115
+00:08:41,850 --> 00:08:44,810
+De uma ameaça de fluxo de negócio?
+
+116
+00:08:44,830 --> 00:08:48,622
+Porque daí tu vai olhar o fluxo do negócio, o produto sendo desenvolvido e dizer olha...
+
+117
+00:08:48,622 --> 00:08:53,942
+Se fizer uma compra aqui, não cancelar negócio lá, o cara vai ter reembolso indevido.
+
+118
+00:08:53,942 --> 00:08:58,302
+Você pode fazer uma modelagem ameaça do negócio, da funcionalidade do negócio.
+
+119
+00:08:58,342 --> 00:09:02,962
+Depois disso, você vai começar descendo camadas no mundo.
+
+120
+00:09:03,062 --> 00:09:06,802
+Poxa, viu o desenho do negócio, do produto, é uma modelagem ameaça.
+
+121
+00:09:06,802 --> 00:09:11,002
+Cara, vamos partir para a parte técnica do código.
+
+122
+00:09:11,002 --> 00:09:13,562
+Cara, qual o framework que vai usar?
+
+123
+00:09:13,562 --> 00:09:15,470
+Como é que está as comunicações?
+
+124
+00:09:15,470 --> 00:09:20,590
+Tá HTTPS, como é tá conexão com a base de dados, isso aqui tá encriptado, como é que tá o
+acesso a base de dados?
+
+125
+00:09:20,590 --> 00:09:25,450
+Entende que vai começando a baixar o nível, é como se fosse dando zoom-in.
+
+126
+00:09:25,450 --> 00:09:28,770
+Tem que negócio, tu olha e depois tu vai dar zoom-in na tecnologia.
+
+127
+00:09:28,770 --> 00:09:32,010
+Depois vai dar zoom-in na infraestrutura, vou dar exemplo, tá?
+
+128
+00:09:32,010 --> 00:09:34,170
+Uma coisa que...
+
+129
+00:09:34,170 --> 00:09:37,710
+Aí é onde entra a questão da efetividade que eu tava comentando, né?
+
+130
+00:09:37,710 --> 00:09:43,084
+Porque uma coisa que realmente concordo contigo, Décaso, que é melhor 20 % do que nada.
+
+131
+00:09:43,084 --> 00:09:44,942
+nesse contexto de segurança.
+
+132
+00:09:44,942 --> 00:09:50,542
+Exato, aí eu vejo que o deve precisa entender isso que você comentou.
+
+133
+00:09:50,542 --> 00:09:53,182
+Cara, é melhor 20 % do que nada.
+
+134
+00:09:53,182 --> 00:09:56,382
+E muitos desistem por não ter 100%, né?
+
+135
+00:09:56,382 --> 00:09:57,372
+Acho que é essa a mentalidade.
+
+136
+00:09:57,372 --> 00:09:58,822
+Vou dar exemplo.
+
+137
+00:09:59,082 --> 00:10:04,922
+Digamos que está lá no threat modeling e está olhando todo o desenho da solução e vê
+bucket S3.
+
+138
+00:10:05,102 --> 00:10:08,642
+Que armazena informação confidencial, sensível, whatever lá.
+
+139
+00:10:10,318 --> 00:10:15,638
+O cara fazer Threat Modem no Bucket S3 e dizer assim ó, qual que é a permissão desse
+Bucket?
+
+140
+00:10:15,638 --> 00:10:18,658
+Ele é uma permissão de leitura ou de escritura?
+
+141
+00:10:18,658 --> 00:10:22,078
+E digamos que o cara faça o Threat Modem na permissão do Bucket, beleza?
+
+142
+00:10:22,898 --> 00:10:25,818
+O cara que parou o Threat Modem ele não sabe o que ele tá fazendo.
+
+143
+00:10:25,818 --> 00:10:26,997
+Por quê?
+
+144
+00:10:27,338 --> 00:10:29,098
+É permissão de leitura ou de escritura?
+
+145
+00:10:29,098 --> 00:10:29,898
+Beleza.
+
+146
+00:10:29,898 --> 00:10:35,718
+Quem é que tem permissão ou autorização pra mudar as políticas de IAM relacionado àquele
+Bucket?
+
+147
+00:10:35,982 --> 00:10:41,402
+Tem uma SCP na AWS pra definir as políticas ou tal de buckets com tags X?
+
+148
+00:10:41,402 --> 00:10:43,602
+E quem pode adicionar tag, entendeu?
+
+149
+00:10:43,602 --> 00:10:45,022
+Tipo, quando tu vai no terceiro...
+
+150
+00:10:45,022 --> 00:10:46,702
+Cara, tu vai muito deep.
+
+151
+00:10:46,702 --> 00:10:52,922
+Porque só botar bucket como read-only não significa que alguém não tem a poder pra mudar
+de read-only pra write.
+
+152
+00:10:52,922 --> 00:10:53,722
+Saca?
+
+153
+00:10:53,722 --> 00:10:56,162
+Então tu acaba expandindo isso.
+
+154
+00:10:56,162 --> 00:10:58,282
+E aí o cara olha assim...
+
+155
+00:10:58,282 --> 00:11:02,606
+Velho, se um desenvolvedor pega cara de AppSec bom...
+
+156
+00:11:02,606 --> 00:11:07,546
+E cara faz o Threat Modeling junto com ele, aprofundando nesse nível, tá pavoro
+
+157
+00:11:07,660 --> 00:11:09,020
+Exato.
+
+158
+00:11:09,920 --> 00:11:14,280
+Inclusive, comentou um ponto aí, né?
+
+159
+00:11:14,280 --> 00:11:16,220
+Esse é o DevSecOps de fato.
+
+160
+00:11:16,220 --> 00:11:18,760
+Cara, ter bucket que aplicação consome.
+
+161
+00:11:18,760 --> 00:11:20,980
+É leitura, beleza, lindo, maravilhoso, acabou.
+
+162
+00:11:20,980 --> 00:11:21,200
+Não.
+
+163
+00:11:21,200 --> 00:11:26,740
+Quem tem permissão lá no IAM pra mexer nessa permissão do bucket.
+
+164
+00:11:26,740 --> 00:11:28,920
+Quem pode ir lá e apagar a parada.
+
+165
+00:11:28,920 --> 00:11:32,360
+Quem audita isso depois, que alguém foi lá e alterou a permissão.
+
+166
+00:11:32,360 --> 00:11:36,140
+Isso é Supply Chain e DevSecOps, que se conecta tudo junto.
+
+167
+00:11:36,140 --> 00:11:37,420
+Então vai negócio...
+
+168
+00:11:37,420 --> 00:11:39,100
+é muito mais profundo.
+
+169
+00:11:40,120 --> 00:11:41,040
+E, cara, perfeito.
+
+170
+00:11:41,040 --> 00:11:42,260
+que essa...
+
+171
+00:11:42,260 --> 00:11:44,140
+Dei uma boa introduzida, né?
+
+172
+00:11:44,140 --> 00:11:50,560
+Por que a galera não está fazendo modelagem de ameaça, pouco de falta de conhecimento,
+pouco de proatividade, pouco do que você falou também, né, Benhor?
+
+173
+00:11:50,560 --> 00:11:54,150
+E eu queria trazer agora, então, para o nosso programa de Epsec.
+
+174
+00:11:54,150 --> 00:12:01,980
+Então, a gente entende que episódio 1 e 2 a gente discutiu, então agora seria o momento de
+falar assim, ó, legal, vamos começar a fazer modelagem de ameaça.
+
+175
+00:12:01,980 --> 00:12:04,492
+Então gente vai definir processo para isso.
+
+176
+00:12:04,492 --> 00:12:10,752
+Qual que é o framework, qual que é ferramenta, a vai chegar talvez mais pro final do
+episódio, mas eu queria dar passo atrás agora a gente falar sobre o processo.
+
+177
+00:12:10,752 --> 00:12:12,992
+Como é que a gente traz isso pro time de desenvolvimento?
+
+178
+00:12:12,992 --> 00:12:20,032
+Aquela história, aquele contexto que a gente deu da empresa, Já existiu lá o hospital,
+informação sensível, já tem monte de coisa produção.
+
+179
+00:12:20,032 --> 00:12:23,372
+Vamos introduzir processo de modelagem de ameaças agora.
+
+180
+00:12:23,452 --> 00:12:25,272
+Qual é o primeiro passo?
+
+181
+00:12:25,272 --> 00:12:26,202
+O que que a gente faz?
+
+182
+00:12:26,202 --> 00:12:31,908
+Quem está ouvindo a gente vai sair desse episódio hoje e falar, legal, eu sei que eu
+começo, posso começar um...
+
+183
+00:12:32,076 --> 00:12:34,706
+um processo de modelagem ameaça que o meu time de desenvolvimento.
+
+184
+00:12:34,706 --> 00:12:35,456
+que vocês...
+
+185
+00:12:35,456 --> 00:12:36,726
+Vou começar pelo Marcos agora.
+
+186
+00:12:36,726 --> 00:12:38,606
+O que você jogaria pro time, Marcos?
+
+187
+00:12:38,606 --> 00:12:39,507
+O que você acha?
+
+188
+00:12:39,507 --> 00:12:50,687
+Acho que primeiro identificar as aplicações mais críticas, que começa por aí e através
+delas ali você vai fazendo igual o Benhor falou, Você começa ali pelo risco de negócio, o
+
+189
+00:12:50,687 --> 00:12:53,827
+que você vai ter nessa aplicação crítica e vai descer no nível.
+
+190
+00:12:53,827 --> 00:13:04,127
+Mas acho que o primeiro passo mesmo é fazer essa identificação e verificar ali qual o
+nível de proteção que você tem de acordo com a modelagem.
+
+191
+00:13:05,216 --> 00:13:16,076
+Inclusive, episódio 1, se eu não me engano, a gente fez um assessment, gente falou ali de
+um catálogo, então dá pra já alimentar esse escopo de modelagem miércia com esse catálogo
+
+192
+00:13:16,076 --> 00:13:17,763
+de aplicações críticas que gente fez.
+
+193
+00:13:17,763 --> 00:13:21,899
+qual ferramenta você vai fazer na mão, acho que também é bem importante.
+
+194
+00:13:21,899 --> 00:13:27,150
+Boa, boa, porque no dia a gente já parava pensar, legal, então isso, definir o meu escopo
+de modelagem ameaça, tá bom.
+
+195
+00:13:27,150 --> 00:13:36,940
+Então aqui no nosso hospital tem aplicação, tem dez aplicações, né, linhas gerais, duas,
+três delas são críticas, então é elas a gente vai introduzir processo de modelagem ameaça.
+
+196
+00:13:36,940 --> 00:13:42,540
+Benhur, definir o meu escopo, eu sei que agora tenho três aplicações que vão fazer parte
+desse processo.
+
+197
+00:13:42,540 --> 00:13:43,330
+Qual é o próximo passo?
+
+198
+00:13:43,330 --> 00:13:44,730
+O que você acha que a gente tem que fazer?
+
+199
+00:13:45,081 --> 00:13:54,362
+Perfeito, agora só pra gente dar um passinho ali antes pra definir estratégias, Nesse caso
+a gente tá escolhendo fazer modelagem de ameaças em aplicações, né?
+
+200
+00:13:54,362 --> 00:14:00,352
+Não em produtos, não funcionalidades de negócio que podem envolver várias aplicações, né?
+
+201
+00:14:00,352 --> 00:14:02,242
+A gente vai pegar uma aplicação.
+
+202
+00:14:02,242 --> 00:14:08,442
+Bem, se gente vai pegar essa aplicação, a parte mais fácil pra mim os que queens, beleza?
+
+203
+00:14:08,682 --> 00:14:11,534
+Vamos pra outra parte de, peguei aplicação crítica.
+
+204
+00:14:11,534 --> 00:14:13,654
+Eu já sei porque ela é crítica.
+
+205
+00:14:13,654 --> 00:14:16,094
+Eu já sei para que serve a aplicação.
+
+206
+00:14:16,094 --> 00:14:18,984
+Eu já sei qual o time que trabalha naquela aplicação.
+
+207
+00:14:18,984 --> 00:14:21,234
+Se você não sabe, olha o histórico de commits.
+
+208
+00:14:21,234 --> 00:14:24,806
+Tem uma dica que eu sempre dou para todo mundo que é...
+
+209
+00:14:25,028 --> 00:14:34,231
+entrevista, a entrevistou a galera antes, então a gente já sabe quem é quem, episódio 2,
+ouve esse episódio que é o ouro, esse episódio é o ouro.
+
+210
+00:14:34,231 --> 00:14:37,448
+o GitHub, o desenvolvedor contribuinte está lá também.
+
+211
+00:14:37,448 --> 00:14:38,538
+tá tudo aí.
+
+212
+00:14:38,538 --> 00:14:40,338
+tudo lá né?
+
+213
+00:14:40,338 --> 00:14:42,438
+Pull request, merge request, tudo do lá né?
+
+214
+00:14:42,438 --> 00:14:56,358
+Então assim, é aquele esquema, uma dica que eu sempre entrego pros profissionais é, se
+você for pesquisar uma informação, primeiro de tudo faça o exercício de, e se ninguém na
+
+215
+00:14:56,358 --> 00:14:58,738
+face da terra pudesse me dar essa informação?
+
+216
+00:14:58,958 --> 00:15:01,040
+Como que eu conseguiria ela?
+
+217
+00:15:01,614 --> 00:15:02,434
+Entende?
+
+218
+00:15:02,434 --> 00:15:09,274
+Vai atrás, abre o Google Drive, vê se não tem documento vazado, vai no repositório, lê as
+bagulhas, sabe?
+
+219
+00:15:09,354 --> 00:15:16,034
+Tipo, só pergunta pra alguém última instância que tu vai aprender muito sobre a empresa e
+as coisas que tem com isso, né?
+
+220
+00:15:16,054 --> 00:15:23,534
+Então assim, já sabemos, já entendemos todo o contexto da aplicação, já temos lá o que é,
+por que e quem é participa da aplicação, beleza?
+
+221
+00:15:23,634 --> 00:15:24,614
+Que que win?
+
+222
+00:15:24,614 --> 00:15:29,454
+Cara, pega o Security Baselines e aplica cima da aplicação.
+
+223
+00:15:29,454 --> 00:15:30,158
+Entende?
+
+224
+00:15:30,158 --> 00:15:34,738
+Pô, nossa, o security design tá dizendo lá que tudo tem que ter HTTPS, né?
+
+225
+00:15:34,738 --> 00:15:35,308
+Beleza.
+
+226
+00:15:35,308 --> 00:15:38,258
+Cara, essa aplicação aqui tá com HTTPS?
+
+227
+00:15:38,418 --> 00:15:50,398
+Se você encontrar uma forma, determinado momento, de validar automaticamente, porque tem
+outro nível do security default do baseline, que é eu ser capaz de identificar de forma
+
+228
+00:15:50,398 --> 00:15:53,318
+automática a falha dele.
+
+229
+00:15:53,358 --> 00:15:58,218
+Por exemplo, tem algum lugar onde tem o log das requisições e alguma coisa passa a HTTPS
+por lá?
+
+230
+00:15:58,218 --> 00:15:58,830
+Entendeu?
+
+231
+00:15:58,830 --> 00:16:02,250
+Mas isso aí é outro assunto, O que a gente tem de forma automática.
+
+232
+00:16:02,250 --> 00:16:13,010
+Vamos lá, pega o Security Baseline que tu tem e olha assim, cara, beleza, aqui fala que
+toda API você tem mecanismo de autenticação e autorização implementado para validar quem
+
+233
+00:16:13,010 --> 00:16:15,690
+pode ou não pode entrar e o que pode fazer não pode ali dentro.
+
+234
+00:16:15,690 --> 00:16:17,590
+Beleza, você tem esse baseline?
+
+235
+00:16:17,590 --> 00:16:21,324
+Ok, pessoal, nessa API como que a gente tem resolvido isso?
+
+236
+00:16:21,324 --> 00:16:33,104
+pra você que tá dúvida se você tem baseline ou não, no episódio 2 a gente fala como montar
+esse baseline, definir esses, esses, literalmente baseline né, definir esse mínimo ali
+
+237
+00:16:33,104 --> 00:16:38,058
+aceitável, o que tem que ter pra cada aplicação, tal, tal, tal, então só fazendo
+parênteses aí, baby, pode continuar.
+
+238
+00:16:38,058 --> 00:16:42,148
+Por exemplo assim ó cara segredos essa aplicação né?
+
+239
+00:16:42,148 --> 00:16:46,638
+Porque essa aplicação tem que ser segredos e como que ela está usando segredos né?
+
+240
+00:16:46,638 --> 00:16:48,478
+E aí a gente começa a ter as boas práticas.
+
+241
+00:16:48,478 --> 00:16:51,058
+Por que que o Security Baselines ele é tão importante?
+
+242
+00:16:51,058 --> 00:16:57,338
+Porque percebe você vai estar numa reunião com desenvolvedores conversando com eles
+fazendo perguntas importantes.
+
+243
+00:16:57,338 --> 00:16:58,938
+Saiba fazer...
+
+244
+00:16:58,938 --> 00:17:01,298
+confia e revisa.
+
+245
+00:17:01,298 --> 00:17:03,718
+Os cara deram a resposta mas faz check.
+
+246
+00:17:03,718 --> 00:17:06,398
+Faz check como é que tá o bagulho tá?
+
+247
+00:17:07,694 --> 00:17:13,314
+Então assim, porque no momento que você começar a olhar a cara, isso aqui como é que tá?
+
+248
+00:17:13,314 --> 00:17:15,174
+Como é que se soluciona?
+
+249
+00:17:15,654 --> 00:17:21,014
+Nené determinado momento os devs, você vai estar conversando com eles.
+
+250
+00:17:21,114 --> 00:17:26,234
+Talvez alguém não tenha participado da reunião, talvez alguém tenha esquecido de alguma
+coisa.
+
+251
+00:17:26,234 --> 00:17:30,654
+Então a primeira vez você responde, a segunda você tem que enviar link.
+
+252
+00:17:31,534 --> 00:17:35,566
+Então tenha o baseline de uma forma que você consiga também com...
+
+253
+00:17:35,566 --> 00:17:40,546
+partilhar com os desenvolvedores dentro disso.
+
+254
+00:17:40,546 --> 00:17:50,666
+a questão é, como que você registra as ações pendentes desse threat modeling?
+
+255
+00:17:51,525 --> 00:18:00,942
+Registrar de uma forma que, cara, só, vi aqui que vocês estão usando segredos em variáveis
+de ambiente, a gente já mudou isso, a gente já tá...
+
+256
+00:18:00,942 --> 00:18:09,542
+com arquivos em mount, dessa forma ou por Kubernetes SQL, não sei o que, Então isso aqui
+tem que mudar.
+
+257
+00:18:10,022 --> 00:18:10,472
+Beleza?
+
+258
+00:18:10,472 --> 00:18:15,142
+Perceba que é uma ação, a gente está gerando uma ação para o time, uma tarefa para o time.
+
+259
+00:18:15,142 --> 00:18:18,742
+E essa tarefa precisa ter descrita e traqueada.
+
+260
+00:18:19,582 --> 00:18:23,564
+Aí tem que também estar bem definido que vai ser feito isso.
+
+261
+00:18:23,564 --> 00:18:26,404
+Bom, acho que seria esse próximo momento agora.
+
+262
+00:18:26,404 --> 00:18:31,064
+Mas antes de chegar nesse próximo momento, eu queria adicionar minha colaboração também
+nesse ponto, que é o seguinte.
+
+263
+00:18:31,064 --> 00:18:32,044
+Você falou bem, né?
+
+264
+00:18:32,044 --> 00:18:35,564
+A gente vai olhar para as ameaças olhando para o nosso baseline.
+
+265
+00:18:35,564 --> 00:18:39,004
+Legal, ali gente vai ter um catálogo de ameaças.
+
+266
+00:18:39,004 --> 00:18:42,384
+Mas a gente também vai ter ameaças que não estão lá.
+
+267
+00:18:42,384 --> 00:18:44,164
+Coisas, por exemplo.
+
+268
+00:18:44,424 --> 00:18:49,594
+A vai definir, vamos fazer um processo de modelagem de ameaça e algum momento vai ser
+definido qual o framework.
+
+269
+00:18:50,171 --> 00:18:54,172
+Acho que não faz nem sentido a definir aqui e não vamos usar isso ou aquele.
+
+270
+00:18:54,172 --> 00:18:56,832
+Como exemplo, vamos fazer Stride, beleza.
+
+271
+00:18:56,832 --> 00:19:03,732
+Mas para esse processo vai depender pouco do time, os testes, o que gosta mais, o que se
+aplica mais.
+
+272
+00:19:03,732 --> 00:19:08,112
+Porque o framework, no fim das contas, ele é só um método de você aplicar aquilo.
+
+273
+00:19:08,112 --> 00:19:10,182
+Mas a ideia é fazer uma modelagem ameaça.
+
+274
+00:19:10,182 --> 00:19:13,192
+Qual o framework que você vai usar, acho que acaba sendo independente.
+
+275
+00:19:13,192 --> 00:19:17,112
+Já vi lugar usar dois ao mesmo tempo, porque cobre duas coisas diferentes, enfim.
+
+276
+00:19:17,112 --> 00:19:19,244
+Mas você vai para o Stride da vida.
+
+277
+00:19:19,244 --> 00:19:27,924
+O nosso baseline de requisitos de segurança que gente falou pode não ter coberto lá coisas
+com temperem, por exemplo, elevation of privilege, coisas do tipo.
+
+278
+00:19:27,924 --> 00:19:31,944
+Então você vai pegar framework que vai te complementar algumas coisas.
+
+279
+00:19:31,944 --> 00:19:33,784
+E olha só que interessante isso.
+
+280
+00:19:33,784 --> 00:19:43,084
+Para acabar com o argumento que você falou, Benhor, de 20 30 % de esforço, o próprio
+framework de modelagem e ameaça não cobre 100 % das ameaças.
+
+281
+00:19:43,084 --> 00:19:44,494
+É um pedaço.
+
+282
+00:19:44,494 --> 00:19:48,140
+O stride são algumas categorias de ataques, não tem tudo ali.
+
+283
+00:19:48,140 --> 00:19:49,310
+Nem tem como ter tudo.
+
+284
+00:19:49,310 --> 00:19:52,799
+Você vai passar vida fazendo modelagem, a ameaça nunca acaba, não desenvolve nada.
+
+285
+00:19:52,900 --> 00:19:55,180
+As ameaças são as mais variáveis possíveis.
+
+286
+00:19:55,360 --> 00:20:03,980
+Então é pegar framework, na minha visão, junto, somado a esse baseline definido, episódio
+2, ouça lá, e aí você...
+
+287
+00:20:03,980 --> 00:20:04,630
+Beleza.
+
+288
+00:20:04,630 --> 00:20:05,690
+Então é isso aqui que eu vou falar.
+
+289
+00:20:05,690 --> 00:20:15,180
+Para esse sistema, ou para essa funcionalidade, ou para esse requisito funcional, ou para
+essa parte aqui da aplicação, vamos pensar nessa, nessa, nessa ameaça.
+
+290
+00:20:15,180 --> 00:20:16,172
+E aí...
+
+291
+00:20:16,172 --> 00:20:21,032
+Chega nesse ponto que eu falei agora e vamos entrar na próxima etapa, que é como eu
+registro isso?
+
+292
+00:20:21,032 --> 00:20:24,752
+Acho que não tem muito como a gente fugir de ticketing.
+
+293
+00:20:24,752 --> 00:20:31,092
+A gente tinha falado no começo, se não me engano, no começo, produção, se a produção
+conseguir puxar aí, a gente tinha falado que o uso gira.
+
+294
+00:20:31,292 --> 00:20:34,172
+Não sei se a gente falou ou não, mas o uso gira.
+
+295
+00:20:34,472 --> 00:20:35,232
+Boa.
+
+296
+00:20:35,232 --> 00:20:36,100
+Boa.
+
+297
+00:20:38,175 --> 00:20:42,375
+também a gente usa C sharp para back-end e react para front-end.
+
+298
+00:20:42,375 --> 00:20:43,476
+Só resumo.
+
+299
+00:20:43,476 --> 00:20:44,476
+boa.
+
+300
+00:20:44,656 --> 00:20:48,696
+vai ser registrado ticket no Gira, como uma história.
+
+301
+00:20:49,136 --> 00:20:51,356
+Aí vale uma pergunta.
+
+302
+00:20:51,356 --> 00:20:52,916
+Isso é bug ou não?
+
+303
+00:20:52,916 --> 00:20:58,856
+A registra como bug, porque tem tipo disso, porque vai ter uma priorização, tem toda uma
+questão definida nesse processo agora.
+
+304
+00:20:58,856 --> 00:21:00,636
+A gente está exatamente fazendo isso.
+
+305
+00:21:00,636 --> 00:21:06,106
+Se eu registro bug lá, ou uma vulnerabilidade, vamos falar assim, talvez você possa cair
+num processo de SLA.
+
+306
+00:21:06,106 --> 00:21:09,936
+Mas a gente não chegou vulnerabilidade management, então gente não tem isso definido.
+
+307
+00:21:09,936 --> 00:21:11,020
+Mas vamos imaginar que...
+
+308
+00:21:11,020 --> 00:21:17,470
+eu criei ticket lá, Jira, como uma história, uma coisa assim, um app, alguma coisa que vai
+ser analisada.
+
+309
+00:21:17,470 --> 00:21:20,530
+Ó, legal, então eu tenho que implementar aqui, o Beaver falou muito bem de segredos.
+
+310
+00:21:20,530 --> 00:21:22,680
+Olha, eu tenho o Hard Code de Credentials aqui.
+
+311
+00:21:22,680 --> 00:21:27,600
+Então, tem Refactor no código pra tirar isso e implementar lá num cofre de senha, coisa do
+tipo.
+
+312
+00:21:27,600 --> 00:21:31,300
+Mas não tenho o cofre ainda, então virou uma task já gigante, né?
+
+313
+00:21:31,300 --> 00:21:35,340
+Só tirar a do código e uma task mínima, mas onde eu boto ela agora, né?
+
+314
+00:21:35,340 --> 00:21:36,960
+Então, vira ali trabalho de...
+
+315
+00:21:36,960 --> 00:21:38,276
+sprint pra fazer isso.
+
+316
+00:21:38,758 --> 00:21:40,858
+baseline de Secretory Requirements.
+
+317
+00:21:40,858 --> 00:21:44,898
+Não pode criar nos times de desenvolvimento, sair apontando programas, não tem solução.
+
+318
+00:21:45,080 --> 00:21:45,820
+exato.
+
+319
+00:21:45,820 --> 00:21:49,520
+E nesse exemplo específico é uma solução demorada, do dia pra noite.
+
+320
+00:21:49,520 --> 00:21:54,900
+Tira a senha do código, cria lá cofre, tem todo trabalho de arquitetura, inclusive,
+envolvido.
+
+321
+00:21:54,900 --> 00:21:56,540
+Mas beleza, então acho que vai virar um...
+
+322
+00:21:56,540 --> 00:21:59,060
+Sentou pra discutir isso, vai virar tiquete no gira.
+
+323
+00:21:59,060 --> 00:22:01,040
+Mas acho que tem passo atrás.
+
+324
+00:22:01,040 --> 00:22:03,040
+Quando a gente senta pra falar com essa galera?
+
+325
+00:22:03,040 --> 00:22:05,140
+Que momento a gente senta?
+
+326
+00:22:05,140 --> 00:22:09,388
+Porque a gente olha, já tem aplicação, já tem desenvolvimento, já tá produção.
+
+327
+00:22:09,388 --> 00:22:21,028
+é uma vez por semana, na Sprint Planning, se o time usa Agile da vida, Scrum da vida, é no
+Product Backlog definido lá atrás, quando você está definindo tudo, nesse caso eu acho que
+
+328
+00:22:21,028 --> 00:22:24,048
+não, porque você já tem uma aplicação funcional, é só manutenção.
+
+329
+00:22:25,188 --> 00:22:29,648
+o meu fio de colaboração, e aí eu queria o comentário do Marcos na sequência, beleza.
+
+330
+00:22:29,648 --> 00:22:32,492
+Time, ó, partir de agora, para essas aplicações.
+
+331
+00:22:32,492 --> 00:22:36,312
+a cada duas semanas vocês têm uma sprint review e uma sprint planning, né?
+
+332
+00:22:36,312 --> 00:22:37,492
+Pra planejar a próxima sprint.
+
+333
+00:22:37,492 --> 00:22:44,832
+Então nesse momento eu estarei lá com vocês, eu, segurança, estarei lá com vocês junto com
+o time de desenvolvimento, porque a gente vai fazer modelagem e ameaça.
+
+334
+00:22:44,832 --> 00:22:51,002
+Faz parte do processo agora que o time de segurança, ou alguém de segurança, Gepsec,
+estará envolvido nessas discussões.
+
+335
+00:22:51,002 --> 00:22:51,442
+Por quê?
+
+336
+00:22:51,442 --> 00:22:55,672
+Porque é na sprint planning que a gente vai definir o que será desenvolvido próximo.
+
+337
+00:22:55,672 --> 00:22:58,352
+E aí você chega num nível granular...
+
+338
+00:22:58,352 --> 00:22:59,660
+Olha, então vamos na próxima...
+
+339
+00:22:59,660 --> 00:23:08,900
+em próximo Sprint, a vai desenvolver uma nova tela de login, vamos desenvolver novo
+log-off, vamos desenvolver uma nova tela de cadastro, tem uns bugs que precisa corrigir,
+
+340
+00:23:08,900 --> 00:23:13,600
+então nos lugares que esses bugs estão, vai fazer a revisão de modelagem de ameaças,
+exemplo.
+
+341
+00:23:13,600 --> 00:23:23,240
+E veja, isso não é de fato já correção, é entender as ameaças que vão gerar tickets, que o
+Bayer trouxe muito bem agora, que vão ser priorizados algum momento.
+
+342
+00:23:23,240 --> 00:23:26,040
+Mas acho que esse seria pouquinho do processo.
+
+343
+00:23:26,040 --> 00:23:27,410
+Vocês concordam, Marcos?
+
+344
+00:23:27,410 --> 00:23:28,190
+Bayer, vocês concordam?
+
+345
+00:23:28,190 --> 00:23:29,320
+O que vocês acham?
+
+346
+00:23:29,427 --> 00:23:43,327
+concordo acho que assim acho que a linha de pensamentos está correta só que antes de falar
+com deve eu acho que tem um passo ainda antes disso né que é informar o deve que está
+
+347
+00:23:43,327 --> 00:23:52,067
+acontecendo porque eu devo muitas vezes você vai falar para ele pô tô gerando uma testa
+ali por causa de uma delas de ameaça o cara não vai nem saber o que é então acho que fazer
+
+348
+00:23:52,067 --> 00:23:58,259
+uma comunicação informar o deve que vai começar a chegar novas tasks
+
+349
+00:23:58,259 --> 00:24:08,239
+que ele vai ter ali um trabalho extra vamos dizer assim né para fazer uma correção a mais
+ele vai ter que dedicar um dia da semana ou dois para fazer ali algumas horas para fazer
+
+350
+00:24:08,239 --> 00:24:17,999
+aquelas correções e que são prioritárias aí sim acho que começar de ticket e começar
+também a colocar dentro da sprint dele uma vez que já está informado e não vai pegar de
+
+351
+00:24:17,999 --> 00:24:24,723
+surpresa porque de novo se a pegar o dev de surpresa ele corre ele não vai fazer a gente
+tem que puxar ele para o nosso lado
+
+352
+00:24:24,787 --> 00:24:34,209
+Então, acho que esse step é step que eu faria de comunicar, trocar uma ideia, antes de
+começar a jogar a task no colo do cara.
+
+353
+00:24:34,252 --> 00:24:51,552
+Aí eu vou jogar uma bacaxi, bacaxi descascado, bem, essa comunicação que o Marcos falou,
+eu concordo, essa comunicação que o Marcos falou, concordo, mas ela é pro deve ou pro pio?
+
+354
+00:24:51,552 --> 00:24:57,332
+Porque eu vou fazer parênteses aqui, A gente esquece que deve é só empregado e faz o que é
+mandado, né?
+
+355
+00:24:57,332 --> 00:24:58,604
+Assim como nós.
+
+356
+00:24:58,604 --> 00:25:06,104
+A gente está partindo do princípio, a gente que eu digo geral o mercado, está partindo do
+princípio que o desenvolvedor escolhe, faz, dita as regras, segue a vida.
+
+357
+00:25:06,104 --> 00:25:07,624
+Cara, é empregado, vai fazer...
+
+358
+00:25:07,624 --> 00:25:12,584
+Eu tenho sistema, o usuário vai falar, eu tenho sistema novo, eu quero que faça isso e ele
+vai executar aquilo.
+
+359
+00:25:12,664 --> 00:25:16,204
+Então, essa comunicação eu acho que seria para o P.O.
+
+360
+00:25:16,244 --> 00:25:23,944
+Falar, olha P.O., partir de agora eu, Segurância, estarei nas reuniões porque a gente vai
+definir, você é o produto, então gente vai definir alguns critérios de segurança, no caso
+
+361
+00:25:23,944 --> 00:25:25,292
+para fazer modelagem-amiace.
+
+362
+00:25:25,292 --> 00:25:33,012
+que vão gerar novas histórias que, consequentemente, vai gerar uma nova testa para o
+desenvolvedor no fim do dia, ou daqui a algum tempo.
+
+363
+00:25:33,012 --> 00:25:35,752
+Mas essa comunicação, não sei se seria pro deve de fato.
+
+364
+00:25:35,752 --> 00:25:46,212
+Acho que eu acho que precisa, porque necessariamente ele não vai ter uma ação agora, mas
+quando eu entrar na reunião para fazer modalagem de mess com eles, eu preciso dos inputs
+
+365
+00:25:46,212 --> 00:25:50,132
+deles, porque eles conhecem o sistema muito mais do que eu como segurança.
+
+366
+00:25:51,092 --> 00:25:54,028
+aí o abacaxi pro bem-ureu, você acha que essa comunicação faz sentido?
+
+367
+00:25:54,028 --> 00:25:57,436
+nesse contexto, olha, piorou, vai ser assim agora?
+
+368
+00:25:57,646 --> 00:25:59,766
+se ela tiver alinhada com a estratégia da empresa.
+
+369
+00:25:59,766 --> 00:26:01,986
+assim, né?
+
+370
+00:26:02,606 --> 00:26:03,366
+Exato.
+
+371
+00:26:03,366 --> 00:26:16,866
+Então assim, se lá no topo, segurança agora virou uma prioridade, porque as conversas vão
+mudando, Por exemplo, cara, segurança agora é tão prioritário quanto entregar produto.
+
+372
+00:26:16,866 --> 00:26:18,466
+Essa é a conversa que rola lá cima.
+
+373
+00:26:18,466 --> 00:26:23,614
+A gente sabe que se tiver alguma coisa que pode colocar dinheiro no bolso,
+
+374
+00:26:23,852 --> 00:26:24,714
+é prioritário.
+
+375
+00:26:24,714 --> 00:26:30,654
+coisa de segurança que vai ser a prioridade é o que pode tirar esse mesmo dinheiro do
+outro bros.
+
+376
+00:26:31,074 --> 00:26:33,334
+Então o restante vai ficar backlog.
+
+377
+00:26:34,094 --> 00:26:36,634
+Então assim, aí onde que entra a política é estratégia.
+
+378
+00:26:36,634 --> 00:26:38,934
+Então digamos que lá cima está alinhado.
+
+379
+00:26:39,274 --> 00:26:40,133
+Vamos lá.
+
+380
+00:26:40,133 --> 00:26:43,334
+Segurança é a prioridade junto com o desenvolvimento.
+
+381
+00:26:43,334 --> 00:26:45,694
+Mas se algum desenvolvimento põe dinheiro no bolso, ganha mais prioridade.
+
+382
+00:26:45,694 --> 00:26:49,574
+Então você tem que ter alguma coisa que mata esse dinheiro para ganhar prioridade das suas
+tarefas de segurança.
+
+383
+00:26:49,574 --> 00:26:51,914
+E isso tendo alinhado...
+
+384
+00:26:52,534 --> 00:27:02,914
+automaticamente tem uma rodada anterior de apresentação das ações de segurança para a
+empresa ou para grupo, cluster, ou whatever, onde vai ser comunicado que, olha, nós vamos
+
+385
+00:27:02,914 --> 00:27:15,034
+estar nos comunicando com as equipes para elevar o nível de segurança das nossas
+aplicações, elevar o nível e tal, por causa de riscos X, Y, etc.
+
+386
+00:27:15,034 --> 00:27:15,894
+Ok, beleza?
+
+387
+00:27:15,894 --> 00:27:21,034
+Feito isso, porque a comunicação tem que ser adequada também.
+
+388
+00:27:22,158 --> 00:27:32,858
+Então, por exemplo, audiência adequada, Por exemplo, cara, tem que chegar e falar com os
+pioscos, os managers, senior managers, a conversa não é a mesma que eu tenho pro Dev.
+
+389
+00:27:32,858 --> 00:27:34,838
+A conversa é diferente.
+
+390
+00:27:34,838 --> 00:27:38,358
+O senso de importância é diferente.
+
+391
+00:27:38,358 --> 00:27:51,592
+Então, outra coisa que gera muito medo, muito receio, muito ódio, às vezes, nas equipes de
+desenvolvimento, é eles não terem previsibilidade do quanto de esforço vai ser necessário
+
+392
+00:27:51,592 --> 00:27:52,185
+hum...
+
+393
+00:27:52,185 --> 00:27:55,126
+Resultado das ações de segurança, né?
+
+394
+00:27:55,126 --> 00:28:00,046
+Do tipo assim, cara, vou largar uma testa por deve lá, eu matei a sprint com deve,
+entendeu?
+
+395
+00:28:00,046 --> 00:28:00,906
+Saca?
+
+396
+00:28:00,906 --> 00:28:11,246
+Porque, vamos lá, aí o chefe do chefe daquele cara quer aquele produto pra agora, porque
+já aquele cara prometeu pro outro cara que prometeu pro outro cara que prometeu pro outro
+
+397
+00:28:11,246 --> 00:28:12,526
+cara, entendeu?
+
+398
+00:28:12,986 --> 00:28:20,654
+Então, por isso que também tem que estar alinhado e já atacar bem o crítico, né?
+
+399
+00:28:20,654 --> 00:28:22,584
+Cara, a vamos fazer, focar bem no crítico.
+
+400
+00:28:22,584 --> 00:28:24,534
+E aí o que define crítico?
+
+401
+00:28:24,534 --> 00:28:25,974
+Que é outra questão, né?
+
+402
+00:28:25,974 --> 00:28:39,134
+Cara, gente vai se focar naquilo que é facilmente atacável e que pode deixar a
+infraestrutura inoperante, o que pode causar impacto financeiro por fraude ou por roubo de
+
+403
+00:28:39,134 --> 00:28:42,434
+dinheiro, por falhas nas APIs, que pode levar x coisa.
+
+404
+00:28:42,434 --> 00:28:48,910
+E aí tu coloca os impactos de negócio que vão ser foco e tomar prioridade daquele
+desenvolvimento.
+
+405
+00:28:48,910 --> 00:28:55,850
+E aí é onde entra, mas eu não sei quanto tempo vai levar essas tarefas e tal, aí tu ganha
+jogo.
+
+406
+00:28:55,970 --> 00:29:04,010
+Quanto mais cedo a gente fizer isso na etapa de desenvolvimento, menos impacto tem no
+tempo que vai levar as tarefas para corrigir.
+
+407
+00:29:04,010 --> 00:29:11,650
+Por exemplo, se o código já existir, já estiver produção, cara, talvez tu vai levar uma
+sprint, duas sprints para corrigir o problema.
+
+408
+00:29:11,650 --> 00:29:16,686
+Se isso mesmo for feito lá quando gente estiver desenhando, definindo as user stories,
+
+409
+00:29:16,686 --> 00:29:20,266
+ou estiver planejando o produto, isso talvez leve duas horas.
+
+410
+00:29:20,786 --> 00:29:21,324
+Entendido?
+
+411
+00:29:21,324 --> 00:29:22,327
+Exato.
+
+412
+00:29:22,327 --> 00:29:39,867
+comentário que eu ia fazer para colocar a segurança junto com a parte de história da
+aplicação até o Cassio já falou sobre isso, já gerou até polêmica o Benyur também é porque
+
+413
+00:29:39,867 --> 00:29:42,247
+qual o melhor momento de fazer isso?
+
+414
+00:29:42,247 --> 00:29:50,515
+que acho que também é outro impacto tá pronto, beleza, a gente já tá ali mas se você vai
+começar uma aplicação nova, você vai fazer depois, a aplicação tá pronta
+
+415
+00:29:50,515 --> 00:29:55,235
+Vai fazer antes de começar a aplicação, vai fazer junto com a arquitetura ali.
+
+416
+00:29:55,235 --> 00:29:56,800
+o melhor momento também?
+
+417
+00:29:56,800 --> 00:29:59,280
+dar umas pinceladas aqui agora.
+
+418
+00:29:59,780 --> 00:30:03,080
+Tem dois cenários, nova aplicação existente.
+
+419
+00:30:03,080 --> 00:30:10,600
+gente partiu do princípio que gente está no hospital, que vai fazer transformação digital,
+olhar para a segurança agora, diretoria aprovou, episódio 1.
+
+420
+00:30:10,600 --> 00:30:12,100
+Então vamos começar a fazer.
+
+421
+00:30:12,100 --> 00:30:21,430
+Agora a definiu o processo, Então cada sprint planning a gente vai sentar para fazer essa
+modelagem, definir novos itens que vão ser priorizados de acordo com o X.
+
+422
+00:30:21,430 --> 00:30:25,164
+A vai chegar nisso talvez outro episódio, vão ser priorizados de acordo com o X.
+
+423
+00:30:25,164 --> 00:30:28,584
+Vai fazer agora, fazer sprint, vai demorar duas horas.
+
+424
+00:30:29,364 --> 00:30:31,004
+Vai ser priorizado, vai ser feito.
+
+425
+00:30:31,004 --> 00:30:35,304
+Acho que no nível de processo de modelagem e ameaça, gente chegou num acordo de legal.
+
+426
+00:30:35,304 --> 00:30:41,164
+A gente comunica, define, comunica e senta nas sprintplanes para fazer isso.
+
+427
+00:30:41,164 --> 00:30:43,094
+Ah, não uso sprintplane, uso waterfall.
+
+428
+00:30:43,094 --> 00:30:45,724
+Beleza, faz de requisito, você vai sentar lá com o cara.
+
+429
+00:30:45,724 --> 00:30:47,584
+Beleza, independente disso.
+
+430
+00:30:48,704 --> 00:30:51,264
+E tem segundo momento que a gente comentou.
+
+431
+00:30:51,264 --> 00:30:53,824
+O framework é independente.
+
+432
+00:30:54,156 --> 00:31:01,096
+aplica o A, o B, o C ou todos, o resultado no fim das contas são ameaças e requisitos de
+segurança que vão ser implementados.
+
+433
+00:31:01,496 --> 00:31:04,096
+O que eu gostaria de contribuir aqui?
+
+434
+00:31:04,096 --> 00:31:13,216
+Tem cara chamado Adam Schochstack, Adam Schochstack, eu vou deixar o link aqui no Youtube.
+
+435
+00:31:15,376 --> 00:31:23,116
+Mano, monstro, esse maluco tem post dele só de games de AppSec que já é fantástica.
+
+436
+00:31:23,342 --> 00:31:24,396
+Para os livros.
+
+437
+00:31:24,396 --> 00:31:29,668
+Inclusive, vou soltar spoiler, Pode ser que ele venha gravar com a gente aqui, hein?
+
+438
+00:31:30,911 --> 00:31:32,750
+Não faz a gente sonhar, não, Cassio.
+
+439
+00:31:32,750 --> 00:31:34,550
+faz a gente sonhar.
+
+440
+00:31:34,950 --> 00:31:37,150
+É o sonho de vida.
+
+441
+00:31:37,310 --> 00:31:40,380
+Esse cara é o sonho de vida, cara.
+
+442
+00:31:41,208 --> 00:31:46,168
+Como diz o contratação no futebol, conversas avançadas.
+
+443
+00:31:49,468 --> 00:32:00,076
+Enfim, ele criou um framework chamado Shockstacks for Question Framework for Threat
+Modeling, ou o framework de quatro perguntas para modelagem e ameaça.
+
+444
+00:32:00,076 --> 00:32:01,456
+E quais são as quatro perguntas?
+
+445
+00:32:01,456 --> 00:32:03,995
+resumo, depois o pessoal olha no link, vai estar o link na discussão aqui.
+
+446
+00:32:03,995 --> 00:32:07,016
+Primeira pergunta, você vai fazer modelagem de MA, você fazer a primeira pergunta.
+
+447
+00:32:07,376 --> 00:32:09,336
+No que estamos trabalhando?
+
+448
+00:32:09,336 --> 00:32:11,686
+Nosso time de desenvolvimento, APSEC, nós estamos fazendo o quê?
+
+449
+00:32:11,686 --> 00:32:12,926
+Na tela de login agora.
+
+450
+00:32:12,926 --> 00:32:19,346
+Agora é novo cada usuário, agora é novo sistema de pacientes, de gestão de quartos, por
+exemplo, da UTI, do hospital que a gente está falando.
+
+451
+00:32:19,346 --> 00:32:20,736
+Legal, primeira pergunta.
+
+452
+00:32:20,736 --> 00:32:28,524
+Segunda pergunta, e talvez a mais importante, o que pode dar errado do ponto de vista de
+segurança?
+
+453
+00:32:28,524 --> 00:32:30,904
+o que pode dar errado?
+
+454
+00:32:30,904 --> 00:32:32,604
+Terceira pergunta.
+
+455
+00:32:32,944 --> 00:32:34,804
+Essa na verdade é a mais importante.
+
+456
+00:32:34,884 --> 00:32:37,524
+O que vamos fazer sobre isso?
+
+457
+00:32:37,644 --> 00:32:39,404
+What are we going to do about it?
+
+458
+00:32:39,404 --> 00:32:42,004
+Ou seja, estou fazendo a tela de login.
+
+459
+00:32:42,004 --> 00:32:43,804
+Beleza, esse é o nosso requisito funcional.
+
+460
+00:32:43,804 --> 00:32:47,184
+Para quem não sabe, é a matéria prima do software, o requisito funcional.
+
+461
+00:32:47,184 --> 00:32:50,224
+Então se é software novo, você já consegue modelar só com a lista de requisitos.
+
+462
+00:32:50,224 --> 00:32:52,824
+Mas a partir do princípio, aqui gente tem um software funcional.
+
+463
+00:32:52,824 --> 00:32:54,434
+Legal, então vamos fazer uma tela de login nova.
+
+464
+00:32:54,434 --> 00:32:55,664
+Isso que gente está trabalhando agora.
+
+465
+00:32:55,664 --> 00:32:57,284
+O que pode dar errado?
+
+466
+00:32:58,380 --> 00:33:05,900
+usuários sem, tem que estar criptografado, legal, então se não tiver criptografado, posso
+ter vazamento, um eventual vazamento, os dados expostos, tá bom?
+
+467
+00:33:05,900 --> 00:33:14,480
+Eu posso ter brute force, eu posso ter injection, injection asterisco, porque pode ser
+qualquer injection, três coisas pode dar errado, jogando aqui no ar, tá?
+
+468
+00:33:14,480 --> 00:33:16,980
+O que vamos fazer sobre isso?
+
+469
+00:33:16,980 --> 00:33:18,672
+Requisitos de segurança.
+
+470
+00:33:18,976 --> 00:33:23,396
+Injection, botão af, validos inputs e sei lá.
+
+471
+00:33:23,396 --> 00:33:25,656
+Brute Force, botão captcha.
+
+472
+00:33:25,656 --> 00:33:30,976
+E criptografar os dados lá para evitar a exposição usando o algoritmo x, y, z.
+
+473
+00:33:30,976 --> 00:33:35,176
+Ou seja, três ameaças, estou falando de um exemplo bem prático.
+
+474
+00:33:35,276 --> 00:33:36,456
+O que estamos fazendo?
+
+475
+00:33:36,456 --> 00:33:38,846
+Três coisas que podem dar errado, três mitigações.
+
+476
+00:33:38,846 --> 00:33:42,996
+Não necessariamente é para pode ter uma coisa que dá errado e 500 mitigações e assim por
+diante.
+
+477
+00:33:42,996 --> 00:33:46,216
+E última pergunta, fizemos bom trabalho?
+
+478
+00:33:46,216 --> 00:33:47,756
+Did we do a good job?
+
+479
+00:33:47,756 --> 00:33:50,136
+Ou seja, isso é suficiente.
+
+480
+00:33:50,836 --> 00:33:52,236
+Ponto, matou.
+
+481
+00:33:52,236 --> 00:33:57,116
+Eu ainda tomo a liberdade de reduzir para um framework.
+
+482
+00:33:57,116 --> 00:34:01,136
+É só perguntar o que pode dar errado, qual é a merda que pode acontecer nessa
+funcionalidade aqui.
+
+483
+00:34:01,136 --> 00:34:03,576
+Eu sou atacante, quero cagar com aplicação, quero invadir.
+
+484
+00:34:03,576 --> 00:34:04,816
+O que pode dar errado aqui?
+
+485
+00:34:04,816 --> 00:34:11,296
+Cara, essa pergunta já vai gerar para o desenvolvedor ou para as pessoas envolvidas, cara,
+mas eu posso fazer isso, posso fazer isso, posso fazer uma fraude.
+
+486
+00:34:11,296 --> 00:34:17,270
+Ainda que você não responda, que aí o Ben Uro falou bem, com aqueles 20 % 30 % de
+capacidade que você tem,
+
+487
+00:34:17,388 --> 00:34:20,428
+Ainda que você não responda, posso fazer uma Skelly Injection?
+
+488
+00:34:20,428 --> 00:34:24,728
+Mas você pode responder, cara, eu posso colocar qualquer informação aqui e vai passar os
+controles.
+
+489
+00:34:24,728 --> 00:34:28,408
+Olha, é Injection, por trás você tem uma vulnerabilidade escondida ali.
+
+490
+00:34:28,408 --> 00:34:31,158
+Porque é essa discussão que eu quero provocar.
+
+491
+00:34:31,158 --> 00:34:35,828
+Fazer modelagem e ameaça, pode ser, não precisa ter necessariamente diagrama com quentas,
+mil coisas.
+
+492
+00:34:35,828 --> 00:34:39,388
+Cara, é o que que pode dar errado do ponto de vista de segurança.
+
+493
+00:34:39,648 --> 00:34:46,404
+Então eu acho que fica a minha sugestão, não necessariamente, obviamente usar o framework
+e dar uma estudada, mas...
+
+494
+00:34:46,828 --> 00:34:50,548
+discutir só nesse nível, fazer brainstorm, um sprint planning mesmo.
+
+495
+00:34:50,548 --> 00:34:53,388
+brainstorm, a gente vai fazer isso, isso, isso, isso.
+
+496
+00:34:53,388 --> 00:34:58,388
+Pega 15 minutos ali pra cada história ali, o que pode dar errado?
+
+497
+00:34:58,548 --> 00:35:01,688
+E lista, faz uma lista assim, papel de pão mesmo.
+
+498
+00:35:01,688 --> 00:35:04,638
+Cara, olha isso aqui é relevante, isso aqui não é, descarta, isso aqui é relevante.
+
+499
+00:35:04,638 --> 00:35:06,848
+Porque dali, aí é que o BenRoot tinha colocado.
+
+500
+00:35:06,848 --> 00:35:12,188
+Vai gerar ticket, vai gerar histórias, coisas que você vai necessariamente precisar fazer
+ou implementar depois.
+
+501
+00:35:12,188 --> 00:35:14,732
+Mas acho que minha colaboração era essa, queria deixar esse...
+
+502
+00:35:14,732 --> 00:35:21,052
+Adam Shoksteck, vai tá o link aqui do framework aqui no YouTube, dar uma olhada aí.
+
+503
+00:35:21,798 --> 00:35:32,638
+até as quatro perguntas do Shorts of Sac essas, também passar uma tip que elas não são
+flat.
+
+504
+00:35:33,098 --> 00:35:35,718
+Por exemplo, o que a gente está trabalhando?
+
+505
+00:35:35,718 --> 00:35:39,158
+Velho, essa pergunta pode ser bem profundizada, tá?
+
+506
+00:35:39,158 --> 00:35:40,438
+Vamos lá.
+
+507
+00:35:40,438 --> 00:35:42,378
+O que nós estamos trabalhando, né?
+
+508
+00:35:42,378 --> 00:35:44,158
+Quando o caso é com outro cara, o que a gente está trabalhando?
+
+509
+00:35:44,158 --> 00:35:47,938
+Vamos lá, pra você que não conhece ainda essas quatro perguntas, ela é o capítulo.
+
+510
+00:35:47,938 --> 00:35:49,742
+Ela tem vários subcapítulos, né?
+
+511
+00:35:49,742 --> 00:35:51,962
+Primeiro, o que a gente está trabalhando?
+
+512
+00:35:51,962 --> 00:36:00,162
+Conhecer o negócio, conhecer o produto que está sendo desenvolvido, qual que é o problema
+de negócio que ele vai resolver.
+
+513
+00:36:00,482 --> 00:36:02,082
+Então, beleza, tem toda a parte do negócio.
+
+514
+00:36:02,082 --> 00:36:05,222
+Depois, essa pergunta ainda continua, o que a gente está trabalhando?
+
+515
+00:36:05,222 --> 00:36:06,922
+Quais são as tecnologias?
+
+516
+00:36:06,922 --> 00:36:08,472
+O que a gente vai desenvolver?
+
+517
+00:36:08,472 --> 00:36:10,982
+O que a gente vai usar para implementar?
+
+518
+00:36:10,982 --> 00:36:13,032
+Em que infraestrutura vai rodar?
+
+519
+00:36:13,032 --> 00:36:17,421
+Essa pergunta pode ter a profundidade que você quiser, inclusive...
+
+520
+00:36:17,421 --> 00:36:25,121
+Essa profundidade vai levar também a profundidade da próxima pergunta, que é o what can go
+wrong, o que pode dar de errado.
+
+521
+00:36:25,221 --> 00:36:30,681
+Ou é produto de negócio, ou tu foi até a parte de negócio, então eu treto moda de negócio,
+tu foi até a parte...
+
+522
+00:36:30,681 --> 00:36:37,321
+Porque vamos lá, depende de onde você está na cadeia de desenvolvimento, tu ainda não sabe
+qual tecnologia que vai usar, não sabe qual infraestrutura vai usar.
+
+523
+00:36:37,321 --> 00:36:44,441
+Então a profundidade das respostas da primeira pergunta te ajuda a uma profundizada
+segunda pergunta.
+
+524
+00:36:44,501 --> 00:36:44,974
+Cara...
+
+525
+00:36:44,974 --> 00:36:47,094
+vir de negócio, quais são as ameaças de negócio?
+
+526
+00:36:47,094 --> 00:36:54,774
+Porque quando a faz assim, o que que pode dar de errado também significa assim, o que que
+as pessoas podem tentar fazer, o que que criminoso pode fazer.
+
+527
+00:36:54,774 --> 00:37:01,994
+E aí a gente entra duas coisas, a gente entra na parte de threat actors e threat actions,
+vamos lá, tá?
+
+528
+00:37:01,994 --> 00:37:04,594
+Ou as ameaças, que você é bom ator.
+
+529
+00:37:04,714 --> 00:37:10,554
+Será que todo ator que usa o nosso negócio é um racudão lá do burp, do negócio?
+
+530
+00:37:10,554 --> 00:37:13,358
+Cara, às vezes não, às vezes os caras são fraudadores.
+
+531
+00:37:13,358 --> 00:37:15,278
+sem conhecimento técnico.
+
+532
+00:37:15,278 --> 00:37:23,498
+Então não basta a só olhar a parte técnica, como a gente olha assim, cara, o que acontece
+se o cara pegar cartão de crédito de uma outra pessoa e começar a colocar 10 contas
+
+533
+00:37:23,498 --> 00:37:23,938
+diferentes?
+
+534
+00:37:23,938 --> 00:37:26,398
+A gente é capaz de lidar com isso?
+
+535
+00:37:26,398 --> 00:37:27,118
+Entendeu?
+
+536
+00:37:27,118 --> 00:37:33,418
+Então pensar tanto quais atores vão atacar a gente, de que forma esses atores vão atacar a
+gente, né?
+
+537
+00:37:33,898 --> 00:37:36,818
+Então aí começa a pegar o que tem de errado.
+
+538
+00:37:36,818 --> 00:37:39,278
+E aí, foi negócio, que dá de errado é negócio.
+
+539
+00:37:39,278 --> 00:37:41,518
+Foi de aplicação, o que dá de errado é aplicação.
+
+540
+00:37:41,998 --> 00:37:44,338
+Aqui pode ter S-Carry Injection, né?
+
+541
+00:37:44,338 --> 00:37:50,438
+Beleza, a gente já tem alguma medida automatizada, SAS, alguma coisa assim que tenta pegar
+isso aqui?
+
+542
+00:37:50,438 --> 00:37:51,138
+Ou não tem?
+
+543
+00:37:51,138 --> 00:37:53,638
+Porque os cuidados são meio diferentes, não tem, né?
+
+544
+00:37:53,678 --> 00:37:55,438
+Então, tipo...
+
+545
+00:37:55,438 --> 00:38:02,238
+Velho, aí depois do que a gente fez, o que a vai fazer com aquilo, quais são as
+contramedidas que a vai fazer para mitigar essas coisas?
+
+546
+00:38:02,238 --> 00:38:07,538
+E a última pergunta para mim, que é se a fez o meu trabalho a melhor, porque ela é o
+Threat Modeling do Threat Modeling, né?
+
+547
+00:38:07,538 --> 00:38:12,014
+Por exemplo, a gente colocou uma mitigação.
+
+548
+00:38:12,014 --> 00:38:14,234
+Colocamos beleza.
+
+549
+00:38:14,514 --> 00:38:16,864
+Pode cara pode ter vulnerabilidade na identificação.
+
+550
+00:38:16,864 --> 00:38:19,114
+dar exemplo clássico tá.
+
+551
+00:38:19,134 --> 00:38:24,794
+cara vai fazer uma transferência financeira de uma coisa de transferência de dinheiro uma
+conta para outra.
+
+552
+00:38:24,834 --> 00:38:30,454
+não olha só se o cara botou mais de 5 mil reais de transferência financeira é bom a gente
+colocar uma reautenticação.
+
+553
+00:38:31,394 --> 00:38:33,434
+Beleza a gente tem reautenticação?
+
+554
+00:38:33,434 --> 00:38:34,894
+Cara não tem.
+
+555
+00:38:34,894 --> 00:38:40,302
+Tá então vou fazer o seguinte tá vamos enviar código de seis números para o email do cara.
+
+556
+00:38:40,302 --> 00:38:45,602
+E o cara tem que confirmar esse código aqui, que depois que ele confirmar, daí sim a gente
+deixa ele fazer transferência.
+
+557
+00:38:45,602 --> 00:38:46,242
+Beleza.
+
+558
+00:38:46,242 --> 00:38:46,942
+E ninguém botou...
+
+559
+00:38:46,942 --> 00:38:48,582
+Aí tá feita a mitigação.
+
+560
+00:38:48,582 --> 00:38:48,982
+Show!
+
+561
+00:38:48,982 --> 00:38:50,382
+Tá feita a mitigação.
+
+562
+00:38:50,382 --> 00:38:57,042
+Mas se o cara fizer brute force no código passa, porque ninguém fez o trait modeling da
+parte de código, entendeu?
+
+563
+00:38:57,182 --> 00:39:00,182
+Então tem uma vulnerabilidade dentro da mitigação.
+
+564
+00:39:00,182 --> 00:39:08,202
+É tentar não ficar infinito, mas essa pergunta é muito importante para não achar problemas
+dentro da solução proposta, né?
+
+565
+00:39:08,202 --> 00:39:09,356
+Que é...
+
+566
+00:39:09,356 --> 00:39:16,816
+você falou exemplo legal que é questão de você ter as vezes mitigações para uma
+vulnerabilidade em etapas diferentes.
+
+567
+00:39:16,816 --> 00:39:20,596
+Você falou do SQL Injection, eu comentei do SQL Injection, Eu tenho uma aplicação
+produção?
+
+568
+00:39:20,596 --> 00:39:20,916
+Tenho.
+
+569
+00:39:20,916 --> 00:39:22,276
+Como é que eu resolvo isso?
+
+570
+00:39:22,696 --> 00:39:25,096
+input validez, então você vai ter fazer refactor do código.
+
+571
+00:39:25,096 --> 00:39:26,276
+Uma coisa.
+
+572
+00:39:26,276 --> 00:39:27,996
+Segunda coisa, o af.
+
+573
+00:39:27,996 --> 00:39:29,736
+Você não precisa necessariamente mexer no código.
+
+574
+00:39:29,736 --> 00:39:32,716
+Você vai lá, aplica o af, habilita regras, monitora isso.
+
+575
+00:39:32,716 --> 00:39:36,196
+Então você já tem duas mitigações em camadas diferentes.
+
+576
+00:39:36,620 --> 00:39:39,440
+Os camados são completamente diferentes, não dependem de uma da outra.
+
+577
+00:39:39,440 --> 00:39:46,760
+Se você fizer bem o input validation, o AFFER, bem entre aspas, se torna dispensável.
+
+578
+00:39:46,760 --> 00:39:50,900
+Mas não necessariamente, ele acaba sendo uma primeira camada de proteção.
+
+579
+00:39:50,900 --> 00:39:57,310
+Então você vai ter ameaças que vão demandar mitigações em etapas diferentes do
+desenvolvimento.
+
+580
+00:39:57,310 --> 00:40:01,902
+Vai ter etapa que é código, etapa que é infra, etapa que é produto, etapa que é só
+monitoramento.
+
+581
+00:40:01,932 --> 00:40:06,892
+Então, tenta porque a arquitetura só tem que definir criptografia e criptografar.
+
+582
+00:40:06,892 --> 00:40:10,992
+Tá, que é o gol de que você vai usar, por quê, qual que melhor, onde vai gravar a chave,
+onde não sei o quê.
+
+583
+00:40:10,992 --> 00:40:15,772
+Então, você volta espaço de arquitetura para uma aplicação que já está funcionando, que é
+o nosso cenário aqui.
+
+584
+00:40:15,772 --> 00:40:20,812
+Então, tem que tomar pouco de cuidado com isso também, mas isso que você falou, a
+profundidade das questões vai te dar, vai...
+
+585
+00:40:20,812 --> 00:40:21,912
+De fato, né?
+
+586
+00:40:21,912 --> 00:40:23,292
+Esse é a modelagem ameaça.
+
+587
+00:40:23,292 --> 00:40:27,932
+Fazer essas perguntas, chegar na profundidade adequada e pegar o tipo de task.
+
+588
+00:40:27,932 --> 00:40:28,952
+Fala, Marcos.
+
+589
+00:40:28,952 --> 00:40:30,452
+Tá ansioso aí?
+
+590
+00:40:30,759 --> 00:40:48,819
+agora já responderam já que eu ia falar agora vou ficar quieto os caras não param velho os
+caras são duas metralhadoras de falar do último toque até agora tem 20 minutos
+
+591
+00:40:52,064 --> 00:41:00,484
+Eu sempre lembro do professor Girafales falando, nunca me enganei, o Chapolin, eu nunca me
+enganei, só me enganei uma vez, quando achei estar enganado.
+
+592
+00:41:01,884 --> 00:41:03,084
+Sensacional.
+
+593
+00:41:03,664 --> 00:41:09,204
+Senhores, deixa eu fazer uma coisa aqui, olha, deixa eu se vai funcionar ainda, está
+funcionando.
+
+594
+00:41:14,510 --> 00:41:15,427
+do quadro favorito.
+
+595
+00:41:15,427 --> 00:41:17,807
+gritinho me pega toda vez,
+
+596
+00:41:37,676 --> 00:41:47,856
+Eu acho que é falar pro Devi assim, seguinte, Devi, eu preciso de diagrama da aplicação,
+diagrama de fluxos de dados, qualquer diagrama.
+
+597
+00:41:47,856 --> 00:41:51,836
+Cara, hoje dia a galera sempre não faz mais isso.
+
+598
+00:41:51,836 --> 00:41:56,686
+Sabe, o cara não sabe mais o que é o ML, Então, eu preciso de diagrama da sua aplicação.
+
+599
+00:41:56,686 --> 00:41:57,046
+Pra quê?
+
+600
+00:41:57,046 --> 00:42:01,736
+Não, porque eu vou fazer a modelagem ameaça, vou fazer uma revisão de segurança aqui, eu
+preciso de diagrama da aplicação.
+
+601
+00:42:02,188 --> 00:42:03,528
+Por que o cara vai chorar?
+
+602
+00:42:03,528 --> 00:42:04,268
+Porque não tem.
+
+603
+00:42:04,268 --> 00:42:08,708
+Então ele vai ter que fazer se necessariamente você tem certo poder para demandar isso.
+
+604
+00:42:08,708 --> 00:42:10,048
+E ele já vai se sentar e chorar.
+
+605
+00:42:10,048 --> 00:42:11,128
+Por que ele não tem?
+
+606
+00:42:11,128 --> 00:42:13,388
+ele às não conhece a aplicação como todo.
+
+607
+00:42:13,388 --> 00:42:20,915
+Então eu acho que pedir diagrama da FD, da FDzinho simples, pedir para o dev e fazer ele
+chorar.
+
+608
+00:42:20,915 --> 00:42:24,953
+Cara, olhando as precisas recentes, isso é dado.
+
+609
+00:42:25,720 --> 00:42:27,215
+especialistas?
+
+610
+00:42:27,215 --> 00:42:29,475
+pesquisa recente mesmo.
+
+611
+00:42:29,555 --> 00:42:32,535
+É cerca de 70 % dos devs hoje estão usando IA para acordar.
+
+612
+00:42:32,535 --> 00:42:34,923
+Então eu falaria, você vai acordar sem IA.
+
+613
+00:42:36,768 --> 00:42:42,308
+Vó, essa é uma boa, Vai acordar sem iar, boa, gostei, gostei.
+
+614
+00:42:42,308 --> 00:42:43,468
+Gostei, boa.
+
+615
+00:42:43,468 --> 00:42:45,966
+E aí, Benyur, tem alguma que você deve chorar hoje?
+
+616
+00:42:45,966 --> 00:42:51,744
+tenho tenho tenho me passa por descrito o que que faz a aplicação
+
+617
+00:42:52,596 --> 00:43:01,786
+Nã...hahaha Essa foda também Essa foda também Nossa, o cara não sabe pôr no readme Boa,
+boa
+
+618
+00:43:01,786 --> 00:43:05,786
+pode fazer assim que o Tretmol, eu só me descrevo aí que faz a aplicação.
+
+619
+00:43:06,316 --> 00:43:10,096
+Nossa cara, três pancadas hoje no Dev, Não vai mais usar.
+
+620
+00:43:10,096 --> 00:43:13,056
+E me dá diagrama e descreve pra mim o que sua aplicação faz.
+
+621
+00:43:13,056 --> 00:43:14,476
+Cabou, velho, cabou.
+
+622
+00:43:14,476 --> 00:43:16,480
+Choro não acerta, choro não acerta.
+
+623
+00:43:16,653 --> 00:43:17,932
+o bicho não chora.
+
+624
+00:43:17,932 --> 00:43:19,252
+Boa.
+
+625
+00:43:19,352 --> 00:43:27,172
+Senhores, acho que fechando o episódio de hoje, se querem falar mais algum ponto, acho que
+gente falou bem ali de por que a galera não está fazendo modelos de ameaça, algumas dicas
+
+626
+00:43:27,172 --> 00:43:37,132
+de como começar a fazer, implementar processo de forma simples, Começar a comunicar as
+pessoas envolvidas, vai começar sentar com o pessoal na rotina deles.
+
+627
+00:43:37,132 --> 00:43:41,832
+Veja que a gente não criou uma rotina nossa, vai sentar uma reunião fazer modelos de
+ameaça, não.
+
+628
+00:43:42,072 --> 00:43:45,060
+Nós, Epsec, estamos nos...
+
+629
+00:43:45,788 --> 00:43:53,768
+integrando ao processo deles, na sprint planning, na sprint review, exemplo, para
+verificar se o foi discutido foi implementado.
+
+630
+00:43:54,008 --> 00:44:00,348
+Então, que framework e ferramenta não é irrelevante, mas não necessariamente seja
+importante para esse contexto.
+
+631
+00:44:00,348 --> 00:44:03,300
+O cara pode usar o framework que quiser, a ferramenta que quiser, enfim.
+
+632
+00:44:04,398 --> 00:44:10,058
+importante é mitigar problema, é mitigar risco, é mitigar ameaça.
+
+633
+00:44:10,058 --> 00:44:24,718
+E fica a dica aí, não sei se vocês já viram alguma startup, alguma coisa assim, algo do
+tipo assim, cara, algum chat que o dev consiga conversar, conversar e daí te entrega uma
+
+634
+00:44:24,718 --> 00:44:27,298
+modelagem, uma pré-modelagem ameaça, assim, sabe?
+
+635
+00:44:27,298 --> 00:44:32,948
+Tipo, porque eu vejo algumas coisas, tipo, cara, tu sobe até o mundo, até a alma lá,
+
+636
+00:44:32,948 --> 00:44:34,108
+de tudo.
+
+637
+00:44:34,150 --> 00:44:38,600
+aí tu começa a perguntar, aí, assim ó, isso existe vários, até o notebook L.M.
+
+638
+00:44:38,600 --> 00:44:40,450
+lá do Google faz isso, né?
+
+639
+00:44:40,510 --> 00:44:47,870
+Mas algo que tipo assim ó, que o, porque por exemplo quando a gente chega com o dev, a
+gente chega lá e conversa com cara, meu, olha só, vamos lá, me explica agora pouquinho
+
+640
+00:44:47,870 --> 00:44:49,910
+rapidamente qual que é o contexto, tu entende?
+
+641
+00:44:49,910 --> 00:44:53,350
+cara vai conversando, tem esse bate-volta da conversa, entendeu?
+
+642
+00:44:53,410 --> 00:44:55,210
+Daí tu começa a sacar as coisas.
+
+643
+00:44:55,210 --> 00:44:59,322
+Hoje eu ainda não vi, não vi nada assim que tenha modelo similar, sabe?
+
+644
+00:44:59,476 --> 00:45:04,546
+Na Black Hatch da Europa, que foi agora dezembro dezembro de 2024, tive oportunidade de
+ir.
+
+645
+00:45:04,546 --> 00:45:07,096
+Inclusive o business, business haul lá é gratuito.
+
+646
+00:45:07,096 --> 00:45:09,676
+Quem tiver pela por Londres acontece Londres.
+
+647
+00:45:09,676 --> 00:45:11,376
+O business haul é gratuito.
+
+648
+00:45:11,376 --> 00:45:13,446
+Tem uma startup, adivinha de onde é?
+
+649
+00:45:13,446 --> 00:45:14,176
+Adivinha de onde?
+
+650
+00:45:14,176 --> 00:45:15,596
+Só vale uma tentativa.
+
+651
+00:45:15,596 --> 00:45:16,496
+Israel.
+
+652
+00:45:16,496 --> 00:45:18,176
+Tem uma startup de Israel.
+
+653
+00:45:20,736 --> 00:45:25,936
+Que cara, não é nem fazer propaganda não, mas eu tenho banner algum lugar aqui que estava
+o papel aqui perto.
+
+654
+00:45:25,936 --> 00:45:27,916
+Enfim, o que eles fazem cara?
+
+655
+00:45:27,916 --> 00:45:37,406
+Você integra o agentezinho deles lá, a ferramenta deles lá, eles vão começar a ler o teu
+SharePoint, o teu Gira, eles vão ler onde você escreve as histórias.
+
+656
+00:45:37,406 --> 00:45:40,056
+Olha, eu tô fazendo a tela de login, é assim, é assim, assado.
+
+657
+00:45:40,056 --> 00:45:41,916
+Ele vai ler tudo isso.
+
+658
+00:45:41,916 --> 00:45:48,076
+Eu porque é SharePoint, Confluence, Gira, enfim, ele lê toda essa base de conhecimento e
+disso ele vai extrair.
+
+659
+00:45:48,076 --> 00:45:50,856
+Olha, eu vi aqui que você tá fazendo a tela de login.
+
+660
+00:45:50,856 --> 00:45:55,886
+Você considerou isso, isso, isso, isso, isso, isso, isso, isso.
+
+661
+00:45:55,886 --> 00:45:57,746
+Boa!
+
+662
+00:45:57,746 --> 00:45:58,584
+Boa!
+
+663
+00:45:58,584 --> 00:46:00,244
+o IA, obviamente, pra fazer...
+
+664
+00:46:00,244 --> 00:46:02,704
+Tem monte de coisa de linguagem, entendimento e tal.
+
+665
+00:46:02,704 --> 00:46:08,084
+Mas você só conecta as suas fontes, ó, eu documento tudo no SharePoint ou no Confluence,
+enfim.
+
+666
+00:46:08,084 --> 00:46:09,444
+Ele puxa tudo de lá.
+
+667
+00:46:09,444 --> 00:46:10,784
+Se eu não me engano, estavam...
+
+668
+00:46:10,784 --> 00:46:13,004
+Inclusive, o próximo passo era chat.
+
+669
+00:46:13,004 --> 00:46:22,984
+Então, eu quero pegar, monitorar tal chat do Tims, ou tal chat do Slack, porque pega as
+conversas da galera lá, ele vai mastigar tudo isso, e aí o Output é um...
+
+670
+00:46:22,984 --> 00:46:24,876
+Tipo cockpitzinho, uma tela.
+
+671
+00:46:24,876 --> 00:46:29,066
+Falando, olha, eu vi lá no Jira, nesse ticket que está sendo desenvolvido tal coisa.
+
+672
+00:46:29,066 --> 00:46:32,656
+Eu não vi no GitHub um commit falando disso.
+
+673
+00:46:32,776 --> 00:46:41,056
+Eu vi commit, mas olha, eu analisei o código porque eu integrei com outras soluções e vi
+que não tem um authentication, vi que não tem cartografia, sei lá.
+
+674
+00:46:41,056 --> 00:46:50,176
+Então ele vai literalmente olhar o que você está fazendo para essas bases de dados e te
+dar o output de, olha, você considerou, por exemplo, esse requisito mínimo e esses
+
+675
+00:46:50,176 --> 00:46:52,156
+requisitos você pode alimentar nele também.
+
+676
+00:46:52,156 --> 00:46:54,796
+Como gente falou, gente definiu baseline, você pode alimentar.
+
+677
+00:46:54,796 --> 00:47:00,476
+falou, eu quero usar o Stride ou usar algum framework, ele vai com base no framework que
+também te dá algumas respostas.
+
+678
+00:47:00,476 --> 00:47:10,636
+ainda é uma startup, eles estão começando, então tem monte de falha, mas eu vi demo e já é
+alguma coisa assim, isso que você falou, pega já o que você tem aí e me dá um output.
+
+679
+00:47:10,636 --> 00:47:19,402
+Que eu acho que para fazer um chat, olha, cara interage ali, te gosta de algumas coisas,
+não tá muito longe, né, eu diria que é só pluguinha mais ali, mas tem.
+
+680
+00:47:20,591 --> 00:47:36,711
+A única coisa que eu teria assim, não pé atrás, mas eu pensaria duas vezes é o quanto os
+devs hoje dia estão realmente explicando sua aplicação, descrevendo, criando histórias
+
+681
+00:47:36,711 --> 00:47:38,621
+ali, fazendo uns requisitos bonitinhos.
+
+682
+00:47:38,621 --> 00:47:42,171
+Porque startup, normalmente é na base do foda-se ali.
+
+683
+00:47:42,171 --> 00:47:48,235
+Pô, eu quero criar app, eu não vou criar uma história, seguir todo o processo ali,
+Requisito, blá, blá.
+
+684
+00:47:48,268 --> 00:47:50,072
+trouxe bom ponto.
+
+685
+00:47:52,827 --> 00:47:53,407
+É...
+
+686
+00:47:53,407 --> 00:47:54,504
+Exatamente.
+
+687
+00:47:54,504 --> 00:47:56,768
+bom ponto, mas...
+
+688
+00:47:58,764 --> 00:48:01,244
+trouxe bom ponto, nem consigo contra-argumentar.
+
+689
+00:48:01,244 --> 00:48:08,844
+É porque que eu queria dizer, em algum lugar a galera descreve, preciso fazer, ainda que
+seja só o título, ainda que seja só o título, saca?
+
+690
+00:48:08,924 --> 00:48:14,124
+Lembrei, cara, o nome da solução, lembrei, não, eu pus no Google aqui e fui mais ou menos
+lembrando.
+
+691
+00:48:14,124 --> 00:48:16,544
+É Clover Security.
+
+692
+00:48:17,324 --> 00:48:19,584
+Product Security Starts with Design.
+
+693
+00:48:19,764 --> 00:48:23,412
+Clover, C-L-O-V-E-R, ponto security.
+
+694
+00:48:23,916 --> 00:48:33,916
+Então estou vendo no site que eles pegam informação do conference do gira do Google Drive
+SharePoint Notion o integra com IDE, GitHub, GitHub, Miru, que você faz uns dashboards
+
+695
+00:48:33,916 --> 00:48:34,556
+também.
+
+696
+00:48:34,556 --> 00:48:36,456
+Então basicamente você.
+
+697
+00:48:37,276 --> 00:48:39,116
+Clover pronto security.
+
+698
+00:48:39,656 --> 00:48:41,496
+Inclusive o pessoal da Clover já ouvindo a gente.
+
+699
+00:48:41,496 --> 00:48:45,856
+you are listening to us we will be very happy if you could sponsor us.
+
+700
+00:48:48,436 --> 00:48:53,840
+O site nem estava pronto agora já está já tem uma landing page então eles estão evoluindo
+inclusive.
+
+701
+00:48:53,868 --> 00:49:03,588
+O founder é ex-Chekmarks, trabalhava na Chekmarks que é patrocinador nosso, obviamente as
+pessoas mudam de carreira e tal e as coisas entram.
+
+702
+00:49:03,588 --> 00:49:06,928
+Mas fica aí a dica, que isso que o Bayour perguntou, que já tem alguma coisa.
+
+703
+00:49:06,928 --> 00:49:10,948
+Pessoal, tamo cima da hora, querem fazer agradecimento, mandar beijo.
+
+704
+00:49:12,684 --> 00:49:13,687
+ou não, tá tudo bem?
+
+705
+00:49:13,687 --> 00:49:16,237
+pra vocês dois, Seus lindos aí que me acompanham.
+
+706
+00:49:16,237 --> 00:49:17,860
+até me saudade de vocês.
+
+707
+00:49:17,860 --> 00:49:21,060
+Saudades, Vocês estão de volta agora.
+
+708
+00:49:21,060 --> 00:49:21,760
+Então, beleza, pessoal.
+
+709
+00:49:21,760 --> 00:49:22,520
+Acho que é isso.
+
+710
+00:49:22,520 --> 00:49:23,840
+Fica as dicas aí.
+
+711
+00:49:23,840 --> 00:49:25,440
+Não perca.
+
+712
+00:49:25,440 --> 00:49:28,360
+Próximo episódio tende a ser a quarta parte.
+
+713
+00:49:28,360 --> 00:49:29,870
+A gente nem sabe quantas partes vai ter isso aqui.
+
+714
+00:49:29,870 --> 00:49:32,479
+Estamos montando programa de Epsec do Zero.
+
+715
+00:49:32,640 --> 00:49:37,100
+Então, acompanhem ouça os últimos dois que tem certeza que você vai...
+
+716
+00:49:37,100 --> 00:49:38,440
+Quer dizer, você não vai se arrepender.
+
+717
+00:49:38,440 --> 00:49:40,490
+Você não vai se arrepender, vai depender pouco.
+
+718
+00:49:40,490 --> 00:49:42,360
+Mas enfim, eu não consigo definir isso.
+
+719
+00:49:42,360 --> 00:49:43,470
+Bom, pessoal, é isso.
+
+720
+00:49:43,470 --> 00:49:44,880
+Eu sou o Caso Pereira.
+
+721
+00:49:45,294 --> 00:49:46,483
+Eu sou o Benhor.
+
+722
+00:49:46,483 --> 00:49:48,039
+E eu sou Marcos Santos.
+
+723
+00:49:48,108 --> 00:49:50,328
+E nos vemos no próximo episódio.
+
+724
+00:49:50,328 --> 00:49:52,110
+Tchau, galerinha!
+
+725
+00:49:52,110 --> 00:49:53,516
+É por isso que eu...
+
+726
+00:49:56,204 --> 00:49:57,444
+Oh, vai rodar agora.
+
