@@ -1,0 +1,1824 @@
+1
+00:00:21,947 --> 00:00:23,367
+Olá, pessoal.
+
+2
+00:00:23,367 --> 00:00:28,877
+É muito bom estar de E, para ser honesto, ainda melhor, porque eu não sozinho hoje.
+
+3
+00:00:28,877 --> 00:00:31,707
+Eu bom que eu apresentar segundo.
+
+4
+00:00:31,707 --> 00:00:33,357
+Mas nosso castelão não aqui.
+
+5
+00:00:33,357 --> 00:00:37,027
+Então, o Marcos não aqui hoje, o Benur não aqui hoje, o que é perfeito.
+
+6
+00:00:37,027 --> 00:00:39,447
+Esses caras falam monte cacete, às vezes.
+
+7
+00:00:39,447 --> 00:00:41,487
+Então, muito bom estar às vezes.
+
+8
+00:00:41,487 --> 00:00:45,047
+Sabe, só eu, eu, meu podcast aqui, bom guest.
+
+9
+00:00:45,047 --> 00:00:47,611
+Será que eles não ouvirem isso, que...
+
+10
+00:00:47,611 --> 00:00:50,131
+que também protegei mesmo.
+
+11
+00:00:50,471 --> 00:00:59,671
+Gente, esse é episódio número 170, se não me engano, então mais de 100 horas de conteúdo
+para por free, no Wapsacast Podcast.
+
+12
+00:00:59,671 --> 00:01:09,091
+Então, favor, volte, ouça, um, dois, três, e todos eles, eu tenho certeza que vocês vão
+gostar, e esse conteúdo será valioso para vocês.
+
+13
+00:01:09,091 --> 00:01:11,163
+Antes de começarmos e irmos para o nosso...
+
+14
+00:01:11,163 --> 00:01:13,823
+e apresentação ao nosso vencedor e o tema de hoje.
+
+15
+00:01:13,823 --> 00:01:25,483
+É bom lembrar que o DevSecOps tem o apoio de Sneak e Nova8, que são especializados
+segurança e código O link para Nova8 e o distribuidor na América também na Polônia, está
+
+16
+00:01:25,483 --> 00:01:31,023
+abaixo do episódio de no YouTube, também no da DevSecOps.com.br.
+
+17
+00:01:31,243 --> 00:01:36,263
+Se você procurando soluções DigitalWoke tem portfólio para você.
+
+18
+00:01:36,263 --> 00:01:39,579
+E você já se perguntou se você está atingido?
+
+19
+00:01:39,579 --> 00:01:42,039
+Qualquer data ou data foi roubada?
+
+20
+00:01:42,039 --> 00:01:44,179
+Ou qual é o meu risco?
+
+21
+00:01:44,179 --> 00:01:47,759
+A segurança tem todas as respostas para você.
+
+22
+00:01:47,759 --> 00:01:54,199
+Então, se você se enxergar com eles, eu tenho certeza que eles te Vamos começar o tema de
+hoje.
+
+23
+00:01:54,199 --> 00:01:57,509
+Hoje eu estou falando com o Spiros.
+
+24
+00:01:57,509 --> 00:02:02,019
+Desculpe se eu não pronunciar correto, mas eu acredito que eu fiz bem.
+
+25
+00:02:02,019 --> 00:02:08,299
+É primeiro grega que Tivemos pessoas de todo lugar.
+
+26
+00:02:08,411 --> 00:02:18,691
+Mas Israel, Brasil, sei, Estados Unidos, Polônia, Alemanha, nós tivemos monte de gente
+aqui, mas acho que primeira, Grécia.
+
+27
+00:02:19,371 --> 00:02:27,631
+Nós vamos falar sobre a Smithy, também, corra se eu errado, Speedos, mas primeiro,
+obrigado pela sua hora, obrigado por nos acompanhar.
+
+28
+00:02:27,631 --> 00:02:36,667
+Estou muito seguro que vamos nos livrar de um bom conteúdo falar sobre as soluções, falar
+sobre como ajudar os desenvolvedores e construir software é o todo.
+
+29
+00:02:36,667 --> 00:02:40,047
+um objetivo de nossas carreiras, eu diria.
+
+30
+00:02:40,047 --> 00:02:41,427
+Mais obrigado.
+
+31
+00:02:41,427 --> 00:02:45,587
+Por fale com a audiência e discutimos.
+
+32
+00:02:46,094 --> 00:02:48,954
+Muito por me convidar, Kassio.
+
+33
+00:02:48,954 --> 00:02:50,674
+Estou muito feliz por estar aqui.
+
+34
+00:02:50,674 --> 00:02:55,054
+Estou seguindo o podcast por tempo e estou grande fã.
+
+35
+00:02:55,054 --> 00:02:57,494
+Vocês têm grande conteúdo.
+
+36
+00:02:57,494 --> 00:03:03,044
+Eu o Fundo e CEO da Smithy Security.
+
+37
+00:03:03,044 --> 00:03:10,654
+Estou fazendo a開-source, o desenvolvimento e a segurança aplicação por cerca de 20 anos.
+
+38
+00:03:10,874 --> 00:03:15,714
+Eu fiz muitas coisas com e sem o OASP.
+
+39
+00:03:16,270 --> 00:03:23,570
+contribuiu muitas histórias repostas muitos lugares, mesmo o Língue de Cerno, tempo.
+
+40
+00:03:24,970 --> 00:03:38,730
+Na pandemia, eu criei um pequeno de abertura abertura chamada opencre.org, que se tornou a
+maior gráfica de saber do mundo.
+
+41
+00:03:38,890 --> 00:03:42,550
+É abertura abertura, você pode encontrar no opencre.org.
+
+42
+00:03:42,770 --> 00:03:45,518
+Depois da pandemia, nós percebemos que
+
+43
+00:03:45,518 --> 00:04:04,058
+conectando estandardos, conectando sabedoria sem conectar a ação Isso não tão efetivo
+porque você sempre precisará criar testes para sua de para garantir que seus
+
+44
+00:04:04,058 --> 00:04:12,458
+desenvolvedores, seus praticadores e você mesmo, se seguem as melhores práticas ou as boas
+práticas e o que precisa acontecer.
+
+45
+00:04:12,458 --> 00:04:14,734
+Então criamos uma abertura
+
+46
+00:04:14,734 --> 00:04:35,068
+nosso segundo projeto, um aplicativo de segurança, engenheiro ou SOAR, como se de Gartner,
+para unificar toda a de aplicativo e software de segurança em workflows.
+
+47
+00:04:36,123 --> 00:04:37,123
+Cool!
+
+48
+00:04:37,823 --> 00:04:38,943
+obrigado por nos acompanhar.
+
+49
+00:04:38,943 --> 00:04:42,183
+Eu acho que você tem coisas muito boas em suas mãos.
+
+50
+00:04:42,483 --> 00:04:47,903
+Eu confesso, a audiência já sabe disso, talvez não.
+
+51
+00:04:47,903 --> 00:04:54,883
+Mas eu tive o meu sonho também de construir minhas opções e minhas, mas eu era
+desenvolvedor por talvez 12 anos.
+
+52
+00:04:55,523 --> 00:05:01,323
+Mas eu não tenho mais tempo, sabe, essa dedicação a apenas isso.
+
+53
+00:05:01,323 --> 00:05:02,651
+Se eu começasse...
+
+54
+00:05:02,651 --> 00:05:03,631
+Eu nunca acabarei.
+
+55
+00:05:03,631 --> 00:05:04,811
+Isso é o meu problema.
+
+56
+00:05:04,811 --> 00:05:06,391
+Com todos os desafios e assim.
+
+57
+00:05:06,391 --> 00:05:14,771
+Então eu realmente aprecio e agradeço a você por dedicar o tempo e esforços e assim para
+construir isso.
+
+58
+00:05:14,771 --> 00:05:16,471
+E agora nós temos negócio e assim.
+
+59
+00:05:16,471 --> 00:05:17,851
+É bem legal.
+
+60
+00:05:17,851 --> 00:05:24,311
+Não só para a comunidade, mas para o whole landscape Para o whole app sec.
+
+61
+00:05:24,551 --> 00:05:25,551
+Isso legal.
+
+62
+00:05:25,551 --> 00:05:30,371
+Agora eu vou começar talvez com primeira pergunta, que é basicamente a principal.
+
+63
+00:05:30,751 --> 00:05:31,877
+Como...
+
+64
+00:05:31,931 --> 00:05:37,971
+Como você pensa, ou como você vê seus produtos, sua solução, seu negócio, etc.
+
+65
+00:05:37,971 --> 00:05:40,311
+Como você vê eles ajudando os desenvolvedores.
+
+66
+00:05:40,311 --> 00:05:42,031
+Por essa questão?
+
+67
+00:05:42,351 --> 00:05:53,691
+Não ajudando os desenvolvedores a ser rápidos, mais produtivos, mas, na ajudar os
+desenvolvedores a software Eu vejo muitas companhias e muitos equipamentos, só evitando,
+
+68
+00:05:53,691 --> 00:06:01,553
+só sendo defensivos, só dizendo que não temos tempo, só prioritizando tudo suas vidas,
+mesmo eles escrochando no TikTok.
+
+69
+00:06:01,595 --> 00:06:08,785
+mas não prioritizando uma configuração pipeline para esconder o código ou para esconder
+PR.
+
+70
+00:06:08,785 --> 00:06:13,555
+Esses tipos de coisas que famílias para todos no DevSecOps e no AppSec.
+
+71
+00:06:13,735 --> 00:06:15,875
+A primeira pergunta é por causa disso.
+
+72
+00:06:15,875 --> 00:06:24,519
+Como você vê, eu diria você, mas considero você como ativo, um negócio, ajudando os
+desenvolvedores a construir software
+
+73
+00:06:24,878 --> 00:06:32,858
+A verdade é que, como profissionais nós falhamos de desenvolvedores.
+
+74
+00:06:32,858 --> 00:06:41,098
+Tentamos nosso melhor e o estamos tentando por mais de 20 anos para fazer todas as ações
+de aplicação.
+
+75
+00:06:42,578 --> 00:06:55,044
+Começamos com, firewalls e WAFs e nos movimos para o SUS, depois a de shift e agora
+everywhere Mas nossa approach
+
+76
+00:06:55,893 --> 00:07:01,614
+sempre se desborda em mais atividades, mais alertas, mais escaneio.
+
+77
+00:07:01,614 --> 00:07:15,794
+Quando eu sou um desenvolver ou com o meu haton se eu quero ver uma atividade, porque é
+isso que eu sendo pagado para fazer, eu não quero ver 20 alertas, que 90 % ou 99 % são
+
+78
+00:07:15,794 --> 00:07:21,114
+falsas positivas, baseados nos nossos testes, em cada PR.
+
+79
+00:07:21,114 --> 00:07:23,054
+Isso é impossível.
+
+80
+00:07:23,054 --> 00:07:26,594
+é impossível de somente para passar.
+
+81
+00:07:27,094 --> 00:07:43,494
+E mesmo se a maioria desses alertas podem ser desmistos trivialmente, que é a das ESPMs
+tentam fazer, tentam focar isso ainda não ótimo, porque me leva o mental que para passar
+
+82
+00:07:43,494 --> 00:07:47,194
+por todas essas alertas que escrimam a você, críticas.
+
+83
+00:07:47,354 --> 00:07:50,954
+E eu até vi as ESPMs tentar atingir
+
+84
+00:07:51,662 --> 00:07:55,222
+potencialmente perdoado por a vulnerabilidade.
+
+85
+00:07:55,222 --> 00:07:58,982
+Então eles gritam que sua organização vai perder milhões.
+
+86
+00:08:00,122 --> 00:08:05,002
+Se você não se reabastar, isso não me Eu já tenho muito estressante.
+
+87
+00:08:05,002 --> 00:08:21,904
+O que realmente ajudaria é a habilidade de propor o contexto como os ESPMs, de justa, mas
+também coletar e combinar todos os ativos que...
+
+88
+00:08:21,998 --> 00:08:37,258
+a incrível equipe de comprou e gastou o dinheiro que ganhou para combinar os signais de
+todos esses ativos de inteligente para que eu tenha toda a informação que eu e eu
+
+89
+00:08:37,258 --> 00:08:50,318
+automaticamente posso remover não só maioria do meu som porque eu sei que tenho informação
+do meu CNAP, do meu ASPM, coisas assim, mas idealmente fixar
+
+90
+00:08:50,318 --> 00:08:57,058
+automaticamente, com muita convicção sobre o que fixe vai fazer.
+
+91
+00:08:57,058 --> 00:09:15,518
+Porque se eu tiver todo o contexto de todas as terceiras, Synapse, ESPM, etc., e se eu
+tiver acesso à minha ferramenta, então eu posso gerar fixe e aplicar o fixe com muita
+
+92
+00:09:15,518 --> 00:09:17,742
+convicção.
+
+93
+00:09:17,742 --> 00:09:21,442
+do que se eu precisasse fazer isso manualmente.
+
+94
+00:09:21,442 --> 00:09:28,062
+O problema é que, muito provavelmente, nenhum desses vendadores trabalham com os outros e
+isso faz sentido.
+
+95
+00:09:28,222 --> 00:09:36,002
+Se eu sou de ESPM, eu preciso focar em adicionar o melhor tipo de contexto e o maior
+contexto.
+
+96
+00:09:36,002 --> 00:09:47,870
+Se eu sou vendedor Synapse, eu preciso fazer a mesma coisa, mas para o Se eu estou gerando
+fixes automáticos, toda a minha vida vai para...
+
+97
+00:09:48,078 --> 00:09:57,798
+a parte Ninguém faz a mágica ou a mágica de conectar tudo isso juntos.
+
+98
+00:09:57,798 --> 00:10:01,598
+É por Smithy vem, e por que Smithy open source.
+
+99
+00:10:01,598 --> 00:10:13,138
+Para que a comunidade possa criar integrações profundas, muito robustas, com todos os seus
+vendadores e soluções, gratuitas e pagadas, para que eles possam automá-los forma
+
+100
+00:10:13,138 --> 00:10:13,728
+automática.
+
+101
+00:10:13,728 --> 00:10:16,429
+E para que, como desenvolvedor, eu possa remover
+
+102
+00:10:16,429 --> 00:10:24,326
+até 99,9 % de som e gerar fixes para restantes 0,1%.
+
+103
+00:10:24,923 --> 00:10:28,603
+Ok, isso é muito interessante porque...
+
+104
+00:10:28,603 --> 00:10:32,363
+Vamos agora tomar uma parte do que você nos falou.
+
+105
+00:10:33,503 --> 00:10:34,583
+Nois, certo?
+
+106
+00:10:34,583 --> 00:10:37,043
+Isso é uma das...
+
+107
+00:10:37,043 --> 00:10:38,743
+Como se chama isso?
+
+108
+00:10:38,743 --> 00:10:40,363
+Eu esqueci da palavra inglês.
+
+109
+00:10:40,363 --> 00:10:44,963
+É um dos problemas agora AppSec, é o nois.
+
+110
+00:10:44,963 --> 00:10:47,203
+Não apenas AppSec, mas também CyberSec geral.
+
+111
+00:10:47,203 --> 00:10:48,243
+O SoC Teams e etc.
+
+112
+00:10:48,243 --> 00:10:50,183
+Tem muitas alertas e etc.
+
+113
+00:10:50,183 --> 00:10:53,183
+E isso me às vezes.
+
+114
+00:10:53,183 --> 00:10:54,523
+Eu ainda estou no...
+
+115
+00:10:54,523 --> 00:10:58,273
+balance, como se deveríamos ter esse som ou não?
+
+116
+00:10:58,273 --> 00:11:00,803
+E eu vou te a explicação de como.
+
+117
+00:11:00,803 --> 00:11:10,203
+Eu sempre imagino eu indo ao médico e dizer, como o médico, essa a visita Eu quero ver se
+eu tenho problemas, se eu bem e tal.
+
+118
+00:11:10,203 --> 00:11:19,783
+O médico diz, aqui tem uma lista de testes que você precisa fazer no seu sangue, talvez
+algum cardio e tal, e tal.
+
+119
+00:11:19,783 --> 00:11:21,395
+Uma visita
+
+120
+00:11:21,883 --> 00:11:36,043
+E eu poderia encontrar algum problema aqui e lá sobre, não sei, o fato de libra, as de
+sabe, o usual, ou perna ou algo assim, ou você poderia ter, ou você poderia ter algum
+
+121
+00:11:36,043 --> 00:11:41,223
+tumor em lugar no seu cérebro, no seu não sei, que você poderia precisar de uma cirurgia.
+
+122
+00:11:42,823 --> 00:11:49,051
+E esse médico, tinha o ético, eu diria, mesmo, forma...
+
+123
+00:11:49,051 --> 00:11:58,271
+ou a duta de dizer a você, OK, você tem o problema A, B, C, D, mas nós precisamos focar no
+problema B, porque pode matar você.
+
+124
+00:11:58,271 --> 00:12:00,711
+Isso é bem óbvio.
+
+125
+00:12:01,051 --> 00:12:14,651
+Agora, trazendo o mesmo cenário para o nosso desenvolvimento hoje, nós sabemos que cada
+linha de é bug ou uma vulnerabilidade potência, considerando a整a app SEC.
+
+126
+00:12:14,651 --> 00:12:22,511
+o whole development landscape, how developers know how to code, but not know how to code
+defensive or protecting and so on.
+
+127
+00:12:22,511 --> 00:12:36,131
+Let's go on this side, which means when we scan the code, when we test the code, we need
+to find the most, how to say this, we want to find a lot of problems, right?
+
+128
+00:12:36,131 --> 00:12:38,631
+And that is, as you put it, very good.
+
+129
+00:12:38,631 --> 00:12:42,611
+Okay, from all this 1000 vulnerabilities I found here.
+
+130
+00:12:42,875 --> 00:12:50,935
+você precisa fixar uma ou duas que são muito críticas, porque você disse que iria
+enriquecer o data, dar contexto aqui e lá.
+
+131
+00:12:50,935 --> 00:12:54,735
+Mas o que fazemos com todas as 998?
+
+132
+00:12:54,735 --> 00:13:07,435
+Porque eu sei que precisamos evitar esse barulho, e eu concordo, mas como segura, eu ainda
+tenho a sensação de que precisamos saber sobre essas 998, porque amanhã, como o mesmo
+
+133
+00:13:07,435 --> 00:13:11,235
+exemplo de teste ou algo assim, amanhã pode ser algo mais sério.
+
+134
+00:13:11,899 --> 00:13:22,719
+Então, talvez a próxima pergunta seria algo como, como você está trabalhando nesta redução
+somente, você não precisa ir a detalhes técnicos, mas como você está se assegurando que,
+
+135
+00:13:22,719 --> 00:13:31,919
+ok, eu estou dando o contexto e, ok, isso é uma prioridade para você, não realmente
+desmissindo ou simplesmente ignorando resto.
+
+136
+00:13:32,179 --> 00:13:39,291
+De novo, vamos considerar que meio disso você tem falsos positivos e assim então eu assumo
+que os escanners e todo mundo...
+
+137
+00:13:39,291 --> 00:13:42,341
+e bom trabalho em reduzir falsos positivos.
+
+138
+00:13:42,341 --> 00:13:45,351
+Ainda é matemática impossível, mas...
+
+139
+00:13:45,351 --> 00:13:51,071
+Vamos dizer que 50 % disso é falso positivo, ainda tem 500 vulnerabilidades.
+
+140
+00:13:51,171 --> 00:13:52,471
+Então, talvez essa a pergunta.
+
+141
+00:13:52,471 --> 00:13:54,471
+Como estamos tentando resolver esse problema?
+
+142
+00:13:54,471 --> 00:13:57,851
+Ok, estou dando vocês crítico para lidar agora.
+
+143
+00:13:57,851 --> 00:14:00,531
+Eu seu médico, isso pode matar vocês.
+
+144
+00:14:00,531 --> 00:14:03,551
+Mas o resto pode matar vocês amanhã.
+
+145
+00:14:03,551 --> 00:14:05,711
+Temos que focar um dia.
+
+146
+00:14:07,218 --> 00:14:14,558
+eu realmente amo o paralelo pessoas sendo doctores e não a polícia.
+
+147
+00:14:16,334 --> 00:14:23,574
+A segurança e vulnerabilidade sendo um tipo de sinal que algo pode ser errado.
+
+148
+00:14:25,614 --> 00:14:37,714
+Você pode escolher trabalhar nas três críticas que podem matar-se amanhã, mas depois os
+restos são sinal e precisam existir no seu data lake.
+
+149
+00:14:37,714 --> 00:14:46,158
+Por que Smithy não desaparece os fundos, mas apenas marca-os como um não reportar agora
+mesmo.
+
+150
+00:14:46,158 --> 00:14:56,938
+Você pode continuar fazendo uma investigação e quando algo novo acontece, ir de volta no
+tempo e ir para o seu e descobrir o que aconteceu.
+
+151
+00:14:56,958 --> 00:15:05,898
+Mas o que você decide é importante, realmente depende das suas muito específicas agora
+mesmo.
+
+152
+00:15:05,898 --> 00:15:10,847
+Por exemplo, você lembra de uma vulnerabilidade chamada Log4j desde o anterior, certo?
+
+153
+00:15:10,847 --> 00:15:12,974
+Todo mundo lembra disso.
+
+154
+00:15:12,974 --> 00:15:23,714
+Então, quem se importaria, antes de Log4j, ninguém se de seus libraries Qual a
+vulnerabilidade dos meus libraries Não problema.
+
+155
+00:15:24,274 --> 00:15:41,430
+A segunda vez você quer um componente, quer cheque, dentro de minutos, que você até tenha
+esse encontro, ou até usa esse library.
+
+156
+00:15:41,454 --> 00:15:51,434
+antes de qualquer vendedor poder apoiar ou apoiar novos fundos ou novas E você não pode
+fazer isso se depender completamente dos seus vendores.
+
+157
+00:15:52,514 --> 00:15:58,494
+Você pode fazer isso se você tiver todos os fundos históricamente.
+
+158
+00:15:58,494 --> 00:16:06,174
+E você tem sua Lágrima e pode voltar para sua Lágrima de e combinar sinais de diferentes
+scans.
+
+159
+00:16:06,174 --> 00:16:09,998
+Talvez, novamente, minha CINAP disse que isso é...
+
+160
+00:16:09,998 --> 00:16:11,498
+disponível na internet.
+
+161
+00:16:11,498 --> 00:16:16,158
+E eu descobri que uso isso e eu descobri que uso isso.
+
+162
+00:16:16,158 --> 00:16:24,158
+E a minha Threat Intel disse que companhias como eu, meu sector, companhias como eu estão
+sendo atacadas.
+
+163
+00:16:24,158 --> 00:16:28,398
+E minha localização geológica, coisas como isso.
+
+164
+00:16:28,858 --> 00:16:35,408
+Você não pode fazer isso se você tiver todas essas informações juntas para fazer uma
+investigação.
+
+165
+00:16:35,408 --> 00:16:37,020
+Isso é trabalho.
+
+166
+00:16:37,038 --> 00:16:40,658
+Não uma pesquisa ou algo que você possa fazer.
+
+167
+00:16:42,698 --> 00:17:02,298
+É igual ao médico, que paciente que ganhou, não sei, 20 quilos e tem, históricamente, um
+colesterol Eles estão um risco muito de ser ataque Pelo menos, é o que diz o meu alunos de
+
+168
+00:17:02,298 --> 00:17:03,478
+local.
+
+169
+00:17:03,998 --> 00:17:06,188
+Então, faz sentido.
+
+170
+00:17:06,222 --> 00:17:12,582
+Mas o high cholesterol, si mesmo, é sinal, mas não é algo fatal, certo?
+
+171
+00:17:12,942 --> 00:17:19,622
+Combinado com todo mundo, tudo o que é, mas essa é exatamente a lógica, exatamente a
+regra, exatamente o workflow.
+
+172
+00:17:19,622 --> 00:17:30,562
+Vamos combinar todos os sinales juntos e ganhar data histórica de repente, teremos a mais
+importante.
+
+173
+00:17:31,742 --> 00:17:35,374
+Mas não quantidade de contexto
+
+174
+00:17:35,374 --> 00:17:43,500
+que podem fazer isso, a menos que tenham todas essas históricas e a habilidade de combinar
+em customizadas que são customizadas para vocês.
+
+175
+00:17:43,867 --> 00:17:49,867
+E você ainda adicionou um bom ponto sobre o tempo que importante.
+
+176
+00:17:49,867 --> 00:17:54,847
+Como você disse, o colesterol não nada hoje, é muito alto.
+
+177
+00:17:55,307 --> 00:18:00,747
+Mas manter alto por ano, dois anos, como diabetes.
+
+178
+00:18:01,927 --> 00:18:08,627
+Eu fiz muitos de sangue e eu pouco de de açúcar pouco mais alto.
+
+179
+00:18:08,627 --> 00:18:11,515
+Porque o eu comi ontem, porque o que eu comi amanhã...
+
+180
+00:18:11,515 --> 00:18:21,795
+mas eu não tive diabetes, mas é diferente de ter muito alto por uma semana, por mês, por
+ano, então você vai ter problema, E por eu perguntei essa questão?
+
+181
+00:18:21,795 --> 00:18:32,995
+Porque eu vejo muitos vendedores, e mesmo independentemente dos vendedores, mas
+especialmente SAST, mas os equipamentos, tipo, ok, eu desmiso isso.
+
+182
+00:18:32,995 --> 00:18:37,075
+Alguns vendedores, uma vez que você desmisa algo, eles param alertar sobre isso.
+
+183
+00:18:37,115 --> 00:18:38,135
+É problema.
+
+184
+00:18:38,135 --> 00:18:40,655
+Eu sempre disse que é igual ao marido.
+
+185
+00:18:40,655 --> 00:18:46,795
+Ele vai ao médico, ele está cheio de problemas, mas ele vem para e a esposa como você Sem
+problemas.
+
+186
+00:18:46,795 --> 00:18:51,515
+Porque se ele diz que tem problema, ele não beber mais, não pode comer o seu bacon.
+
+187
+00:18:51,895 --> 00:18:55,775
+Mas ele ainda tem problema, ele ainda pode ser afetado e impactado por isso.
+
+188
+00:18:55,775 --> 00:18:58,615
+Então, ID não muda o problema.
+
+189
+00:18:58,615 --> 00:19:02,235
+Então, realmente assustado, diria, de nós...
+
+190
+00:19:02,235 --> 00:19:04,915
+Eu não assustado de mais de como nós desenvolvendo o software.
+
+191
+00:19:04,915 --> 00:19:06,265
+Eu sei que é merda.
+
+192
+00:19:06,438 --> 00:19:18,999
+Infelizmente, mas geral, 9 9%, mas eu tenho medo também de como estamos fazendo segurança
+cima disso, porque nós podemos fazer a falsa sensação de segurança, como despecificar
+
+193
+00:19:18,999 --> 00:19:20,699
+coisas que nós deveríamos ter cuidado.
+
+194
+00:19:20,699 --> 00:19:28,099
+Como você disse, você tem sua data lake, você precisa voltar na história disso, voltar no
+tempo disso, é muito importante.
+
+195
+00:19:28,719 --> 00:19:30,499
+Ok, legal.
+
+196
+00:19:31,339 --> 00:19:34,171
+Talvez um outro ponto para tocar.
+
+197
+00:19:34,171 --> 00:19:49,851
+seria como você vê, como profissional, Espiros, como você vê a profissional dos
+trabalhadores, as AppSec, os como você vê na sua carreira pessoas dedicando para estudar
+
+198
+00:19:49,851 --> 00:20:01,787
+sobre, ok, eu desenvolvedor, eu estudar sobre a validação eu quero cuidar das minhas
+aplicações, ou como de AppSec, eu quero aprender novas novas de fazer coisas, AI, como...
+
+199
+00:20:01,787 --> 00:20:06,227
+Você tem alguma opinião
+
+200
+00:20:07,977 --> 00:20:20,518
+A dos desenvolvedores e a segurança aplicação, menos que eu estava suavemente, são pessoas
+muito ativas, curiosas e muito inteligentes.
+
+201
+00:20:20,518 --> 00:20:27,938
+Porém, como humanos e como engenheiros especificamente, temos uma tendência a querer
+especializar coisas.
+
+202
+00:20:27,978 --> 00:20:35,738
+Como pessoa de você pode se em reversar os zero dias ou mobile ou...
+
+203
+00:20:35,822 --> 00:20:36,942
+os SecOps,
+
+204
+00:21:03,758 --> 00:21:06,628
+Aqui como fazer o DevSecOps ou mesmo Metrix.
+
+205
+00:21:06,628 --> 00:21:09,038
+Porque é assim que céus trabalham.
+
+206
+00:21:09,038 --> 00:21:10,488
+Os desenvolvedores são os mesmos, certo?
+
+207
+00:21:10,488 --> 00:21:13,918
+Você tem alguns desenvolvedores que só se importam dos message que usam.
+
+208
+00:21:13,918 --> 00:21:19,918
+Ou só se importam do programa ou elixir ou algo assim.
+
+209
+00:21:19,918 --> 00:21:29,278
+É muito raro encontrar desenvolvedor que se importe do full stack e da e coisas assim.
+
+210
+00:21:30,018 --> 00:21:30,958
+Porém...
+
+211
+00:21:30,958 --> 00:21:35,538
+como uma de você pode ensinar esse comportamento.
+
+212
+00:21:35,538 --> 00:21:40,338
+Você pode ensinar as pessoas a as que querem, certo?
+
+213
+00:21:40,738 --> 00:21:46,778
+Nós somos doutores, como você disse, eu diria somos físicos, porque nós só fazemos
+recomendações.
+
+214
+00:21:47,097 --> 00:21:49,288
+Nós físicos, não somos a polícia.
+
+215
+00:21:49,288 --> 00:21:56,678
+Nós podemos ensinar as pessoas ou ensinar elas a serem conscientes de segurança e se
+cuidar das coisas específicas.
+
+216
+00:21:57,118 --> 00:22:00,534
+Estes são os campeões típicos, certo?
+
+217
+00:22:01,211 --> 00:22:02,431
+Ok, legal.
+
+218
+00:22:02,431 --> 00:22:04,431
+Eu desse ponto e eu concordo.
+
+219
+00:22:04,431 --> 00:22:06,341
+Não tenho a adicionar aqui.
+
+220
+00:22:06,341 --> 00:22:10,951
+Só tenho tantas frustrações como desenvolvedor, como AppSec, não sei.
+
+221
+00:22:10,951 --> 00:22:14,671
+Eu preciso ser bilionário, cedo e tarde, então preciso parar de preocupar com todas essas
+coisas.
+
+222
+00:22:14,671 --> 00:22:22,251
+Um outro ponto para tocar é como...
+
+223
+00:22:22,619 --> 00:22:28,279
+Porque eu imagino, como você disse, que precisa conectar a diferentes fases na sua
+solução.
+
+224
+00:22:28,279 --> 00:22:33,799
+Você conecta a diferentes usagens tiquete, cloud, etc.
+
+225
+00:22:34,219 --> 00:22:39,739
+Quanto colaboração você tem com eles para integrar?
+
+226
+00:22:39,739 --> 00:22:43,179
+Por exemplo, você quer integrar com o Snyk, porque você precisa coletar de escanheiros.
+
+227
+00:22:43,179 --> 00:22:47,679
+Você precisa integrar com, não Azure para conseguir...
+
+228
+00:22:47,679 --> 00:22:50,399
+Então, basicamente, você precisa estudar seus APIs.
+
+229
+00:22:50,811 --> 00:23:02,190
+E você pode falar sobre algo assim, não segredo ou algo assim.
+
+230
+00:23:02,190 --> 00:23:04,230
+Não, não segredos.
+
+231
+00:23:05,070 --> 00:23:07,530
+É por isso que estamos open source.
+
+232
+00:23:07,910 --> 00:23:10,410
+A comunidade tem fantástico.
+
+233
+00:23:11,550 --> 00:23:16,650
+E, como bônus, mudando API é uma gigante.
+
+234
+00:23:16,950 --> 00:23:25,190
+Você não mudaria um API como vendedor se você realmente não tinha uma muito forte para
+fazer isso.
+
+235
+00:23:25,350 --> 00:23:29,710
+Isso, combinado com uma comunidade de...
+
+236
+00:23:29,710 --> 00:23:32,870
+muito inteligentes, muito dedicados voluntários.
+
+237
+00:23:33,990 --> 00:23:49,730
+E melhor empresa que eu já trabalhei com aqui na Smithing, que criou o decadência que faz
+muito fácil de escrever integrações, nos permite ter agora mais de 50 integrações memória
+
+238
+00:23:49,730 --> 00:23:53,410
+de serviços, com diferentes vendadores, diferentes atividades.
+
+239
+00:23:53,410 --> 00:23:54,620
+Sim, 5.0.
+
+240
+00:23:55,175 --> 00:23:56,235
+ok
+
+241
+00:23:56,962 --> 00:24:14,102
+com diferentes vendadores, como o SaaS, o Dust, o CAA, o CNAB, ASPM, mas também coisas
+pequenas, como a gente no Discord, ou GitHub, ou GitLab, coisas assim, ou de contêineres
+
+242
+00:24:14,102 --> 00:24:16,702
+ou escaneio etc.
+
+243
+00:24:16,702 --> 00:24:24,238
+Então, todas essas coisas permitem que respondamos rápido, e com a gente escrito...
+
+244
+00:24:24,238 --> 00:24:40,917
+um grande número de livrarias, conectores e utilidades que nos permitem mapar rapidamente,
+nos criar integrações com 60 linhas de código, talvez em uma tarde ou alguns dias.
+
+245
+00:24:41,278 --> 00:24:52,642
+Não somos nós que sempre criamos as integrações, às a fantástica comunidade de pessoas que
+usam Smithy contribui...
+
+246
+00:24:52,654 --> 00:25:04,494
+ou suavemente para conseguir contribuição de integração, isso combinado com fato de que
+vendedores estão muito felizes para alguém usar o seu ato, porque ele se desmulta da
+
+247
+00:25:04,494 --> 00:25:18,494
+barriga para vendedores venderem, porque ele desmulta da barriga de, oh, eu não tenho
+tempo para suas integrações, permite aos vendedores focar exatamente no que eles precisam.
+
+248
+00:25:19,547 --> 00:25:21,287
+Ok, isso legal.
+
+249
+00:25:21,707 --> 00:25:27,007
+Agora talvez mais duas perguntas sobre o do ou o negócio.
+
+250
+00:25:27,187 --> 00:25:29,987
+A primeira é...
+
+251
+00:25:29,987 --> 00:25:39,087
+Imagine que eu uma empresa, tenho ex número de desenvolvedores, nunca fiz nenhum scan,
+nada, não sei nada sobre Ipsac.
+
+252
+00:25:39,087 --> 00:25:40,727
+Eu quero começar.
+
+253
+00:25:40,787 --> 00:25:44,247
+É algo para mim começar?
+
+254
+00:25:44,247 --> 00:25:48,659
+Ou algo para mim quando eu mais maturação?
+
+255
+00:25:49,390 --> 00:25:51,770
+Você está falando sobre a 0 para 1.
+
+256
+00:25:52,810 --> 00:26:07,950
+Isso é fantástico porque nós estamos fazendo exatamente a 0 1 com vários clientes, vários
+parceiros, para o ano passado e pouco.
+
+257
+00:26:08,270 --> 00:26:12,350
+A ideia por trás da 0 para 1 é simples.
+
+258
+00:26:14,350 --> 00:26:29,670
+Pegue uma instância plugue a aplicação, o webhook ou a integração para onde você escreve
+código, onde você implementa infraestrutura e onde você implementa imagens.
+
+259
+00:26:29,990 --> 00:26:39,310
+Vamos fazer o resto e vamos te dar vulnerabilidades a cada dia para você lidar com.
+
+260
+00:26:39,310 --> 00:26:44,990
+Mesmo se você tiver milhão de críticos no início, nós não vamos te espalhar com milhão
+críticos.
+
+261
+00:26:45,190 --> 00:26:48,850
+Isso garantiu que você nunca vai lidar com eles.
+
+262
+00:26:48,850 --> 00:26:59,270
+Nós vamos priorizar eles e você vai conseguir os 5 a 9 críticos todos os Mas eles vão ser
+5 a 9 até que nós reduzimos isso.
+
+263
+00:26:59,450 --> 00:27:09,368
+Mas porque nós reduzimos o som, a Open Source e o Pro Smithy reduzir o som por bom 90 % do
+você recebe.
+
+264
+00:27:09,518 --> 00:27:22,238
+é muito baixo de vulnerabilidades para você lidar com e com a habilidade que temos para
+que nós possamos fixar ou sugerir fixações muito, muito mais vezes você só precisa clicar
+
+265
+00:27:22,238 --> 00:27:27,122
+no botão e se seus de unidade passaram, é isso é o seu 021
+
+266
+00:27:28,091 --> 00:27:44,351
+Ok, então, porque eu vejo empresas como, integrar no meu pipeline, oh, preciso modelar eu
+preciso de WAF, eles são só, eu vejo eles andando aqui e lá sem ter um plano, sem saber o
+
+267
+00:27:44,351 --> 00:27:45,111
+que eles fazem.
+
+268
+00:27:45,111 --> 00:27:54,631
+Eles ouviram sobre o CyberSecOps ou AppSec, eles precisam começar por causa compliance ou
+algo, ou eles só querem fazer CyberSec ao invés de só ser compliance, que totalmente
+
+269
+00:27:54,631 --> 00:27:55,671
+diferentes.
+
+270
+00:27:55,671 --> 00:27:57,531
+E às vezes é...
+
+271
+00:27:57,595 --> 00:28:02,835
+Lack of tooling or lack of companies that help them to get there.
+
+272
+00:28:02,835 --> 00:28:04,555
+By themselves, sometimes they will not achieve.
+
+273
+00:28:04,555 --> 00:28:05,965
+So this is you said is cool.
+
+274
+00:28:05,965 --> 00:28:06,894
+Yeah, go on.
+
+275
+00:28:06,894 --> 00:28:08,234
+Isso é verdade.
+
+276
+00:28:08,974 --> 00:28:20,394
+E essas empresas geralmente são dirigidas por pessoas de ou não tem pessoas de e são
+dirigidas por CTO que perdido.
+
+277
+00:28:20,394 --> 00:28:24,994
+E é muito simples ser perdido no som Há milhão de soluções.
+
+278
+00:28:26,054 --> 00:28:31,954
+Ainda há vários modelos muito fortes.
+
+279
+00:28:32,634 --> 00:28:36,486
+Por exemplo, o modelo de maturidade e alguns
+
+280
+00:28:37,362 --> 00:28:41,962
+que dão a você ações que você precisa fazer.
+
+281
+00:28:42,262 --> 00:29:00,042
+Porque nós fomos atrasando e não queríamos aparecer como se fôssemos serviços ou como se
+tivéssemos educar nossos parceiros, construímos open source, wayfinder, utilidade na nossa
+
+282
+00:29:00,042 --> 00:29:05,962
+página, onde você tem o seu caminho de DevSecOps.
+
+283
+00:29:06,734 --> 00:29:22,254
+você tem vários modelos na esquerda e você pode escolher vendadores, open source e free
+tools, ambos open source slash free tools e pagados, para colocar em vários níveis da sua
+
+284
+00:29:22,254 --> 00:29:35,454
+viagem maturidade, para que você possa investigar como isso pode afetar seu de maturidade,
+para que você possa ver, você possa encontrar o que é o próximo passo.
+
+285
+00:29:35,454 --> 00:29:36,834
+Isso não
+
+286
+00:29:36,846 --> 00:29:47,266
+A mais completa lá fora, existem outros como o Samy Tool, pessoas maravilhosas no
+CodeDifique, mas é uma solução.
+
+287
+00:29:47,266 --> 00:29:56,678
+Então você não precisa ficar perdido mais, tentando buscar uma ESPM e conseguir mais de 20
+opções, por exemplo.
+
+288
+00:29:56,955 --> 00:30:07,535
+Eu faço alguns consultos, por causa da experiência, fácil ver alguns processos, algumas
+instruções, dar algumas guiadas.
+
+289
+00:30:07,535 --> 00:30:16,435
+Mas, normalmente, quando as empresas me dizem que precisam disso e disso, e dizem como
+está hoje, ou hoje é assim, não, não.
+
+290
+00:30:16,475 --> 00:30:19,275
+Você no caminho não sei quem te isso.
+
+291
+00:30:19,275 --> 00:30:22,065
+Você pode ouve me ou ir para a OSPSA.
+
+292
+00:30:22,065 --> 00:30:26,907
+Como você disse, tem um free framework para te dizer exatamente como está a maturidade.
+
+293
+00:30:26,907 --> 00:30:29,027
+com alguns parâmetros, etc.
+
+294
+00:30:29,027 --> 00:30:37,687
+E assim, você não lida na entrevista ou nas respostas, para dar a você claração de onde
+estamos, onde queremos ir.
+
+295
+00:30:37,687 --> 00:30:41,847
+E você pode, claro, estimar custos, tempo, etc.
+
+296
+00:30:41,847 --> 00:30:42,927
+É que você mencionou.
+
+297
+00:30:42,927 --> 00:30:45,207
+Na verdade, gravamos...
+
+298
+00:30:45,207 --> 00:30:54,609
+Minha assistente não aqui hoje, mas gravamos, talvez na Série 3, se não me engano, um
+episódio sobre Oaspsan.
+
+299
+00:30:54,619 --> 00:31:02,959
+É português, desculpe, mas é episódio Ok, Speedos, a próxima pergunta.
+
+300
+00:31:07,771 --> 00:31:09,131
+É funcionando.
+
+301
+00:31:09,131 --> 00:31:13,551
+A próxima pergunta é, você mencionou a versão certo?
+
+302
+00:31:13,551 --> 00:31:15,091
+Você pode falar sobre o preço?
+
+303
+00:31:15,091 --> 00:31:19,211
+Você falar sobre o que é a diferença entre eles?
+
+304
+00:31:19,211 --> 00:31:23,611
+Por que as devem ir para pro e não só para os operadores?
+
+305
+00:31:24,206 --> 00:31:26,406
+Sim, é claro.
+
+306
+00:31:26,826 --> 00:31:43,686
+Nós open-sourcemos Smithy para dar a todos que têm a capacidade de fazer DevSecOs
+sozinhos, a capacidade de conectar todas as suas componentes e todo o programa.
+
+307
+00:31:43,686 --> 00:31:52,806
+Smithy open-source é o SDK e o de para você possa usar qualquer quantidade de ferramentas
+
+308
+00:31:53,314 --> 00:32:05,634
+seu CI-CD ou fora disso, e ganhar um data link, data link muito forte, em standardizado,
+para você não tenha que normalizar.
+
+309
+00:32:07,074 --> 00:32:20,074
+Enquanto construímos o Smithy Pro e testou com vários parceiros, acabamos de precisar
+criar front-ends, principalmente de e de
+
+310
+00:32:21,518 --> 00:32:27,258
+nossos partilheiros continuaram a ser perguntados se eles puderiam provar que eles fizeram
+escaneio.
+
+311
+00:32:27,258 --> 00:32:38,978
+E não podiam fazer isso para que satisfassem um auditor ou eles tinham que entrar e juntar
+evidências manualmente.
+
+312
+00:32:38,978 --> 00:32:47,630
+Eles também não sabiam como fazer tudo o empresas fazem, como fazer single sign-on,
+porque...
+
+313
+00:32:47,630 --> 00:32:51,260
+Temos que construir a front-end para coletar a evidência auditiva.
+
+314
+00:32:51,260 --> 00:32:53,910
+Temos que single sign-on.
+
+315
+00:32:53,910 --> 00:33:01,670
+Temos que fazer Smithy scale para 5 milhões de executos por dia.
+
+316
+00:33:02,230 --> 00:33:11,190
+Para fazer isso, temos que fazer cada executo paralisável para que possamos fazer mais
+inteligentes, como o Smart Schedule.
+
+317
+00:33:11,190 --> 00:33:13,480
+Todas essas coisas estão na Smithy Pro.
+
+318
+00:33:13,480 --> 00:33:16,950
+Além de alguns muito, muito caros.
+
+319
+00:33:17,785 --> 00:33:37,926
+na execução de AI, coisas como a AI On-Prem e coisas assim, que apenas empresas muito
+grandes precisarão, a maioria de nós, ou a das não, para que possamos servir casas ou
+
+320
+00:33:37,926 --> 00:33:45,422
+empresas que precisam, por exemplo, de remediação no on-premise, mais evidência, reuniço
+no on-premise, mais...
+
+321
+00:33:45,422 --> 00:33:50,142
+políticas e todas essas coisas que 99 % de não.
+
+322
+00:33:50,142 --> 00:34:09,362
+Então, Smithy Free, Smithy Open Source, SDK, basic workflows, que cobram a maioria das
+Smithy Pro, automação end-to-end, crie os workflows sozinhos, fixe, conecte com as
+
+323
+00:34:09,362 --> 00:34:15,310
+plataformas muito caras que você, se tiver dinheiro para pagar,
+
+324
+00:34:15,310 --> 00:34:18,430
+Você pode também pagar algo extra para Smithy.
+
+325
+00:34:18,430 --> 00:34:26,054
+E isso ajuda pessoas que querem ser completamente sem interesse, não querem se
+
+326
+00:34:27,979 --> 00:34:30,746
+Eu assumo que o SaaS também, ou você tem de on-prem?
+
+327
+00:34:30,746 --> 00:34:39,408
+o Sassour OR On-Prem e é a única solução, pelo menos eu sei e eu pesquiso bastante, que
+faz isso.
+
+328
+00:34:40,699 --> 00:34:42,519
+Cool, isso muito legal.
+
+329
+00:34:42,519 --> 00:34:43,819
+Eu vou sozinho, verdade.
+
+330
+00:34:43,819 --> 00:34:46,179
+Só para eu dizer, eu tenho isso.
+
+331
+00:34:46,179 --> 00:35:04,999
+Eu não desenvolvo Não, é engraçado porque eu já mesmo a companhia que hoje, nós temos 12,
+9, na reduzidos, 9 diferentes escanheiros.
+
+332
+00:35:04,999 --> 00:35:10,053
+É secreto, é SOS, SCA, aqui, ali e é...
+
+333
+00:35:11,126 --> 00:35:13,207
+Noites e orquestração.
+
+334
+00:35:13,207 --> 00:35:17,047
+Temos que definir, por exemplo, centralizado.
+
+335
+00:35:18,007 --> 00:35:20,207
+Temos que esconder todo o PR.
+
+336
+00:35:20,207 --> 00:35:23,487
+Não este PR, não esse PR, é todo PR.
+
+337
+00:35:23,487 --> 00:35:28,007
+E temos Bitbucket, GitLab, até o Search Save.
+
+338
+00:35:29,007 --> 00:35:30,707
+Tudo que você pode imaginar.
+
+339
+00:35:30,707 --> 00:35:38,387
+Então, quem pode integrar tudo e eu posso administrar lugar, qualquer PR que ele vai
+encostar isso.
+
+340
+00:35:38,459 --> 00:35:50,059
+Trigar os seus scans, coletar todas datas, abrir um ticket no Jira, ou que E isso é o que
+podem dizer, é desenho.
+
+341
+00:35:50,059 --> 00:35:57,059
+Tem muitas coisas por aí e elas não sabem como centralizar, porque em algum momento você
+precisa de centralização.
+
+342
+00:35:57,939 --> 00:36:02,862
+É bem difícil de manajar todas essas atividades separadas.
+
+343
+00:36:02,862 --> 00:36:08,415
+Sim, você disse perfeitamente, você precisa do seu pânel seu centralizado, é isso.
+
+344
+00:36:08,415 --> 00:36:09,315
+Exatamente.
+
+345
+00:36:09,315 --> 00:36:15,095
+Eu tinha boss que dizia, imagina carro sem o dashboard.
+
+346
+00:36:15,095 --> 00:36:25,975
+Você não sabe a velocidade, o nível o que você Você pode ir de ponto A a ponto B sem
+nenhum problema, mas você precisa dessas informações.
+
+347
+00:36:25,975 --> 00:36:28,155
+O limite etc.
+
+348
+00:36:28,455 --> 00:36:33,195
+Então, esse dashboard é o seu guia ao mesmo tempo que o seu código.
+
+349
+00:36:33,195 --> 00:36:35,099
+Se você tiver problemas, ele vai alertar você.
+
+350
+00:36:35,358 --> 00:36:39,598
+Upsec, não temos nenhum dashboard, certo?
+
+351
+00:36:39,598 --> 00:36:48,678
+Upsec, imagina carro onde toda a surface é um dashboard, também controle.
+
+352
+00:36:49,998 --> 00:36:55,238
+Você sepia pouco no seu prato e o carro muda a direção, certo?
+
+353
+00:36:55,238 --> 00:37:02,843
+Ou talvez o seu speedometer está no chão porque é onde esse particular produtor...
+
+354
+00:37:02,843 --> 00:37:03,798
+Uhum, uhum.
+
+355
+00:37:03,798 --> 00:37:10,898
+o speedometer, Porque não tudo feito pela mesma pessoa, não tem alguma pensão sobre isso.
+
+356
+00:37:10,898 --> 00:37:15,858
+É combinação como de Frankenstein, como Frankenstein.
+
+357
+00:37:16,038 --> 00:37:18,298
+E não nada para conectar tudo junto.
+
+358
+00:37:18,298 --> 00:37:25,358
+Por isso, você muda um pouco sítio e o carro se desliza.
+
+359
+00:37:25,659 --> 00:37:28,339
+Cool, cool analogy.
+
+360
+00:37:28,659 --> 00:37:31,029
+Spiros, I have one more point here.
+
+361
+00:37:31,029 --> 00:37:33,973
+Let me just run my introduction.
+
+362
+00:37:38,715 --> 00:37:48,575
+Temos a Dev May Cry, que sempre é o cast, o podcast, o guest e assim Sempre falamos algo.
+
+363
+00:37:48,575 --> 00:37:51,085
+Sabe esse momento lutamos contra os desenvolvedores?
+
+364
+00:37:51,085 --> 00:37:55,855
+Eu era desenvolvedor, eu ainda coding, mas agora somos segurança.
+
+365
+00:37:55,855 --> 00:37:59,275
+Sempre falamos algo divertido para fazer o desenvolvedor chorar.
+
+366
+00:37:59,275 --> 00:38:02,895
+Funcionário e O que faria os desenvolvedores chorarem?
+
+367
+00:38:02,895 --> 00:38:04,555
+Você pode pensar algo.
+
+368
+00:38:04,555 --> 00:38:06,285
+Eu tenho algo mente.
+
+369
+00:38:06,427 --> 00:38:08,407
+Seria algo assim.
+
+370
+00:38:08,407 --> 00:38:17,867
+todas as equipes da companhia A, teriam todos os scanners, por favor, os melhores scanners
+de SaaS, SCA, DAS, tudo.
+
+371
+00:38:17,867 --> 00:38:22,207
+Mas eles precisam manajar cada deles, todas as questões, separadamente.
+
+372
+00:38:22,207 --> 00:38:25,087
+Então, a solução é, 1.
+
+373
+00:38:25,087 --> 00:38:34,715
+Eles precisam ir ao seu dashboard ou para encontrar todas as questões, clicar nos
+detalhes, depois voltar ao código para ver onde está e fixar e assim.
+
+374
+00:38:34,715 --> 00:38:43,815
+E depois você tem o DAS, que é outro, on-prem, que você precisa acessar somente com VM,
+sob VPN, e depois você precisa acessar isso.
+
+375
+00:38:43,815 --> 00:38:51,975
+Então você tem 13 diferentes ferramentas que você precisa acessar para se e encontrar suas
+vulnerabilidades e onde está o problema na sua aplicação.
+
+376
+00:38:51,995 --> 00:38:57,185
+Então esse seria o de dev-maker hoje para fazer os desenvolvedores rirem.
+
+377
+00:38:57,185 --> 00:38:58,855
+Às vezes eles precisam rir.
+
+378
+00:39:02,126 --> 00:39:11,346
+Ok, então eu vou construir a A é exatamente sua, com atuados.
+
+379
+00:39:11,346 --> 00:39:18,386
+Imagine um DAS que dá você vulnerabilidades enquanto você está Go.
+
+380
+00:39:18,386 --> 00:39:29,988
+E SAS que faz exatamente mesma coisa, tipo, é a minha Php 10, mas com uma SLA de critical
+que ser resolvida dia.
+
+381
+00:39:31,134 --> 00:39:31,915
+Isso incrível.
+
+382
+00:39:31,915 --> 00:39:35,275
+Essa SLA dá esse sabor de desesperação.
+
+383
+00:39:35,275 --> 00:39:38,335
+Sem features, sem coisas sem tempo mais.
+
+384
+00:39:38,915 --> 00:39:42,995
+Você precisa parar tudo para lidar com essas falsas positivas e tudo isso.
+
+385
+00:39:43,175 --> 00:39:43,835
+Cool.
+
+386
+00:39:43,835 --> 00:39:46,115
+Talvez para fazer tudo melhor.
+
+387
+00:39:46,175 --> 00:39:53,435
+Todos esses poderiam ser exportados uma spreadsheet que eles precisam deslizar localmente.
+
+388
+00:39:53,755 --> 00:39:55,595
+E depois se administrar no Excel.
+
+389
+00:39:55,595 --> 00:39:56,525
+Ou PDF.
+
+390
+00:39:56,525 --> 00:39:58,910
+Excel é ainda mais fácil de navegar.
+
+391
+00:39:58,910 --> 00:39:59,810
+exatamente.
+
+392
+00:40:00,027 --> 00:40:00,767
+É perfeito.
+
+393
+00:40:00,767 --> 00:40:03,027
+Vamos fazer a vida mais Ok.
+
+394
+00:40:03,027 --> 00:40:03,787
+Cool.
+
+395
+00:40:03,787 --> 00:40:09,207
+Dois três episódios atrás, gente, havia um incrível Devon May Cry sobre a compreensão.
+
+396
+00:40:09,207 --> 00:40:11,007
+Ou, na sobre o treinamento.
+
+397
+00:40:11,007 --> 00:40:12,637
+Então você precisa assistir esse episódio.
+
+398
+00:40:12,637 --> 00:40:18,927
+Dois três episódios atrás, um dos nossos castes foi descrever isso sobre treinamentos.
+
+399
+00:40:19,087 --> 00:40:19,977
+É louco.
+
+400
+00:40:19,977 --> 00:40:23,207
+Eu já no primeiro sentado que ele disse.
+
+401
+00:40:23,207 --> 00:40:27,323
+Você vai para o treinamento e você vê como o slide 1, 50.
+
+402
+00:40:27,611 --> 00:40:31,971
+Então você precisa ir mais de horas de treino.
+
+403
+00:40:31,971 --> 00:40:32,691
+Cool.
+
+404
+00:40:32,691 --> 00:40:35,671
+Spiros, acho que estamos na hora.
+
+405
+00:40:35,951 --> 00:40:40,121
+Obrigado por se juntar, por compartilhar toda essa valiosa.
+
+406
+00:40:40,121 --> 00:40:42,351
+Acho que Smitty tem muita potencial.
+
+407
+00:40:42,851 --> 00:40:45,451
+E, por certeza, eu vou discutir com o meu time.
+
+408
+00:40:45,451 --> 00:40:46,841
+Gente, nós temos potencial aqui.
+
+409
+00:40:46,841 --> 00:40:50,371
+Vamos ver o que pode ser um benefício para nós.
+
+410
+00:40:50,951 --> 00:40:57,339
+Qualquer mensagem qualquer adviamento qualquer beijo ou abraço para a família, eu não sei.
+
+411
+00:40:57,339 --> 00:40:59,571
+Fui.
+
+412
+00:41:00,089 --> 00:41:01,390
+Não realmente.
+
+413
+00:41:01,390 --> 00:41:06,870
+O último mensagem, eu acho, que tem que ser apenas como precisa ser.
+
+414
+00:41:07,630 --> 00:41:25,830
+Se você automata agressivamente tudo e se você não tem medo de vulnerabilidades, você pode
+fazer sua vida significativamente mais além da vida de aqueles que você serve, que é de
+
+415
+00:41:25,830 --> 00:41:27,246
+engenharia da companhia.
+
+416
+00:41:27,246 --> 00:41:29,686
+pessoas que realmente fazem o dinheiro.
+
+417
+00:41:30,426 --> 00:41:38,950
+não tenha medo de ser agressivo em automação e não tenha medo de ser agressivo em redução
+
+418
+00:41:39,835 --> 00:41:40,495
+Cool!
+
+419
+00:41:40,495 --> 00:41:42,555
+Obrigado por isso de novo.
+
+420
+00:41:42,775 --> 00:41:45,355
+Eu acredito que vemos a mim.
+
+421
+00:41:45,355 --> 00:41:48,375
+Audiences, você, claro, você já convidado para o próximo episódio.
+
+422
+00:41:48,375 --> 00:41:51,065
+Mas eu acredito que vamos ver todos no próximo episódio.
+
+423
+00:41:51,065 --> 00:41:52,105
+Te vejo na próxima semana.
+
+424
+00:41:52,105 --> 00:41:56,815
+Espero que eu não sozinho de sem o Marcos e o Só minha voz é mais divertida.
+
+425
+00:41:56,815 --> 00:41:57,795
+Gente, te vejo.
+
+426
+00:41:57,795 --> 00:41:59,406
+Spiros, obrigado mais uma vez.
+
+427
+00:41:59,406 --> 00:42:00,966
+Muito Kassir.
+
