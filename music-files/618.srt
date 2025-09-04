@@ -1,0 +1,1735 @@
+1
+00:00:26,722 --> 00:00:29,252
+Fala pessoal, tudo bem com vocês?
+
+2
+00:00:29,252 --> 00:00:32,682
+Sejam muito bem-vindos a mais episódio de F-SecOps Podcast.
+
+3
+00:00:32,682 --> 00:00:34,302
+Eu sou Cassio Pereira.
+
+4
+00:00:34,302 --> 00:00:35,282
+Estamos no evento...
+
+5
+00:00:35,282 --> 00:00:37,722
+No evento, estou viajando já, né?
+
+6
+00:00:37,722 --> 00:00:41,062
+Estamos no episódio Carrera Solo hoje.
+
+7
+00:00:41,062 --> 00:00:50,292
+Estamos no episódio hoje onde eu estou aqui, alôni, sozinho, na solidão, na darkness,
+porque é muito difícil arrumar agenda com esses caras.
+
+8
+00:00:50,292 --> 00:00:53,422
+Sabem que tanto o Marcos quanto o Benyur quanto eu...
+
+9
+00:00:53,422 --> 00:01:01,662
+trabalhamos bastante, então nem sempre é muito possível a gente casar as agendas.
+
+10
+00:01:01,662 --> 00:01:06,092
+Então, estou procurando minha cola aqui para poder fazer as minhas anúncias.
+
+11
+00:01:06,092 --> 00:01:11,332
+Enfim, você sabe que é muito difícil sempre achar agenda, consolidar a agenda com todo
+mundo.
+
+12
+00:01:11,332 --> 00:01:15,342
+Eu e o Marcos aqui na Europa, o Benyur lá no Brasil.
+
+13
+00:01:16,122 --> 00:01:19,582
+Enfim, é muito complicado a gente sempre conseguir consolidar a agenda.
+
+14
+00:01:19,582 --> 00:01:20,910
+Então, para evitar...
+
+15
+00:01:20,910 --> 00:01:24,720
+que a gente fique muito tempo sem episódios, a gente vai gravar como dá.
+
+16
+00:01:24,720 --> 00:01:29,410
+Na verdade esse sempre foi o plano, na verdade aqui nem pra mim estava dando de fato.
+
+17
+00:01:29,410 --> 00:01:34,170
+Então hoje eu consegui arrumar tempo aqui pra parar minuto e conseguir fazer essa
+gravação.
+
+18
+00:01:34,170 --> 00:01:46,950
+Pessoal, a gente vai falar no episódio de hoje sobre como montar programa de Epsec, mas é
+a parte 5, a gente já tem 4 episódios sobre isso, agora é a quinta parte que a gente vai
+
+19
+00:01:46,950 --> 00:01:49,990
+falar exatamente sobre como montar programa de Epsec.
+
+20
+00:01:49,990 --> 00:01:51,188
+E eu queria...
+
+21
+00:01:51,518 --> 00:01:58,218
+já começar o programa de hoje, lembrando como foram, ou pelo menos qual foi a última parte
+que gente falou sobre isso.
+
+22
+00:01:58,218 --> 00:02:05,198
+Na última parte, a gente falou sobre treinamento, como capacitar...
+
+23
+00:02:05,198 --> 00:02:06,598
+Olha legal, essa câmera é muito legal.
+
+24
+00:02:06,598 --> 00:02:10,798
+Você faz o L, mas o L serve para alguma coisa que preste.
+
+25
+00:02:10,798 --> 00:02:13,058
+Enfim, você faz...
+
+26
+00:02:13,058 --> 00:02:18,458
+A gente falou sobre capacitação de times de segurança com relação a applicant security e
+tudo mais.
+
+27
+00:02:18,458 --> 00:02:20,526
+E é legal entender isso porque...
+
+28
+00:02:20,526 --> 00:02:31,046
+A gente entende que quando gente chega determinado momento do nosso programa de AppSec,
+normalmente no começo, gente vai começar programa, já starta com isso, mas é importante
+
+29
+00:02:31,046 --> 00:02:33,046
+que isso seja trabalho contínuo.
+
+30
+00:02:33,046 --> 00:02:36,206
+Não é faz dia e acabou, faz no começo uma fase e acabou.
+
+31
+00:02:36,206 --> 00:02:42,716
+Não, pelo menos na minha imaginação, na minha ideia, minha experiência, é um trabalho
+recorrente.
+
+32
+00:02:42,716 --> 00:02:44,716
+Você vai treinar ali as pessoas devidas.
+
+33
+00:02:44,716 --> 00:02:46,286
+A gente falou sobre isso, eu, Ben Hur,
+
+34
+00:02:46,286 --> 00:02:49,786
+conversamos bastante sobre isso lá no episódio passado, no episódio passado não, né?
+
+35
+00:02:49,786 --> 00:03:00,086
+No episódio atrás, que é a parte 4 desse como montar o programa de AppSec, que é uma série
+que a está fazendo aqui, bem interessante para você literalmente sair do zero ao avançado
+
+36
+00:03:00,086 --> 00:03:03,666
+e aplicar um programa na prática da sua empresa, beleza?
+
+37
+00:03:03,666 --> 00:03:13,262
+Mas hoje a gente vai falar sobre algo que eu queria fazer uma pausa na verdade, Talvez
+antes de avançar no programa de AppSec de fato...
+
+38
+00:03:13,262 --> 00:03:21,242
+Eu acho que é legal a gente parar nesse momento aqui, a gente já definiu lá atrás
+baseline, gente já definiu o plano de comunicação, como que gente vai fazer um assessment
+
+39
+00:03:21,242 --> 00:03:24,642
+de hospição, capacitação de treinamento, enfim.
+
+40
+00:03:24,702 --> 00:03:32,542
+Nesse momento aqui, eu queria fazer uma pausa, quase que um 4.1, mas vamos colocar parte
+5, mas é quase que fosse uma 4.1.
+
+41
+00:03:32,542 --> 00:03:36,242
+Eu queria fazer uma pausa aqui na parte 5 e pedir para vocês fazerem o seguinte.
+
+42
+00:03:37,622 --> 00:03:38,702
+Vou até...
+
+43
+00:03:38,702 --> 00:03:42,722
+Vou relaxar aqui, peraí, dá para vocês me ouvirem assim.
+
+44
+00:03:43,502 --> 00:03:47,522
+Relaxar aqui ó, agora eu tenho a cadeira nova, tá vendo?
+
+45
+00:03:47,522 --> 00:03:53,442
+Olha que legal, dá pra esticar as pernas, dá pra deitar aqui, olha que beleza, tá vendo?
+
+46
+00:03:53,682 --> 00:03:56,522
+Sucesso, gravar podcast assim agora.
+
+47
+00:03:56,642 --> 00:03:58,222
+Mas quem falou que não?
+
+48
+00:03:58,222 --> 00:04:03,642
+Gravar podcast assim, bota o microfone pra cá, espero que vocês estejam me ouvindo.
+
+49
+00:04:03,642 --> 00:04:06,022
+ó, pronto.
+
+50
+00:04:06,722 --> 00:04:12,358
+Então, a gente vai, peraí, agora sim.
+
+51
+00:04:12,622 --> 00:04:16,632
+Então nesse episódio 5 aqui, o eu queria que vocês entendessem?
+
+52
+00:04:16,632 --> 00:04:20,782
+Pra gente poder fazer uma pausa, quase que uma...
+
+53
+00:04:20,782 --> 00:04:21,502
+Como eu falei, né?
+
+54
+00:04:21,502 --> 00:04:25,012
+4.1, literalmente ali, uma pausa.
+
+55
+00:04:25,012 --> 00:04:38,574
+Pra gente fazer o seguinte, que tal, se nesse momento do nosso programa de AppSec, a gente
+puder avaliar o quanto a gente tem de budget, vamos fazer uma pausa.
+
+56
+00:04:38,574 --> 00:04:41,644
+para avaliar o quanto a gente tem de bunch dedicado a isso.
+
+57
+00:04:41,644 --> 00:04:47,814
+Talvez essa discussão já tenha sido feita anteriormente no teu programa de Heapsack, senão
+vamos usar esse momento para isso.
+
+58
+00:04:47,814 --> 00:04:56,414
+Então a gente fez o que a gente já explicou nos passos anteriores, nos episódios
+anteriores, mas agora a gente vai fazer o seguinte, vamos pausar, a gente vai falar com a
+
+59
+00:04:56,414 --> 00:05:00,384
+diretoria, sea level, board level e tudo mais.
+
+60
+00:05:00,384 --> 00:05:02,554
+Olha, meu short está arrasdeado aqui, não reparem.
+
+61
+00:05:03,194 --> 00:05:06,234
+Board level, sea level, sea level, enfim.
+
+62
+00:05:06,234 --> 00:05:07,954
+E a gente vai fazer o seguinte,
+
+63
+00:05:08,650 --> 00:05:11,410
+é quanto temos de budget?
+
+64
+00:05:11,990 --> 00:05:17,230
+Eu tenho R 500 mil, R 1 milhão, R 1 real, R 10 milhão.
+
+65
+00:05:17,230 --> 00:05:20,370
+Quanto a tem de budget pra investir em APSEC?
+
+66
+00:05:20,370 --> 00:05:24,210
+Talvez entendam isso pouco mais claro, mais a fundo.
+
+67
+00:05:24,210 --> 00:05:33,170
+Talvez você possa se perguntar até o seguinte, mas Kass, não deveria ser o contrário a
+gente fazer levantamento e a gente falar o que a gente precisa, quanto a gente precisa?
+
+68
+00:05:33,290 --> 00:05:36,310
+Sim, esse seria o movimento natural.
+
+69
+00:05:36,590 --> 00:05:37,702
+Mas...
+
+70
+00:05:37,806 --> 00:05:46,046
+Partindo do princípio que você está numa área nova, que não tem nada, está criando
+programa de upsec, vai criar uma área de upsec, é importante saber quanta empresa está
+
+71
+00:05:46,046 --> 00:05:48,666
+disposta a investir nisso.
+
+72
+00:05:48,666 --> 00:05:55,116
+Talvez você possa fazer levantamento, gastar tempo, gastar tempo que você nem tem para
+falar, olha, eu preciso de 10 milhões de reais.
+
+73
+00:05:55,116 --> 00:05:57,246
+Ah, não tem, tem 1 milhão de reais.
+
+74
+00:05:57,686 --> 00:06:04,726
+Tá, essa resposta bate prontamente, não tem ideia do você quer, tem 1, talvez a consiga
+essa resposta já de cara.
+
+75
+00:06:04,726 --> 00:06:06,190
+Então perguntar, gente, ó...
+
+76
+00:06:06,190 --> 00:06:08,230
+Quanto que gente está pensando investir aqui AppSec?
+
+77
+00:06:08,230 --> 00:06:09,560
+É milhão, é dez milhão?
+
+78
+00:06:09,560 --> 00:06:15,170
+É nada, a não vai investir nada, a gente vai fazer o que dá com o que tem, mas sem
+investir uma grana extra.
+
+79
+00:06:15,170 --> 00:06:18,470
+Pode ser um cenário também.
+
+80
+00:06:18,610 --> 00:06:22,510
+Então a gente vai fazer esse levantamento, a gente vai entender quanto que a gente tem de
+grana.
+
+81
+00:06:22,510 --> 00:06:23,990
+Primeira etapa.
+
+82
+00:06:23,990 --> 00:06:29,410
+Segunda etapa, a gente vai entender o que que a gente quer trazer de soluções.
+
+83
+00:06:29,410 --> 00:06:33,582
+A gente vai comprar um SaaS, a gente vai comprar uma solução de treinamento, como gente
+falou.
+
+84
+00:06:33,582 --> 00:06:36,062
+na etapa anterior, no episódio anterior.
+
+85
+00:06:36,062 --> 00:06:47,782
+A gente vai comprar ESPM, gente vai comprar SCA, a gente vai introduzir programa de Bug
+Bounty, a gente vai contratar pessoas, pentesters, appsec, enfim.
+
+86
+00:06:47,782 --> 00:06:50,022
+A vai contratar alguma solução.
+
+87
+00:06:50,022 --> 00:06:53,132
+É legal fazer levantamento até do que a gente quer.
+
+88
+00:06:53,132 --> 00:07:02,042
+Obviamente, ao longo das etapas aqui que a gente vai descrever ainda, eu falei que era uma
+série bem comprida, a gente está fazendo a parte cinco agora, uns cinco episódios, cinco
+
+89
+00:07:02,042 --> 00:07:02,734
+horas.
+
+90
+00:07:02,734 --> 00:07:05,334
+É muito provável que tenha mais 5 episódios aí, fácil.
+
+91
+00:07:06,634 --> 00:07:13,004
+Então nesse momento é legal saber quanto tem e o que você já tem mente de que você vai
+precisar.
+
+92
+00:07:13,004 --> 00:07:15,494
+Cara, a gente é zero, não temos nada.
+
+93
+00:07:15,494 --> 00:07:20,874
+Então eu vou precisar pelo menos de um SAC e de SCA.
+
+94
+00:07:20,874 --> 00:07:21,494
+Beleza.
+
+95
+00:07:21,494 --> 00:07:25,044
+Dá uma cheirada no mercado, quanto custa, para você ter uma ideia.
+
+96
+00:07:25,044 --> 00:07:26,994
+Depois você vai fazer POK e tal.
+
+97
+00:07:26,994 --> 00:07:29,114
+A vai fazer episódio só disso.
+
+98
+00:07:29,114 --> 00:07:32,078
+Como fazer esse processo de compra, na verdade.
+
+99
+00:07:32,078 --> 00:07:35,278
+as pessoas de compra, avaliação de ferramentas, enfim, vai ter episódio sobre isso.
+
+100
+00:07:35,278 --> 00:07:41,778
+Mas é legal que você tem esses cheiros agora, ainda que não seja processo formal, mas é
+interessante que você tenha os cheiros.
+
+101
+00:07:41,778 --> 00:07:42,998
+Por quê?
+
+102
+00:07:43,678 --> 00:07:56,098
+Porque uma vez sabendo que você tem um milhão para gastar e que você já tem uma ideia que
+não tem nada, então você quer pôr um SAC, SCA, não sei o você já faz um eliminatório
+
+103
+00:07:56,098 --> 00:07:57,178
+automático.
+
+104
+00:07:57,178 --> 00:07:59,094
+Peraí, eu só tenho milhão?
+
+105
+00:07:59,118 --> 00:08:03,358
+Então eu vou ter que fazer encaixar a sachet C, A, I, A, C, DASTE.
+
+106
+00:08:03,358 --> 00:08:04,678
+Putz, eu tenho 10 milhões?
+
+107
+00:08:04,678 --> 00:08:11,118
+Pô, legal, dá pra brincar com o threat modeling, dá pra brincar com monitoramento de
+aplicações, dá pra brincar com treinamentos, dá pra brincar com outras coisas.
+
+108
+00:08:11,118 --> 00:08:12,978
+Putz, eu tenho 2 milhões, tá?
+
+109
+00:08:12,978 --> 00:08:22,498
+Então dá pra eu introduzir aqui, de repente investir mais desses 2 milhões num momento
+aqui de modelagem de ameaças, investir pouco prevenção, depois proteção e teste.
+
+110
+00:08:22,838 --> 00:08:28,900
+Então é legal fazer esse exercício de quanto você tem disponível.
+
+111
+00:08:29,102 --> 00:08:40,962
+ou pelo menos não necessariamente disponível, mas quanto a empresa quer gastar com você,
+não com você necessariamente, mas ali na área de APSEC, para te nortear pouco.
+
+112
+00:08:40,962 --> 00:08:47,482
+Isso vai te ajudar ao longo das etapas, de uma maneira geral, a definir o que deve ser
+feito.
+
+113
+00:08:47,482 --> 00:08:53,522
+Então se você sabe que você não tem dinheiro nenhum, você não vai ficar olhando já para
+pensar ferramentas mirabolantes que você precisa usar lá na frente.
+
+114
+00:08:53,522 --> 00:08:56,314
+Você já sabe que você vai ter que usar o pensers ou não usar nada.
+
+115
+00:08:57,518 --> 00:09:09,018
+Se você sabe que você tem uma verba absurda, pô, legal, você consegue já maturar um modelo
+onde você sabe que você vai conseguir contar com soluções de ponta, por exemplo.
+
+116
+00:09:09,418 --> 00:09:12,658
+Vai uns cuidados aqui, você sabe que você tem verba e vai sair gastando?
+
+117
+00:09:12,658 --> 00:09:22,698
+Tem que ter cuidado, não vou comprar melhor ferramenta, implementar tudo, porque como você
+não tem maturidade no processo como um todo, vezes se gastar uma bala numa solução foda,
+
+118
+00:09:22,698 --> 00:09:25,818
+você vai ser só tiro no pé, porque você não vai conseguir implementar.
+
+119
+00:09:25,934 --> 00:09:27,814
+Então, a maturidade baixa ainda, né?
+
+120
+00:09:27,814 --> 00:09:29,654
+Então, tem que ir aos poucos.
+
+121
+00:09:29,654 --> 00:09:42,974
+Talvez uma dica que seria olhar para ESPM que tem custo relativamente baixo, relativamente
+baixo, comparado a outras soluções, você consegue ESPM aí por 30 dólares por deve, por
+
+122
+00:09:42,974 --> 00:09:44,714
+exemplo, por mês.
+
+123
+00:09:44,974 --> 00:09:52,034
+Então, 30 dólares por mês por cabeça, faz as contas aí por ano, vai dar 320...
+
+124
+00:09:52,034 --> 00:09:52,794
+Não.
+
+125
+00:09:52,794 --> 00:09:54,462
+360, é isso?
+
+126
+00:09:55,982 --> 00:09:59,362
+É necessitadoras por ano, por desenvolvedor.
+
+127
+00:09:59,362 --> 00:10:10,902
+Então, e você já tem dentro do SPM, SASH, DASH, não, mas SASH, SAC, IAC, Secret, API, tem
+uma série de coisas ali que já vai te dar uma boa maturidade para o teu programa, para
+
+128
+00:10:10,902 --> 00:10:12,062
+você começar.
+
+129
+00:10:12,542 --> 00:10:25,254
+Então, assim, é só uma ideia, só uma ideia de que fazer essa pausa agora, entender pouco
+de verba, quanto que você tem, vai te dar esse norte, deixa eu voltar aqui.
+
+130
+00:10:25,902 --> 00:10:43,562
+te dar esse norte, vai te dar esse norte para você conseguir elaborar o programa de uma
+maneira melhor, Não necessariamente é uma etapa obrigatória, eu diria, eu acho que é uma
+
+131
+00:10:43,562 --> 00:10:51,702
+etapa prudente, visto que a gente já desenhou o baseline, fizemos outras coisas
+anteriormente, talvez nesse momento, como eu falei, parar, entender o quanto a empresa
+
+132
+00:10:51,702 --> 00:10:54,982
+está disponível a investir ou disposta a investir.
+
+133
+00:10:55,566 --> 00:10:59,006
+e casar já com algumas ideias de coisas que você quer fazer.
+
+134
+00:10:59,006 --> 00:11:11,306
+Então é importante fazer esse exercício nesse momento para te dar pouco de norteamento
+mesmo até onde você vai nas próximas etapas.
+
+135
+00:11:11,306 --> 00:11:19,366
+Obviamente cada etapa necessariamente vai envolver uma parte de budget, quanto é você vai
+gastar, por que você precisa gastar, se é que vai ter que gastar alguma coisa e talvez
+
+136
+00:11:19,366 --> 00:11:20,666
+soluções.
+
+137
+00:11:20,750 --> 00:11:26,970
+Talvez até aqui a gente falou mais de processos, cultura, baseline, coisas que você não
+depende muito, né?
+
+138
+00:11:26,990 --> 00:11:34,060
+Mas daqui pra frente a vai começar a falar de testes, vai começar a falar de scan de
+código e tal, então vai envolver mais ferramental, não só processos.
+
+139
+00:11:34,060 --> 00:11:36,830
+Então naturalmente você vai precisar de uma ferramenta.
+
+140
+00:11:36,830 --> 00:11:40,290
+Você não faz SAST manual, você precisa de uma ferramenta.
+
+141
+00:11:40,290 --> 00:11:44,370
+Seja o OpenSource ou o Enterprise, enfim.
+
+142
+00:11:44,570 --> 00:11:50,956
+Então eu queria fazer essa pausa nesse episódio de hoje, justamente pra gente falar
+pouquinho sobre isso.
+
+143
+00:11:51,022 --> 00:11:52,898
+Vou dar minha vinheta bonitinha aqui.
+
+144
+00:11:57,750 --> 00:12:02,660
+Pessoal, continuando ainda nesse tema de hoje...
+
+145
+00:12:06,926 --> 00:12:12,838
+respira tem um catarro, O que que é legal também?
+
+146
+00:12:15,838 --> 00:12:24,938
+entender com outras etapas, outros departamentos da empresa se talvez não já tenha algo
+que possa ser aproveitado.
+
+147
+00:12:24,938 --> 00:12:34,998
+Eu estou fazendo consultoria hoje numa empresa no Brasil, obviamente não dá pra abrir
+dados, enfim, falar nome, mas está tendo um conflito do tipo assim, ó, o time de segurança
+
+148
+00:12:34,998 --> 00:12:41,158
+precisa implementar algumas questões de segurança e o time de DevOps implementar coisas de
+DevOps.
+
+149
+00:12:41,378 --> 00:12:43,534
+Só que o time de DevOps ficou responsável
+
+150
+00:12:43,534 --> 00:12:48,394
+porque a diretoria definiu de selecionar uma ferramenta de qualidade de código.
+
+151
+00:12:48,714 --> 00:12:57,334
+Então, querendo lá comprar ferramenta X ou Y, que não atende necessariamente as demandas
+de segurança, que precisa da mesma ferramenta.
+
+152
+00:12:57,714 --> 00:12:59,434
+Só que isso não está no escopo de segurança.
+
+153
+00:12:59,434 --> 00:13:06,434
+Então, vão gastar uma grana para comprar uma solução para qualidade de código sem
+consultar o time de segurança.
+
+154
+00:13:06,514 --> 00:13:08,654
+Isso estava com o time de segurança no começo...
+
+155
+00:13:08,654 --> 00:13:12,664
+caiu, foi pro time de DevOps, o time de DevOps vai comprar, lá, vamos supor que vão
+comprar o Sonar.
+
+156
+00:13:12,664 --> 00:13:13,354
+Não é isso, tá?
+
+157
+00:13:13,354 --> 00:13:14,974
+Mas vamos supor que vão comprar o Sonar.
+
+158
+00:13:14,974 --> 00:13:17,474
+Poxa, não é a melhor escolha pra segurança.
+
+159
+00:13:17,654 --> 00:13:19,574
+Ainda que vão gastar uma bala.
+
+160
+00:13:19,574 --> 00:13:30,134
+Então, esse conflito é interessante que você que tá implementando o programa de AppSec,
+mapear na empresa, poxa, será que não tem uma ferramenta de qualidade de código algum
+
+161
+00:13:30,134 --> 00:13:30,894
+lugar?
+
+162
+00:13:30,894 --> 00:13:38,574
+Será que não tem outro time com uma iniciativa X que possa me beneficiar ou pior, que
+possa trazer uma desvantagem?
+
+163
+00:13:38,574 --> 00:13:46,094
+todo, de repente alguém está procurando uma ferramenta de, sei lá, de cloud security, por
+exemplo, ou seja, qualidade de código.
+
+164
+00:13:46,094 --> 00:13:48,324
+Então, peraí, pessoal, olha, segurança também tem uma demanda.
+
+165
+00:13:48,324 --> 00:13:54,154
+A gente unir forças, Eu tenho uma verba aqui, você tem uma verba aí, vamos unir forças e
+unir o útil ao agradável.
+
+166
+00:13:54,154 --> 00:13:57,334
+Então, a gente compra uma solução que vai servir para os dois, por exemplo.
+
+167
+00:13:57,514 --> 00:14:04,194
+Então, nesse momento dessa pausa que eu estou fazendo aqui na Sumontar, o nosso programa
+de AppSec,
+
+168
+00:14:04,302 --> 00:14:14,402
+não é bem uma pausa de fato, mas é um momento de a gente refletir, entender se outras
+demandas, outros times, etc.
+
+169
+00:14:14,402 --> 00:14:16,182
+Volta a minha posição normal.
+
+170
+00:14:17,542 --> 00:14:31,502
+Não possam estar de fato conflitando ali, não necessariamente conflitando interesses, não
+precisa ser um conflito de interesses, mas coisas que possam ser comuns para os dois
+
+171
+00:14:31,502 --> 00:14:33,102
+times, literalmente.
+
+172
+00:14:33,102 --> 00:14:38,062
+Uma ferramenta de solução de código, disca de código e assim por diante.
+
+173
+00:14:38,062 --> 00:14:47,382
+Ou ainda, o contrário, que você como AppSec ou como segurança possa estar impactando em
+outras fases.
+
+174
+00:14:47,502 --> 00:14:59,102
+Às vezes você vai pensar uma solução só olhando para a segurança, sem considerar outros
+aspectos que possam estar acontecendo outras equipes.
+
+175
+00:14:59,102 --> 00:15:00,806
+E vale sempre lembrar...
+
+176
+00:15:01,390 --> 00:15:12,210
+esse tipo de solução e essas soluções geral, vão impactar diretamente o desenvolvimento
+DevOps barra CSG barra pipelines ali e desenvolvimento, assim, vai impactar diretamente o
+
+177
+00:15:12,210 --> 00:15:15,270
+desenvolvimento, é exatamente para escanear código, enfim.
+
+178
+00:15:15,530 --> 00:15:27,160
+Então é muito importante que tenha uma troca, entender ali com o tipo de desenvolvimento,
+necessidade deles, o que eles estão precisando, como é o dia a dia deles.
+
+179
+00:15:27,160 --> 00:15:31,224
+Se você tem experiência com o desenvolvimento, isso facilita muito para você, se você não
+tem...
+
+180
+00:15:32,082 --> 00:15:34,002
+Você tem que fazer isso.
+
+181
+00:15:34,002 --> 00:15:43,802
+E aí eu vou abrir um espaço aqui para falar pouquinho de como eu tenho feito na empresa
+que eu estou atuando hoje e que ajudou muito numa decisão que gente teve que tomar muito
+
+182
+00:15:43,802 --> 00:15:45,264
+importante recentemente.
+
+183
+00:15:51,374 --> 00:16:02,294
+Eu entrei na empresa recentemente, entrei novembro do ano passado, estamos gravando esse
+episódio aqui em agosto, então tem quase ano, E eu tive um plano de os 100 primeiros dias,
+
+184
+00:16:02,294 --> 00:16:12,154
+um plano ali dos 100 primeiros dias, na verdade 90 primeiros dias, com 10 ali de folga
+para arredondar os 100 primeiros dias, os 100 primeiros dias.
+
+185
+00:16:12,154 --> 00:16:20,254
+Nesses 100 primeiros dias, eu como aplicado Secret Evangelist, ou como evangelista de
+segurança de aplicações, qual foi o meu plano nesses 100 dias?
+
+186
+00:16:20,254 --> 00:16:21,542
+Eu tinha que...
+
+187
+00:16:22,210 --> 00:16:32,670
+entrevistar todos ou boa parte dos times de desenvolvimento, entender dores que eles
+sentiam com relação à implementação de applications.
+
+188
+00:16:32,670 --> 00:16:38,410
+It's scan, IDE, ferramenta, plugin, pipeline, não interessa.
+
+189
+00:16:38,530 --> 00:16:39,200
+Então, o que eu fiz?
+
+190
+00:16:39,200 --> 00:16:48,630
+Eu criei PowerPoint com quatro slides, uma capa, segundo slide, cinco slides, primeiro era
+uma capa, bonitinho, introdução,
+
+191
+00:16:49,601 --> 00:16:58,082
+O segundo slide era uma apresentação do meu cargo, o que eu estou fazendo aqui com o
+aplicativo Securitiv Angelic, qual que é a minha missão, blá blá blá blá blá.
+
+192
+00:16:58,082 --> 00:17:02,702
+slide com texto ali super simples explicando isso para os times.
+
+193
+00:17:03,522 --> 00:17:07,742
+E outros três slides, ou seja, cinco outros três slides, cada com uma pergunta.
+
+194
+00:17:07,742 --> 00:17:11,602
+Então, o primeiro slide, uma pergunta, segundo slide, segunda pergunta, terceira slide,
+terceira pergunta.
+
+195
+00:17:11,602 --> 00:17:18,094
+Primeira pergunta do tipo, quais são as principais dores hoje no seu dia a dia como
+desenvolvedor?
+
+196
+00:17:18,094 --> 00:17:21,674
+com relação à implementação de seguranças de aplicações.
+
+197
+00:17:21,934 --> 00:17:26,614
+A segunda pergunta, quais ferramentas você acha mais fácil, mais difícil, quais você tem
+problema?
+
+198
+00:17:26,614 --> 00:17:29,694
+E a terceira, como você lidar com os requisitos de segurança?
+
+199
+00:17:30,214 --> 00:17:32,624
+Basicamente, era nessa ideia as perguntas.
+
+200
+00:17:32,624 --> 00:17:38,974
+Uma para entender como era o processo do dia a dia, outra a interação com soluções e
+ferramentas e outra demanda de requisitos.
+
+201
+00:17:39,234 --> 00:17:44,914
+Dito isso, criei mapa, um mapa de calor ali, quase que mapa de...
+
+202
+00:17:44,914 --> 00:17:47,624
+mapa de calor, literalmente, seria a melhor definição.
+
+203
+00:17:48,105 --> 00:17:55,276
+com os top 3, top 5 problemas, top 3, top 5 coisas boas.
+
+204
+00:17:55,276 --> 00:18:04,386
+Criei esse mapa, o nome dos times, o nome das pessoas que eu entrevistei, os times com
+mais reclamações, os times com menos reclamações, times mais satisfeitos ou menos
+
+205
+00:18:04,386 --> 00:18:11,782
+satisfeitos, uma visão do time de Epsec geral, então o time tinha uma visão mais neutra,
+não negativa ou não positiva, mas uma visão mais neutra.
+
+206
+00:18:11,822 --> 00:18:18,822
+Algumas reclamações pouco mais no detalhe, tipo, a gente não sabe o que tem que fazer, a
+gente não sabe onde fica o portal de documentação, a gente não sabe quais são os
+
+207
+00:18:18,822 --> 00:18:29,202
+requisitos de segurança que a vai fazendo, algumas dores, a gente, o tempo sempre é
+desafio, a ferramenta X não integra legal no meu processo, a ferramenta Y não é muito boa,
+
+208
+00:18:29,202 --> 00:18:30,162
+enfim.
+
+209
+00:18:30,642 --> 00:18:32,422
+100 dias fazendo isso.
+
+210
+00:18:32,842 --> 00:18:35,502
+Com isso, qual foi a minha lição de casa?
+
+211
+00:18:35,502 --> 00:18:36,822
+Como agente duplo, né?
+
+212
+00:18:36,822 --> 00:18:39,582
+Era do time de dev, agora sou do time de appsec.
+
+213
+00:18:39,582 --> 00:18:40,964
+Ó, time de appsec.
+
+214
+00:18:41,358 --> 00:18:44,178
+Top 3 problemas esse, esse e esse.
+
+215
+00:18:44,178 --> 00:18:48,338
+Obviamente eu com a minha experiência, você chega e já vê algumas questões.
+
+216
+00:18:48,678 --> 00:18:56,678
+Então além dessas entrevistas e desses resultados, olha time de EPSEC, temos esses top 3
+problemas.
+
+217
+00:18:56,678 --> 00:19:00,598
+Além disso eu senti que nossa reputação é muito baixa.
+
+218
+00:19:00,598 --> 00:19:06,438
+Qualquer coisa que a fala do time de EPSEC, é uma demanda de EPSEC, não sei o de EPSEC,
+pessoal já torce o nariz.
+
+219
+00:19:06,438 --> 00:19:09,774
+A gente precisa melhorar pouco a nossa reputação, vamos dizer assim.
+
+220
+00:19:09,774 --> 00:19:23,774
+confiabilidade etc etc talvez por conta de erros do passado enfim né então aqui pra julgar
+a gente está aqui pra resolver é um plano tão perfeito temos esses problemas aqui é
+
+221
+00:19:23,774 --> 00:19:31,574
+algumas ideias que a gente tem que fazer então precisamos melhorar tal ferramenta precisa
+melhorar tal processo tal processo precisa ser assim precisa ser assado tal coisa já fiz
+
+222
+00:19:31,574 --> 00:19:38,350
+porque por exemplo reclamava que tinha muito muita mensagem no tins só tive ela integração
+não precisa mais de mensagem
+
+223
+00:19:38,350 --> 00:19:39,910
+E outro time eu agrupei.
+
+224
+00:19:39,910 --> 00:19:44,270
+Vejo uma mensagem a cada scan, uma mensagem no fim da semana, por exemplo.
+
+225
+00:19:44,270 --> 00:19:45,170
+Enfim.
+
+226
+00:19:45,170 --> 00:19:50,750
+Então, coisas mais rápidas de fazer, mais simples de fazer, que vai reduzir o dia dia das
+pessoas, dos desenvolvedores.
+
+227
+00:19:51,370 --> 00:20:02,310
+Então, esses primeiros 100 dias, no meu contexto, ajudou pra entender como era a
+visibilidade do time de desenvolvimento com relação às reabilitações gente do APSEC, o que
+
+228
+00:20:02,310 --> 00:20:04,650
+eles tinham que fazer e quais eram os principais problemas.
+
+229
+00:20:05,742 --> 00:20:09,262
+Dito isso, foi criado um plano para ser executado.
+
+230
+00:20:09,262 --> 00:20:16,442
+Esse plano é muito fiel a como vai ser a percepção do time de desenvolvimento daqui pra
+frente.
+
+231
+00:20:16,442 --> 00:20:22,982
+Porque eu não estou tirando da cabeça, da cartola, da bunda coisas que eu quero fazer que
+eu acho legal.
+
+232
+00:20:22,982 --> 00:20:25,442
+Que possam, pode até fazer sentido.
+
+233
+00:20:25,442 --> 00:20:29,442
+Mas nesse contexto específico eu tirei do próprio feedback dos times.
+
+234
+00:20:30,162 --> 00:20:33,542
+Então, o scan tá ruim, é muito falso positivo.
+
+235
+00:20:33,542 --> 00:20:35,050
+Vamos lá arrumar o scan.
+
+236
+00:20:35,950 --> 00:20:37,710
+não consegue fazer integração da pipeline?
+
+237
+00:20:37,710 --> 00:20:38,340
+Por quê?
+
+238
+00:20:38,340 --> 00:20:41,350
+O plugin está ruim, então vamos arrumar o plugin.
+
+239
+00:20:41,350 --> 00:20:47,150
+Então assim, direto ao ponto, num programa de AppSec já funcionando.
+
+240
+00:20:47,150 --> 00:20:48,810
+Qual que a minha sugestão aqui?
+
+241
+00:20:48,810 --> 00:20:51,110
+Crie um plano similar.
+
+242
+00:20:51,610 --> 00:20:55,510
+Obviamente, isso é 100 dias, isso é mês, vai depender do tamanho da tua organização.
+
+243
+00:20:55,510 --> 00:21:01,990
+Para criar o teu programa de AppSec, nesse momento que a está fazendo essa pausa aqui, faz
+uma entrevista com os teams.
+
+244
+00:21:03,333 --> 00:21:06,554
+No meu caso aqui eu tenho mil desenvolvedores.
+
+245
+00:21:07,174 --> 00:21:14,394
+Eu consegui conversar, não com os mil, num 100 dias, mas vai 80 % dos times.
+
+246
+00:21:14,394 --> 00:21:17,134
+Obviamente não com as pessoas, mas 80 % dos times.
+
+247
+00:21:17,134 --> 00:21:19,414
+Então já é uma boa amostragem.
+
+248
+00:21:19,414 --> 00:21:23,854
+Conversar com todos, eu ficaria seis meses, mas não fazia sentido.
+
+249
+00:21:24,114 --> 00:21:27,254
+Então foi fundamental isso.
+
+250
+00:21:27,294 --> 00:21:29,434
+Então faça esse plano.
+
+251
+00:21:29,929 --> 00:21:35,940
+conversa com os times, cita com o time de deve, cita com o time de deve e fala, mano, fala
+isso, como é que o seu dia dia?
+
+252
+00:21:35,940 --> 00:21:36,790
+Me mostra aí.
+
+253
+00:21:36,790 --> 00:21:41,080
+Ah, você faz pull request aqui, aí tem duas pessoas que precisam aprovar, ah, que legal.
+
+254
+00:21:41,080 --> 00:21:42,370
+Aí você vai conversar com outro time.
+
+255
+00:21:42,370 --> 00:21:44,010
+Bom, você faz pull request e as pessoas precisam aprovar?
+
+256
+00:21:44,010 --> 00:21:46,510
+Não, não, não, a faz direto, com mitra direto na master.
+
+257
+00:21:46,510 --> 00:21:48,450
+Ah, entendi.
+
+258
+00:21:48,450 --> 00:21:52,770
+Aí você faz no outro time, então a gente tem pull request, mas uma pessoa só aprova.
+
+259
+00:21:52,790 --> 00:21:54,510
+Você vê que já tem três cenários diferentes.
+
+260
+00:21:54,510 --> 00:21:56,046
+E foi o nosso contexto aqui.
+
+261
+00:21:56,046 --> 00:22:04,506
+Cada time faz de jeito, não tem padronização, tem uma série de coisas que gente vai ter
+que melhorar e por isso que gente está criando esse plano, enfim, está trabalhando.
+
+262
+00:22:04,506 --> 00:22:11,806
+Mas a minha sugestão é, faça esse plano de para, você não vai fazer nada, você vai
+conversar, você vai pegar a informação.
+
+263
+00:22:11,806 --> 00:22:23,746
+Cria aí um questionário, questionário de 20 perguntas também não, como eu falei, eu fiz
+três perguntas numa empresa corporativa que está na Forbes, é Fortune 500, uma das maiores
+
+264
+00:22:23,746 --> 00:22:24,974
+financeiras do mundo.
+
+265
+00:22:24,974 --> 00:22:31,994
+do ramo financeiro do mundo, com mais de mil desenvolvedores, escritório no mundo inteiro.
+
+266
+00:22:32,054 --> 00:22:37,294
+Eu fiz plano de 100 dias, conversei com 80 % dos times, não 80 % dos desenvolvedores.
+
+267
+00:22:37,294 --> 00:22:41,093
+Então, eu falei 800 desenvolvedores, eu não falei com 800 desenvolvedores, falei com bem
+menos.
+
+268
+00:22:41,093 --> 00:22:50,094
+Mas eu consegui conversar com boa parte dos times, especialmente, eu tenho mapamento, eu
+tinha 60, aí sim, eu tinha 63, times.
+
+269
+00:22:50,094 --> 00:22:52,646
+Eu consegui conversar com 80 % deles.
+
+270
+00:22:52,654 --> 00:23:00,654
+E dentro desses eu tinha mapeamento, olha, o que é meu time de payment, o que é meu time
+de projeto crítico, o que é meu time de projeto não necessariamente tão crítico.
+
+271
+00:23:00,654 --> 00:23:04,054
+Então eu selecionei alguns times para tentar falar com todos, tá?
+
+272
+00:23:04,054 --> 00:23:17,814
+E aí os mais críticos, Então crie esse plano para que você consiga extrair dos times,
+entender como é o dia a dia deles, para que o teu programa de AppSec faça esse fit no
+
+273
+00:23:17,814 --> 00:23:18,644
+processo deles.
+
+274
+00:23:18,644 --> 00:23:22,648
+E não que você venha com processo diferente que agora eles têm que mudar.
+
+275
+00:23:23,086 --> 00:23:30,126
+Querendo ou não, se a está falando de uma empresa que tem desenvolvimento de software, o
+business vai depender desse desenvolvimento de Então, quanto menos impacto a gente tiver
+
+276
+00:23:30,126 --> 00:23:30,966
+lá, melhor.
+
+277
+00:23:30,966 --> 00:23:41,546
+A gente tem que habilitar esse processo de desenvolvimento para que continue sendo o
+mesmo, agora introduzindo processos segurança que sejam transparentes.
+
+278
+00:23:41,546 --> 00:23:47,226
+E não que agora a gente introduza o processo de segurança que tem pedaço de
+desenvolvimento lá dentro, é o contrário.
+
+279
+00:23:47,226 --> 00:23:49,066
+A história do arroz e feijão, feijão com arroz.
+
+280
+00:23:49,066 --> 00:23:51,966
+Todo mundo sabe que o feijão vai por cima do arroz.
+
+281
+00:23:53,102 --> 00:24:01,342
+Todo mundo sabe, especialmente quem é de São Paulo, só pra não saber que pôr o arroz
+embaixo, feijão por cima e menor quantidade.
+
+282
+00:24:01,342 --> 00:24:02,582
+Simples assim.
+
+283
+00:24:03,422 --> 00:24:11,402
+Ou seja, o arroz é que o desenvolvimento vem aqui o time de segurança e se mistura ao
+arroz, porque ele tem líquido.
+
+284
+00:24:11,402 --> 00:24:14,722
+Ele vai por cima e espalhar por dentro do arroz.
+
+285
+00:24:14,722 --> 00:24:17,022
+O contrário não funciona.
+
+286
+00:24:18,102 --> 00:24:21,998
+Só pra você entender, se tem alguém aqui que bota arroz por cima...
+
+287
+00:24:21,998 --> 00:24:25,278
+Eu sugiro que desligue esse podcast nesse exato momento.
+
+288
+00:24:25,278 --> 00:24:27,218
+Nunca mais volte aqui.
+
+289
+00:24:27,218 --> 00:24:29,058
+Brincadeiras à parte, pessoal.
+
+290
+00:24:29,258 --> 00:24:37,488
+Então faça esse plano desses 100 dias, 30 dias, 60 dias, enfim, vai depender do tamanho da
+organização, do tempo disponível que você tem também.
+
+291
+00:24:37,488 --> 00:24:40,798
+Enfim, o meu cargo é exatamente para fazer isso.
+
+292
+00:24:42,238 --> 00:24:46,408
+Evangelizar sobre desenvolvimento seguro tanto no sistema de desenvolvimento quanto no
+sistema de AppSec.
+
+293
+00:24:46,446 --> 00:24:50,505
+No time de desenvolvimento, porque pessoal, olha, precisamos fazer assim, assim e assim,
+como é que a gente vai fazer, como é seu dia dia?
+
+294
+00:24:50,505 --> 00:24:53,546
+No time de EPSEC, pessoal, precisamos trabalhar assim, precisamos trabalhar assim.
+
+295
+00:24:53,666 --> 00:24:58,506
+Por exemplo, aí do lado de segurança, quais eram os grandes pontos?
+
+296
+00:24:58,506 --> 00:25:01,746
+A gente não tinha muita visibilidade com relação às aplicações.
+
+297
+00:25:01,746 --> 00:25:04,946
+Então, se eu tenho milhão de aplicações, eu tinha visibilidade de 800.
+
+298
+00:25:05,146 --> 00:25:08,206
+Porque são os times que implementaram, os outros não implementaram.
+
+299
+00:25:08,206 --> 00:25:12,766
+Então, eu precisava ficar correndo atrás do rabo, Ou perseguindo os times, que é saco.
+
+300
+00:25:12,826 --> 00:25:16,358
+A gente não tinha lugar centralizado de risco.
+
+301
+00:25:16,398 --> 00:25:22,038
+Então se eu precisar saber qual é risco da aplicação X, eu precisava ir no scanner A, no
+scanner B, no scanner C.
+
+302
+00:25:22,038 --> 00:25:30,578
+Então parte desse plano, por exemplo, foi comprar SPM, que a gente acabou de comprar,
+comprar SPM que vai consolidar os meus scanners, eu vou usar alguns de eles também.
+
+303
+00:25:30,578 --> 00:25:32,758
+Ou seja, eu vou ter informação toda num lugar só.
+
+304
+00:25:32,758 --> 00:25:35,958
+Eu abro painel, eu sei que a minha aplicação X tem risco Y.
+
+305
+00:25:35,958 --> 00:25:36,718
+Ponto.
+
+306
+00:25:36,718 --> 00:25:39,258
+A informação já tá toda ali, já tá toda consolidada.
+
+307
+00:25:39,258 --> 00:25:42,318
+Eu não preciso mais ir na ferramenta A, B ou C.
+
+308
+00:25:42,318 --> 00:25:43,618
+Então veja.
+
+309
+00:25:44,846 --> 00:25:51,546
+Partindo desse plano, partindo dessas entrevistas, dessa coleta de feedback, ajudou a
+definir esse plano e a trilhar esse plano.
+
+310
+00:25:51,546 --> 00:25:59,386
+Obviamente quando eu cheguei na empresa eu já falei, bom, precisamos do SPM, usa tal
+ferramenta, já sei que é uma bosta, precisamos trocar, porque são experiências, gente.
+
+311
+00:25:59,506 --> 00:26:04,986
+Se a gente está fazendo programa do zero aqui, é muito mais fácil, mas fácil não se diz,
+não precisa trocar nada e tal.
+
+312
+00:26:04,986 --> 00:26:09,876
+Mas veja o que eu falei, você precisa entender budget, você precisa entender quanta
+empresa vai investir, se ela quer investir ou não.
+
+313
+00:26:09,876 --> 00:26:14,734
+Porque esse plano, muitas coisas, você está falando só de processo e pessoas, perfeito.
+
+314
+00:26:14,734 --> 00:26:20,574
+Mas se gente vai ter ferramenta, vai ter coisa nova, é programa de AppSec do zero que a
+gente está fazendo.
+
+315
+00:26:20,574 --> 00:26:22,534
+Então vai ter o scanner, ter...
+
+316
+00:26:22,534 --> 00:26:27,054
+E aí eu não quero que você já crie um programa com dor de cabeça.
+
+317
+00:26:27,334 --> 00:26:30,514
+Crie ele já resolvendo problemas que vão aparecer.
+
+318
+00:26:30,514 --> 00:26:34,144
+Como eu acabei de falar, vai criar programa de AppSec com SAS, CSI e DASH.
+
+319
+00:26:34,144 --> 00:26:35,354
+Já são três scanners.
+
+320
+00:26:35,354 --> 00:26:37,544
+Você vai ter problema de visibilidade.
+
+321
+00:26:37,544 --> 00:26:38,584
+De visibilidade não, desculpa.
+
+322
+00:26:38,584 --> 00:26:40,994
+Centralização de risco, gestão de vulnerabilidade.
+
+323
+00:26:40,994 --> 00:26:44,558
+Então se você começa com ESPM, isso já é eliminado.
+
+324
+00:26:44,558 --> 00:26:47,918
+de cara, porque vai estar tudo centralizado num lugar só.
+
+325
+00:26:48,138 --> 00:26:54,798
+Se você depende que os times implementem os scanners, você já vai ter problema de
+visibilidade, porque não sabe quem está implementando e quem não está.
+
+326
+00:26:54,858 --> 00:26:56,978
+Talvez na sua ferramenta tenha visibilidade.
+
+327
+00:26:57,258 --> 00:27:01,238
+tem oito implementados, mas você sabe que tem mil repositórios.
+
+328
+00:27:01,238 --> 00:27:02,478
+Aí você fica perseguindo.
+
+329
+00:27:02,478 --> 00:27:04,038
+Você vê, você está criando problemas.
+
+330
+00:27:04,038 --> 00:27:10,878
+Não é SPM não, você pluga no GitHub, no Bitbucket, o que quer que seja, vai estar tudo
+sendo escaneado automaticamente.
+
+331
+00:27:11,038 --> 00:27:12,448
+veja que são...
+
+332
+00:27:13,414 --> 00:27:22,254
+pequenos ajustes, pequenas features que a escolha de uma solução vai te ajudar muito no
+programa como todo.
+
+333
+00:27:22,434 --> 00:27:23,574
+No programa como todo.
+
+334
+00:27:23,574 --> 00:27:26,434
+Eu trabalhei numa empresa que tinha 13 soluções de AppSec.
+
+335
+00:27:26,434 --> 00:27:27,594
+13.
+
+336
+00:27:27,774 --> 00:27:32,434
+Era scan aqui, scan ali, scan ocular, nada consolidado, nada centralizado.
+
+337
+00:27:32,954 --> 00:27:35,104
+Ou seja, gestão de vulnerabilidade disso era caos.
+
+338
+00:27:35,104 --> 00:27:36,334
+Nem era, não tinha.
+
+339
+00:27:36,334 --> 00:27:40,254
+Praticamente tinha 2, 3 scanners, jogava no giro, o resto não tinha.
+
+340
+00:27:41,194 --> 00:27:42,550
+Então perceba.
+
+341
+00:27:42,574 --> 00:27:49,354
+criar este plano agora vai te eliminar, não vai eliminar problema porque você vai deixar
+de...
+
+342
+00:27:49,354 --> 00:27:50,634
+o problema nem nasce, né?
+
+343
+00:27:50,634 --> 00:27:52,694
+Então vai te eliminar dor de cabeça.
+
+344
+00:27:53,254 --> 00:27:58,334
+Cria esse planozinho que eu garanto que vai te ajudar bastante, beleza?
+
+345
+00:27:59,174 --> 00:28:07,834
+Meia hora já de episódio, episódio solo é sempre mais difícil porque o debate fica muito
+monótono, fica chato, eu não quero que gente fique chato.
+
+346
+00:28:07,834 --> 00:28:12,238
+Acho que essa meia hora foi suficiente para gente entender o que eu quero que vocês façam.
+
+347
+00:28:12,238 --> 00:28:17,038
+Então, até a partir 1, 2, 3 e 4 entendemos o que precisamos fazer.
+
+348
+00:28:17,038 --> 00:28:23,098
+4.1 agora, vai 5, faz essa pausa, entende quanto a empresa quer investir, se é que quer
+investir.
+
+349
+00:28:23,098 --> 00:28:30,438
+Se você vai ter que ter uma estratégia mais open source, uma estratégia de enterprise,
+considere ESPM, dica de coração.
+
+350
+00:28:30,438 --> 00:28:40,698
+Eu sei que está num hype absurdo falar de ESPM, tem muita startup por aí, mas ESPM
+decente, ESPM que vai te dar visibilidade, ESPM que vai te dar qualidade para o teu
+
+351
+00:28:40,698 --> 00:28:41,912
+programa de AppSec.
+
+352
+00:28:42,662 --> 00:28:45,002
+Sem ESPM você vai ter dor de cabeça.
+
+353
+00:28:45,002 --> 00:28:46,302
+Dor de cabeça boa.
+
+354
+00:28:46,302 --> 00:28:49,222
+Ah, eu tenho 10 scanner, eu tenho 3 scanner.
+
+355
+00:28:49,222 --> 00:28:51,302
+Pô, eu preciso jogar todos no Gira.
+
+356
+00:28:51,362 --> 00:28:51,942
+Beleza.
+
+357
+00:28:51,942 --> 00:28:52,802
+Natural isso.
+
+358
+00:28:52,802 --> 00:28:57,142
+Poxa, eu tenho tudo num lugar só, com visibilidade de risco, eu atualizo políticas num
+lugar só.
+
+359
+00:28:57,142 --> 00:28:59,062
+Não tô fazendo propaganda de ESPM nenhum aqui.
+
+360
+00:28:59,062 --> 00:29:00,352
+Eu tô falando que isso vai te ajudar.
+
+361
+00:29:00,352 --> 00:29:02,922
+Assim como você tem que ter Sacha, assim como você tem que ter S.C.A.
+
+362
+00:29:02,922 --> 00:29:04,542
+Assim como você tem que Gira da vida.
+
+363
+00:29:04,542 --> 00:29:06,642
+Gira on board, o que quer que seja.
+
+364
+00:29:06,642 --> 00:29:09,202
+Azure boards, o que quer que seja, é que você gosta.
+
+365
+00:29:09,602 --> 00:29:10,542
+Beleza, pessoal?
+
+366
+00:29:10,542 --> 00:29:13,442
+Então era isso que eu queria trazer para o episódio de hoje.
+
+367
+00:29:13,442 --> 00:29:22,162
+Episódio mais relaxado aqui, cadeirinha nova, essa cadeira aqui é sensacional, deu pra
+deitar, deu pra relaxar bastante enquanto gravava aqui pelo menos o começo do episódio.
+
+368
+00:29:22,162 --> 00:29:31,422
+E é isso, a gente vai se ver no próximo episódio, com certeza aí com a volta dos jovens,
+que são vagabundos, brincadeira, que a agenda é difícil da gente consolidar, mas com
+
+369
+00:29:31,422 --> 00:29:34,102
+certeza a gente vai estar de volta aí, beleza?
+
+370
+00:29:34,102 --> 00:29:36,454
+Eu não poderia deixar de esquecer...
+
+371
+00:29:43,886 --> 00:29:54,466
+Dev may cry, os devs devem chorar, é dev, eu não esqueci de você não, Sabe o que eu vou
+trazer pra vocês hoje?
+
+372
+00:29:54,466 --> 00:30:07,826
+O dev may cry de hoje é o seguinte, tá uma onda, tá uma onda absurda de usar o co-pilot,
+de usar o co-pilot, usar IA e tal, pra programar, pra criar aplicação e tudo mais.
+
+373
+00:30:07,826 --> 00:30:11,226
+Pois é, o meu...
+
+374
+00:30:12,558 --> 00:30:15,318
+O meu dev make right hoje é o seguinte.
+
+375
+00:30:15,398 --> 00:30:18,018
+Você só pode programar no notepad++.
+
+376
+00:30:18,678 --> 00:30:20,198
+Sua linguagem favorita, seu...
+
+377
+00:30:20,198 --> 00:30:21,198
+O que você quiser.
+
+378
+00:30:21,198 --> 00:30:25,358
+Mas a sua ideia, de agora diante, é o notepad++.
+
+379
+00:30:26,058 --> 00:30:27,208
+Ponto, só isso.
+
+380
+00:30:27,208 --> 00:30:28,098
+É isso.
+
+381
+00:30:28,098 --> 00:30:32,638
+Você não tem inteligência, autocomplete, nada disso.
+
+382
+00:30:32,638 --> 00:30:36,458
+Janelinha que pula, que apita, nada disso.
+
+383
+00:30:36,618 --> 00:30:38,438
+Você vai programar no notepad++.
+
+384
+00:30:38,438 --> 00:30:41,422
+Eu programava Java no notepad.
+
+385
+00:30:41,422 --> 00:30:45,782
+Eu fiz curso técnico, tinha professor que se nojava pra gente no notepad.
+
+386
+00:30:45,782 --> 00:30:49,322
+Abre o notepad, public, static, void, main, string, yards.
+
+387
+00:30:49,322 --> 00:30:51,912
+Abre e fecha, fecha fecha coxete.
+
+388
+00:30:51,912 --> 00:30:52,982
+Abre chave e fecha chave.
+
+389
+00:30:52,982 --> 00:30:53,682
+Não coxete, não.
+
+390
+00:30:53,682 --> 00:30:55,342
+Abre chave fecha chave.
+
+391
+00:30:56,142 --> 00:30:58,642
+Private, void, blá, blá, blá.
+
+392
+00:30:58,902 --> 00:31:05,302
+E fazer a gente desenhar na tela, desenhar estrelinha, triângulo, com for dentro do for,
+tal, tal.
+
+393
+00:31:05,922 --> 00:31:07,022
+Aprendemos.
+
+394
+00:31:07,342 --> 00:31:10,990
+Autocomplete, decorar o que são os comandos e tal, palavras-chave.
+
+395
+00:31:10,990 --> 00:31:17,350
+Enfim, se DevMakerad hoje é isso, sua ideia favorita por ano vai ser o Notepad++, não tem
+outra opção.
+
+396
+00:31:17,350 --> 00:31:27,510
+E olha que eu tô sendo bonzinho, Notepad++, onde você tem uns plug-ins, consegue já
+visualizar ali código diferente, Olha só, podia ser o Notepad puro, né?
+
+397
+00:31:27,510 --> 00:31:35,790
+O grande ultra visual MasterPad Studio da Microsoft, mas não, vou deixar você com o
+Notepad++, beleza?
+
+398
+00:31:35,790 --> 00:31:40,302
+Bom, pessoal, é isso, esse foi o DevMakerad de hoje, mais DevSecalls Podcast pra vocês.
+
+399
+00:31:40,302 --> 00:31:44,002
+Como montar o seu programa de EPSEC parte 5 ao 4.1.
+
+400
+00:31:44,002 --> 00:31:45,982
+E gente se vê no próximo episódio, com certeza.
+
+401
+00:31:45,982 --> 00:31:47,102
+Eu sou Caso Pereira.
+
+402
+00:31:47,102 --> 00:31:48,222
+Até a próxima.
+
