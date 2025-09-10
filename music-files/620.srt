@@ -1,0 +1,2945 @@
+1
+00:00:00,151 --> 00:00:01,458
+e
+
+2
+00:00:01,458 --> 00:00:02,758
+Olá, pessoal.
+
+3
+00:00:02,758 --> 00:00:06,638
+Sejam muito bem-vindos a mais um episódio de ABC Cop's Podcast.
+
+4
+00:00:06,638 --> 00:00:07,938
+Eu sou Cássio Pereira.
+
+5
+00:00:07,938 --> 00:00:14,298
+Como vocês podem ver, hoje só não é um episódio solo, porque temos um convidado muito
+bacana aqui hoje que vai bater papo com a gente.
+
+6
+00:00:14,298 --> 00:00:17,437
+Já, já vou apresentar e falar sobre ele, falar sobre o tema de hoje também.
+
+7
+00:00:17,437 --> 00:00:24,978
+Mas quase seria episódio solo, porque os dois cidadões, Cidadãos, Marcos e Ben Hur, mais
+uma vez não vêm trabalhar.
+
+8
+00:00:24,978 --> 00:00:28,882
+O salário está dia, está tudo pago, mas os caras vão fazer reunião de trapalho.
+
+9
+00:00:28,882 --> 00:00:31,942
+como se o trabalho fosse mais importante do que gravar o podcast aqui com a gente.
+
+10
+00:00:31,942 --> 00:00:41,702
+Mas enfim, é tanto que eu estou de camisa nova, o Deve Ser Cosmo Podcast, porque só a
+diretoria tem esse tipo de camisa, os integrantes vagabundos, esse é o nome que lhe dá
+
+11
+00:00:41,702 --> 00:00:46,202
+para esses integrantes, não vieram participar aqui hoje que temos um convidado super
+especial.
+
+12
+00:00:46,282 --> 00:00:53,322
+Antes de falar do nosso convidado, lembrar que o Deve Ser Cosmo Podcast tem o suporte da
+Nova 8 e da SNIC, que a Nova 8 é distribuidora da SNIC oficial no Brasil, você vai
+
+13
+00:00:53,322 --> 00:00:57,970
+encontrar o link da Nova 8 e da SNIC lá no nosso site, devesercosmopodcast.com.
+
+14
+00:00:57,970 --> 00:01:00,530
+e também na descrição do vídeo do YouTube.
+
+15
+00:01:00,530 --> 00:01:10,170
+Lembrar que a gente tem também parceria com a Purple Bird Security, então se você tem
+algum incidente segurança, não sabe o que fazer, cabelo pé, bate papo com pessoal da
+
+16
+00:01:10,170 --> 00:01:12,710
+Purple Bird que eles vão te ajudar com certeza.
+
+17
+00:01:12,710 --> 00:01:20,150
+E também não se esqueça da DigitalWall, que tem portfólio completo de soluções de
+Application Security, e a Goal Security vai te ajudar com os serviços de Application
+
+18
+00:01:20,150 --> 00:01:21,010
+Security.
+
+19
+00:01:21,010 --> 00:01:21,738
+Bom...
+
+20
+00:01:21,841 --> 00:01:27,682
+falar dos nossos parceiros, nossos colegas e suporters, vamos falar pouquinho hoje sobre o
+tema de hoje.
+
+21
+00:01:27,682 --> 00:01:35,082
+O tema de hoje é tema bem interessante, eu gosto desses temas que eu não sei nada, porque
+aí eu vou ter que perguntar mais ainda para o convidar.
+
+22
+00:01:35,082 --> 00:01:37,182
+Então eu acho que algo bem bacana.
+
+23
+00:01:37,182 --> 00:01:43,262
+E hoje a vai falar com o Leonardo Carissimi, que se dispôs a bater papo aqui com a gente
+hoje.
+
+24
+00:01:43,262 --> 00:01:48,342
+Leonardo, primeiro de tudo, obrigado pelo teu tempo, obrigado pela disponibilidade.
+
+25
+00:01:48,882 --> 00:01:52,192
+Acho que ninguém melhor do que você mesmo para se apresentar para as pessoas.
+
+26
+00:01:52,192 --> 00:01:54,122
+Então se apresente aí, fique à vontade.
+
+27
+00:01:54,122 --> 00:02:03,922
+E assim que você falar pouquinho sobre você, o que você é, de onde você vem, para onde
+você vai, aquela coisa toda, a mergulha de cabeça no tema computação quântica e
+
+28
+00:02:03,922 --> 00:02:05,142
+pós-quântica.
+
+29
+00:02:05,142 --> 00:02:06,302
+Olha que loucura, cara.
+
+30
+00:02:06,302 --> 00:02:07,742
+Já vamos falar sobre isso hoje.
+
+31
+00:02:07,742 --> 00:02:10,141
+Mais uma vez, Leonardo, bem-vindo ao Deve Ser Cosmo Podcast.
+
+32
+00:02:10,141 --> 00:02:11,191
+o maravilha, Cassio.
+
+33
+00:02:11,191 --> 00:02:13,041
+Bom demais estar aqui.
+
+34
+00:02:13,041 --> 00:02:14,521
+Bom dia, boa tarde, boa noite.
+
+35
+00:02:14,521 --> 00:02:16,081
+Acho que esse é o caminho.
+
+36
+00:02:16,381 --> 00:02:23,301
+Então, eu sou Leonardo Carissimi e atualmente eu sou diretor da prática de Cyber Security
+da Capgemini no Brasil.
+
+37
+00:02:23,721 --> 00:02:26,121
+Há seis anos eu estou nessa posição.
+
+38
+00:02:26,141 --> 00:02:31,071
+termos de mercado, já estou naquele momento que começa a ser constrangedor de dizer quanto
+tempo de mercado que a gente tem.
+
+39
+00:02:31,071 --> 00:02:34,181
+Eu estou com 30 anos, feito agora agosto.
+
+40
+00:02:34,221 --> 00:02:37,265
+Desde ali do inicinho da internet comercial já...
+
+41
+00:02:37,265 --> 00:02:42,845
+já falando de segurança cibernética, com todos os nomes diferentes que teve ao longo do
+caminho, desde essa época.
+
+42
+00:02:42,845 --> 00:02:44,325
+E sempre aprendendo bastante.
+
+43
+00:02:44,325 --> 00:02:49,925
+O que é fascinante na nossa área é que sempre tem desafio novo, alguma coisa nova para
+aprender.
+
+44
+00:02:49,925 --> 00:03:01,605
+E a bola da vez, agora passado, o tema de AI, dizer, passado, a gente continua trabalhando
+bastante com projetos na parte de segurança AI, nas diferentes vertentes, mas digamos que
+
+45
+00:03:01,605 --> 00:03:06,769
+termos de novidade, talvez agora a bola da vez é...
+
+46
+00:03:06,769 --> 00:03:11,098
+Pós-quanto criptógrafo, A criptografia é da computação pós-quante.
+
+47
+00:03:11,098 --> 00:03:22,578
+Boa Leonardo, cara, prazer ter você aqui e eu antes de trabalhar com SEC eu fui
+desenvolvedor por uma década também já tenho meus 20 anos aí na área e eu quase pus
+
+48
+00:03:22,578 --> 00:03:31,438
+pezinho na Capgemini na época, faz muito tempo, acabou não dando certo, pra acabar
+escolhendo outro caminho, mas enfim, a Capgemini bem bem conhecida no mercado como todo né
+
+49
+00:03:31,438 --> 00:03:40,346
+e legal ter alguém de suma importância pra falar com a gente sobre o tema porque esse de
+novo esse é tema que pouca gente fala sobre isso, quântico e pós-quântico
+
+50
+00:03:40,346 --> 00:03:50,366
+Talvez eu que estou bem envolvido na parte técnica, eu só ouço falar disso ou eventos
+muito específicos de SEC ou na área acadêmica.
+
+51
+00:03:50,366 --> 00:03:57,186
+Eu dou aula algumas universidades, na área acadêmica a vê pouco mais disso, porque tem
+pesquisa, tem umas coisas muito avançadas, isso talvez não seja algo tão acessível para o
+
+52
+00:03:57,186 --> 00:03:57,766
+público.
+
+53
+00:03:57,766 --> 00:04:05,486
+Mas vamos lá, eu queria começar então perguntando o que é essa computação pós-quântica, o
+que talvez seja computação quântica e pós-quântica?
+
+54
+00:04:05,486 --> 00:04:07,642
+Por que a gente está falando sobre isso agora?
+
+55
+00:04:07,642 --> 00:04:08,712
+Por que esse tema é relevante?
+
+56
+00:04:08,712 --> 00:04:10,122
+Por você falou a bola da vez?
+
+57
+00:04:10,122 --> 00:04:16,642
+Eu ainda estou fazendo o desenvolvedor rodar scan no código ainda, Ainda estou lá atrás,
+assim, né?
+
+58
+00:04:16,642 --> 00:04:20,665
+Então, fala pouquinho pra gente, seta aí pouquinho as expectativas do pessoal.
+
+59
+00:04:20,665 --> 00:04:24,545
+Não, Ito, sabe, Casca, assim, acho que esse talvez seja o grande desafio, né?
+
+60
+00:04:24,545 --> 00:04:33,365
+A gente olhar para o que está para vir daqui a cinco, dez anos, enfim, vamos falar mais
+sobre isso, mas obviamente ninguém sabe o prazo.
+
+61
+00:04:33,365 --> 00:04:38,145
+Olhar para isso ao mesmo tempo que tem que continuar fazendo o básico bem feito, né?
+
+62
+00:04:38,145 --> 00:04:45,945
+Não adianta eu querer falar de como é que eu vou ter, estar utilizando um algoritmo de
+quantum safe, etc.
+
+63
+00:04:45,945 --> 00:04:49,165
+tal, se eu não faço uma gestão de vulnerabilidade adequada.
+
+64
+00:04:49,165 --> 00:04:50,629
+Ontem mesmo,
+
+65
+00:04:50,681 --> 00:04:59,761
+Só comentando um assunto similar, mas não exatamente cima de quantum computing, cliente
+procurou a gente para falar de SOC, operação 24,7, etc.
+
+66
+00:04:59,761 --> 00:05:09,421
+Mas a empresa tinha certo nível de maturidade que a gente sentiu no momento da conversa
+que não fazia sentido estar falando disso, que tinha coisas mais básicas.
+
+67
+00:05:09,421 --> 00:05:14,561
+Então, a gente direcionou a conversa e acabou que no final das contas acho que fez sentido
+para eles.
+
+68
+00:05:14,621 --> 00:05:18,394
+Gestão de vulnerabilidade bem feita, gestão de credenciais bem feita.
+
+69
+00:05:18,394 --> 00:05:22,594
+Depois disso, gente fala de soco e no segundo tempo, então construiu uma jornada.
+
+70
+00:05:22,594 --> 00:05:26,483
+Então, sem dúvida, o desafio que você falou continua sendo super válido.
+
+71
+00:05:26,483 --> 00:05:37,894
+O que está acontecendo hoje, o que a gente come no café da manhã, no almoço, no jantar,
+são as questões básicas, vamos dizer assim, muito focadas em gestão de vulnerabilidade,
+
+72
+00:05:37,894 --> 00:05:44,214
+resposta incidente, muita coisa que em outras sessões aqui do podcast já foi bastante
+discutido.
+
+73
+00:05:44,214 --> 00:05:48,161
+Mas também acho que a provocação importante aqui é a seguinte.
+
+74
+00:05:48,377 --> 00:06:00,077
+Vamos começar a olhar para frente, porque nós no mercado de segurança, tem um histórico
+importante do tempo que leva para fazer a substituição de algoritmo de criptografia.
+
+75
+00:06:00,377 --> 00:06:12,137
+Tem cliente nosso hoje, Banco Grande no Brasil, que dentro do ambiente deles ainda tem
+aquele algoritmo DES, que é coisa de 10, 12 anos atrás, foi considerado inseguro e
+
+76
+00:06:12,137 --> 00:06:13,527
+recomendada a troca.
+
+77
+00:06:13,527 --> 00:06:17,305
+Mas ele está falando sistema legado, mainframe isso, mainframe aquilo.
+
+78
+00:06:17,305 --> 00:06:19,445
+a aplicação manualística, etc.
+
+79
+00:06:19,645 --> 00:06:29,985
+Se construir uma série de, vamos dizer, controles de segurança ao redor, obviamente para
+mitigar o risco, mas o algoritmo que ali no meio segue o mesmo, passados 10, 12 anos, para
+
+80
+00:06:29,985 --> 00:06:31,365
+trocar algoritmo.
+
+81
+00:06:31,365 --> 00:06:42,805
+Agora, imagina evento desses assim, o quantum day, como se chama, A partir do momento que
+existe um computador, computação quântica suficiente para quebrar uma criptografia nossa
+
+82
+00:06:42,805 --> 00:06:43,745
+atual.
+
+83
+00:06:44,473 --> 00:06:46,333
+Não vai ser para algoritmo, vai ser para todos.
+
+84
+00:06:46,333 --> 00:06:49,233
+Imagina trocar todos de uma grande organização.
+
+85
+00:06:49,233 --> 00:06:50,673
+Não é trabalho rápido.
+
+86
+00:06:50,673 --> 00:06:59,333
+Por isso que a gente tem que começar a pouquinho na frente, na frente, curva, identificar,
+começar a identificar os riscos e começar a tratar tudo isso.
+
+87
+00:06:59,493 --> 00:07:10,513
+Mas enfim, então, sobre a computação quântica si, antes de chegar na questão
+criptográfica, começar pouco ali mais do básico, então a gente está falando de...
+
+88
+00:07:10,522 --> 00:07:22,482
+ter alternativas computacionais diferentes que a gente tem hoje, computador clássico ali
+que é 0-1, utilizando tecnologia quântica que vai ter um conjunto praticamente infinito de
+
+89
+00:07:22,482 --> 00:07:26,002
+estados, vez de 0-1 é praticamente conjunto infinito de estados.
+
+90
+00:07:26,002 --> 00:07:34,842
+Isso dá poder computacional gigantesco, não é para qualquer aplicação, pelo menos dentro
+do entendimento que você tem hoje, não vou imaginar assim que eu vou estar usando o Excel
+
+91
+00:07:34,842 --> 00:07:36,985
+com computação quântica.
+
+92
+00:07:36,985 --> 00:07:41,545
+Tem algumas aplicações que é melhor o computador clássico mesmo.
+
+93
+00:07:41,545 --> 00:07:48,325
+Mas o ponto é que outras aplicações que manipulam volumes muito grandes de dados, fazem
+simulações, etc.
+
+94
+00:07:48,325 --> 00:07:49,495
+Isso daí cai como uma luva.
+
+95
+00:07:49,495 --> 00:07:52,385
+E é justamente o espaço onde vive a criptografia.
+
+96
+00:07:52,385 --> 00:07:59,305
+Principalmente a criptografia assimética, aquela questão de multiplicar, fatorar dois
+números primos muito grandes.
+
+97
+00:07:59,305 --> 00:08:02,505
+Essa é a base dos algoritmos assimétricos.
+
+98
+00:08:02,505 --> 00:08:06,969
+Esse tipo de problema, que é grande desafio para computação clássica, mas...
+
+99
+00:08:06,969 --> 00:08:09,409
+quanto resolve rapidão.
+
+100
+00:08:09,409 --> 00:08:11,889
+esse acho que é desafio.
+
+101
+00:08:11,889 --> 00:08:24,229
+Tá pra vir, assim, eu falei, horizonte de tempo que ninguém sabe, várias projeções
+diferentes que vamos dizer aí, 10, 15 anos, imagina que já exista.
+
+102
+00:08:24,309 --> 00:08:33,709
+E outro ponto que acho que é importante, caso para desmitificar pouco, assim, quer dizer
+que daqui a 15 anos eu vou estar usando iPhone com computador quântico, com processador
+
+103
+00:08:33,709 --> 00:08:34,545
+quântico.
+
+104
+00:08:34,777 --> 00:08:41,237
+A gente não precisa disso para ter grande problema, grande ameaça quântica para o mundo
+nosso de cyber.
+
+105
+00:08:41,237 --> 00:08:52,557
+A precisa ter um computador em algum lugar do mundo que seja como eram os ENIAC lá nos
+anos 40, tamanho de uma sala, gigantesco e tal, pode ser só um, mas ele já vai fazer
+
+106
+00:08:52,557 --> 00:08:53,757
+estrago.
+
+107
+00:08:54,457 --> 00:09:04,401
+E seja lá quem desenvolver esse pode vender patentes, os planos para que seja replicado,
+enfim.
+
+108
+00:09:04,601 --> 00:09:11,261
+seja com objetivos geopolíticos ou financeiros, quais que querem que sejam as motivações.
+
+109
+00:09:11,261 --> 00:09:15,461
+pode criar um e multiplicar para alguns poucos.
+
+110
+00:09:15,461 --> 00:09:18,921
+Mas, de novo, você estar na mão de todo mundo para ser grande problema.
+
+111
+00:09:19,501 --> 00:09:22,558
+Enfim, acho que esse é o cenário que começa a se traçar.
+
+112
+00:09:22,558 --> 00:09:29,328
+E cara, você falou tanta coisa agora que eu queria puxar para todos os lados aqui, mas não
+vou conseguir.
+
+113
+00:09:29,328 --> 00:09:31,818
+Vamos lá, vamos pegar alguns fios.
+
+114
+00:09:31,818 --> 00:09:41,298
+Eu acho que ponto legal que você comentou foi essa questão do o que vem por aí daqui 5,
+daqui 1 ano, daqui 5 anos, daqui 10 anos.
+
+115
+00:09:41,298 --> 00:09:49,778
+E é importante ter essa preocupação porque tem alguns ditados em segurança que diz que só
+cripto salva.
+
+116
+00:09:49,778 --> 00:09:52,222
+Você pode falar segurança que for.
+
+117
+00:09:52,222 --> 00:09:59,712
+No fim das contas, se cara te hackear, se o cara te invadir, a criptografia te salva,
+porque os dados são criptografados, no fim das contas cara não vai conseguir acessar.
+
+118
+00:09:59,712 --> 00:10:03,562
+Com essa história muda tudo, agora nem cripto salva.
+
+119
+00:10:03,762 --> 00:10:15,102
+Agora, como você comentou muito bem, uma vez que computador desse, com esse poder
+computacional esteja disponível, foi por água abaixo qualquer criptografia que a gente,
+
+120
+00:10:15,102 --> 00:10:22,174
+qualquer criptografia forte, vamos falar assim, a gente sabe que tem monte de algoritmo já
+fraco, quebrado, enfim, isso é uma questão interessante.
+
+121
+00:10:22,174 --> 00:10:27,494
+E aí a próxima pergunta talvez seria nesse sentido, nesse ponto que você comentou.
+
+122
+00:10:27,494 --> 00:10:29,754
+Como é que a gente olha para frente então?
+
+123
+00:10:29,754 --> 00:10:33,834
+Hoje eu tenho uma especialidade muito forte apps, é que deve ser copia.
+
+124
+00:10:33,834 --> 00:10:41,014
+é muito, talvez muito óbvio para mim os eventos que eu participo, o material que eu
+consumo, que tipo de pesquisa que eu tenho que olhar.
+
+125
+00:10:41,014 --> 00:10:44,734
+Então eu sei onde vai estar ali as coisas relevantes para mim.
+
+126
+00:10:44,994 --> 00:10:46,782
+Mas agora banco da vida.
+
+127
+00:10:46,782 --> 00:10:48,822
+que você comentou bem, você falou de mainframe.
+
+128
+00:10:48,822 --> 00:10:52,982
+Eu trabalhei uma época na Serasa, Experian, trabalhei alguns bancos do Brasil.
+
+129
+00:10:52,982 --> 00:10:54,762
+Todos têm mainframe até hoje.
+
+130
+00:10:55,182 --> 00:11:03,542
+Aonde essa galera vai buscar esse tipo de tecnologia, não necessariamente a tecnologia em
+si, mas onde eles vão buscar informação para ele falar, cara, daqui a dez anos eu preciso
+
+131
+00:11:03,542 --> 00:11:04,782
+estar preparado.
+
+132
+00:11:04,782 --> 00:11:06,102
+Como é que eu olho para isso?
+
+133
+00:11:06,102 --> 00:11:12,054
+Eu tenho que chamar o Leonardo ou tem algum jeito de me antecipar a isso?
+
+134
+00:11:13,737 --> 00:11:22,098
+Esse tema ainda é bastante nichado termos de discussão, existem conferências, se você
+começa a pesquisar tem bastante material.
+
+135
+00:11:22,658 --> 00:11:28,398
+De novo, tirar pouco o grau de nossa, que coisa mais futurista.
+
+136
+00:11:28,398 --> 00:11:39,418
+Se você entrar hoje site, por exemplo, Microsoft, uma AWS, você vai ver que lá na nuvem
+deles já existem implementações pós-quantum, algoritmos que são quantum safe, já dessa
+
+137
+00:11:39,418 --> 00:11:40,398
+nova geração.
+
+138
+00:11:40,398 --> 00:11:41,878
+Já está disponível.
+
+139
+00:11:41,918 --> 00:11:51,658
+que ano passado o NIST, nosso querido NIST lá dos Estados Unidos, ele padronizou quatro
+algoritmos e esses algoritmos uma vez padronizados e definidos já começaram a ser
+
+140
+00:11:51,658 --> 00:11:54,698
+implementados por alguns fabricantes do mercado.
+
+141
+00:11:54,698 --> 00:11:57,098
+Então, já começa a estar disponível.
+
+142
+00:11:57,098 --> 00:11:58,938
+Mas talvez assim, talvez não.
+
+143
+00:11:58,938 --> 00:12:03,818
+Muito antes de pensar estar implementando isso, é importante conhecer o ambiente atual.
+
+144
+00:12:03,818 --> 00:12:06,538
+Você falou ali do mainframe, legada, etc.
+
+145
+00:12:07,338 --> 00:12:11,678
+Tanto que as etapas iniciais que a gente vê o mundo inteiro,
+
+146
+00:12:11,678 --> 00:12:19,898
+fazendo, inclusive alguns clientes aqui no Brasil, é começar nessa questão, famoso
+assessment, onde é que estou nessa história toda.
+
+147
+00:12:22,138 --> 00:12:30,868
+Voltando para as questões muito básicas e importantes, tem conceito importante que é o
+seguinte, um inventário de algoritmos criptográficos.
+
+148
+00:12:30,868 --> 00:12:33,738
+Você falou então do mundo de desenvolvimento.
+
+149
+00:12:33,738 --> 00:12:41,374
+Como desenvolvedor, você ao longo da vida construiu várias aplicações usando bibliotecas
+que tinham algoritmos criptográficos.
+
+150
+00:12:41,374 --> 00:12:44,774
+Então, imagina a grande empresa, a quantidade disso que tem por aí.
+
+151
+00:12:44,774 --> 00:12:49,494
+Algoritmo aqui, algoritmo ali, diferentes implementações do mesmo algoritmo e diferentes
+algoritmos.
+
+152
+00:12:49,794 --> 00:12:52,274
+Quem sabe aonde está o estudo hoje?
+
+153
+00:12:52,274 --> 00:12:53,294
+Ninguém.
+
+154
+00:12:55,174 --> 00:12:59,044
+Isso toca também tema de governança muito importante.
+
+155
+00:12:59,044 --> 00:13:06,114
+aí, novo, o pessoal de desenvolvimento tem que saber quais são os algoritmos que devem
+começar a usados daqui para frente.
+
+156
+00:13:06,114 --> 00:13:09,278
+O pessoal de arquitetura deve definir alguma coisa.
+
+157
+00:13:09,278 --> 00:13:13,778
+Pessoal de gestão de chaves e certificados, pessoal de gestão de risco.
+
+158
+00:13:13,778 --> 00:13:20,278
+a governança desse processo todo, a galera de infraestrutura que faz ali a gestão, a
+administração, enfim.
+
+159
+00:13:21,458 --> 00:13:25,878
+a construção de uma governança disso tudo é uma das coisas mais importantes para começar.
+
+160
+00:13:25,878 --> 00:13:36,658
+É começar a construir isso, não precisa necessariamente ser novo departamento, óbvio, pode
+ser só chapeuzinho a mais para alguém, Mas começar a ter papéis e responsabilidades claras
+
+161
+00:13:36,658 --> 00:13:39,006
+para saber onde é que...
+
+162
+00:13:39,006 --> 00:13:50,126
+O dia que eu entro nessa história toda, eu como desenvolvedor, eu como arquiteto, eu como
+cara de compras que vou fazer uma RFP que vai abrir para comprar novos roteadores, eu já
+
+163
+00:13:50,126 --> 00:13:54,146
+deveria de alguma forma considerar que esse é requerimento.
+
+164
+00:13:54,146 --> 00:14:03,126
+Ou alguém do legal, que na hora de começar já fazer contrato com o terceiro, já tem que
+começar a pensar cláusula disso, assim como já temos cláusula de segurança, temos cláusula
+
+165
+00:14:03,126 --> 00:14:07,186
+de privacidade, e botar alguma coisa nesse sentido, incluir alguma coisa nesse sentido.
+
+166
+00:14:08,190 --> 00:14:10,490
+papel e responsabilidade para todo mundo.
+
+167
+00:14:10,490 --> 00:14:17,110
+questão é começar a definir isso, fazer uma governança cima disso, começar a construir
+essa governança toda.
+
+168
+00:14:17,110 --> 00:14:22,410
+E aí, a partir desse guarda-chuva, vai endereçando o que cada tem que fazer.
+
+169
+00:14:22,410 --> 00:14:27,990
+Por exemplo, alguém é responsável pela definição dos nossos padrões, alguém é responsável
+por fazer o tal do inventário e por aí vai.
+
+170
+00:14:27,990 --> 00:14:35,850
+E aí, a questão das informações, onde é que eu pego informação sobre isso, na realidade,
+dependendo de qual é o seu chapéu nessa história toda, seu papel e responsabilidade, você
+
+171
+00:14:35,850 --> 00:14:37,930
+vai precisar mais ou menos informação.
+
+172
+00:14:38,270 --> 00:14:44,810
+mais especializada, menos especializada, enfim, e aí busca de acordo com o papel definido.
+
+173
+00:14:44,810 --> 00:14:49,990
+Mas eu acho que já dá pra dizer que tem um conjunto relativamente abundante de informação
+aí.
+
+174
+00:14:49,990 --> 00:14:52,510
+Óbvio, não é tema mainstream.
+
+175
+00:14:53,530 --> 00:15:04,130
+A gente fez a pesquisa, Capgemini fez a pesquisa agora, foi publicada início de julho,
+justamente pra agregar nesse processo, conscientização, acho que gente está num grande
+
+176
+00:15:04,130 --> 00:15:05,912
+trabalho de conscientização.
+
+177
+00:15:06,046 --> 00:15:20,756
+agregar nesse processo, globalmente falando, não é só Brasil, começar a caminhar nessa
+jornada porque são processos todos morosos, questão da governança, todos inventários, etc.
+
+178
+00:15:20,756 --> 00:15:23,266
+Isso a gente está falando de vários anos.
+
+179
+00:15:23,326 --> 00:15:34,886
+E as regulamentações que existem, que estão começando a surgir ao redor do mundo, elas
+também têm prazos relativamente dilatados, olhar lá 2027, 2028, nada é para amanhã, mas
+
+180
+00:15:34,886 --> 00:15:36,056
+tem que começar a olhar.
+
+181
+00:15:38,325 --> 00:15:50,106
+E você comentou da pesquisa, eu tenho alguns dados aqui que eu anotei, que fala nesse
+ponto que você comentou, você falou do NIST, e eles comentam que 68 % das empresas, das
+
+182
+00:15:50,106 --> 00:15:59,406
+organizações entrevistadas, eles veem essas diretrizes obrigatórias como NIST, talvez
+outras organizações, o NIST talvez seja bom direcionador, até como fonte de estudos e
+
+183
+00:15:59,406 --> 00:16:02,878
+práticas lá, como ferramentas importantes para essa transição.
+
+184
+00:16:02,878 --> 00:16:09,148
+Justamente, você se apoiar alguém que vá te suportar nesse contexto.
+
+185
+00:16:09,148 --> 00:16:10,138
+Então, é que eu busco isso?
+
+186
+00:16:10,138 --> 00:16:12,378
+Quais são os algoritmos que eu tenho que usar?
+
+187
+00:16:12,378 --> 00:16:13,748
+Quais são os aprovados?
+
+188
+00:16:13,748 --> 00:16:14,678
+Ou quais não são?
+
+189
+00:16:14,678 --> 00:16:19,378
+Enfim, talvez usar nesse contexto aí, niste e outras ferramentas.
+
+190
+00:16:19,378 --> 00:16:25,478
+Eu não sei se a WASP tem alguma coisa com relação a depois vou dar uma olhada na
+documentação deles também, porque eles sempre estão postando algumas coisas com relação a
+
+191
+00:16:25,478 --> 00:16:26,358
+isso.
+
+192
+00:16:26,798 --> 00:16:30,788
+Mas talvez minha dica aí para os times, complementando o que você falou, seria isso.
+
+193
+00:16:30,788 --> 00:16:33,046
+Olhar para esses...
+
+194
+00:16:33,182 --> 00:16:43,752
+não necessariamente players, mas essas bússolas, esses caras que sempre nos guiando com
+standards, que eles vão com certeza ter alguma coisa de uma maneira ou de outra.
+
+195
+00:16:43,752 --> 00:16:47,742
+E acho que você também chegou a pincelar tema importante, Conferências.
+
+196
+00:16:48,642 --> 00:16:58,262
+Eu sou grande fã de eventos e conferências geral, acho que para networking, aprendizado,
+não tem nada melhor, que você vai conseguir bastante suporte também.
+
+197
+00:16:58,302 --> 00:17:02,882
+E aí, indo para o próximo passo aqui, para nossa próxima tópica, eu diria,
+
+198
+00:17:02,910 --> 00:17:05,490
+Você comentou muito bem de governança.
+
+199
+00:17:05,530 --> 00:17:09,170
+eu vejo os times de desenvolvimento...
+
+200
+00:17:09,170 --> 00:17:13,250
+Eu sei que foi a culpa do desenvolvedor, coitado, mas nem sempre a culpa é dele.
+
+201
+00:17:13,250 --> 00:17:14,010
+Mas vamos lá.
+
+202
+00:17:14,010 --> 00:17:16,330
+No fim das coisas, ele é funcionário que está obedecendo.
+
+203
+00:17:16,330 --> 00:17:23,450
+Então, as organizações hoje ainda sofrem muito para fazer uma simples governança de
+bibliotecas de terceiros.
+
+204
+00:17:23,930 --> 00:17:26,460
+O Log4j está aí há dois, três anos atrás.
+
+205
+00:17:26,460 --> 00:17:27,050
+Está perdido agora.
+
+206
+00:17:27,050 --> 00:17:29,530
+O Log4j está aí para não deixar a gente mentir.
+
+207
+00:17:29,530 --> 00:17:30,750
+Deu boom lá...
+
+208
+00:17:30,750 --> 00:17:33,060
+Ninguém nem sabia se usava, parou de funcionar, por quê?
+
+209
+00:17:33,060 --> 00:17:38,210
+Porque tem lá o Log4j versão tal que tá vulnerável, tá sendo explorado, o cara nem sabia
+que tava usando.
+
+210
+00:17:38,210 --> 00:17:40,170
+Então assim, pessoas não têm...
+
+211
+00:17:40,170 --> 00:17:44,080
+As empresas têm dificuldade hoje de fazer uma simples governança de IP e Leoteca de
+terceira.
+
+212
+00:17:44,080 --> 00:17:49,990
+O que qualquer ferramenta de SAA Open Source resolve isso pra gente hoje, de uma forma vai
+90 % resolvido.
+
+213
+00:17:49,990 --> 00:17:56,540
+Roda lá o scan, vai criar catálogo pra você, você mantém isso atualizado, vai fazer os
+upgrades necessários ou não vai fazer, enfim.
+
+214
+00:17:56,540 --> 00:17:59,966
+Mas você tem ali um catálogo, Ter o catálogo é talvez
+
+215
+00:17:59,966 --> 00:18:04,326
+um dos passos ou outro identificar os programas nessas bibliotecas.
+
+216
+00:18:04,326 --> 00:18:13,626
+E aí você trouxe ponto agora que eu lembro que lá no Microsoft SDL, se eu não me engano,
+processo que a Microsoft tinha criado, acho que ainda está público, ainda faz tempo que
+
+217
+00:18:13,626 --> 00:18:15,945
+não vejo, tinha lá uma etapa.
+
+218
+00:18:15,945 --> 00:18:23,806
+Olha, na fase de design do seu desenvolvimento, na fase de arquitetura, você tem que
+definir algoritmos de criptografia que você vai utilizar.
+
+219
+00:18:23,806 --> 00:18:26,586
+Você vai precisar usar os WariSenha, lidar com informação sensível.
+
+220
+00:18:26,586 --> 00:18:28,186
+Como que você vai cryptografar isso?
+
+221
+00:18:28,186 --> 00:18:30,886
+Esse é o momento de você definir o algoritmo.
+
+222
+00:18:30,886 --> 00:18:35,726
+Eu vou usar RCA, vou usar um Shadow A5-6, vou usar o NeoVue SG.
+
+223
+00:18:35,726 --> 00:18:38,526
+Tá, eu estou usando o Base64.
+
+224
+00:18:38,526 --> 00:18:39,006
+Isso.
+
+225
+00:18:39,006 --> 00:18:43,326
+Usa o algoritmo Base64 para a cryptografia, entre aspas.
+
+226
+00:18:44,326 --> 00:18:49,226
+Tem um momento até sugerido já no desenvolvimento de você parar.
+
+227
+00:18:49,226 --> 00:18:52,106
+Pera, vou precisar lidar com informação sensível e cryptografia.
+
+228
+00:18:52,106 --> 00:18:53,754
+Que algoritmo eu vou utilizar?
+
+229
+00:18:53,918 --> 00:18:57,478
+E aí as pessoas, as empresas, tem uma certa dificuldade com isso.
+
+230
+00:18:57,478 --> 00:19:04,478
+Talvez minha pergunta agora seja, você também vê essa dificuldade nas empresas, clientes,
+enfim, ao longo da tua carreira?
+
+231
+00:19:04,478 --> 00:19:07,558
+Se sim, por que você acha que tem essa dificuldade?
+
+232
+00:19:07,558 --> 00:19:09,258
+É má vontade?
+
+233
+00:19:09,258 --> 00:19:10,757
+É budget?
+
+234
+00:19:10,838 --> 00:19:12,698
+É falta de conhecimento?
+
+235
+00:19:12,698 --> 00:19:14,258
+É negligência?
+
+236
+00:19:14,258 --> 00:19:15,558
+É o quê?
+
+237
+00:19:15,558 --> 00:19:16,708
+Como é que você enxerga isso?
+
+238
+00:19:16,708 --> 00:19:19,678
+Ou não, eu tô falando besteira.
+
+239
+00:19:19,838 --> 00:19:29,898
+Eu acho que talvez isso que agora está ficando evidente, a necessidade por conta da ameaça
+quântica, como a gente está falando, é problema de décadas.
+
+240
+00:19:29,898 --> 00:19:36,938
+Há décadas, cada que está desenvolvendo o sistema, como você falou, assim, aqui eu vou
+colocar esse algoritmo que acho que é suficiente.
+
+241
+00:19:36,938 --> 00:19:40,718
+E não tinha ali uma validação, alguém acompanhando, alguma coisa assim.
+
+242
+00:19:40,718 --> 00:19:47,646
+Talvez muito recentemente, alguns conceitos como Security By Design, pode ser que tinha um
+Security Champion dentro do Squared.
+
+243
+00:19:47,646 --> 00:19:53,386
+que agora olha e diz que esse é homologado pelo nosso ciso e tal.
+
+244
+00:19:53,386 --> 00:19:56,826
+Muito recentemente, talvez, estejamos com algum nível disso.
+
+245
+00:19:56,826 --> 00:20:01,506
+Se a gente olha 10, 20 anos atrás, obviamente, nada disso existia.
+
+246
+00:20:01,506 --> 00:20:03,906
+Então, era muita decisão de cada mesmo.
+
+247
+00:20:03,906 --> 00:20:14,926
+Acho que era um problema de governança de muito tempo, aliás, é problema de governança de
+muito tempo, e que talvez agora, por conta do novo cenário que está vindo termos de
+
+248
+00:20:14,926 --> 00:20:15,806
+ameaça...
+
+249
+00:20:15,806 --> 00:20:17,526
+está obrigando todo mundo a parar e dar uma olhada.
+
+250
+00:20:17,526 --> 00:20:21,066
+Não, espera, agora precisamos dar uma arrumada nessa casa também.
+
+251
+00:20:21,566 --> 00:20:30,426
+E nós todos vivendo uma grande jornada nas empresas, na nossa vida pessoal, e de cada vez
+está atento a novos riscos que estão surgindo e aumentando cada vez mais a maturidade, a
+
+252
+00:20:30,426 --> 00:20:32,266
+postura de gestão de risco.
+
+253
+00:20:32,566 --> 00:20:35,376
+Enfim, talvez seja isso, tão simples quanto isso.
+
+254
+00:20:35,376 --> 00:20:40,386
+Não tinha antes ninguém olhando, não tinha uma cobrança, não tinha um processo, não tinha
+uma política.
+
+255
+00:20:40,386 --> 00:20:44,446
+E aí era, quando não existe esse contexto, vou concordar com...
+
+256
+00:20:44,446 --> 00:20:48,246
+Eu estou a brincadeira sobre não colocar a culpa sempre no desenvolvedor.
+
+257
+00:20:48,246 --> 00:20:58,106
+Quando não existe esse contexto todo e no final do dia o desenvolvedor acaba ficando com
+essa responsabilidade dele definir o que parece melhor.
+
+258
+00:20:58,306 --> 00:21:02,626
+E obviamente o que parece melhor para mim não o mesmo que parece para você, não o mesmo
+que parece para os outros.
+
+259
+00:21:02,626 --> 00:21:04,336
+E cada vai ali tomando sua decisão.
+
+260
+00:21:04,336 --> 00:21:08,366
+Isso no final das contas gera uma heterogeneidade muito grande também de algoritmos.
+
+261
+00:21:08,366 --> 00:21:10,622
+Seja por decisão do desenvolvedor.
+
+262
+00:21:10,622 --> 00:21:16,842
+Seja por época, porque 2020 o que estava disponível era tal coisa, 2017 era tal coisa,
+2015 era tal coisa.
+
+263
+00:21:16,842 --> 00:21:22,542
+Aí hoje tem, sei lá, 200 algoritmos diferentes, implementações diferentes, tendo a
+empresa.
+
+264
+00:21:23,042 --> 00:21:28,682
+Onde estão, quais são, qual o nível de vulnerabilidade que tem, esse é o trampo agora.
+
+265
+00:21:28,682 --> 00:21:30,304
+Precisa correr atrás disso.
+
+266
+00:21:32,006 --> 00:21:44,546
+Eu tive a oportunidade há 3 anos atrás, agora não lembro, 2, 3 anos atrás de ir na Índia,
+eu trabalhava numa empresa chamada ABB, ABB faz automação industrial, robôs, etc.
+
+267
+00:21:44,546 --> 00:21:53,566
+E tive oportunidade de na Índia, conhecer o laboratório, enfim, e a gente acabou visitando
+uma universidade lá, onde o lema do time específico que a conheceu lá era...
+
+268
+00:21:53,566 --> 00:22:01,886
+que gente sempre fala, jamais invente o seu algoritmo de criptografia, você só usa o que
+está pronto, desenvolvedores não vão sair fazendo criptografia a torta de giz, que você
+
+269
+00:22:01,886 --> 00:22:04,546
+não sabe fazer, você não é criptógrafo matemático.
+
+270
+00:22:04,686 --> 00:22:10,726
+O trabalho desses caras era exatamente o contrário, era criar criptografia, criar
+algoritmos novos, por quê?
+
+271
+00:22:10,726 --> 00:22:21,758
+A ABB patrocinava uma bolsa de doutorado para essa galera para criar algoritmos de
+criptografia capazes de operar em ambientes...
+
+272
+00:22:21,758 --> 00:22:24,418
+Eu não lembro a palavra exata, mas eu vou chamar de hostis.
+
+273
+00:22:24,418 --> 00:22:28,838
+Porque ele lidava com software que vai rodar controlando o sensor de uma usina nuclear.
+
+274
+00:22:28,838 --> 00:22:35,178
+Vai lidar com software que está operando num carro autônomo, num robô, ou seja, você não
+tem memória infinita, você não tem processamento infinito.
+
+275
+00:22:35,178 --> 00:22:39,518
+Pelo contrário, tudo muito bem limitado, eu diria.
+
+276
+00:22:39,518 --> 00:22:45,118
+Então essa galera estava criando algoritmos específicos, sei lá que nome que era, que
+nível que era.
+
+277
+00:22:45,118 --> 00:22:48,920
+Eu estou bem no alto nível aqui para trazer pouco dessa experiência.
+
+278
+00:22:49,054 --> 00:22:52,314
+para essa conversa, acho que faz total sentido, né?
+
+279
+00:22:52,314 --> 00:22:55,054
+Onde, porque qual é o fim dessa pesquisa?
+
+280
+00:22:55,054 --> 00:22:56,374
+Economia de energia.
+
+281
+00:22:56,374 --> 00:23:06,274
+Então, se eu consigo criar algoritmos mais rápidos, onde eu tenho uma capacidade
+computacional muito limitada, num device ou num robô, aí você pensa robô numa fábrica que
+
+282
+00:23:06,274 --> 00:23:07,734
+tem 500 robôs, né?
+
+283
+00:23:07,734 --> 00:23:08,624
+Mil robôs.
+
+284
+00:23:08,624 --> 00:23:11,114
+A economia de energia daquela fábrica é muito grande, né?
+
+285
+00:23:11,114 --> 00:23:14,134
+Porque robô funciona com eletricidade, bateria de alguma forma, enfim.
+
+286
+00:23:14,134 --> 00:23:17,204
+Então, no fim das contas, essa pesquisa era para reduzir a energia.
+
+287
+00:23:17,204 --> 00:23:17,822
+Como é que...
+
+288
+00:23:17,822 --> 00:23:21,822
+que algoritmos criptográficos podem ajudar na redução do consumo de energia.
+
+289
+00:23:23,362 --> 00:23:30,462
+E aí você trouxe esse tema agora, eu fiquei pensando, cara, como ter umas preocupações que
+eu mesmo nunca fazia ideia desse tipo de preocupação.
+
+290
+00:23:30,462 --> 00:23:34,602
+E aí na tua fala inicial, trouxe também outro insight do sentido.
+
+291
+00:23:34,602 --> 00:23:42,222
+Você falou assim, tiver computador desse disponível daqui a pouco, pode ser o Cal, ou os
+ternos perdidos, enfim.
+
+292
+00:23:42,654 --> 00:23:47,994
+Como foi a IA, hoje você cria os seus modelos, roda nas suas máquinas, tá?
+
+293
+00:23:47,994 --> 00:23:50,734
+É negócio muito mais popular ou mais acessível.
+
+294
+00:23:50,734 --> 00:24:00,414
+Mas no comecinho, era lá, tinha lá SAS, você botava os seus dados lá, ia ser processado e
+você tinha resultado, mas o computador, o poder computacional você não tinha.
+
+295
+00:24:01,034 --> 00:24:04,574
+Talvez seja até uma pergunta tola.
+
+296
+00:24:04,574 --> 00:24:05,464
+Faz sentido isso?
+
+297
+00:24:05,464 --> 00:24:09,684
+Puxa, alguém vai ter computador quântico e vender isso como SAS, como um PAS da vida.
+
+298
+00:24:09,684 --> 00:24:12,574
+Você sobe lá o seu material, devolve o resultado,
+
+299
+00:24:12,574 --> 00:24:13,254
+Tem como isso?
+
+300
+00:24:13,254 --> 00:24:14,394
+Faz sentido ou não?
+
+301
+00:24:14,394 --> 00:24:17,444
+Volta aí os dados, criptografa aí pra mim, ou quebra aí pra mim essa criptografia.
+
+302
+00:24:17,444 --> 00:24:18,462
+Faz sentido isso?
+
+303
+00:24:18,462 --> 00:24:28,422
+Talvez algum ponto dessa história toda, porque se gente olhar hoje, boa parte das
+organizações criminosas fazem algo parecido com Hanson, vende os kits e a gente encontra
+
+304
+00:24:28,422 --> 00:24:31,262
+isso na dark web.
+
+305
+00:24:31,822 --> 00:24:34,421
+Então, isso aí, acho que é cenário plausível.
+
+306
+00:24:34,421 --> 00:24:41,022
+É difícil a gente dizer, cravar, que será assim ou não será assim, mas eu acho cenário
+plausível.
+
+307
+00:24:41,022 --> 00:24:48,118
+Sabe, Iacos, eu gostei muito do você trouxe aí esse exemplo de automação industrial, isso
+sem dúvida é uma área super relevante cyber hoje dia.
+
+308
+00:24:48,414 --> 00:24:56,574
+E tem esses desafios todos, o espaço memória muito mais limitado, a coisa toda ali num
+firmware tem que ser mais otimizado, etc.
+
+309
+00:24:56,574 --> 00:25:07,484
+Acredito que como você trouxe, acho que dentro da BB na época tinha uma equipe
+especializada criar algoritmos, não era, junta aí uma galerinha que gosta de segurança,
+
+310
+00:25:07,484 --> 00:25:15,364
+vamos fazer alguma coisa, Eram criptógrafos e tudo mais, desenvolvendo trabalho, segundo
+muito provavelmente padrões, etc.
+
+311
+00:25:15,364 --> 00:25:16,274
+tal.
+
+312
+00:25:16,274 --> 00:25:18,654
+Mas de qualquer forma num ambiente limitado.
+
+313
+00:25:18,654 --> 00:25:24,194
+Aí você vê, a eu estava falando de levar décadas para trocar algoritmo em software.
+
+314
+00:25:24,194 --> 00:25:25,566
+Você imagina em Harda.
+
+315
+00:25:25,566 --> 00:25:27,366
+Uhum.
+
+316
+00:25:28,246 --> 00:25:28,814
+Sat.
+
+317
+00:25:28,814 --> 00:25:32,054
+de carro autônomo, está saindo carro autônomo daqui a pouco?
+
+318
+00:25:32,054 --> 00:25:33,894
+Vulnerável, até trocar...
+
+319
+00:25:33,894 --> 00:25:39,734
+Imagina, fazer recode de carro porque tem que trocar algoritmos de hipografia.
+
+320
+00:25:41,134 --> 00:25:43,864
+É que não dê para atualizar remato por algum motivo.
+
+321
+00:25:43,864 --> 00:25:47,314
+Aí o dono do carro vai dizer assim, quando tiver algum problema eu vou lá.
+
+322
+00:25:48,274 --> 00:25:56,926
+IoT, essas lâmpadas inteligentes, interruptor inteligente que a gente tem casa,
+componentes chinês, super baratinho e tal.
+
+323
+00:25:56,926 --> 00:25:57,770
+Hum?
+
+324
+00:25:57,770 --> 00:25:59,150
+vai ser trocado?
+
+325
+00:25:59,170 --> 00:26:03,830
+Então, realmente, gente tem que lembrar também que o hardware é super relevante.
+
+326
+00:26:03,830 --> 00:26:07,830
+Eu dei exemplo antes da questão lá de processo de compra de roteadores.
+
+327
+00:26:08,230 --> 00:26:13,890
+Trocar parque de roteador, tudo bem, ninguém troca o parque inteiro de uma vez só, mas
+acaba sendo por ciclos.
+
+328
+00:26:13,890 --> 00:26:20,970
+Mas acho que tipo da coisa que demora bastante já é naturalmente algo que precisa ser
+olhado com atenção daqui pra frente.
+
+329
+00:26:20,970 --> 00:26:26,782
+Que eu vou fazer uma compra agora de alguns milhares de roteadores dentro de uma
+organização grande, roteador, switch.
+
+330
+00:26:26,782 --> 00:26:31,322
+o que você quiser aqui você substitui usando o roteador como exemplo.
+
+331
+00:26:31,322 --> 00:26:33,602
+Eu já tenho que dar uma olhadinha nisso, né?
+
+332
+00:26:33,602 --> 00:26:42,092
+E mesmo que o fabricante que eu escolher não tenha nada hoje, eu tenho uma boa conversa
+com eles de qual é o roadmap, quando é que vai ter, como é vai ser feita a atualização,
+
+333
+00:26:42,092 --> 00:26:45,142
+precisa trocar o hardware e vai ser uma atualização remota via software.
+
+334
+00:26:45,142 --> 00:26:47,802
+Então esse tipo de conversa já precisa começar a rolar.
+
+335
+00:26:47,802 --> 00:26:51,622
+Porque a gente está falando de uma compra que eu vou ficar com esse equipamento 5, 10
+anos.
+
+336
+00:26:51,622 --> 00:26:57,044
+E pode ser que dentro desse período de tempo a gente tenha já o primeiro
+
+337
+00:26:57,182 --> 00:27:07,803
+primeiro exemplo lá que é o novo o Kill Day né o Quantum Day então é essa questão de
+hardware, IoT e automação é sem dúvida muito crítica nessa história.
+
+338
+00:27:07,803 --> 00:27:16,594
+boa e só rodar minha vinheta aqui para a nossa voz não cansar galera e aí dá uma calmada
+aqui ó
+
+339
+00:27:16,594 --> 00:27:29,754
+O próximo passo, que é próximo etapa que eu queria abordar é o seguinte, como é que está,
+como é que a gente deveria pensar sobre isso com relação às próprias pessoas envolvidas
+
+340
+00:27:29,754 --> 00:27:41,434
+nisso, porque no fim das contas quem vai implementar, o algoritmo vai ser criado, enfim,
+alguém vai ter que implementar isso de alguma forma, na minha cabeça isso volta, a gente
+
+341
+00:27:41,434 --> 00:27:43,254
+olha para o desenvolvedor de novo.
+
+342
+00:27:43,254 --> 00:27:44,370
+Talvez um...
+
+343
+00:27:44,370 --> 00:27:51,230
+A gente comentou ali, vai ter armadinho de arquitetura, alguém vai definir, vai usar o A,
+o B, C, no fim das contas o pessoal fala, implementa.
+
+344
+00:27:51,350 --> 00:27:57,090
+Mas a gente sabe que no fim das contas a maioria das falhas software são por falhas de
+implementação.
+
+345
+00:27:58,270 --> 00:28:05,050
+Como é que a tua visão com relação a essa capacitação de quem vai lidar com isso?
+
+346
+00:28:05,050 --> 00:28:11,950
+Porque o Joaquim que você falou, o Zezinho das Cove que tem uma lâmpada elétrica, sei lá
+cara, nem sabe que isso existe.
+
+347
+00:28:12,882 --> 00:28:19,282
+Quem criou aquele produto e implementou aquilo, não nem falar de hardware, vamos ficar no
+software mesmo.
+
+348
+00:28:19,282 --> 00:28:21,022
+Como é essa capaçação dos desenvolvedores?
+
+349
+00:28:21,022 --> 00:28:25,422
+Talvez quem está mais envolvido segurança, olha para isso, consegue ter algumas nuances.
+
+350
+00:28:25,422 --> 00:28:32,352
+Mas talvez para o desenvolvedor, que no fim das contas vai implementar muita coisa, ele
+vai chegar a uma task para ele implementar o algoritmo X.
+
+351
+00:28:32,352 --> 00:28:35,542
+Ele baixa, faz o download e implementa.
+
+352
+00:28:35,542 --> 00:28:42,042
+Mas nesse nível, talvez na minha visão, tem que ter pouquinho mais de tempero.
+
+353
+00:28:42,130 --> 00:28:44,610
+Você está lidando com algo pouco mais complicado.
+
+354
+00:28:44,610 --> 00:28:50,610
+Assim como implementar uma simples task de, eu estou fazendo aqui um banco, uma coisa é eu
+ver o extrato, outra coisa é eu fazer o PIX.
+
+355
+00:28:50,610 --> 00:28:54,270
+Uma coisa é eu acessar a sua conta e ver o seu histórico, outra coisa é eu tirar o
+dinheiro da sua conta, né?
+
+356
+00:28:54,270 --> 00:28:55,050
+É muito mais crítico.
+
+357
+00:28:55,050 --> 00:28:57,270
+Então, uma funcionalidade mais crítica, tem pouquinho, né?
+
+358
+00:28:57,270 --> 00:28:59,670
+Requeira pouquinho mais de atenção, naturalmente.
+
+359
+00:28:59,670 --> 00:29:01,350
+Isso também faz sentido.
+
+360
+00:29:01,350 --> 00:29:04,250
+E como é que você vê essa capacitação daqui para frente?
+
+361
+00:29:04,250 --> 00:29:08,150
+Tem que ter essa capacitação, vai ter uma outra profissão que vai fazer...
+
+362
+00:29:08,150 --> 00:29:09,690
+Como é que isso aí?
+
+363
+00:29:09,810 --> 00:29:22,010
+Eu acho que no final do dia é uma primeira grande etapa de conscientização todos os
+níveis, desde o nível executivo até o nível operacional, enfim, desenvolvedor.
+
+364
+00:29:22,010 --> 00:29:24,850
+Esse talvez seja o grande primeiro passo.
+
+365
+00:29:24,850 --> 00:29:33,930
+esse espaço aqui serve super bem para isso, pesquisa, movimentação que a gente começa a
+ver no mercado serve bem demais para isso.
+
+366
+00:29:33,930 --> 00:29:39,430
+Começar a dizer que acho que o grande desafio do assunto é assim, todo mundo olha para
+isso e pensa assim,
+
+367
+00:29:39,793 --> 00:29:42,653
+mega futurista, não é para agora.
+
+368
+00:29:42,673 --> 00:29:51,303
+E quando a gente pega e faz o cronograma de trás para frente, a gente vê, não, peraí, já
+está na hora de olhar, não vou dizer de novo que é desespero, tem que fazer para amanhã,
+
+369
+00:29:51,303 --> 00:29:53,153
+mas está na hora de começar a olhar.
+
+370
+00:29:54,013 --> 00:30:05,833
+setembro de 2025, a gente está conversando aqui, pô, orçamento de 2026 na empresa já está
+começando a ser discutido, já vale considerar, coloca a mensagem, mesmo que não emplaque
+
+371
+00:30:05,833 --> 00:30:06,833
+para 2026.
+
+372
+00:30:06,833 --> 00:30:10,593
+Aí já coloca a mensagem para 2027, mas algo tem que começar a ser feito.
+
+373
+00:30:10,973 --> 00:30:18,293
+Não pode deixar a coisa para a última hora como muitas vezes a gente deixa.
+
+374
+00:30:18,293 --> 00:30:20,613
+Nós como sociedade.
+
+375
+00:30:21,173 --> 00:30:23,812
+Enfim, acho que grande ponto é a conscientização.
+
+376
+00:30:24,553 --> 00:30:31,163
+E uma vez talvez passada essa etapa, aí vai pouco para as capacitações mais
+compartimentadas que eu falei antes.
+
+377
+00:30:31,163 --> 00:30:33,873
+Vai depender pouco do papel de cada um.
+
+378
+00:30:33,873 --> 00:30:36,529
+Vamos focar pouquinho no desenvolvedor.
+
+379
+00:30:36,529 --> 00:30:45,929
+É importante que o desenvolvedor tenha uma visão, primeiro, mais geral de riscos, aquela
+questão do security by design.
+
+380
+00:30:45,929 --> 00:30:52,189
+Na realidade, cryptografia, só a cryptografia salva, você falou antes, mas isso entra
+dentro de contexto maior gestão de risco.
+
+381
+00:30:52,189 --> 00:30:57,529
+Tudo começa assim, eu vou desenvolver uma coisa nova, que dados isso vai manipular?
+
+382
+00:30:57,769 --> 00:31:03,409
+Isso aqui, agora recentemente, experimentamos bastante disso com mundo de AI.
+
+383
+00:31:03,549 --> 00:31:06,427
+Os primeiros projetos de AI eram tudo FAC.
+
+384
+00:31:07,010 --> 00:31:09,310
+sommelier que dava dica de vinho.
+
+385
+00:31:09,310 --> 00:31:16,890
+Tudo informação pública, sem muito estresse, vazar, vazou, sem mexer com o dado de cliente
+e aí vai.
+
+386
+00:31:16,890 --> 00:31:18,930
+E todo mundo botando o pezinho na piscina assim.
+
+387
+00:31:18,930 --> 00:31:27,650
+Um atendimento ali ao cliente numa faca, uma coisinha mais de apoiar, uma escolha de
+vinho, como é de novo o exemplo que eu estou dando aqui.
+
+388
+00:31:28,310 --> 00:31:34,770
+Mas à medida que o pessoal começa a entender pouco mais como funciona, quero resolver
+problemas de negócio, está me dando resultado bacana e tal.
+
+389
+00:31:34,770 --> 00:31:39,590
+Aí a primeira coisa é a tá, vocês vão pegar onde é negócio, que dados que eu vou
+manipular?
+
+390
+00:31:39,750 --> 00:31:42,770
+A, B, C, que tipo de risco isso representa?
+
+391
+00:31:42,770 --> 00:31:48,160
+Ah, tem LGPD que aplica, é risco de negócio, é uma informação sensível para o negócio,
+etc.
+
+392
+00:31:48,160 --> 00:31:48,910
+tal.
+
+393
+00:31:48,910 --> 00:32:00,450
+Minimizar o máximo, a gente às vezes adora, quanto mais dados melhor, Tem uma máxima do
+Bruce Schneier que já tem uns 10 anos aí que diz assim, os dados são tóxicos, né?
+
+394
+00:32:01,590 --> 00:32:03,980
+Então, assim...
+
+395
+00:32:04,050 --> 00:32:05,790
+mínimo possível.
+
+396
+00:32:06,690 --> 00:32:08,750
+Então assim, minimização.
+
+397
+00:32:08,750 --> 00:32:15,890
+Aí uma vez que identifique qual é o dado que realmente precisa, como é que é coletado,
+como é que é tratado, eu posso escolher o melhor algoritmo, que vai depender muito do caso
+
+398
+00:32:15,890 --> 00:32:16,690
+de uso.
+
+399
+00:32:16,690 --> 00:32:27,990
+Sabe que uma coisa importante que tem sido bastante discutida, e a gente na Capgemini tem
+Quantum Lab lá na Europa, um trabalho bacana que os caras têm feito, é de benchmark dos
+
+400
+00:32:27,990 --> 00:32:28,910
+algoritmos.
+
+401
+00:32:28,910 --> 00:32:33,330
+Não adianta também eu pegar uma aplicação nova qualquer
+
+402
+00:32:33,938 --> 00:32:44,178
+está usando algoritmo baseado RSA, chega o tiro e coloca um algoritmo baseado Sphinx, é
+dos tipos do nicho, o Falcon ou qualquer que seja.
+
+403
+00:32:44,558 --> 00:32:47,098
+Não vai ser o mesmo desempenho.
+
+404
+00:32:47,358 --> 00:32:51,118
+Do lado do cliente até assim, beleza, cai pouquinho, mas o cliente não nota.
+
+405
+00:32:51,118 --> 00:32:58,078
+Mas do lado do servidor que está moendo um atrás do outro de decriptografar as mensagens,
+você pode derrubar o serviço.
+
+406
+00:32:58,514 --> 00:33:07,014
+Então assim, também precisa ter esse trabalho de benchmark, de escolha das melhores
+implementações, das melhores soluções de algoritmo para cada situação e aí define uma
+
+407
+00:33:07,014 --> 00:33:08,834
+política e aí se utiliza.
+
+408
+00:33:08,834 --> 00:33:12,834
+Então é interessante que os desenvolvedores estejam cientes disso.
+
+409
+00:33:12,834 --> 00:33:21,714
+Muitas vezes não vai ser decisão deles, mas eles estejam cientes disso, que também não é
+assim, vou lá pegar algoritmo que é quantum safe, coloco hoje numa aplicação que pode
+
+410
+00:33:21,714 --> 00:33:24,034
+derrubar a aplicação termos de desempenho.
+
+411
+00:33:25,202 --> 00:33:32,042
+tomar nota 10 por lado, mas tomar nota zero e puxar de orelha pelo outro, porque derrubou
+a performance da aplicação.
+
+412
+00:33:32,542 --> 00:33:40,242
+levantar a mão, conversar, provocar discussão, trazer a discussão, puxar sempre na
+ultimate segurança para estar fazendo as discussões todas.
+
+413
+00:33:40,242 --> 00:33:47,522
+Porque pode ser que neste momento você não precise, ou talvez até não deva ainda
+implementar algoritmo quanto a Safe.
+
+414
+00:33:47,522 --> 00:33:51,662
+Mas você sabe, aí vai para a questão inventária, você sabe onde é você colocou o quê.
+
+415
+00:33:51,662 --> 00:33:54,610
+Aí daqui a ano, dois, três, cinco, precisa trocar.
+
+416
+00:33:54,610 --> 00:34:02,670
+Você vai lá, idealmente num CMDB, agora, com uma informação dessas, vai lá e tá aqui, tem
+esse algoritmo que precisa ser trocado.
+
+417
+00:34:02,670 --> 00:34:03,410
+Beleza.
+
+418
+00:34:03,410 --> 00:34:08,150
+Você está, como a gente tem usado na indústria, criptoágil.
+
+419
+00:34:08,150 --> 00:34:16,870
+Você está com uma estrutura, processos e uma estrutura de governança que permite que você
+troque um componente de criptografia de uma forma super tranquila.
+
+420
+00:34:16,870 --> 00:34:22,482
+Não é algo que está lá hard-coded, É que você precisa reescrever toda a aplicação para
+trocar, enfim.
+
+421
+00:34:22,482 --> 00:34:27,262
+Mas é uma pecinha que você sabe onde é que está, você vai lá e troca por uma nova.
+
+422
+00:34:27,262 --> 00:34:29,802
+Até pelo seguinte, Cassio, uma outra coisa que eu acho que é importante.
+
+423
+00:34:29,802 --> 00:34:39,301
+Esses algoritmos que eu falei, que estão começando a ser disponibilizados, você tem como
+exemplo Microsoft AWS, pelo amor de Deus, nada contra Microsoft AWS, mas só como exemplos.
+
+424
+00:34:39,362 --> 00:34:41,482
+Ninguém testou isso ainda.
+
+425
+00:34:42,202 --> 00:34:47,122
+Tem um modelo do NIST teórico, os caras chegaram e fizeram a primeira implementação.
+
+426
+00:34:47,122 --> 00:34:49,282
+Ninguém testou isso no mundo real.
+
+427
+00:34:49,630 --> 00:34:51,770
+estamos testando.
+
+428
+00:34:51,982 --> 00:34:57,662
+e quando tiver o primeiro computador quântico, pode ser que isso derreta igual uma
+antírrega no sol.
+
+429
+00:34:57,962 --> 00:35:01,662
+Então, o fato de ser criptoágil ajuda também a esse risco.
+
+430
+00:35:01,662 --> 00:35:08,492
+Na hora que se identificar alguma coisa, alguma vulnerabilidade nesses algoritmos novos,
+você rapidamente troque.
+
+431
+00:35:08,492 --> 00:35:19,842
+Porque, o processo de gestão que existe nessas empresas, Microsoft vai detectar que tem
+problema naquele algoritmo, vai elaborar lá patch, uma nova correção, etc.
+
+432
+00:35:19,842 --> 00:35:20,914
+e estar disponibilizar.
+
+433
+00:35:20,914 --> 00:35:26,054
+Aí você precisa do seu processo de gestão de vulnerabilidade, inventar gestão de
+vulnerabilidade para corrigir.
+
+434
+00:35:27,454 --> 00:35:32,114
+Mas enfim, só voltando para a questão da capacitação, que eu já puxei vários outros
+assuntos.
+
+435
+00:35:32,114 --> 00:35:43,294
+Mas eu acho que isso, começa muito com conscientização e depois acho que começar a
+entender esses mecanismos, papel de cada o que existe disponível de ferramental e
+
+436
+00:35:43,294 --> 00:35:44,124
+processo, etc.
+
+437
+00:35:44,124 --> 00:35:48,594
+para entender ali qual é papel do desenvolvedor dentro dessa engrenagem toda.
+
+438
+00:35:48,626 --> 00:35:51,806
+E trabalhar de forma colaborativa, claro, sem apontar dedo etc.
+
+439
+00:35:51,806 --> 00:35:54,066
+Ninguém vai ter sucesso fazendo isso.
+
+440
+00:35:54,066 --> 00:36:00,526
+Mas trabalhar de forma colaborativa, você entra do lado, dá sugestão, vi isso, vi aquilo,
+você já pensou nisso, já pensou naquilo.
+
+441
+00:36:00,526 --> 00:36:02,985
+E aí a coisa se constrói de uma forma mais bacana.
+
+442
+00:36:02,985 --> 00:36:10,285
+Até a aplicabilidade do algoritmo, que você falou muito bem, o benchmark de performance é
+uma coisa, mas, por exemplo, você não usa criptografia assimétrica com assimétrica para o
+
+443
+00:36:10,285 --> 00:36:14,405
+dado em descanso ou transporte, cada uma tem o seu propósito ali.
+
+444
+00:36:14,405 --> 00:36:19,685
+Então, até nesse contexto do cara saber o que e para quê, para não sair...
+
+445
+00:36:19,685 --> 00:36:24,065
+A gente sempre brinca de matando formiga com a bazuca.
+
+446
+00:36:24,505 --> 00:36:28,645
+Então, tem pouco dessa noção, eu diria.
+
+447
+00:36:30,153 --> 00:36:40,253
+E na pesquisa eu vi também lá que a Capgemini falou o seguinte, 70 % das organizações já
+planejam adotar soluções de segurança quântica nos próximos cinco anos.
+
+448
+00:36:41,353 --> 00:36:45,093
+Aí eu imagino que a pesquisa foi feita com empresas de grande porte.
+
+449
+00:36:45,113 --> 00:36:47,773
+E talvez isso até mencionado algum momento.
+
+450
+00:36:47,853 --> 00:36:49,093
+Por quê?
+
+451
+00:36:49,133 --> 00:36:58,409
+Você pode comentar sobre isso, mas no dia a dia, talvez dia a dia pouco mais ali no
+código, vamos falar assim, tirar os chapéus aqui, né?
+
+452
+00:36:58,409 --> 00:37:00,909
+Tem de chave chumbada no código.
+
+453
+00:37:00,909 --> 00:37:06,569
+Às vezes o CID do algoritmo da criptografia tá chumbado num arquivo de configuração no
+Kubernetes.
+
+454
+00:37:06,569 --> 00:37:09,029
+O desenvolvedor fala, não, mas tá no sequence do Kubernetes.
+
+455
+00:37:09,029 --> 00:37:11,669
+Fala, tipo, porra, velho, não muda muita coisa, né?
+
+456
+00:37:11,669 --> 00:37:15,289
+Aí o outro, não, mas tá base 64 o CID.
+
+457
+00:37:15,389 --> 00:37:24,669
+Então, na prática tem muita coisinha que não vai ajudar muito no dia a dia, minha vista,
+assim.
+
+458
+00:37:24,669 --> 00:37:25,689
+É aquela história, né?
+
+459
+00:37:25,689 --> 00:37:27,625
+Tem um meme que tá rolando aí, é
+
+460
+00:37:27,625 --> 00:37:31,415
+como se fosse uma puta estrutura bem feita e tal, assim, bonita.
+
+461
+00:37:31,415 --> 00:37:34,705
+você vai lá embaixo e uma pecinha de dominó segurando negócio assim.
+
+462
+00:37:34,705 --> 00:37:37,825
+Tipo, você tirou a pecinha de dominó, cai tudo.
+
+463
+00:37:37,925 --> 00:37:39,005
+Então, às vezes é isso.
+
+464
+00:37:39,005 --> 00:37:44,945
+O cara tá com o computador quântico na mão, vai lá, po, senta chumbado algum lugar, po,
+vai lá e destrói tudo.
+
+465
+00:37:45,565 --> 00:37:47,785
+Talvez essa questão de...
+
+466
+00:37:47,785 --> 00:37:54,125
+aí pegando esse dado específico, né, de 70 % das organizações estão planejando adotar
+essas soluções de segurança quântica já nos próximos cinco anos.
+
+467
+00:37:55,065 --> 00:37:56,649
+Você tem alguns insights de...
+
+468
+00:37:56,649 --> 00:37:59,329
+Como elas chegaram a essa decisão?
+
+469
+00:37:59,329 --> 00:38:03,409
+Daqui cinco anos ou nos próximos cinco anos eu preciso fazer outra coisa.
+
+470
+00:38:03,409 --> 00:38:07,349
+Eu olho pra minha vida e falo, nos próximos cinco anos eu preciso emagrecer.
+
+471
+00:38:07,349 --> 00:38:10,459
+Nos próximos cinco anos eu preciso engordar, nos próximos cinco anos eu preciso comprar
+uma casa nova.
+
+472
+00:38:10,459 --> 00:38:14,069
+Sei lá, você tira parâmetros.
+
+473
+00:38:14,069 --> 00:38:15,889
+Como é que esses caras chegaram nisso?
+
+474
+00:38:15,889 --> 00:38:19,929
+Daqui cinco anos eu vou precisar ou nos próximos cinco anos eu preciso disso.
+
+475
+00:38:20,349 --> 00:38:25,869
+E aí voltando pra minha realidade, os caras não fazem EPSEC direito ainda, há 20 anos.
+
+476
+00:38:26,341 --> 00:38:30,801
+Eu só queria entender, traz insights pra gente de como é eles falaram isso.
+
+477
+00:38:30,801 --> 00:38:38,857
+É porque tá no hype, você falou que nem é mainstream ainda, mas o cara viu no pesquisa, o
+cara viu lugar ou não, acha que tem, como é que isso aí?
+
+478
+00:38:38,857 --> 00:38:42,717
+Eu vejo, primeiro que sim.
+
+479
+00:38:43,277 --> 00:38:50,097
+Normalmente os entrevistados são de grandes empresas, é o perfil de cliente da Capigemini.
+
+480
+00:38:51,437 --> 00:39:00,877
+Desde a pesquisa do ano passado que foi sobre segurança com o GNI, a gente tem
+entrevistado executivos do Brasil, com os clientes e amigos nossos.
+
+481
+00:39:00,877 --> 00:39:03,317
+Nessa pesquisa, por exemplo, tem também alguma coisa.
+
+482
+00:39:03,317 --> 00:39:08,265
+É verdade que na GNI teve mais gente do Brasil do que agora, pouco porque eu acho
+
+483
+00:39:08,265 --> 00:39:10,985
+até questão de cultura do quantum.
+
+484
+00:39:10,985 --> 00:39:15,325
+A começou a fazer os convites e a pessoa também pensava, não, peraí, eu estou com outros
+problemas.
+
+485
+00:39:15,385 --> 00:39:19,905
+Enquanto que Genenais já era tema muito mais mainstream ano passado quando a gente fez
+pesquisa.
+
+486
+00:39:19,905 --> 00:39:22,205
+Você tem ideia da pesquisa do ano passado?
+
+487
+00:39:22,205 --> 00:39:24,605
+Teve 15 executivos entrevistados no mundo inteiro.
+
+488
+00:39:24,605 --> 00:39:26,285
+Sete eram do Brasil.
+
+489
+00:39:26,485 --> 00:39:32,125
+Esse ano a pesquisa teve mais ou menos uns 15 também do mundo inteiro e eram quatro do
+Brasil.
+
+490
+00:39:32,125 --> 00:39:34,085
+Já é número pouco menor.
+
+491
+00:39:34,085 --> 00:39:37,465
+Pelo fato acho que do assunto não ser tão mainstream ainda.
+
+492
+00:39:37,481 --> 00:39:43,101
+Mas enfim, bom, então pouco falando pouquinho do perfil dos entrevistados.
+
+493
+00:39:43,101 --> 00:39:49,541
+relação ao dia que saiu a postura, o entendimento dos clientes, qual é a nossa visão?
+
+494
+00:39:49,781 --> 00:39:55,201
+Primeiro assim, tem tema que a gente não pode deixar de ignorar, regulatório.
+
+495
+00:39:55,221 --> 00:40:02,841
+É feio para o profissional de cyber, que adora defender a gestão de risco, falar que no
+final do dia tema regulatório é tema de compliance.
+
+496
+00:40:02,941 --> 00:40:04,401
+Mas é o que é?
+
+497
+00:40:04,401 --> 00:40:05,661
+Sejamos realistas.
+
+498
+00:40:05,661 --> 00:40:06,405
+É o que é?
+
+499
+00:40:06,405 --> 00:40:06,697
+é.
+
+500
+00:40:06,697 --> 00:40:12,297
+Então a gente olha algumas regulamentações, principalmente na Europa e Estados Unidos, já
+determinando.
+
+501
+00:40:12,297 --> 00:40:21,607
+Isso são regulamentações obviamente do governo, claro, quando a gente fala regulamentação,
+mas regulamentação já é do tipo assim, amigão, se você não tiver com ABC daqui a dois,
+
+502
+00:40:21,607 --> 00:40:27,917
+três, cinco anos, você não presta mais serviço para mim, governo dos Estados Unidos,
+governo do Reino Unido, governo de não sei da onde.
+
+503
+00:40:27,917 --> 00:40:34,025
+Então começa a empurrar a indústria, que obviamente governo é grande cliente da indústria
+de qualquer setor.
+
+504
+00:40:34,025 --> 00:40:34,835
+Uhum.
+
+505
+00:40:34,835 --> 00:40:37,045
+começa a empurrar a indústria nessa direção.
+
+506
+00:40:37,045 --> 00:40:39,945
+Então, acho que driver importante é a regulamentação.
+
+507
+00:40:39,945 --> 00:40:43,145
+Por outro lado, também tem a própria questão da gestão de risco.
+
+508
+00:40:43,145 --> 00:40:52,485
+Então, tem cliente nosso aqui no Brasil, setor bancário, que não está sujeito a nenhuma
+regulamentação, mas o pessoal está trabalhando nisso e não está trabalhando desde agora,
+
+509
+00:40:52,485 --> 00:41:03,565
+já dois, três anos, começando a olhar já o que está acontecendo, porque pelo perfil da
+instituição, pouco mais conservadora, mais madura de segurança,
+
+510
+00:41:05,217 --> 00:41:15,017
+Não que esteja perfeito, óbvio, não existe segurança 100%, mas aquele básico já está
+tratado, então começa a olhar outros riscos, enfim, e por aí vai.
+
+511
+00:41:15,017 --> 00:41:26,108
+Então acho que tem uma pegada pouco assim do lado de gestão de risco, mas um grande
+driver, muito provavelmente, é a regulamentação por isso, que leva pessoal a se mover.
+
+512
+00:41:26,108 --> 00:41:28,108
+Boa, eu sempre faço essa brincadeira, né?
+
+513
+00:41:28,108 --> 00:41:36,618
+Aprender a ferver água e fazer gelo, aí você pode começar a inventar de cozinhar arroz,
+fritar uma batata, mas se matar com o óleo quente lá, Aperte ferver a água primeiro,
+
+514
+00:41:36,618 --> 00:41:37,708
+enfim.
+
+515
+00:41:38,668 --> 00:41:45,008
+E voltando ao exemplo que eu falei da ABB, na ABB a gente teve alguns problemas
+regulatórios, eu tô aqui na Europa agora, né?
+
+516
+00:41:45,008 --> 00:41:45,908
+Há quatro anos.
+
+517
+00:41:45,908 --> 00:41:47,868
+A gente teve alguns problemas regulatórios, problemas não, né?
+
+518
+00:41:47,868 --> 00:41:51,900
+gente teve algumas demandas regulatórias por conta de S-BOM, então...
+
+519
+00:41:51,900 --> 00:42:00,500
+Eu dei exemplo lá do hardware, entregar o hardware pra rodar lá numa automação de uma
+fábrica, não sei da onde, com software lá dentro e tinha que ter SBOM desse hardware,
+
+520
+00:42:00,500 --> 00:42:02,720
+Tudo, cada componente lá dentro.
+
+521
+00:42:02,720 --> 00:42:04,280
+A não conseguia fazer isso.
+
+522
+00:42:04,280 --> 00:42:04,670
+Por que?
+
+523
+00:42:04,670 --> 00:42:07,880
+Não tinha um catálogo de bibliotecas, tinha um...
+
+524
+00:42:07,880 --> 00:42:11,940
+O do hardware era mais fácil, porque tinha o fabricante, era mais fácil as pecinhas.
+
+525
+00:42:11,940 --> 00:42:13,660
+O software a gente não conseguia.
+
+526
+00:42:13,660 --> 00:42:20,860
+Aí, arrumamos uma solução, conseguimos fazer um esforço lá, enfim, no fim das contas saiu
+SBOM.
+
+527
+00:42:20,860 --> 00:42:25,780
+para um cliente americano, porque a BB presta serviço para o governo americano, enfim.
+
+528
+00:42:25,780 --> 00:42:30,180
+Então tem uma questão regulatória que, você falou muito bem, empurra.
+
+529
+00:42:30,180 --> 00:42:39,580
+E esse empurrar é literal, porque a empresa, ela pode, tá, não vou fazer não, deixa aí, tá
+bom, então você perde praticamente as suas maiores receitas, né, o governo, é bom
+
+530
+00:42:39,580 --> 00:42:40,920
+contrato, etc, etc.
+
+531
+00:42:40,920 --> 00:42:46,940
+O caralho para ela, não quer ficar de fora, E consequentemente a imagem, aquela coisa
+toda, isso é muito importante.
+
+532
+00:42:47,324 --> 00:42:55,844
+e aí tirando o chapeuzinho meu aqui de novo, você falou ponto muito importante, pelo menos
+para mim, Quando eu olho para segurança, eu vejo a segurança de uma maneira geral de
+
+533
+00:42:55,844 --> 00:42:57,874
+software para o bem da sociedade.
+
+534
+00:42:57,874 --> 00:42:59,364
+Tudo hoje opera cima de software.
+
+535
+00:42:59,364 --> 00:43:03,724
+Então quando a fala de software seguro, a está falando de uma sociedade mais protegida de
+uma maneira geral.
+
+536
+00:43:03,724 --> 00:43:14,984
+Então quando você fala, pô, tem banco x brasileiro que está olhando para isso, mesmo sem
+precisar olhar para isso, isso enche os olhos, porque, porra, então eu sei que tem alguém,
+
+537
+00:43:14,984 --> 00:43:17,052
+alguém, entre aspas,
+
+538
+00:43:17,052 --> 00:43:24,452
+olhando para essas questões de uma forma proativa porque quer ter uma marca mais
+estruturada, oferecer bom produto, bom serviço, etc.
+
+539
+00:43:24,452 --> 00:43:27,552
+Igual se comprar carro, Você não vai comprar o carro e testar o freio.
+
+540
+00:43:27,552 --> 00:43:31,492
+Foi testado, muito bem implementado, você só vai lá e apita no freio quando você precisa.
+
+541
+00:43:31,492 --> 00:43:32,572
+Você não precisa...
+
+542
+00:43:32,572 --> 00:43:35,052
+Você não vai comprar o carro X porque o freio é melhor, não.
+
+543
+00:43:35,052 --> 00:43:36,412
+Freio é freio, tem que frear, né?
+
+544
+00:43:36,412 --> 00:43:37,812
+A menos que esteja quebrado.
+
+545
+00:43:37,812 --> 00:43:38,912
+Freio é freio, tem que frear.
+
+546
+00:43:38,912 --> 00:43:41,832
+Então, no meu ponto de vista, a segurança tem que estar sempre lá.
+
+547
+00:43:41,832 --> 00:43:43,012
+Como você falou bem também.
+
+548
+00:43:43,012 --> 00:43:45,820
+Não precisa estar 100%, nem vai estar 100 % nunca.
+
+549
+00:43:45,820 --> 00:43:56,880
+Mas é aquela história, preciso garantir, talvez hoje olhando para a EPSEC, eu não preciso
+que todo mundo esteja pro quantum, quantum computing protected, mas preciso garantir que o
+
+550
+00:43:56,880 --> 00:43:59,860
+molecada na faculdade rodando script não vai me invadir.
+
+551
+00:43:59,860 --> 00:44:09,240
+Só um crime organizado, uma pessoa estrutural, pessoal com tempo e recursos do outro lado,
+talvez consiga, mas eu tenho que me proteger de alguma forma.
+
+552
+00:44:10,280 --> 00:44:14,396
+Leonardo, algumas configurações finais, o tempo passa, o tempo voa.
+
+553
+00:44:14,396 --> 00:44:19,636
+A gente pode continuar esse papo numa segunda parte, gente tem 45 minutos aqui já.
+
+554
+00:44:19,856 --> 00:44:29,416
+Alguma coisa que você deixou de lado, que você queria comentar, eu acho que foi muito bem
+explicado, pelo menos para balizar a galera para onde olhar, como olhar e começar a se
+
+555
+00:44:29,416 --> 00:44:30,846
+preocupar com relação a isso.
+
+556
+00:44:30,846 --> 00:44:40,376
+De repente, até uma visão de carreira para atuar nisso daqui para frente, que talvez seja
+uma demanda muito forte que venha por aí, assim como é a de IA hoje.
+
+557
+00:44:40,836 --> 00:44:41,564
+Enfim.
+
+558
+00:44:41,564 --> 00:44:45,044
+considerações finais pra gente encerrar.
+
+559
+00:44:46,395 --> 00:44:48,295
+Então, Cassio, é sem dúvida.
+
+560
+00:44:48,295 --> 00:44:51,455
+O tempo passa rápido quando a gente está se divertindo.
+
+561
+00:44:51,455 --> 00:44:57,095
+Aqui estamos falando de tema que é a paixão nossa, de nós dois.
+
+562
+00:44:58,315 --> 00:45:10,575
+Talvez uma mensagem interessante para fechar do meu lado é muito se compara o que a gente
+está para viver aqui com a computação quântica com o bug do milênio, virada de 99 para
+
+563
+00:45:10,575 --> 00:45:11,595
+2000.
+
+564
+00:45:11,675 --> 00:45:15,004
+Só que tem um paralelo interessante.
+
+565
+00:45:15,004 --> 00:45:21,284
+é provavelmente uma possível corrida busca de novas tecnologias, atualização de parques,
+etc.
+
+566
+00:45:21,484 --> 00:45:32,084
+E isso por si só já é uma razão adicional para começar a antecipar, porque obviamente
+quanto mais você deixar isso para mais tarde, menos gente vai ter, menos recursos vai ter,
+
+567
+00:45:32,084 --> 00:45:37,744
+lei de oferta e procura de mercado, tudo vai ser mais caro, enfim, então quanto antes
+começar a trabalhar melhor.
+
+568
+00:45:38,124 --> 00:45:43,004
+Mas tem dois agravantes ainda relação ao bug do milênio, são, o bug do milênio tinha...
+
+569
+00:45:43,004 --> 00:45:45,904
+data, hora, minuto e segundo para acontecer.
+
+570
+00:45:47,524 --> 00:45:51,884
+O evento quantum tem o componente da incerteza.
+
+571
+00:45:51,884 --> 00:45:55,354
+Não vou dizer que pode ser amanhã, porque eu ganho de exagero.
+
+572
+00:45:55,354 --> 00:45:56,644
+Mas tem componente da incerteza.
+
+573
+00:45:56,644 --> 00:45:59,764
+Uns falam cinco anos, outros dez, outros quinze, tem que falar de vinte.
+
+574
+00:45:59,764 --> 00:46:00,984
+Não sabemos.
+
+575
+00:46:01,344 --> 00:46:06,004
+Mas enfim, e de novo, gente não precisa ter iPhone quântico.
+
+576
+00:46:06,004 --> 00:46:12,380
+Precisa ter computador numa sala como o Aeronautica, de 70 toneladas, gigantesco.
+
+577
+00:46:12,380 --> 00:46:17,600
+em algum lugar no mundo e com alguém tendo acesso mal intencionado.
+
+578
+00:46:19,380 --> 00:46:21,140
+Esse é o que o dei.
+
+579
+00:46:21,140 --> 00:46:25,040
+É o dia que vai ter essa capacidade desse computador.
+
+580
+00:46:25,040 --> 00:46:29,400
+Não é necessariamente o dia que a vai estar rodando planilha Excel em computador quântico.
+
+581
+00:46:29,400 --> 00:46:31,660
+Esse é agravante, é incerteza.
+
+582
+00:46:31,660 --> 00:46:38,060
+E o outro é a questão que a gente falou várias vezes, você trouxe várias vezes, a questão
+da capacitação.
+
+583
+00:46:38,060 --> 00:46:41,208
+Os skills necessários para resolver esse problema.
+
+584
+00:46:41,436 --> 00:46:46,176
+O bug do millennium, a precisava de gente, precisava de desenvolvedor.
+
+585
+00:46:46,176 --> 00:46:55,496
+Agora você precisa de desenvolvedor com a capacitação que a gente está falando aqui,
+precisa de time de segurança, precisa de arquitetos, enfim, a gente já deu vários exemplos
+
+586
+00:46:55,496 --> 00:46:58,676
+diferentes de que tão multidisciplinar o problema é.
+
+587
+00:46:58,676 --> 00:47:02,196
+A vai precisar de skills várias áreas diferentes dentro da organização.
+
+588
+00:47:02,196 --> 00:47:04,936
+Isso precisa ser criado, construído.
+
+589
+00:47:04,936 --> 00:47:10,430
+Tudo começa, acho que o primeiro tijolinho dessa história toda, no primeiro degrau dessa
+escada é a conscientização.
+
+590
+00:47:10,620 --> 00:47:22,960
+E depois a gente vai crescendo, criando de novo outras camadas de consciente e treinamento
+de acordo com o papel de cada Mas eu acho que esse é o grande desafio, é gente ter que
+
+591
+00:47:22,960 --> 00:47:29,280
+lidar, gerenciar essa incerteza e ter que os skills disponíveis.
+
+592
+00:47:29,280 --> 00:47:31,820
+Então esse é trabalho, eu acho.
+
+593
+00:47:32,280 --> 00:47:38,740
+E talvez a melhor coisa para fazer nesse primeiro momento é começar a discutir e
+estruturar essa questão da governança.
+
+594
+00:47:39,292 --> 00:47:41,192
+Você falou do S-BOM.
+
+595
+00:47:41,232 --> 00:47:47,992
+O paralelo que a gente faz aqui nesse mundo, é termo que se usa bastante, é C-BOM, é
+Cryptographic Bill of Materials.
+
+596
+00:47:47,992 --> 00:47:50,892
+Volta para a questão do inventário dos algoritmos criptográficos.
+
+597
+00:47:50,892 --> 00:47:52,652
+Mas isso está dando guarda-chuva de governança.
+
+598
+00:47:52,652 --> 00:47:55,892
+Então é governança, conscientização, treinamento.
+
+599
+00:47:55,912 --> 00:47:57,252
+Esse é o caminho.
+
+600
+00:47:57,332 --> 00:48:04,006
+Não é uma coisa urgente, mas é uma coisa importante que a gente precisa começar a olhar
+antes que se torne urgente.
+
+601
+00:48:04,397 --> 00:48:09,457
+Esse negócio, essa história do mistério, O Bunker do Milênio tinha data e hora.
+
+602
+00:48:09,697 --> 00:48:11,147
+Eu sempre brinco muito, né?
+
+603
+00:48:11,147 --> 00:48:12,397
+Brinco e é verdade, né?
+
+604
+00:48:12,397 --> 00:48:13,607
+Pelo menos para quem acredita.
+
+605
+00:48:13,607 --> 00:48:15,937
+Jesus volta, só não sabemos quando.
+
+606
+00:48:15,937 --> 00:48:17,757
+Vamos morrer, não sabemos quando.
+
+607
+00:48:17,757 --> 00:48:20,857
+Não fica esperando para ele se confessar, para ele fazer as coisas certas.
+
+608
+00:48:20,857 --> 00:48:25,617
+Já vai, Pode acontecer hoje, pode acontecer amanhã, mas vai ter 10 anos, enfim.
+
+609
+00:48:25,717 --> 00:48:30,597
+Então a computação quântica vai chegar e também não espere, né?
+
+610
+00:48:30,597 --> 00:48:31,477
+Acho que isso é importante.
+
+611
+00:48:31,477 --> 00:48:33,193
+Eu esqueci de detalhe
+
+612
+00:48:33,193 --> 00:48:36,793
+pessoal sempre gosta pera aí vou dar aqui minha vinheta
+
+613
+00:48:37,064 --> 00:48:40,784
+A gente tem quadro aqui que é o Dev May Cry.
+
+614
+00:48:40,944 --> 00:48:46,044
+O que a gente faria ou que a gente gosta de fazer para os desenvolvedores chorarem?
+
+615
+00:48:46,044 --> 00:48:51,144
+Então, cara, já teve aqui de aqueles treinamentos de 99 slides que você tem que clicar e
+avançar.
+
+616
+00:48:51,144 --> 00:48:53,884
+Você não pode avançar, você tem que preencher as coisas na tela.
+
+617
+00:48:53,884 --> 00:48:54,614
+Planilha Excel.
+
+618
+00:48:54,614 --> 00:48:56,364
+Tem umas coisas loucas aqui.
+
+619
+00:48:56,364 --> 00:49:04,324
+Eu acho que pegando o tema de hoje, acho que algo para o desenvolvedor chorar, que a gente
+gosta de brigar com o desenvolvedor muito, eu diria que ele agora vai ter que criptografar
+
+620
+00:49:04,324 --> 00:49:05,276
+tudo na mão.
+
+621
+00:49:05,276 --> 00:49:11,936
+não tem mais algoritmo pronto, ele tem que criar todo santo dia um algoritmo novo para
+criptografar as coisas dele.
+
+622
+00:49:11,936 --> 00:49:14,476
+Isso vai ser testado, obviamente, depois pelo time de segurança.
+
+623
+00:49:14,476 --> 00:49:19,556
+O que não vai passar, porque ele não criptógrafo, vai estar uma bosta, não vai estar
+criptografado, ele vai ter que refazer.
+
+624
+00:49:19,556 --> 00:49:23,316
+Ou seja, ele não vai mais trabalhar, ele vai só ficar criando algoritmo criptográfico.
+
+625
+00:49:23,316 --> 00:49:26,586
+Talvez seja a minha piada de hoje para os desenvolvedores.
+
+626
+00:49:26,586 --> 00:49:28,536
+Você quer fazer algum desenvolvedor chorar, Léo?
+
+627
+00:49:28,536 --> 00:49:31,736
+Léo, hoje eu chamo de Léo, já viro amigo.
+
+628
+00:49:32,136 --> 00:49:34,308
+Tem alguma coisa que você quer ou quer pular, quer deixar para lá.
+
+629
+00:49:34,308 --> 00:49:39,508
+sei, talvez tudo que a gente tenha falado hoje já tenha feito o pessoal chorar bastante.
+
+630
+00:49:40,308 --> 00:49:45,048
+Você deu uma espetadinha final agora, mas eles já estavam chorando o tempo inteiro, eu
+acho.
+
+631
+00:49:45,048 --> 00:49:47,248
+O que esses malucos estão trazendo aqui para mim?
+
+632
+00:49:47,248 --> 00:49:48,588
+Mais problema?
+
+633
+00:49:48,588 --> 00:49:52,028
+Então, poxa, deixa quieto.
+
+634
+00:49:52,060 --> 00:49:58,750
+O cara pensando, eu instalando meu linter aqui na minha IDE, os caras com computação
+quântica, eu não, me deixa quieto.
+
+635
+00:49:58,750 --> 00:49:59,910
+Boa, boa, acho que isso.
+
+636
+00:49:59,910 --> 00:50:03,600
+Só fazer tudo isso a gente falou aqui já vai se chorar bastante.
+
+637
+00:50:04,800 --> 00:50:05,900
+Boa.
+
+638
+00:50:06,960 --> 00:50:07,756
+Pode falar, pode falar.
+
+639
+00:50:07,756 --> 00:50:10,576
+acho que a própria pesquisa da Capgemini ajuda bastante.
+
+640
+00:50:10,576 --> 00:50:19,536
+De alguma forma, reconhecendo, vamos dizer, o momento do tema globalmente falando, é
+interessante que se olhar a estrutura da pesquisa, primeira metade são os dados da
+
+641
+00:50:19,536 --> 00:50:23,036
+pesquisa si, e a segunda metade é muita informação, né?
+
+642
+00:50:23,036 --> 00:50:26,908
+O que, de alguma forma, fala muito do que a gente comentou aqui.
+
+643
+00:50:26,908 --> 00:50:34,088
+Mas trata várias recomendações, sugestões de como começar, onde buscar mais informação,
+capacitação, etc.
+
+644
+00:50:34,088 --> 00:50:37,382
+A própria pesquisa acho que é bom primeiro passo de capacitação também.
+
+645
+00:50:37,772 --> 00:50:43,733
+Eu tenho o mesmo link do futuro criptografado, porque é a criptografia pós-conte que está
+no topo da nova agenda de segurança cibernética.
+
+646
+00:50:43,733 --> 00:50:45,073
+essa, a mesma pesquisa.
+
+647
+00:50:45,073 --> 00:50:51,833
+Eu tenho esse link, pessoal que estiver ouvindo a gente vai estar no PDF direto, que é o
+link do PDF específico, vai estar lá no nosso...
+
+648
+00:50:51,833 --> 00:50:55,433
+Não sei se você joga no site especificamente, mas vai estar na descrição do YouTube.
+
+649
+00:50:55,433 --> 00:51:04,893
+Então quem estiver ouvindo outra plataforma, dá uma olhadinha no YouTube, além de
+deleitar-se com a nossa beleza, você vai poder baixar o link lá na descrição do YouTube.
+
+650
+00:51:04,893 --> 00:51:05,953
+Beleza?
+
+651
+00:51:05,993 --> 00:51:06,601
+Leonardo.
+
+652
+00:51:06,601 --> 00:51:12,821
+Você está redes sociais, onde o pessoal te encontra, te manda mensagem, pede socorro agora
+porque você inventou essa história agora.
+
+653
+00:51:12,821 --> 00:51:15,240
+O pessoal vai precisar de ajuda ainda.
+
+654
+00:51:15,332 --> 00:51:25,878
+Vamos lá, Linkedin, Leonardo Carissimi, facilmente localizado, Instagram, Leo Carissimi,
+os dois principais esses, Twitter, Leo Carissimi também.
+
+655
+00:51:28,104 --> 00:51:28,604
+Boa.
+
+656
+00:51:28,604 --> 00:51:28,994
+Boa.
+
+657
+00:51:28,994 --> 00:51:29,264
+Fechou.
+
+658
+00:51:29,264 --> 00:51:32,024
+Eu vou colocar esses links todos também lá na descrição do YouTube.
+
+659
+00:51:32,024 --> 00:51:33,414
+Pessoal, foi prazer, Leonardo.
+
+660
+00:51:33,414 --> 00:51:35,674
+Obrigado mais uma vez pelo seu tempo de disponibilidade.
+
+661
+00:51:35,674 --> 00:51:36,844
+Foi papo bem bacana.
+
+662
+00:51:36,844 --> 00:51:38,474
+É muita coisa mesmo, na verdade.
+
+663
+00:51:38,474 --> 00:51:39,384
+Assim, dá pra ficar...
+
+664
+00:51:39,384 --> 00:51:43,264
+Fazer horas aqui dessa conversa, porque é muita coisinha pra gente mastigar, né?
+
+665
+00:51:43,264 --> 00:51:44,654
+É muita coisa informação nova, assim.
+
+666
+00:51:44,654 --> 00:51:46,524
+Até pra mim muita coisa nova também.
+
+667
+00:51:46,984 --> 00:51:48,424
+Enfim, mais uma vez, obrigado.
+
+668
+00:51:48,424 --> 00:51:50,824
+E, pessoal, não se estão ouvindo a gente.
+
+669
+00:51:51,744 --> 00:51:53,264
+Obrigado, mais uma vez.
+
+670
+00:51:53,264 --> 00:51:55,332
+180 episódios da FCK Podcast.
+
+671
+00:51:55,332 --> 00:51:56,872
+quase chegando aos 200.
+
+672
+00:51:56,872 --> 00:51:58,612
+Acho que nessa temporada a gente chega ainda.
+
+673
+00:51:58,612 --> 00:52:06,332
+Se eu não inventar férias, se os vagabundos que tem que trabalhar, que vier trabalhar, a
+gente começa a gravar mais e aí vão ter 200 episódios ainda nessa temporada.
+
+674
+00:52:06,332 --> 00:52:12,332
+Se não, a gente vai se ver na sétima temporada, mas ainda tem temporada, mês, tem bastante
+coisa no setembro ainda e a tem tempo ainda.
+
+675
+00:52:12,332 --> 00:52:13,852
+Então, obrigado.
+
+676
+00:52:13,852 --> 00:52:14,862
+Leonardo, obrigado mais uma vez.
+
+677
+00:52:14,862 --> 00:52:15,872
+A gente se vê na próxima semana.
+
+678
+00:52:15,872 --> 00:52:16,912
+Valeu.
+
+679
+00:52:16,964 --> 00:52:17,311
+abraço.
+
+680
+00:52:17,311 --> 00:52:18,167
+Acabou.
+
