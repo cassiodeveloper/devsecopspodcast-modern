@@ -1,0 +1,2126 @@
+1
+00:00:22,454 --> 00:00:29,534
+Eu ganhei violão de adversário que eu quero aprender a Nunca toquei instrumento nenhum.
+
+2
+00:00:29,534 --> 00:00:31,454
+Você fez o sinalzinho e eu lembrei que preciso praticar hoje.
+
+3
+00:00:31,454 --> 00:00:34,554
+Todo dia eu faço alguma coisa ali para desenrolar.
+
+4
+00:00:37,034 --> 00:00:38,454
+Boa, boa.
+
+5
+00:00:38,454 --> 00:00:41,104
+Bem-vindos a mais episódio de FBS Podcast.
+
+6
+00:00:41,104 --> 00:00:43,054
+Eu sou o Cássio Pereira.
+
+7
+00:00:44,114 --> 00:00:44,934
+Muito bem.
+
+8
+00:00:44,934 --> 00:00:45,484
+Estamos aqui.
+
+9
+00:00:45,484 --> 00:00:49,114
+Não estamos com time completo porque falta o Marcos que está passeando por aí.
+
+10
+00:00:49,114 --> 00:00:51,670
+Pessoal, sem mais delongas, vamos direto ao episódio de hoje.
+
+11
+00:00:51,670 --> 00:00:55,070
+A gente está há muito tempo sem gravar, muito tempo sem vê-los, eu estou com saudade.
+
+12
+00:00:55,070 --> 00:00:58,410
+Mas vamos falar pouquinho hoje sobre bug bounty.
+
+13
+00:00:58,410 --> 00:01:07,210
+O que a gente precisa do ponto de vista dos times de segurança e as empresas se
+preocuparem ao criar um programa de bug bounty ou ter a ideia de que eu preciso de bug
+
+14
+00:01:07,210 --> 00:01:13,110
+bounty ou até de fato enxergar a necessidade, precisa ou não de programa de bug bounty,
+acho isso é importante a gente discutir.
+
+15
+00:01:13,110 --> 00:01:19,382
+Então antes de falar da verdade do tema, lembrar que o WC Cosmo Podcast tem o suporte
+da...
+
+16
+00:01:19,382 --> 00:01:23,622
+Nova 8 e da SNIC, que é a nova 8 da distribuidora da SNIC oficial no Brasil.
+
+17
+00:01:23,622 --> 00:01:28,382
+Lembrar também da Gold Security, que vai oferecer serviço de Application Security pra
+você.
+
+18
+00:01:28,382 --> 00:01:33,342
+E a Digital Oak, que tem portfólio completo de AppSec pra você também.
+
+19
+00:01:33,342 --> 00:01:41,662
+E não se esqueça, se está sobre ataque, está investigando algum problema, tem incidente
+pra resolver, fale com a Purple Bird Security, também vão...
+
+20
+00:01:41,662 --> 00:01:44,802
+Na verdade, eles vão cuidar dor de cabeça pra você, essa é a grande verdade.
+
+21
+00:01:44,802 --> 00:01:48,246
+Bom, bem, Uru, o que você acha...
+
+22
+00:01:48,246 --> 00:01:54,746
+na sua opinião, sua visão, experiência, sabedoria, que é indispensável num programa de Bug
+Bounce.
+
+23
+00:01:54,746 --> 00:02:00,026
+Cara, vamos voltar ao meu programa, decidir o que quero, é indispensável que eu tenha o
+quê?
+
+24
+00:02:02,766 --> 00:02:09,926
+que você tenha uma boa visão e estrutura da parte de triage.
+
+25
+00:02:09,926 --> 00:02:17,126
+Você tem que ter um bom processo definido para receber os findings.
+
+26
+00:02:18,126 --> 00:02:20,466
+Isso assim que eu acho que é o...
+
+27
+00:02:20,466 --> 00:02:21,946
+Existem muitas coisas.
+
+28
+00:02:21,946 --> 00:02:32,066
+Para aquelas pessoas que não sabem que é programa de Bug Bounce, é aquela ideia de eu
+abrir a minha empresa, colocar ela à disposição de pesquisadores de segurança do mundo
+
+29
+00:02:32,066 --> 00:02:32,813
+todo.
+
+30
+00:02:32,813 --> 00:02:39,033
+Para que eles se encontrarem vulnerabilidade na minha empresa eu consigo recompensá-los
+por essa vulnerabilidade.
+
+31
+00:02:41,033 --> 00:02:45,453
+Só que eu não tenho o controle do que pode vir.
+
+32
+00:02:45,613 --> 00:02:47,673
+Eu acho que essa é a principal dor.
+
+33
+00:02:47,773 --> 00:02:52,213
+Cara, eu não sei quantas vulnerabilidades podem vir, quais vulnerabilidades podem vir.
+
+34
+00:02:52,813 --> 00:02:59,583
+Meu time técnico pode ser que não tenha todo o conhecimento necessário para entender uma
+vulnerabilidade reportada.
+
+35
+00:02:59,583 --> 00:03:02,523
+Isso tem uma faca de dois gumes, depois a gente pode...
+
+36
+00:03:02,614 --> 00:03:07,138
+Muitas vezes reproduzi, reproduzi o que foi reportado aliás, tive muita dificuldade até,
+tem isso.
+
+37
+00:03:07,278 --> 00:03:11,818
+Exato, até mesmo entender que isso é realmente uma vulnerabilidade ou não é?
+
+38
+00:03:12,018 --> 00:03:18,418
+Porque, vamos lá, também tem muitos cãmer aí que eu acho que legal o cara entender, tá?
+
+39
+00:03:18,558 --> 00:03:23,238
+E agora cuiar e isso piorou milhões de vezes.
+
+40
+00:03:23,938 --> 00:03:35,312
+Então, você ter o processo para receber a vulnerabilidade é crucial tanto para a saúde
+mental do time
+
+41
+00:03:35,727 --> 00:03:40,167
+quanto para a saúde financeira do programa de bug bount da empresa.
+
+42
+00:03:41,027 --> 00:03:43,847
+exato.
+
+43
+00:03:43,987 --> 00:03:47,027
+hoje acho que é bom ponto para você tocar também, Cassio.
+
+44
+00:03:48,747 --> 00:03:53,527
+Como é que funciona a maioria dos programas de bug bount nas empresas?
+
+45
+00:03:53,627 --> 00:03:54,807
+Funciona assim.
+
+46
+00:03:54,807 --> 00:03:57,227
+Primeiro que existem dois tipos de programa.
+
+47
+00:03:57,487 --> 00:04:03,487
+Existe o programa de bug bount e existe o programa de vulnerabilidade de descloujo.
+
+48
+00:04:05,678 --> 00:04:18,158
+O programa de Bug Bounty é aquele que de fato, porque tem o VDP, Vulnerability Discoaching
+Program, e tem o BBP, Bug Bounty Program.
+
+49
+00:04:18,458 --> 00:04:21,637
+O VDP ele não paga.
+
+50
+00:04:21,637 --> 00:04:34,638
+Por exemplo, ali algumas questões do governo americano, eles têm o programa de VDP, você
+não ganha dinheiro, eles não te dão dinheiro e você ganha fama.
+
+51
+00:04:34,990 --> 00:04:38,270
+Porra, aqui é a cara que conseguia achar vulnerabilidade na NASA.
+
+52
+00:04:38,270 --> 00:04:40,070
+dar exemplo, né?
+
+53
+00:04:40,250 --> 00:04:43,150
+Beleza, Exato, exato.
+
+54
+00:04:43,150 --> 00:04:49,130
+Então, você acaba tendo uma jogada mais ou menos nessa parte, tá?
+
+55
+00:04:49,130 --> 00:04:50,040
+Aí o bug bount não.
+
+56
+00:04:50,040 --> 00:04:53,410
+Bug bount é realmente de fato você recebe a grana, né?
+
+57
+00:04:53,670 --> 00:05:02,958
+E aí, quando você vai montar, pensa seguinte, você vai definir, se o cara achar uma
+crítica, uma alta, uma média, uma baixa.
+
+58
+00:05:02,958 --> 00:05:08,678
+o cara vai ganhar dinheiro de acordo com a criticidade do que ele encontrar, o que é, ou
+que faz todo sentido.
+
+59
+00:05:08,678 --> 00:05:11,178
+A questão é quem define a criticidade.
+
+60
+00:05:12,018 --> 00:05:18,878
+Porque se você for deixar toda pessoa que está reportando vulnerabilidade vai dizer que a
+dela é crítica.
+
+61
+00:05:19,338 --> 00:05:19,868
+Entende?
+
+62
+00:05:19,868 --> 00:05:20,358
+é verdade.
+
+63
+00:05:20,358 --> 00:05:24,366
+E eles vão buscar, inclusive, as críticas que pagam mais, certo modo.
+
+64
+00:05:24,574 --> 00:05:27,244
+exatamente ou eles vão fazer o que?
+
+65
+00:05:27,244 --> 00:05:36,274
+Vão criar um excelente storytelling para fazer você que está do outro lado triando a
+vulnerabilidade acreditar que eu é crítico.
+
+66
+00:05:36,274 --> 00:05:50,074
+E antigamente por exemplo quando você pegava uma vulnerabilidade você tinha que escrever o
+relatório bonitinho explicando porque aquilo é crítico papapá beleza?
+
+67
+00:05:50,074 --> 00:05:52,176
+O que o pessoal faz agora?
+
+68
+00:05:52,303 --> 00:06:05,263
+o pessoal já deixa um promptzinho pronto da sua empresa e esse promptzinho prompt da sua
+empresa depois ele pega a vulnerabilidade que ele encontrou joga no meio desse prompt e
+
+69
+00:06:05,263 --> 00:06:19,203
+faz aguspir texto muito bonito de como pingar alert 1 na tela é a coisa pior não tem
+diferença nenhuma entre o alert 1 na tela e você faler a sua empresa entendeu então
+
+70
+00:06:21,070 --> 00:06:22,650
+a saúde financeira acaba...
+
+71
+00:06:22,650 --> 00:06:26,894
+perceba que tudo isso faz parte do processo de triagem, que é coisa mais importante.
+
+72
+00:06:26,930 --> 00:06:35,450
+Bom, então acho que pra gente começar a discutir, que é o que você comentou, ter um
+processo de triagem e aí isso dá pra desenrolar, só pra gente não ficar só nisso, Mas dá
+
+73
+00:06:35,450 --> 00:06:43,430
+pra desenrolar essa palavra processo de triagem em recrutamento, em equipe, time, porque
+você vai ter ter pessoas pra fazer isso.
+
+74
+00:06:43,430 --> 00:06:48,050
+Talvez não sejam pessoas exclusivas pra fazer triagem de bug bop, você também não vai...
+
+75
+00:06:48,050 --> 00:06:51,510
+É aquela história, Depende pouco da empresa que você trabalha.
+
+76
+00:06:51,510 --> 00:06:53,470
+Você usou exemplo clássico, né?
+
+77
+00:06:53,470 --> 00:06:58,280
+Se eu trabalho na NASA, a probabilidade de eu ter vulnerabilidade todo dia alta, né,
+reportada.
+
+78
+00:06:58,280 --> 00:07:07,110
+Se eu trabalho no Zé Das Coves da esquina, a probabilidade de eu ter uma por ano no meu
+programa de bug bounty super atrativo também é baixa.
+
+79
+00:07:07,110 --> 00:07:16,830
+Então tem um pouco desse, obviamente, feeling de começo, mas aí você vai ajustar com o
+tempo para falar, não, beleza, preciso de uma pessoa dedicada para isso, ou eu vou
+
+80
+00:07:16,830 --> 00:07:20,854
+distribuir essas tarefas no meu time, ou não sei se faz sentido.
+
+81
+00:07:20,854 --> 00:07:27,854
+veio na cabeça agora, linkar essa triagem junto com o processo de gestão de
+vulnerabilidade.
+
+82
+00:07:28,793 --> 00:07:37,034
+Porque acaba sendo uma vulnerabilidade que chega ali externa, que é o você falou, é
+processo de, pera, deixa eu priorizar isso aqui, no fim das contas isso aqui é falso
+
+83
+00:07:37,034 --> 00:07:43,774
+positivo, ou não é uma crítica, é uma baixa, enfim, então acho que já entra nesse processo
+de vulnerabilidade.
+
+84
+00:07:44,394 --> 00:07:49,878
+Talvez tenha foco mais específico aplicações, mas acho dá para beneficiar disso.
+
+85
+00:07:49,878 --> 00:07:52,058
+ao invés de pensar contratar gente, enfim.
+
+86
+00:07:52,058 --> 00:07:56,148
+Mas o que eu quero ressaltar, que é você falou muito bem, Berm, é essa questão desse
+processo.
+
+87
+00:07:56,148 --> 00:08:04,618
+Não é só um flow, mas sim pessoas, de repente até políticas e coisas internas que vão
+fazer sentido pra isso.
+
+88
+00:08:04,618 --> 00:08:10,598
+Eu, minha visão, acho que não pode faltar num programa de bug bounty é marketing.
+
+89
+00:08:11,958 --> 00:08:17,686
+Porque a empresa que abre programa de bug bounty, especialmente o externo...
+
+90
+00:08:17,686 --> 00:08:21,286
+o interno também, Você pode também fazer programa de bug bounty interno.
+
+91
+00:08:21,286 --> 00:08:24,386
+Mas vamos lá, é importante que as pessoas saibam que o teu programa existe.
+
+92
+00:08:24,386 --> 00:08:29,846
+Se você é uma empresa big tech, você não precisa muito fazer isso porque é natural que
+você tem, as pessoas te conhecem.
+
+93
+00:08:29,846 --> 00:08:38,416
+Mas se não é o teu caso, é legal ter marketing cima disso, e aí quando eu digo marketing é
+vender isso de alguma forma, seja anunciar, seja fazer promoção, seja fazer evento,
+
+94
+00:08:38,416 --> 00:08:46,366
+hackathon, o que quer que seja, pra divulgar o teu programa, mostrar que ele é atrativo,
+porque acaba sendo um produto, certo modo.
+
+95
+00:08:46,902 --> 00:08:48,532
+O produto na verdade é a correção.
+
+96
+00:08:48,532 --> 00:08:51,392
+Você está querendo que cara corrigir os seus problemas em troca de pagar.
+
+97
+00:08:51,392 --> 00:08:54,182
+Então o produto que está oferecendo é a recompensa de fato.
+
+98
+00:08:54,182 --> 00:08:57,382
+As pessoas têm que te conhecer, você tem que ser atrativo, aquela coisa toda.
+
+99
+00:08:57,382 --> 00:09:06,602
+Então acho que esse marketing, especialmente se você não é uma empresa grande conhecida,
+de atrair os pesquisadores, as pessoas pro teu programa e não pro outro, porque pensa, o
+
+100
+00:09:06,602 --> 00:09:13,162
+cara do outro lado vai dedicar tempo, as ferramentas, investir, enfim.
+
+101
+00:09:13,910 --> 00:09:22,430
+Por que ele vai escolher você e não vai fazer o programa de bug bounce da Microsoft, da
+Apple, do Google, que pagam umas fortunas que são, de repente, mais atrativos?
+
+102
+00:09:22,430 --> 00:09:25,050
+Obviamente, naturalmente também são mais competitivos, né?
+
+103
+00:09:25,050 --> 00:09:27,170
+Tem outras pessoas também participando e tal.
+
+104
+00:09:27,170 --> 00:09:32,140
+Então, acho que essa questão do marketing seria também algo importantíssimo.
+
+105
+00:09:32,140 --> 00:09:40,570
+Mas talvez a segunda pergunta, e conectando com essa, o que você acha, Benyur, desse
+programa de bug bounce que a gente está pensando montar e olhar para o nosso cenário?
+
+106
+00:09:40,570 --> 00:09:42,692
+Eu quero montar programa de bug bounce na minha empresa.
+
+107
+00:09:42,966 --> 00:09:46,126
+Como é que eu sei que eu preciso de programa de bug bounty?
+
+108
+00:09:47,206 --> 00:10:01,186
+Eu pergunto isso porque a empresa que eu estou hoje, o nosso CISO, empresa americana, ele
+tem uma mentalidade do tipo, se eu não faço mais, eu faço penteste, pessoal faz penteste
+
+109
+00:10:01,186 --> 00:10:04,906
+uma vez por ano, aqueles penteste super caro e tal, beleza.
+
+110
+00:10:04,906 --> 00:10:08,302
+Mas a cabeça dele é assim, se eu troco...
+
+111
+00:10:08,434 --> 00:10:16,274
+troco o pen test por bug bount, eu tenho um pen test contínuo ao longo do ano, ao invés de
+fazer uma vez só.
+
+112
+00:10:16,274 --> 00:10:24,834
+A mesma verba que eu gasto num pen test, eu vou distribuir num programa de bug bount,
+então não tenho mais uma, duas empresas olhando para as minhas aplicações, eu tenho
+
+113
+00:10:24,834 --> 00:10:27,054
+diversas pessoas olhando para minha aplicação.
+
+114
+00:10:27,534 --> 00:10:29,454
+E é bunch muito mais...
+
+115
+00:10:29,454 --> 00:10:31,864
+É como se eu escalasse, sabe?
+
+116
+00:10:31,864 --> 00:10:33,654
+Pô, eu vou escalar o meu pen test.
+
+117
+00:10:33,654 --> 00:10:34,874
+O que você acha?
+
+118
+00:10:35,823 --> 00:10:39,683
+Bem, esse é assunto muito polêmico, eu adoro ele.
+
+119
+00:10:40,003 --> 00:10:41,783
+Vamos lá.
+
+120
+00:10:43,363 --> 00:10:47,983
+Primeiro de tudo, questão ali do...
+
+121
+00:10:47,983 --> 00:10:55,023
+Eu não acho que deveria trocar, eu acho que o pendest pelo bugbounce, mas tem algumas
+características.
+
+122
+00:10:55,023 --> 00:11:04,303
+Eu acho que a característica que mais impede hoje de a gente querer trocar...
+
+123
+00:11:04,463 --> 00:11:07,763
+é porque a gente não consegue garantir a participatividade.
+
+124
+00:11:08,683 --> 00:11:13,343
+Por exemplo assim, muitos pentestes são regulatórios.
+
+125
+00:11:13,683 --> 00:11:26,183
+Então você precisa pegar uma empresa de penteste, precisa emitir lá o atestado de saúde da
+sua empresa, então ela precisa emitir o atestado ali e te enviar para que você possa
+
+126
+00:11:26,183 --> 00:11:27,133
+passar numa regulação.
+
+127
+00:11:27,133 --> 00:11:29,743
+Então eu acho que isso não vai sumir tão cedo.
+
+128
+00:11:29,743 --> 00:11:31,403
+Então acaba tendo essa questão.
+
+129
+00:11:31,403 --> 00:11:34,000
+Mas agora vamos não vamos pegar pro...
+
+130
+00:11:34,000 --> 00:11:44,760
+o penteste, a avaliação de segurança seja ela por penteste, por terceiros, enfim, Então
+vamos pegar com o modo checkbox que é o A, tem o regulatório, bom, vamos pegar.
+
+131
+00:11:44,760 --> 00:11:49,480
+Então estamos nos preocupando com a segurança da empresa e eu quero fazer as coisas, tá?
+
+132
+00:11:50,480 --> 00:11:52,180
+O que acaba acontecendo?
+
+133
+00:11:53,120 --> 00:11:57,390
+Se eu pego a minha empresa e colocá-la num programa de bug bounty, o que que eu espero?
+
+134
+00:11:57,390 --> 00:12:02,511
+Eu espero que pessoas do mundo todo, que que eu desejo que eu quero?
+
+135
+00:12:02,511 --> 00:12:11,151
+Eu quero que os melhores pesquisadores do mundo parem as suas atividades atuais ou parem,
+por exemplo, de pesquisar a vulnerabilidade na época, pode pagar milhão de dólares por
+
+136
+00:12:11,151 --> 00:12:19,231
+vulnerabilidade lá se tu encontrar, para olharem para a minha empresa e atacarem a minha
+empresa.
+
+137
+00:12:20,931 --> 00:12:22,831
+É isso que eu quero ao final.
+
+138
+00:12:22,831 --> 00:12:28,651
+Eu quero que eles testem tudo porque todo mundo quer encontrar vulnerabilidade em tudo e é
+isso que eles vão fazer.
+
+139
+00:12:28,687 --> 00:12:30,727
+E aí eu posso ter o mundo inteiro cima disso.
+
+140
+00:12:30,727 --> 00:12:38,047
+Então sem dúvida nenhuma que você comentou no começo de fazer o marketing, porque programa
+de Bug Bounce pensa num programa de TV, né, mano?
+
+141
+00:12:38,807 --> 00:12:41,287
+pensa naqueles...
+
+142
+00:12:41,287 --> 00:12:47,927
+Exato, pensa naquele programa de TV que todo mundo pode ligar e pode ganhar prêmios.
+
+143
+00:12:48,807 --> 00:12:49,387
+Então...
+
+144
+00:12:49,387 --> 00:12:51,467
+Então assim...
+
+145
+00:12:51,467 --> 00:12:53,987
+Você precisa atrair as pessoas para isso, tá?
+
+146
+00:12:54,007 --> 00:12:57,134
+Então quando as pessoas chegam...
+
+147
+00:12:57,134 --> 00:13:01,924
+Penteche só um adendo, o Penteche não atrai ninguém, Você faz o contrato, paga e vai ser
+executado.
+
+148
+00:13:01,924 --> 00:13:04,274
+Você define escopo e vai ser executado, ponto.
+
+149
+00:13:04,475 --> 00:13:09,785
+Só que aí tem estratégias que podem te ajudar a você melhorar o seu bug bount com relação
+ao penteste.
+
+150
+00:13:09,785 --> 00:13:13,295
+Por exemplo assim, cara, eu não vou garantir que ninguém...
+
+151
+00:13:13,295 --> 00:13:17,075
+Como é que eu garanto que alguém vai testar o fluxo de pagamento de cartão de crédito?
+
+152
+00:13:17,075 --> 00:13:18,135
+Simples?
+
+153
+00:13:18,555 --> 00:13:21,135
+Garantir você nunca vai garantir, porque você não tem controle de ninguém.
+
+154
+00:13:21,135 --> 00:13:28,055
+Da mesma forma que você contrata penteste externo, você não vai ficar olhando a tela do
+computador do cara que está realizando o teu penteste para ver se o cara testou aquilo ou
+
+155
+00:13:28,055 --> 00:13:28,870
+não, tá?
+
+156
+00:13:28,870 --> 00:13:31,120
+simplesmente emitir relatório falando, não achei nada.
+
+157
+00:13:31,120 --> 00:13:34,160
+Exato, nunca vai ter controle sobre isso, entendeu?
+
+158
+00:13:35,280 --> 00:13:36,160
+só que o você faz?
+
+159
+00:13:36,160 --> 00:13:40,720
+Você pode fazer uma questão de bônus específico por funcionalidade.
+
+160
+00:13:40,740 --> 00:13:53,760
+Por exemplo, se você encontrar uma vulnerabilidade que no fluxo de cartões que tenha estes
+impactos, a gente vai te pagar o dobro do valor na vulnerabilidade.
+
+161
+00:13:54,660 --> 00:14:00,100
+Vou dar exemplo, quando eu trabalhava na outra empresa lá cuidando da parte criptomoeda,
+
+162
+00:14:00,975 --> 00:14:12,955
+Cara, bem difícil, porque eu fazia gestão de bug bount lá, da minha área, ali, toda a
+vulnerabilidade criptomoeda pagava três vezes mais.
+
+163
+00:14:12,955 --> 00:14:13,995
+Entende?
+
+164
+00:14:14,215 --> 00:14:19,855
+Então, porque a do produtor era muito crítico, muito crítico, tá?
+
+165
+00:14:19,855 --> 00:14:21,855
+Logo, o que aconteceu?
+
+166
+00:14:21,955 --> 00:14:25,635
+A gente acabava tendo...
+
+167
+00:14:25,635 --> 00:14:29,711
+Cara, é big tech, Então, mesma coisa, é mais fácil ter isso.
+
+168
+00:14:29,711 --> 00:14:38,871
+Só que as pessoas logo para a cara estava muito bem na área de segurança então as pessoas
+não testavam tanto a área de cripto porque a gente era meio blindado né porque tinha muito
+
+169
+00:14:38,871 --> 00:14:40,611
+investimento de segurança naquela área.
+
+170
+00:14:40,611 --> 00:14:45,811
+Era desproporcional então a gente tinha uma pessoa de segurança para cada três quadros
+desenvolvedores é muito diferente.
+
+171
+00:14:45,811 --> 00:14:47,651
+Era desproporcional.
+
+172
+00:14:47,734 --> 00:14:51,195
+Não é, é, se era exceção nesse mundo, não era a regra.
+
+173
+00:14:51,195 --> 00:14:54,575
+há exceção, deceção, deceção, deceção, deceção, né?
+
+174
+00:14:54,575 --> 00:15:04,115
+Mas assim, quando a gente quer substituir o Pentest a gente tem que lembrar de uma coisa.
+
+175
+00:15:04,295 --> 00:15:10,995
+Nós não estamos simplesmente reduzindo o dinheiro investido no Pentest.
+
+176
+00:15:11,094 --> 00:15:13,776
+o dinheiro desse bobeiro até mesmo ou mais.
+
+177
+00:15:13,967 --> 00:15:26,447
+Exatamente, o que a gente está tentando fazer é ampliar a quantidade de pessoas
+profissionais e scanners, porque todo mundo vai rodar suas ferramentas, nosso ambiente.
+
+178
+00:15:26,447 --> 00:15:27,587
+Isso que a gente quer.
+
+179
+00:15:27,587 --> 00:15:33,567
+A gente quer ter o resultado por dólar gasto melhor.
+
+180
+00:15:33,567 --> 00:15:37,787
+Não significa que a quantidade de dólar gasto vai ser menor.
+
+181
+00:15:37,787 --> 00:15:39,079
+Por quê?
+
+182
+00:15:39,535 --> 00:15:49,741
+Primeiro, o profissional nosso, que eu podia contratar um profissional de teste interno,
+cara, eu vou dedicar no profissional que vai criar o programa de Bug Bounce.
+
+183
+00:15:49,846 --> 00:15:51,300
+e fazer a gestão dele.
+
+184
+00:15:51,440 --> 00:15:52,740
+Exatamente.
+
+185
+00:15:52,740 --> 00:16:04,240
+Então, para fazer a triage, pensa, se eu quero muitos profissionais, uma das coisas que dá
+saúde ao programa do Bug Bounty é o excelente processo de triagem das vulnerabilidades.
+
+186
+00:16:04,240 --> 00:16:05,500
+Por quê?
+
+187
+00:16:06,560 --> 00:16:07,320
+Exato.
+
+188
+00:16:07,320 --> 00:16:14,680
+Porque se o hunter vem, encontra uma vulnerabilidade, você passa 40 dias sem triagem, esse
+cara não volta mais ao seu programa.
+
+189
+00:16:15,220 --> 00:16:16,227
+Entendeu?
+
+190
+00:16:17,310 --> 00:16:26,114
+ele seja pago por isso, realmente era problema, foi pago, eu quero falar, não vou dedicar
+tempo aqui porque eu demoro mais de mês para receber um video back, não vou fazer.
+
+191
+00:16:26,306 --> 00:16:28,047
+Exatamente, vai fazer o quê?
+
+192
+00:16:28,047 --> 00:16:34,347
+Cara, lembra que o Bug Bound, você está na vitrina e com muitas outras empresas de Bug
+Bound.
+
+193
+00:16:35,127 --> 00:16:42,847
+O programa de Bug Bound é, em sua essência, ser o alvo mais atrativo.
+
+194
+00:16:43,707 --> 00:16:44,653
+Entende?
+
+195
+00:16:45,126 --> 00:16:48,476
+literalmente, botar o alvo nas costas e andando por aí, lá e me ataque, né?
+
+196
+00:16:48,476 --> 00:16:49,283
+Literalmente é isso.
+
+197
+00:16:49,283 --> 00:16:50,843
+aí, é isso aí.
+
+198
+00:16:50,843 --> 00:16:54,823
+Então você tem que dar atenção.
+
+199
+00:16:55,103 --> 00:17:04,443
+E dar atenção a pesquisador de segurança é se comunicar com ele, é fazer a triagem correta
+da vulnerabilidade.
+
+200
+00:17:04,443 --> 00:17:15,551
+Se o cara falar essa vulnerabilidade é crítica e você falar é média, você tem que dialogar
+bem o porquê média com ele.
+
+201
+00:17:15,567 --> 00:17:24,607
+E aí você tá falando de cara que às vezes tem 15 anos de segurança trabalhando contra cara
+de 2, 3 anos dentro da sua empresa que não sabe ter diálogo com esse tipo de cara.
+
+202
+00:17:24,607 --> 00:17:28,707
+Então você tem que ter cara bom trabalhando com isso, porque é daí que vai sair o
+dinheiro.
+
+203
+00:17:28,707 --> 00:17:37,167
+Porque às vezes tem cara maldoso do outro lado, todo lugar, tem cara maldoso, que o cara é
+uma média e ele escalou pra alta no texto.
+
+204
+00:17:37,167 --> 00:17:40,027
+E o cara de dentro caiu.
+
+205
+00:17:40,027 --> 00:17:40,682
+Entendeu?
+
+206
+00:17:40,682 --> 00:17:50,982
+E até pegando gancho nesse caso aí, tirando a parte dos scammers, A conversa, vamos partir
+do princípio que, tu é o pesquisador, eu sou a empresa.
+
+207
+00:17:50,982 --> 00:17:53,462
+Tu falou que é crítica.
+
+208
+00:17:53,462 --> 00:18:00,002
+É óbvio que, do ponto de vista do pesquisador, é quase que ele sempre vai puxar o
+passadinho pro lado dele, Pô, achei problema grave.
+
+209
+00:18:00,062 --> 00:18:04,782
+Talvez não só pelo fato do bônus ser maior, mas também pelo fato de, achei problema de
+segurança.
+
+210
+00:18:04,782 --> 00:18:06,342
+Naturalmente, é problema segurança, né?
+
+211
+00:18:06,342 --> 00:18:08,630
+É um problema, né?
+
+212
+00:18:08,630 --> 00:18:16,630
+Mas a empresa vai falar, espera, cara, isso aqui na verdade é SQL Injection perfeito, tá
+aqui, mas cara, é uma base que não tem dado sensível.
+
+213
+00:18:16,630 --> 00:18:19,610
+Você extraiu dados, beleza, mas assim, não tem dado sensível nenhum.
+
+214
+00:18:19,610 --> 00:18:20,990
+Pra mim é negócio transacional.
+
+215
+00:18:20,990 --> 00:18:23,924
+assim, tem impacto, é problema, mas não é crítico.
+
+216
+00:18:23,924 --> 00:18:28,302
+o exato impacto ele não é crítico exato.
+
+217
+00:18:28,302 --> 00:18:30,942
+seja tecnicamente, mas o impacto não é crítico.
+
+218
+00:18:31,002 --> 00:18:37,342
+Então, essa conversa naturalmente já é difícil, tirando do contexto de Bug Bounty.
+
+219
+00:18:37,342 --> 00:18:40,002
+Pensa, é APSEC e desenvolvedor conversando.
+
+220
+00:18:40,002 --> 00:18:40,642
+O desenvolvedor...
+
+221
+00:18:40,642 --> 00:18:41,822
+Não, isso não é crítico.
+
+222
+00:18:41,822 --> 00:18:42,721
+Cara, é crítico.
+
+223
+00:18:42,721 --> 00:18:46,222
+Então, já é uma conversa difícil, vamos dizer assim.
+
+224
+00:18:46,222 --> 00:18:47,162
+Então, essa...
+
+225
+00:18:47,162 --> 00:18:51,022
+Você falou muito bem, essa maturidade interna da empresa...
+
+226
+00:18:51,022 --> 00:18:55,694
+E aí eu vou falar do time de APSEC, Para lidar, voltando no programa de triagem...
+
+227
+00:18:55,826 --> 00:19:03,506
+nessa troca com o pescador, isso se torna negócio mais crítico do que até qualquer outro
+tema que a puder discutir sobre o tópico.
+
+228
+00:19:03,506 --> 00:19:06,006
+Por exemplo, que plataforma eu deveria usar?
+
+229
+00:19:06,006 --> 00:19:07,666
+É a Hacker One?
+
+230
+00:19:07,666 --> 00:19:09,786
+É a Bug Crowd?
+
+231
+00:19:09,786 --> 00:19:11,226
+É o Gira Público?
+
+232
+00:19:11,226 --> 00:19:12,946
+É a porra da Planiliexcel?
+
+233
+00:19:12,946 --> 00:19:14,256
+Foda-se.
+
+234
+00:19:14,256 --> 00:19:15,626
+Na prática, foda-se.
+
+235
+00:19:15,626 --> 00:19:16,196
+É o de menos.
+
+236
+00:19:16,196 --> 00:19:22,586
+Talvez as plataformas não te dê fitos a mais ou a menos, cobra taxa mais ou menos do
+pagamento, e cada coisa toda.
+
+237
+00:19:22,586 --> 00:19:25,014
+é uma discussão válida, mas...
+
+238
+00:19:25,014 --> 00:19:30,334
+não tão crítica, diria, quanto a maturidade da própria empresa.
+
+239
+00:19:30,334 --> 00:19:36,454
+Mas aí voltando ao pé inicial, Benhur, como é que eu sei que eu preciso disso?
+
+240
+00:19:36,454 --> 00:19:48,014
+Eu estou falando, trocar a Pentest por Bug Bounce talvez, você falou, tem uma questão
+regulatória, o Pentest, certo modo, na minha visão, ele ainda tem um foco muito profundo,
+
+241
+00:19:48,014 --> 00:19:53,014
+o Pentest tende, muitas vezes tende a ser caixa cinza.
+
+242
+00:19:53,014 --> 00:19:55,754
+até caixa branca, se dá zoar, aquela coisa toda.
+
+243
+00:19:55,754 --> 00:19:58,380
+Enquanto que o Bugbao diria quase 100 % caixa preta.
+
+244
+00:19:58,485 --> 00:20:01,145
+É o canal O Pokeball de Cocha Preta.
+
+245
+00:20:01,205 --> 00:20:07,525
+A menos que tu tenha alguma ferramenta Open Source que você vai colocar no jogo.
+
+246
+00:20:08,265 --> 00:20:12,405
+Exato, Smart Contracts que são públicos.
+
+247
+00:20:12,405 --> 00:20:16,125
+Por exemplo, alguns softwares eles tem versão Open Source.
+
+248
+00:20:16,125 --> 00:20:19,805
+Tipo o Bitwarden, exemplo, que tem o Open Source.
+
+249
+00:20:20,042 --> 00:20:20,882
+Uhum.
+
+250
+00:20:20,882 --> 00:20:22,362
+Mas eu acho que o Bugma...
+
+251
+00:20:22,362 --> 00:20:25,322
+Não, Bugma, não, desculpa, o Pentest, ele vai ter sempre essa...
+
+252
+00:20:25,322 --> 00:20:27,282
+Eu não vou dizer vantagem, mas...
+
+253
+00:20:27,282 --> 00:20:30,982
+Sabe o plus a mais, O pleonasmo, né?
+
+254
+00:20:30,982 --> 00:20:32,582
+Aquele plus a mais.
+
+255
+00:20:33,342 --> 00:20:36,096
+Ele pode perguntar, ele tem uma geração diferente, né?
+
+256
+00:20:36,268 --> 00:20:44,468
+É que daí eu tenho uma visão meio polêmica, tipo assim, cara, eu acho que não deveria ser
+contratado Pentest e Black Box, Eu acho que Pentest, deveria...
+
+257
+00:20:44,468 --> 00:20:45,508
+O que tu quer?
+
+258
+00:20:45,508 --> 00:20:47,528
+Tu quer que o cara...
+
+259
+00:20:47,528 --> 00:20:55,268
+Claro, tem alguns pontos, Pentest, eu acho que tu deveria priorizar redução de risco.
+
+260
+00:20:55,268 --> 00:20:57,892
+O cara encontrar problema e tu reduzir o risco.
+
+261
+00:20:58,032 --> 00:21:01,312
+só que ao mesmo tempo tem que dar acesso ao código fonte para alguém que é externo.
+
+262
+00:21:01,312 --> 00:21:06,712
+Então tem que fazer o trade-off do que que de fato você pode fazer.
+
+263
+00:21:06,712 --> 00:21:08,672
+Mas esse acho que é outro assunto.
+
+264
+00:21:09,706 --> 00:21:11,366
+Só uma pincelada nisso.
+
+265
+00:21:11,366 --> 00:21:14,506
+Por isso que acho que os dois se complementam muito bem.
+
+266
+00:21:14,506 --> 00:21:16,106
+Uma coisa é uma coisa, outra coisa é outra coisa.
+
+267
+00:21:16,106 --> 00:21:21,116
+Porque o Bug Bounty, em teoria, vai simular literalmente o atacante.
+
+268
+00:21:21,116 --> 00:21:24,596
+Ele não tem acesso a nenhum, ele tem o seu domínio ali e vai separar.
+
+269
+00:21:24,596 --> 00:21:25,576
+O Pentest não.
+
+270
+00:21:25,576 --> 00:21:26,866
+Você entrega mais coisas pra ele.
+
+271
+00:21:26,866 --> 00:21:31,196
+Porque você quer de fato que ele, vou dizer, entre aspas, você quer que ele chegue no
+Target?
+
+272
+00:21:31,222 --> 00:21:35,422
+pra você mitigar os riscos e dificultar o caminho que ele chegou ali.
+
+273
+00:21:35,422 --> 00:21:36,362
+O bug bounty não, cara.
+
+274
+00:21:36,362 --> 00:21:38,342
+O bug é você estar dando dinheiro, né, também, pro cara te atacar.
+
+275
+00:21:38,342 --> 00:21:41,542
+Então você parte da premissa que você tá super protegido.
+
+276
+00:21:41,542 --> 00:21:42,442
+Então você vai falir, hein?
+
+277
+00:21:42,442 --> 00:21:43,342
+Precisa de pagar bounty, né?
+
+278
+00:21:43,342 --> 00:21:44,422
+Não faz sentido também, entendeu?
+
+279
+00:21:44,422 --> 00:21:46,568
+Então tem que ter o seu tipo maturidade, né?
+
+280
+00:21:46,897 --> 00:21:48,877
+Faz todo sentido, tá?
+
+281
+00:21:49,817 --> 00:21:52,817
+Porque assim, quando que a empresa precisa do bug bount?
+
+282
+00:21:52,817 --> 00:21:56,277
+Então, Tá, vamos lá.
+
+283
+00:21:56,277 --> 00:22:03,357
+Eu gostei de começar essa conversa pela porta do lado das casas.
+
+284
+00:22:03,857 --> 00:22:05,832
+Então, que é seguinte assim, ó.
+
+285
+00:22:07,472 --> 00:22:14,052
+você tem que ter nível de maturidade interessante para poder iniciar programa de bug
+bounty.
+
+286
+00:22:14,052 --> 00:22:15,832
+Por que eu acredito nisso?
+
+287
+00:22:16,432 --> 00:22:19,952
+Não estou dizendo que você tem que ter feito vários pen testes.
+
+288
+00:22:19,952 --> 00:22:31,582
+o que é agora é agora imagina que você tem programa de bug bounty e você coloca ele no ar
+e começa a receber vulnerabilidades assim.
+
+289
+00:22:31,582 --> 00:22:34,310
+Cara não acredito que tem isso aqui dentro da empresa.
+
+290
+00:22:34,310 --> 00:22:36,950
+alert na tela de login, ali?
+
+291
+00:22:38,130 --> 00:22:39,610
+Aí não dá, né?
+
+292
+00:22:40,184 --> 00:22:43,664
+Aquele JavaScript sendo passada como parâmetro da ORL, sabe?
+
+293
+00:22:43,784 --> 00:22:46,244
+agora, porque o que vai acontecer?
+
+294
+00:22:46,924 --> 00:22:49,564
+Tu vai receber essas vulnerabilidades?
+
+295
+00:22:49,564 --> 00:22:53,264
+Só que o problema de você receber essas vulnerabilidades são dois.
+
+296
+00:22:53,264 --> 00:22:59,464
+O primeiro pode ser que a empresa não tenha uma cultura de desenvolvimento seguro ainda
+estabilizada.
+
+297
+00:23:00,044 --> 00:23:05,776
+E isso significa que você tem algumas torneiras abertas, alguns ferimentos.
+
+298
+00:23:05,776 --> 00:23:08,316
+ainda sangrando dentro de casa.
+
+299
+00:23:08,936 --> 00:23:21,302
+Então a sua empresa, se ela continua evoluindo, ela continua nascendo com esse déficit de
+maturidade em segurança no desenvolvimento.
+
+300
+00:23:21,302 --> 00:23:27,782
+E aí, pra complementar isso você tá falando, aí o teu programa de bug bounty vai virar
+um...
+
+301
+00:23:27,782 --> 00:23:29,082
+Cara, fugiu a palavra agora.
+
+302
+00:23:29,082 --> 00:23:30,442
+Mas é como se fosse aquele...
+
+303
+00:23:30,442 --> 00:23:38,902
+Sabe, você tem que pagar a conta de água, a conta de luz, vira uma despesa, porque você tá
+criando problema idiota que os caras vão continuar achando porque é super idiota e você tá
+
+304
+00:23:38,902 --> 00:23:40,482
+jogando aquele dinheiro no ralo.
+
+305
+00:23:40,482 --> 00:23:42,012
+Vira uma despesa o negócio.
+
+306
+00:23:42,041 --> 00:23:43,161
+Exatamente.
+
+307
+00:23:43,201 --> 00:23:50,981
+Então assim, uma das coisas que eu gosto de usar o programa de Bug Pound, é primeiro de
+tudo com certeza para escalar.
+
+308
+00:23:50,981 --> 00:23:53,781
+Eu tenho muitas pessoas testando tudo dentro da minha empresa.
+
+309
+00:23:53,781 --> 00:24:00,881
+Acho que a escala eu acho excelente, mas também gosto de usar ele para validar o nível de
+maturidade do que a gente tem.
+
+310
+00:24:02,461 --> 00:24:05,901
+Então vou te dar exemplo assim, cara.
+
+311
+00:24:06,301 --> 00:24:09,661
+Como é que está a nossa de fato, o nosso conhecimento,
+
+312
+00:24:11,036 --> 00:24:14,356
+materialização da segurança no desenvolvimento das aplicações.
+
+313
+00:24:14,356 --> 00:24:15,236
+Entende?
+
+314
+00:24:15,236 --> 00:24:17,126
+Que tipo de vulnerabilidade eu tenho por aí?
+
+315
+00:24:17,126 --> 00:24:18,336
+Porque vamos lá.
+
+316
+00:24:18,336 --> 00:24:23,656
+Eu não posso como SISO ou como diretor de empresa abrir programa de bug bounty.
+
+317
+00:24:23,936 --> 00:24:26,296
+Aí vem monte de vulnerabilidade.
+
+318
+00:24:26,296 --> 00:24:30,276
+Eu vou para o meu time de AppSec e cago na cabeça deles.
+
+319
+00:24:30,276 --> 00:24:32,236
+Porque veio monte de vulnerabilidade.
+
+320
+00:24:32,236 --> 00:24:38,256
+Porque às vezes, porque às vezes o time de AppSec é 2, 3 pessoas e tem 500 desenvolvedores
+lá dentro.
+
+321
+00:24:38,536 --> 00:24:40,260
+Então o que você está fazendo?
+
+322
+00:24:40,538 --> 00:24:40,838
+hoje.
+
+323
+00:24:40,838 --> 00:24:44,332
+Nós somos em quatro e temos mais de mil desenvolvedores.
+
+324
+00:24:44,624 --> 00:24:48,364
+Então, assim, vocês estão com a escala de 1 para 300.
+
+325
+00:24:49,284 --> 00:24:56,264
+Então, a escala de 1 para 300, o bug Bounty, ele ganha outra perspectiva.
+
+326
+00:24:56,264 --> 00:25:06,064
+Ele ganha perspectiva de, nós não temos mão, braço aqui dentro para escalar uma avaliação
+inteira.
+
+327
+00:25:06,064 --> 00:25:13,136
+Só que eu prefiro, uma coisa que eu acho legal nesse caso é, primeiro vamos definir budget
+controlado.
+
+328
+00:25:13,136 --> 00:25:15,676
+para fazer uma avaliação inteira.
+
+329
+00:25:15,896 --> 00:25:24,736
+Aí definiu o budget, que que tu vai fazer, ou tu vai pegar pen test, ou tu vai colocar
+automações nos lugares que você precisa, você vai ter feito uma varredura para encontrar
+
+330
+00:25:24,736 --> 00:25:25,336
+essas coisas.
+
+331
+00:25:25,336 --> 00:25:37,036
+E agora é o seguinte, cara, eu quero escalar os nossos testes para que a gente tenha
+pessoas do nosso lado, sejam internas ou externas, nos ajudando a encontrar
+
+332
+00:25:37,036 --> 00:25:42,160
+vulnerabilidades aonde nós, da equipe de EPSEC, não conseguimos chegar hoje.
+
+333
+00:25:43,280 --> 00:25:44,680
+Quando você...
+
+334
+00:25:45,670 --> 00:25:53,016
+vale destacar ainda o seguinte, esse budget
+
+335
+00:25:54,838 --> 00:26:02,158
+Quero colocar isso de uma forma que não pareça estranha, mas por exemplo, esse budget vem
+de algum lugar, Ele tem valor, é quanto?
+
+336
+00:26:02,158 --> 00:26:04,628
+Às vezes o cara não vai conseguir mensurar isso.
+
+337
+00:26:04,628 --> 00:26:09,298
+Ah, é milhão, é 500 mil, eu não sei, porque é algo novo.
+
+338
+00:26:09,298 --> 00:26:11,778
+Olhar pro bookbounce da minha empresa que gente tá montando é algo novo.
+
+339
+00:26:11,778 --> 00:26:14,538
+Então cara não sabe quanto vai custar aquilo.
+
+340
+00:26:14,838 --> 00:26:15,228
+Entende?
+
+341
+00:26:15,228 --> 00:26:19,958
+Eu posso falar, beleza, vou gastar mil dólares nesse budget, nesse programa.
+
+342
+00:26:19,958 --> 00:26:22,478
+Beleza, mil dólares pode ser uma, vou dar uma belata pro cara show.
+
+343
+00:26:22,614 --> 00:26:25,334
+E aí você já esgotou seu bunch, já fechou o seu programa.
+
+344
+00:26:25,334 --> 00:26:28,714
+Então esse quanto pode ser dificuador.
+
+345
+00:26:28,714 --> 00:26:29,574
+É, e ninguém vai voltar lá.
+
+346
+00:26:29,574 --> 00:26:36,654
+Então esse quanto também eu diria que ele é crítico do ponto de vista e é executivo de
+saber quanto.
+
+347
+00:26:36,714 --> 00:26:43,824
+E talvez uma métrica seja o quanto você já gasta hoje em pen test, quando você já investe
+e tudo mais.
+
+348
+00:26:43,824 --> 00:26:48,834
+Porque tem empresa que tem orçamento milionário para cyber e outras que zero.
+
+349
+00:26:48,834 --> 00:26:50,478
+Então tem isso também.
+
+350
+00:26:51,088 --> 00:26:52,648
+Exato, aí é bom ponto, tá?
+
+351
+00:26:52,648 --> 00:26:57,648
+Porque uma das estratégias que você pode fazer é tipo, lançar programa privado, né?
+
+352
+00:26:57,648 --> 00:27:01,308
+Que aí não é todo mundo do mundo que vai chegar ali, então tipo assim, o que você pode
+fazer?
+
+353
+00:27:01,308 --> 00:27:06,888
+Você pode lançar programa privado e esse programa privado você pode assinar budget pra
+esse programa privado.
+
+354
+00:27:06,888 --> 00:27:10,228
+Sei lá, 50 mil dólares, não é barato, tá?
+
+355
+00:27:10,228 --> 00:27:11,788
+Vamos lá, 50 mil dólares.
+
+356
+00:27:11,788 --> 00:27:19,728
+E aí você entrega assim, vulnerabilidades, baixa a gente vai pagar 50 dólares, média a
+gente vai pagar 250 dólares.
+
+357
+00:27:19,728 --> 00:27:24,908
+alta a gente vai pagar 600 dólares crítica a vai pagar 1500 dólares.
+
+358
+00:27:24,908 --> 00:27:26,176
+Vou dar exemplo.
+
+359
+00:27:26,494 --> 00:27:28,864
+entra features de plataformas que vão te ajudar.
+
+360
+00:27:28,864 --> 00:27:38,464
+Por exemplo, é programa privado, mas eu quero que a plataforma, sei hacker one da vida,
+distribua isso só para quem está bem posicionado nos rankings mundiais, ou só do Brasil,
+
+361
+00:27:38,464 --> 00:27:43,582
+ou só não sei o Então tem até isso, porque você pode selecionar quem pode participar do
+teu programa nesse contexto.
+
+362
+00:27:43,824 --> 00:27:50,152
+Exatamente, porque assim, todo mundo quer pão fresco.
+
+363
+00:27:52,550 --> 00:27:56,050
+Boa analogia.
+
+364
+00:27:56,610 --> 00:27:58,766
+Quem tira...
+
+365
+00:27:58,901 --> 00:28:00,381
+Então todo mundo quer.
+
+366
+00:28:00,741 --> 00:28:02,741
+isso ajuda.
+
+367
+00:28:02,741 --> 00:28:05,701
+Aí você fala o seguinte, olha pessoal, nós vamos ter o processo.
+
+368
+00:28:05,701 --> 00:28:07,941
+Aí é bom descrever o processo, né?
+
+369
+00:28:07,941 --> 00:28:15,041
+Nós vamos estar abrindo esse programa do dia X ao dia Y, tá?
+
+370
+00:28:15,041 --> 00:28:21,389
+Todas as vulnerabilidades nós vamos fazer a triage e pagamento desse dia para esse dia.
+
+371
+00:28:21,425 --> 00:28:22,625
+Entendeu?
+
+372
+00:28:23,925 --> 00:28:26,445
+Nós vamos ter período de contestação.
+
+373
+00:28:26,445 --> 00:28:27,195
+Que é contestação?
+
+374
+00:28:27,195 --> 00:28:29,985
+Poxa, tu falou que é crítico, eu tô dizendo na minha empresa que é médio.
+
+375
+00:28:29,985 --> 00:28:32,905
+Nós vamos ter período de contestação, né?
+
+376
+00:28:32,905 --> 00:28:37,205
+E aí vai ser pago, vai ser descrito, as pessoas vão ser pagos tudo aqui.
+
+377
+00:28:37,205 --> 00:28:39,915
+Beleza, o que acontece se for duplicada a vulnerabilidade?
+
+378
+00:28:39,915 --> 00:28:42,645
+Mais de uma pessoa encontrar essa vulnerabilidade.
+
+379
+00:28:42,645 --> 00:28:51,345
+o primeiro que encontrou vai ganhar 50 % ou 60 % daquela vulnerabilidade, os outros vão...
+
+380
+00:28:51,345 --> 00:29:00,025
+dividir os outros 40 % entre eles ou não, às o primeiro que encontrou vai ganhar 70, 80 ou
+às vezes não, o primeiro que encontrou vai ganhar tudo e o restante vai ganhar como
+
+381
+00:29:00,025 --> 00:29:12,905
+duplicado e não vai ganhar nada você define isso, só que uma vez que você definiu isso aí
+você tem que fazer o AlarG, Tem que deixar a HackerOne levar isso para as pessoas internas
+
+382
+00:29:12,905 --> 00:29:18,505
+e sem dúvida nenhuma com esse tempo conseguiria isso, qual que é o objetivo?
+
+383
+00:29:18,505 --> 00:29:21,659
+Eu vejo o Bug Bounce nesse momento quando tu fala assim, ó cara
+
+384
+00:29:21,937 --> 00:29:23,997
+Não tem mais braço aqui internamente.
+
+385
+00:29:23,997 --> 00:29:26,937
+Eu preciso validar minha empresa, né?
+
+386
+00:29:26,937 --> 00:29:32,777
+Para contratar pentest para minha empresa como todo, vai me custar dinheiro enorme.
+
+387
+00:29:33,817 --> 00:29:36,597
+Exato, custar uma fortuna, exatamente.
+
+388
+00:29:36,737 --> 00:29:45,317
+Então eu quero fazer teste de bug bounte aberto, assim, para o pessoal ali dentro, com o
+objetivo de escalar.
+
+389
+00:29:45,317 --> 00:29:47,177
+Por que é importante a falar isso aqui?
+
+390
+00:29:47,177 --> 00:29:49,417
+São de teste e tal, etc.
+
+391
+00:29:49,490 --> 00:29:57,830
+É porque, é realmente o modelo de você abrir um negócio e vender ele.
+
+392
+00:29:57,830 --> 00:30:02,210
+Porque não é garantido que você vai ter pessoas testando.
+
+393
+00:30:02,210 --> 00:30:04,090
+Não é garantido.
+
+394
+00:30:04,090 --> 00:30:05,986
+Por mais que você queira, não é.
+
+395
+00:30:05,986 --> 00:30:18,586
+é engraçado esse olhar desse ponto de vista, porque até bug bounte interno, eu já
+participei de coordeneio, mas eu trabalhei empresas que tinham bug bounte interno, que a
+
+396
+00:30:18,586 --> 00:30:20,166
+aderência era muito baixa.
+
+397
+00:30:20,166 --> 00:30:29,558
+Internamente as pessoas não queriam participar, não queriam dedicar tempo naquilo, na
+verdade o bounte não era grana, mas a empresa, sei lá, exemplo, tá?
+
+398
+00:30:29,558 --> 00:30:32,638
+para não ficar tão óbvio que empresa que era.
+
+399
+00:30:32,958 --> 00:30:37,658
+Imagina você trabalha na Lamborghini.
+
+400
+00:30:37,658 --> 00:30:43,128
+Então o Bounty era, cara, você achou problema, você vai ganhar, vai no parque da
+Lamborghini, vai ganhar um carro, sabe?
+
+401
+00:30:43,128 --> 00:30:49,858
+Então o Bounty era os produtos da empresa que eram produtos muito caros, coisas caras que,
+principalmente, todo mundo quer ter.
+
+402
+00:30:50,018 --> 00:30:53,998
+Então era atrativo, muito.
+
+403
+00:30:54,258 --> 00:30:58,098
+Mas a adesão da parada internamente era muito baixa.
+
+404
+00:30:58,098 --> 00:30:59,361
+Tinha promoção...
+
+405
+00:30:59,361 --> 00:31:01,606
+1%, é 1 a 2 % adesão.
+
+406
+00:31:01,606 --> 00:31:04,986
+tinha marketing interessante, assim, cara, parece que o negócio não andava.
+
+407
+00:31:04,986 --> 00:31:16,416
+E a gente que era o time de segurança, a gente tinha, pelo menos na época, tinha um
+mapeamento de muita vulnerabilidade, tinha uma certa maturidade lá, mas assim, não sei,
+
+408
+00:31:16,416 --> 00:31:18,516
+até hoje eu não sei porque que a parada não andava.
+
+409
+00:31:18,516 --> 00:31:23,906
+Eu era de sec, mas não era de upssec, enfim, mas eu conversava com a galera e tal, esse
+era o contexto que gente tinha.
+
+410
+00:31:23,906 --> 00:31:28,470
+Então, eu acho que o que a gente está olhando aqui, tentando ajudar a galera que está
+ouvindo é...
+
+411
+00:31:28,470 --> 00:31:35,410
+Tentar não cometer alguns erros e saber mais ou menos qual o caminho trilhar para montar o
+teu programa de AppSec.
+
+412
+00:31:35,410 --> 00:31:37,210
+Aí uma próxima pergunta, Benhor, o que você acha?
+
+413
+00:31:37,210 --> 00:31:40,670
+Faz sentido montar sem usar uma plataforma?
+
+414
+00:31:40,750 --> 00:31:43,230
+Tipo, falar, não, vou fazer por conta aqui e tal.
+
+415
+00:31:43,230 --> 00:31:44,010
+O que você acha?
+
+416
+00:31:44,010 --> 00:31:45,590
+não acho, eu não acho, tá?
+
+417
+00:31:45,590 --> 00:32:00,610
+Eu não acho porque o custo para você montar ele do zero separado, eu acho que ele acaba
+sendo maior do que você contratar a plataforma.
+
+418
+00:32:01,494 --> 00:32:04,533
+Você paga FIZINHA ali e já era, Em teoria,
+
+419
+00:32:04,533 --> 00:32:08,903
+cara, acho assim, porque daí você já tem a plataforma conhecida.
+
+420
+00:32:08,903 --> 00:32:16,193
+Por exemplo, você vai montar lá programa privado, Cara, você conhece os melhores hackers
+pra convidar eles assim?
+
+421
+00:32:16,193 --> 00:32:17,193
+Entendeu?
+
+422
+00:32:17,213 --> 00:32:23,526
+Então tipo assim, e a outra questão é, e eles vão acreditar que de fato...
+
+423
+00:32:25,073 --> 00:32:29,613
+né, tá fazendo negócio certo e tal, entende?
+
+424
+00:32:29,613 --> 00:32:43,693
+Porque vamos lá, do tanto do lado da empresa, ela quer dar credibilidade, mas o outro
+lado, ele tá disputando com o tempo das outras pessoas, entende?
+
+425
+00:32:43,693 --> 00:32:52,945
+Então eu vou parar para olhar para a sua empresa, eu vou olhar para a outra do lado ali
+que já tá tudo dentro da plataforma que eu uso.
+
+426
+00:32:52,945 --> 00:32:55,945
+da consolidada e tal, etc.
+
+427
+00:32:56,365 --> 00:33:04,085
+Então, cara, hoje eu não arriscaria fazer um programa na mão.
+
+428
+00:33:04,965 --> 00:33:05,945
+Eu não.
+
+429
+00:33:05,945 --> 00:33:06,895
+Eu não, eu não.
+
+430
+00:33:06,895 --> 00:33:07,925
+Dá pra fazer?
+
+431
+00:33:07,925 --> 00:33:10,125
+Cara, dá pra fazer.
+
+432
+00:33:11,005 --> 00:33:15,245
+Só que daqui a pouquinho, Tipo assim, a vai fazer a triagem como?
+
+433
+00:33:15,245 --> 00:33:16,345
+Vai ser por e-mail?
+
+434
+00:33:16,345 --> 00:33:17,575
+Cara, inferno.
+
+435
+00:33:17,575 --> 00:33:18,478
+Entendeu?
+
+436
+00:33:18,478 --> 00:33:19,630
+loucura, loucura.
+
+437
+00:33:20,049 --> 00:33:36,609
+vai é vai abrir ticket no gira vai abrir sabe cara não acho que tipo e se tiver desacordo
+se gerar desacordo eterno entendeu tipo lá lá na hacker one tem que chamar de moderação
+
+438
+00:33:36,609 --> 00:33:41,901
+entendeu então a própria plataforma ajuda a moderar os esquemas sabe então
+
+439
+00:33:41,901 --> 00:33:44,842
+pessoas que já foram banidas, por exemplo, não vai vir pro teu programa.
+
+440
+00:33:44,842 --> 00:33:46,092
+De alguma forma o cara foi banido.
+
+441
+00:33:46,092 --> 00:33:47,758
+Sei lá, coisas do tipo.
+
+442
+00:33:47,953 --> 00:33:52,873
+Exatamente, Então, cara, eu não arriscaria hoje.
+
+443
+00:33:52,873 --> 00:33:58,293
+Eu prefiro fazer, a plataforma e eu me focar no programa em si.
+
+444
+00:33:58,454 --> 00:33:59,794
+Até uma...
+
+445
+00:33:59,794 --> 00:34:03,014
+Pra gente encerrar, Porque o tempo é dinheiro.
+
+446
+00:34:04,354 --> 00:34:12,414
+Até item pra gente voltar no próximo episódio com convidado que gente programou de fazer
+episódio também pra falar e aí do ponto de vista do pesquisador, né?
+
+447
+00:34:12,414 --> 00:34:20,374
+Mas até item específico que talvez passe desapercebido é a legal, a questão de
+contabilidade, contábil mesmo.
+
+448
+00:34:20,374 --> 00:34:23,638
+Eu tô tirando dinheiro pra pagar a pessoa física?
+
+449
+00:34:23,638 --> 00:34:31,118
+porque o pesquisador é uma pessoa física natural, ele não vai te emitir uma nota porque
+achou a vulnerabilidade na sua empresa, é...
+
+450
+00:34:31,118 --> 00:34:32,098
+no outro lugar do mundo.
+
+451
+00:34:32,098 --> 00:34:35,778
+Então, até essa questão contábil legal, a plataforma vai...
+
+452
+00:34:35,778 --> 00:34:41,188
+porque o seu dinheiro está indo para a plataforma, aí ele vai tirar ali a porcentagem
+dele, imagina, e ele vai pagar o pesquisador e tal.
+
+453
+00:34:41,188 --> 00:34:49,668
+Então, tem uma questão contábil, contábil legal, que você não quer ter essa dor de cabeça.
+
+454
+00:34:49,668 --> 00:34:51,126
+Você tinha que pagar um ou...
+
+455
+00:34:51,126 --> 00:34:52,816
+mil bounts no mês, cara.
+
+456
+00:34:52,816 --> 00:34:54,566
+Imagina a contabilidade disso.
+
+457
+00:34:54,566 --> 00:34:56,146
+Você está pagando pessoa física e tal.
+
+458
+00:34:56,146 --> 00:34:58,346
+Não, então assim, não rola o controle de...
+
+459
+00:34:58,346 --> 00:34:59,256
+Não, não, não, não, não.
+
+460
+00:34:59,256 --> 00:35:04,426
+Aí você fala ao pesquisador, então, como você é fornecedor, é 90 dias para eu te pagar.
+
+461
+00:35:04,426 --> 00:35:06,026
+Que é que acontece, né?
+
+462
+00:35:06,026 --> 00:35:11,106
+Aí o cara fala, não, não, não, obrigado, Devolve minha vulnerabilidade aí.
+
+463
+00:35:11,134 --> 00:35:23,034
+você paga a hacker one por exemplo você paga buggy crown você paga a plataforma e a
+plataforma paga entendeu então mas em resumo assim dois casos que eu vejo quando você
+
+464
+00:35:23,034 --> 00:35:29,886
+precisa do programa de bug bount primeiro você já tem uma maturidade bem grande você quer
+expandir isso eu quero trazer skills novas
+
+465
+00:35:29,886 --> 00:35:32,906
+como é que eu meço essa vulnerabilidade, essa maturidade?
+
+466
+00:35:32,906 --> 00:35:34,246
+O aspisan resolve?
+
+467
+00:35:34,246 --> 00:35:35,666
+O que você acha?
+
+468
+00:35:36,586 --> 00:35:39,486
+Para eu saber, beleza, estou maduro.
+
+469
+00:35:39,566 --> 00:35:41,134
+aspisanzinho ajuda, né?
+
+470
+00:35:41,418 --> 00:35:42,998
+ajuda bastante.
+
+471
+00:35:43,658 --> 00:35:51,918
+Quando você começa, quando você entende que você já está velocidade de cruzeiro com todas
+as práticas que você definiu.
+
+472
+00:35:52,158 --> 00:35:57,518
+O programa de Bug Bound ajuda você expandir isso e você ganhar aquela escalabilidade.
+
+473
+00:35:57,518 --> 00:36:03,229
+E a outra questão é você agregar
+
+474
+00:36:05,073 --> 00:36:08,213
+ações que você não tem hoje como chegar lá.
+
+475
+00:36:08,213 --> 00:36:14,733
+Por exemplo, cara, não consigo pegar pentester e contratar pentester para pegar minha
+empresa inteira.
+
+476
+00:36:14,733 --> 00:36:32,843
+Cara, eu não consigo ter tempo sobrando para conseguir olhar cada produto meu ou novo que
+saia, atualização que saia, porque vamos lá, tempo do seu time você sempre vai consumir.
+
+477
+00:36:32,843 --> 00:36:34,659
+Para fazer gestão do programa.
+
+478
+00:36:35,057 --> 00:36:44,357
+Então, dependendo do tamanho do seu programa, tem que ter cara que vai entender disso,
+profissional que vai entender disso.
+
+479
+00:36:44,357 --> 00:36:48,537
+Ele não é algo que você coloque e é plug and play.
+
+480
+00:36:48,977 --> 00:36:50,577
+Não é.
+
+481
+00:36:51,036 --> 00:36:51,810
+Então.
+
+482
+00:36:51,810 --> 00:36:53,530
+nesse lugar nenhum, cara.
+
+483
+00:36:53,530 --> 00:36:56,465
+Isso é prática, é experiência, não tem como.
+
+484
+00:36:56,465 --> 00:36:58,305
+Exatamente exatamente.
+
+485
+00:36:58,305 --> 00:37:04,385
+aí por exemplo como é que agora é outra questão como que eu monto a definição no meu
+programa de bug mount.
+
+486
+00:37:05,965 --> 00:37:09,625
+Uma vez que eu tomei a decisão de montar.
+
+487
+00:37:09,665 --> 00:37:11,197
+Tem o próximo episódio.
+
+488
+00:37:12,262 --> 00:37:12,962
+Boa.
+
+489
+00:37:12,962 --> 00:37:14,722
+Bem-vindos, obrigado.
+
+490
+00:37:14,722 --> 00:37:21,282
+que boa volta depois de três, quatro, mês que gente está sem gravar, na verdade.
+
+491
+00:37:21,282 --> 00:37:22,742
+Mas, cara, esse tópico é muito foda.
+
+492
+00:37:22,742 --> 00:37:24,522
+fazer curso disso.
+
+493
+00:37:24,522 --> 00:37:27,462
+Como montar programa de Bugnaut.
+
+494
+00:37:27,462 --> 00:37:28,142
+Boa.
+
+495
+00:37:28,142 --> 00:37:31,362
+Tá fazendo workshop material disso, que é bem bacana.
+
+496
+00:37:32,282 --> 00:37:34,292
+Bom, pessoal, nos vemos na próxima semana.
+
+497
+00:37:34,292 --> 00:37:35,782
+Eu sou o Caso Pereira.
+
+498
+00:37:35,793 --> 00:37:36,961
+Eu sou Ben Hur.
+
+499
+00:37:37,014 --> 00:37:38,974
+Nem teve vinheta hoje, vamos direto pro encerramento.
+
+500
+00:37:38,974 --> 00:37:40,649
+Valeu pessoal, tchau tchau.
+
+501
+00:37:40,649 --> 00:37:41,480
+beirás.
+
