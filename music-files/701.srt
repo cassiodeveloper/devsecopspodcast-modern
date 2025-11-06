@@ -1,0 +1,2914 @@
+1
+00:00:14,952 --> 00:00:15,840
+e
+
+2
+00:00:19,688 --> 00:00:21,280
+e
+
+3
+00:00:23,022 --> 00:00:25,002
+Olá, olá, olá, pessoal!
+
+4
+00:00:25,002 --> 00:00:26,982
+Tudo bem com vocês?
+
+5
+00:00:39,784 --> 00:00:40,846
+Eu sou o Bem-Ou.
+
+6
+00:00:40,846 --> 00:00:42,216
+E eu sou Marcos Santos.
+
+7
+00:00:42,216 --> 00:00:43,776
+Bom, time completo.
+
+8
+00:00:43,776 --> 00:00:47,116
+Marcos, você conhece essa camisa aí, viu?
+
+9
+00:00:47,576 --> 00:00:49,346
+Conhece essa camisa aí, cara.
+
+10
+00:00:49,346 --> 00:00:50,942
+Muito boa essa camisa.
+
+11
+00:00:50,942 --> 00:00:56,424
+na b-sides Krakow agora 2025 teria uma também.
+
+12
+00:00:56,424 --> 00:00:57,344
+Boa!
+
+13
+00:00:57,344 --> 00:00:59,614
+E não é só essas como outras, né?
+
+14
+00:00:59,614 --> 00:01:01,304
+Bem melhores.
+
+15
+00:01:01,564 --> 00:01:02,064
+Boa!
+
+16
+00:01:02,064 --> 00:01:06,644
+Você que está curioso aí que camisa o Marcos está usando, vai lá no OnlyFans barra
+Marcos...
+
+17
+00:01:06,644 --> 00:01:09,624
+Quer dizer, manda um...
+
+18
+00:01:09,624 --> 00:01:14,734
+Manda uma mensagem pra ele que ele te manda as fotos, as camisas que ele conseguiu no
+nosso evento.
+
+19
+00:01:14,734 --> 00:01:16,014
+Beyrus, está bem também, cara?
+
+20
+00:01:16,014 --> 00:01:18,392
+Faz tempo que gente não se vê, não senta aqui, né?
+
+21
+00:01:18,552 --> 00:01:19,822
+Isso é verdade, verdade.
+
+22
+00:01:19,822 --> 00:01:27,840
+Estou ótimo, momentos muito movimentados no mundo de Epsec e de gente aí, mas...
+
+23
+00:01:28,456 --> 00:01:29,716
+Boa, boa.
+
+24
+00:01:29,716 --> 00:01:39,916
+Aliás, tão movimentado quanto, eu diria que é o seguinte, esse episódio aqui é a estreia
+da nossa nova temporada, que praticamente a gente pausou tempo ali e gente não conseguiu
+
+25
+00:01:39,916 --> 00:01:40,285
+voltar.
+
+26
+00:01:40,285 --> 00:01:43,966
+Enfim, então eu decidi cortar as temporadas, a gente encerrou a sexta.
+
+27
+00:01:43,966 --> 00:01:48,356
+Esse episódio aqui é a estreia da nossa sétima temporada, gente já praticamente vai pro...
+
+28
+00:01:48,356 --> 00:01:52,640
+A gente está no sexto ano, indo pro sétimo ano, deve ser o Copos Podcast.
+
+29
+00:01:52,648 --> 00:01:55,088
+mais 180 episódios para vocês.
+
+30
+00:01:55,648 --> 00:01:58,248
+dito isso, temos alguns recados aqui.
+
+31
+00:01:58,248 --> 00:02:07,908
+O primeiro recado é, lembre-se que o DevCop podcast tem todo o apoio suporte da Nova8, que
+é a distribuidora da SNIC e outras soluções também no Brasil.
+
+32
+00:02:07,908 --> 00:02:13,848
+A Purple Bird Security que vai cuidar de você durante e depois de incidente de segurança.
+
+33
+00:02:13,848 --> 00:02:16,628
+Acredite, você precisa da Purple Bird Security.
+
+34
+00:02:16,708 --> 00:02:20,538
+Gold Security com serviços especializados segurança de aplicações.
+
+35
+00:02:20,538 --> 00:02:21,704
+Se tiver algum...
+
+36
+00:02:21,704 --> 00:02:32,204
+demanda aí do teu lado fala comigo digital woke que tem um portfólio completo de soluções
+de epsec para você e o nosso novo parceiro para estrear essa temporada que eu diria
+
+37
+00:02:32,204 --> 00:02:43,444
+dourada né essa cor inclusive não é por acaso breve vocês verão mais porque temos a
+conviso que protege a organização contra fraudes e ataques cibernéticos com os tori
+
+38
+00:02:43,444 --> 00:02:45,896
+plataforma especializada em epsec
+
+39
+00:02:45,896 --> 00:02:49,326
+para instituições financeiras e empresas que lidam com dados sensíveis.
+
+40
+00:02:49,326 --> 00:02:50,286
+Ou seja, mundo.
+
+41
+00:02:50,286 --> 00:02:53,256
+Ou você é financeiro ou você está lidando com o dado sensível de alguém.
+
+42
+00:02:53,316 --> 00:02:56,396
+Para fortalecer a gestão de segurança de aplicações.
+
+43
+00:02:56,396 --> 00:02:58,806
+Então, bate papo com a galera da Convívio que também vão te ajudar.
+
+44
+00:02:58,806 --> 00:03:03,376
+Além da plataforma da Convívio também, que é uma plataforma sensacional.
+
+45
+00:03:03,396 --> 00:03:04,966
+Bom, pessoal, estamos aqui.
+
+46
+00:03:04,966 --> 00:03:05,646
+Vamos falar de quê?
+
+47
+00:03:05,646 --> 00:03:11,256
+Vamos falar da vida, vamos só ver uma cara do outro, vamos trazer conteúdo.
+
+48
+00:03:11,256 --> 00:03:12,398
+Qual é tema de hoje?
+
+49
+00:03:12,398 --> 00:03:22,218
+Vamos trazer conteúdo aí, Benyur falou bem sobre esse tópico aí, é tópico relevante, novo
+aí no mercado também, saiu aí recentemente.
+
+50
+00:03:22,218 --> 00:03:29,458
+Então vou deixar o Benyur apresentar o tema de hoje aí que acho que vai ser bem importante
+para todos os ouvintes.
+
+51
+00:03:31,591 --> 00:03:45,191
+Pessoas, surgiu essa semana um lançamento aí na indústria, esse lançamento sacudiu pouco o
+foi o ar do VARC da OpenAI, né?
+
+52
+00:03:45,951 --> 00:03:58,831
+E acho que é interessante, todo mundo que é de APSEC está cuidando disso, não por causa do
+produto si, mas a estratégia si, Porque a estratégia pensada é uma estratégia
+
+53
+00:03:58,831 --> 00:04:01,382
+interessante, mas...
+
+54
+00:04:01,382 --> 00:04:16,482
+Tudo tem pontos positivos, pontos negativos, Questões importantes que realmente ajudam,
+mas tem outras que talvez tragam um custo elevado ou mudem o modelo de operação, não
+
+55
+00:04:16,482 --> 00:04:19,692
+expõem pouco mais ao risco ou nos reduz algum tipo de risco.
+
+56
+00:04:19,692 --> 00:04:23,302
+E eu acho que é interessante a gente comentar pouquinho sobre a estratégia, né?
+
+57
+00:04:23,302 --> 00:04:25,842
+E o que que é a estratégia?
+
+58
+00:04:25,902 --> 00:04:29,886
+O uso de agentes de IA
+
+59
+00:04:31,078 --> 00:04:35,304
+de fato trabalhando na segurança do código da gente.
+
+60
+00:04:35,304 --> 00:04:36,564
+Ah, puto, cara.
+
+61
+00:04:36,564 --> 00:04:37,084
+Acabou o nosso emprego.
+
+62
+00:04:37,084 --> 00:04:37,774
+Acabou o emprego.
+
+63
+00:04:37,774 --> 00:04:40,762
+A IA tomou o nosso emprego, tomou o nosso trabalho, acabou.
+
+64
+00:04:40,762 --> 00:04:43,112
+que ia demorar mais 15 anos pra isso, pelo menos.
+
+65
+00:04:43,112 --> 00:04:45,990
+Já perdi o emprego agora, Tristeza.
+
+66
+00:04:45,990 --> 00:04:57,760
+É, assim, se você tem profissional que trabalho dele é fazer code review e encontrar
+vulnerabilidades, esse cara tem que Eu não vou dizer, acabar, todo mundo adora falar isso,
+
+67
+00:04:57,760 --> 00:04:59,150
+né cara?
+
+68
+00:04:59,510 --> 00:05:02,570
+Vai acabar, vai acabar, vai acabar, né?
+
+69
+00:05:03,830 --> 00:05:05,790
+Mas vai ter que se transformar pouco, né?
+
+70
+00:05:05,790 --> 00:05:07,390
+Ele vai ter que...
+
+71
+00:05:07,390 --> 00:05:10,570
+Ele vai ter que se expandir pouco a sua visão, né?
+
+72
+00:05:10,570 --> 00:05:16,038
+Então acho que isso que é importante, porque essa estratégia não é nova.
+
+73
+00:05:16,038 --> 00:05:29,378
+a sócia está começando a ser materializada de forma nova, o que a ainda não conseguiu, e
+aí eu vou deixar para futuras partes do podcast, é conseguir isso de forma escalável no
+
+74
+00:05:29,378 --> 00:05:33,938
+tempo correto e nos custos adequados para dentro da operação.
+
+75
+00:05:33,938 --> 00:05:36,718
+Então isso ainda é certo desafio.
+
+76
+00:05:37,018 --> 00:05:39,138
+Então esse é o jogo.
+
+77
+00:05:39,138 --> 00:05:42,689
+Agentes de A como Security Researchers.
+
+78
+00:05:43,392 --> 00:05:49,682
+Boa, cara, inclusive eu não sabia dessa iniciativa, Tanta coisa que a tem que ficar
+antenado.
+
+79
+00:05:49,682 --> 00:05:52,032
+Eu agora tô antenado aprender a tocar violão.
+
+80
+00:05:52,032 --> 00:05:54,752
+Tô tentando ficar pouco fora de...
+
+81
+00:05:54,752 --> 00:05:56,478
+Fora de EFSEC.
+
+82
+00:05:56,738 --> 00:06:00,938
+uma musiquinha legal pra você tocar agora, cara, depois desse aqui que é o...
+
+83
+00:06:04,808 --> 00:06:06,608
+Boa, boa, verdade, verdade.
+
+84
+00:06:06,608 --> 00:06:08,848
+Morreu mais emprego, né?
+
+85
+00:06:10,348 --> 00:06:11,148
+Boa.
+
+86
+00:06:11,148 --> 00:06:20,288
+Cara, mas pegando esse gancho aí, então vamos falar sobre esse tema, falar em AI em geral,
+mas não só especificamente do AdWark, que é uma solução para essa interessante da OpenAI.
+
+87
+00:06:20,728 --> 00:06:22,638
+E eu vou até puxar pouco de contexto.
+
+88
+00:06:22,638 --> 00:06:32,816
+Eu trabalhei recentemente com algumas soluções, por exemplo, a MobAI, inclusive MobAI
+esteve aqui conosco no Deve Ser Cosplay de Cache, algumas temporadas atrás.
+
+89
+00:06:34,571 --> 00:06:37,512
+Apiros, iCode, soluções de ISPM.
+
+90
+00:06:37,512 --> 00:06:49,692
+E por exemplo, a MobAI, a solução deles é você basicamente pega o seu resultado do seu
+SAST, o seu SNIC, seu Veracode, o seu Checkmarks, enfim, e XML, JSON da vida lá, arquivo
+
+91
+00:06:49,692 --> 00:06:50,232
+de...
+
+92
+00:06:50,232 --> 00:06:58,292
+Agora eles conectam com API, mas basicamente você pega o resultado do SAST, importa dentro
+do MobAI e ele vai te dar um wizard de como resolver aquelas vulnerabilidades.
+
+93
+00:06:58,292 --> 00:07:02,696
+É literalmente wizard, SQL Injection aqui, aí você faz review...
+
+94
+00:07:02,792 --> 00:07:08,552
+manual barra automático porque ele já vai propor a solução a sua revisão é ver se a
+solução está correta.
+
+95
+00:07:08,552 --> 00:07:17,592
+Olha tem uma variável aqui que ela está como string quer trocar para inteiro parece ser ID
+aí você dá só next vai só aceitando ou não pode trocando a solução é basicamente
+
+96
+00:07:17,592 --> 00:07:28,012
+wizardzinho ou seja ele já apresentou já a correção da vulnerabilidade e você vai fazendo
+review ali se aquela solução está correta e detalhe obviamente no final ele já faz o pull
+
+97
+00:07:28,012 --> 00:07:32,680
+request para você no seu repositório aquela coisa toda é obviamente isso
+
+98
+00:07:32,680 --> 00:07:34,370
+utilizando o modelo de AI por trás.
+
+99
+00:07:34,370 --> 00:07:39,120
+Então ele sabe como é a vulnerabilidade, sabe como deveria ser corrigido, basicamente ele
+te dá essa solução.
+
+100
+00:07:39,120 --> 00:07:39,510
+Fala aí, Marcos.
+
+101
+00:07:39,510 --> 00:07:39,983
+Pode comentar aí.
+
+102
+00:07:39,983 --> 00:07:53,583
+só só complementando está falando do mobile aí ele não executa varredura no código vai
+lembrar que ele depende ele se não me engano funciona com o snake checkmarks vera code e
+
+103
+00:07:53,583 --> 00:08:07,123
+esqueci qual é o outro mas são quatro ferramentas de segurança sonar isso e sonar com isso
+ali você importa os resultados do scan e gera ali a a correção das vulnerabilidades por iá
+
+104
+00:08:07,123 --> 00:08:08,463
+mas você depende
+
+105
+00:08:08,463 --> 00:08:11,743
+de scanner externo ali pra isso.
+
+106
+00:08:11,743 --> 00:08:19,622
+E quem tiver curioso foi no ar aí na quinta temporada, 13, Foi julho aí do ano passado.
+
+107
+00:08:19,622 --> 00:08:22,792
+essa produção vai ter aumento na sétima temporada.
+
+108
+00:08:22,792 --> 00:08:24,212
+Aumento pra produção, cara.
+
+109
+00:08:24,212 --> 00:08:25,344
+Não tem como.
+
+110
+00:08:25,383 --> 00:08:32,544
+Vou começar com o meu advogado diabo aqui das coisas, Hoje o meu trabalho é ser o chatão,
+né?
+
+111
+00:08:34,484 --> 00:08:42,424
+Tem um lado importante quando gente fala de correção de vulnerabilidades com inteligência
+artificial, tá?
+
+112
+00:08:42,424 --> 00:08:48,244
+Não tô falando especificamente do mob ou até mesmo ali, que nem gente tá falando do
+hardware, mas vamos pegar...
+
+113
+00:08:48,244 --> 00:08:50,920
+Eu não quero me centralizar em ferramenta...
+
+114
+00:08:50,920 --> 00:08:51,700
+Uhum.
+
+115
+00:08:51,700 --> 00:08:53,840
+eu acho que a estratégia é uma coisa extra...
+
+116
+00:08:53,840 --> 00:08:57,820
+E essas estratégias, eu acho que elas vão estar por todo lugar, tá?
+
+117
+00:08:57,820 --> 00:09:02,300
+O mundo tá ficando pouco mais chato que tá todo mundo fazendo a mesma coisa, né?
+
+118
+00:09:02,300 --> 00:09:04,800
+Então, tá ficando pouco mais chato isso.
+
+119
+00:09:05,140 --> 00:09:05,720
+Então...
+
+120
+00:09:05,720 --> 00:09:06,240
+É...
+
+121
+00:09:06,240 --> 00:09:10,620
+Então, mas assim, correção de vulnerabilidade com IA.
+
+122
+00:09:10,900 --> 00:09:17,880
+Existe uma porcentagem interessante de novas vulnerabilidades sendo introduzido com o
+código gerado pela IA.
+
+123
+00:09:18,600 --> 00:09:19,180
+Então...
+
+124
+00:09:19,180 --> 00:09:20,890
+Sempre que a gente tá...
+
+125
+00:09:21,316 --> 00:09:36,536
+pegando código e gerando correção, nós também temos que ser capazes de validar se a
+correção não introduz uma nova vulnerabilidade ou se ela corrige de fato a vulnerabilidade
+
+126
+00:09:36,536 --> 00:09:39,416
+que foi encontrada no início.
+
+127
+00:09:39,716 --> 00:09:44,156
+Vou dar exemplo mais padrão, se com injection, concatenação de string.
+
+128
+00:09:44,296 --> 00:09:50,148
+Eu já vi muitas vezes a IA só criar uma variável externa
+
+129
+00:09:50,148 --> 00:09:54,608
+com os parâmetros e concatenar a variável externa.
+
+130
+00:09:54,648 --> 00:10:00,448
+Não de fato fazer usar um SQL Parameter e tal.
+
+131
+00:10:05,228 --> 00:10:10,268
+esse ciclo acaba sendo completo se tu tiver o antes e o depois com a análise estática.
+
+132
+00:10:10,468 --> 00:10:16,091
+Você fez a análise estática, encontrou a vulnerabilidade, usei a fase A recomendação e
+você...
+
+133
+00:10:16,835 --> 00:10:21,915
+de novo passa a mesma validação da sua engine para ver se ela não existe mais.
+
+134
+00:10:22,735 --> 00:10:30,695
+E claro, gente tem aquela questão do breakability, o quanto que a recomendação da IA
+quebra o código atual.
+
+135
+00:10:31,912 --> 00:10:43,792
+E até adicionar negócio aí, o Bayer, até passo atrás, não só usar EA para corrigir
+vulnerabilidades, mas o próprio uso da EA para gerar já é questionável.
+
+136
+00:10:43,792 --> 00:10:49,232
+Eu acho que tem uma questão de agilidade, velocidade muito importante que se ganha com EA.
+
+137
+00:10:49,232 --> 00:10:53,052
+Mas a qualidade desse código em si está funcionando.
+
+138
+00:10:53,052 --> 00:10:56,512
+lá, quero falar para o chat APT, gera aí API para mim.
+
+139
+00:10:56,512 --> 00:10:59,496
+Está aqui, está API, dois minutos, está funcionando, perfeito.
+
+140
+00:10:59,496 --> 00:11:04,156
+Essa PI está performática para o que você precisa, você vai ter 10 milhões de requests.
+
+141
+00:11:04,156 --> 00:11:06,256
+Tem endpoint funcionário, mas vai aguentar?
+
+142
+00:11:06,256 --> 00:11:07,936
+É isso mesmo que você precisa?
+
+143
+00:11:07,936 --> 00:11:15,575
+Obviamente, tem umas questões de infraestrutura, mas o ponto aqui é, a geração por si só
+do código por IA, seja para corrigir uma vulnerabilidade, seja para criar uma nova
+
+144
+00:11:15,575 --> 00:11:26,906
+feature, propósito que for, ela tem ainda um nível de maturidade, eu diria, baixo, talvez
+isso vai escalar muito rápido, porque é isso você está falando.
+
+145
+00:11:26,906 --> 00:11:29,366
+Você precisa de alguém que vai validar isso.
+
+146
+00:11:29,736 --> 00:11:30,736
+Até como tu falou.
+
+147
+00:11:30,736 --> 00:11:33,316
+Beleza, corrigiu a vulnerabilidade, mas trouxe outra.
+
+148
+00:11:33,316 --> 00:11:36,056
+Ou corrigiu a vulnerabilidade, mas quebrou a funcionalidade.
+
+149
+00:11:36,056 --> 00:11:39,276
+Ou corrigiu a vulnerabilidade, não quebrou a funcionalidade, tá perfeito.
+
+150
+00:11:39,276 --> 00:11:42,016
+Tá, como é que você dá o sinal verde pra isso?
+
+151
+00:11:42,016 --> 00:11:44,036
+Você ainda tem, por mais...
+
+152
+00:11:44,036 --> 00:11:48,976
+A IA vai ganhar na escala nisso, mas você ainda tem alguém que bate o martelo e fala,
+beleza, agora tá certo.
+
+153
+00:11:48,976 --> 00:11:51,156
+Agora é isso mesmo, corrigiu ou não corrigiu.
+
+154
+00:11:51,156 --> 00:11:56,904
+Eu trouxe esse exemplo da Mob por isso, porque ele te dá a solução, mas você precisa
+revisar a solução si.
+
+155
+00:11:56,904 --> 00:12:06,024
+Você pode ter auto update, soluções de ESPM hoje, exemplo, tem umas bases de engine, por
+exemplo, eu mencionei o Cycode o apiro, porque eles fazem isso, tem toda a sua base de
+
+156
+00:12:06,024 --> 00:12:12,684
+código, eles estão olhando todas as normalidades que acontecem lá, o JIT também faz isso,
+e eles vão te falar, ó cara, tem aqui várias soluções.
+
+157
+00:12:12,684 --> 00:12:23,164
+Talvez isso para SCA, eu te cortei, estou falando monte já, mas talvez, só para voltar no
+tema do SAST, acho que para SCA isso seja mais fácil do que para SAST, e aí a pode talvez
+
+158
+00:12:23,164 --> 00:12:25,724
+entrar nesse próximo toque, mas só para não quebrar o teu raciocínio.
+
+159
+00:12:30,034 --> 00:12:42,995
+Só falando, o Benyur falou uma coisa importante, são essas novas vulnerabilidades que as
+iageram quando elas vão fazer uma correção ali, mas tem outro ponto também a gente faz
+
+160
+00:12:42,995 --> 00:12:55,535
+muito code review e tem muito atacante que acaba fazendo data poisoning então o cara ali
+acaba inserindo padrão de código que confunde a IA e às vezes nem consegue identificar
+
+161
+00:12:55,535 --> 00:12:58,447
+passa como falso positivo pra ela
+
+162
+00:12:58,447 --> 00:13:04,387
+que também é problema quando a fala de solução automatizada para isso, utilizando IA.
+
+163
+00:13:04,387 --> 00:13:07,559
+Acho que é ponto também importante para mencionar aqui.
+
+164
+00:13:09,672 --> 00:13:11,274
+Tá mudo, tá mudo o Biu.
+
+165
+00:13:13,345 --> 00:13:15,625
+Ola, é 20 horas de casa e você continua.
+
+166
+00:13:16,245 --> 00:13:22,165
+Bom ponto, Marques, porque vamos dar panorama então para as pessoas que estão escutando
+aqui o podcast.
+
+167
+00:13:22,165 --> 00:13:24,185
+Cara, o que é agente de ar?
+
+168
+00:13:24,185 --> 00:13:26,365
+O que é a proposta do Aduarque?
+
+169
+00:13:26,365 --> 00:13:28,325
+provavelmente eles não vão ser o primeiro.
+
+170
+00:13:28,345 --> 00:13:29,225
+Talvez eles...
+
+171
+00:13:29,225 --> 00:13:30,105
+Talvez eles são...
+
+172
+00:13:30,105 --> 00:13:31,265
+Não digo o primeiro, né?
+
+173
+00:13:31,265 --> 00:13:34,385
+Porque tem várias variações sobre isso, né?
+
+174
+00:13:34,625 --> 00:13:37,285
+Mas é o que mexeu pouco na indústria, né?
+
+175
+00:13:37,285 --> 00:13:38,725
+A ideia é...
+
+176
+00:13:38,725 --> 00:13:39,938
+Cara, eu tenho um agente...
+
+177
+00:13:39,938 --> 00:13:41,778
+Pessoas, o que é um agente, tá?
+
+178
+00:13:41,778 --> 00:13:45,098
+Pelo amor de Deus, parem de achar que isso aqui é uma magia.
+
+179
+00:13:45,098 --> 00:13:50,358
+Agente é uma aplicação que tem um cérebro plugado de A.
+
+180
+00:13:50,358 --> 00:13:53,368
+É uma SDK com IA lá dentro, os caras usam, tá?
+
+181
+00:13:53,368 --> 00:13:53,758
+Beleza?
+
+182
+00:13:53,758 --> 00:13:54,248
+Ok.
+
+183
+00:13:54,248 --> 00:14:02,538
+Um agente faz milhão de coisas, mas ele é uma aplicação que usa IA como parte dos seus
+poderes para resolver as coisas, tá?
+
+184
+00:14:02,538 --> 00:14:06,388
+Enquanto a gente fazia e fiel, não sei o quê, pode usar IA como negócio, tá?
+
+185
+00:14:06,388 --> 00:14:07,338
+Beleza?
+
+186
+00:14:07,418 --> 00:14:09,736
+Eu resumi de forma bem porca, mas é assim mesmo.
+
+187
+00:14:09,736 --> 00:14:10,478
+Hum hum.
+
+188
+00:14:10,478 --> 00:14:11,498
+lá.
+
+189
+00:14:11,498 --> 00:14:16,098
+Porque o pessoal acha que negócio é uma mágica absurda, é uma caixa preta que tu larga lá
+e sai.
+
+190
+00:14:16,098 --> 00:14:17,578
+Tá, beleza, vamos lá.
+
+191
+00:14:17,578 --> 00:14:22,538
+Então eu tenho agente, que uma aplicação que vai se conectar no nosso ECM, GitHub, GitLab,
+whatever, tá?
+
+192
+00:14:22,538 --> 00:14:25,518
+Ela vai pegar o código, tá?
+
+193
+00:14:25,518 --> 00:14:32,858
+E aí vai pegar esse código, vai rodar primeiro uma modelagem de ameaça nele.
+
+194
+00:14:32,858 --> 00:14:33,898
+O que é uma modelagem de ameaça?
+
+195
+00:14:33,898 --> 00:14:38,917
+Ela vai ler o código, vai entender o contexto e vai identificar qual é tipo de ameaça que
+existe naquilo ali.
+
+196
+00:14:39,362 --> 00:14:42,962
+Por exemplo, é uma aplicação que transferência bancárias, XX ameaça.
+
+197
+00:14:42,962 --> 00:14:48,442
+É uma aplicação que lida com arquivos, computador ou acessa informações dentro dos
+servidores.
+
+198
+00:14:48,442 --> 00:14:49,502
+É o tipo de ameaça.
+
+199
+00:14:49,502 --> 00:14:52,822
+É uma aplicação que interage com serviços de nuvem.
+
+200
+00:14:52,822 --> 00:14:53,622
+o tipo de ameaça.
+
+201
+00:14:53,622 --> 00:14:55,122
+Vai fazer a moda de ameaça.
+
+202
+00:14:55,122 --> 00:15:02,382
+Em seguida, baseado nisso, ela vai rodar a análise do código busca de vulnerabilidades.
+
+203
+00:15:02,382 --> 00:15:06,702
+Perceba que eu não falei de engine, não falei o como que ela está fazendo cada uma dessas
+coisas.
+
+204
+00:15:06,702 --> 00:15:07,951
+Falei do quê?
+
+205
+00:15:08,193 --> 00:15:11,613
+Feito isso, ela vai ter as vulnerabilidades que ela vai encontrar.
+
+206
+00:15:11,613 --> 00:15:16,633
+Com isso, ela vai rodar outro passo que é propor a correção dessas vulnerabilidades.
+
+207
+00:15:16,773 --> 00:15:22,743
+Com isso, ela vai deixar isso tudo num balde para o humano revisar.
+
+208
+00:15:22,743 --> 00:15:25,853
+O humano revisou, abre pull request lá.
+
+209
+00:15:26,493 --> 00:15:28,473
+Essa é ideia principal.
+
+210
+00:15:30,919 --> 00:15:32,976
+ou não vai lá sexo, sexo.
+
+211
+00:15:33,249 --> 00:15:40,289
+Pelo que eu li ali, parte de SA não está incluído.
+
+212
+00:15:41,449 --> 00:15:43,969
+a única e ex-COS...
+
+213
+00:15:43,969 --> 00:15:47,869
+Ali fala de Open Source, só que que fala de Open Source?
+
+214
+00:15:47,869 --> 00:15:53,969
+Que eles rodaram esse agente dentro de projetos Open Source e identificaram o CVS.
+
+215
+00:15:53,969 --> 00:15:58,849
+Ninguém falou da qualidade dessa CVS, entendeu?
+
+216
+00:15:58,849 --> 00:16:01,969
+Porque assim, vamos lá né...
+
+217
+00:16:02,945 --> 00:16:05,805
+Aqui tem o missing header aqui, sei o que, seu CVE, entendeu?
+
+218
+00:16:05,805 --> 00:16:10,685
+Então, tipo, ninguém falou do nível dessa CVS, né?
+
+219
+00:16:10,685 --> 00:16:15,485
+A precisa adentrar pouquinho melhor quais foram as CVS ali para adentrar.
+
+220
+00:16:15,485 --> 00:16:20,745
+Talvez no site tem uma descrição melhor, mas não vi nada sobre o estudo qualitativo sobre
+isso.
+
+221
+00:16:21,605 --> 00:16:26,065
+Outra questão que acho super importante é...
+
+222
+00:16:26,065 --> 00:16:31,265
+nesse agente ali, nessa estratégia, está unicamente e exclusivamente a revisão de
+vulnerabilities de código.
+
+223
+00:16:33,536 --> 00:16:41,416
+Então aqui a gente começa agora, porque gente entendeu esse fluxo, vamos começar a
+entender os pontos positivos e os pontos negativos.
+
+224
+00:16:42,696 --> 00:16:54,546
+Primeiro, ponto positivo, se você já tem código existente, ele já existe hoje, para a
+parte de remediação, reduzir backlog,
+
+225
+00:16:56,096 --> 00:16:57,516
+pode ser uma ajuda interessante.
+
+226
+00:16:57,516 --> 00:17:05,976
+Pensa, você já tem repositório, já tem as coisas cometadas, já tá lá, você pluga lá,
+negócio vai te cuspir monte, encontre x vulnerabilidades, porque ele também faz uma outra
+
+227
+00:17:05,976 --> 00:17:11,456
+coisa ali que eu também não entendi bem bem a ia chegar lá, que é a análise dinâmica, né?
+
+228
+00:17:11,456 --> 00:17:15,297
+Ele faz a validação num sandbox, tá?
+
+229
+00:17:17,576 --> 00:17:25,256
+Pelo que eu entendi, essa parte do sandbox, literalmente executar aquele código.
+
+230
+00:17:25,796 --> 00:17:29,088
+O problema aqui é...
+
+231
+00:17:29,089 --> 00:17:34,040
+tem quatro microcells rodando repositório, só os outros três ali que compõem a aplicação.
+
+232
+00:17:34,040 --> 00:17:44,820
+problema aqui é tão complexo porque o sandbox em si, por exemplo, o antivírus hoje faz
+sandbox, mas ele faz sandbox de algo que já é executável, é jar, exe, ele vai pegar aquele
+
+233
+00:17:44,820 --> 00:17:46,500
+e dá dois cliques, tá ligado?
+
+234
+00:17:46,500 --> 00:17:56,856
+Neste caso, ele tá olhando pra código puro, que pode ser C Sharp, Java, TypeScript, R, o
+caralho que for, então ele precisa compilar tudo isso, enfim.
+
+235
+00:17:56,856 --> 00:17:58,796
+importante que você falou.
+
+236
+00:17:59,196 --> 00:18:06,256
+Atualmente ele só está disponível para Python, Java, C++, Rust e JavaScript.
+
+237
+00:18:06,356 --> 00:18:09,006
+Não tem uma cobertura tão grande linguagem não.
+
+238
+00:18:09,006 --> 00:18:10,756
+Teve na documentação dele.
+
+239
+00:18:10,756 --> 00:18:17,376
+Isso facilita pouco nessa questão do sandbox, mas eu vejo nesse contexto de falar, deixa
+eu rodar esse código aqui.
+
+240
+00:18:17,376 --> 00:18:20,296
+Sei lá, BenRoo, pegando seu exemplo, BenRoo, mas que ela injeção.
+
+241
+00:18:20,296 --> 00:18:25,976
+Tá, então deixa eu rodar esse código aqui, jogar lá injeção, ver o comportamento dele de
+fato e trazer ali o resultado.
+
+242
+00:18:25,976 --> 00:18:29,436
+É tipo validar se é falso, positivo ou não com exploit.
+
+243
+00:18:29,616 --> 00:18:35,096
+Eu vejo dessa forma, e seria fantástico porque esse sandbox, você fala, cara, é true
+positivo.
+
+244
+00:18:35,096 --> 00:18:36,040
+E ele elimina...
+
+245
+00:18:36,040 --> 00:18:43,180
+Faos positivo pra caramba, deve ter umas dificuldades ali, resolve grande problema que
+gente tem hoje, mas segue aí.
+
+246
+00:18:43,967 --> 00:18:47,807
+Porque assim, vamos quebrar por partes.
+
+247
+00:18:48,167 --> 00:18:52,767
+A primeira parte é o que eu escaneio ou não escaneio.
+
+248
+00:18:52,807 --> 00:18:56,307
+Segunda parte, o que é essa modelagem de ameaças.
+
+249
+00:18:56,307 --> 00:18:59,927
+Terceira parte, o que é o scan de código.
+
+250
+00:19:01,067 --> 00:19:03,887
+O que é o sandbox, a validação e o DAST.
+
+251
+00:19:03,887 --> 00:19:08,487
+E depois o que é a recomendação da remediação.
+
+252
+00:19:08,487 --> 00:19:13,104
+Se a pegar por fases, acho que vai ser pouco melhor para entender.
+
+253
+00:19:13,182 --> 00:19:18,882
+Então vamos lá, primeira coisa, Cara, é só escanear código comitado.
+
+254
+00:19:19,662 --> 00:19:29,238
+A gente já tem 20 anos de indústria que a gente procura eliminar a vulnerabilidade
+enquanto o código está sendo criado.
+
+255
+00:19:29,736 --> 00:19:31,188
+na máquina do peão.
+
+256
+00:19:31,583 --> 00:19:41,683
+enquanto o dev está desenvolvendo ou agora né vamos lá né porque agora virou 100 % supla
+itin nosso mundo né porque ou eu vou instalar biblioteca externa ou eu vou pegar código
+
+257
+00:19:41,683 --> 00:19:46,660
+gerado por IA eu não faço mais porra nenhuma nessa merda dessa vida entendeu então
+
+258
+00:19:46,660 --> 00:19:58,303
+uma treta treta treta treta treta treta treta treta treta treta treta treta treta treta
+treta treta treta treta treta treta treta treta treta treta treta treta treta treta treta
+
+259
+00:19:58,303 --> 00:20:02,183
+pior de tudo é que só vai sobrar os caras que fazem o reboco e olha lá, entendeu?
+
+260
+00:20:02,883 --> 00:20:03,443
+Porque...
+
+261
+00:20:03,443 --> 00:20:04,443
+É, entende?
+
+262
+00:20:04,443 --> 00:20:08,463
+assim, nisso a gente já começa a ver uma parte, né?
+
+263
+00:20:08,463 --> 00:20:11,623
+Então a gente volta pro fluxo de...
+
+264
+00:20:11,623 --> 00:20:17,303
+O dev cria todo o código ou gera todo o código, né?
+
+265
+00:20:17,303 --> 00:20:26,293
+E depois eu vou submeter esse código e depois eu vou ter uma validação, passa por exemplo
+que foi o que a gente falou...
+
+266
+00:20:26,366 --> 00:20:30,686
+para depois eu ver automaticamente ali as correções de vulnerabilidade.
+
+267
+00:20:30,686 --> 00:20:42,696
+Aí para mim você vai ficar com dilema, Se eu tenho uma geração de código que pode ser
+inseguro, eu mesmo vou prover a engine que vê segurança no código.
+
+268
+00:20:42,696 --> 00:20:44,478
+inseguro que eu gerei.
+
+269
+00:20:44,478 --> 00:20:52,504
+Eu fiquei meio assim, Eu não tô querendo botar defeito nas coisas, Só que é um
+questionamento, tá?
+
+270
+00:20:52,504 --> 00:20:57,144
+lá, dando uma pincelada nisso aí, guardo o raciocínio.
+
+271
+00:20:57,364 --> 00:21:01,914
+A ideia que eu tenho trazendo nas empresas quando eu implemento a PSEC, exemplo, é
+justamente isso.
+
+272
+00:21:01,914 --> 00:21:03,324
+Cara, qual é a sua maturidade hoje?
+
+273
+00:21:03,324 --> 00:21:11,124
+Em geral, a maturidade é baixa, média, a ponto de criamos código, fazemos scan,
+corrigimos.
+
+274
+00:21:11,384 --> 00:21:13,144
+Mas qual é o mundo ideal?
+
+275
+00:21:13,144 --> 00:21:17,672
+Não criamos vulnerabilidades, fazemos o scan para garantir, segue a vida.
+
+276
+00:21:17,672 --> 00:21:25,252
+Então a ideia é a gente pare de criar vulnerabilidade, a vai treinar o desenvolvedor,
+tanto corrigir problemas quanto não criá-los no primeiro momento.
+
+277
+00:21:25,252 --> 00:21:34,292
+Então eu vejo soluções como essa, exemplo, cara, pera, estou te gerando o código, que você
+vai ter que passar esse código depois no scan para verificar problemas, mas aí a vai
+
+278
+00:21:34,292 --> 00:21:35,252
+aprender.
+
+279
+00:21:35,252 --> 00:21:40,232
+Então de tanto corrigir esses problemas, ela tende a parar de criá-los também.
+
+280
+00:21:40,232 --> 00:21:44,472
+E aí na minha visão, escala muito maior, mais rápida do que o ser humano.
+
+281
+00:21:44,552 --> 00:21:46,670
+Então eu tende a chegar dia...
+
+282
+00:21:46,888 --> 00:21:50,138
+você falou, putz, é a empresa que está querendo reduzir o backlog, minha estratégia
+interessante?
+
+283
+00:21:50,138 --> 00:21:52,148
+Pô, beleza, vai encaixar bonitinho.
+
+284
+00:21:52,148 --> 00:21:55,868
+Agora a empresa VibeCode total só pega código gerado?
+
+285
+00:21:56,288 --> 00:22:05,448
+Tende, bem entre aspas, muitas aspas, a esse código ser gerado, porque ele está aprendendo
+com o tempo, a ser gerado sem vulnerabilidades.
+
+286
+00:22:05,448 --> 00:22:13,744
+De novo, sei que eu estou dizendo aqui, quase tiro no pé, Mas esse é o ideal, é o que a
+gente imagina que vai chegar lá, saca?
+
+287
+00:22:16,168 --> 00:22:22,868
+Eu acho que no momento que quantum chegar, aí esquece.
+
+288
+00:22:22,928 --> 00:22:24,588
+Cabou tudo.
+
+289
+00:22:24,988 --> 00:22:29,288
+Porque hoje a gente ainda tem o problema do tempo e quantidade de processamento.
+
+290
+00:22:29,288 --> 00:22:37,308
+A gente tem problema de dados ainda e o treinamento dos modelos ainda depende de dados não
+sanitizados do mundo como todo.
+
+291
+00:22:37,708 --> 00:22:44,294
+Então quando chegar quantum, eu com certeza vou pensar...
+
+292
+00:22:45,150 --> 00:22:52,656
+o quanto vender pastel pode substituir muita coisa aí porque vai ser complicado.
+
+293
+00:22:52,656 --> 00:22:54,796
+Peraí que essa mereceu aqui.
+
+294
+00:22:59,663 --> 00:23:02,583
+Só abri ponto aí, bem vô, até pra...
+
+295
+00:23:02,583 --> 00:23:05,863
+pra gente continuar raciocinando também.
+
+296
+00:23:05,863 --> 00:23:10,903
+Você falou de tempo, isso me deu gatilho que você falou pouquinho desde o começo do
+episódio.
+
+297
+00:23:10,903 --> 00:23:15,883
+Uma das preocupações que o pessoal tem quando implanta segurança é o tempo do scan.
+
+298
+00:23:16,143 --> 00:23:21,863
+Quantas vezes o cara falar, pô, vai segurar o meu pipeline mais dois minutos e o meu
+devorador vai ficar parado, blá, blá, blá.
+
+299
+00:23:21,863 --> 00:23:28,271
+Se quando você pede pra gerar app na IA, igual gente tava conversando, já demora cinco,
+dez minutos às vezes...
+
+300
+00:23:28,271 --> 00:23:30,051
+Imagine scan do rap inteiro.
+
+301
+00:23:30,051 --> 00:23:31,767
+E se for mono rap?
+
+302
+00:23:32,445 --> 00:23:34,345
+Cara, esquece.
+
+303
+00:23:34,345 --> 00:23:35,265
+Esquece, né?
+
+304
+00:23:35,265 --> 00:23:38,065
+E aí é diferente ponto, porque assim, ó...
+
+305
+00:23:38,065 --> 00:23:39,125
+Primeiro, né?
+
+306
+00:23:39,125 --> 00:23:42,245
+Vamos lá, a já sabe que vai escanear o repositório todo, né?
+
+307
+00:23:42,245 --> 00:23:44,725
+Aí sempre tem esperto que vai falar assim, ó...
+
+308
+00:23:44,725 --> 00:23:47,525
+Não, mas só vai escanear os commits novos.
+
+309
+00:23:47,525 --> 00:23:51,765
+Beleza, mas qualquer regra nova de segurança precisa fazer full scan.
+
+310
+00:23:51,765 --> 00:24:00,905
+A questão é qual que vai ser o teu apetite de risco para definir que só vai fazer full
+scan todo domingo de noite.
+
+311
+00:24:00,905 --> 00:24:02,428
+Ou todo dia de noite.
+
+312
+00:24:02,428 --> 00:24:03,828
+E qual é o custo que isso vai ser?
+
+313
+00:24:03,828 --> 00:24:04,388
+Por que?
+
+314
+00:24:04,388 --> 00:24:06,920
+Lembrando, ia cobra por Tolkien.
+
+315
+00:24:08,136 --> 00:24:11,136
+E sabe o que tem também, Veiúr, nesse ponto aí?
+
+316
+00:24:11,136 --> 00:24:13,216
+A galera confunde muito isso também.
+
+317
+00:24:13,216 --> 00:24:15,296
+Você faz scan só do commit.
+
+318
+00:24:15,296 --> 00:24:23,696
+A tendência a você não pegar vulnerabilidades porque você não tem contexto inteiro do
+fluxo de código, o método que chama outro, que está outro arquivo, que chama outro, que
+
+319
+00:24:23,696 --> 00:24:33,976
+chama outro até chegar no banco, uma aplicação três camada básica que seja, você tem um
+front, um MVC da vida ali e joga no banco, cara, você está scanando, você fez commit só na
+
+320
+00:24:33,976 --> 00:24:35,256
+camada de banco.
+
+321
+00:24:35,356 --> 00:24:35,880
+Acabou.
+
+322
+00:24:35,880 --> 00:24:39,939
+Não tem nada ali, mas lá no front, na camada intermediária, tem lá um...
+
+323
+00:24:39,939 --> 00:24:49,040
+passando parâmetro, enfim, coisa toda, tem vulnerabilidade ali no meio, mas como não teve
+análise do código completo, aquele fluxo completo, até esse sandbox, por exemplo, vai ter
+
+324
+00:24:49,040 --> 00:24:51,010
+que ser executado, como é que você vai validar isso?
+
+325
+00:24:51,010 --> 00:24:54,707
+É sandbox com base no repo inteiro, é sandbox só no commit.
+
+326
+00:24:54,707 --> 00:24:56,840
+form sem validar pô, e você não tá pegando
+
+327
+00:24:56,840 --> 00:24:58,160
+Então esse é o ponto.
+
+328
+00:24:58,160 --> 00:25:01,820
+A gente trabalhou com checkmarks há anos.
+
+329
+00:25:01,820 --> 00:25:02,730
+E tinha esse problema.
+
+330
+00:25:02,730 --> 00:25:05,840
+Você tinha o scan incremental, que gente falava, e o scan full.
+
+331
+00:25:05,840 --> 00:25:10,470
+O scan incremental a tendência de deixar vulnerável era menor, a menos que era negócio
+muito esdrúxulo.
+
+332
+00:25:10,470 --> 00:25:13,119
+Aí quando você rodava o scan full, tinha monte de coisa perdida lá.
+
+333
+00:25:13,119 --> 00:25:15,060
+Porque tinha pedaço do código.
+
+334
+00:25:15,060 --> 00:25:16,720
+Cara, esse trecho aqui não tem problema.
+
+335
+00:25:16,720 --> 00:25:22,496
+Espera, mas esse trecho, depois que foi chamado por outro, que tinha lá problema, ou
+chegou aqui assim assado...
+
+336
+00:25:23,320 --> 00:25:25,400
+isso torna muito mais visível.
+
+337
+00:25:25,400 --> 00:25:29,720
+até para análise, falando de SAST geral, você é IA, você não é tanto faz.
+
+338
+00:25:29,720 --> 00:25:33,100
+A análise em si, ela depende desse contexto.
+
+339
+00:25:33,100 --> 00:25:37,920
+Então até você trouxe muito bem a decisão de como esse scan acontece.
+
+340
+00:25:37,920 --> 00:25:41,160
+Isso impacta muito grande no próprio resultado final.
+
+341
+00:25:41,160 --> 00:25:45,800
+É igual falar, ó doutor, eu tô aqui com a dor no pé, então vamos fazer raio X na sua
+cabeça.
+
+342
+00:25:45,920 --> 00:25:47,624
+Pera, tá ligado?
+
+343
+00:25:47,624 --> 00:25:49,264
+o raio de dia tem que ser no pé, beleza?
+
+344
+00:25:49,264 --> 00:25:56,604
+Agora, estou com uma dor na barriga, pode ser várias coisas, então vai ter uma análise,
+vários exames para chegar naquele caso.
+
+345
+00:25:56,664 --> 00:26:00,960
+Então tem um gap aí, eu vejo gap nesse miolo.
+
+346
+00:26:01,403 --> 00:26:08,863
+É um bom ponto, o primeiro passo dele é o Threat Modeling.
+
+347
+00:26:09,123 --> 00:26:11,103
+O que o Threat Modeling é, na verdade?
+
+348
+00:26:11,103 --> 00:26:12,403
+Ele precisa de input.
+
+349
+00:26:12,403 --> 00:26:13,403
+O é o input?
+
+350
+00:26:13,403 --> 00:26:16,143
+O código fonte, que o que eu tenho.
+
+351
+00:26:17,223 --> 00:26:26,833
+E aí, falando desse input, acho que tem desafio ali, eu preciso entender melhor, porque
+agora está beta fechado, que é como é é a precificação.
+
+352
+00:26:26,833 --> 00:26:30,120
+Porque normalmente quando IA cobra por consumo...
+
+353
+00:26:30,120 --> 00:26:30,819
+Uhum.
+
+354
+00:26:30,819 --> 00:26:35,176
+aqui, vocês já passaram pela época quando o Sasha era cobrado por linhas de código?
+
+355
+00:26:35,176 --> 00:26:36,079
+Aô!
+
+356
+00:26:36,079 --> 00:26:39,359
+Oh meu Deus, linha de código e usuário, Miquinho.
+
+357
+00:26:39,482 --> 00:26:44,822
+Cara, era impossível ninguém conseguir imitrificar esse valor, cara.
+
+358
+00:26:44,822 --> 00:26:47,342
+Hoje ninguém consegue imitrificar esse valor, entendeu?
+
+359
+00:26:47,342 --> 00:26:55,082
+E pior é assim, Você consegue rodar lá uma contagem de linhas de código no seu código
+inteiro usando várias ferramentas, tá?
+
+360
+00:26:55,922 --> 00:26:57,442
+Só que qual que o detalhe?
+
+361
+00:26:57,442 --> 00:27:00,942
+Você não consegue prever o quanto de linhas de código você vai ter amanhã.
+
+362
+00:27:00,942 --> 00:27:02,602
+E sabe o que é o detalhe?
+
+363
+00:27:03,262 --> 00:27:05,942
+Agora você cobra por linhas de código...
+
+364
+00:27:05,942 --> 00:27:08,658
+Na verdade, se você cobra por linhas de código...
+
+365
+00:27:08,762 --> 00:27:14,107
+e você usa IA, você não sabe quantas linhas de código a IA vai gerar.
+
+366
+00:27:14,107 --> 00:27:17,018
+contar que ela gera muito mais que o necessário.
+
+367
+00:27:17,018 --> 00:27:19,458
+muito absurdamente mais.
+
+368
+00:27:19,703 --> 00:27:22,444
+Falando com o chat EPT ele já fala demais do que necessário.
+
+369
+00:27:22,444 --> 00:27:24,204
+Falando, não tô falando de código.
+
+370
+00:27:24,231 --> 00:27:38,751
+bom que você quer saber a receita de banana picada você pega uma banana e uma faca cara
+foda-se cara entendeu então assim agora o outro detalhe é se a cobrança é por token e eu
+
+371
+00:27:38,751 --> 00:27:48,751
+também ingero as coisas baseadas token como que fica então esse modelo de cobrança pra mim
+ele fica pouquinho estranho ainda não tenho visibilidade tá então acho que o primeiro
+
+372
+00:27:48,751 --> 00:27:50,778
+grande desafio é ok
+
+373
+00:27:50,778 --> 00:27:56,258
+e você vai pegar todo o meu código, vai mandar pra lugar e ele vai me cuspir quais são as
+vunes e as correções direto.
+
+374
+00:27:56,258 --> 00:27:56,788
+Mágico!
+
+375
+00:27:56,788 --> 00:27:57,958
+Acho lindo!
+
+376
+00:27:58,478 --> 00:28:05,498
+Mas a questão é agora, como que cobra isso e como que torna isso de forma escalável?
+
+377
+00:28:06,318 --> 00:28:11,418
+Beleza, Vem aí, usando isso internamente, então pra eles tem funcionado, tem sido ótimo,
+né?
+
+378
+00:28:11,418 --> 00:28:14,698
+Agora a indústria tem muito mais coisas do que isso, né?
+
+379
+00:28:14,698 --> 00:28:16,838
+E dos pontos da indústria é...
+
+380
+00:28:16,838 --> 00:28:19,258
+Porque esse cara é meio reativo, né?
+
+381
+00:28:19,258 --> 00:28:31,918
+Não me parece ser algo do tipo, cara, eu vou prevenir vulnerabilidades alcancem X nível
+dentro do meu git flow ali, vou dar exemplo, tá?
+
+382
+00:28:31,918 --> 00:28:34,478
+Não me parece mais depois, né?
+
+383
+00:28:34,478 --> 00:28:36,838
+Quanto tempo isso leva pra chegar tudo, né?
+
+384
+00:28:36,838 --> 00:28:39,078
+Então, a ideia é boa.
+
+385
+00:28:39,078 --> 00:28:47,688
+Agora, o que está sendo usado por baixo pra fazer de fato a análise da vulnerabilidade,
+tudo isso, isso é uma incógnita, né?
+
+386
+00:28:47,688 --> 00:28:49,337
+Isso é segredo do produto.
+
+387
+00:28:49,337 --> 00:28:50,625
+É então?
+
+388
+00:28:50,792 --> 00:28:53,692
+Mas vamos lá, tem um...
+
+389
+00:28:53,692 --> 00:28:54,840
+traga.
+
+390
+00:28:54,891 --> 00:29:00,931
+ponto que preocupa bastante, principalmente aqui na Europa, que a legislação é pouco mais
+rígida, né?
+
+391
+00:29:00,931 --> 00:29:03,108
+Que é questão de compliance, cara.
+
+392
+00:29:03,108 --> 00:29:05,008
+mente e pegou minha pergunta.
+
+393
+00:29:05,551 --> 00:29:19,531
+é questão de compliance, como os caras vão treinar isso sem utilizar os dados do cliente
+sem trade para poder validar aquilo porque você imagina gente, tem uma desação rígida aqui
+
+394
+00:29:19,531 --> 00:29:30,111
+eles tem a promessa de não treinar usando os dados só que ele tem que enviar o código ali
+para poder ser escaneado como que vai regular isso né?
+
+395
+00:29:30,728 --> 00:29:37,378
+nosso amigo Benyur, que está aqui à esquerda no meu vídeo, há alguns episódios aí, eu
+lembro que ele falou exatamente isso.
+
+396
+00:29:37,378 --> 00:29:38,188
+Você já leu as...
+
+397
+00:29:38,188 --> 00:29:39,148
+Essa foi a frase dele.
+
+398
+00:29:39,148 --> 00:29:42,128
+Você já leu as letrinhas miúdas do GitHub Copilot?
+
+399
+00:29:42,928 --> 00:29:46,008
+Ele tem acesso ao teu código.
+
+400
+00:29:47,168 --> 00:29:49,868
+Não lembro se era o Copilot, se pesquisava alguma coisa assim.
+
+401
+00:29:49,948 --> 00:29:52,805
+Ou seja, se você está usando...
+
+402
+00:29:52,805 --> 00:29:54,293
+tu tem que desabilitar.
+
+403
+00:29:54,567 --> 00:29:57,348
+Você está usando o bagulho nativo em aplicação...
+
+404
+00:29:57,348 --> 00:29:58,278
+Cara, está lá o bagulho.
+
+405
+00:29:58,278 --> 00:29:59,168
+Como é que vai aprender?
+
+406
+00:29:59,168 --> 00:30:00,688
+Vai ler o teu código.
+
+407
+00:30:01,028 --> 00:30:05,288
+A gente ia ter problema com a Nova 8, com o Checkmarks, com o Sneak, enfim.
+
+408
+00:30:05,288 --> 00:30:08,058
+O cliente quer comprar, perfeito, natural, lindo, maravilhoso.
+
+409
+00:30:08,058 --> 00:30:10,158
+Aí ele está, mas a análise é feita na cloud?
+
+410
+00:30:10,158 --> 00:30:10,688
+É.
+
+411
+00:30:10,688 --> 00:30:11,958
+Para onde vai o meu código?
+
+412
+00:30:11,958 --> 00:30:13,078
+Para onde vai o meu código?
+
+413
+00:30:13,078 --> 00:30:17,328
+Não, o teu código vai num tenant privado, é só teu.
+
+414
+00:30:17,328 --> 00:30:19,048
+Ah, beleza.
+
+415
+00:30:19,048 --> 00:30:21,736
+Está isso contrato, eu assino, lindo, maravilhoso.
+
+416
+00:30:21,736 --> 00:30:24,406
+Não, não, não, você está usando um Tenant compartilhado.
+
+417
+00:30:24,406 --> 00:30:25,606
+Opa, pera.
+
+418
+00:30:25,606 --> 00:30:27,816
+Então vou ter que pagar mais para ter Tenant.
+
+419
+00:30:27,816 --> 00:30:28,416
+Exato.
+
+420
+00:30:28,416 --> 00:30:29,896
+Porque assim, é um...
+
+421
+00:30:29,896 --> 00:30:33,556
+Praticamente o código fonte hoje é o segredo de todo mundo, toda empresa hoje.
+
+422
+00:30:33,656 --> 00:30:40,816
+Então você trouxe ponto importantíssimo, Marco, que é como é que as empresas garantem que
+isso é feito?
+
+423
+00:30:40,816 --> 00:30:43,276
+Porque falar e pôr no contrato, eu ponho e eu faço.
+
+424
+00:30:43,276 --> 00:30:46,556
+Agora, garantir que isso está sendo feito, que o dia que der merda...
+
+425
+00:30:46,556 --> 00:30:48,716
+Imagina, vazou que nem...
+
+426
+00:30:48,716 --> 00:30:51,624
+Vazou não sei o quê, não sei da onde.
+
+427
+00:30:51,624 --> 00:30:54,884
+Mas a senha estava texto aberto.
+
+428
+00:30:55,024 --> 00:30:56,804
+Ninguém esperava que era para estar texto aberto.
+
+429
+00:30:56,804 --> 00:30:59,164
+Não era para estar criptografada a senha.
+
+430
+00:30:59,164 --> 00:31:04,064
+Então isso é uma questão muito grande, com relação a...
+
+431
+00:31:04,064 --> 00:31:09,224
+Você falou de compliance no ponto de, por exemplo, ter empresa que não pode trafegar o
+dado fora do próprio país.
+
+432
+00:31:09,224 --> 00:31:11,684
+No caso da Europa, União Europeia.
+
+433
+00:31:11,684 --> 00:31:13,924
+Enfim, então isso...
+
+434
+00:31:13,924 --> 00:31:15,804
+Cara, isso outro mundo, isso aí.
+
+435
+00:31:15,804 --> 00:31:17,463
+É outro mundo de discussão.
+
+436
+00:31:17,463 --> 00:31:18,483
+preocupa, né?
+
+437
+00:31:18,483 --> 00:31:28,203
+Porque vou mandar meus dados pro servidor da OpenAI pra eles processarem ali meu código
+fonte, me devolverem ali o resultado das vulnerabilidades, quem me garante que eles não
+
+438
+00:31:28,203 --> 00:31:38,349
+estão usando meu código ali pra treinar, e esse código potencialmente vai ser usado quando
+alguém pedir pra gerar código ali, uma ferramenta qualquer, similar a que eu tenho aqui.
+
+439
+00:31:38,668 --> 00:31:42,238
+olha só, concorrente vai lá e fala e como é que ele segrega isso?
+
+440
+00:31:42,238 --> 00:31:43,598
+Não, não, você vai gerar aplicativo.
+
+441
+00:31:43,598 --> 00:31:45,017
+Eu quero que gere WhatsApp aí pra mim.
+
+442
+00:31:45,017 --> 00:31:46,068
+Tá igual assim.
+
+443
+00:31:46,068 --> 00:31:48,208
+Até aí não tem, como é que fala?
+
+444
+00:31:48,208 --> 00:31:52,048
+Patente pra isso, É, o logro...
+
+445
+00:31:52,048 --> 00:31:52,808
+comentário, né?
+
+446
+00:31:52,808 --> 00:31:56,248
+O desenvolvedor fez comentário dia lá e eu tá aqui, o comentário do mesmo código.
+
+447
+00:31:56,248 --> 00:31:58,176
+Então isso, isso, cara, isso aí é crítico pra canalha.
+
+448
+00:31:58,176 --> 00:32:09,556
+o que mais me preocupa hoje, Porque vamos lá, eu acho que a OpenAI apareceu primeiro, mas
+cara, todo mundo vai fazer isso.
+
+449
+00:32:09,556 --> 00:32:11,876
+Todo mundo vai utilizar a IA pra...
+
+450
+00:32:11,876 --> 00:32:16,216
+Porque vamos lá, o maior problema de AppSec hoje é remediação.
+
+451
+00:32:16,676 --> 00:32:19,916
+Porque a gente tem backlog...
+
+452
+00:32:19,916 --> 00:32:25,111
+É, isso aí, porque por exemplo, a gente tem backlog gigante de coisas pra resolver.
+
+453
+00:32:25,111 --> 00:32:30,711
+Esse backlog gigante, primeiro a gente tem que separar o que é falso positivo e que é find
+real.
+
+454
+00:32:31,431 --> 00:32:43,031
+E feito isso, caso você esteja testando a câmera dele, o que é falso positivo que é find
+real, feito isso a gente tem que chegar lá no código e, cara, corrige isso aqui pra mim.
+
+455
+00:32:43,031 --> 00:32:45,541
+E aí a gente tem ali um threshold, né?
+
+456
+00:32:45,541 --> 00:32:51,551
+gente tem do tempo que eu encontro a vulnerabilidade até ela ser corrigida da forma
+adequada.
+
+457
+00:32:51,591 --> 00:32:54,091
+Aí vamos lá, olhando pro futuro.
+
+458
+00:32:54,904 --> 00:32:57,954
+Quando a empresa é muito pequena, ela corrige o padrão.
+
+459
+00:32:57,954 --> 00:32:59,084
+Cara, só corrige aí.
+
+460
+00:32:59,084 --> 00:33:02,164
+Quando a empresa é grande, ela tem security defaults e tal.
+
+461
+00:33:02,164 --> 00:33:08,804
+O lado bom da IA na remediação é que você pode definir muitas security defaults texto
+plano.
+
+462
+00:33:09,124 --> 00:33:14,264
+Sempre que você for recomendar uma correção de SSRF, você recomenda assim.
+
+463
+00:33:14,264 --> 00:33:15,204
+Entendeu?
+
+464
+00:33:16,884 --> 00:33:19,054
+Isso, o system lá e joga o bar, tá?
+
+465
+00:33:19,054 --> 00:33:21,399
+Então, muito bom na parte de remediação.
+
+466
+00:33:21,399 --> 00:33:23,119
+E toda empresa vai ter isso, tá?
+
+467
+00:33:23,119 --> 00:33:25,979
+Toda empresa de remediação de vulnerabilidade vai ter isso, sabe?
+
+468
+00:33:25,979 --> 00:33:30,019
+Só que a questão é a inteligência pra tu saber o que você tem que remediar.
+
+469
+00:33:30,019 --> 00:33:38,139
+Porque se ferramentas que são tunadas pra eles já têm falsos positivos, nada impede desse
+mecanismo também ter.
+
+470
+00:33:38,139 --> 00:33:41,319
+E ele vai sair gerando código, né?
+
+471
+00:33:41,319 --> 00:33:45,399
+Então, nada impede dele não estar corrigindo uma vulnerabilidade só adicionando mais
+código.
+
+472
+00:33:46,159 --> 00:33:50,295
+Mas hoje o que me preocupa é o pipeline, é o workflow, né?
+
+473
+00:33:50,295 --> 00:33:56,675
+Porque a ideia é, o dev desenvolve, a gente já quer mitigar a vulnerabilidade ali pra que
+ela já nasce sem a vulnerabilidade, né?
+
+474
+00:33:56,675 --> 00:34:01,775
+Depois a gente quer validar, porque o CISG lá, o pipeline, é guardrail, né?
+
+475
+00:34:01,775 --> 00:34:06,175
+Cara, não vai passar daqui se tiver, caso fale alguma coisa antes, né?
+
+476
+00:34:06,175 --> 00:34:09,235
+E depois você só vai olhar aquilo que tá produção.
+
+477
+00:34:09,235 --> 00:34:11,975
+E o que é o ideal que a gente espera de produção?
+
+478
+00:34:11,975 --> 00:34:17,395
+Que a gente veja apenas novas vulnerabilidades ou quando pacote de terceiros tornar
+vulnerável ou...
+
+479
+00:34:17,395 --> 00:34:18,903
+Enfim, beleza?
+
+480
+00:34:18,903 --> 00:34:29,803
+e a gente tem vulnerabilidades são muito difíceis de encontrar com análise estática,
+Vuguidor por exemplo, E a gente espera utilizar IA, juntamente com DASTE ou com análise
+
+481
+00:34:29,803 --> 00:34:34,743
+estática, encontrar vulnerabilidades são muito difíceis de uma análise estática.
+
+482
+00:34:34,743 --> 00:34:35,763
+Padrão, né?
+
+483
+00:34:35,763 --> 00:34:37,843
+Default trabalhar, tá?
+
+484
+00:34:37,843 --> 00:34:41,323
+Então assim, se eu...
+
+485
+00:34:41,323 --> 00:34:48,132
+Se esse meu tempo entre eu terminar um código, comitá-lo e ter o feedback das
+vulnerabilidades que eu tenho...
+
+486
+00:34:48,598 --> 00:34:57,938
+para uma aplicação grande, cara, levar duas, três horas, quatro horas, esse é o impacto
+que eu vou ter no desenvolvimento.
+
+487
+00:34:57,938 --> 00:35:05,318
+Se eu tenho mil desenvolvedores, gente sabe que tem quatro horas de impacto por
+desenvolvedor por pull request, por exemplo.
+
+488
+00:35:05,578 --> 00:35:06,598
+Entendeu?
+
+489
+00:35:07,658 --> 00:35:17,220
+E a gente volta na estatística do tempo consumido na correção do deve.
+
+490
+00:35:17,430 --> 00:35:19,960
+por estar encontrando tardiamente a vulnerabilidade.
+
+491
+00:35:19,960 --> 00:35:21,950
+Qual que esse modelo resolve?
+
+492
+00:35:21,950 --> 00:35:24,808
+A ideia é que já venha com a proposta de correção.
+
+493
+00:35:25,768 --> 00:35:32,508
+É ideia que o código gerado, não tenha esse problema e até esse possível explicado.
+
+494
+00:35:32,508 --> 00:35:34,508
+está aqui a funcionalidade que pediu.
+
+495
+00:35:34,508 --> 00:35:38,648
+Não tem SQL Injection, não tem ASTOP10, não tem isso, não tem aquilo.
+
+496
+00:35:38,902 --> 00:35:48,562
+Exato, porque daí uma das preocupações que a tem remediação é, nós encontramos tardiamente
+a vulnerabilidade, então ali eu tenho impacto de no mínimo 4 horas por deve.
+
+497
+00:35:48,562 --> 00:35:58,462
+Só que depois que gente tem a vulnerabilidade encontrada, o deve tem todo o workflow dele
+de ver o que foi a vulnerabilidade, entender, ver como corrigir, corrigir e testar de
+
+498
+00:35:58,462 --> 00:35:59,302
+novo.
+
+499
+00:35:59,302 --> 00:36:01,165
+Que essa parte...
+
+500
+00:36:02,088 --> 00:36:05,248
+Pra deve ser menos, pra outro deve ser mais rápido.
+
+501
+00:36:05,248 --> 00:36:07,068
+E depende da vulnerabilidade.
+
+502
+00:36:07,853 --> 00:36:08,453
+Exatamente.
+
+503
+00:36:08,453 --> 00:36:23,053
+Então aqui onde está o trade-off é justamente assim, talvez eu aceite ficar 4, 5 ou 8
+horas do pipeline travado, só que troca já vem tudo corrigido.
+
+504
+00:36:23,253 --> 00:36:24,959
+Essa é a promessa.
+
+505
+00:36:25,231 --> 00:36:26,120
+É.
+
+506
+00:36:26,120 --> 00:36:28,040
+Não é a entrega.
+
+507
+00:36:28,177 --> 00:36:31,271
+gente precisava ainda ver a entrega.
+
+508
+00:36:31,271 --> 00:36:34,511
+fechado, mas o que o Benur traz é bem importante.
+
+509
+00:36:34,511 --> 00:36:42,351
+E também voltando aquele ponto inicial que o Benur trouxe, qual a chance do código quebrar
+com essa correção que a IA tá apresentando?
+
+510
+00:36:44,771 --> 00:36:46,691
+Exatamente isso que ia falar agora.
+
+511
+00:36:46,691 --> 00:36:51,451
+Você perde pra criar qualquer coisa, você tem que ficar corrigindo ali ó, CSS tá sendo
+aplicado.
+
+512
+00:36:51,451 --> 00:36:52,563
+Pluguei no tatal.
+
+513
+00:36:52,563 --> 00:36:58,268
+Mas vamos lá, eu trazer outro ponto pra gente caminhar pro final, que é o seguinte...
+
+514
+00:37:01,864 --> 00:37:15,184
+A gente está falando, pegou o exemplo do Artvart e outras, mas quando gente olha para a AI
+geral, gente vê tanto potencial para o ciclo de AppSec como todo, desde modelagem de
+
+515
+00:37:15,184 --> 00:37:24,104
+ameaças, até onde eu tenho requisito funcional simples, que é a matéria-prima do software,
+até essa aplicação em produção, funcionando onde eu tenho que monitorar ela real-time.
+
+516
+00:37:24,104 --> 00:37:26,624
+Então você tem os dois extremos.
+
+517
+00:37:26,624 --> 00:37:28,392
+Entre modelar ameaça...
+
+518
+00:37:28,392 --> 00:37:32,311
+ou pensar impossíveis ameaças de requisito funcional, que nem tenho software ainda.
+
+519
+00:37:32,311 --> 00:37:38,692
+E olhar essa aplicação depois produção tempo real, eu tenho um abismo aqui no meio.
+
+520
+00:37:38,792 --> 00:37:51,472
+E nesse meio, eu tenho todas as fases de desenvolvimento de software, acontece monte de
+coisa, eu tenho tempo X, tudo com relação à segurança neste miolo, vou dizer assim, a IA
+
+521
+00:37:51,472 --> 00:37:52,142
+pode ajudar.
+
+522
+00:37:52,142 --> 00:37:53,216
+Porque, por exemplo,
+
+523
+00:37:53,896 --> 00:38:02,736
+Uma coisa que o Ben Hur falou, você fez uma modelagem de ameaça, entendi o contexto da
+minha aplicação, aplicação financeira exposta para internet, tem dados sensíveis, blá,
+
+524
+00:38:02,736 --> 00:38:03,376
+blá, blá, beleza.
+
+525
+00:38:03,376 --> 00:38:04,676
+Esse é o contexto.
+
+526
+00:38:04,676 --> 00:38:09,416
+Agora eu tenho linhas de código associadas a esse contexto que podem me trazer problemas.
+
+527
+00:38:09,416 --> 00:38:10,376
+Perfeito.
+
+528
+00:38:10,376 --> 00:38:22,896
+Não só isso, eu posso ter um ambiente, a gente está falando de DAS, TIA, STP, Pentest, ter
+um ambiente que pode levar a uma exploração de uma falha que não está especificamente na
+
+529
+00:38:22,896 --> 00:38:24,104
+linha de código.
+
+530
+00:38:24,104 --> 00:38:29,664
+mas que pode me levar a ferir dos pilares de segurança dessa aplicação nesse contexto
+dado.
+
+531
+00:38:29,784 --> 00:38:40,243
+Eu posso ter ainda falhas no meu ambiente, no meu sistema operacional, que vão levar
+falhas a executar exploit, há um problema de vulnerabilidade na aplicação.
+
+532
+00:38:40,243 --> 00:38:49,984
+Então percebe que são vários pontos em que eu posso não ter uma vulnerabilidade no código,
+mas a hora que eu rodo essa aplicação num servidor específico, naquela versão
+
+533
+00:38:49,984 --> 00:38:50,920
+específica...
+
+534
+00:38:50,920 --> 00:38:51,980
+vai acontecer tal coisa.
+
+535
+00:38:51,980 --> 00:38:56,120
+Por isso que entra o DASH, isso que entra pen test, eu posso ter falhas de lógica.
+
+536
+00:38:56,120 --> 00:39:06,120
+Então quando eu estava falando no começo lá, soluções como ESPMs, exemplo, que usam as
+bases de AI que eles têm, porque ele pluga no teu ambiente, ele pluga no teu repositório
+
+537
+00:39:06,120 --> 00:39:14,160
+de código, ele pluga lá na tua API Gater, na tua cloud, ele pluga no teu servidor, no teu
+cluster Kubernetes e tal.
+
+538
+00:39:14,160 --> 00:39:16,180
+Então ele está olhando para tudo isso.
+
+539
+00:39:16,180 --> 00:39:18,720
+Quando ele acha um problema, ele consoli...
+
+540
+00:39:18,720 --> 00:39:19,432
+Por exemplo,
+
+541
+00:39:19,432 --> 00:39:25,112
+Tem uma secret exposta aqui no código, mas esse código não está exposto para internet.
+
+542
+00:39:25,512 --> 00:39:29,512
+Bom, beleza, tem um problema, mas tem problema mínimo.
+
+543
+00:39:29,512 --> 00:39:37,232
+Mas olha, essa secret, além de não estar exposta para internet, está exposta no código,
+mas é uma secret que a testou aqui, é uma chave do Google.
+
+544
+00:39:37,512 --> 00:39:41,612
+Testou, não está mais válida, o request falhou, a chave está inspirada.
+
+545
+00:39:41,612 --> 00:39:43,142
+Logo, precisava nem reportar.
+
+546
+00:39:43,142 --> 00:39:45,896
+Você pode reportar isso, mas não é nem alarde.
+
+547
+00:39:45,896 --> 00:39:54,996
+é diferente de, olha, você tem uma secret num código exposto num arquivo de configuração,
+numa aplicação exposta para internet, a secret está válida, tem permissão de leitura na
+
+548
+00:39:54,996 --> 00:40:00,476
+tua AWS, ou permissão de escrita na tua AWS, etc.
+
+549
+00:40:00,476 --> 00:40:07,576
+Então você vê que o contexto como todo ajuda e para eu chegar nessa resposta eu precisei
+integrar três, quatro, cinco lugares diferentes.
+
+550
+00:40:08,016 --> 00:40:14,496
+Aí sim é onde eu vejo o AppSec como uma área se beneficiando...
+
+551
+00:40:14,675 --> 00:40:16,756
+absurdamente de reais de uma maneira geral.
+
+552
+00:40:16,876 --> 00:40:19,796
+Já, como a gente falou, já tem soluções para a Saastia, tem soluções...
+
+553
+00:40:19,796 --> 00:40:26,796
+O SAA, acho que não é problema tão grande hoje, é muito mais caracrachá, ele mais fácil,
+entre aspas, mais fácil do que um Saastia.
+
+554
+00:40:26,796 --> 00:40:32,336
+Mas você vê que todo este contexto te dá uma assertividade maior.
+
+555
+00:40:32,596 --> 00:40:36,776
+O Benyur falou muito bem, o grande problema hoje de AppSec é a remediação.
+
+556
+00:40:36,776 --> 00:40:43,224
+Então se eu tenho soluções que me ajudam a consolidar tudo isso e me falar o que de fato
+eu preciso olhar para remediar...
+
+557
+00:40:43,524 --> 00:40:47,204
+vez de olhar para backlog de mil problemas, olha para backlog de 100 problemas.
+
+558
+00:40:47,204 --> 00:40:49,504
+De 50 problemas, de 10 problemas, entende?
+
+559
+00:40:49,504 --> 00:40:58,484
+Essa redução, ou essa contextualização eu diria que é ideia reduzir esse grande backlog
+olhando para cenário mais legado.
+
+560
+00:40:58,884 --> 00:41:00,604
+Aí sim está o ganho.
+
+561
+00:41:00,604 --> 00:41:07,484
+Aí não importa, vai demorar 8 horas, mas você vai sair de backlog de 10 mil
+vulnerabilidades para reporte de compliance para 50.
+
+562
+00:41:07,704 --> 00:41:10,364
+50, você vai lá e resolve, tá ligado?
+
+563
+00:41:10,364 --> 00:41:11,592
+Um backlog...
+
+564
+00:41:11,592 --> 00:41:15,792
+grande e garoto nem quer olhar, backlog irrasuável e as pessoas vão dedicar tempo nisso.
+
+565
+00:41:15,792 --> 00:41:30,372
+Então tem todo um, na minha visão AI, tem todo um, uma switch de ferramentas ou uma switch
+de capabilities que vai de fato ajudar a gente em app sector de uma maneira geral.
+
+566
+00:41:30,942 --> 00:41:36,243
+Só que eu ainda estou de acordo com o Ben Hur ali, com o que ele falou.
+
+567
+00:41:36,243 --> 00:41:39,063
+Boa parte dos problemas hoje é o Supply Chain.
+
+568
+00:41:39,063 --> 00:41:40,923
+Então código fonte pode ter problema?
+
+569
+00:41:40,923 --> 00:41:44,002
+Pode, vai sempre ter problema, isso é fato.
+
+570
+00:41:44,003 --> 00:41:48,183
+Só que hoje dia tá tudo Docker ali, tá tudo dockerizado.
+
+571
+00:41:48,183 --> 00:41:50,903
+Quem tá olhando essa imagem Docker ali?
+
+572
+00:41:50,903 --> 00:41:52,903
+A IA vai olhar isso?
+
+573
+00:41:52,903 --> 00:41:53,963
+Vai reportar?
+
+574
+00:41:53,963 --> 00:41:56,883
+Fala qual imagem vai estar menos vulnerável ou não?
+
+575
+00:41:57,363 --> 00:42:06,743
+Aí são higienes né, por exemplo, se a for pegar o modo agêntico de resolver as coisas, O
+que que tu faz?
+
+576
+00:42:06,743 --> 00:42:14,943
+Vamos lá, a gente tem a nossa aplicação, a nossa aplicação recebe um request com uma série
+de dados, o input tá?
+
+577
+00:42:14,943 --> 00:42:17,703
+Esse input é um gigapropt, beleza?
+
+578
+00:42:17,703 --> 00:42:18,823
+Vamos pensar assim.
+
+579
+00:42:18,823 --> 00:42:27,161
+Depois eu vou mandar isso para um cérebro, lá STK por exemplo, lá da OpenAI, GMA, o LLM
+que eu estou usando ali, beleza?
+
+580
+00:42:27,571 --> 00:42:39,531
+Esse cara eu posso plugar duas coisas nele, tool calling, que é ele poder chamar, eu deixo
+ele livre para ele chamar um método dentro da minha aplicação ou eu posso plugar mcp, que
+
+581
+00:42:39,531 --> 00:42:41,631
+daí eu vou fazer isso de forma externa.
+
+582
+00:42:42,351 --> 00:42:45,111
+Aí eu vou depender de engine, Marcos, bom ponto.
+
+583
+00:42:45,131 --> 00:42:53,911
+Cara, vou pegar, tem docker, manda para esse engine aqui, olha, voltamos ao modo
+tradicional de ter uma engine disk, entendeu?
+
+584
+00:42:53,911 --> 00:42:55,859
+Voltamos ao modo tradicional.
+
+585
+00:42:55,859 --> 00:42:58,399
+Depende de uma base externa de conhecimento, quê?
+
+586
+00:42:58,399 --> 00:43:02,179
+Porque tem duas coisas que gente não falou aqui.
+
+587
+00:43:02,179 --> 00:43:04,299
+Primeiro ponto...
+
+588
+00:43:04,299 --> 00:43:05,808
+Não, eu vou deixar a bomba agora.
+
+589
+00:43:05,808 --> 00:43:06,816
+deixo a bomba lá.
+
+590
+00:43:09,266 --> 00:43:11,074
+data de corte de treinamento.
+
+591
+00:43:11,823 --> 00:43:12,711
+O que?
+
+592
+00:43:13,202 --> 00:43:17,586
+Então, assim, a maioria do data de corte é três a seis meses.
+
+593
+00:43:19,558 --> 00:43:20,768
+Pode achar estranho, né?
+
+594
+00:43:20,768 --> 00:43:23,176
+Mas a gente não descobre vulnerabilidade a cada seis meses.
+
+595
+00:43:23,176 --> 00:43:24,996
+Poidze!
+
+596
+00:43:25,234 --> 00:43:41,354
+E a outra questão é a alucinação, que é problema global e quando você usa a engine para
+detectar e você usa a engine para responder, a alucinação é uma ameaça dentro da solução.
+
+597
+00:43:42,216 --> 00:43:50,208
+porque você vai ter também problemas de AI, de segurança, porque agora você está confiando
+alguém que vai corrigir seu código que também possa ter problemas.
+
+598
+00:43:50,546 --> 00:43:57,766
+Exatamente, então assim, quando a gente fala de, mas a NGINE executou isso aqui, isso aqui
+é falso positivo, a tem que corrigir a NGINE.
+
+599
+00:43:57,766 --> 00:43:58,546
+Não é com E.A.
+
+600
+00:43:58,546 --> 00:44:00,526
+que você vai resolver isso do dia pra noite.
+
+601
+00:44:00,526 --> 00:44:00,966
+A E.A.
+
+602
+00:44:00,966 --> 00:44:06,925
+também tem o problema da alucinação, Ela também tem problema de treinamento, né?
+
+603
+00:44:06,925 --> 00:44:11,212
+Ela também tem uma série de outros desafios, né?
+
+604
+00:44:11,212 --> 00:44:13,632
+Resumindo isso, ela também é software,
+
+605
+00:44:14,159 --> 00:44:15,463
+Mas até o meu...
+
+606
+00:44:16,274 --> 00:44:22,544
+IA é generativa por objetivo.
+
+607
+00:44:22,544 --> 00:44:25,854
+Ela serve para pegar coisas e girar coisas.
+
+608
+00:44:27,394 --> 00:44:30,094
+IA não é assertiva.
+
+609
+00:44:30,414 --> 00:44:32,674
+Então assim, ó, mas eu vou confiar.
+
+610
+00:44:32,674 --> 00:44:34,594
+Mas é só configurar a temperatura.
+
+611
+00:44:34,594 --> 00:44:39,518
+Pelo amor de Deus, quando você configura a temperatura, você diz qual vai ser a variância.
+
+612
+00:44:39,602 --> 00:44:41,062
+da resposta dela, né?
+
+613
+00:44:41,062 --> 00:44:44,222
+Se ela vai realmente, de fato, pegar o primeiro token que ela encontrar ou não.
+
+614
+00:44:44,222 --> 00:44:45,342
+Lembrando que se ela...
+
+615
+00:44:45,342 --> 00:44:47,422
+Ela é que nem, cara...
+
+616
+00:44:47,422 --> 00:44:48,122
+Cara, ela é que...
+
+617
+00:44:48,122 --> 00:44:51,382
+Desculpa a analogia, mas ela é que nem uma pessoa cega que não tem...
+
+618
+00:44:51,382 --> 00:44:52,722
+Que ela tem que decidir o caminho dela.
+
+619
+00:44:52,722 --> 00:44:58,512
+Se ela errar o primeiro passo, ela vai se basear no primeiro para dar o segundo, o segundo
+para dar o terceiro, o terceiro para dar o quarto.
+
+620
+00:44:58,512 --> 00:45:01,382
+Se ela está na direção errada, ela vai continuar errada, tá?
+
+621
+00:45:01,382 --> 00:45:05,362
+Então, a temperatura é o quanto ela é capaz de olhar assim.
+
+622
+00:45:05,362 --> 00:45:09,585
+Tá, eu vou usar primeiro esse token ou depois esse token ou depois esse aqui.
+
+623
+00:45:09,585 --> 00:45:11,525
+E ela vai ter essa variância.
+
+624
+00:45:11,525 --> 00:45:19,905
+assim, resumo, acho que esse modelo de tuto tem um agente para resolver os problemas de
+segurança e te entregar.
+
+625
+00:45:19,905 --> 00:45:20,965
+acho que ele...
+
+626
+00:45:20,965 --> 00:45:23,985
+Eu não vou dizer que ele é disruptivo, eu acho que ele é óbvio.
+
+627
+00:45:23,985 --> 00:45:28,445
+Eu acho que tem muitas empresas, muitas empresas já estão trabalhando nisso.
+
+628
+00:45:28,565 --> 00:45:32,825
+A diferença é...
+
+629
+00:45:32,825 --> 00:45:37,553
+Tem empresas que vão estar na frente porque elas já têm boas engines.
+
+630
+00:45:37,553 --> 00:45:51,893
+elas precisam integrar a inteligência artificial dentro das suas engines de forma
+assertiva, porque daí elas têm o custo operacional dela que já é controlado e ela pode
+
+631
+00:45:51,893 --> 00:45:59,553
+utilizar IA para fazer para ganhar o poder de potencializar suas próprias engines.
+
+632
+00:45:59,553 --> 00:46:02,479
+Lembrando que hoje o problema é remediação.
+
+633
+00:46:02,479 --> 00:46:03,064
+e
+
+634
+00:46:03,064 --> 00:46:10,164
+do parafrasear Capitão Nascimento quando ele falava o sistema trabalha para resolver os
+problemas do sistema.
+
+635
+00:46:14,524 --> 00:46:25,864
+É isso cara então boa eu acho que esse topo foi fantástico tem muita coisa para falar
+nesse tema inclusive com exemplos como soluções como a falou de soluções de mercado já
+
+636
+00:46:25,864 --> 00:46:30,888
+ajudando muito nisso a OpenAI agora lançando isso tem um peso obviamente muito grande.
+
+637
+00:46:30,888 --> 00:46:33,468
+Mas ela não é a primeira, já tem outros fazendo.
+
+638
+00:46:33,468 --> 00:46:39,288
+Talvez o peso que eles tenham gera uma expectativa grande.
+
+639
+00:46:39,668 --> 00:46:45,468
+Mas eu vejo muita gente ainda depositando todas as fichas na AI.
+
+640
+00:46:45,468 --> 00:46:52,808
+Porque vai gerar código mais rápido, porque eu posso mandar embora metade dos
+desenvolvedores, porque o meu custo vai ser mais baixo, não sei o Cara, mas não é simples
+
+641
+00:46:52,808 --> 00:46:53,688
+assim.
+
+642
+00:46:53,708 --> 00:46:56,868
+Então, é importantíssimo que a gente tome cuidado com isso.
+
+643
+00:46:58,108 --> 00:46:58,735
+Bom...
+
+644
+00:46:58,735 --> 00:46:59,655
+E aí
+
+645
+00:47:00,104 --> 00:47:03,544
+Jovens, muito bom tê-los aqui.
+
+646
+00:47:03,624 --> 00:47:08,484
+Dá pra falar de volta, gente fica uns espaços sem se ver, mas enfim.
+
+647
+00:47:08,484 --> 00:47:10,904
+De volta pra sétima temporada, na verdade.
+
+648
+00:47:10,904 --> 00:47:13,064
+Vida longa ao DevCop Podcast.
+
+649
+00:47:13,064 --> 00:47:19,754
+Com novos parceiros, lembrar da Nova 8, Purple Bird Security, Gold Security, Digital Oak e
+com o Viso.
+
+650
+00:47:19,754 --> 00:47:25,632
+Não se esqueça que os novos parceiros estão aqui não só pra nos apoiar, mas também pra...
+
+651
+00:47:26,144 --> 00:47:26,944
+apoiá-los.
+
+652
+00:47:26,944 --> 00:47:33,403
+Então caso precisem, caso necessitem de algum desses serviços especializados, não existe
+em contactá-los.
+
+653
+00:47:33,403 --> 00:47:34,356
+Pessoal!
+
+654
+00:47:36,431 --> 00:47:43,911
+Então isso podemos finalizar por hoje, que tem uma topíssima que o Benyur lembrou e trouxe
+pra gente.
+
+655
+00:47:43,911 --> 00:47:49,791
+Então, agradecer ao Benyur aí por trazer o tópico, foi muito bom, gostei bastante.
+
+656
+00:47:51,324 --> 00:47:52,215
+Fale.
+
+657
+00:47:52,215 --> 00:48:02,196
+Acho a ideia boa, mas eu acho que como os escala enterprise ali me preocupa.
+
+658
+00:48:02,196 --> 00:48:03,546
+Me preocupa muito.
+
+659
+00:48:03,546 --> 00:48:05,956
+Eu acho que as promessas estão muito altas.
+
+660
+00:48:05,956 --> 00:48:07,756
+Pegar uma problema que a gente comentou.
+
+661
+00:48:07,756 --> 00:48:10,216
+Ah cara, faz análise dinâmica.
+
+662
+00:48:10,216 --> 00:48:15,766
+Cara, todo mundo sabe hoje pra se fazer uma análise dinâmica numa aplicação, tem que
+colocar ela pra rodar e ela depende de outras 20 aplicações.
+
+663
+00:48:15,766 --> 00:48:17,327
+Como é que tu...
+
+664
+00:48:17,327 --> 00:48:22,507
+Cara, imagina que coisa linda, tu entrega set de repositórios e aprende a subir tudo do
+ambiente.
+
+665
+00:48:22,507 --> 00:48:25,927
+Nunca vai precisar de meio de alongação, ela sempre vai subir tudo zero.
+
+666
+00:48:26,087 --> 00:48:29,640
+Cara, sei lá, a promessa me preocupa demais, assim, sabe?
+
+667
+00:48:29,640 --> 00:48:34,160
+É a treta do teste unitário, galera, faz teste unitário, tá tudo verdinho e passou.
+
+668
+00:48:34,160 --> 00:48:35,727
+Você integra no ambiente, quebra tudo.
+
+669
+00:48:35,727 --> 00:48:48,387
+Pois é, ok, acho a ideia linda, mas eu tenho que entender o que é promessa, o que é jogo
+de palavras.
+
+670
+00:48:48,947 --> 00:48:50,747
+Fizemos análise dinâmica!
+
+671
+00:48:50,747 --> 00:48:52,057
+O que é análise dinâmica?
+
+672
+00:48:52,057 --> 00:48:55,567
+É só você perguntar para a Yalck para analisar o workflow de código?
+
+673
+00:48:56,407 --> 00:48:57,387
+Entendeu?
+
+674
+00:48:57,387 --> 00:48:58,007
+Sabe?
+
+675
+00:48:58,007 --> 00:49:02,587
+Acho que tem que entender o que está escrito por debaixo das palavras para entender bem o
+que está acontecendo.
+
+676
+00:49:03,847 --> 00:49:05,891
+Se não virou papo de venda.
+
+677
+00:49:06,600 --> 00:49:07,360
+Boa.
+
+678
+00:49:07,360 --> 00:49:11,640
+Não queremos papo de venda, queremos entrega.
+
+679
+00:49:12,720 --> 00:49:17,640
+Já estamos cheios de problemas, não queremos mais problema, queremos de fato solução.
+
+680
+00:49:17,820 --> 00:49:19,700
+Muito bem colocado.
+
+681
+00:49:19,700 --> 00:49:21,880
+Pessoal, acho foi isso no episódio de hoje.
+
+682
+00:49:21,880 --> 00:49:28,800
+Episódio 1 da sétima temporada, mas é o 180 e alguma coisa, da história deve ser qual
+podcast.
+
+683
+00:49:29,420 --> 00:49:31,360
+Nos vemos na próxima semana, com certeza.
+
+684
+00:49:31,360 --> 00:49:32,672
+Eu sou o Caso Pereira.
+
+685
+00:49:32,847 --> 00:49:33,807
+Eu sou Benhor.
+
+686
+00:49:33,807 --> 00:49:35,373
+E eu sou Marte Santos.
+
+687
+00:49:35,496 --> 00:49:36,446
+Boa gangue reunida.
+
+688
+00:49:36,446 --> 00:49:38,698
+É isso aí galera, valeu, beijos.
+
+689
+00:49:39,055 --> 00:49:41,441
+beijo de luz, falou
+
