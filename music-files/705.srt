@@ -1,0 +1,3379 @@
+1
+00:00:27,027 --> 00:00:29,817
+Olá pessoal, bem com vocês?
+
+2
+00:00:29,817 --> 00:00:33,887
+Sejam muito bem vindos a mais um episódio do Devisecops Podcast.
+
+3
+00:00:33,887 --> 00:00:46,927
+Eu sou o Cassio Pereira, o seu host, que vos apresenta mais uma vez o nosso podcast de
+segurança, mais especificamente segurança de aplicações, Devisecops, AppSec, a porra toda
+
+4
+00:00:46,927 --> 00:00:48,107
+relacionada a isso.
+
+5
+00:00:48,107 --> 00:00:55,443
+Hoje é episódio solo, porque o senhor Marcos está passeando, viajando pelo Brasil,
+enquanto o senhor Benyur...
+
+6
+00:00:55,443 --> 00:01:01,383
+trabalhando, ocupado e eu aqui vagabondiando, como sempre, para trazer esse conteúdo aqui
+para vocês.
+
+7
+00:01:01,383 --> 00:01:10,203
+Pessoal, hoje é episódio especial porque hoje a gente vai começar uma série que eu tenho
+muito orgulho, na verdade, que é a série do Iron Man.
+
+8
+00:01:10,203 --> 00:01:11,883
+Epsec Homem de Ferro.
+
+9
+00:01:11,883 --> 00:01:22,083
+Pois é, essa série que eu criei livro, escrevi livro que está disponível gratuitamente,
+não precisa pagar nada, não precisa botar e-mail lugar nenhum, se cadastrar, você vai lá e
+
+10
+00:01:22,083 --> 00:01:25,139
+baixa, casodeveloper.com.br, tá lá o livro.
+
+11
+00:01:25,139 --> 00:01:33,799
+só baixar e também tem apresentação né eu fiz toda uma apresentação a palestra baseada
+nesse conteúdo na verdade primeiro foi apresentação depois escrevi o livro né então tem
+
+12
+00:01:33,799 --> 00:01:41,759
+uma apresentação onde eu apresento diversos eventos inclusive há duas semanas atrás
+apresentei na b-side porto já apresentei na b-side cracov a b-side budapeste e outros
+
+13
+00:01:41,759 --> 00:01:51,435
+eventos ao redor do mundo inclusive b-side londres também então é alguns continentes aí
+que puderam ter alguns não né um continente né só na europa
+
+14
+00:01:51,539 --> 00:02:00,399
+onde puder não ter o prazer de poder ter acompanhado esse material que eu tenho muito
+orgulho e também apresentei no Brasil, obviamente.
+
+15
+00:02:00,399 --> 00:02:05,599
+Pessoal, antes de começar a nossa série, acho que vai ser dividida uns quatro ou cinco
+episódios.
+
+16
+00:02:06,019 --> 00:02:13,919
+É uma série solo, os meninos não vão participar, porque é conteúdo que eu fiz,
+praticamente está tudo na minha cabeça, e não é debate, não uma discussão, é simplesmente
+
+17
+00:02:13,919 --> 00:02:16,329
+que eu quero entregar esse conteúdo para vocês de uma outra forma.
+
+18
+00:02:16,329 --> 00:02:21,139
+Então já tem no formato livro, já tem no formato apresentação, palestra, slides, e
+agora...
+
+19
+00:02:21,139 --> 00:02:25,889
+é aqui no podcast também, num formato mais áudio e vídeo.
+
+20
+00:02:25,889 --> 00:02:26,889
+podem me ver.
+
+21
+00:02:26,889 --> 00:02:30,379
+Para quem está aí no YouTube, minha companhia pelo YouTube, podem ver o meu novo visual.
+
+22
+00:02:30,379 --> 00:02:34,139
+Eu não vou falar para você estar ouvindo no podcast, no Spotify, enfim.
+
+23
+00:02:34,139 --> 00:02:38,659
+Vai lá no YouTube e dá uma olhadinha no novo visual desse rosto que vos fala.
+
+24
+00:02:38,659 --> 00:02:47,639
+Pessoal, antes de começar o nosso episódio, vamos sempre lembrar que a Nova 8 é a
+distribuidora da SNIC e Checkmarks no Brasil.
+
+25
+00:02:47,639 --> 00:02:50,355
+Nova 8 que suporta aqui o Davi Secoast Podcast.
+
+26
+00:02:50,355 --> 00:02:52,115
+desde sempre.
+
+27
+00:02:52,115 --> 00:02:54,075
+Muito obrigado, Nova 8.
+
+28
+00:02:54,075 --> 00:02:58,315
+Purple Bird Security, que vai cuidar de você durante e depois de incidente.
+
+29
+00:02:58,315 --> 00:03:06,055
+Purple Bird também que tem nos suportado com a nossa grande parceria junto com nosso amigo
+Jefferson Macedo, que já gravou conosco aqui.
+
+30
+00:03:06,055 --> 00:03:15,675
+A Gold Security, com serviços especializados segurança de aplicações e a DigitalWalk, que
+tem portfólio completo para você, empresas lideradas por mim e o nosso grande Rodrigo
+
+31
+00:03:15,675 --> 00:03:16,211
+Balbino.
+
+32
+00:03:16,211 --> 00:03:19,971
+que também esteve conosco aqui durante algumas temporadas aqui no podcast.
+
+33
+00:03:19,971 --> 00:03:29,751
+E mais recentemente a Conviso, é especializada em segurança de aplicações, ela ajuda
+empresas que lidam com dados sensíveis como fintechs, bancos, healthtechs e plataformas
+
+34
+00:03:29,751 --> 00:03:35,231
+digitais a fortalecerem toda a gestão de segurança de software desde o desenvolvimento até
+a produção.
+
+35
+00:03:35,231 --> 00:03:41,191
+Então a Conviso do nosso grande amigo Wagner, que também nos apoia aqui no DevSecOps
+Podcast.
+
+36
+00:03:41,191 --> 00:03:43,383
+Pessoal, vamos lá, o negócio é o seguinte.
+
+37
+00:03:43,731 --> 00:03:46,771
+pra gente começar essa série aqui alto nível, né?
+
+38
+00:03:46,771 --> 00:03:48,791
+Primeiro, você vai baixar o livro, tá?
+
+39
+00:03:48,791 --> 00:04:00,811
+Você vai lá no meu site, cassodeveloper.com.br, vai ter lá uma sessão de projetos e tem lá
+a capa bem grande do Homem de Ferro, Literalmente aquele primeiro artefato que ele usa no
+
+40
+00:04:00,811 --> 00:04:05,091
+peito ali no primeiro filme, tá lá como capa do livro e você baixa.
+
+41
+00:04:05,091 --> 00:04:09,451
+Não precisa botar e-mail, não precisa se cadastrar, não precisa mandar mensagem, não
+precisa seguir ninguém, fazer nada.
+
+42
+00:04:09,451 --> 00:04:12,211
+Você vai lá e clica e baixa o PDF, tá?
+
+43
+00:04:12,211 --> 00:04:19,371
+Se meu site não for hackeado, não é vírus, pode baixar o PDF que tá tudo bem seguro, tá
+bom?
+
+44
+00:04:19,371 --> 00:04:28,851
+E esse livro tá português, com a grande colaboração da minha irmã Emily Silva, que
+traduziu o livro pra mim, porque em primeira versão eu escrevi esse livro inglês, tá?
+
+45
+00:04:28,851 --> 00:04:35,851
+Escrevi ele inglês e aí a minha irmã fez a tradução pra nós em português, facilita muito
+nosso trabalho, nossa escala aí, tá bom?
+
+46
+00:04:35,851 --> 00:04:40,499
+Então fica aí os créditos também pra nossa grande, que queremos aqui também no podcast,
+né?
+
+47
+00:04:40,499 --> 00:04:42,189
+minha irmã, Emily Silva.
+
+48
+00:04:42,189 --> 00:04:45,119
+E a irmã não é irmã, boca pra fora, não, é minha irmã mesmo, tá?
+
+49
+00:04:45,119 --> 00:04:47,519
+Que trabalha também com a gente na área de Epsec, tá bom?
+
+50
+00:04:47,519 --> 00:04:50,379
+Então, abraço aí pra ela e obrigado pela tradução.
+
+51
+00:04:50,659 --> 00:04:52,279
+Pessoal, então, assim, baixa o livro.
+
+52
+00:04:52,279 --> 00:04:53,319
+Primeira coisa, por quê?
+
+53
+00:04:53,319 --> 00:04:57,139
+Porque o livro vai ter muito mais detalhes do tudo que eu tô falando aqui pra vocês.
+
+54
+00:04:57,139 --> 00:05:02,379
+Que, obviamente, gente não vai conseguir cobrir tudo, especificamente, o livro vai te
+trazer muito mais detalhes.
+
+55
+00:05:02,379 --> 00:05:05,139
+Inclusive, no livro tem uns links a cada...
+
+56
+00:05:05,139 --> 00:05:10,339
+por cada parte do livro onde eu estou fazendo referência aos filmes e tal, eu trago o link
+da cena do filme.
+
+57
+00:05:10,339 --> 00:05:15,289
+Então você vai clicar, vai assistir a cena e tal, tem toda uma imersão diferente desse
+formato aqui.
+
+58
+00:05:15,289 --> 00:05:19,079
+Então o livro diria que é a sua primeira coisa que você tem que fazer.
+
+59
+00:05:19,079 --> 00:05:21,289
+Ai, Cassio, mas eu tenho preguiça de ler o livro, não sei o quê.
+
+60
+00:05:21,289 --> 00:05:23,739
+Então você desliga e sai fora e vai fazer outra coisa da sua vida.
+
+61
+00:05:23,739 --> 00:05:25,229
+Mas ainda assim você quer uma chance?
+
+62
+00:05:25,229 --> 00:05:31,401
+Tá bom, então você vai lá no castetvelover.com.br, barra, AppSec, tracinho, Iron Man.
+
+63
+00:05:32,211 --> 00:05:33,611
+Epsec, Tracinho, Aeroman.
+
+64
+00:05:33,611 --> 00:05:35,391
+E aí, camel case, né?
+
+65
+00:05:35,391 --> 00:05:38,171
+O A, o S maiúsculo, o I e o maiúsculo, tá?
+
+66
+00:05:38,171 --> 00:05:45,751
+Esse link é o link da apresentação que também tá inglês, breve vai ter português, mas
+ainda tá inglês, que é a apresentação que eu criei, foi a primeira coisa que eu fiz desse
+
+67
+00:05:45,751 --> 00:05:49,621
+projeto, Epsec, Aeroman, ou Epsec, Almeida de Inferno, foi essa apresentação.
+
+68
+00:05:49,621 --> 00:05:55,971
+Então eu criei os slides, criei a apresentação, criei a história e a narrativa pra
+apresentar isso em alguns eventos, algumas conferências aí.
+
+69
+00:05:55,971 --> 00:05:57,811
+Deu muito certo, tá dando muito certo.
+
+70
+00:05:57,811 --> 00:05:59,731
+e esse conteúdo foi a primeira coisa que eu fiz.
+
+71
+00:05:59,731 --> 00:06:01,891
+aí, conteúdo foi que eu escrevi o livro, né?
+
+72
+00:06:01,891 --> 00:06:06,231
+Resolvi colocar mais detalhes, mais informações lá, enfim, abrangei tudo que não cabe na
+palestra.
+
+73
+00:06:06,231 --> 00:06:11,071
+Na verdade, isso aqui vira uma palestra já de uma hora, duas horas e workshop de quatro
+horas, né?
+
+74
+00:06:11,071 --> 00:06:13,871
+Então, é conteúdo, é muita coisa, tem muita coisa mesmo.
+
+75
+00:06:13,871 --> 00:06:16,491
+Por isso que aqui no podcast a gente vai tentar, né?
+
+76
+00:06:16,711 --> 00:06:21,551
+Solver isso pra vocês quatro, cinco episódios, pra que vocês possam digerir isso, tá bom?
+
+77
+00:06:21,551 --> 00:06:23,635
+Mas vamos lá, então, você vai baixar o livro.
+
+78
+00:06:23,635 --> 00:06:24,455
+Tá?
+
+79
+00:06:24,455 --> 00:06:27,375
+E fica a vontade pra compartilhar esse livro com quem você quiser.
+
+80
+00:06:27,375 --> 00:06:31,515
+Baixa o PDF, no grupo do WhatsApp, manda por email, faz o que quiser, tá?
+
+81
+00:06:31,515 --> 00:06:33,295
+Não tem problema nenhum compartilhar.
+
+82
+00:06:33,295 --> 00:06:35,275
+Agora, você não pode modificar esse conteúdo, né?
+
+83
+00:06:35,275 --> 00:06:37,425
+Ele tem direitos autorais, eu que escrevi e tal, tal, tal.
+
+84
+00:06:37,425 --> 00:06:43,335
+Ele é gratuito, não precisa pagar nada, mas não vai me modificar, fazer bosta, né?
+
+85
+00:06:43,335 --> 00:06:44,825
+Use o negócio como deve ser usado.
+
+86
+00:06:44,825 --> 00:06:45,675
+É simples assim, tá?
+
+87
+00:06:45,675 --> 00:06:49,233
+É projeto gratuito, fica a vontade pra compartilhar com quem você quiser.
+
+88
+00:06:49,235 --> 00:06:51,735
+mas não modifique o conteúdo.
+
+89
+00:06:51,735 --> 00:06:54,615
+E se você quiser modificar o conteúdo, se inspirar nele, não tem problema.
+
+90
+00:06:54,615 --> 00:06:59,375
+Só botar meu nome lá, fala ó, fiz isso aqui inspirado no conteúdo desse original que é do
+caso.
+
+91
+00:06:59,375 --> 00:07:00,195
+Ponto final, tá bom?
+
+92
+00:07:00,195 --> 00:07:01,655
+Então não tem problema nenhum.
+
+93
+00:07:01,815 --> 00:07:04,195
+Agora, vamos lá, vamos começar.
+
+94
+00:07:04,195 --> 00:07:08,675
+Primeira coisa dessa apresentação é o primeiro tópico, gente fala de modelagem de ameaças.
+
+95
+00:07:08,675 --> 00:07:11,695
+É tópico que eu gosto muito, como vocês sabem.
+
+96
+00:07:11,855 --> 00:07:12,545
+Threat modeling.
+
+97
+00:07:12,545 --> 00:07:18,327
+Então esse será o nosso primeiro tema, nossa primeira discussão aqui no DevSecOps Podcast.
+
+98
+00:07:25,107 --> 00:07:26,857
+Boa, então a vinheta está funcionando.
+
+99
+00:07:26,857 --> 00:07:27,627
+Então, pessoal, vamos lá.
+
+100
+00:07:27,627 --> 00:07:29,567
+O que eu queria falar sobre modelagem de ameaças?
+
+101
+00:07:29,567 --> 00:07:34,007
+Na verdade, antes de entrar no tópico de fato, vamos lembrar do primeiro filme do Homem de
+Ferro.
+
+102
+00:07:34,007 --> 00:07:37,387
+Lá no primeiro filme do Homem de Ferro, ele tem ali...
+
+103
+00:07:37,387 --> 00:07:39,687
+Ele foi sequestrado, para quem não lembra.
+
+104
+00:07:39,687 --> 00:07:41,527
+Vale lembrar, isso aqui não é spoiler nem nada.
+
+105
+00:07:41,527 --> 00:07:44,167
+Os filmes já são relativamente antigos e tal.
+
+106
+00:07:44,167 --> 00:07:44,587
+enfim.
+
+107
+00:07:44,587 --> 00:07:47,167
+Se você não assistiu, se prepare para spoilers.
+
+108
+00:07:47,347 --> 00:07:50,167
+Se você não gosta, eu garanto que você vai gostar.
+
+109
+00:07:50,167 --> 00:07:53,971
+E se você gosta, eu garanto que você vai olhar com outros olhos agora e vai se apaixonar
+ainda mais.
+
+110
+00:07:53,971 --> 00:07:59,051
+pelos personagens, pelos filmes, enfim, e vai re-assistir agora com uma outra visão.
+
+111
+00:07:59,051 --> 00:08:01,231
+Eu sei que ferreir com sua vida, né?
+
+112
+00:08:01,231 --> 00:08:05,031
+Você vai gastar agora dois fim de semana e partir tudo de novo, mas tá bom, faz parte.
+
+113
+00:08:05,031 --> 00:08:07,751
+Bom, vamos lá, pessoal, então sem enrolação.
+
+114
+00:08:08,151 --> 00:08:11,031
+O primeiro filme do Homem de Ferro foi sequestrado.
+
+115
+00:08:11,291 --> 00:08:17,651
+Vale lembrar que o Tony Stark ele herdou do pai, o pai que é o Howard Stark.
+
+116
+00:08:17,651 --> 00:08:20,403
+O pai já tinha uma fábrica de armas, literalmente.
+
+117
+00:08:20,403 --> 00:08:25,743
+fez toda a fortuna ali dele fabricando armas e o Tony Stark herdou tudo isso e continuou
+ali fabricando armas.
+
+118
+00:08:25,783 --> 00:08:32,543
+E o Tony Stark, meio que inocente, não sabe que as armas dele estão sendo enviadas para o
+Black Market, vamos dizer assim.
+
+119
+00:08:32,543 --> 00:08:41,583
+Enfim, ele vai fazer uma apresentação lá no Oriente Médio de uns novos mísseis, que novo
+mísseis que tem uma propulsão diferente, uma forma de voar diferente, vamos dizer assim,
+
+120
+00:08:41,583 --> 00:08:43,803
+que inclusive vai ser usado na armadura dele.
+
+121
+00:08:43,803 --> 00:08:49,811
+E os terroristas que estão lá naquela região onde ele vai apresentar, sequestram ele
+porque querem que ele fabrique
+
+122
+00:08:49,811 --> 00:08:58,811
+e, obviamente, ilegalmente, mas quer que ele fabrique aqueles mísseis ali pra ele, que são
+os mísseis de última tecnologia e tal, pra que aqueles terroristas tenham uma vantagem.
+
+123
+00:08:58,811 --> 00:09:02,331
+E ele se recusa, obviamente, mas ele é sequestrado com este fim.
+
+124
+00:09:02,531 --> 00:09:10,271
+E aí, sequestrado dentro de uma caverna, ele não consegue ser encontrado, ele não consegue
+ser encontrado, na verdade não, ninguém consegue encontrá-lo, O governo americano junto
+
+125
+00:09:10,271 --> 00:09:17,611
+com o Coronel Rhodes, que eventualmente vai virar o patriota de fé, estão lá procurando
+ele, mas ele tá, obviamente, dentro de uma caverna irrastreável, não vão conseguir
+
+126
+00:09:17,611 --> 00:09:18,751
+encontrá-lo.
+
+127
+00:09:19,295 --> 00:09:21,115
+Ele, na caverna, pensa.
+
+128
+00:09:21,115 --> 00:09:22,195
+Poxa, cara.
+
+129
+00:09:22,215 --> 00:09:24,855
+Na verdade, ele tem companheiro lá que já está sequestrado também.
+
+130
+00:09:24,855 --> 00:09:27,815
+É tradutor, inclusive, dos idiomas que eles falam lá e tal.
+
+131
+00:09:27,815 --> 00:09:29,395
+Esqueci o nome do personagem agora.
+
+132
+00:09:29,395 --> 00:09:31,375
+Yen Sen, acho que é o Yen Sen.
+
+133
+00:09:31,375 --> 00:09:36,895
+Que ajuda o Tony Stark, coloca aquele ímã no peito dele, literalmente, para...
+
+134
+00:09:36,895 --> 00:09:40,735
+Os estilhaços da granada que explodiu perto dele vão para o coração dele, enfim.
+
+135
+00:09:40,735 --> 00:09:42,075
+Então aquilo ali mantém ele vivo.
+
+136
+00:09:42,075 --> 00:09:45,755
+E é o cara que salva a vida dele praticamente e dá uns conselhos ali para ele.
+
+137
+00:09:45,855 --> 00:09:48,371
+Enfim, vamos contextualizar aqui.
+
+138
+00:09:48,371 --> 00:09:51,781
+E aí nessa caverna ele já faz o primeiro trabalho de modelagem de ameaça.
+
+139
+00:09:51,781 --> 00:09:52,231
+Por quê?
+
+140
+00:09:52,231 --> 00:09:54,771
+Porque quando ele tá lá na caverna, ele...
+
+141
+00:09:54,771 --> 00:10:00,411
+Obviamente o filme não mostra isso, mas deixa muito claro, ele faz o seguinte, ele fala,
+pensa, eu preciso sair daqui.
+
+142
+00:10:00,411 --> 00:10:10,131
+Já tô aqui há uma semana, lá, não deixa muito claro quanto tempo ele tá ali, mas já vai lá
+alguns dias, Já tô aqui, o próprio colega dele lá da cela, de cela, com ele fala, cara,
+
+143
+00:10:10,131 --> 00:10:13,691
+vão construir, a gente vai construir o bíceps pra eles e eles vão nos matar, né?
+
+144
+00:10:13,691 --> 00:10:16,691
+E o Tony Stark fala, bom, então temos que fugir daqui, né?
+
+145
+00:10:16,691 --> 00:10:18,291
+Não vai ter jeito, não vão achar a gente.
+
+146
+00:10:18,291 --> 00:10:19,771
+A gente tem que fugir daqui.
+
+147
+00:10:19,771 --> 00:10:21,131
+Então tem trabalho de modelagem e ameaça.
+
+148
+00:10:21,131 --> 00:10:24,411
+Obviamente ele não tem muita opção, ele tem que fugir ou ele vai morrer.
+
+149
+00:10:24,591 --> 00:10:29,931
+Mas ele tem trabalho de ameaça, modelagem e ameaça no sentido de, é possível fugir daqui?
+
+150
+00:10:30,251 --> 00:10:31,241
+O que eu tenho aqui?
+
+151
+00:10:31,241 --> 00:10:33,831
+Bom, querem que eu construa míssil, então eu uma certa tecnologia.
+
+152
+00:10:33,831 --> 00:10:40,611
+Eu tenho aqui os próprios míssils que me deram pra desmontar e montar na escala que
+precisam lá.
+
+153
+00:10:40,611 --> 00:10:46,835
+Ele tem ali uma certas coisas, O pessoal até fala que ele tem uma caixa de sucatas ali na
+caverna.
+
+154
+00:10:46,835 --> 00:10:51,835
+Ele pede para os caras equipamento de solda, precisão, ferramenta disso, daquilo e outro.
+
+155
+00:10:51,835 --> 00:10:55,075
+Então ele tem ali uma série de equipamentos, mas obviamente limitado.
+
+156
+00:10:55,075 --> 00:10:58,295
+Não tem laboratório, tem tudo aquilo à disposição.
+
+157
+00:10:58,295 --> 00:11:02,954
+Ele tem ali uma caverna, o talento dele, todo conhecimento, ele é gênio.
+
+158
+00:11:02,954 --> 00:11:04,055
+E ponto.
+
+159
+00:11:04,175 --> 00:11:05,895
+Então ele faz uma modelagem de ameaça.
+
+160
+00:11:05,895 --> 00:11:07,005
+Qual é a modelagem de ameaça que ele faz?
+
+161
+00:11:07,005 --> 00:11:14,905
+Bom, com o que eu tenho aqui, é possível construir algo, uma arma, uma armadura, o que
+quer que seja, que vai me permitir fugir daqui?
+
+162
+00:11:15,027 --> 00:11:26,427
+Fugir significa sair da caverna, obviamente ir o mais longe possível, eventualmente não
+morrer, porque eu quero fugir e também ficar vivo, e pode ser que eu precise atacar, não
+
+163
+00:11:26,427 --> 00:11:31,787
+vamos simplesmente deixar eu passar pela porta e ir embora, eu vou precisar atacar porque
+vão atirar mim, então preciso me defender.
+
+164
+00:11:31,787 --> 00:11:43,647
+Então ele tem ali alguns objetivos, fugir, atacar eventualmente, não morrer, e olha que
+interessante, ele precisa pensar quais são as ameaças que estão aqui, as ameaças são
+
+165
+00:11:43,647 --> 00:11:44,371
+simples.
+
+166
+00:11:44,371 --> 00:11:46,091
+homens armados.
+
+167
+00:11:46,631 --> 00:11:49,451
+com o que eu tenho aqui, eu consigo lidar com esses homens armados?
+
+168
+00:11:49,451 --> 00:11:51,531
+E ele pensa, bom, sim, consigo.
+
+169
+00:11:51,531 --> 00:11:53,811
+Porque se não, gente, olha como é importante isso aqui.
+
+170
+00:11:53,811 --> 00:11:58,461
+Se ele pensa, não, o que eu construí aqui não vai ser suficiente pra eu fugir.
+
+171
+00:11:58,461 --> 00:12:02,991
+Então não vale a pena a construção, porque eu só vou gastar tempo e energia e vou morrer
+do mesmo jeito.
+
+172
+00:12:02,991 --> 00:12:06,131
+Agora, é viável o meu projeto?
+
+173
+00:12:06,131 --> 00:12:07,371
+Ele é viável a ponto de pé?
+
+174
+00:12:07,371 --> 00:12:10,971
+Eu vou conseguir conter as minhas ameaças, estar protegido e fugir no final?
+
+175
+00:12:10,971 --> 00:12:12,883
+Sim, as chances são boas.
+
+176
+00:12:12,883 --> 00:12:14,923
+ele ainda toma tiro de raspão.
+
+177
+00:12:14,923 --> 00:12:18,963
+Para quem não lembra, na hora que ele sai da caverna, ele toma tiro de raspão na perna.
+
+178
+00:12:18,963 --> 00:12:24,883
+Passa ali até a joelha, com a armadura dele, enfim, mas ele eventualmente consegue fugir.
+
+179
+00:12:24,883 --> 00:12:26,963
+Então, perfeito, ele fez trabalho de modelagem de ameaça.
+
+180
+00:12:26,963 --> 00:12:31,583
+E aí, eu já gosto de falar para a gente que o seguinte, a modelagem de ameaça, gente, ela
+não é nada demais.
+
+181
+00:12:31,583 --> 00:12:36,743
+Ela é uma metodologia, um framework, jeito de fazer as coisas.
+
+182
+00:12:36,763 --> 00:12:40,123
+jeito de fazer algo específico nesse contexto de modelagem de ameaça.
+
+183
+00:12:40,223 --> 00:12:42,219
+Eu sempre gosto de falar que assim...
+
+184
+00:12:42,259 --> 00:12:48,659
+é jeito de você identificar possíveis situações de ataques a sistema ou parte dele.
+
+185
+00:12:48,659 --> 00:12:50,169
+Por que possíveis situações de ataque?
+
+186
+00:12:50,169 --> 00:12:53,019
+Porque não é real ainda.
+
+187
+00:12:53,019 --> 00:13:00,119
+O próprio Amigo de Ferro tá na caverna, pensa, vou construir uma armadura que vai ser a
+prova de balas porque vão tentar atirar mim, eu vou precisar voar pra sair o mais longe
+
+188
+00:13:00,119 --> 00:13:03,669
+possível, vou ter lança-chamas pra poder atacar, blá blá blá, beleza.
+
+189
+00:13:03,669 --> 00:13:04,839
+Mas tudo isso tá acontecendo?
+
+190
+00:13:04,839 --> 00:13:11,891
+Não, ele tá planejando, ele tá pensando em possíveis situações, vão atirar mim, vão tentar
+me parar.
+
+191
+00:13:11,891 --> 00:13:13,551
+Eu preciso que isso seja a prova de bala.
+
+192
+00:13:13,551 --> 00:13:15,541
+Então veja, qual é a ameaça?
+
+193
+00:13:15,541 --> 00:13:16,671
+Vão me dar tiro.
+
+194
+00:13:16,671 --> 00:13:17,701
+Como que eu me protejo?
+
+195
+00:13:17,701 --> 00:13:19,761
+Eu preciso ter um colete a prova de bala.
+
+196
+00:13:19,761 --> 00:13:23,251
+ter uma armadura, algo que seja capaz de parar um tiro.
+
+197
+00:13:23,251 --> 00:13:24,431
+É simples assim.
+
+198
+00:13:24,431 --> 00:13:30,851
+Então é essa possibilidade de uma situação, nesse caso, a possibilidade de tomar tiro e eu
+preciso me proteger disso.
+
+199
+00:13:30,851 --> 00:13:32,161
+Então isso é uma modelagem de ameaça.
+
+200
+00:13:32,161 --> 00:13:36,671
+De fato, você pensar possíveis situações de ataque a sistema a partir dele.
+
+201
+00:13:36,671 --> 00:13:38,419
+E eu sempre gosto de dizer o seguinte.
+
+202
+00:13:38,419 --> 00:13:43,899
+A modelagem ameaças é a arte de encontrar problemas mesmo antes do software existir.
+
+203
+00:13:43,899 --> 00:13:44,859
+Por que?
+
+204
+00:13:44,859 --> 00:13:48,639
+Porque eu não preciso de um software pra fazer modelagem ameaça num software.
+
+205
+00:13:48,639 --> 00:13:50,159
+Eu preciso dos...
+
+206
+00:13:50,159 --> 00:13:51,339
+dos...
+
+207
+00:13:51,339 --> 00:13:52,199
+DOS...
+
+208
+00:13:52,199 --> 00:13:54,398
+Requisitos funcionais.
+
+209
+00:13:54,398 --> 00:13:56,072
+Pra você que não sabe...
+
+210
+00:14:02,899 --> 00:14:09,599
+Pra você que não sabe, o requisito funcional é a matéria prima do software.
+
+211
+00:14:09,819 --> 00:14:16,839
+Assim como um móvel é feito de madeira, assim como o carro é feito do ferro, do metal, do
+alumínio, você tem uma matéria prima ali.
+
+212
+00:14:16,839 --> 00:14:21,159
+Então, vamos pegar o exemplo de guarda-roupa de madeira.
+
+213
+00:14:21,159 --> 00:14:31,419
+Vem lá a madeira da floresta, ela é tratada, ela vai passar por processador de corte, de
+limpeza, de lixamento, sei lá o quê, e vai virar uma peça que eventualmente depois vai
+
+214
+00:14:31,419 --> 00:14:33,067
+virar o guarda-roupa.
+
+215
+00:14:33,254 --> 00:14:37,435
+Eu não tiro a árvore da floresta e transformo no guarda-roupa imediatamente.
+
+216
+00:14:37,435 --> 00:14:39,195
+Eu preciso que essa madeira seja trabalhada.
+
+217
+00:14:39,195 --> 00:14:42,395
+A matéria-prima crua, bruta, ela não tá pronta.
+
+218
+00:14:42,395 --> 00:14:46,535
+Eu preciso de preparo, ainda que ela tenha essa matéria-prima já de uma certa qualidade.
+
+219
+00:14:46,535 --> 00:14:51,135
+Até pensar como plantar essa árvore, a melhor espécie da madeira, aquela coisa toda.
+
+220
+00:14:51,135 --> 00:14:54,535
+Então, você entendeu a analogia aqui.
+
+221
+00:14:54,535 --> 00:15:01,941
+O fato é, a matéria-prima do software, é o requisito funcional,
+
+222
+00:15:01,971 --> 00:15:07,151
+ele precisa ser melhor trabalhado, ou seja, eu não pego requisito funcional e falo, eu
+preciso de uma tela de login.
+
+223
+00:15:07,211 --> 00:15:14,971
+Não, eu falo, olha, eu preciso de uma tela de login, usuárias sem, são dados sensíveis,
+então precisam estar criptografados, eu preciso de CAPT para evitar o número de forças, eu
+
+224
+00:15:14,971 --> 00:15:22,991
+preciso validar esses inputs para evitar injections e coisas do tipo, eu preciso de log a
+cada tentativa de login, é log de auditoria para ver quem está logando e quem não está
+
+225
+00:15:22,991 --> 00:15:30,227
+logando, essa tentativa de login foi com sucesso e com erro, eu preciso que esses logs
+sejam alertados eventualmente caso...
+
+226
+00:15:30,227 --> 00:15:34,747
+Tenham muitos logs de insucesso sequenciais, enfim.
+
+227
+00:15:34,747 --> 00:15:40,067
+Então eu estou melhorando a minha matéria-prima, que é o meu requisito funcional, para
+melhorar, obviamente, o meu produto final.
+
+228
+00:15:40,067 --> 00:15:50,567
+Então se essa matéria-prima está bem melhorada, matéria-prima bruta, eu vou trabalhando e
+melhorando ela, a tendência é que o meu produto final tenha uma melhor qualidade.
+
+229
+00:15:50,767 --> 00:15:54,007
+Então nesse contexto aqui, arte de encontrar problemas antes do software existir é.
+
+230
+00:15:54,007 --> 00:15:58,323
+Porque eu não preciso de código para fazer mandala de EMA, eu preciso do requisito
+funcional, eu só preciso da matéria-prima.
+
+231
+00:15:58,323 --> 00:16:05,023
+que é uma tarea-prima, é nela que eu vou falar, tá, você fez uma tela de login, mas eu
+posso fazer injection, eu posso fazer brute force, percebe?
+
+232
+00:16:05,023 --> 00:16:09,523
+Ah, você tem cadastro, então eu posso manipular os dados, eu posso fazer tampering,
+percebe?
+
+233
+00:16:09,523 --> 00:16:14,723
+Então eu só preciso do requisito funcional pra fazer essa modelagem de ameaça, tá bom?
+
+234
+00:16:14,723 --> 00:16:24,123
+E aí, repetindo pouco do que eu falei, o Homem de Ferro já tinha alguns objetivos pra
+fugir da caverna, escapar, ir o mais longe possível, obviamente não adiantava só sair da
+
+235
+00:16:24,123 --> 00:16:26,893
+caverna, não morrer e eventualmente atacar.
+
+236
+00:16:26,893 --> 00:16:27,667
+E aí...
+
+237
+00:16:27,667 --> 00:16:37,187
+Ele fez a armadura, o Mark 1 fez a primeira armadura, fugiu da caverna, matou alguns
+terroristas, tomou tiro, enroscou o braço dele uma hora.
+
+238
+00:16:37,187 --> 00:16:47,397
+Se a lembrar daquela cena, enroscou o braço dele uma hora, ele consegue sair, cara vem,
+inclusive, dá tiro, queima a roupa nele e a bala recocheteia, recocheteia, recocheteia,
+
+239
+00:16:47,397 --> 00:16:50,587
+não sei como fala essa palavra, e mata o próprio cara.
+
+240
+00:16:51,107 --> 00:16:57,043
+Acontece algumas coisas, tem lança-chamas que vai queimar tudo, explode os caras, enfim,
+consegue voar.
+
+241
+00:16:57,043 --> 00:17:02,643
+Isso aí, quando ele voa, inclusive, que ele cai, a armadura se despedaça, era a única
+chance que ele tinha.
+
+242
+00:17:02,643 --> 00:17:03,773
+Beleza, deu tudo certo.
+
+243
+00:17:03,773 --> 00:17:05,423
+E qual que é a importância aqui?
+
+244
+00:17:05,423 --> 00:17:08,723
+Ele fez o melhor que podia com o material que ele tinha.
+
+245
+00:17:08,723 --> 00:17:12,943
+Quer dizer que essa armadura seria suficiente para lutar com Thanos, eventualmente, no
+futuro?
+
+246
+00:17:12,943 --> 00:17:13,723
+Não.
+
+247
+00:17:13,723 --> 00:17:15,403
+De jeito nenhum.
+
+248
+00:17:15,603 --> 00:17:20,443
+Ela seria suficiente para lutar depois com o próprio Capitão América, no Guerra Civil,
+quando eles tem desentendimento?
+
+249
+00:17:20,443 --> 00:17:21,243
+Não.
+
+250
+00:17:21,243 --> 00:17:25,783
+Vingadores 1, quando ele tem uma certa briguinha com o Thor.
+
+251
+00:17:26,035 --> 00:17:31,235
+O Thor dá relâmpago nele, se fosse com essa armadura aqui ele morria, ele iria ter
+trocutado, explodia.
+
+252
+00:17:31,235 --> 00:17:32,075
+Simples assim.
+
+253
+00:17:32,075 --> 00:17:38,035
+Então não, essa armadura não é a melhor armadura do mundo, ela não é suficiente para
+qualquer ameaça que viria futuramente.
+
+254
+00:17:38,035 --> 00:17:42,055
+Mas para aquele momento ela era suficiente.
+
+255
+00:17:42,215 --> 00:17:50,475
+Na conta, ele toma tiro de raspão, enrosca a armadura, mas ele consegue voar, escapa da
+caverna, o objetivo foi cumprido com sucesso.
+
+256
+00:17:50,475 --> 00:17:52,815
+E eventualmente ele vai ser resgatado.
+
+257
+00:17:52,815 --> 00:17:54,347
+Então, gente, é assim.
+
+258
+00:17:54,675 --> 00:17:56,955
+Desenvolvimento software, como que a gente faz hoje?
+
+259
+00:17:57,035 --> 00:18:00,275
+Tá sendo pensado algum possível ameaça?
+
+260
+00:18:00,275 --> 00:18:02,795
+Tá sendo de fato pensado segurança?
+
+261
+00:18:03,475 --> 00:18:10,155
+Ou você tá pensando fazer refactoring, melhor código performático, usar melhor biblioteca
+possível, pra quê?
+
+262
+00:18:10,355 --> 00:18:13,655
+Só porque você quer uma decisão de ego?
+
+263
+00:18:13,655 --> 00:18:23,935
+Por uma decisão de negócio que não foi, eu tenho certeza, que CEO da empresa não falou,
+não, olha só, preciso que você agora, esse código precisa estar aplicando os princípios de
+
+264
+00:18:23,935 --> 00:18:24,627
+solid.
+
+265
+00:18:24,627 --> 00:18:26,187
+de arquitetura de software.
+
+266
+00:18:26,187 --> 00:18:29,307
+Não, não, esse código agora precisa refatorar o código.
+
+267
+00:18:29,307 --> 00:18:32,207
+ele tá funcionando a funcionalidade que eu preciso.
+
+268
+00:18:32,207 --> 00:18:33,787
+Tá, ponto.
+
+269
+00:18:33,887 --> 00:18:35,467
+É isso que o business ped.
+
+270
+00:18:35,587 --> 00:18:42,247
+Então, muitas vezes a negligencia a segurança por opção ou por falta de conhecimento.
+
+271
+00:18:42,247 --> 00:18:43,527
+Pode ser também.
+
+272
+00:18:43,527 --> 00:18:45,287
+Mas vamos lá, voltando ao tópico.
+
+273
+00:18:45,287 --> 00:18:48,847
+Então, a modelagem ameaças, eu sempre gosto de falar o seguinte também, gente.
+
+274
+00:18:48,847 --> 00:18:52,207
+Eu vou aplicar lá onde há risco significante de segurança.
+
+275
+00:18:52,207 --> 00:18:54,425
+Não precisa aplicar a modelagem ameaças a tudo.
+
+276
+00:18:54,643 --> 00:18:58,303
+Porque senão eu viro software que eu nunca mais paro de desenvolver.
+
+277
+00:18:58,303 --> 00:19:00,603
+Na verdade eu nunca mais finalizo.
+
+278
+00:19:00,603 --> 00:19:04,483
+Porque eu vou parar de fazer modelagem de ameaças e cada requisito vira negócio absurdo.
+
+279
+00:19:04,483 --> 00:19:06,783
+Porque a modelagem de ameaças é trabalho empírico, trabalho manual.
+
+280
+00:19:06,783 --> 00:19:09,163
+Eu preciso dedicar tempo naquilo.
+
+281
+00:19:09,523 --> 00:19:11,933
+Não tem ferramenta que aperta o botão e ela faz para mim.
+
+282
+00:19:11,933 --> 00:19:13,223
+Então eu vou precisar dedicar tempo nisso.
+
+283
+00:19:13,223 --> 00:19:16,963
+O que quer dizer que a modelagem de ameaças toma tempo?
+
+284
+00:19:17,163 --> 00:19:20,803
+Isso acaba atrapalhando pouco a própria aplicação da modelagem de ameaças.
+
+285
+00:19:20,803 --> 00:19:22,423
+Por isso que eu gosto de dizer o seguinte.
+
+286
+00:19:22,423 --> 00:19:24,787
+Não faz modelagem de ameaças no seu sistema inteiro.
+
+287
+00:19:24,787 --> 00:19:28,227
+faz modelagem de ameaça onde há risco significante de segurança.
+
+288
+00:19:28,647 --> 00:19:30,447
+Homem de Ferro nos mostrou isso já.
+
+289
+00:19:30,447 --> 00:19:36,987
+Ele fez uma armadura que protege a vida dele e permite que ele escape e ataque
+eventualmente.
+
+290
+00:19:36,987 --> 00:19:40,647
+Ele conseguiria voar por uma hora, atingir velocidade supersônica?
+
+291
+00:19:40,647 --> 00:19:41,106
+Não.
+
+292
+00:19:41,106 --> 00:19:42,237
+A armadura era bonita?
+
+293
+00:19:42,237 --> 00:19:43,127
+Não.
+
+294
+00:19:43,127 --> 00:19:44,377
+Tinha cores, Não.
+
+295
+00:19:44,377 --> 00:19:46,037
+Tinha tecnologia, inteligência artificial?
+
+296
+00:19:46,037 --> 00:19:46,267
+Não.
+
+297
+00:19:46,267 --> 00:19:47,347
+Tinha nada disso.
+
+298
+00:19:47,347 --> 00:19:50,627
+Era uma armadura à prova de balas que permitia ele voar por 15 minutos.
+
+299
+00:19:50,627 --> 00:19:51,047
+15 minutos?
+
+300
+00:19:51,047 --> 00:19:51,167
+Não.
+
+301
+00:19:51,167 --> 00:19:52,339
+Acho que ele voa por...
+
+302
+00:19:52,339 --> 00:20:00,978
+alguns minutos, ela funciona por 15 minutos no total, inclusive ele fala isso né, precisa
+de algo que funcione por 15 minutos no total, 15 ou 20 minutos enfim.
+
+303
+00:20:01,639 --> 00:20:11,079
+Então essa é ideia de modelagem e ameaça, o quão eu preciso proteger esse software, o
+quanto eu preciso proteger esse software das ameaças reais, ameaças que podem me trazer
+
+304
+00:20:11,079 --> 00:20:19,599
+impacto, porque ameaça gente, vocês vão ter infinitas ameaças, a gente pode ficar fazendo
+modelagem e ameaça o resto da nossa vida numa API única com endpoint só, você vai achar
+
+305
+00:20:19,599 --> 00:20:20,979
+diversos problemas.
+
+306
+00:20:20,979 --> 00:20:28,519
+Mas quais deles vão nos trazer impacto real de, olha, cara, isso aqui acaba com a empresa,
+isso aqui fecha o negócio, isso aqui vaza dados sensíveis.
+
+307
+00:20:28,519 --> 00:20:36,039
+Do que, olha, isso aqui é um cross-site scripting que não leva nada a lugar nenhum, não
+tem impacto nenhum.
+
+308
+00:20:36,039 --> 00:20:40,439
+Então não vamos preocupar, ainda que tenha uma vulnerabilidade lá, não vamos preocupar.
+
+309
+00:20:40,439 --> 00:20:44,799
+É igual falar pra você, olha, gente, é o seguinte, uma vez por ano você vai pegar gripe.
+
+310
+00:20:44,799 --> 00:20:45,369
+Beleza.
+
+311
+00:20:45,369 --> 00:20:47,379
+Você vai viver numa bolha?
+
+312
+00:20:47,379 --> 00:20:48,331
+Não.
+
+313
+00:20:48,371 --> 00:20:51,111
+Você vai pegar gripe, vai tomar aspirina e vai ficar tudo bem.
+
+314
+00:20:51,111 --> 00:20:57,221
+Você sabe o impacto, um dia de cama, seja, ou dia mais febre e tal, acabou, cega a vida.
+
+315
+00:20:57,221 --> 00:20:59,301
+Você vai pegar gripe o resto da sua vida até morrer.
+
+316
+00:20:59,301 --> 00:21:00,331
+É muito provável.
+
+317
+00:21:00,331 --> 00:21:07,571
+Agora, quando você é criança, quando você é melhor idade, quando você é falidoso e tal,
+tende a ter um risco pouco maior.
+
+318
+00:21:07,571 --> 00:21:09,371
+Aí a gente se protege pouco mais.
+
+319
+00:21:09,371 --> 00:21:11,851
+Um pouco mais, porque a gripe já é natural.
+
+320
+00:21:11,851 --> 00:21:16,551
+Agora, se você voltar alguns anos atrás e falar, olha, você vai pegar Covid.
+
+321
+00:21:16,551 --> 00:21:17,971
+Opa, pera, não.
+
+322
+00:21:17,971 --> 00:21:20,891
+Vamos ficar casa, o hospital está lotado, tal, tal, tal.
+
+323
+00:21:20,891 --> 00:21:22,581
+Então eu preciso me proteger.
+
+324
+00:21:22,581 --> 00:21:28,251
+Ficar casa, usando uma boa dose aí do que foi falado.
+
+325
+00:21:28,251 --> 00:21:31,491
+Não que eu concorde ou não concorde, tanto faz a minha opinião, na verdade.
+
+326
+00:21:31,491 --> 00:21:33,111
+Só dizendo alguns exemplos aqui.
+
+327
+00:21:33,111 --> 00:21:35,971
+Então, cara, vamos pegar ebola.
+
+328
+00:21:35,971 --> 00:21:39,451
+Não, espera, não vou sair na rua, não vou encostar nisso aqui porque eu vou pegar ebola.
+
+329
+00:21:39,451 --> 00:21:40,811
+Enfim, vocês entenderam.
+
+330
+00:21:40,811 --> 00:21:45,901
+Então você vai ter um momento onde você precisa se preocupar, de fato, segurança, numa
+profundidade maior.
+
+331
+00:21:45,901 --> 00:21:48,255
+E você vai ter momentos que não fazem sentido.
+
+332
+00:21:48,275 --> 00:21:55,675
+Simples assim, a gente está fazendo uma API interna que chama o serviço A para pegar a
+informação e mandar no serviço B.
+
+333
+00:21:55,675 --> 00:22:01,135
+E é uma informação não sensível, não tem dados alevantos, tem dados de pagamento, é dado
+transacional.
+
+334
+00:22:01,295 --> 00:22:04,515
+Não precisa ter autenticação, criptografia, WAF?
+
+335
+00:22:04,635 --> 00:22:05,715
+Não.
+
+336
+00:22:05,875 --> 00:22:11,095
+Talvez uma autenticação ali para garantir que o serviço está chamando outro ponto para
+evitar problema interno eventualmente.
+
+337
+00:22:11,095 --> 00:22:16,753
+assim, percebe que é diferente de eu falar, olha, cara, tem uma tela de login do meu
+sistema principal.
+
+338
+00:22:17,171 --> 00:22:20,951
+Olha, estou banco aqui, porra, nem se compara.
+
+339
+00:22:21,551 --> 00:22:28,991
+E eu sempre gosto de falar o seguinte, fazer modelagem de ameaças para você não passar a
+vida fazendo, faz no nível mais granular possível.
+
+340
+00:22:28,991 --> 00:22:36,251
+O mais granular possível, na minha visão, é você não precisa quebrar nível de método,
+componente, mas pega requisito funcional.
+
+341
+00:22:36,251 --> 00:22:37,931
+Pega requisito funcional.
+
+342
+00:22:37,931 --> 00:22:39,391
+Eu tenho lá crude.
+
+343
+00:22:39,451 --> 00:22:42,331
+Create, nem lembro o crude agora em inglês.
+
+344
+00:22:42,331 --> 00:22:46,579
+Create, retrieve, update, delete.
+
+345
+00:22:46,579 --> 00:22:50,119
+Beleza, então tem crude, eu tenho quatro requisitos funcionais.
+
+346
+00:22:50,419 --> 00:22:55,739
+Criar dados, buscar dados, atualizar esses dados e deletar esses dados.
+
+347
+00:22:57,519 --> 00:23:00,069
+nesses quatro, o que é mais crítico para mim?
+
+348
+00:23:00,069 --> 00:23:02,608
+Vamos lá, estou falando de dados sensíveis?
+
+349
+00:23:02,608 --> 00:23:03,859
+Então os quatro são sensíveis.
+
+350
+00:23:03,859 --> 00:23:05,679
+Agora, não é dado sensível.
+
+351
+00:23:05,679 --> 00:23:12,539
+Então entre ler as informações, até criar informação nova, nem se comparar, apagar os
+dados.
+
+352
+00:23:12,539 --> 00:23:13,479
+Percebe?
+
+353
+00:23:13,479 --> 00:23:15,039
+Ou atualizar os dados.
+
+354
+00:23:15,039 --> 00:23:16,259
+Integridade.
+
+355
+00:23:16,570 --> 00:23:17,631
+confidencialidade.
+
+356
+00:23:17,631 --> 00:23:24,091
+Então esses dois pilares de segurança talvez sejam ainda mais importantes, eu diria, do
+que a própria disponibilidade.
+
+357
+00:23:24,091 --> 00:23:26,051
+Estou jogando aqui, tá, gente?
+
+358
+00:23:26,791 --> 00:23:33,971
+Então, numa classificação, o deletar dados talvez seja mais importante do que o criar os
+dados.
+
+359
+00:23:33,971 --> 00:23:36,731
+E ainda mais importante do que o buscar os dados.
+
+360
+00:23:36,731 --> 00:23:41,791
+Não tão consequencial como o atualizar os dados.
+
+361
+00:23:41,791 --> 00:23:42,911
+Então vocês entenderam.
+
+362
+00:23:42,911 --> 00:23:45,271
+É como se eu falasse assim, olha, gente, vamos lá.
+
+363
+00:23:46,062 --> 00:23:51,943
+Eu tenho aplicações externas que estão olhando para internet, meu usuário precisa só te
+indicar, tem informação sensível aqui.
+
+364
+00:23:51,943 --> 00:24:03,923
+E eu tenho aplicações de back office que são transacionais, que são só acessadas via VPN,
+estão atrás de um firewall, então eu tenho uma exposição menor.
+
+365
+00:24:03,923 --> 00:24:09,683
+Então a tendência de eu ter umas perfis de ataque é menor do que o que está exposto para
+internet, só para vocês entenderem.
+
+366
+00:24:09,683 --> 00:24:13,971
+Ou seja, vai fazer modelagem ameaças, pega cada requisito funcional,
+
+367
+00:24:13,971 --> 00:24:19,391
+classifica ele no nível de criticidade para o seu business, o que pode trazer impacto
+real.
+
+368
+00:24:19,651 --> 00:24:22,151
+é esses caras que você vai aplicar, lá de ameaça.
+
+369
+00:24:22,151 --> 00:24:23,191
+Beleza?
+
+370
+00:24:23,671 --> 00:24:34,851
+No Homem de Ferro, ou, aliás, o Homem de Ferro Tony Stark, numa conversa com o Bruce
+Banner, que é o Hulk, eles falam desta conversa, mas não tem tanto detalhe, mas eles falam
+
+371
+00:24:34,851 --> 00:24:35,511
+desta conversa.
+
+372
+00:24:35,511 --> 00:24:41,111
+Olha, o Tony Stark junto com o Hulker criaram a Veronica, ou a Hulkbuster.
+
+373
+00:24:41,299 --> 00:24:45,399
+que é aquela armadura gigante, linda, maravilhosa, para conter o Hulk.
+
+374
+00:24:45,399 --> 00:24:52,329
+Até então, essa cena, inclusive, Vingadores 2 era de Ultron, onde o Hulk, nada para o Hulk
+até então.
+
+375
+00:24:52,329 --> 00:24:55,459
+É uma ameaça, a maior ameaça que temos, vamos dizer assim.
+
+376
+00:24:55,459 --> 00:24:59,539
+E aí, o Tony, junto com o Bruce Banner, criam a Veronica.
+
+377
+00:24:59,539 --> 00:25:08,639
+Basicamente, o Hulk falando, olha, o Hulk é super forte, ele faz isso, faz aquilo, e o
+Tony Stark vai lá e cria algo capaz de pará-lo.
+
+378
+00:25:08,639 --> 00:25:11,187
+Cara, é exatamente a mesma coisa que ele fez na caverna.
+
+379
+00:25:11,187 --> 00:25:15,687
+Na caverna eu tenho terroristas com armas, eu preciso criar algo suficiente para isso.
+
+380
+00:25:15,687 --> 00:25:17,917
+Agora eu tenho o Hulk, eu preciso criar algo suficiente para isso.
+
+381
+00:25:17,917 --> 00:25:19,557
+É simples assim, é a modelagem de ameaça.
+
+382
+00:25:19,557 --> 00:25:23,607
+É como se você ligasse para o seu hacker, falasse assim, hacker, como é que você vai me
+atacar hoje?
+
+383
+00:25:23,607 --> 00:25:29,527
+Olha, senhor, Cássio, eu vou atacá-lo usando um brute force primeiro ali na sua tela de
+autenticação.
+
+384
+00:25:29,527 --> 00:25:32,887
+Eventualmente vai passar por uma senha fraca, porque você não tem uma política de senhas.
+
+385
+00:25:32,887 --> 00:25:36,107
+Assim que eu conseguir o acesso, eu vou conseguir acesso não administrativo.
+
+386
+00:25:36,107 --> 00:25:37,203
+Então eu vou tentar...
+
+387
+00:25:37,203 --> 00:25:42,963
+fazer um roubo de sessão ou tokens para escalar o privilégio e conseguir uma conta com
+pouco mais de privilégio.
+
+388
+00:25:42,963 --> 00:25:48,763
+E aí uma vez de uma conta administrativa eu vou tentar deletar dados, causar uma
+disponibilidade.
+
+389
+00:25:48,763 --> 00:25:50,483
+Ponto, é isso que o hacker falou que vai fazer.
+
+390
+00:25:50,483 --> 00:25:52,733
+Então você desliga a ligação, obrigado seu hacker, muito obrigado.
+
+391
+00:25:52,733 --> 00:25:55,903
+Aí você volta para casa agora e fala, bom legal, então o hacker primeiro é fazer brute
+force.
+
+392
+00:25:55,903 --> 00:26:04,523
+Então vamos botar capt aqui nessa tela de login, vamos colocar uma política de senha para
+não ter senha fraca, vamos atualizar todas as senhas fracas, vamos ativar o MFA.
+
+393
+00:26:04,523 --> 00:26:06,451
+Ou seja, qualquer login agora vai pedir...
+
+394
+00:26:06,451 --> 00:26:08,911
+um Multifactor Authentication.
+
+395
+00:26:09,051 --> 00:26:11,171
+Isso aqui já barrou a entrada dele.
+
+396
+00:26:11,171 --> 00:26:17,231
+Mas beleza, ele falou que ia depois ganhar acesso e fazer escalação de privilégio para
+tentar apagar dados causar indisponibilidade.
+
+397
+00:26:17,231 --> 00:26:25,271
+Então cada função crítica agora no sistema, especialmente as de apagar informações, a
+gente vai pedir uma confirmação, token, segundo fator ali para garantir que o usuário quer
+
+398
+00:26:25,271 --> 00:26:27,151
+mesmo apagar aqueles dados.
+
+399
+00:26:27,151 --> 00:26:31,431
+Vamos fazer uma política aqui de sessão e cookies.
+
+400
+00:26:31,531 --> 00:26:33,043
+Cada vez que cara fizer logout,
+
+401
+00:26:33,043 --> 00:26:39,123
+A gente mata a sessão, limpa os hooks pra evitar que ele consiga account takeover via
+session hijacking.
+
+402
+00:26:39,123 --> 00:26:45,363
+Enfim, então basicamente você criou ali as medidas de proteção, as mitigações de acordo
+com o hacker e falou como que ele vai te atacar.
+
+403
+00:26:45,363 --> 00:26:51,803
+E aí amanhã o hacker vem te atacar, não consegui, realmente você colocou as proteções que
+eu falei, exatamente como eu falei que ia te atacar.
+
+404
+00:26:51,803 --> 00:26:56,643
+Então esse trabalho do Tony Stark junto com o Bruce Banner é exatamente isso.
+
+405
+00:26:56,643 --> 00:27:01,665
+Eles sentaram e criaram algo capaz de deter o hook.
+
+406
+00:27:01,939 --> 00:27:03,799
+o próprio Hulk falando.
+
+407
+00:27:03,819 --> 00:27:07,319
+aí, eu vou deixar para os senhores refletirem agora.
+
+408
+00:27:08,039 --> 00:27:11,619
+Essa cena é fantástica e quase ele perde.
+
+409
+00:27:12,099 --> 00:27:17,019
+É quase que o Hulk falou o que ele ia fazer e você criou as proteções e não fez direito.
+
+410
+00:27:17,019 --> 00:27:19,939
+Na verdade não é, o Hulk é muito foda, muito forte.
+
+411
+00:27:21,179 --> 00:27:26,639
+Inclusive quem está vendo pelo YouTube tem Hulk aqui fazendo carinho, elogio aqui para
+vocês.
+
+412
+00:27:27,827 --> 00:27:36,987
+Essa cena fantástica que quase o Tony Stark perde, eventualmente ele vai ganhar essa cena,
+essa luta e parar o Hulk ali que estava destruindo praticamente cidade inteira.
+
+413
+00:27:36,987 --> 00:27:38,427
+Mas dá tudo certo no final.
+
+414
+00:27:38,427 --> 00:27:40,507
+Então, como é o software dos senhores?
+
+415
+00:27:40,507 --> 00:27:43,786
+O nosso software hoje está protegido?
+
+416
+00:27:43,786 --> 00:27:52,487
+Quando ele tiver um brute force, injection, RCE, um componente desatualizado como React ou
+Next.js, exemplo, Log4j, enfim.
+
+417
+00:27:52,487 --> 00:27:54,955
+Como é que a aplicação vai se comportar?
+
+418
+00:27:55,347 --> 00:28:01,007
+A gente sequer pensou modalagem ameaça, sequer pensou possibilidade de algo acontecer
+errado ou não.
+
+419
+00:28:01,007 --> 00:28:05,987
+A gente só está fazendo entrega, entrega, entrega, gera valor, gera valor, gera valor,
+agile, agile, agile.
+
+420
+00:28:06,567 --> 00:28:08,047
+Para vocês pensarem, beleza?
+
+421
+00:28:08,047 --> 00:28:10,389
+Quero que vocês pensem muito nisso, inclusive.
+
+422
+00:28:16,595 --> 00:28:22,525
+Uma forma interessante de fazer modelagem de ameaças é sempre falar com o nosso time de
+resposta incidentes.
+
+423
+00:28:22,525 --> 00:28:23,655
+Por quê?
+
+424
+00:28:23,655 --> 00:28:31,195
+A ideia de você pegar o requisito funcional, que é a matéria-prima do software, melhorá-lo
+para que o seu produto final seja produto com mais qualidade, nesse contexto nosso mais
+
+425
+00:28:31,195 --> 00:28:38,035
+seguro, é simplesmente você enriquecer a sua matéria-prima, deixá-la melhor.
+
+426
+00:28:38,455 --> 00:28:44,659
+Se a ideia de pensar possibilidades de algo ruim acontecer, as ameaças...
+
+427
+00:28:45,107 --> 00:28:46,037
+Posso ser difícil?
+
+428
+00:28:46,037 --> 00:28:48,787
+Os frameworks de modelagem ameaça vão nos ajudar com isso?
+
+429
+00:28:48,787 --> 00:28:52,667
+Falar com o time de espaço incidente, falar com o time de segurança, falar, cara, o que já
+está acontecendo na nossa empresa?
+
+430
+00:28:52,667 --> 00:28:54,767
+Fala aí os ataques que a gente já sofre.
+
+431
+00:28:54,767 --> 00:28:57,367
+Fala aí, mostra aí pra gente, explica pra gente, faz uma palestra.
+
+432
+00:28:57,367 --> 00:29:01,127
+Cara, garanta que na sua empresa já acontece ataque todo santo dia.
+
+433
+00:29:01,287 --> 00:29:05,387
+Então conversar com essa galera é falar assim, me fala aí quais são os ataques que gente
+já sofre.
+
+434
+00:29:05,387 --> 00:29:12,707
+Porque a gente vai criar software agora, tudo novo que a gente já fizer, a vai ter essas
+proteções contra esses ataques, porque a gente já sabe que são coisas que gente sofre.
+
+435
+00:29:12,707 --> 00:29:15,371
+Não precisa ser no nível técnico, olha,
+
+436
+00:29:15,806 --> 00:29:21,627
+A gente recebe a SQL Injection todo dia, todo mundo recebe payload de SQL Injection na
+vida a cada segundo.
+
+437
+00:29:21,627 --> 00:29:24,267
+Praticamente tem hacker fazendo isso o tempo todo.
+
+438
+00:29:24,647 --> 00:29:29,427
+Agora, na minha empresa é uma empresa do ramo de turismo, a gente tem muita fraude.
+
+439
+00:29:29,427 --> 00:29:36,167
+Então olha só que interessante payload que a gente recebe, olha só o comportamento da
+nossa aplicação com relação a esse esse usuário.
+
+440
+00:29:36,167 --> 00:29:38,647
+Então é ataque mais específico.
+
+441
+00:29:38,647 --> 00:29:43,795
+Então neste contexto, ideia que você tá, se eu trabalho empresa de turismo, eu tenho que
+preocupar com fraude?
+
+442
+00:29:43,795 --> 00:29:47,315
+Se eu trabalho uma empresa financeira, eu tenho que preocupar com fraude, roubo de dados.
+
+443
+00:29:47,315 --> 00:29:52,675
+Se eu trabalho uma empresa do governo, eu tenho que preocupar com reactivismo e outras
+coisas.
+
+444
+00:29:53,475 --> 00:29:57,295
+falar com a Atiência das Pazes Residentes alimenta a tua modelagem de ameaça.
+
+445
+00:29:57,295 --> 00:30:04,335
+Vai alimentar o teu campo, eu diria, de não mais ameaças, mas de fato ataques reais.
+
+446
+00:30:04,675 --> 00:30:09,747
+E aí você tende a ter o a gente sempre chama de segurança 100%, o que não existe.
+
+447
+00:30:09,747 --> 00:30:10,757
+Mas por que 100 %?
+
+448
+00:30:10,757 --> 00:30:14,707
+Porque assim, quando você está fazendo modelagem de ameaças, está pensando possibilidades
+de algo acontecer.
+
+449
+00:30:14,827 --> 00:30:16,907
+Que podem nunca vir a acontecer.
+
+450
+00:30:16,927 --> 00:30:24,747
+Agora, quando você faz uma modelagem de ameaças, essas ameaças são alimentadas por
+respostas a incidentes, ou seja, já está acontecendo.
+
+451
+00:30:25,227 --> 00:30:27,507
+É igual falar pra você assim, olha gente, vamos lá.
+
+452
+00:30:27,507 --> 00:30:32,107
+Conheci alguém na internet, no Tinder, na puta que pariu, vou marcar encontro.
+
+453
+00:30:32,107 --> 00:30:37,107
+E eu moro São Paulo, então eu sei que é uma cidade perigosa, ou não tão segura.
+
+454
+00:30:37,107 --> 00:30:46,047
+Eu sei que eu não vou marcar encontro à noite, eu num lugar público, eu restaurante
+público, eu num bairro X neutro, não vou num bairro mais perigoso, etc.
+
+455
+00:30:46,047 --> 00:30:52,047
+Então você tem uma modela de ameaça, porque você quer conhecer o amor da sua vida, não
+quer perder o teu rim, o teu fígado.
+
+456
+00:30:52,367 --> 00:30:57,267
+Então você faz uma modela de ameaça, simples assim, porque você quer evitar alguns
+impactos.
+
+457
+00:30:57,327 --> 00:30:59,539
+Impossibilidade de coisas que podem nunca vir a acontecer.
+
+458
+00:30:59,539 --> 00:31:07,309
+A pessoa na verdade é uma pessoa de bem, você foi num bairro que era inseguro mas nada
+aconteceu, você foi à noite e tá tudo bem, você foi num lugar público e ok.
+
+459
+00:31:07,309 --> 00:31:08,099
+Percebe?
+
+460
+00:31:08,099 --> 00:31:09,559
+As possibilidades é...
+
+461
+00:31:09,559 --> 00:31:10,779
+talvez vai acontecer.
+
+462
+00:31:10,779 --> 00:31:15,999
+Se nunca acontecer, ótimo, mas se acontecer, você estava protegido ou precavido.
+
+463
+00:31:15,999 --> 00:31:17,539
+Esse é o ponto aqui, tá bom?
+
+464
+00:31:17,539 --> 00:31:20,919
+Então você cria ali o teu encontro na prova de balas.
+
+465
+00:31:20,919 --> 00:31:24,499
+Da mesma forma, você tá falando que seu time de responses incidentes já são ataques reais?
+
+466
+00:31:24,499 --> 00:31:27,091
+Então quando você cria a modelagem ameaça com software novo...
+
+467
+00:31:27,091 --> 00:31:36,831
+baseado ataques reais que você já sofre outras aplicações, a tendência é que essas
+aplicações já estejam à prova de balas, pelo menos contra essas balas específicas.
+
+468
+00:31:36,831 --> 00:31:38,631
+Bom, você entendeu.
+
+469
+00:31:38,771 --> 00:31:49,511
+E aí, eu gosto sempre de trazer à tona aquele caso do Homem de Ferro 3, onde o Tony Stark
+é atacado pelo mandarim, destrói a casa dele, ele está com uma armadura protótipo, vale
+
+470
+00:31:49,511 --> 00:31:56,403
+lembrar isso, ou seja, está sem ali a capacidade de ataque, enfim, mas ele tem ali algumas
+coisas, e ele vai...
+
+471
+00:31:56,403 --> 00:32:00,133
+de forma errônea, ele voa para o Tennessee onde é inverno.
+
+472
+00:32:00,133 --> 00:32:04,403
+Quando ele chega lá, a armadura dele acaba a energia, ele tem que abrir a armadura e sair
+da armadura.
+
+473
+00:32:04,403 --> 00:32:06,063
+Só que tá nevando, né?
+
+474
+00:32:06,063 --> 00:32:08,323
+Menos 10, 20 graus, sei lá o quê.
+
+475
+00:32:08,343 --> 00:32:11,683
+E ele puxa, acabou a energia, ele tem que sair da armadura, abrir a armadura e sai.
+
+476
+00:32:11,683 --> 00:32:16,263
+E ele vai arrastar a armadura, eventualmente vai achar lá uma cabana, se aquecer, enfim.
+
+477
+00:32:16,263 --> 00:32:17,583
+Mas foi problema.
+
+478
+00:32:17,583 --> 00:32:18,703
+Por quê?
+
+479
+00:32:18,703 --> 00:32:22,983
+Se acaba a energia da armadura e preciso sair, e tá frio, ferrou.
+
+480
+00:32:22,983 --> 00:32:25,171
+Se acontecer qualquer outra coisa e tá frio, ferrou.
+
+481
+00:32:25,171 --> 00:32:28,331
+Então a armadura precisa ter um aquecimento ou restriamento, enfim.
+
+482
+00:32:28,331 --> 00:32:29,081
+Precisa ter isso.
+
+483
+00:32:29,081 --> 00:32:32,491
+Além do próprio cuidado com a energia, com a bateria, enfim.
+
+484
+00:32:32,491 --> 00:32:35,131
+Então ele teve esse bug, vamos dizer assim, esse problema.
+
+485
+00:32:35,591 --> 00:32:43,111
+No filme sequente, que na verdade é o filme do Homem-Aranha de volta para casa, agora a
+roupa do Homem-Aranha é feita pelo Tony Stark.
+
+486
+00:32:43,631 --> 00:32:50,931
+Eventualmente o Homem-Aranha está numa perseguição com os inimigos lá e tal, ele cai num
+lago, o lago está gelado.
+
+487
+00:32:52,083 --> 00:32:59,103
+O Homem de Ferro, que agora que fez a roupa do Homem-Aranha, ele é garoto, menino, o Homem
+de Ferro está rastreando ele tempo todo.
+
+488
+00:33:00,102 --> 00:33:10,523
+Ele vai lá, manda a armadura dele, resgata o Peter desse lago, e na conversa ali o Peter
+fala que legal dessa nova roupa que você criou, tem rastreador, e o Tony Stark fala, tem
+
+489
+00:33:10,523 --> 00:33:19,963
+rastreador, por isso que eu te achei, e inclusive eu coloquei tudo no seu roupa, inclusive
+esse aquecedor, porque nessa hora o Peter está tremendo de frio, porque ele estava num
+
+490
+00:33:19,963 --> 00:33:21,651
+lago gelado à noite.
+
+491
+00:33:21,651 --> 00:33:25,171
+E aí o Tony fala, inclusive esse aquecedor, e aí a roupa dele faz um...
+
+492
+00:33:25,171 --> 00:33:28,011
+Olha a sonoplastia, né?
+
+493
+00:33:28,051 --> 00:33:35,861
+E aí cena mostra ali a roupa do Peter aquecendo ele, e ele tem ali uma vantagem,
+obviamente, com base na experiência do próprio Tony.
+
+494
+00:33:35,861 --> 00:33:40,811
+Ele teve incidente, ele teve problema que a armadura dele precisou abrir e tava nevando,
+tava gelo.
+
+495
+00:33:40,811 --> 00:33:43,551
+Ele vai lá e colocou agora aquecedor na roupa do Homem Aranha.
+
+496
+00:33:43,551 --> 00:33:45,831
+E provavelmente na roupa dele também.
+
+497
+00:33:45,831 --> 00:33:48,851
+Então é esse mindset de melhoria sempre.
+
+498
+00:33:48,971 --> 00:33:50,597
+Que é o que eu quero falar agora.
+
+499
+00:33:50,675 --> 00:33:53,835
+Vale sempre lembrar, gente, não adianta.
+
+500
+00:33:58,931 --> 00:34:10,971
+Você entrar nessa ondinha aí de vamos entregar valor, a gente é Agile, é funcionalidade
+nova toda semana, não, porque o meu SaaS, uh, agora onde é SaaS, building public e palavá,
+
+501
+00:34:10,971 --> 00:34:13,741
+é tudo pra bosta vocês, é tudo pra bosta.
+
+502
+00:34:13,741 --> 00:34:19,071
+Porque a ideia é muito legal, mas só fazer entregar, você está entregando merda.
+
+503
+00:34:19,071 --> 00:34:20,931
+É isso que você está entregando, está entregando software.
+
+504
+00:34:20,931 --> 00:34:24,891
+Pode estar usando, pode estar funcionando, o objetivo é atingido.
+
+505
+00:34:24,891 --> 00:34:29,003
+Mas eu tenho certeza que você não pensou segurança, o mínimo de segurança.
+
+506
+00:34:29,331 --> 00:34:35,171
+Porque se eventualmente você tiver ataque, e eu espero que você não tenha...
+
+507
+00:34:40,435 --> 00:34:42,115
+Pausa para espirrar.
+
+508
+00:34:42,115 --> 00:34:44,655
+Espero que você não tenha, mas eventualmente você vai ter.
+
+509
+00:34:44,815 --> 00:34:49,455
+Você não só não entregou o valor para o seu cliente, você tirou dele.
+
+510
+00:34:50,175 --> 00:34:54,215
+E pior, esse ataque não aconteceria se não fosse o seu software.
+
+511
+00:34:54,535 --> 00:34:56,675
+Você virou o meio para aquele ataque.
+
+512
+00:34:57,175 --> 00:34:59,715
+Então você tem uma certa corresponsabilidade.
+
+513
+00:34:59,715 --> 00:35:01,395
+E eu vou dizer mais.
+
+514
+00:35:01,415 --> 00:35:06,755
+Se você fez isso de propósito, você é cúmplice desse ataque, que provavelmente é
+cybercriminoso.
+
+515
+00:35:07,667 --> 00:35:10,087
+Se você fez por falta de conhecimento, né?
+
+516
+00:35:10,087 --> 00:35:12,507
+Puta, não tinha ignorância, o que quer que seja.
+
+517
+00:35:12,507 --> 00:35:13,687
+Que é ok, tá?
+
+518
+00:35:13,687 --> 00:35:14,617
+Ninguém está julgando ninguém.
+
+519
+00:35:14,617 --> 00:35:15,847
+É ok.
+
+520
+00:35:15,907 --> 00:35:16,457
+Ok.
+
+521
+00:35:16,457 --> 00:35:18,087
+Vamos lá e resolve agora.
+
+522
+00:35:18,347 --> 00:35:20,487
+Mas ainda assim você tem uma responsabilidade nisso.
+
+523
+00:35:20,487 --> 00:35:21,827
+É simples assim.
+
+524
+00:35:21,827 --> 00:35:22,407
+Tá?
+
+525
+00:35:22,407 --> 00:35:26,307
+A pizzaria, ela faz a pizza, põe no forno, tempera e bota no...
+
+526
+00:35:26,307 --> 00:35:28,827
+para o motoboy que vai entregar na casa de alguém.
+
+527
+00:35:28,867 --> 00:35:31,767
+A responsabilidade da entrega ainda é da pizzaria.
+
+528
+00:35:32,147 --> 00:35:34,247
+Ah, mas eu uso o serviço terceiro.
+
+529
+00:35:34,247 --> 00:35:36,307
+mas o motoboy eu não consigo controlar.
+
+530
+00:35:36,567 --> 00:35:37,733
+Sinto muito.
+
+531
+00:35:38,291 --> 00:35:39,931
+Agora, troca o cenário.
+
+532
+00:35:39,931 --> 00:35:46,041
+Você vai no restaurante, o chefe fez o prato, o melhor prato do planeta, com o melhor
+ingredient do mundo, entregou na mão do garçom.
+
+533
+00:35:46,041 --> 00:35:50,931
+O garçom com a mão toda suja, entrega o prato para você e o prato chega todo sujo.
+
+534
+00:35:50,931 --> 00:35:51,991
+De quem é a culpa?
+
+535
+00:35:51,991 --> 00:35:53,791
+É do chefe.
+
+536
+00:35:53,791 --> 00:35:54,711
+Não é do garçom.
+
+537
+00:35:54,711 --> 00:35:57,111
+O garçom, obviamente, foi o responsável pelo problema.
+
+538
+00:35:57,111 --> 00:35:59,931
+Mas o restaurante responde por aquilo.
+
+539
+00:35:59,931 --> 00:36:01,811
+Então a culpa é do chefe de cozinha.
+
+540
+00:36:01,811 --> 00:36:06,191
+A responsabilidade do prato sair da cozinha, até a mesa do cliente, é do chefe de cozinha.
+
+541
+00:36:06,191 --> 00:36:07,251
+Dono do restaurante, né?
+
+542
+00:36:07,251 --> 00:36:08,197
+Mas vamos lá.
+
+543
+00:36:08,723 --> 00:36:17,703
+Então o teu software teve um ataque, vazou os dados do seu usuário, não adianta botar a
+culpa na Cloudflare, não adianta botar a culpa na puta que pariu, a culpa é sua, meu
+
+544
+00:36:17,703 --> 00:36:18,663
+jovem.
+
+545
+00:36:18,663 --> 00:36:24,663
+Tá, então o que eu quero dizer com isso, cada versão do seu software a 1.1 tem que ser
+melhor que a 1.0.
+
+546
+00:36:24,663 --> 00:36:32,143
+Eu não tô dizendo melhor que agora dá mortal pra trás, tem uma cor nova, funcionalidade
+nova, entrega valor, olha nova feature, nova feature, nova feature.
+
+547
+00:36:32,143 --> 00:36:33,603
+Tá mais seguro?
+
+548
+00:36:34,743 --> 00:36:37,173
+É só isso que eu tenho perguntar pra vocês, só isso.
+
+549
+00:36:37,173 --> 00:36:38,495
+Você tá mais seguro?
+
+550
+00:36:39,107 --> 00:36:39,947
+eu preciso preocupar.
+
+551
+00:36:39,947 --> 00:36:40,447
+Precisa.
+
+552
+00:36:40,447 --> 00:36:41,507
+Preciso se preocupar sim.
+
+553
+00:36:41,507 --> 00:36:51,407
+Porque se eu não se preocupar com segurança, meu jovem, se eu não se preocupar com
+segurança, você vai eventualmente ter incidente que pode custar muito caro pra você e pros
+
+554
+00:36:51,407 --> 00:36:58,347
+seus usuários, Então, pensar com o motor Stark, Não só resolver bug, mas melhorar a
+segurança.
+
+555
+00:36:58,487 --> 00:37:00,927
+É nossa responsabilidade enquanto desenvolvedores.
+
+556
+00:37:00,927 --> 00:37:03,077
+É nossa responsabilidade enquanto empresa que desenvolve software.
+
+557
+00:37:03,077 --> 00:37:05,107
+É nossa responsabilidade.
+
+558
+00:37:05,107 --> 00:37:06,127
+Ponto.
+
+559
+00:37:06,227 --> 00:37:07,627
+O garçom...
+
+560
+00:37:07,955 --> 00:37:13,555
+O chefe de cozinha, a recepcionista, o dono do restaurante, todos são responsáveis pela
+comida.
+
+561
+00:37:13,555 --> 00:37:14,615
+Todos.
+
+562
+00:37:15,035 --> 00:37:18,795
+Se o chefe de cozinha, ele tem os ingredientes para preparar.
+
+563
+00:37:18,795 --> 00:37:21,755
+Ele falou, compra o ingrediente tal de tal lugar.
+
+564
+00:37:21,755 --> 00:37:26,975
+Se o dono do restaurante foi lá e comprou do outro lugar e a qualidade veio baixa, todos
+pagam por aquilo.
+
+565
+00:37:26,975 --> 00:37:29,895
+No fim do dia, o cliente vai comer a comida.
+
+566
+00:37:30,715 --> 00:37:33,135
+Percebe que o usuário vai sofrer o impacto.
+
+567
+00:37:33,135 --> 00:37:35,635
+Consequentemente vai manchar o nome do restaurante.
+
+568
+00:37:35,635 --> 00:37:42,055
+consequentemente você pode causar dano, for uma alergia naquele cliente, pode
+eventualmente matá-lo.
+
+569
+00:37:42,055 --> 00:37:47,035
+Então, o teu software, você tem responsabilidade nisso, a segurança é responsabilidade
+sua.
+
+570
+00:37:47,035 --> 00:37:48,715
+Não adianta fugir disso.
+
+571
+00:37:48,715 --> 00:37:55,015
+Você pode discutir filosóficamente, ah não, mas o chefe de cozinha pediu, aí fez, aí não é
+culpa dele.
+
+572
+00:37:55,015 --> 00:37:56,195
+Não, gente.
+
+573
+00:37:56,195 --> 00:38:03,915
+Vocês estão muito assim, do apartamentinho de vocês aí do Leblon não dá pra ver essas
+coisas, Mas vocês estão muito mal informados por jornalzinho e televisão.
+
+574
+00:38:04,595 --> 00:38:07,595
+a gente perdeu o senso de responsabilidade.
+
+575
+00:38:07,895 --> 00:38:14,975
+Cara, todo mundo envolvido no ciclo de desenvolvimento de software é responsável por
+aquele software.
+
+576
+00:38:15,295 --> 00:38:18,255
+Ah, mas eu trabalho, sei lá, vou dar exemplo aqui, tá?
+
+577
+00:38:18,255 --> 00:38:29,155
+Mas eu trabalho no Itaú, por exemplo, e aí teve problema no Itaú, tá, que lá no Itaú, a
+culpa é minha, a culpa é sua, é sua do CEO, do CTO, de todo mundo.
+
+578
+00:38:29,155 --> 00:38:29,665
+Por quê?
+
+579
+00:38:29,665 --> 00:38:31,415
+Porque é o Itaú.
+
+580
+00:38:31,415 --> 00:38:32,851
+Ponto, você trabalha lá?
+
+581
+00:38:32,851 --> 00:38:35,211
+Ah, eu não tô naquele projeto, gente.
+
+582
+00:38:35,211 --> 00:38:36,491
+Gente.
+
+583
+00:38:36,651 --> 00:38:37,951
+Gente.
+
+584
+00:38:38,651 --> 00:38:40,691
+Não me vem com essa.
+
+585
+00:38:40,691 --> 00:38:45,311
+Aprende a ocupar o teu lugar no espaço.
+
+586
+00:38:45,651 --> 00:38:47,791
+É responsabilidade sua.
+
+587
+00:38:47,931 --> 00:38:51,431
+Teve incidente de segurança na empresa que você trabalha, no software que você trabalha?
+
+588
+00:38:51,431 --> 00:38:53,431
+É responsabilidade sua.
+
+589
+00:38:54,131 --> 00:38:55,511
+Ponto final.
+
+590
+00:38:55,771 --> 00:38:56,755
+Tá bom?
+
+591
+00:38:56,947 --> 00:38:59,207
+Então, gente vai melhorar a segurança.
+
+592
+00:38:59,207 --> 00:39:10,047
+E vale lembrar o seguinte, não dá pra fazer segurança direito, appsec, enfim, sem ter um
+software development lifecycle correto, sem ter ciclo de development software decente.
+
+593
+00:39:10,047 --> 00:39:10,447
+Por quê?
+
+594
+00:39:10,447 --> 00:39:14,327
+Porque o time A faz de jeito, time B faz de outro jeito, fica difícil.
+
+595
+00:39:14,327 --> 00:39:23,867
+Então, é importante que, ainda que cada time faça de jeito, mas de jeito estruturado,
+processo estruturado, é possível a gente incluir segurança nesse processo, nessa
+
+596
+00:39:23,867 --> 00:39:24,967
+estratégia.
+
+597
+00:39:25,027 --> 00:39:26,227
+Então, a ideia é que...
+
+598
+00:39:26,227 --> 00:39:30,987
+Cada release sua, cada versão nova sua, seja uma nova marque.
+
+599
+00:39:30,987 --> 00:39:32,767
+marque 1, marque 2, marque 3.
+
+600
+00:39:32,767 --> 00:39:35,227
+Cada nova armadura do Homem de Ferro.
+
+601
+00:39:35,227 --> 00:39:37,527
+Para que você possa evoluir.
+
+602
+00:39:37,527 --> 00:39:39,507
+A segurança do seu software, tá?
+
+603
+00:39:40,087 --> 00:39:46,627
+E vale lembrar que seguinte, cada armadura do Homem de Ferro, ela é feita principalmente
+para protegê-lo.
+
+604
+00:39:46,627 --> 00:39:50,287
+Ele não pensou, vou fazer uma arma para sair atacando por aí.
+
+605
+00:39:50,287 --> 00:39:50,787
+Não.
+
+606
+00:39:50,787 --> 00:39:53,407
+Não foi essa a primeira intenção.
+
+607
+00:39:53,715 --> 00:39:59,155
+A primeira decisão foi eu preciso de algo que me proteja dos tiros dos terroristas e que
+eu possa voar daqui.
+
+608
+00:39:59,455 --> 00:40:01,855
+Eventualmente eu vou precisar atacar.
+
+609
+00:40:01,855 --> 00:40:02,635
+Percebe?
+
+610
+00:40:02,635 --> 00:40:05,175
+Então o teu software não pode perder essa essência.
+
+611
+00:40:05,175 --> 00:40:07,535
+Não, preciso criar software agora à prova de hackers.
+
+612
+00:40:07,535 --> 00:40:08,115
+Não.
+
+613
+00:40:08,115 --> 00:40:11,475
+O teu software precisa fazer o que o teu software tem que fazer.
+
+614
+00:40:11,475 --> 00:40:15,875
+É software de venda, de pagamento, é de entregar pedido, é de pedir carro.
+
+615
+00:40:15,875 --> 00:40:16,755
+Não importa.
+
+616
+00:40:16,755 --> 00:40:19,405
+Mas ele tem que fazer tudo isso de forma segura.
+
+617
+00:40:19,891 --> 00:40:21,891
+Então não adianta inverter a jogada.
+
+618
+00:40:21,891 --> 00:40:26,911
+Homem de Ferro não falou, vou criar uma bazuca aqui, sair matando todo mundo e estou
+feliz.
+
+619
+00:40:26,911 --> 00:40:27,551
+Não.
+
+620
+00:40:27,551 --> 00:40:31,911
+Ele falou, eu vou criar algo que vai me ajudar a sair dessa caverna e voar.
+
+621
+00:40:31,911 --> 00:40:33,371
+Ficou monte de terrorista vivo lá.
+
+622
+00:40:33,371 --> 00:40:37,711
+Inclusive, depois ele volta e mata os caras, aí ele melhorou a armadura e tal.
+
+623
+00:40:37,811 --> 00:40:40,781
+Mas, veja, eu preciso fugir daqui.
+
+624
+00:40:40,781 --> 00:40:41,911
+Esse é o meu objetivo.
+
+625
+00:40:41,911 --> 00:40:44,191
+Então não perca essa essência no seu software.
+
+626
+00:40:44,191 --> 00:40:45,311
+Qual o objetivo do seu software?
+
+627
+00:40:45,311 --> 00:40:49,619
+É vender, é registrar clientes, é gerar relatório, é fazer ABC.
+
+628
+00:40:49,619 --> 00:40:52,979
+Continue com isso, mas agora você vai fazer isso de forma segura.
+
+629
+00:40:52,979 --> 00:40:55,339
+Esse é o ponto, não perca essa essência, tá?
+
+630
+00:40:56,499 --> 00:41:00,099
+Lembra que no Homem de Ferro 1, final do filme, ele está lutando com o vilão.
+
+631
+00:41:00,099 --> 00:41:06,749
+Na verdade, começo do filme, a armadura 2 dele, que é a prateada, quando ele volta para
+casa, ele foi resgatado, ele faz aquela armadura toda prateada.
+
+632
+00:41:06,749 --> 00:41:11,939
+Agora já com toda a tecnologia, todo o laboratório que ele tem, já com a inteligência
+artificial, que é o Jarvis, enfim.
+
+633
+00:41:11,939 --> 00:41:17,879
+A primeira coisa que ele faz é voar fora da estratosfera, ver até onde ele consegue voar.
+
+634
+00:41:17,879 --> 00:41:19,887
+Quando ele sai da estratosfera,
+
+635
+00:41:19,959 --> 00:41:22,799
+Enfim, está na extraterrestre, não sei exatamente como falar isso.
+
+636
+00:41:22,799 --> 00:41:24,199
+Ele congela.
+
+637
+00:41:24,199 --> 00:41:29,939
+A armadura congela, ela desliga, ele perde a capacidade de voo, começa a cair, queda
+livre.
+
+638
+00:41:29,939 --> 00:41:37,299
+Aí tem um trabalho manual que ele faz, abre uns flaps ali, descongela, a armadura
+reinicia, ele continua, toma o controle de volta.
+
+639
+00:41:37,579 --> 00:41:39,759
+Perfeito, esse foi o buggy, esse foi o cenário.
+
+640
+00:41:39,759 --> 00:41:47,355
+Final do filme, ele já está na versão 3 agora, e o vilão roubou a armadura dele, roubou a
+ideia e tal, roubou a 1, a primeira versão.
+
+641
+00:41:47,923 --> 00:41:56,263
+Quando ele está quase sem energia, inclusive o vilão perseguindo ele, ele começa a voar
+bem alto, o vilão perseguindo ele, porque ele sabe que ele agora melhorou, material da
+
+642
+00:41:56,263 --> 00:42:01,203
+armadura dele não vai congelar mais, e o vilão toca a versão ruim ainda, toca a versão
+bugada.
+
+643
+00:42:01,203 --> 00:42:07,443
+E o vilão, que é o monge de ferro, pega o pé dele e fala, Tony, a sua armadura é...
+
+644
+00:42:07,443 --> 00:42:11,263
+Você teve uma grande ideia, na verdade, mas a minha armadura é mais avançada que a sua.
+
+645
+00:42:11,263 --> 00:42:13,843
+Aí o Tony, mas como é que você resolveu problema do gelo?
+
+646
+00:42:13,843 --> 00:42:15,983
+E nessa hora o cara já está congelando, né?
+
+647
+00:42:15,983 --> 00:42:21,643
+Praticamente, e aí desliga a armadura também, vai perder ali, ele tem uma vantagem,
+consegue escapar do cara e tal.
+
+648
+00:42:21,643 --> 00:42:28,003
+Então, olha que legal, ele teve um bug, resolveu o bug, teve um incidente, uma
+vulnerabilidade, resolveu aquela vulnerabilidade.
+
+649
+00:42:28,003 --> 00:42:28,423
+Por quê?
+
+650
+00:42:28,423 --> 00:42:34,263
+Porque depois pode custar a vida dele, depois pode custar caro, então a resolve o problema
+que gente acha.
+
+651
+00:42:34,263 --> 00:42:35,983
+Olha a mentalidade do Tony.
+
+652
+00:42:36,383 --> 00:42:38,243
+Assim, não tem como fugir disso, né?
+
+653
+00:42:38,243 --> 00:42:43,123
+Se a gente lembrar também, lá no Homem de Ferro 2, quando ele está lutando com o E-Plash,
+
+654
+00:42:43,123 --> 00:42:55,623
+aquele cara com chicotes de energia, ele ganha a luta ali e tal, mas o Iplash agora
+consegue atingi-lo com chicotes de energia, que ele copiou praticamente ali o reator do
+
+655
+00:42:55,623 --> 00:43:02,843
+Tony Stark, e a armadura dele toma muito dano, fica bem desgastada, Além, do cara ter
+encostado nele com tanta energia.
+
+656
+00:43:02,843 --> 00:43:09,651
+Já no Vingadores, que é filme na cronordem cronológica, no Vingadores 1, quando ele tem
+uma briga com o Thor ali, o Thor...
+
+657
+00:43:09,651 --> 00:43:14,611
+dá o raio ali o trovão, a armadura dele não toma tanto dano quanto antes.
+
+658
+00:43:14,751 --> 00:43:16,911
+A material da armadura é melhor agora.
+
+659
+00:43:16,911 --> 00:43:21,171
+E ele ainda toma dano, Ela fica meio rachada e tal, mas já é bem melhor.
+
+660
+00:43:21,171 --> 00:43:24,031
+E ele absorve toda a energia do raio agora.
+
+661
+00:43:24,031 --> 00:43:28,911
+Ou seja, eu tive problema onde consegui encostar mim com muita energia.
+
+662
+00:43:28,911 --> 00:43:30,071
+Por que não me beneficiar disso?
+
+663
+00:43:30,071 --> 00:43:35,507
+Eventualmente eu vou ter um próximo vilão, uma próxima luta que se alguém encostar mim, a
+armadura vai tomar muito dano.
+
+664
+00:43:35,507 --> 00:43:37,527
+Não pode ser assim, eu preciso melhorar isso.
+
+665
+00:43:37,527 --> 00:43:39,557
+Vou melhorar essa funcionalidade de proteção da armadura.
+
+666
+00:43:39,557 --> 00:43:43,047
+Ele melhora o material e agora ele absorve a energia.
+
+667
+00:43:43,047 --> 00:43:53,767
+O que no Vingadores Ultimato, o último filme da saga, que é quando ele inclusive se
+sacrifica pela humanidade, minuto de silêncio, pronto.
+
+668
+00:43:53,767 --> 00:43:55,927
+Ele se sacrifica pela humanidade, não é Homem de Ferro?
+
+669
+00:43:55,927 --> 00:43:59,187
+Agora ele fala para o Thor, me atinge.
+
+670
+00:43:59,207 --> 00:44:02,307
+A armadura dele agora abre de forma proposital.
+
+671
+00:44:02,307 --> 00:44:05,427
+O Thor chama lá o trovão, taca nele.
+
+672
+00:44:05,427 --> 00:44:12,447
+ele absorve aquilo tudo tempo real, aquela energia toda e vira laser, vira uma arma para
+atacar o Thanos ali e tal.
+
+673
+00:44:12,447 --> 00:44:19,307
+Então veja, lá atrás, cara, eu tive um bug, o meu material era falho, a energia encostou
+mim, não pude fazer nada, tomei muito dano.
+
+674
+00:44:19,307 --> 00:44:28,367
+Agora eu evolui, eu tomo menos dano, absorvo energia, agora não, eu absorvo energia
+inteira, a minha armadura não toma dano nenhum e eu transformo isso numa arma.
+
+675
+00:44:28,887 --> 00:44:30,547
+Essa mentalidade é fantástica.
+
+676
+00:44:30,547 --> 00:44:32,563
+Porque como é que é o software nosso hoje dia?
+
+677
+00:44:32,563 --> 00:44:33,603
+Você tem uma vulnerabilidade?
+
+678
+00:44:33,603 --> 00:44:38,929
+Você nunca corrige, fica eternamente no backlog, dia você vai ter incidente e falar,
+caramba, não vimos isso antes.
+
+679
+00:44:40,915 --> 00:44:43,335
+É, mas jovem, não vimos isso antes.
+
+680
+00:44:48,939 --> 00:44:57,119
+Lá na guerra civil, a briga do Capitão América, time Homem de Ferro, o Homem-Formiga vai
+entrar na armadura do Homem de Ferro.
+
+681
+00:44:57,119 --> 00:44:58,459
+E começa a desligar a armadura.
+
+682
+00:44:58,459 --> 00:45:03,459
+A Friday fala pra olha, estamos com sistemas de armas offline.
+
+683
+00:45:03,459 --> 00:45:04,759
+Aí ele, o quê?
+
+684
+00:45:04,759 --> 00:45:05,979
+Porque ele não...
+
+685
+00:45:05,979 --> 00:45:10,739
+Aí o Homem-Formiga começa a na cabeça dele, sua consciência.
+
+686
+00:45:10,739 --> 00:45:17,747
+Friday, quando ele chama a Friday com uma cara de desespero, é do tipo, cara, eu sei o que
+eu fiz, eu conheço minha armadura, eu sou gênio.
+
+687
+00:45:17,747 --> 00:45:18,887
+O que está acontecendo?
+
+688
+00:45:18,887 --> 00:45:20,987
+Como é tem algo fora do meu controle?
+
+689
+00:45:21,447 --> 00:45:24,567
+Isso é absolutamente foda.
+
+690
+00:45:24,567 --> 00:45:27,497
+Quando a gente para pra pensar, cara, eu tenho de fato uma ameaça agora.
+
+691
+00:45:27,497 --> 00:45:28,887
+Algo que eu não tinha pensado.
+
+692
+00:45:28,887 --> 00:45:33,767
+Algo que sequer eu imaginei que existisse e está me atacando agora.
+
+693
+00:45:33,767 --> 00:45:35,167
+Está desligando a minha armadura.
+
+694
+00:45:35,167 --> 00:45:40,687
+Aí a Friday toma ali a iniciativa de soltar o sistema de exaustão como se estivesse
+pegando fogo.
+
+695
+00:45:40,687 --> 00:45:44,927
+Solta ali a água, expulsa o homem formiga, sem saber o que está acontecendo.
+
+696
+00:45:44,967 --> 00:45:46,587
+E resolve o problema.
+
+697
+00:45:47,667 --> 00:45:51,307
+Mas foi uma ameaça não pensada.
+
+698
+00:45:51,307 --> 00:45:54,117
+E a pergunta é, como é que é o software hoje dia?
+
+699
+00:45:54,117 --> 00:45:55,387
+Você pensou alguma ameaça?
+
+700
+00:45:55,387 --> 00:46:01,027
+Você pensou naqueles caras na universidade aprendendo segurança de informação, fazendo
+Crossfire Script e Asker Injection por aí?
+
+701
+00:46:01,027 --> 00:46:02,827
+Seu site vai se proteger deles?
+
+702
+00:46:03,027 --> 00:46:04,867
+Seu site vai se proteger do crime organizado?
+
+703
+00:46:04,867 --> 00:46:12,035
+Seu site vai se proteger de um grupo de hacktivista num nível de país, nível de nação, de
+cyber guerra mesmo?
+
+704
+00:46:13,587 --> 00:46:14,627
+Se o site está preparado para quê?
+
+705
+00:46:14,627 --> 00:46:17,027
+Se o sistema está preparado para qual tipo de ataque?
+
+706
+00:46:17,027 --> 00:46:18,127
+Ou nenhum deles, né?
+
+707
+00:46:18,127 --> 00:46:19,647
+O que é pior, né?
+
+708
+00:46:20,027 --> 00:46:29,027
+Então, eventualmente ele vai resolver esse problema lá com solução de nanotecnologia e
+tal, mas a ideia é que ameaças existem.
+
+709
+00:46:29,027 --> 00:46:31,507
+Quer você quer ou não, quer você acredite ou não.
+
+710
+00:46:31,507 --> 00:46:34,707
+É tanto que no Homem de Ferro 3 ele começa a ficar paranoico, né?
+
+711
+00:46:34,707 --> 00:46:42,311
+Porque logo depois do Vingadores 1 as ameaças agora não são mais tão reais, reais do ponto
+de vista físicas, humanas.
+
+712
+00:46:42,419 --> 00:46:44,399
+As ameaças agora são alienígenas.
+
+713
+00:46:44,399 --> 00:46:48,479
+Abriu portal Nova York, entrou, a aliens vieram nos atacar.
+
+714
+00:46:48,639 --> 00:46:50,569
+Então, o Tony Stark fala, cara, a gente não tá preparado pra isso.
+
+715
+00:46:50,569 --> 00:46:52,579
+A tá fodido, pra falar a verdade.
+
+716
+00:46:52,759 --> 00:46:54,169
+Se isso aqui acontecer de novo, a tá fodido.
+
+717
+00:46:54,169 --> 00:46:56,519
+No Vingadores 1 foi sorte que deram.
+
+718
+00:46:56,519 --> 00:46:57,619
+Muita sorte.
+
+719
+00:46:57,619 --> 00:46:59,699
+Assiste o filme e vocês vão ver que foi pura sorte.
+
+720
+00:46:59,699 --> 00:47:01,679
+A gente não teria resolvido o problema, né?
+
+721
+00:47:01,679 --> 00:47:09,395
+E aí, no Homem de Ferro 3, já tá neuróticosão, neuróticosinho, ele cria a legião de ferro,
+basicamente ali toda...
+
+722
+00:47:09,395 --> 00:47:16,675
+várias armaduras, cada uma com uma funcionalidade diferente, cada uma com uma capacidade
+diferente, mas ele não consegue escalar isso, ele vê que tem alguns problemas, ele desiste
+
+723
+00:47:16,675 --> 00:47:25,695
+da ideia, mas o Homem de Ferro 3 dá avanço tecnológico muito alto para ele, porque a
+armadura dele agora é independente, a vai discutir isso no próximo episódio, mas só para
+
+724
+00:47:25,695 --> 00:47:28,395
+vocês entenderem até que ponto chega.
+
+725
+00:47:28,635 --> 00:47:32,895
+E a ideia é que, gente, modelagem e ameaça, a gente é sustentado por lições, aprendidas.
+
+726
+00:47:32,895 --> 00:47:38,995
+A gente precisa fazer modelagem e ameaça às escuras, pegar um framer que começar a aplicar
+e tal, sim e não.
+
+727
+00:47:38,995 --> 00:47:39,715
+Por que não?
+
+728
+00:47:39,715 --> 00:47:42,455
+Porque já tá, como eu falei pra vocês, já tá acontecendo coisa na sua empresa.
+
+729
+00:47:42,455 --> 00:47:44,195
+Basta conversar com o time de segurança.
+
+730
+00:47:44,195 --> 00:47:53,995
+E o Tony Stark nos mostra pouco disso, de lições aprendidas, quando lá no Guerra Civil
+também, no final, meio do filme, o Visão atinge com raio lá, ele quer atingir o Falcão, O
+
+731
+00:47:53,995 --> 00:47:58,235
+Falcão ali desvia, esquiva, atinge o Rhodes, que não tá esperando, né?
+
+732
+00:47:58,235 --> 00:48:03,135
+Atinge o Rhodes, o Rhodes perde a capacidade de voo, ele vai cair e ficar paraplégico.
+
+733
+00:48:03,135 --> 00:48:06,643
+E o Tony Stark tá voando com o Rhodes, ele tenta resgatar o Rhodes.
+
+734
+00:48:06,643 --> 00:48:12,803
+mas ele está com uma armadura sem a velocidade supersônica, sem super velocidade, ele não
+consegue resgatá-lo.
+
+735
+00:48:12,803 --> 00:48:17,283
+Enfim, o cara está caindo, Meter a velocidade supersônica para baixo também, ele vai
+conseguir parar, enfim.
+
+736
+00:48:17,283 --> 00:48:19,983
+Ele não consegue ajudar o amigo dele, o amigo dele vai ficar paraplégico.
+
+737
+00:48:19,983 --> 00:48:29,983
+No Guerra Civil, aliás, no Guerra Infinita, o Vingadores 3 praticamente, a nave invade a
+terra lá e tal, pega lá, sequestra o Dr.
+
+738
+00:48:29,983 --> 00:48:31,483
+Estranho e está indo embora.
+
+739
+00:48:31,483 --> 00:48:34,739
+E ele está perseguindo a nave e a nave começa a mais rápida que ele.
+
+740
+00:48:34,739 --> 00:48:43,399
+E ele fala para a Friday, pede turbo ali e tal, e aí armadura dele ganha um turbo, ele
+consegue super velocidade e eventualmente vai chegar até a nave.
+
+741
+00:48:43,699 --> 00:48:52,279
+Então a ideia de melhorar sempre, de ter sempre ali, eu tive problema, tive uma lição
+aprendida, preciso melhorar, preciso evoluir, estar constantemente com o Tony Stark e
+
+742
+00:48:52,279 --> 00:48:54,879
+conosco também, desenvolvedor de software de segurança.
+
+743
+00:48:55,159 --> 00:48:58,559
+E aí, modelagem de ameaça a gente faz com diversas formas.
+
+744
+00:48:58,739 --> 00:49:02,867
+Eu sempre gosto de falar das talvez as mais práticas, o OASP...
+
+745
+00:49:02,867 --> 00:49:09,707
+ThreatDragon, uma ferramenta que implementa, se não me engano, o Stride, o Pasta e um
+outro framework que eu não lembro agora.
+
+746
+00:49:09,707 --> 00:49:13,587
+E o Microsoft Threat Modeling Tool que implementa o Stride por trás.
+
+747
+00:49:13,587 --> 00:49:15,787
+Mas a gente está falando de implementação disso de frameworks.
+
+748
+00:49:15,787 --> 00:49:29,887
+Então, Stride, o Pasta, Lindum, Attack Trees, PNG, Security Cards, HTML, o QTMM, é o
+Quantitative Threat Modeling Method, o Trike, o VAST, Octave.
+
+749
+00:49:29,887 --> 00:49:32,723
+Todos os frameworks e modelos de você fazer modelado de ameaça.
+
+750
+00:49:32,723 --> 00:49:35,283
+Minha sugestão, pega um e faz Hello World.
+
+751
+00:49:35,283 --> 00:49:37,703
+Você vê como as coisas funcionam.
+
+752
+00:49:37,703 --> 00:49:39,903
+Mas todos eles vão trazer basicamente...
+
+753
+00:49:39,903 --> 00:49:47,713
+Todos não, alguns deles vão trazer categorias de ataques ou ameaças e você dentro do teu
+contexto, dentro do teu requisito funcional, você vai aplicar aquelas categorias.
+
+754
+00:49:47,713 --> 00:49:50,743
+Então no Stride, exemplo, lá, spoofing, tampering.
+
+755
+00:49:50,743 --> 00:49:52,893
+Onde nessa tela de login eu posso ter spoofing?
+
+756
+00:49:52,893 --> 00:49:54,653
+Onde nessa tela de login eu posso ter tampering?
+
+757
+00:49:54,653 --> 00:49:56,803
+Onde nessa tela de login eu posso ter repudiation?
+
+758
+00:49:56,803 --> 00:50:00,163
+Um information disclosure, denial of service, elevation of privilege.
+
+759
+00:50:00,307 --> 00:50:01,207
+e assim por diante.
+
+760
+00:50:01,207 --> 00:50:06,627
+baseado nisso, você vai definir as ameaças com base naquelas categorias e as mitigações.
+
+761
+00:50:06,627 --> 00:50:12,127
+O output do modelo de ameaça é, tá bom, achei os problemas, ou os possíveis problemas, as
+possíveis situações de ataque.
+
+762
+00:50:12,127 --> 00:50:13,997
+O que eu faço agora para proteger delas?
+
+763
+00:50:13,997 --> 00:50:16,407
+Ou para reduzir o impacto e assim por diante.
+
+764
+00:50:16,507 --> 00:50:19,227
+Então a conclusão aqui, é a seguinte.
+
+765
+00:50:19,427 --> 00:50:24,207
+Imaginar o inimaginável é o que Tony Stark faz.
+
+766
+00:50:24,307 --> 00:50:25,171
+Ele tá...
+
+767
+00:50:25,171 --> 00:50:27,291
+Cada filme mostra que a evolução dele...
+
+768
+00:50:27,291 --> 00:50:37,911
+No filme 1 já, tive a primeira armadura, saiu da caverna, mas a segunda versão tinha que
+ser muito mais foda, porque ele queria voltar lá e pegar os terroristas, ver que estava
+
+769
+00:50:37,911 --> 00:50:39,211
+tudo errado.
+
+770
+00:50:39,251 --> 00:50:40,881
+Então a segunda armadura já é foda.
+
+771
+00:50:40,881 --> 00:50:44,011
+A terceira então, já é absurdo, já é a colorida.
+
+772
+00:50:44,231 --> 00:50:51,819
+Então esse mindset de evolução e melhoria constante, isso tem que estar no sangue de
+vocês, principalmente se você é desenvolvedor.
+
+773
+00:50:51,827 --> 00:50:56,927
+Eu não estou falando melhoria gente, desculpa tá, mas não estou falando melhoria de
+performance, de código, de...
+
+774
+00:50:56,927 --> 00:50:58,707
+Sim, também, isso já é natural.
+
+775
+00:50:58,707 --> 00:51:00,807
+Mas a melhoria é de segurança.
+
+776
+00:51:01,207 --> 00:51:07,267
+A empresa que não pensa segurança hoje está fadada ao fracasso, porque eventualmente você
+vai ser atacado.
+
+777
+00:51:07,267 --> 00:51:08,087
+Eventualmente não, né?
+
+778
+00:51:08,087 --> 00:51:10,327
+Você já está sendo atacado, você só não sabe disso.
+
+779
+00:51:10,787 --> 00:51:17,877
+Então, esse mindset é o que eu queria passar pra vocês hoje, de modelagem e ameaças, como
+fazer modelagem e ameaças, com o meu novo design.
+
+780
+00:51:17,877 --> 00:51:20,819
+Eu não estou com uma barba estilo Tony Stark, mas estou...
+
+781
+00:51:20,819 --> 00:51:27,879
+com novo visual que eu gostaria muito que vocês fossem lá no YouTube e comentassem nesse
+vídeo aqui nesse episódio, tá bom?
+
+782
+00:51:27,879 --> 00:51:32,579
+Pessoal, a gente se vê na semana que vem, final de ano acabando, então vamos dar férias
+pros meninos, né?
+
+783
+00:51:32,579 --> 00:51:37,148
+Daqui a pouco a gente volta aí a todo vapor na nossa sexta ou sétima temporada da Vista
+Couch Podcast.
+
+784
+00:51:37,148 --> 00:51:38,659
+Nem me perdi agora.
+
+785
+00:51:38,659 --> 00:51:44,239
+Temporada da Vista Couch Podcast, muito episódio pra vocês, eu espero que vocês fiquem
+bem.
+
+786
+00:51:44,239 --> 00:51:49,619
+Leiam o livro enquanto isso, porque aí os próximos episódios aqui do Podcast vão ser ainda
+melhores.
+
+787
+00:51:49,619 --> 00:51:51,619
+você vai conseguir acompanhar ainda muito mais.
+
+788
+00:51:51,619 --> 00:51:58,819
+Compartilha esse episódio com quem você ama ou com quem você odeia, mas compartilhe,
+porque o importante é fazer software com segurança.
+
+789
+00:51:59,239 --> 00:52:03,139
+Leia o livro, veja a apresentação do AppSec Iron Man.
+
+790
+00:52:03,139 --> 00:52:05,689
+E acho que era isso, A gente se vê no próximo episódio.
+
+791
+00:52:05,689 --> 00:52:06,443
+Valeu.
+
