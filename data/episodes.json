@@ -15,7 +15,7 @@
       "contentHtml": "Neste episódio do DevSecOps Podcast, Cássio Batista Pereira explora o monitoramento de aplicações através da analogia com o Homem de Ferro. Ele discute o quaão crítico é ter um monitoramento inteligente e ativo para identificar o quanto antes uma ameaça ou mesmo um incidente, apresentando um ciclo de vida simples de log que inclui geração, centralização e visualização. O episódio enfatiza que é trabalhoso mas não impossível de centralizar informações sobre sua aplicação em um único lugar.<br /><br />",
       "mp3": "https://api.spreaker.com/v2/episodes/69505568/download.mp3",
       "download": "https://api.spreaker.com/v2/episodes/69505568/download.mp3",
-      "youtube": "",
+      "youtube": "https://www.youtube.com/watch?v=ZQAR2sG4TW4",
       "tags": [],
       "spreakerId": "69505568",
       "code": "T07E08"
