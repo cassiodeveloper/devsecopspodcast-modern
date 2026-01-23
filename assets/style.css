@@ -583,3 +583,21 @@ a{color:inherit; text-decoration:none}
   font-weight: 900;
   letter-spacing: 0.08em;
 }
+
+.lang-toggle {
+  margin-left: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.25);
+  background: transparent;
+  color: var(--fg);
+  font-weight: 900;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  cursor: pointer;
+}
+
+.lang-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}

@@ -51,9 +51,12 @@
         </span>
       </a>
       <nav class="nav">
-        <a href="#episodios">Episódios</a>
-        <a href="#manifesto">Manifesto</a>
-        <a href="#assinar">Assinar</a>
+        <a href="#episodios" data-i18n="nav.episodes">Episódios</a>
+        <a href="#manifesto" data-i18n="nav.manifesto">Manifesto</a>
+        <a href="#assinar" data-i18n="nav.subscribe">Assinar</a>
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+          EN
+        </button>
       </nav>
     </div>
   </header>
@@ -61,18 +64,17 @@
     <section class="hero-yass" id="topo">
       <div class="hero-grid">
         <div class="hero-left">
-          <h1 class="hero-title">
+          <h1 class="hero-title" data-i18n="hero.title">
             DEVSECOPS<br>
             NÃO É<br>
             CHECKLIST
           </h1>
-          <p class="hero-sub">
+          <p class="hero-sub" data-i18n="hero.subtitle">
             Conversas reais sobre AppSec, DevSecOps e decisões técnicas que sobrevivem à produção.
-            Play direto. Download fácil.
           </p>
           <div class="hero-actions">
-            <a class="btn-xl" href="#episodios">OUVIR AGORA</a>
-            <a class="btn-xl ghost" href="#manifesto">LER MANIFESTO</a>
+            <a class="btn-xl" href="#episodios" data-i18n="hero.ctaListen">OUVIR AGORA</a>
+            <a class="btn-xl ghost" href="#manifesto" data-i18n="hero.ctaManifesto">LER MANIFESTO</a>
           </div>
           <div class="hero-meta">
             <span class="tag">AppSec</span>
@@ -141,7 +143,7 @@
       </p>
     </section>
     <section id="manifesto" class="section">
-      <h2 class="section-title">Manifesto</h2>
+      <h2 class="section-title" data-i18n="manifesto.title">Manifesto</h2>
       <div class="manifesto">
         <div class="manifesto-block sketch">
           <div class="kicker">Regra 1</div>
@@ -190,7 +192,8 @@
     </footer>
   </main>
   <script src="assets/app.js" defer></script>
-
+  <script src="assets/i18n.js"></script>
+  <script src="assets/lang.js"></script>
   <script>
     (async () => {
       try {
