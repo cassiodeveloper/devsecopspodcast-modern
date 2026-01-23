@@ -1,54 +1,82 @@
 <!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Episódio • DevSecOps Podcast</title>
-  <meta name="description" content="Detalhes do episódio do DevSecOps Podcast." />
-  <meta name="theme-color" content="#0a0a0a" />
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-37XY9E9BMP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+      gtag('config', 'G-37XY9E9BMP');
+    </script>  
+    
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">    
+    
+    <meta charset="UTF-8" />
+    <meta name="description" content="O DevSecOps Podcast é uma jornada empolgante pelo mundo da cibersegurança, com um foco especial em Application Security e DevSecOps. Neste podcast cativante, exploramos as mais recentes tendências, melhores práticas e desafios que cercam a proteção de aplicações e a integração da segurança não somente desde o início do ciclo de desenvolvimento de software., mas em toda sua execução Junte-se a especialistas do setor e líderes visionários enquanto discutem estratégias, ferramentas e insights essenciais para garantir que sua organização esteja à frente das ameaças cibernéticas. Se você está interessado em manter suas aplicações seguras e atualizado com as práticas mais recentes em segurança de desenvolvimento, o DevSecOps Podcast é o seu guia confiável." />
+    <meta name="keywords" content="DevSecOps, Podcast, AppSec, Cássio, Pereira, InfoSec" />
+    <meta name="author" content="Cássio B. Pereira">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <title>DevSecOps Podcast - Detalhe de episódio</title>
+    
+    <meta property="og:title" content="DevSecOps Podcast" />
+    <meta property="og:url" content="https://devsecopspodcast.com.br"/>
+    <meta property="og:description" content="O DevSecOps Podcast é uma jornada empolgante pelo mundo da cibersegurança, com um foco especial em Application Security e DevSecOps. Neste podcast cativante, exploramos as mais recentes tendências, melhores práticas e desafios que cercam a proteção de aplicações e a integração da segurança não somente desde o início do ciclo de desenvolvimento de software., mas em toda sua execução Junte-se a especialistas do setor e líderes visionários enquanto discutem estratégias, ferramentas e insights essenciais para garantir que sua organização esteja à frente das ameaças cibernéticas. Se você está interessado em manter suas aplicações seguras e atualizado com as práticas mais recentes em segurança de desenvolvimento, o DevSecOps Podcast é o seu guia confiável."/>
+    <meta property="og:image" content="https://devsecopspodcast.com.br/assets/logo-devsecops.png"/>
+    <meta name="theme-color" content="#0a0a0a" />
 
-  <link rel="stylesheet" href="assets/style.css" />
-</head>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@cassiodeveloper">
+    <meta name="twitter:creator" content="@cassiodeveloper">
+    <meta name="twitter:title" content="DevSecOps Podcast">
+    <meta name="twitter:description" content="AppSec e DevSecOps sem checklist corporativo. Decisões técnicas que sobrevivem à produção.">
+    <meta name="twitter:image" content="https://devsecopspodcast.com.br/assets/logo-devsecops.png">
 
-<body>
-  <header class="top">
-    <div class="wrap topbar">
-      <a class="brand" href="/" aria-label="DevSecOps Podcast">
-        <img class="brand-logo" src="assets/logo-devsecops.png" alt="DevSecOps Podcast" />
-        <span class="brand-text">
-          <span class="brand-name">DevSecOps</span>
-          <span class="brand-sub">podcast</span>
-        </span>
-      </a>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 
-      <nav class="nav">
-        <a href="/#episodios">Episódios</a>
-        <a href="/#manifesto">Manifesto</a>
-        <a href="/#assinar">Assinar</a>
-      </nav>
-    </div>
-  </header>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
 
-  <main class="wrap">
-    <article id="ep" class="episode"></article>
-
-    <section class="statement mini sketch">
-      <p>
-        SE O SEU EPISÓDIO NÃO MUDA UMA DECISÃO TÉCNICA,<br>
-        ELE É SÓ CONTEÚDO DE FUNDO.
-      </p>
-    </section>
-
-    <footer class="footer">
-      <a class="muted" href="/#episodios">← voltar</a>
-      <span class="muted">© <span id="year"></span> DevSecOps Podcast</span>
-    </footer>
-  </main>
-
-  <script src="assets/episode.js" defer></script>
-</body>
+  <body>
+    <header class="top">
+      <div class="wrap topbar">
+        <a class="brand" href="/" aria-label="DevSecOps Podcast">
+          <img class="brand-logo" src="assets/logo-devsecops.png" alt="DevSecOps Podcast" />
+          <span class="brand-text">
+            <span class="brand-name">DevSecOps</span>
+            <span class="brand-sub">podcast</span>
+          </span>
+        </a>
+        <nav class="nav">
+          <a href="#episodios" data-i18n="nav.episodes">Episódios</a>
+          <a href="#manifesto" data-i18n="nav.manifesto">Manifesto</a>
+          <a href="#assinar" data-i18n="nav.subscribe">Assinar</a>
+          <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+            EN
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main class="wrap">
+      <article id="ep" class="episode"></article>
+      <section class="statement mini sketch">
+        <p>
+          SE O SEU EPISÓDIO NÃO MUDA UMA DECISÃO TÉCNICA,<br>
+          ELE É SÓ CONTEÚDO DE FUNDO.
+        </p>
+      </section>
+      <footer class="footer">
+        <a class="muted" href="/#episodios">← voltar</a>
+        <span class="muted">© <span id="year"></span> DevSecOps Podcast</span>
+        <a class="muted" target="_blank" rel="noreferrer" href="https://cassiodeveloper.com.br">Cássio B. Pereira a.k.a. @cassiodeveloper</a>
+      </footer>
+    </main>
+    <script src="assets/episode.js" defer></script>
+    <script src="assets/i18n.js"></script>
+    <script src="assets/lang.js"></script>
+  </body>
 </html>
