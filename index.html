@@ -1,719 +1,229 @@
-<!DOCTYPE html>
-<html lang="pt">
-  <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-37XY9E9BMP"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-37XY9E9BMP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-      gtag('config', 'G-37XY9E9BMP');
-    </script>  
-    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">    
-    <meta charset="UTF-8" />
-    <meta name="description" content="O DevSecOps Podcast é uma jornada empolgante pelo mundo da cibersegurança, com um foco especial em Application Security e DevSecOps. Neste podcast cativante, exploramos as mais recentes tendências, melhores práticas e desafios que cercam a proteção de aplicações e a integração da segurança não somente desde o início do ciclo de desenvolvimento de software., mas em toda sua execução Junte-se a especialistas do setor e líderes visionários enquanto discutem estratégias, ferramentas e insights essenciais para garantir que sua organização esteja à frente das ameaças cibernéticas. Se você está interessado em manter suas aplicações seguras e atualizado com as práticas mais recentes em segurança de desenvolvimento, o DevSecOps Podcast é o seu guia confiável." />
-    <meta name="keywords" content="DevSecOps, Podcast, AppSec, Cássio, Pereira, InfoSec" />
-    <meta name="author" content="Cássio B. Pereira">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>DevSecOps Podcast</title>
-    
-    <meta property="og:title" content="DevSecOps Podcast" />
-    <meta property="og:url" content="https://devsecopspodcast.com.br"/>
-    <meta property="og:description" content="O DevSecOps Podcast é uma jornada empolgante pelo mundo da cibersegurança, com um foco especial em Application Security e DevSecOps. Neste podcast cativante, exploramos as mais recentes tendências, melhores práticas e desafios que cercam a proteção de aplicações e a integração da segurança não somente desde o início do ciclo de desenvolvimento de software., mas em toda sua execução Junte-se a especialistas do setor e líderes visionários enquanto discutem estratégias, ferramentas e insights essenciais para garantir que sua organização esteja à frente das ameaças cibernéticas. Se você está interessado em manter suas aplicações seguras e atualizado com as práticas mais recentes em segurança de desenvolvimento, o DevSecOps Podcast é o seu guia confiável."/>
-    <meta property="og:image" content="https://devsecopspodcast.com.br/img/logo.png"/>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
+    gtag('config', 'G-37XY9E9BMP');
+  </script>  
+  
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico">    
+  
+  <meta charset="UTF-8" />
+  <meta name="description" content="O DevSecOps Podcast é uma jornada empolgante pelo mundo da cibersegurança, com um foco especial em Application Security e DevSecOps. Neste podcast cativante, exploramos as mais recentes tendências, melhores práticas e desafios que cercam a proteção de aplicações e a integração da segurança não somente desde o início do ciclo de desenvolvimento de software., mas em toda sua execução Junte-se a especialistas do setor e líderes visionários enquanto discutem estratégias, ferramentas e insights essenciais para garantir que sua organização esteja à frente das ameaças cibernéticas. Se você está interessado em manter suas aplicações seguras e atualizado com as práticas mais recentes em segurança de desenvolvimento, o DevSecOps Podcast é o seu guia confiável." />
+  <meta name="keywords" content="DevSecOps, Podcast, AppSec, Cássio, Pereira, InfoSec" />
+  <meta name="author" content="Cássio B. Pereira">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>DevSecOps Podcast</title>
+  
+  <meta property="og:title" content="DevSecOps Podcast" />
+  <meta property="og:url" content="https://devsecopspodcast.com.br"/>
+  <meta property="og:description" content="O DevSecOps Podcast é uma jornada empolgante pelo mundo da cibersegurança, com um foco especial em Application Security e DevSecOps. Neste podcast cativante, exploramos as mais recentes tendências, melhores práticas e desafios que cercam a proteção de aplicações e a integração da segurança não somente desde o início do ciclo de desenvolvimento de software., mas em toda sua execução Junte-se a especialistas do setor e líderes visionários enquanto discutem estratégias, ferramentas e insights essenciais para garantir que sua organização esteja à frente das ameaças cibernéticas. Se você está interessado em manter suas aplicações seguras e atualizado com as práticas mais recentes em segurança de desenvolvimento, o DevSecOps Podcast é o seu guia confiável."/>
+  <meta property="og:image" content="https://devsecopspodcast.com.br/assets/logo-devsecops.png"/>
+  <meta name="theme-color" content="#0a0a0a" />
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css" />
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
-  </head>
-  <body>
-    <div id="preloder"><div class="loader"></div></div>
-    <div class="offcanvas-menu-overlay"></div>
-    <div class="offcanvas-menu-wrapper">
-      <div class="offcanvas__logo">
-        <a href="./index.html"><img src="img/logo.png" alt="DevSecOps Podcast" /></a>
-      </div>
-      <div id="mobile-menu-wrap"></div>
-      <div class="offcanvas__social">
-        <a target="_blank" href="https://facebook.com/cassiodeveloper"><i class="fa fa-facebook"></i></a>
-        <a target="_blank" href="https://x.com/cassiodeveloper"><i class="fa fa-twitter"></i></a>
-        <a target="_blank" href="https://www.instagram.com/cassiodeveloper"><i class="fa fa-instagram"></i></a>
-        <a target="_blank" href="https://www.youtube.com/playlist?list=PLC2UsZBhySmJU0EYM6kzgchnXikYXZzmi"><i class="fa fa-youtube-play"></i></a>
-        <a target="_blank" href="https://www.spreaker.com/show/4179006/episodes/feed"><i class="fa fa-rss"></i></a>
-      </div>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@cassiodeveloper">
+  <meta name="twitter:creator" content="@cassiodeveloper">
+  <meta name="twitter:title" content="DevSecOps Podcast">
+  <meta name="twitter:description" content="AppSec e DevSecOps sem checklist corporativo. Decisões técnicas que sobrevivem à produção.">
+  <meta name="twitter:image" content="https://devsecopspodcast.com.br/assets/logo-devsecops.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="wrap topbar">
+      <a class="brand" href="/" aria-label="DevSecOps Podcast">
+        <img class="brand-logo" src="assets/logo-devsecops.png" alt="DevSecOps Podcast" />
+        <span class="brand-text">
+          <span class="brand-name">DevSecOps</span>
+          <span class="brand-sub">podcast</span>
+        </span>
+      </a>
+      <nav class="nav">
+        <a href="#episodios">Episódios</a>
+        <a href="#manifesto">Manifesto</a>
+        <a href="#assinar">Assinar</a>
+      </nav>
     </div>
-    <header class="header">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="header__logo">
-              <a href="./index.html"><img src="img/logo.png" alt="DevSecOps Podcast" /></a>
-            </div>
-            <nav class="header__menu mobile-menu">
-              <ul>
-                <li class="active"><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">Sobre</a></li>
-                <li><a href="./episodes.html">Episódios</a></li>
-                <li><a href="./contact.html">Contato</a></li>
-                <li><a target="_blank" href="https://cassiodeveloper.com.br/devsecopspodcast/episodes.html">Old</a></li>
-              </ul>
-            </nav>
+  </header>
+  <main class="wrap">
+    <section class="hero-yass" id="topo">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <h1 class="hero-title">
+            DEVSECOPS<br>
+            NÃO É<br>
+            CHECKLIST
+          </h1>
+          <p class="hero-sub">
+            Conversas reais sobre AppSec, DevSecOps e decisões técnicas que sobrevivem à produção.
+            Play direto. Download fácil.
+          </p>
+          <div class="hero-actions">
+            <a class="btn-xl" href="#episodios">OUVIR AGORA</a>
+            <a class="btn-xl ghost" href="#manifesto">LER MANIFESTO</a>
           </div>
-          <div class="col-lg-4">
-            <div class="header__right">
-              <div class="header__right__social">
-                <a target="_blank" href="https://facebook.com/cassiodeveloper"><i class="fa fa-facebook"></i></a>
-                <a target="_blank" href="https://x.com/cassiodeveloper"><i class="fa fa-twitter"></i></a>
-                <a target="_blank" href="https://www.instagram.com/cassiodeveloper"><i class="fa fa-instagram"></i></a>
-                <a target="_blank" href="https://www.youtube.com/playlist?list=PLC2UsZBhySmJU0EYM6kzgchnXikYXZzmi"><i class="fa fa-youtube-play"></i></a>
-              </div>
-            </div>
+          <div class="hero-meta">
+            <span class="tag">AppSec</span>
+            <span class="tag">DevSecOps</span>
+            <span class="tag">SAST</span>
+            <span class="tag">Threat Modeling</span>
+            <span class="tag">CI/CD</span>
           </div>
         </div>
-        <div class="canvas__open"><i class="fa fa-bars"></i></div>
+        <aside class="hero-right">
+          <div class="big-card sketch">
+            <div class="big-card-top">
+              <span class="kicker">Último episódio</span>
+              <span class="muted" id="lastMeta">Carregando…</span>
+            </div>
+            <div class="big-card-title" id="lastTitle">Carregando título…</div>
+            <div class="big-card-actions">
+              <a class="pill" id="lastDetails" href="#episodios">Abrir</a>
+              <a class="pill" id="lastYoutube" href="#" target="_blank" rel="noreferrer" style="display:none">YouTube</a>
+              <a class="pill" id="lastDownload" href="#" download style="display:none">Download</a>
+            </div>
+            <audio class="audio" id="lastAudio" controls preload="none"></audio>
+          </div>
+          <div class="mini-note sketch">
+            <span class="kicker">Aviso</span>
+            <p class="muted">
+              Se você procura um site “fofinho”, errou de stack. Aqui é produção.
+            </p>
+          </div>
+        </aside>
       </div>
-    </header>
-    <section class="hero spad set-bg" data-setbg="img/hero/hero-bg.jpg">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="hero__text">
-              <h5><span class="icon_calendar"></span> 10 Dez 2025</h5>
-              <a target="_blank" href="T7E05-Homem-de-Ferro-Modelagem-Ameacas.html">
-                <h2>T7E05 - AppSec Homem de Ferro - Modelagem de Ameaças</h2>
-              </a>
-              <a target="_blank" href="https://www.youtube.com/watch?v=nGyE5KfFeWg" class="primary-btn">Assistir no YouTube</a>
-              <a href="https://www.spreaker.com/show/4179006/episodes/feed" class="primary-btn white-btn">Assinar RSS</a>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="hero__pic set-bg" data-setbg="img/hero/hero-video.png">
-              <a title="Assistir ao episódio" target="_blank" href="https://www.youtube.com/watch?v=joG6uk6TUcc"><img src="img/hero/play-btn.png" alt="Último episódio" /></a>
-            </div>
-          </div>
+    </section>
+    <section class="statement sketch">
+      <p>
+        SEGURANÇA NÃO QUEBRA PRODUTO.<br>
+        PRODUTO MAL DECIDIDO QUEBRA SOZINHO.
+      </p>
+    </section>
+    <section id="episodios" class="section">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Episódios</h2>
+          <p class="section-sub muted">
+            Scroll infinito. Busca rápida. Sem timeline “instagramizada”.
+          </p>
+        </div>
+        <div class="controls">
+          <input id="q" class="input" placeholder="Buscar (título, convidado, tags)..." autocomplete="off" />
+          <select id="season" class="select" title="Temporada">
+            <option value="">Todas</option>
+          </select>
         </div>
       </div>
-      <div class="single__track">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="single__track__item">
-                <div class="single__track__item__pic">
-                  <img src="img/team/profile23.jpg" alt="Cássio B. Pereira" />
-                </div>
-                <div class="single__track__item__text">
-                  <h5>T7E05 - AppSec Homem de Ferro - Modelagem de Ameaças</h5>
-                  <span>Cássio Pereira</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-8">
-              <div class="single__track__option">
-                <div class="jp-jplayer jplayer" data-ancestor=".jp_container" data-url="music-files/705.mp3"></div>
-                <div class="jp-audio jp_container" role="application" aria-label="media player">
-                  <div class="jp-gui jp-interface">
-                    <div class="player_controls_box"><button class="jp-play player_button" tabindex="0"></button></div>
-                    <div class="player_bars">
-                      <div class="jp-progress">
-                        <div class="jp-seek-bar">
-                          <div>
-                            <div class="jp-play-bar">
-                              <div class="jp-current-time" role="timer" aria-label="time">0:00</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="jp-duration ml-auto" role="timer" aria-label="duration">00:00</div>
-                    </div>
-                    <div class="jp-volume-controls">
-                      <button class="jp-mute" tabindex="0">
-                        <span class="icon_volume-high"></span>
-                      </button>
-                      <div class="jp-volume-bar">
-                        <div class="jp-volume-bar-value" style="width: 0%"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="jp-btns">
-                    <a href="https://api.spreaker.com/v2/episodes/68941756/download.mp3"><i class="fa fa-download"></i> Download</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="rail">
+        <div class="rail-left muted">PLAY</div>
+        <div class="rail-right muted">LINKS</div>
+      </div>
+      <div id="list" class="list"></div>
+      <div id="status" class="status" aria-live="polite"></div>
+      <div id="sentinel" class="sentinel"></div>
+    </section>
+    <section class="statement alt sketch">
+      <p>
+        “SHIP” SEM AMEAÇA MODELADA<br>
+        É SÓ UM JEITO CARO DE TESTAR EM CLIENTE.
+      </p>
+    </section>
+    <section id="manifesto" class="section">
+      <h2 class="section-title">Manifesto</h2>
+      <div class="manifesto">
+        <div class="manifesto-block sketch">
+          <div class="kicker">Regra 1</div>
+          <h3>Checklist é muleta.</h3>
+          <p class="muted">
+            Segurança de verdade é decisão técnica contextual. Se o seu processo não produz trade-off explícito,
+            você não tem AppSec, você tem teatro.
+          </p>
+        </div>
+        <div class="manifesto-block sketch">
+          <div class="kicker">Regra 2</div>
+          <h3>Ferramenta não é estratégia.</h3>
+          <p class="muted">
+            Scanner é sensor. Sem triagem, sem correção, sem ownership, é só ruído caro.
+          </p>
+        </div>
+        <div class="manifesto-block sketch">
+          <div class="kicker">Regra 3</div>
+          <h3>Produção é a verdade.</h3>
+          <p class="muted">
+            O resto são slides. O objetivo é reduzir risco real, não ganhar badge de compliance.
+          </p>
         </div>
       </div>
     </section>
-    <section class="podcast spad">     
-      <div class="container">
-        <div class="podcast__top"><div class="row"><div class="col-lg-5 col-md-5"><h2>Episódios já lançados</h2></div></div></div>         
-        <div class="row podcast-filter">
-          <div class="col-lg-12 mix entrepreneurship">
-            <div class="podcast__item">
-              <div class="podcast__item__pic">
-                <img src="img/podcast/podcast-3.jpg" alt="" />
-              </div>
-              <div class="podcast__item__text">
-                <ul>
-                  <li><span class="icon_calendar"></span> 17 Nov 2025</li>
-                  <li><span class="icon_profile"></span> por Cássio Pereira</li>
-                </ul>
-                <a target="_blank" href="T07E04-Dev-pode-ser-sec.html">
-                  <h4>T7E04 - Dev pode ser Sec?</h4>
-                  <p>Os tempos mudaram: ser dev hoje não é só entregar features. É entender o ecossistema onde o código vive — e isso inclui segurança. No episódio mais recente do DevSecOps Podcast, recebemos um desenvolvedor que contou na lata como foi perceber que AppSec não é um “extra”, mas parte do ofício. Quando o dev entende segurança, tudo flui: decisões ficam...</p>
-                </a>
-                <div class="track__option">
-                  <div class="jp-jplayer jplayer" data-ancestor=".jp_container-1" data-url="./music-files/704.mp3"></div>
-                  <div class="jp-audio jp_container-1" role="application" aria-label="media player">
-                    <div class="jp-gui jp-interface">
-                      <div class="player_controls_box"><button class="jp-play player_button" tabindex="0"></button></div>
-                      <div class="player_bars">
-                        <div class="jp-progress">
-                          <div class="jp-seek-bar">
-                            <div>
-                              <div class="jp-play-bar">
-                                <div class="jp-current-time" role="timer" aria-label="time">0:00</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="jp-duration ml-auto" role="timer" aria-label="duration">00:00</div>
-                      </div>
-                      <div class="jp-volume-controls">
-                        <button class="jp-mute" tabindex="0">
-                          <span class="icon_volume-high"></span>
-                        </button>
-                        <div class="jp-volume-bar"><div class="jp-volume-bar-value" style="width: 0%"></div></div>
-                      </div>
-                    </div>
-                    <div class="jp-btns">
-                      <a href="https://api.spreaker.com/v2/episodes/68876146/download.mp3"><i class="fa fa-download"></i> Download</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> 
-          <div class="col-lg-12 mix entrepreneurship">
-            <div class="podcast__item">
-              <div class="podcast__item__pic">
-                <img src="img/podcast/podcast-4.jpg" alt="" />
-              </div>
-              <div class="podcast__item__text">
-                <ul>
-                  <li><span class="icon_calendar"></span> 27 Nov 2025</li>
-                  <li><span class="icon_profile"></span> por Cássio Pereira</li>
-                </ul>
-                <a target="_blank" href="T7E03-SecOps-como-nunca.html">
-                  <h4>T7E03 - DSecOps como voce nunca viu</h4>
-                  <p>SecOps virou o ponto de tensão entre velocidade e segurança, e quem vive infraestrutura sabe o tamanho da encrenca. Neste episódio, o SRE experiente Rafael Frizani abre o jogo sobre...</p>
-                </a>
-                <div class="track__option">
-                  <div class="jp-jplayer jplayer" data-ancestor=".jp_container-1" data-url="./music-files/703.mp3"></div>
-                  <div class="jp-audio jp_container-1" role="application" aria-label="media player">
-                    <div class="jp-gui jp-interface">
-                      <div class="player_controls_box"><button class="jp-play player_button" tabindex="0"></button></div>
-                      <div class="player_bars">
-                        <div class="jp-progress">
-                          <div class="jp-seek-bar">
-                            <div>
-                              <div class="jp-play-bar">
-                                <div class="jp-current-time" role="timer" aria-label="time">0:00</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="jp-duration ml-auto" role="timer" aria-label="duration">00:00</div>
-                      </div>
-                      <div class="jp-volume-controls">
-                        <button class="jp-mute" tabindex="0">
-                          <span class="icon_volume-high"></span>
-                        </button>
-                        <div class="jp-volume-bar"><div class="jp-volume-bar-value" style="width: 0%"></div></div>
-                      </div>
-                    </div>
-                    <div class="jp-btns">
-                      <a href="https://api.spreaker.com/v2/episodes/68767628/download.mp3"><i class="fa fa-download"></i> Download</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>           
-          <div class="col-lg-12 mix entrepreneurship">
-            <div class="podcast__item">
-              <div class="podcast__item__pic">
-                <img src="img/podcast/podcast-1.jpg" alt="" />
-              </div>
-              <div class="podcast__item__text">
-                <ul>
-                  <li><span class="icon_calendar"></span> 12 Nov 2025</li>
-                  <li><span class="icon_profile"></span> por Cássio Pereira</li>
-                </ul>
-                <a target="_blank" href="T7E02-Bug-Bounty.html">
-                  <h4>T7E02 - Bug bounty</h4>
-                  <p>Caçar vulnerabilidades pode parecer um jogo de recompensas, mas a verdade é bem mais intensa. No episódio desta semana, conversamos com o pesquisador C4ng4c3ir0, um dos nomes mais conhecidos da cena de...</p>
-                </a>
-                <div class="track__option">
-                  <div class="jp-jplayer jplayer" data-ancestor=".jp_container-1" data-url="./music-files/702.mp3"></div>
-                  <div class="jp-audio jp_container-1" role="application" aria-label="media player">
-                    <div class="jp-gui jp-interface">
-                      <div class="player_controls_box"><button class="jp-play player_button" tabindex="0"></button></div>
-                      <div class="player_bars">
-                        <div class="jp-progress">
-                          <div class="jp-seek-bar">
-                            <div>
-                              <div class="jp-play-bar">
-                                <div class="jp-current-time" role="timer" aria-label="time">0:00</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="jp-duration ml-auto" role="timer" aria-label="duration">00:00</div>
-                      </div>
-                      <div class="jp-volume-controls">
-                        <button class="jp-mute" tabindex="0">
-                          <span class="icon_volume-high"></span>
-                        </button>
-                        <div class="jp-volume-bar"><div class="jp-volume-bar-value" style="width: 0%"></div></div>
-                      </div>
-                    </div>
-                    <div class="jp-btns">
-                      <a href="https://api.spreaker.com/v2/episodes/68767628/download.mp3"><i class="fa fa-download"></i> Download</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> 
-          <div class="col-lg-12 mix entrepreneurship">
-            <div class="podcast__item">
-              <div class="podcast__item__pic">
-                <img src="img/podcast/podcast-1.jpg" alt="" />
-              </div>
-              <div class="podcast__item__text">
-                <ul>
-                  <li><span class="icon_calendar"></span> 02 Jul 2025</li>
-                  <li><span class="icon_profile"></span> por Cássio Pereira</li>
-                </ul>
-                <a target="_blank" href="T6E15-Seu-AppSec-meu-lucro.html">
-                  <h4>T6E15 - Seu AppSec é o meu lucro</h4>
-                  <p>No episódio de hoje, sentamos com o lendário C4ng4c3ir0, um verdadeiro fora da lei... do bem. Ele compartilha sua jornada como Bug Hunter, desde os primeiros bounties até os altos lucros descobrindo falhas...</p>
-                </a>
-                <div class="track__option">
-                  <div class="jp-jplayer jplayer" data-ancestor=".jp_container-1" data-url="./music-files/615.mp3"></div>
-                  <div class="jp-audio jp_container-1" role="application" aria-label="media player">
-                    <div class="jp-gui jp-interface">
-                      <div class="player_controls_box"><button class="jp-play player_button" tabindex="0"></button></div>
-                      <div class="player_bars">
-                        <div class="jp-progress">
-                          <div class="jp-seek-bar">
-                            <div>
-                              <div class="jp-play-bar">
-                                <div class="jp-current-time" role="timer" aria-label="time">0:00</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="jp-duration ml-auto" role="timer" aria-label="duration">00:00</div>
-                      </div>
-                      <div class="jp-volume-controls">
-                        <button class="jp-mute" tabindex="0">
-                          <span class="icon_volume-high"></span>
-                        </button>
-                        <div class="jp-volume-bar"><div class="jp-volume-bar-value" style="width: 0%"></div></div>
-                      </div>
-                    </div>
-                    <div class="jp-btns">
-                      <a href="https://api.spreaker.com/v2/episodes/66830207/download.mp3"><i class="fa fa-download"></i> Download</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>           
-          <div class="col-lg-12 mix entrepreneurship">
-            <div class="podcast__item">
-              <div class="podcast__item__pic">
-                <img src="img/podcast/podcast-3.jpg" alt="" />
-              </div>
-              <div class="podcast__item__text">
-                <ul>
-                  <li><span class="icon_calendar"></span> 06 Nov 2025</li>
-                  <li><span class="icon_profile"></span> por Cássio Pereira</li>
-                </ul>
-                <a target="_blank" href="T7E01-AppSec-AI.html">
-                  <h4>T07E01 - AppSec & AI Será que da liga?</h4>
-                  <p>...</p>
-                </a>
-                <div class="track__option">
-                  <div class="jp-jplayer jplayer" data-ancestor=".jp_container-1" data-url="./music-files/701.mp3"></div>
-                  <div class="jp-audio jp_container-1" role="application" aria-label="media player">
-                    <div class="jp-gui jp-interface">
-                      <div class="player_controls_box"><button class="jp-play player_button" tabindex="0"></button></div>
-                      <div class="player_bars">
-                        <div class="jp-progress">
-                          <div class="jp-seek-bar">
-                            <div>
-                              <div class="jp-play-bar">
-                                <div class="jp-current-time" role="timer" aria-label="time">0:00</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="jp-duration ml-auto" role="timer" aria-label="duration">00:00</div>
-                      </div>
-                      <div class="jp-volume-controls">
-                        <button class="jp-mute" tabindex="0">
-                          <span class="icon_volume-high"></span>
-                        </button>
-                        <div class="jp-volume-bar"><div class="jp-volume-bar-value" style="width: 0%"></div></div>
-                      </div>
-                    </div>
-                    <div class="jp-btns">
-                      <a href="https://api.spreaker.com/v2/episodes/68430882/download.mp3"><i class="fa fa-download"></i> Download</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>           
-          <div class="col-lg-12 mix entrepreneurship">
-            <div class="podcast__item">
-              <div class="podcast__item__pic">
-                <img src="img/podcast/podcast-4.jpg" alt="" />
-              </div>
-              <div class="podcast__item__text">
-                <ul>
-                  <li><span class="icon_calendar"></span> 13 Jun 2025</li>
-                  <li><span class="icon_profile"></span> por Cássio Pereira</li>
-                </ul>
-                <a target="_blank" href="T6E13-Aprendizado-em-AppSec.html">
-                  <h4>T06E21 - Bug bounty</h4>
-                  <p>Neste episódio, exploramos o que realmente faz um programa de Bug Bounty funcionar — além dos prêmios em dinheiro. Conversamos sobre como alinhar a iniciativa às demandas de Application Security, desde o desenho das...</p>
-                </a>
-                <div class="track__option">
-                  <div class="jp-jplayer jplayer" data-ancestor=".jp_container-1" data-url="./music-files/621.mp3"></div>
-                  <div class="jp-audio jp_container-1" role="application" aria-label="media player">
-                    <div class="jp-gui jp-interface">
-                      <div class="player_controls_box"><button class="jp-play player_button" tabindex="0"></button></div>
-                      <div class="player_bars">
-                        <div class="jp-progress">
-                          <div class="jp-seek-bar">
-                            <div>
-                              <div class="jp-play-bar">
-                                <div class="jp-current-time" role="timer" aria-label="time">0:00</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="jp-duration ml-auto" role="timer" aria-label="duration">00:00</div>
-                      </div>
-                      <div class="jp-volume-controls">
-                        <button class="jp-mute" tabindex="0">
-                          <span class="icon_volume-high"></span>
-                        </button>
-                        <div class="jp-volume-bar"><div class="jp-volume-bar-value" style="width: 0%"></div></div>
-                      </div>
-                    </div>
-                    <div class="jp-btns">
-                      <a href="https://api.spreaker.com/v2/episodes/68262522/download.mp3"><i class="fa fa-download"></i> Download</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-12 mix entrepreneurship">
-            <div class="podcast__item">
-              <div class="podcast__item__pic">
-                <img src="img/podcast/podcast-1.jpg" alt="" />
-              </div>
-              <div class="podcast__item__text">
-                <ul>
-                  <li><span class="icon_calendar"></span> 10 Set 2025</li>
-                  <li><span class="icon_profile"></span> por Cássio Pereira</li>
-                </ul>
-                <a target="_blank" href="T6E20-Criptografia-quantica.html">
-                  <h4>T06E20 - Criptografia Quântica</h4>
-                  <p>A era quântica deixou de ser ficção científica e já começa a mexer com a segurança digital de empresas no mundo todo. No novo episódio, recebemos Leonardo Carissimi...</p>
-                </a>
-                <div class="track__option">
-                  <div class="jp-jplayer jplayer" data-ancestor=".jp_container-1" data-url="./music-files/620.mp3"></div>
-                  <div class="jp-audio jp_container-1" role="application" aria-label="media player">
-                    <div class="jp-gui jp-interface">
-                      <div class="player_controls_box"><button class="jp-play player_button" tabindex="0"></button></div>
-                      <div class="player_bars">
-                        <div class="jp-progress">
-                          <div class="jp-seek-bar">
-                            <div>
-                              <div class="jp-play-bar">
-                                <div class="jp-current-time" role="timer" aria-label="time">0:00</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="jp-duration ml-auto" role="timer" aria-label="duration">00:00</div>
-                      </div>
-                      <div class="jp-volume-controls">
-                        <button class="jp-mute" tabindex="0">
-                          <span class="icon_volume-high"></span>
-                        </button>
-                        <div class="jp-volume-bar"><div class="jp-volume-bar-value" style="width: 0%"></div></div>
-                      </div>
-                    </div>
-                    <div class="jp-btns">
-                      <a href="https://api.spreaker.com/v2/episodes/67699277/download.mp3"><i class="fa fa-download"></i> Download</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>           
-          <div class="col-lg-12 mix entrepreneurship">
-            <div class="podcast__item">
-              <div class="podcast__item__pic">
-                <img src="img/podcast/podcast-3.jpg" alt="" />
-              </div>
-              <div class="podcast__item__text">
-                <ul>
-                  <li><span class="icon_calendar"></span> 04 Set 2025</li>
-                  <li><span class="icon_profile"></span> por Cássio Pereira</li>
-                </ul>
-                <a target="_blank" href="T6E19-Incidente-Facil.html">
-                  <h4>T06E19 - Incidente fácil</h4>
-                  <p>No episódio de hoje recebemos Leticia Pereira, especialista em CSIRT e Resposta a Incidentes, para discutir como equipes de Computer Security Incident Response Team podem se beneficiar de práticas de...</p>
-                <div class="track__option">
-                  <div class="jp-jplayer jplayer" data-ancestor=".jp_container-1" data-url="./music-files/619.mp3"></div>
-                  <div class="jp-audio jp_container-1" role="application" aria-label="media player">
-                    <div class="jp-gui jp-interface">
-                      <div class="player_controls_box"><button class="jp-play player_button" tabindex="0"></button></div>
-                      <div class="player_bars">
-                        <div class="jp-progress">
-                          <div class="jp-seek-bar">
-                            <div>
-                              <div class="jp-play-bar">
-                                <div class="jp-current-time" role="timer" aria-label="time">0:00</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="jp-duration ml-auto" role="timer" aria-label="duration">00:00</div>
-                      </div>
-                      <div class="jp-volume-controls">
-                        <button class="jp-mute" tabindex="0">
-                          <span class="icon_volume-high"></span>
-                        </button>
-                        <div class="jp-volume-bar"><div class="jp-volume-bar-value" style="width: 0%"></div></div>
-                      </div>
-                    </div>
-                    <div class="jp-btns">
-                      <a href="https://api.spreaker.com/v2/episodes/67614256/download.mp3"><i class="fa fa-download"></i> Download</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>          
-          <div class="col-lg-12 mix entrepreneurship">
-            <div class="podcast__item">
-              <div class="podcast__item__pic">
-                <img src="img/podcast/podcast-1.jpg" alt="" />
-              </div>
-              <div class="podcast__item__text">
-                <ul>
-                  <li><span class="icon_calendar"></span> 21 Ago 2025</li>
-                  <li><span class="icon_profile"></span> por Cássio Pereira</li>
-                </ul>
-                <a target="_blank" href="T6E17-A-nuvem-e-o-limite.html">
-                  <h4>T06E18 - Como montar um programa de AppSec pt5</h4>
-                  <p>“A Nuvem é o Limite”, exploramos o equilíbrio entre segurança e custos na computação em nuvem. Discutimos os principais riscos, práticas recomendadas para proteger dados e aplicações,</p>
-                </a>
-                <div class="track__option">
-                  <div class="jp-jplayer jplayer" data-ancestor=".jp_container-1" data-url="./music-files/617.mp3"></div>
-                  <div class="jp-audio jp_container-1" role="application" aria-label="media player">
-                    <div class="jp-gui jp-interface">
-                      <div class="player_controls_box"><button class="jp-play player_button" tabindex="0"></button></div>
-                      <div class="player_bars">
-                        <div class="jp-progress">
-                          <div class="jp-seek-bar">
-                            <div>
-                              <div class="jp-play-bar">
-                                <div class="jp-current-time" role="timer" aria-label="time">0:00</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="jp-duration ml-auto" role="timer" aria-label="duration">00:00</div>
-                      </div>
-                      <div class="jp-volume-controls">
-                        <button class="jp-mute" tabindex="0">
-                          <span class="icon_volume-high"></span>
-                        </button>
-                        <div class="jp-volume-bar"><div class="jp-volume-bar-value" style="width: 0%"></div></div>
-                      </div>
-                    </div>
-                    <div class="jp-btns">
-                      <a href="https://api.spreaker.com/v2/episodes/67186070/download.mp3"><i class="fa fa-download"></i> Download</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>                                                                                                                         
+    <section id="assinar" class="section">
+      <h2 class="section-title">Assinar</h2>
+      <div class="cards">
+        <div class="card sketch">
+          <div class="kicker">RSS</div>
+          <div class="card-title">Receba no seu app</div>
+          <p class="muted">Feed direto, sem algoritmo te infantilizando.</p>
+          <a class="btn-xl" id="rssLink" target="_blank" rel="noreferrer">ABRIR RSS</a>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <div class="load__more">
-            <a href="./episodes.html">Ver todos</a>
-          </div>
-        </div>
-      </div>      
-    </section>
-    <section class="callto spad set-bg" data-setbg="img/call-bg.jpg">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="callto__text">
-              <h2>Colabore com o DevSecOps Podcast</h2>
-              <p>Gosta do nosso conteúdo? Considere fazer uma doação!</p>
-              <a target="_blank" href="https://buymeacoffee.com/cassiodeveloper" class="primary-btn">Fazer doação!</a>
-            </div>
-          </div>
+        <div class="card sketch">
+          <div class="kicker">YouTube</div>
+          <div class="card-title">Episódios em vídeo</div>
+          <p class="muted">Quando a cara do crime também explica.</p>
+          <a class="btn-xl ghost" id="ytChannel" target="_blank" rel="noreferrer">ABRIR CANAL</a>
         </div>
       </div>
     </section>
-    <section class="episodes spad">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="section-title">
-              <h2>Últimos episódios</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="episodes__item set-bg" data-setbg="img/episodes/episodes-2.jpg">
-              <div class="time"><span class="icon_clock_alt"></span> 53m06s</div>
-              <a title="Assistir ao episódio" target="_blank" href="https://www.youtube.com/watch?v=joG6uk6TUcc" class="play-btn"><img src="img/play.png" alt="Assistir ao episódio" /></a>
-              <div class="episodes__text">
-                <h4>T7E05 - AppSec Homem de Ferro - Modelagem de Ameaças</h4>
-                <p><span class="icon_calendar"></span> 10 Dez 2025</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="episodes__item set-bg" data-setbg="img/episodes/episodes-3.jpg">
-              <div class="time"><span class="icon_clock_alt"></span> 32m45s</div>
-              <a title="Assistir ao episódio" target="_blank" href="https://www.youtube.com/watch?v=soo7OiOzMXU" class="play-btn"><img src="img/play.png" alt="Assistir ao episódio" /></a>
-              <div class="episodes__text">
-                <h4>T7E04 - Dev pode ser Sec?</h4>
-                <p><span class="icon_calendar"></span> 04 Dez 2025</p>
-              </div>
-            </div>
-          </div>            
-          <div class="col-lg-4 col-md-6">
-            <div class="episodes__item set-bg" data-setbg="img/episodes/episodes-4.jpg">
-              <div class="time"><span class="icon_clock_alt"></span> 59m59s</div>
-              <a title="Assistir ao episódio" target="_blank" href="https://www.youtube.com/watch?v=nGyE5KfFeWg" class="play-btn"><img src="img/play.png" alt="Assistir ao episódio" /></a>
-              <div class="episodes__text">
-                <h4>T7E03 - SecOPs como você nunca viu</h4>
-                <p><span class="icon_calendar"></span> 27 Nov 2025</p>
-              </div>
-            </div>
-          </div>           
-          <div class="col-lg-4 col-md-6">
-            <div class="episodes__item set-bg" data-setbg="img/episodes/episodes-1.jpg">
-              <div class="time"><span class="icon_clock_alt"></span> 55m30s</div>
-              <a title="Assistir ao episódio" target="_blank" href="https://www.youtube.com/watch?v=u0bU2mHVTNI" class="play-btn"><img src="img/play.png" alt="Assistir ao episódio" /></a>
-              <div class="episodes__text">
-                <h4>T7E02 - Bug Bounty</h4>
-                <p><span class="icon_calendar"></span> 12 Nov 2025</p>
-              </div>
-            </div>
-          </div>            
-          <div class="col-lg-4 col-md-6">
-            <div class="episodes__item set-bg" data-setbg="img/episodes/episodes-2.jpg">
-              <div class="time"><span class="icon_clock_alt"></span> 50m47s</div>
-              <a title="Assistir ao episódio" target="_blank" href="https://youtu.be/I1-xsaGLRgE" class="play-btn"><img src="img/play.png" alt="Assistir ao episódio" /></a>
-              <div class="episodes__text">
-                <h4>T7E01 - AppSec & AI vai dar liga?</h4>
-                <p><span class="icon_calendar"></span> 06 Nov 2025</p>
-              </div>
-            </div>
-          </div> 
-          <div class="col-lg-4 col-md-6">
-            <div class="episodes__item set-bg" data-setbg="img/episodes/episodes-3.jpg">
-              <div class="time"><span class="icon_clock_alt"></span> 38m50s</div>
-              <a title="Assistir ao episódio" target="_blank" href="https://youtu.be/gDhRcdXTKro" class="play-btn"><img src="img/play.png" alt="Assistir ao episódio" /></a>
-              <div class="episodes__text">
-                <h4>T6E21 - Bug bounty</h4>
-                <p><span class="icon_calendar"></span> 24 Out 2025</p>
-              </div>
-            </div>
-          </div>                                                                                                         
-        </div>
-      </div>
-    </section>
-    <footer class="footer set-bg" data-setbg="img/footer-bg.jpg">
-      <div class="container">
-        <div class="footer__subscriber">
-          <div class="row">
-            <div class="col-lg-5">
-              <div class="footer__subscriber__text">
-                <h3>Inscreva-se na newsletter!</h3>
-                <p>Inscreva-se para receber as últimas notícias e episódios do Podcast</p>
-              </div>
-            </div>
-            <div class="col-lg-5 offset-lg-2">
-              <form action="#" class="footer__subscriber__form">
-                <input type="text" placeholder="Seu melhor email" />
-                <button type="submit" class="site-btn">Inscrever</button>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-9 col-md-9">
-            <div class="footer__widget">
-              <p class="footer__copyright__text">
-                Copyright ©
-                <script>
-                  document.write(new Date().getFullYear());
-                </script>
-                Todos os direitos reservados | Feito com
-                <i class="fa fa-heart-o" aria-hidden="true"></i> por
-                <a href="https://linktr.ee/cassiodeveloper" target="_blank">@cassiodeveloper</a>
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-3">
-            <div class="footer__social">
-              <a target="_blank" href="https://facebook.com/cassiodeveloper"><i class="fa fa-facebook"></i></a>
-              <a target="_blank" href="https://x.com/cassiodeveloper"><i class="fa fa-twitter"></i></a>
-              <a target="_blank" href="https://www.instagram.com/cassiodeveloper"><i class="fa fa-instagram"></i></a>
-              <a target="_blank" href="https://www.youtube.com/playlist?list=PLC2UsZBhySmJU0EYM6kzgchnXikYXZzmi"><i class="fa fa-youtube-play"></i></a>
-              <a target="_blank" href="https://www.spreaker.com/show/4179006/episodes/feed"><i class="fa fa-rss"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <footer class="footer">
+      <span class="muted">© <span id="year"></span> DevSecOps Podcast</span>
+      <a class="muted" target="_blank" rel="noreferrer" href="https://cassiodeveloper.com.br">Cássio B. Pereira a.k.a. @cassiodeveloper</a>
     </footer>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/jquery.jplayer.min.js"></script>
-    <script src="js/jplayerInit.js"></script>
-  </body>
+  </main>
+  <script src="assets/app.js" defer></script>
+
+  <script>
+    (async () => {
+      try {
+        document.getElementById("year").textContent = String(new Date().getFullYear());
+
+        const res = await fetch("data/episodes.json", { cache: "no-store" });
+        if (!res.ok) return;
+        const data = await res.json();
+        const eps = (data.episodes || []).slice().sort((a,b)=> (b.date||"").localeCompare(a.date||""));
+        const last = eps[0];
+        if (!last) return;
+
+        const meta = [];
+        if (last.date) meta.push(new Date(last.date).toLocaleDateString("pt-BR"));
+        if (last.author) meta.push(last.author);
+
+        document.getElementById("lastMeta").textContent = meta.join(" • ") || "";
+        document.getElementById("lastTitle").textContent = last.title || "";
+        document.getElementById("lastDetails").href = `episode.html?slug=${encodeURIComponent(last.slug)}`;
+
+        const yt = document.getElementById("lastYoutube");
+        if (last.youtube) { yt.href = last.youtube; yt.style.display = "inline-flex"; }
+
+        const dl = document.getElementById("lastDownload");
+        if (last.download) { dl.href = last.download; dl.style.display = "inline-flex"; }
+
+        const audio = document.getElementById("lastAudio");
+        if (last.mp3) audio.src = last.mp3;
+
+        if (data?.meta?.rss) document.getElementById("rssLink").href = data.meta.rss;
+        if (data?.meta?.youtubeChannel) document.getElementById("ytChannel").href = data.meta.youtubeChannel;
+      } catch {}
+    })();
+  </script>
+</body>
 </html>
