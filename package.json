@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/cassiodeveloper/devsecopspodcast-modern#readme",
   "dependencies": {
-    "fast-xml-parser": "^5.3.3",
+    "fast-xml-parser": "^5.3.4",
     "slugify": "^1.6.6"
   }
 }
