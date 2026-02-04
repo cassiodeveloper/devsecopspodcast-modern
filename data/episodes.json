@@ -6,8 +6,23 @@
   },
   "episodes": [
     {
-      "id": "t7e08-appsec-homem-de-ferro-programa-de-appsec",
-      "slug": "t7e08-appsec-homem-de-ferro-programa-de-appsec",
+      "id": "t7e10-maturidade-em-appsec",
+      "slug": "t7e10-maturidade-em-appsec",
+      "title": "T07E10 - Maturidade em AppSec",
+      "date": "2026-02-04",
+      "author": "Cássio Batista Pereira",
+      "excerpt": "Nesse episódio a conversa foi direta e sem anestesia. Falamos sobre como empresas e profissionais de AppSec realmente evoluíram nos últimos anos, o que mudou de verdade e…",
+      "contentHtml": "Nesse episódio a conversa foi direta e sem anestesia. Falamos sobre como empresas e profissionais de AppSec realmente evoluíram nos últimos anos, o que mudou de verdade e o que é só discurso bonito em slide corporativo. Spoiler: muita coisa avançou, mas muita gente ainda está brigando com problemas que já deveriam estar resolvidos há uma década. Também discutimos o descompasso clássico do mercado. Enquanto algumas organizações já deveriam estar olhando para o próximo nível de maturidade, automação real, decisões baseadas em risco e integração profunda com engenharia, outras ainda estão “começando AppSec” do zero. E aí vem a pergunta incômoda: isso é falta de tempo, de prioridade, de competência ou de coragem? Um episódio para quem quer entender onde estamos, onde deveríamos estar e por que maturidade em AppSec não é checklist, não é ferramenta e definitivamente não é cargo no LinkedIn.<br /><br />",
+      "mp3": "https://api.spreaker.com/v2/episodes/69784506/download.mp3",
+      "download": "https://api.spreaker.com/v2/episodes/69784506/download.mp3",
+      "youtube": "",
+      "tags": ["AppSec", "Maturidade", "Segurança de Aplicações"],
+      "spreakerId": "69784506",
+      "code": "T07E10"
+    },
+    {
+      "id": "t7e09-appsec-homem-de-ferro-programa-de-appsec",
+      "slug": "t7e09-appsec-homem-de-ferro-programa-de-appsec",
       "title": "T07E09 - AppSec Homem de Ferro - Programa de AppSec",
       "date": "2026-01-30",
       "author": "Cássio Batista Pereira",
