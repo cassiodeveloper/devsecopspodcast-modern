@@ -5,6 +5,21 @@
     "youtubeChannel": "https://www.youtube.com/playlist?list=PLC2UsZBhySmJU0EYM6kzgchnXikYXZzmi"
   },
   "episodes": [
+     {
+      "id": "t7e11-termer-ia",
+      "slug": "t7e11-temer-ia",
+      "title": "T07E11 - Termer a IA?",
+      "date": "2026-02-12",
+      "author": "Cássio Batista Pereira",
+      "excerpt": "",
+      "contentHtml": "<br /><br />",
+      "mp3": "https://api.spreaker.com/v2/episodes/70013864/download.mp3",
+      "download": "https://api.spreaker.com/v2/episodes/70013864/download.mp3",
+      "youtube": "",
+      "tags": ["AppSec", "Maturidade", "Segurança de Aplicações"],
+      "spreakerId": "70013864",
+      "code": "T07E11"
+    },
     {
       "id": "t7e10-maturidade-em-appsec",
       "slug": "t7e10-maturidade-em-appsec",
