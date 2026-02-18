@@ -6,6 +6,21 @@
   },
   "episodes": [
      {
+      "id": "t7e12-sca-alem-do-opensource",
+      "slug": "t7e12-sca-alem-do-opensource",
+      "title": "T07E12 - SCA além do Open Source",
+      "date": "2026-02-18",
+      "author": "Cássio Batista Pereira",
+      "excerpt": "",
+      "contentHtml": "<br /><br />",
+      "mp3": "https://api.spreaker.com/v2/episodes/70128968/download.mp3",
+      "download": "https://api.spreaker.com/v2/episodes/70128968/download.mp3",
+      "youtube": "",
+      "tags": ["AppSec", "Maturidade", "Segurança de Aplicações"],
+      "spreakerId": "70128968",
+      "code": "T07E12"
+    },
+    {
       "id": "t7e11-termer-ia",
       "slug": "t7e11-temer-ia",
       "title": "T07E11 - Termer a IA?",
