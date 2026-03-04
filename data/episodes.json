@@ -5,7 +5,22 @@
     "youtubeChannel": "https://www.youtube.com/playlist?list=PLC2UsZBhySmJU0EYM6kzgchnXikYXZzmi"
   },
   "episodes": [
-     {
+      {
+      "id": "t7e13-pos-em-appsec",
+      "slug": "t7e13-pos-em-appsec",
+      "title": "T07E13 - Pós Graduação em AppSec",
+      "date": "2026-03-04",
+      "author": "Cássio Batista Pereira",
+      "excerpt": "Neste episódio do DevSecOps Podcast, o papo gira em torno de um tema que muita gente na área de tecnologia sente na pele:",
+      "contentHtml": "Neste episódio do DevSecOps Podcast, o papo gira em torno de um tema que muita gente na área de tecnologia sente na pele: a falta de formação realmente sólida em Application Security. Em vez de cursos superficiais ou conteúdos soltos pela internet, discutimos a ideia de uma Pós-graduação focada em AppSec e DevSecOps, pensada para quem quer sair da teoria genérica e mergulhar no que realmente acontece dentro das empresas. Ao longo do episódio, exploramos por que segurança de aplicações exige uma visão ampla que vai além de ferramentas. Falamos sobre arquitetura segura, modelagem de ameaças, revisão de código, segurança em pipelines de CI/CD, cloud, gestão de vulnerabilidades e cultura de segurança no desenvolvimento. A proposta da pós é justamente conectar esses pontos e formar profissionais capazes de pensar segurança dentro do ciclo completo de desenvolvimento. Se você é desenvolvedor, engenheiro de segurança, arquiteto ou líder técnico e quer entender como estruturar um aprendizado sério em AppSec, este episódio traz uma visão clara do que esperar de uma formação avançada na área. Neste episódio você vai encontrar: • Por que o mercado precisa de especialistas em Application Security<br /><br />",
+      "mp3": "https://api.spreaker.com/v2/episodes/70438294/download.mp3",
+      "download": "https://api.spreaker.com/v2/episodes/70438294/download.mp3",
+      "youtube": "",
+      "tags": ["AppSec", "Educação", "Segurança de Aplicações", "DevSecOps", "Open Source", "Pós Graduação"],
+      "spreakerId": "70438294",
+      "code": "T07E13"
+    }, 
+    {
       "id": "t7e12-sca-alem-do-opensource",
       "slug": "t7e12-sca-alem-do-opensource",
       "title": "T07E12 - SCA além do Open Source",
