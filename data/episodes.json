@@ -6,6 +6,21 @@
   },
   "episodes": [
       {
+      "id": "t7e14-log-modeling",
+      "slug": "t7e14-log-modeling",
+      "title": "T07E14 - Log Modeling",
+      "date": "2026-03-10",
+      "author": "Cássio Batista Pereira",
+      "excerpt": "Neste episódio do DevSecOps Podcast, mergulhamos em um tema frequentemente subestimado, mas absolutamente crítico...",
+      "contentHtml": "Neste episódio do DevSecOps Podcast, mergulhamos em um tema frequentemente subestimado, mas absolutamente crítico para a segurança moderna: Log Modeling. Enquanto muita gente trata logs apenas como registros para troubleshooting, a realidade é outra. Logs bem pensados são sensores de segurança dentro da aplicação. Eles contam a história do que aconteceu, quem fez o quê e quando algo saiu do normal. Durante a conversa exploramos como o Log Modeling pode ser tratado como uma prática de Application Security, não apenas de observabilidade. Falamos sobre como modelar eventos relevantes de segurança desde o design da aplicação, quais tipos de ações precisam obrigatoriamente ser registradas, e como evitar logs inúteis que só geram ruído enquanto deixam passar atividades críticas sem rastreabilidade. Neste episódio você vai entender: • O que é Log Modeling e por que ele deveria fazer parte do seu AppSec Program • A diferença entre logs operacionais e logs de segurança • Quais eventos realmente precisam ser registrados em uma aplicação • Como logs ajudam em investigação de incidentes e detecção de ataques • Erros comuns que tornam logs inúteis quando mais precisamos deles Se segurança é sobre visibilidade, então logs bem projetados são uma das ferramentas mais poderosas para entender o comportamento real das suas aplicações em produção.<br /><br />",
+      "mp3": "https://api.spreaker.com/v2/episodes/70567025/download.mp3",
+      "download": "https://api.spreaker.com/v2/episodes/70567025/download.mp3",
+      "youtube": "",
+      "tags": ["AppSec", "Log", "Segurança de Aplicações", "DevSecOps", "Logging", "Monitoramento"],
+      "spreakerId": "70567025",
+      "code": "T07E14"
+    },       
+    {
       "id": "t7e13-pos-em-appsec",
       "slug": "t7e13-pos-em-appsec",
       "title": "T07E13 - Pós Graduação em AppSec",
