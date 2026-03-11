@@ -15,7 +15,7 @@
       "contentHtml": "Neste episódio do DevSecOps Podcast, mergulhamos em um tema frequentemente subestimado, mas absolutamente crítico para a segurança moderna: Log Modeling. Enquanto muita gente trata logs apenas como registros para troubleshooting, a realidade é outra. Logs bem pensados são sensores de segurança dentro da aplicação. Eles contam a história do que aconteceu, quem fez o quê e quando algo saiu do normal. Durante a conversa exploramos como o Log Modeling pode ser tratado como uma prática de Application Security, não apenas de observabilidade. Falamos sobre como modelar eventos relevantes de segurança desde o design da aplicação, quais tipos de ações precisam obrigatoriamente ser registradas, e como evitar logs inúteis que só geram ruído enquanto deixam passar atividades críticas sem rastreabilidade. Neste episódio você vai entender: • O que é Log Modeling e por que ele deveria fazer parte do seu AppSec Program • A diferença entre logs operacionais e logs de segurança • Quais eventos realmente precisam ser registrados em uma aplicação • Como logs ajudam em investigação de incidentes e detecção de ataques • Erros comuns que tornam logs inúteis quando mais precisamos deles Se segurança é sobre visibilidade, então logs bem projetados são uma das ferramentas mais poderosas para entender o comportamento real das suas aplicações em produção.<br /><br />",
       "mp3": "https://api.spreaker.com/v2/episodes/70567025/download.mp3",
       "download": "https://api.spreaker.com/v2/episodes/70567025/download.mp3",
-      "youtube": "",
+      "youtube": "https://www.youtube.com/watch?v=vMjeb-z5o08",
       "tags": ["AppSec", "Log", "Segurança de Aplicações", "DevSecOps", "Logging", "Monitoramento"],
       "spreakerId": "70567025",
       "code": "T07E14"
@@ -30,7 +30,7 @@
       "contentHtml": "Neste episódio do DevSecOps Podcast, o papo gira em torno de um tema que muita gente na área de tecnologia sente na pele: a falta de formação realmente sólida em Application Security. Em vez de cursos superficiais ou conteúdos soltos pela internet, discutimos a ideia de uma Pós-graduação focada em AppSec e DevSecOps, pensada para quem quer sair da teoria genérica e mergulhar no que realmente acontece dentro das empresas. Ao longo do episódio, exploramos por que segurança de aplicações exige uma visão ampla que vai além de ferramentas. Falamos sobre arquitetura segura, modelagem de ameaças, revisão de código, segurança em pipelines de CI/CD, cloud, gestão de vulnerabilidades e cultura de segurança no desenvolvimento. A proposta da pós é justamente conectar esses pontos e formar profissionais capazes de pensar segurança dentro do ciclo completo de desenvolvimento. Se você é desenvolvedor, engenheiro de segurança, arquiteto ou líder técnico e quer entender como estruturar um aprendizado sério em AppSec, este episódio traz uma visão clara do que esperar de uma formação avançada na área. Neste episódio você vai encontrar: • Por que o mercado precisa de especialistas em Application Security<br /><br />",
       "mp3": "https://api.spreaker.com/v2/episodes/70438294/download.mp3",
       "download": "https://api.spreaker.com/v2/episodes/70438294/download.mp3",
-      "youtube": "",
+      "youtube": "https://www.youtube.com/watch?v=_Lq2sMTyZGY",
       "tags": ["AppSec", "Educação", "Segurança de Aplicações", "DevSecOps", "Open Source", "Pós Graduação"],
       "spreakerId": "70438294",
       "code": "T07E13"
