@@ -15,7 +15,7 @@
       "contentHtml": "Supply Chain Security deixou de ser teoria e virou problema real. Neste episódio, destrinchamos os casos recentes envolvendo ferramentas amplamente utilizadas como Trivy, KICS e a biblioteca Axios e o que eles expõem sobre a fragilidade da cadeia de dependências. Falamos sobre o risco invisível que roda dentro do seu pipeline, como ataques em ferramentas “confiáveis” mudam completamente o jogo e por que confiar cegamente em scanners e bibliotecas populares pode ser um erro caro. Não é só sobre vulnerabilidades conhecidas, é sobre confiança quebrada.  Você vai sair com uma visão prática de como esses incidentes acontecem, onde estão os pontos cegos no seu processo e o que precisa mudar agora para não virar o próximo case.<br /><br />",
       "mp3": "https://api.spreaker.com/v2/episodes/71024789/download.mp3",
       "download": "https://api.spreaker.com/v2/episodes/71024789/download.mp3",
-      "youtube": "",
+      "youtube": "https://www.youtube.com/watch?v=t7FFVPvx6Ko",
       "tags": ["AppSec", "Supply Chain", "Segurança de Aplicações", "DevSecOps", "SCA", "NPM"],
       "spreakerId": "71024789",
       "code": "T07E15"
