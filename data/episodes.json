@@ -15,7 +15,7 @@
       "contentHtml": "A IA não vai “impactar” AppSec. Vai engolir quem estiver parado. Neste episódio, a conversa é direta: o que sobra para quem trabalha com Segurança de Aplicações quando a IA começa a escrever código, revisar pull request, gerar arquitetura e até corrigir vulnerabilidade sozinha? Spoiler: o jogo muda completamente. Falamos sobre o fim do AppSec operacional baseado em checklist e o nascimento de um novo perfil. Menos executor, mais estrategista. Menos ferramenta, mais contexto. Você vai entender como SAST, DAST e SCA perdem protagonismo isolados e passam a ser só sinais dentro de um sistema maior, orientado por risco real e decisão automatizada. Também exploramos o lado desconfortável: IA gerando vulnerabilidades em escala, pipelines cada vez mais opacos e o risco de confiar cegamente em “correções inteligentes” que ninguém revisou de verdade. Se você ainda está focado em rodar ferramenta e abrir ticket, esse episódio vai doer<br /><br />",
       "mp3": "https://api.spreaker.com/v2/episodes/71343190/download.mp3",
       "download": "https://api.spreaker.com/v2/episodes/71343190/download.mp3",
-      "youtube": "",
+      "youtube": "https://youtu.be/BEdUarH0xRE",
       "tags": ["AppSec", "IA", "Segurança de Aplicações", "DevSecOps"],
       "spreakerId": "71343190",
       "code": "T07E16"
