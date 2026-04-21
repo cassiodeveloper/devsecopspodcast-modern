@@ -6,6 +6,21 @@
   },
   "episodes": [
   {
+      "id": "t7e17-caramelosec",
+      "slug": "t7e17-caramelosec",
+      "title": "T07E17 - CarameloSec e testes de segurança",
+      "date": "2026-04-21",
+      "author": "Cássio Batista Pereira",
+      "excerpt": "No episódio de hoje, recebemos o time da CarameloSec para uma...",
+      "contentHtml": "No episódio de hoje, recebemos o time da CarameloSec para uma conversa sem firula sobre segurança de aplicações na vida real. Nada de teoria bonita que não sobrevive ao deploy. Falamos de como segurança é construída no dia a dia, os desafios de levar AppSec para dentro dos times e onde muita gente ainda está se enganando feio. Entramos em temas como cultura de segurança, o abismo entre ferramenta e resultado, e como iniciativas independentes como a CarameloSec estão ajudando a elevar o nível da comunidade. Tem provocação, tem experiência prática e tem alguns tapas de realidade que você provavelmente precisa ouvir. Se você trabalha com desenvolvimento, segurança ou está tentando não virar estatística no próximo incidente, esse episódio é obrigatório.<br /><br />",
+      "mp3": "https://api.spreaker.com/v2/episodes/71519875/download.mp3",
+      "download": "https://api.spreaker.com/v2/episodes/71519875/download.mp3",
+      "youtube": "https://www.youtube.com/watch?v=AbMs51ezTSk",
+      "tags": ["AppSec", "IA", "Segurança de Aplicações", "DevSecOps", "CarameloSec", "BR"],
+      "spreakerId": "71519875",
+      "code": "T07E17"
+    },
+    {
       "id": "t7e16-appsec-e-o-futuro-da-ia",
       "slug": "t7e16-appsec-e-o-futuro-da-ia",
       "title": "T07E16 - AppSec e o futuro da IA",
