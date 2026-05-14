@@ -5,7 +5,52 @@
     "youtubeChannel": "https://www.youtube.com/playlist?list=PLC2UsZBhySmJU0EYM6kzgchnXikYXZzmi"
   },
   "episodes": [
-  {
+    {
+      "id": "t8e02-maria",
+      "slug": "t8e02-maria",
+      "title": "T08E02 - Maria - Inovação em AppSec",
+      "date": "2026-05-14",
+      "author": "Cássio Batista Pereira",
+      "excerpt": "Episódio 200. Não é só número redondo, é checkpoint de uma...",
+      "contentHtml": "Episódio 200. Não é só número redondo, é checkpoint de uma jornada que saiu de conversa técnica entre amigos e virou referência em AppSec e DevSecOps. Nesse especial, a mesa está completa. Desde a formação raiz com Balbino e Vini, passando pela evolução com Marcos e Ben-Hur, até chegar no comando firme do host de sempre, Cássio Pereira. É história, bastidores, opiniões afiadas e, claro, muita discussão que mistura experiência real com aquelas verdades que nem sempre agradam, mas todo mundo precisa ouvir. Não espere retrospectiva bonitinha.<br /><br />",
+      "mp3": "https://api.spreaker.com/v2/episodes/72005074/download.mp3",
+      "download": "https://api.spreaker.com/v2/episodes/72005074/download.mp3",
+      "youtube": "",
+      "tags": ["AppSec", "M.A.R.I.A.", "Segurança de Aplicações", "DevSecOps", "Ferramenta", "BR", "Solução"],
+      "spreakerId": "72005074",
+      "code": "T08E02"
+    },    
+    {
+      "id": "t8e01-specoops",
+      "slug": "t8e01-specops-com-ia",
+      "title": "T08E01 - SpecOps com IA - O novo normal",
+      "date": "2026-05-06",
+      "author": "Cássio Batista Pereira",
+      "excerpt": "Todo mundo fala de DevSecOps. Todo mundo fala de IA. Mas quase ninguém...",
+      "contentHtml": "Todo mundo fala de DevSecOps. Todo mundo fala de IA. Mas quase ninguém conectou os pontos do jeito certo ainda. Neste episódio, a gente entra em um território que está começando a separar quem só usa ferramenta de quem realmente entende o jogo: SpecOps com IA. E não, isso não é sobre mais um YAML bonito ou documentação que ninguém lê. É sobre transformar especificações em algo vivo. Algo que define o sistema antes do código existir… e impede que ele saia da linha depois.<br /><br />",
+      "mp3": "https://api.spreaker.com/v2/episodes/71876020/download.mp3",
+      "download": "https://api.spreaker.com/v2/episodes/71876020/download.mp3",
+      "youtube": "https://www.youtube.com/watch?v=wb86b2FhIys",
+      "tags": ["AppSec", "IA", "Segurança de Aplicações", "DevSecOps", "BR"],
+      "spreakerId": "71876020",
+      "code": "T08E01"
+    },
+    {
+      "id": "t7e18-episodio-especial",
+      "slug": "t7e17-episodio-especial",
+      "title": "T07E17 - Episódio Especial - 200 episódios de DevSecOps Podcast",
+      "date": "2026-04-29",
+      "author": "Cássio Batista Pereira",
+      "excerpt": "Episódio 200. Não é só número redondo, é checkpoint de uma...",
+      "contentHtml": "Episódio 200. Não é só número redondo, é checkpoint de uma jornada que saiu de conversa técnica entre amigos e virou referência em AppSec e DevSecOps. Nesse especial, a mesa está completa. Desde a formação raiz com Balbino e Vini, passando pela evolução com Marcos e Ben-Hur, até chegar no comando firme do host de sempre, Cássio Pereira. É história, bastidores, opiniões afiadas e, claro, muita discussão que mistura experiência real com aquelas verdades que nem sempre agradam, mas todo mundo precisa ouvir. Não espere retrospectiva bonitinha.<br /><br />",
+      "mp3": "https://api.spreaker.com/v2/episodes/71519890/download.mp3",
+      "download": "https://api.spreaker.com/v2/episodes/71519890/download.mp3",
+      "youtube": "https://www.youtube.com/watch?v=AbMs51ezTSk",
+      "tags": ["AppSec", "IA", "Segurança de Aplicações", "DevSecOps", "Especial", "BR"],
+      "spreakerId": "71519890",
+      "code": "T07E18"
+    },
+    {
       "id": "t7e17-caramelosec",
       "slug": "t7e17-caramelosec",
       "title": "T07E17 - CarameloSec e testes de segurança",
