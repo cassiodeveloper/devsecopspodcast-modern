@@ -15,7 +15,7 @@
       "contentHtml": "Episódio 200. Não é só número redondo, é checkpoint de uma jornada que saiu de conversa técnica entre amigos e virou referência em AppSec e DevSecOps. Nesse especial, a mesa está completa. Desde a formação raiz com Balbino e Vini, passando pela evolução com Marcos e Ben-Hur, até chegar no comando firme do host de sempre, Cássio Pereira. É história, bastidores, opiniões afiadas e, claro, muita discussão que mistura experiência real com aquelas verdades que nem sempre agradam, mas todo mundo precisa ouvir. Não espere retrospectiva bonitinha.<br /><br />",
       "mp3": "https://api.spreaker.com/v2/episodes/72005074/download.mp3",
       "download": "https://api.spreaker.com/v2/episodes/72005074/download.mp3",
-      "youtube": "",
+      "youtube": "https://www.youtube.com/watch?v=gIQFyQNTv3c",
       "tags": ["AppSec", "M.A.R.I.A.", "Segurança de Aplicações", "DevSecOps", "Ferramenta", "BR", "Solução"],
       "spreakerId": "72005074",
       "code": "T08E02"
