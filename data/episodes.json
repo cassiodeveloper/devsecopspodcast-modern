@@ -6,6 +6,21 @@
   },
   "episodes": [
     {
+      "id": "t8e03-os-mesmos-desafios-de-appsec",
+      "slug": "t8e03-os-mesmos-desafios-de-appsec",
+      "title": "T08E03 - Os mesmos desafios de AppSec",
+      "date": "2026-05-20",
+      "author": "Cássio Batista Pereira",
+      "excerpt": "EpisódioEste episódio aborda os principais desafios em segurança de aplicações...",
+      "contentHtml": "Este episódio aborda os principais desafios em segurança de aplicações, incluindo a cultura organizacional, o alinhamento entre times de desenvolvimento e segurança, e o papel de líderes na transformação dessa cultura. Os convidados compartilham suas experiências na Nova 8 e reflexões sobre como empresas podem evoluir na gestão de vulnerabilidades e segurança de software.<br /><br />",
+      "mp3": "https://api.spreaker.com/v2/episodes/72080820/download.mp3",
+      "download": "https://api.spreaker.com/v2/episodes/72080820/download.mp3",
+      "youtube": "",
+      "tags": ["AppSec", "Maturidade", "Segurança de Aplicações", "DevSecOps", "Processos", "BR", "Nova8"],
+      "spreakerId": "72080820",
+      "code": "T08E03"
+    },
+    {
       "id": "t8e02-maria",
       "slug": "t8e02-maria",
       "title": "T08E02 - Maria - Inovação em AppSec",
