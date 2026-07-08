@@ -6,6 +6,36 @@
   },
   "episodes": [
     {
+      "id": "t8e05-ai-explainability-score-card",
+      "slug": "t8e05-ai-explainability-score-card",
+      "title": "T08E05 - AI Explainability Score Card",
+      "date": "2026-07-08",
+      "author": "Cássio Batista Pereira",
+      "excerpt": "In this episode, we sit down with Michael Novack to talk about the AI Explainability Scorecard...",
+      "contentHtml": "In this episode, we sit down with Michael Novack to talk about the AI Explainability Scorecard, a practical framework for evaluating whether AI explanations are actually useful, trustworthy, and actionable.<br /><br />",
+      "mp3": "https://api.spreaker.com/v2/episodes/72865601/download.mp3",
+      "download": "https://api.spreaker.com/v2/episodes/72865601/download.mp3",
+      "youtube": "",
+      "tags": ["AppSec", "AI", "DevSecOps", "Score Card", "Explainability"],
+      "spreakerId": "72865601",
+      "code": "T08E05"
+    },
+    {
+      "id": "t8e04-auto-remediation",
+      "slug": "t8e04-auto-remediation",
+      "title": "T08E04 - Auto-Remediation",
+      "date": "2026-05-27",
+      "author": "Cássio Batista Pereira",
+      "excerpt": "E se a correção de vulnerabilidades deixasse...",
+      "contentHtml": "E se a correção de vulnerabilidades deixasse de ser um ticket esquecido no backlog e virasse um pull request pronto para revisar?<br /><br />",
+      "mp3": "https://api.spreaker.com/v2/episodes/72563332/download.mp3",
+      "download": "https://api.spreaker.com/v2/episodes/72563332/download.mp3",
+      "youtube": "https://www.youtube.com/watch?v=Rcb_486jD-E",
+      "tags": ["AppSec", "AutoFix", "Segurança de Aplicações", "DevSecOps"],
+      "spreakerId": "72563332",
+      "code": "T08E04"
+    },
+    {
       "id": "t8e03-os-mesmos-desafios-de-appsec",
       "slug": "t8e03-os-mesmos-desafios-de-appsec",
       "title": "T08E03 - Os mesmos desafios de AppSec",
