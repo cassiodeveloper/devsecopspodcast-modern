@@ -6,6 +6,23 @@
   },
   "episodes": [
     {
+      "id": "t8e06-manipulating-people-for-good-appsec",
+      "slug": "t8e06-manipulating-people-for-good-appsec",
+      "title": "T08E06 - Manipulating people for a good AppSec",
+      "date": "2026-07-15",
+      "author": "Cássio Batista Pereira",
+      "excerpt": "In this episode of the DevSecOps Podcast, we talk with Nariman Aga-Tagiyev about how...",
+      "contentHtml": "In this episode of the DevSecOps Podcast, we talk with Nariman Aga-Tagiyev about how behavioral science can help improve Application Security programs. Based on his presentation, “Keep It Between Us: Manipulating Humans for Better AppSec (Ethically),” we discuss motivation, skills, tips, habit formation, and how to transform security activities into sustainable behaviors within development teams. We also explore BJ Fogg's Behavioral Model, the Octalysis Framework, and the Habit Cycle in an Application Security context, including the risks of using gamification, pressure, or behavioral manipulation inappropriately.<br /><br />",
+      "mp3": "https://api.spreaker.com/v2/episodes/73018697/download.mp3",
+      "download": "https://api.spreaker.com/v2/episodes/73018697/download.mp3",
+      "youtube": "https://youtu.be/q9DqQabPpnA",
+      "transcriptUrl": null,
+      "blogPostUrl": null,
+      "tags": ["AppSec", "Manipulating", "DevSecOps", "People", "Social Engineering"],
+      "spreakerId": "73018697",
+      "code": "T08E06"
+    },
+    {
       "id": "t8e05-ai-explainability-score-card",
       "slug": "t8e05-ai-explainability-score-card",
       "title": "T08E05 - AI Explainability Score Card",
@@ -16,6 +33,8 @@
       "mp3": "https://api.spreaker.com/v2/episodes/72865601/download.mp3",
       "download": "https://api.spreaker.com/v2/episodes/72865601/download.mp3",
       "youtube": "",
+      "transcriptUrl": null,
+      "blogPostUrl": null,
       "tags": ["AppSec", "AI", "DevSecOps", "Score Card", "Explainability"],
       "spreakerId": "72865601",
       "code": "T08E05"
