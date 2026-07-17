@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "sitemap": "node scripts/generate-sitemap.js",
-    "verify": "node scripts/verify-content.js",
+    "verify": "node scripts/verify-content.js && node scripts/verify-i18n.js",
+    "verify:i18n": "node scripts/verify-i18n.js",
     "test": "npm run verify"
   },
   "repository": {

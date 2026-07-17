@@ -19,6 +19,14 @@ function safeHref(value="") {
   }
 }
 
+function ui(key, variables = {}) {
+  return window.translate ? window.translate(key, variables) : key;
+}
+
+function currentLocale() {
+  return window.getCurrentLang?.() === "en" ? "en-GB" : "pt-BR";
+}
+
 function getSlug() {
   const u = new URL(window.location.href);
   return u.searchParams.get("slug") || "";
@@ -27,7 +35,7 @@ function getSlug() {
 async function load() {
   const slug = getSlug();
   if (!slug) {
-    el.innerHTML = `<p class="muted">Slug ausente. Isso é literalmente um 404 emocional.</p>`;
+    el.innerHTML = `<p class="muted">${escapeHtml(ui("episode.missingSlug"))}</p>`;
     return;
   }
 
@@ -36,7 +44,7 @@ async function load() {
 
   const ep = (data.episodes || []).find(e => e.slug === slug);
   if (!ep) {
-    el.innerHTML = `<p class="muted">Episódio não encontrado.</p>`;
+    el.innerHTML = `<p class="muted">${escapeHtml(ui("episode.notFound"))}</p>`;
     return;
   }
 
@@ -55,7 +63,7 @@ async function load() {
 
   document.title = `${ep.title} • DevSecOps Podcast`;
 
-  const meta = `${ep.date ? new Date(ep.date).toLocaleDateString("pt-BR") : ""}${ep.author ? " • " + escapeHtml(ep.author) : ""}`;
+  const meta = `${ep.date ? new Date(ep.date).toLocaleDateString(currentLocale()) : ""}${ep.author ? " • " + escapeHtml(ep.author) : ""}`;
 
   el.innerHTML = `
     <h1>${escapeHtml(ep.title)}</h1>
@@ -64,10 +72,10 @@ async function load() {
     <div class="row" style="margin-bottom:14px">
       <audio class="audio" controls preload="metadata" src="${ep.mp3}"></audio>
       <div class="links">
-        ${ep.download ? `<a class="pill" href="${ep.download}" download>Baixar &aacute;udio</a>` : ""}
+        ${ep.download ? `<a class="pill" href="${ep.download}" download>${escapeHtml(ui("actions.downloadAudio"))}</a>` : ""}
         ${ep.youtube ? `<a class="pill" href="${ep.youtube}" target="_blank" rel="noreferrer">YouTube</a>` : ""}
-        ${transcriptUrl ? `<a class="pill pill-accent" href="${escapeHtml(transcriptUrl)}" download>Baixar transcript</a>` : ""}
-        ${blogPostUrl ? `<a class="pill pill-accent" href="${escapeHtml(blogPostUrl)}">Ler artigo</a>` : ""}
+        ${transcriptUrl ? `<a class="pill pill-accent" href="${escapeHtml(transcriptUrl)}" download>${escapeHtml(ui("actions.downloadTranscript"))}</a>` : ""}
+        ${blogPostUrl ? `<a class="pill pill-accent" href="${escapeHtml(blogPostUrl)}">${escapeHtml(ui("actions.readPost"))}</a>` : ""}
       </div>
     </div>
 
@@ -77,7 +85,13 @@ async function load() {
   `;
 }
 
-load().catch(err => {
-  console.error(err);
-  el.innerHTML = `<p class="muted">Erro carregando episódio. Veja o console.</p>`;
+function handleLoadError(error) {
+  console.error(error);
+  el.innerHTML = `<p class="muted">${escapeHtml(ui("episode.loadError"))}</p>`;
+}
+
+document.addEventListener("languagechange", () => {
+  load().catch(handleLoadError);
 });
+
+load().catch(handleLoadError);

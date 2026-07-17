@@ -54,7 +54,7 @@
         <a href="#episodios" data-i18n="nav.episodes">Episódios</a>
         <a href="#manifesto" data-i18n="nav.manifesto">Manifesto</a>
         <a href="#assinar" data-i18n="nav.subscribe">Assinar</a>
-        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+        <button class="lang-toggle" id="langToggle" aria-label="Alternar idioma" data-i18n-aria-label="language.toggle">
           EN
         </button>
       </nav>
@@ -87,20 +87,20 @@
         <aside class="hero-right">
           <div class="big-card sketch">
             <div class="big-card-top">
-              <span class="kicker">Último episódio</span>
-              <span class="muted" id="lastMeta">Carregando…</span>
+              <span class="kicker" data-i18n="latest.kicker">Último episódio</span>
+              <span class="muted" id="lastMeta" data-i18n="common.loading">Carregando…</span>
             </div>
-            <div class="big-card-title" id="lastTitle">Carregando título…</div>
+            <div class="big-card-title" id="lastTitle" data-i18n="latest.loadingTitle">Carregando título…</div>
             <div class="big-card-actions">
-              <a class="pill" id="lastDetails" href="#episodios">Abrir</a>
+              <a class="pill" id="lastDetails" href="#episodios" data-i18n="actions.open">Abrir</a>
               <a class="pill" id="lastYoutube" href="#" target="_blank" rel="noreferrer" style="display:none">YouTube</a>
-              <a class="pill" id="lastDownload" href="#" download style="display:none">Download</a>
+              <a class="pill" id="lastDownload" href="#" download style="display:none" data-i18n="actions.downloadAudio">Baixar áudio</a>
             </div>
             <audio class="audio" id="lastAudio" controls preload="none"></audio>
           </div>
           <div class="mini-note sketch">
-            <span class="kicker">Aviso</span>
-            <p class="muted">
+            <span class="kicker" data-i18n="notice.kicker">Aviso</span>
+            <p class="muted" data-i18n="notice.text">
               Se você procura um site “fofinho”, errou de stack. Aqui é produção.
             </p>
           </div>
@@ -108,7 +108,7 @@
       </div>
     </section>
     <section class="statement sketch">
-      <p>
+      <p data-i18n="statement.product">
         SEGURANÇA NÃO QUEBRA PRODUTO.<br>
         PRODUTO MAL DECIDIDO QUEBRA SOZINHO.
       </p>
@@ -116,28 +116,28 @@
     <section id="episodios" class="section">
       <div class="section-head">
         <div>
-          <h2 class="section-title">Episódios</h2>
-          <p class="section-sub muted">
+          <h2 class="section-title" data-i18n="episodes.title">Episódios</h2>
+          <p class="section-sub muted" data-i18n="episodes.subtitle">
             Scroll infinito. Busca rápida. Sem timeline “instagramizada”.
           </p>
         </div>
         <div class="controls">
-          <input id="q" class="input" placeholder="Buscar (título, convidado, tags)..." autocomplete="off" />
-          <select id="season" class="select" title="Temporada">
-            <option value="">Todas</option>
+          <input id="q" class="input" placeholder="Buscar (título, convidado, tags)…" data-i18n-placeholder="filters.searchPlaceholder" autocomplete="off" />
+          <select id="season" class="select" title="Temporada" data-i18n-title="filters.seasonTitle">
+            <option value="" data-i18n="filters.allSeasons">Todas</option>
           </select>
         </div>
       </div>
       <div class="rail">
-        <div class="rail-left muted">PLAY</div>
-        <div class="rail-right muted">LINKS</div>
+        <div class="rail-left muted" data-i18n="rail.play">PLAY</div>
+        <div class="rail-right muted" data-i18n="rail.links">LINKS</div>
       </div>
       <div id="list" class="list"></div>
       <div id="status" class="status" aria-live="polite"></div>
       <div id="sentinel" class="sentinel"></div>
     </section>
     <section class="statement alt sketch">
-      <p>
+      <p data-i18n="statement.ship">
         “SHIP” SEM AMEAÇA MODELADA<br>
         É SÓ UM JEITO CARO DE TESTAR EM CLIENTE.
       </p>
@@ -146,43 +146,43 @@
       <h2 class="section-title" data-i18n="manifesto.title">Manifesto</h2>
       <div class="manifesto">
         <div class="manifesto-block sketch">
-          <div class="kicker">Regra 1</div>
-          <h3>Checklist é muleta.</h3>
-          <p class="muted">
+          <div class="kicker" data-i18n="manifesto.rule1.label">Regra 1</div>
+          <h3 data-i18n="manifesto.rule1.title">Checklist é muleta.</h3>
+          <p class="muted" data-i18n="manifesto.rule1.text">
             Segurança de verdade é decisão técnica contextual. Se o seu processo não produz trade-off explícito,
             você não tem AppSec, você tem teatro.
           </p>
         </div>
         <div class="manifesto-block sketch">
-          <div class="kicker">Regra 2</div>
-          <h3>Ferramenta não é estratégia.</h3>
-          <p class="muted">
+          <div class="kicker" data-i18n="manifesto.rule2.label">Regra 2</div>
+          <h3 data-i18n="manifesto.rule2.title">Ferramenta não é estratégia.</h3>
+          <p class="muted" data-i18n="manifesto.rule2.text">
             Scanner é sensor. Sem triagem, sem correção, sem ownership, é só ruído caro.
           </p>
         </div>
         <div class="manifesto-block sketch">
-          <div class="kicker">Regra 3</div>
-          <h3>Produção é a verdade.</h3>
-          <p class="muted">
+          <div class="kicker" data-i18n="manifesto.rule3.label">Regra 3</div>
+          <h3 data-i18n="manifesto.rule3.title">Produção é a verdade.</h3>
+          <p class="muted" data-i18n="manifesto.rule3.text">
             O resto são slides. O objetivo é reduzir risco real, não ganhar badge de compliance.
           </p>
         </div>
       </div>
     </section>
     <section id="assinar" class="section">
-      <h2 class="section-title">Assinar</h2>
+      <h2 class="section-title" data-i18n="subscribe.title">Assinar</h2>
       <div class="cards">
         <div class="card sketch">
           <div class="kicker">RSS</div>
-          <div class="card-title">Receba no seu app</div>
-          <p class="muted">Feed direto, sem algoritmo te infantilizando.</p>
-          <a class="btn-xl" id="rssLink" target="_blank" rel="noreferrer">ABRIR RSS</a>
+          <div class="card-title" data-i18n="subscribe.rss">Receba no seu app</div>
+          <p class="muted" data-i18n="subscribe.rssDescription">Feed direto, sem algoritmo te infantilizando.</p>
+          <a class="btn-xl" id="rssLink" target="_blank" rel="noreferrer" data-i18n="subscribe.openRss">ABRIR RSS</a>
         </div>
         <div class="card sketch">
           <div class="kicker">YouTube</div>
-          <div class="card-title">Episódios em vídeo</div>
-          <p class="muted">Quando a cara do crime também explica.</p>
-          <a class="btn-xl ghost" id="ytChannel" target="_blank" rel="noreferrer">ABRIR CANAL</a>
+          <div class="card-title" data-i18n="subscribe.youtube">Episódios em vídeo</div>
+          <p class="muted" data-i18n="subscribe.youtubeDescription">Quando a cara do crime também explica.</p>
+          <a class="btn-xl ghost" id="ytChannel" target="_blank" rel="noreferrer" data-i18n="subscribe.openChannel">ABRIR CANAL</a>
         </div>
       </div>
     </section>
@@ -194,39 +194,5 @@
   <script src="assets/app.js" defer></script>
   <script src="assets/i18n.js"></script>
   <script src="assets/lang.js"></script>
-  <script>
-    (async () => {
-      try {
-        document.getElementById("year").textContent = String(new Date().getFullYear());
-
-        const res = await fetch("data/episodes.json", { cache: "no-store" });
-        if (!res.ok) return;
-        const data = await res.json();
-        const eps = (data.episodes || []).slice().sort((a,b)=> (b.date||"").localeCompare(a.date||""));
-        const last = eps[0];
-        if (!last) return;
-
-        const meta = [];
-        if (last.date) meta.push(new Date(last.date).toLocaleDateString("pt-BR"));
-        if (last.author) meta.push(last.author);
-
-        document.getElementById("lastMeta").textContent = meta.join(" • ") || "";
-        document.getElementById("lastTitle").textContent = last.title || "";
-        document.getElementById("lastDetails").href = `episode.html?slug=${encodeURIComponent(last.slug)}`;
-
-        const yt = document.getElementById("lastYoutube");
-        if (last.youtube) { yt.href = last.youtube; yt.style.display = "inline-flex"; }
-
-        const dl = document.getElementById("lastDownload");
-        if (last.download) { dl.href = last.download; dl.style.display = "inline-flex"; }
-
-        const audio = document.getElementById("lastAudio");
-        if (last.mp3) audio.src = last.mp3;
-
-        if (data?.meta?.rss) document.getElementById("rssLink").href = data.meta.rss;
-        if (data?.meta?.youtubeChannel) document.getElementById("ytChannel").href = data.meta.youtubeChannel;
-      } catch {}
-    })();
-  </script>
 </body>
 </html>

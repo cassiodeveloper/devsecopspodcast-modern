@@ -3,7 +3,8 @@ const state = {
   filtered: [],
   page: 0,
   pageSize: 10,
-  loading: false
+  loading: false,
+  latest: null
 };
 
 const elList = document.querySelector("#list");
@@ -14,8 +15,22 @@ const elSeason = document.querySelector("#season");
 const elYear = document.querySelector("#year");
 const elRssLink = document.querySelector("#rssLink");
 const elYtChannel = document.querySelector("#ytChannel");
+const elLastMeta = document.querySelector("#lastMeta");
+const elLastTitle = document.querySelector("#lastTitle");
+const elLastDetails = document.querySelector("#lastDetails");
+const elLastYoutube = document.querySelector("#lastYoutube");
+const elLastDownload = document.querySelector("#lastDownload");
+const elLastAudio = document.querySelector("#lastAudio");
 
 elYear.textContent = String(new Date().getFullYear());
+
+function ui(key, variables = {}) {
+  return window.translate ? window.translate(key, variables) : key;
+}
+
+function currentLocale() {
+  return window.getCurrentLang?.() === "en" ? "en-GB" : "pt-BR";
+}
 
 function setStatus(msg="") {
   elStatus.textContent = msg;
@@ -40,6 +55,29 @@ function buildSeasonOptions(episodes) {
     opt.textContent = `T${s}`;
     elSeason.appendChild(opt);
   });
+}
+
+function renderLatestEpisode() {
+  const episode = state.latest;
+  if (!episode) return;
+
+  const meta = [];
+  if (episode.date) meta.push(new Date(episode.date).toLocaleDateString(currentLocale()));
+  if (episode.author) meta.push(episode.author);
+
+  elLastMeta.removeAttribute("data-i18n");
+  elLastTitle.removeAttribute("data-i18n");
+  elLastMeta.textContent = meta.join(" • ");
+  elLastTitle.textContent = episode.title || "";
+  elLastDetails.href = `episode.html?slug=${encodeURIComponent(episode.slug)}`;
+
+  elLastYoutube.style.display = episode.youtube ? "inline-flex" : "none";
+  if (episode.youtube) elLastYoutube.href = episode.youtube;
+
+  elLastDownload.style.display = episode.download ? "inline-flex" : "none";
+  if (episode.download) elLastDownload.href = episode.download;
+
+  if (episode.mp3) elLastAudio.src = episode.mp3;
 }
 
 function applyFilters() {
@@ -67,7 +105,7 @@ function renderEpisodeItem(ep) {
   const safeExcerpt = escapeHtml(ep.excerpt || "");
   const parts = [];
   if (ep.code) parts.push(`<strong>${escapeHtml(ep.code)}</strong>`);
-  if (ep.date) parts.push(new Date(ep.date).toLocaleDateString("pt-BR"));
+  if (ep.date) parts.push(new Date(ep.date).toLocaleDateString(currentLocale()));
   if (ep.author) parts.push(escapeHtml(ep.author));
 
   const meta = parts.join(" • ");
@@ -89,10 +127,10 @@ function renderEpisodeItem(ep) {
     <div class="row">
       <audio class="audio" controls preload="none" src="${ep.mp3}"></audio>
       <div class="links">
-        <a class="pill" href="episode.html?slug=${encodeURIComponent(ep.slug)}">Detalhes</a>
+        <a class="pill" href="episode.html?slug=${encodeURIComponent(ep.slug)}">${escapeHtml(ui("actions.details"))}</a>
         ${ep.download ? `
           <a class="pill" href="${ep.download}" download>
-            Download
+            ${escapeHtml(ui("actions.downloadAudio"))}
           </a>` : ""
         }
         ${ep.youtube && ep.youtube.trim() ? `
@@ -115,13 +153,13 @@ function renderNextPage(fromReset=false) {
   const slice = state.filtered.slice(start, end);
 
   if (fromReset && state.filtered.length === 0) {
-    setStatus("Nada encontrado. Seu filtro está exigente demais, quase um WAF.");
+    setStatus(ui("status.noResults"));
     state.loading = false;
     return;
   }
 
   if (slice.length === 0) {
-    setStatus("Fim da lista.");
+    setStatus(ui("status.end"));
     state.loading = false;
     return;
   }
@@ -131,12 +169,15 @@ function renderNextPage(fromReset=false) {
   elList.appendChild(frag);
 
   state.page += 1;
-  setStatus(`Mostrando ${Math.min(end, state.filtered.length)} de ${state.filtered.length}`);
+  setStatus(ui("status.showing", {
+    shown: Math.min(end, state.filtered.length),
+    total: state.filtered.length
+  }));
   state.loading = false;
 }
 
 async function init() {
-  setStatus("Carregando episódios...");
+  setStatus(ui("status.loadingEpisodes"));
 
   const res = await fetch("data/episodes.json", { cache: "no-store" });
   if (!res.ok) throw new Error("Falha ao carregar episodes.json");
@@ -149,6 +190,9 @@ async function init() {
   state.all = (data.episodes || [])
     .slice()
     .sort((a,b)=> (b.date || "").localeCompare(a.date || ""));
+  state.latest = state.all[0] || null;
+  renderLatestEpisode();
+
 
   buildSeasonOptions(state.all);
 
@@ -175,7 +219,17 @@ function debounce(fn, ms) {
   };
 }
 
+document.addEventListener("languagechange", () => {
+  if (state.latest) renderLatestEpisode();
+
+  if (state.all.length) {
+    applyFilters();
+  } else {
+    setStatus(ui("status.loadingEpisodes"));
+  }
+});
+
 init().catch(err => {
   console.error(err);
-  setStatus("Deu ruim carregando os episódios. Veja o console.");
+  setStatus(ui("status.loadError"));
 });

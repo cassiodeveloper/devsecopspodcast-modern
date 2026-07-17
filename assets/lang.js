@@ -1,21 +1,34 @@
 const DEFAULT_LANG = "pt";
 
 function applyLang(lang) {
-  const dict = I18N[lang] || I18N[DEFAULT_LANG];
+  const selectedLang = I18N[lang] ? lang : DEFAULT_LANG;
 
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
-    if (!dict[key]) return;
-
-    // suporta HTML (ex: <br>)
-    el.innerHTML = dict[key];
+    el.innerHTML = translate(key, {}, selectedLang);
   });
 
-  document.documentElement.setAttribute("lang", lang);
-  localStorage.setItem("lang", lang);
+  const translatedAttributes = {
+    "data-i18n-placeholder": "placeholder",
+    "data-i18n-title": "title",
+    "data-i18n-aria-label": "aria-label"
+  };
+
+  Object.entries(translatedAttributes).forEach(([dataAttribute, htmlAttribute]) => {
+    document.querySelectorAll(`[${dataAttribute}]`).forEach((el) => {
+      el.setAttribute(htmlAttribute, translate(el.getAttribute(dataAttribute), {}, selectedLang));
+    });
+  });
+
+  document.documentElement.setAttribute("lang", selectedLang);
+  localStorage.setItem("lang", selectedLang);
 
   const toggle = document.getElementById("langToggle");
-  if (toggle) toggle.textContent = lang === "pt" ? "EN" : "PT";
+  if (toggle) toggle.textContent = selectedLang === "pt" ? "EN" : "PT";
+
+  document.dispatchEvent(new CustomEvent("languagechange", {
+    detail: { lang: selectedLang }
+  }));
 }
 
 function initLangToggle() {
