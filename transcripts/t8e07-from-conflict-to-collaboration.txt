@@ -1,0 +1,519 @@
+Cássio Pereira (00:22.946)
+hello everyone. Nice to have you here one more time. and here we are for one more podcast of DevSec, one more episode of DevSecOps podcast. I'm nervous because our guest today is amazing. I saw her presentation. I'll tell about her in a moment, but I saw her presentation in OASP Global Glast EpSec Global in Vienna two, three weeks ago. And it was awesome. That's why she's here to share all the knowledge and all the things with us as well.
+
+I'm Cassio Pereira.
+
+Ben-Hur (00:54.454)
+I am Bangor and it's a little bit early here. But I'm a pleasure to be
+
+Cássio Pereira (00:57.438)
+Yeah, Beur, I know. I know. you know, agenda is always a problem for us, but you know, six AM for you, it's it's still okay. At least for a moment. At least for a moment. Soon enough you you we cannot give spoilers, right? But soon enough will be easier to to let's say like this, right? The good is that we don't have Marcos today, right? It's very good to not have him. He's annoying. You know, we we actually don't like him. I mean, send your comments on the on the on the video, maybe if you still want to see Marcos on the podcast or if you don't want to see Marcos on the podcast, right?
+
+Ben-Hur (01:03.554)
+At least for a moment, right? At least just for a moment.
+
+Ben-Hur (01:25.868)
+Because yeah, because at least some one of us should work, right?
+
+Cássio Pereira (01:29.48)
+Yeah, some of us should work. That's that's it, right? Cool. before jumping to the topic today, which will be I would say collaboration, right? The the whole idea is to to to discuss with our guest, that in a moment I will introduce her about agile development and IT security in general, from conflict to collaboration. We often have conflicts, but how we stop these conflicts or those conflicts.
+
+and jump into collaboration, you know, help each other to achieve the the higher good, let's say. But before that, let's remember that the DevSACOps podcast has all the support from Nova 8, which is which is a distributor from check marks and sneak in the Latin America and also in some markets in Europe. Purple Bird Security, that they will help you during and after an incident con Visual Application Secure, that they are specialized in application security consultant.
+
+Go Security, we've also specialized service on application security world and digital woke that they have a full portfolio of application solutions for you. So, whenever you whatever you need on from AppSec, talk to these guys. But yeah, enough of us. Julian, please. first of all, thank you for being here. Thank you for your time. Thank you for the presentation back there in Vienna, it was very nice. feel free to introduce yourself.
+
+Tell about who you are, where are you going to, why AppSec, and you know, feel free, then we jump into our conversation.
+
+Juliane (02:58.218)
+Thanks a lot, Cassio. Thanks a lot for having me here. I'm very honored to be on your podcast. yeah, my name is Julian. I live in Munich in Germany, and I'm an active member of the OVASP community, and that's also why I was at the OVASC Global AppSec in Vienna, because I like that community very much and I like to contribute. yeah, I work in cybersecurity for around eight years now, and before that
+
+I was in development, so I know both worlds. And when I started in security, I learned very quickly that there is a communication gap, let's say. So my task was to convince security development teams to integrate security scanning tools. And it was not enough to just tell them to integrate the tool, give them a license and
+
+Go ahead. So we we had to talk a lot with them and we set up a lot of meetings with different development teams explaining them the background of why security scanning is important and what benefits it brings and how dangerous it is to have unpatched vulnerabilities. So a lot of basic things we had to we had to scale them up.
+
+with a lot of basic security things. And that's how I started in that field and that kept ongoing till now eight years later I'm still following that communication approach and talking about why we do security and how how we can do it.
+
+Cássio Pereira (04:42.867)
+Okay. Okay, that's that's good. And Beur, I think she's been to the same pain we have been, right? Okay, you have your license, we have the best scanner on the market, find your vulnerabilities and they will find for sure. But okay, nobody fix, not priority. It's not my work. I don't want to do that. I want to build new f new features, to talk to my agent of AI all day. You know, we've we've been we are there. We're not we're not we've been there and we are still there.
+
+Which is which is critical. And maybe I would I'll bring a first a first question to Diane and then Beur you can comment after would be something like this. I was also a developer for 10 years, but for me it was very easy to collaborate with security because I loved security always. I don't even know why I started as developer and not in as security as well. But again, when I was a report or a vulnerability or a scanner, I was always engaged, trying to learn, try to understand. But that was me and maybe Benur, maybe other folks that we know.
+
+But it's one percent of the developer population in the world, I would say, right? so why w what what is your approach to try to spread the word of security among non security folks? What what is the approach?
+
+Juliane (05:58.693)
+From what I saw, it's I don't know if it's true that this it's only one percent of developers who want to do security. as far as I know, developers and I know myself, developers like to do good work and deliver good work and want to do things properly. And they love elegant code, things like that. I mean with AI, that might have changed a lot because
+
+Cássio Pereira (06:04.886)
+Yeah yeah.
+
+Juliane (06:26.468)
+Code is now generated and reviewed, and I don't know if that all elegance and dry and whatever principles we had still are followed. But yeah, so f from what I saw it's often a conflict of priorities. So they have to deliver more features and cannot take care of things that are not visible in the background, like refactoring.
+
+or security. so we not only have to address the developers because they can be motivated to fix findings. It's more their management. We have to approach them as well. And here we cannot only work with motivation on a voluntary basis but it's the company that has to set their security standards. So it's a communication from
+
+from multiple multiple sides, from security, giving reason and explaining how things can be fixed and giving hands on support and also from management top down setting the the priorities for the organization in security for security questions.
+
+Cássio Pereira (07:47.69)
+Mm-hmm. this been I love I love this point that she said. Okay, sometimes we need the support top-down, right? Sometimes the the company must say, hey guys, we are going to this direction on the security direction. I've been in companies that the direction was that we need to sell. Doesn't matter if we have 90 million on fraud every month. We are still making a billion in sales. So it doesn't matter, you know? So maybe the co it's a risk that you take, right?
+
+Juliane (07:54.732)
+Mm.
+
+Juliane (08:03.385)
+Yeah, of course.
+
+Juliane (08:10.008)
+Yeah. It's a risk that you take.
+
+Cássio Pereira (08:15.829)
+But often I see teams, app sec teams, suffering from this fight, let's say, because they don't have this support, but they are still hired to protect the company, right? We are hired to protect the assets, the software, whatever. And then co comments from you, Ben Ru. Do you still see us? And you know this analogy, right? You see us as parents or as as doctors in the company, right? the company is my child that I actually need to protect and enforce policies.
+
+Juliane (08:20.217)
+Mm.
+
+Cássio Pereira (08:44.659)
+Or I am a doctor of that company. Hey, you should take this medication, but I'm not going to your home, take your hands and see if you're taking the medication or not.
+
+Ben-Hur (08:53.217)
+Well how we can approach this kind of thing is depends exactly how the company thinks, in my opinion. For example, if the company cares about security, it's our responsibility to make it happen. So for sure, if the company itself, the entire development team, does not care about security.
+
+The CTO do not care about security, CAO don't care about security, anyone don't care about security. We are just a number to accomplish probably a certification, a regulation, or anything like that, right? So we work differently in in this kind of scenarios. For example, in in in a scenario that it's just my experience, right? I think
+
+Everyone here has the same experience. I came from development as well, then I changed to security and blah blah blah. Because, for example, in in an environment when
+
+No one cares about security and we need to work. Probably the regulations.
+
+will cause a little bit of fear and we need to work in something that way, right? Because here we will not have that certification that we need. Here we will not have the regul not achieve the regulations that we need to to have and everything like that. Right? So the the culture is different when we we need this. But some of the comp mo I I think most of the companies
+
+Ben-Hur (10:44.194)
+That as a specialized guy for application security, it's not in that level anymore, these days, I hope. Okay. So usually, usually we have a security structure that cares about security. And we have an eternal fight with the development and productivity. So these days, with Asian development,
+
+I think we still have that position of going there and make the things happen. But right now we do not need to expect the developer to know the things. We need to build some integrations with the agent. For the agent knows the thing. And hey,
+
+Here is something that we could use with the agent to help automatically fix those kind of veneabilities. And it helps a little bit. Because we still need the developer to use that part of the security in the agents. Or we need to build some of them, that kind of automation, because we need to provide out.
+
+To these days we need to provide automatic fixes. This is some of the expects expectation in the industry.
+
+Cássio Pereira (12:19.137)
+I respectfully would disagree with some points, but maybe the the one because I I I agree, but I assume that you are looking to a world where everybody's using AI and nobody's coding anymore. So the developer is not opening the Visual Studio and coding C sharp rather than asking to an agent to build that code for him.
+
+And delivering something, right? And that agent should know everything as we expect. He already knows because all the knowledge is there on the on the LLM and on the you know. But also it but again, if this guy is not asking properly, like okay, I need a new login page for my system. They whatever AI model will give you a screen with two fields and a button. But if you say, like, look, I need a login page PCI compliance, I need a login page with a captcha encrypting the user and password, logging all the login attempts, whatever, you know.
+
+It's totally different. It's still the same product in the end, a low game page, functional, but totally different on the background, right? And maybe, Julian, I would I would like to hear your comments on this. Do do you believe or how you see this? This human factor, this skill of the developer itself, is it changing that much? He will be this guy interacting with the AI and asking properly. So he still needs to know those things because if he doesn't ask properly, as Beyur mentioned, right?
+
+if he doesn't ask properly, he will still have a not secure product, let's say. So this human factor is still important, right? We need to still train these guys, teaching them about security, right?
+
+Juliane (13:52.303)
+That was what I was thinking. It feels like we are in a tension maybe between automation and human skill. I heard that discussion I think a few years ago. someone who said he was done with training people because people are unrel unreliable. Yeah. he spent so many years trying to skill up people and nothing changed and now he wants to build a software that
+
+Cássio Pereira (14:10.901)
+People are stupid.
+
+Juliane (14:21.838)
+just fixes everything. So take the human out. Now five years later we are a lot closer to that scenario, but I am still not convinced that we can get the human completely out of it. From what I see also in my team we have senior developers and junior developers. The seniors deliver better quality with AI supported development. So
+
+They generate code and review it. And it's still better than what the junior developer delivers. because the junior developer has less experience and has a lot of generated code that is not used, is not needed and still pushed. So there I think we at the moment we still need that human factor and the human skills.
+
+We also recently had a discussion about a zoning concept. You can have a zoning concept, but if people don't apply it properly and don't have the knowledge or the background knowledge also about why we need a zoning concept, why and and what it helps protect and they don't apply it properly, then the concept does not help. I think that is it's still both we need the technology and we need the human skill set.
+
+And I'm I actually doubt that AI will change that ever. but yeah, maybe I'm just too old fashioned here, but I still I mean there are so many examples where AI is really failing.
+
+Cássio Pereira (15:48.246)
+Yeah.
+
+Cássio Pereira (15:52.843)
+Yeah, I I would agree. I would go on, go on, please go on.
+
+Cássio Pereira (15:59.547)
+Ha ha ha.
+
+Juliane (16:07.042)
+Yeah, but also other examples of course where it accelerates productivity enormously. Yeah. so I'm not sure.
+
+Cássio Pereira (16:15.241)
+Yeah. I I I got the Bayur's feeling also because everybody's too much, right? AI, AI, AI. If you don't talk about AI, you're already outside of the club, you know. But it's there there's also this part of the of the thing. But this is what you said about training. Now now that I have a daughter, Benur also is a father. I I'm not sure about you, but yeah. So I see that she's already four.
+
+Juliane (16:26.531)
+Yeah, I know.
+
+Juliane (16:36.706)
+I have a son here.
+
+Cássio Pereira (16:41.791)
+And I'm teaching her everything that I can, and she still didn't learn some things, right? And she she's here with me every day. Like, am I failing as a teacher, as a father, or it's just how it is, just the process, right? Each people, each person are individual and different. even though I teach her some things, she learned very good, other things she still don't do correctly and so on, which is fine. She's also three years old. But I believe when she'll be 18, 30, she will still be human and do wrong things.
+
+Right, even though having all the base, all the knowledge, I mean, only Jesus was perfect, right? For for for the believers, nobody else. So, so that is the point. Also, we might be training teams and and developers and whatever, and they are still still be have their priorities or have their still knowledge. AI you just said, right? AI is also failing and has a lot of knowledge there, and being trained, you know, with billions of data and still doing.
+
+yeah, you shouldn't eat that. It could kill you, and the guy's already dead after you know this meme from ChatGPT. So so I think there's this human fact in general. It it will be there until we are here, we'll be there. But it's also a risk, right? That we will be taking and no matter what. And maybe that's bring my next question. What we do then? We keep this training.
+
+We because I'm I'm I'm really fan of allowing people from the security perspective, an app sec perspective, right? Allowing people to do whatever they need to do on the work with proper guide rails or policies there, even blocking if possible, if the company decided this way. I'm not the doctor, I'm a father of the software. So I will block the deployment if something is there which you will not allow. Or other companies that I work, like we deploy everything.
+
+Tomorrow we see the backlog, whatever is there. So what do we do then? We keep training, we build guardrails, we allow everything, you take depends on the business. How how you see this universe, I would say. Because maybe another example. I worked in a company called ABB, it be basically industrial control systems, building robots for factories. So there was clients that they were fabricated manufacturing vodka.
+
+Cássio Pereira (19:06.782)
+Right? If a factory of vodka is shutting down, like the world will survive, I believe. But also there was factory of food or clothes or medications. That factor is much more important to the society itself, right? Cannot just shut down and have a problem, you know. So the business drives the criticality of the security that we needed to do. Like for that specific product, there's no
+
+Deployment, like we check everything, we validate everything, we block everything. That was released twice a year, just for you to have an idea. So that's the nature of the business. While Agile and other companies, e-commerce and web and whatever, it's I don't know, Amazon, Facebook, they have millions of deployments in production every day. You know, so I think the business also drives those characteristics of security, how we apply security. But again, how you see this? You want to block everybody.
+
+Let everybody do whatever they want.
+
+Juliane (20:05.582)
+Yeah, it's you're right, it totally depends on on the business. for example, I worked a lot in telecommunications and there we are in the area of critical infrastructure. So we have to be a bit more careful than in other areas. So there are obligations that we have to meet and that might require more strict handling of security.
+
+At the same time I see the human factor here again. So some people don't like to be blocked and so there are internal discussions and I don't want to say fights because that would be too much. But firm discussions about yeah, blocking the delivery for security reasons and the scenarios when this could be done.
+
+Juliane (21:08.618)
+Yeah, it's something that we use very sparely if that's the correct word. So not so often. Yeah. Usually it's the way hm. I don't want to say almost everything can go to production. That's not right. Yeah. It depends a bit on the scenario.
+
+Cássio Pereira (21:15.599)
+Mm.
+
+Cássio Pereira (21:27.238)
+Yeah. Mayor, do do you agree in general that this conflicts, yeah, to don't say fights, the this this conflicts, they often happen sometimes because we know what we are protecting and why. And they don't, right? They you are blocking me. I want to deploy and you are blocking me. They just see this negative way, not the why exactly, like to my daughter. Yeah, I
+
+Catch you because you were going to jump your head on the floor, right? She might not have this visibility. So I needed to catch her in the air, even. But so sometimes the the developers think this way, you know, the engineering teams think this way, like security is blocking everything without this why. Do you think this why is important for them? Or we block because I I know more, and that's all.
+
+Ben-Hur (22:18.22)
+Well, no, the the why is extremely important. The challenge that we have is because when we block something, maybe we could have 50% of false positives. This is what's the most painful. Because for example, if I create my code and I send to something like, let me run all the unit tests. Hey, some are failing. Let me check because maybe it's important. Hey, the code's not building.
+
+Hey, something's wrong, let me check. But when we run the security checks, what's signal and what's noise? We do not have that information. And this is the most painful part because the developer most of the time will not know about security. Sometimes even us will not know some specific finding from that SAST or that SCA tool, for example. And the worst.
+
+There's no guide how to fix that properly. For example, hey, here is a cross site scripting. Sanitize all the inputs. What the fuck? You know, so they do not know how to sanitize the input. They do not know what is across site scripting. So exactly we we are blocking like we are just like a spirit. Hey, you are blocking because of this and disappear.
+
+Cássio Pereira (23:28.262)
+All the inputs.
+
+Cássio Pereira (23:35.848)
+What is sanitized?
+
+Juliane (23:38.595)
+Sure.
+
+Cássio Pereira (23:46.08)
+This entity
+
+Ben-Hur (23:46.553)
+You know, we we do exactly. So I totally agree that we should block things because it's dangerous. The most difficult part, the challenge that we still have, and we are expecting AI to solve that part for us, is this is real. And this is how we fix that based on our company architecture. So this is what the expectation today.
+
+But it the blocking still matters, but we need to do something because it's not acceptable anymore for us to block the things and just say sanitize all the inputs. This is not acceptable anymore.
+
+Cássio Pereira (24:30.356)
+Just for blocking.
+
+Cássio Pereira (24:36.2)
+you were talking, I had the next question to Julianne. Today, today in the morning I have been to the doctor because I have some back pain, like totally not not not not natural, not not normal, and so on. So I came there, I have a pain. Yeah, she was checking, maybe maybe maybe some if to to check if it was not neurological problems and so on. yeah, okay, you have an inflammation, take this medication, go home, that's all. She didn't check my feet, my I don't know, brain, heart, like
+
+She went to a specific problem because I was complaining about a specific thing, right? Question is to Julienne. You're not a doctor, I know. Or maybe yes. Yeah, exactly, exactly. but the thing is, do you believe that the scanners, SAS, dust, whatever, it might be might be playing a wrong part here? I mean, they are needed, but instead of us asking them, here's my code base.
+
+Juliane (25:14.478)
+How can you know?
+
+Cássio Pereira (25:32.949)
+Show me all the problems, and they will show you a lot of them. But instead of doing this, we should do like, hey, I'm a finance company. Look here for PII data, credit card number, and this or that specific threat, instead of show me all the problems, because some of those problems might not be relevant, might be false positives, might not be even business impactful. So
+
+I don't know how how do you see the technology of the side the tools and you know whatever tools?
+
+Juliane (26:04.248)
+I see that is really a big problem because when when I think back of the time when we introduced security scanning, we scanned applications for the very first time and there were thousands of findings. And that of course made them shut down. So the development teams did not want to deal with five thousand findings, if that was even enough. So
+
+And so it's really hard to establish a baseline. And once you have that, I mean that would be a wonderful situation. Then you can just check what you deliver. So you write new code, check that, and then you only get feedback for your newly written code, which is a way better situation, because then you might have a few findings that you can easily fix. I'm not sure about that approach.
+
+I mean yeah, I understand when you say my company has that specific scope, please look specifically for things that are relevant to my company. might make make sense, but what if you miss something in a different area that opens away? So I'm not sure if we can only focus on PII data or credit card data in in a finance organization scenario.
+
+Cássio Pereira (27:29.235)
+Mm.
+
+Juliane (27:32.63)
+But you're completely right. The the scanners are so blind and they don't know what is relevant. And that is where we need some triaging. I don't know if AI supported or human driven. At the moment it's a a combination, I think. And also the question is who is responsible for doing the triage? Is it security? Are we responsible for giving
+
+only solid feedback or is it the development team that has to verify the findings? That's also I think not a soft question yet.
+
+Cássio Pereira (28:13.544)
+Yeah, that that's still a question that I don't have answered. I I I believe it's both, because because imagine I'll try to bring to the same scenario of the doctor. Like you go to the doctor, you hey, I want to do a checkup. Okay, you have ten problems here. Two of them can kill you, eight of them not kill you, but give you pain, give you not a good quality of life, and so on. Okay, it's obvious.
+
+Juliane (28:18.85)
+Yeah, maybe.
+
+Cássio Pereira (28:41.184)
+Kind of that I need to focus on the two of them that should kill me, that can kill me. And then I go to the other ones, or maybe in parallel, or you know. But the doctor will give you this advice because he's the specialist. You are the patients and that will take the decision. You can also say, Yeah, okay, I'm fine dying, but I don't want to treat this. Or I can stay with this pain, let's focus on, you know. Why, as you said, to do the triage of of a vulnerability. Like security should say, yeah, this is critical. Why? Because A, B, or C.
+
+It can corrupt all the database and shut down all the company. That's why it's important. And the developer would say, okay, but it's one month to fix. Because we are not fixing, but we know the impact, how to attack, how to exploit, and so on. And they would know more on the code side. So I I I think still I still think there is a kind of a collaboration. Unless for us that we were developing, so you can hey man, come on, it's five minutes to fix this. Then they they should prioritize, right? But
+
+Juliane (29:27.971)
+Of course.
+
+Cássio Pereira (29:40.031)
+I I still I think this is collaboration. So maybe maybe the next point would be do you think threat modeling or thinking ahead on the secret stuff for the project, for the software and so on would reduce that? Because if I'm asking whatever AI to build the more secure code, asking better, or even knowing the best practice myself and delivering a better code, would have less findings and less vulnerabilities means I have less things to fix after because I'm thinking about the secret before. What
+
+Do you guys think this? Maybe Baywer, do you still think mm threat modeling should be done? But takes a lot of time, right? Nobody wants to do.
+
+Ben-Hur (30:17.358)
+Well, for me, the tr the threat modeling, I still have some challenges about scale, how to scale threat modeling across the company. This for me is still a challenge, at least. But I really love threat modeling because not only about the threat model itself that I really like, but it's a way to keep in contact.
+
+To keep the the word of security living in the room, to spread the word, to tie try to learn things from developers, try to teach something for them recurrently. So the the most problem that I'm seeing threat modeling is is not a threat model itself, is what we do in the threat modeling, for example. If we just heard
+
+From the developers, what we are building. And then we just go to a dark room, write a lot of papers, and send off then a spreadsheet with a lot of findings. For sure, this is a bad threat modeling because we've lost the opportunity to talk with them and teach them about the security concepts, something that they can apply in the next project when you are not there, for example, because.
+
+like the previous example, Casio. For example, you mentioned about the doctor, right? but you are having a conversation with doc with the doctor. Most of the pipelines is not a doctor. It's something like, hey, I receive a paper. These two could kill you. Why? This other could cause pain. Where? What do you need to drink? Which medicine? You know, you just read a paper. Hey.
+
+Cássio Pereira (32:03.733)
+Yeah.
+
+Ben-Hur (32:09.856)
+You're bad. And that's it. You know, then you need to call the doctor. No, and and then you found that the doctor agenda is crazy. And probably you only get 30 minutes tomorrow at the end of the day to talk with them. So you know, this this is the same case, the scalability problem. So yeah, definitely we should do threat modeling.
+
+Cássio Pereira (32:13.361)
+Mm, mm.
+
+Ben-Hur (32:39.266)
+But not to find the threads in the modeling and to teach the team what's a thread and why this thread is applying to this scenario. To let them know this kind of thread for when you are not there, they can see with their own eyes that kind of thread. I think this for me it still matters.
+
+Cássio Pereira (33:04.746)
+Julian, you agree, disagree?
+
+Juliane (33:05.486)
+Yeah, that's I completely agree. What I do in the threat modeling sessions that I deliver for my client is I also encourage people so we use the for questions framework just as an as a simple entry. and I encourage them to ask those questions whenever they see an opportunity. Also outside of threat modeling sessions. for example when they see a new feature or a new feature is is on the table being discussed.
+
+but not worked on yet. that is also a good opportunity to to just ask the four questions, or at least three of them. And yeah, I think it's what we are doing is we build a mindset here, the the security aware mindset, let's say, which is also then the security culture.
+
+I think that is very valuable.
+
+Cássio Pereira (33:58.816)
+Cool. And and how about this? Maybe bringing to the last topic, maybe let me see the time. Yeah. How how you see this collaboration part? What what do you think we are doing wrong as EpSec? Like how we could do better. Because I remember when I was a developer, so starting my career, a teacher was saying, you know, developers, we think we are the best. And then I switched it to security.
+
+The the teacher from security will say, Hey, they think they are the best. We know we are the best. So there was this ego, you know, this ego fight war somewhere in the companies. I remember there was this fight, Java and C sharp, Linux, Windows, you know, same level, I would say it's developers and security, or app sec at least. So I know there is this ego part. We can try as humans, we can try to.
+
+Juliane (34:34.244)
+Mm-hmm.
+
+Cássio Pereira (34:55.515)
+Leave that apart, but how do you see that we could do better? Because I I I know we have some let's say problems or flaws that we could, for example, you mentioned in the beginning, communication, like fix this, like fix this because of that impact, because it's critical. You can fix this or that way, you know, give more context, more information. But how did how what do you think we should do better or
+
+We could do better. Or you you you are on the ego side. We already know we are good. You are the wrong guys. Can be the same, right?
+
+Juliane (35:26.852)
+Yeah, I think we can really improve our w way how we approach development teams. There are so many things that we could do better actually. start with the communication. We assume that they know what threat modeling is or cross site scripting. So we throw terms at them. They are not familiar with. But we should assume that they don't know it. That would be the better way. Then I was doing a little bit of research on the topic of cognitive load. So that's the
+
+mental effort that we have to put in as humans to solve a problem. And so there is something called intrinsic cognitive load. It is just the inherent complexity of a task. That's okay. But there is also something called extraneous cognitive load. And that is called mental effort that is caused by the way information is presented. And that is a huge area where we can be better. We can
+
+For example, instead of sending an Excel spreadsheet with 400 questions, just send it and expect our developers to answer. Instead of that, we could use different formats. That's almost a no-brainer. So there are so many small things where we could check is that presented in the ideal way? Is a ZAST report the ideal format
+
+to to make our development teams do something here and and fix findings or do we need a different format? A format that they are that they are more used to work with, like Jira tickets or something else. So I think there are many small things that we could improve.
+
+Cássio Pereira (37:18.705)
+Okay. Bayor, what you are doing wrong as a psych guy? By definition, we are wrong. Everything's a false positive. Don't bother me, right?
+
+Ben-Hur (37:22.062)
+Yeah, everything, right?
+
+Ben-Hur (37:29.748)
+Yeah, we just throw a lot of tools and say now you you use this, use this, right? well one of the things that for me I think we are doing wrong in application security is we are adding
+
+Too much responsibility in the developer to know too much things. For example, imagine that every area looks the same way that we are looking for the developer. Hey, you should know about design. Hey, you should know about the product. Hey, you should know about the infrastructure. Hey, you should know about security. So we are expecting them to know.
+
+A lot of things in security, but we are not the unique area in the company that expects the developer to know something. The question is what the developer should know. In fact, and what we need to provide for them, right? So
+
+If you take a look about, for example, okay, this day is Asian AI days, the world are it's changing, the matrix is becoming a little bit different. But if you look to the design part, for example, good designers give the most important parts for the developer, take the decision to create something. They do all the work and they they provide to the developer something that they can read and replicate.
+
+Right? So the infrastructure creates the base infrastructure that they reduce the decision that the developer needs to make about it. Right? Because they need to know about the code, the product they need to build, the quality of that code, the performance of that code. There's there's a lot of things. And if the developer does the opposite, start asking us.
+
+Ben-Hur (39:50.273)
+About how expert in software we are, we already start saying, but this is not our responsibility. And this is not a fair question. Because if you are asking them to know a lot of things, but you are not able to produce the same code they need to produce, what's what's the mistake here? We have a cultural mistake because we are expecting too much. We're expecting them to be as good a security as we are.
+
+But we are not good as developers as they are. So for me, that balance should be different. We need to provide security defaults, provide the way that security is easier in more than expect them to know a lot of things about security. I know that it's a little bit different from what we are seeing in the industry.
+
+But I still remain with that mentality.
+
+Cássio Pereira (40:53.609)
+Who are you and where is Benur? No man, you you are double agent, you're playing to developers now? What happened? No, I I yeah.
+
+Ben-Hur (41:01.646)
+No, I'm I I just do not want to expect all the developers to create a safe place that will be my fault.
+
+Cássio Pereira (41:12.135)
+Yeah. Fr from one side I agree. From other, I would remember when I started, I needed to learn frontend, CSS, JavaScript. I was backend developer in C sharp. I needed to do all the database modeling, create the tables, fields, varshar, integer, whatever. I needed to do the infrastructure to deployment. It was already a lot. Now I ask AI. So I could argue that.
+
+Developers have even less knowledge. They are more Lego builders because you have all the pieces done for you. I agree with what you said. Yes, we also expect them too much business side and so on. On the other hand, we are in different eras. Man, guy, people from today they have no idea what is to make a website run on the Internet Explorer six, seven, eight, and nine. You need you need you didn't need to know CSS. You needed to know hacks of CSS.
+
+Three two different versions of file to work in different browsers. Just because one customer had Internet Explorer, whatever in the China that they needed to run the application. That was hard. Today we don't have that that challenge anymore. We have others. Per maybe performance, maybe. So I agree with you, but I have a step back. Like they are the easier the word is easier for them, also. Not easier like, okay, don't do anything. Not on this this way, but
+
+Just bring more conflict, right?
+
+Juliane (42:41.699)
+Yeah.
+
+Ben-Hur (42:42.018)
+Yeah, but why their work is easier using AI and for us is not the same. Yeah. So I prefer a wo a world that everyone works easier because you already have two heavy world work to do, you know? So why instead of everyone start fighting why we are not starting and partying?
+
+Cássio Pereira (42:49.159)
+It should be. I then I t I should be also.
+
+Cássio Pereira (42:58.951)
+You have everything, yeah, okay. Okay.
+
+Cássio Pereira (43:07.279)
+Give hands? Yeah, give hands and and collaborate. Go on, Julian. You wanted to say something.
+
+Ben-Hur (43:10.496)
+And resting a little bit, you know?
+
+Juliane (43:13.924)
+Yeah, I just wanted to say it's not getting easier, it's just faster. That's how it feels. So developers of course it's easier to generate code, but they are asked to deliver so much more in shorter time.
+
+Cássio Pereira (43:18.015)
+good point.
+
+Cássio Pereira (43:31.667)
+Yeah, the time is the hard constraint.
+
+Ben-Hur (43:34.455)
+And in the near future, why do you use so many tokens to build this?
+
+Cássio Pereira (43:39.839)
+W why we're not saving money.
+
+Juliane (43:41.412)
+True. The moment it's it's
+
+Ben-Hur (43:44.94)
+Yeah. Now we are experimenting, discovering we are testing.
+
+Cássio Pereira (43:50.579)
+You just you just brought a sp a a spoiler from the apocalypse. That would be the apocalypse.
+
+Ben-Hur (43:54.831)
+Yeah. Because to because these days no one knows exactly how the things work, and we are testing loop engineering, context engineering, prompt engineering, how if the works better with MCP or a skill or what should be in the rag or should be in the content. We do not know perfect perfectly this.
+
+But when we have a more structure, hey, now we understand how an agent works and now we understand how it goes better, we will start having other metrics. Why your agent takes so long to build this? It's like we all will be like Pokemon Masters. That will be fun because we will have, hey, do you know Julio's there? They have an agent that can do that kind of things in just a
+
+Few prompts, let's ask them how dare Pokemon do that. So it will be fun at certain point, but will be a different world because you what the world is is just talking about, okay? You practically for sure you not be the developer like these days anymore. Totally agree, Crass. But you'll be a manager.
+
+Cássio Pereira (44:53.767)
+Mm.
+
+Ben-Hur (45:21.162)
+Of 13 developers today, six tomorrow, a hundred in the other day. And the orchestration will raise new kind of metrics because we only work as metrics, right? Number of vulnerabilities, number of products, number of tokens. And this, well, the world is expecting things to be easier, right?
+
+Cássio Pereira (45:51.231)
+Mm.
+
+Ben-Hur (45:51.394)
+will be easier to write software, will be easier to create products, we'll be easier to ship things.
+
+Cássio Pereira (45:57.329)
+We have problems and vulnerabilities also. Easier to attack things.
+
+Juliane (45:59.799)
+Easier to attack things.
+
+Ben-Hur (46:00.071)
+We so we are expecting should should so for sure we will still we will have another gun point to our head that is the security is not enabling us to move as fast as we should be using AI. So we need to be there as well. Hey, we'll be easier because these automatically do something.
+
+Cássio Pereira (46:21.01)
+Not following following the speed and so on.
+
+Ben-Hur (46:29.314)
+This makes easier for the software to be secure. This is easier to find a vulnerability. Or we can do more or we can reduce the time. For sure we will work in the same field of should be easier, right?
+
+Cássio Pereira (46:53.118)
+Okay, now I agree. Now I will collaborate with you. Okay, one second.
+
+Ben-Hur (46:57.603)
+Yeah.
+
+Cássio Pereira (47:09.138)
+That's the best moment of the of this podcast. Beur loves this developer crying. Julian, we have a part here on the podcast where we have the dev may cry. Like just some fun part where we would do something to make the developers cry, actually. You mentioned something during your during your talk, like we should communicate better instead of a spreadsheet for them. I I would send a PDF.
+
+Ben-Hur (47:10.798)
+I it's
+
+the fifth time that I heard this and I would always love it.
+
+Cássio Pereira (47:38.929)
+Even worse, you know, like a screenshot of no perfect man, or unity test on the unity on lower unity test on the paper. Like I remember doing interviews that you needed to do some code on paper to test the the my god. So okay, I think we already did the dev may cry of today, but any ideas, anything that you would you know, throw or any practice, whatever.
+
+Juliane (47:39.069)
+A screenshot of code.
+
+Ben-Hur (47:48.75)
+Low resolution.
+
+Cássio Pereira (48:07.304)
+To make a developer cry, for example. Benur, and you want to start so Julian have a time to think. Or if you you want to drop, just drop in, that's not a problem. I would I would keep my PDF idea, like all the reports, it's a PDF file, five hundred pages with index. You need to go one by one, with screenshot of the code or combination of
+
+Juliane (48:27.894)
+I have an actual example from yesterday, a SARS tool, and the developers complained that the UI is loading so slowly, it takes more than one and a half minutes and then until they can see what they want to see. And the next click takes again one and a half minutes. So we have to do something about it because they hate it so much. They used words like we feel dead inside when we use the tool.
+
+Cássio Pereira (48:56.798)
+Let's not mention the vendor, but I had kind of experience for some reports. So we want some reports from the vendor, and then you click and then it's there loading. Of course, there's a lot of data there, but still, you know. Yeah.
+
+Juliane (49:13.412)
+still is unusable. we have to do something about it. I don't want to want our developers to feel dead inside when they do security. Yeah, me neither.
+
+Cássio Pereira (49:22.558)
+Yeah. I would feel that inside also. Okay. So Bayer, any anything else? I would you you would increase this time, right? One minute is too fast even.
+
+Ben-Hur (49:36.035)
+I I think every report ju only shows you what's a problem if you pass a training. Because if you because because if if I f if you create your code and I found some vulnerabilities because you didn't learn something. So you should pass to the training again to see
+
+Cássio Pereira (49:46.92)
+AHHHH
+
+Cássio Pereira (49:52.328)
+Man, you are you are the pure devil. You are poor evil.
+
+Okay, and the training and the training should be like a few episodes back. Like you go power slides, like one slash ninety, you need to click next, next, you cannot skip. You need to go one by one. The training, like perfect one.
+
+Ben-Hur (50:10.668)
+Yeah. Yeah, it and you need to lie in the front page. For example, you say two minutes remaining, next page, a forty minutes video. You know, so
+
+Cássio Pereira (50:20.798)
+Okay, this is the Beur I want here, not the pro developer before. Now you are back. my god. All right. Very good way of f finalizing a collaboration podcast where we should be collaborating more. Per I think it's a perfect per perfect scenario. Julianne, thank you for your time. Any final words? Any final don't do this kind of things like
+
+Juliane (50:47.634)
+I just just want to say it was a lot of fun. Thanks a lot.
+
+Cássio Pereira (50:50.494)
+Cool. Thank you as well. Thank you for your time. for sure. This episode goes live in a week. We have an episode yesterday, so for sure in a week. Then we'll share all the links and so on. are you able to share the slides from WoWASP? Because then I can add here also on the video so people can just download. If you authorize, I can also add here your LinkedIn so people can contact you if it's not a problem. yeah, I think that's it. Benyur, any final words?
+
+Ben-Hur (51:16.984)
+Thank you so much, Julian. Okay. Thanks so much for for the episode today. I think this kind of of work will never end because at the at the end we all need humans to take decisions. And the decision is it's an important part of this.
+
+Juliane (51:19.972)
+Yeah.
+
+Ben-Hur (51:46.639)
+This work because okay, we all have Asians AI everywhere. I totally agree with Cassio that is a migrating time, right? Not everyone is is there, but most of the company that I see is starting realizing that they for some reason they they don't even know they should be there. But now it's most important type for security as well, right?
+
+Because the developer don't even control what's been created. So will be a good opportunity for us to, hey, now you need to take care more about security because it's not only your code. So if you think you know, maybe your agent doesn't. So we have more more paths to to reach the that culture.
+
+Cássio Pereira (52:45.274)
+As I always say, as pro protectors, we have to know all of our problems and the attackers just need to know one. So it's it's a very hard job. So yeah. All right, guys, see you next week. Julian, thank you again once again for your time. I'm Casio Pereira. And Julian. By the way, yeah, by the by the way, it's very hard because in Portuguese we would say Juliani, right? Pretty much easier.
+
+Juliane (53:02.852)
+Thank you both.
+
+Ben-Hur (53:04.502)
+I am Bayer.
+
+Cássio Pereira (53:12.594)
+Julian, like more English side. In Poland, you'd say Juliane, because J has sound of E. You know, so the mind to pronounce even everything is is sometimes explode. Yeah, but anyway.
+
+Juliane (53:16.942)
+Yeah.
+
+Juliane (53:25.668)
+I know my name is not the easiest for for this different language.
+
+Cássio Pereira (53:28.894)
+And in Brazil, we wouldn't have Juliana and Juliane. Like even two variations. Anyway. Guys, Juliana. All right. Cool. See you next week for one more episode of the Second Podcast. Thank you.
+
+Juliane (53:35.382)
+In German it's Juliana.
+
+Ben-Hur (53:44.856)
+Waiting.
+
+Juliane (53:44.996)
+Good day.
+

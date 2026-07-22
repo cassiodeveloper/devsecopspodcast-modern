@@ -25,7 +25,8 @@ const sourceFiles = [
   "index.html",
   "episode.html",
   "assets/app.js",
-  "assets/episode.js"
+  "assets/episode.js",
+  "posts/t8e07-from-conflict-to-collaboration.html"
 ];
 
 function collectMatches(source, pattern) {
@@ -36,7 +37,7 @@ function collectMatches(source, pattern) {
 
 for (const relativePath of sourceFiles) {
   const source = fs.readFileSync(path.join(root, relativePath), "utf8");
-  collectMatches(source, /data-i18n(?:-(?:placeholder|title|aria-label))?="([^"]+)"/g);
+  collectMatches(source, /data-i18n(?:-(?:placeholder|title|content|aria-label))?="([^"]+)"/g);
   collectMatches(source, /\b(?:ui|translate)\("([^"]+)"/g);
 }
 
@@ -77,6 +78,11 @@ const elements = {
     getAttribute: function (name) { return this.attributes[name]; },
     setAttribute: function (name, value) { this.attributes[name] = value; }
   },
+  contentAttribute: {
+    attributes: { "data-i18n-content": "post.t8e07.description" },
+    getAttribute: function (name) { return this.attributes[name]; },
+    setAttribute: function (name, value) { this.attributes[name] = value; }
+  },
   aria: {
     attributes: { "data-i18n-aria-label": "language.toggle" },
     getAttribute: function (name) { return this.attributes[name]; },
@@ -104,6 +110,7 @@ const toggleContext = {
         "[data-i18n]": [elements.content],
         "[data-i18n-placeholder]": [elements.placeholder],
         "[data-i18n-title]": [elements.title],
+        "[data-i18n-content]": [elements.contentAttribute],
         "[data-i18n-aria-label]": [elements.aria]
       }[selector] || [];
     },
@@ -126,6 +133,7 @@ const toggleAssertions = [
   [elements.content.innerHTML === "Episodes", "O texto visivel nao foi traduzido."],
   [elements.placeholder.attributes.placeholder === "Search (title, guest, tags)…", "O placeholder nao foi traduzido."],
   [elements.title.attributes.title === "Season", "O atributo title nao foi traduzido."],
+  [elements.contentAttribute.attributes.content === "Learn how development and security teams can move from conflict to cooperation through communication, leadership, training, and automation.", "O atributo content nao foi traduzido."],
   [elements.aria.attributes["aria-label"] === "Switch language", "O aria-label nao foi traduzido."],
   [elements.toggle.textContent === "PT", "O rotulo do toggle nao foi invertido."],
   [languageEvent?.detail?.lang === "en", "O evento languagechange nao foi disparado."],

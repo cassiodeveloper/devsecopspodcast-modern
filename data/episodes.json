@@ -6,6 +6,23 @@
   },
   "episodes": [
     {
+      "id": "t8e07-from-conflict-to-collaboration",
+      "slug": "t8e07-from-conflict-to-collaboration",
+      "title": "T08E07 - From conflict to collaboration",
+      "date": "2026-07-22",
+      "author": "Cássio Batista Pereira",
+      "excerpt": "...",
+      "contentHtml": "<br /><br />",
+      "mp3": "https://api.spreaker.com/v2/episodes/73023536/download.mp3",
+      "download": "https://api.spreaker.com/v2/episodes/73023536/download.mp3",
+      "youtube": "https://www.youtube.com/watch?v=MJ-fyrtziUI",
+      "transcriptUrl": "transcripts/t8e07-from-conflict-to-collaboration.txt",
+      "blogPostUrl": "posts/t8e07-from-conflict-to-collaboration.html",
+      "tags": ["AppSec", "Manipulating", "DevSecOps", "People", "Social Engineering"],
+      "spreakerId": "73023536",
+      "code": "T08E07"
+    },
+    {
       "id": "t8e06-manipulating-people-for-good-appsec",
       "slug": "t8e06-manipulating-people-for-good-appsec",
       "title": "T08E06 - Manipulating people for a good AppSec",

@@ -35,6 +35,14 @@ body{
     var(--bg);
 }
 
+
+/* Long-form posts must not tile the viewport-sized decorative background. */
+body.blog-post-page{
+  height:auto;
+  min-height:100%;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+}
 a{color:inherit; text-decoration:none}
 .wrap{width:min(1040px, 92vw); margin:0 auto}
 
@@ -565,15 +573,43 @@ a{color:inherit; text-decoration:none}
 }
 
 .blog-post-lead{
-  max-width:65ch;
+  max-width:75ch;
   color:var(--muted);
   font-size:1.15rem;
-  margin:0 0 24px;
+  margin:0 0 28px;
+}
+
+.blog-post-figure{
+  margin:0 0 28px;
+  max-width:75ch;
+}
+
+.blog-post-figure img{
+  display:block;
+  width:100%;
+  height:auto;
+  border-radius:var(--radius);
+  border:1px solid rgba(242,199,0,.24);
+}
+
+.blog-post-figure figcaption{
+  margin-top:8px;
+  color:var(--muted);
+  font-size:.88rem;
 }
 
 .blog-post .content{
+  border-radius:0;
+  padding:0;
+  max-width:75ch;
+  background:transparent;
   font-size:1.05rem;
   line-height:1.75;
+}
+
+.blog-post .content p,
+.blog-post .content ul{
+  margin-bottom:18px;
 }
 
 .blog-post-episode-link{

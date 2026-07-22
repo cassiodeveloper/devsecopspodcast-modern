@@ -11,6 +11,7 @@ function applyLang(lang) {
   const translatedAttributes = {
     "data-i18n-placeholder": "placeholder",
     "data-i18n-title": "title",
+    "data-i18n-content": "content",
     "data-i18n-aria-label": "aria-label"
   };
 
