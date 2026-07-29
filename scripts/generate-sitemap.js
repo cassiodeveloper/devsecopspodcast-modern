@@ -35,6 +35,7 @@ const newestDate = episodes
   .at(-1);
 
 const urls = [entry(siteUrl + "/", newestDate, "1.00")];
+const publishedPostUrls = new Set();
 
 for (const episode of episodes) {
   if (!episode.slug) continue;
@@ -46,12 +47,24 @@ for (const episode of episodes) {
   ));
 
   if (typeof episode.blogPostUrl === "string" && episode.blogPostUrl.trim()) {
+    const postUrl = new URL(episode.blogPostUrl, siteUrl + "/").href;
     urls.push(entry(
-      new URL(episode.blogPostUrl, siteUrl + "/").href,
+      postUrl,
       episode.date,
       "0.90"
     ));
+    publishedPostUrls.add(postUrl);
   }
+}
+
+const postsDirectory = path.join(root, "posts");
+for (const file of fs.readdirSync(postsDirectory).filter(function (name) { return name.endsWith(".html"); })) {
+  const postUrl = new URL("posts/" + file, siteUrl + "/").href;
+  if (publishedPostUrls.has(postUrl)) continue;
+
+  const source = fs.readFileSync(path.join(postsDirectory, file), "utf8");
+  const publishedTime = source.match(/<meta\s+property="article:published_time"\s+content="([^"]+)"/i);
+  urls.push(entry(postUrl, publishedTime ? publishedTime[1] : newestDate, "0.90"));
 }
 
 const sitemap = [

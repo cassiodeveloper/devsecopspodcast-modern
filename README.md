@@ -15,6 +15,7 @@ Cada item de `data/episodes.json` aceita dois campos opcionais:
 - Coloque transcripts em `transcripts/`. O formato pode ser `.txt`, `.md` ou outro arquivo que o navegador consiga baixar.
 - Coloque cada artigo como uma pagina HTML estatica em `posts/`. Use `templates/blog-post.html` como ponto de partida.
 - Prefira o mesmo slug do episodio nos nomes dos arquivos. Isso deixa as URLs previsiveis.
+- Para artigos bilingues, coloque as traducoes especificas em `assets/posts/<slug>.i18n.js` e carregue o arquivo entre `assets/i18n.js` e `assets/lang.js`.
 
 Depois de adicionar ou alterar conteudo, execute:
 
@@ -23,4 +24,4 @@ npm run verify
 npm run sitemap
 ```
 
-O primeiro comando impede links locais quebrados. O segundo inclui todos os episodios e artigos publicados no `sitemap.xml`.
+O primeiro comando impede links locais quebrados e valida as traducoes de todos os artigos. O segundo inclui no `sitemap.xml` tanto os artigos vinculados a episodios quanto paginas HTML independentes em `posts/`.

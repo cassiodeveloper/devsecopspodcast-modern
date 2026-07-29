@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="post.dsomm.metaTitle">Modelo de Maturidade DevSecOps: integrando segurança ao desenvolvimento - DevSecOps Podcast</title>
+    <meta name="description" data-i18n-content="post.dsomm.description" content="Entenda como o OWASP DSOMM ajuda organizações a avaliar práticas DevSecOps, definir melhorias e integrar segurança ao ciclo de desenvolvimento." />
+    <meta name="author" content="Cássio Batista Pereira" />
+
+    <link rel="canonical" href="https://devsecopspodcast.com.br/posts/devsecops-maturity-model.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" data-i18n-content="post.dsomm.title" content="Modelo de Maturidade DevSecOps: integrando segurança ao desenvolvimento" />
+    <meta property="og:description" data-i18n-content="post.dsomm.description" content="Entenda como o OWASP DSOMM ajuda organizações a avaliar práticas DevSecOps, definir melhorias e integrar segurança ao ciclo de desenvolvimento." />
+    <meta property="og:url" content="https://devsecopspodcast.com.br/posts/devsecops-maturity-model.html" />
+    <meta property="og:image" content="https://devsecopspodcast.com.br/assets/logo-devsecops.png" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="article:published_time" content="2026-07-27" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" data-i18n-content="post.dsomm.title" content="Modelo de Maturidade DevSecOps: integrando segurança ao desenvolvimento" />
+    <meta name="twitter:description" data-i18n-content="post.dsomm.description" content="Entenda como o OWASP DSOMM ajuda organizações a avaliar práticas DevSecOps, definir melhorias e integrar segurança ao ciclo de desenvolvimento." />
+    <meta name="twitter:image" content="https://devsecopspodcast.com.br/assets/logo-devsecops.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/style.css?v=20260717-1" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Article",
+            "headline": "Modelo de Maturidade DevSecOps: integrando segurança ao desenvolvimento",
+            "alternativeHeadline": "DevSecOps Maturity Model: Integrating Security into Development",
+            "description": "Entenda como o OWASP DSOMM ajuda organizações a avaliar práticas DevSecOps, definir melhorias e integrar segurança ao ciclo de desenvolvimento.",
+            "datePublished": "2026-07-27",
+            "dateModified": "2026-07-27",
+            "inLanguage": ["pt-BR", "en"],
+            "author": {
+              "@type": "Person",
+              "name": "Cássio Batista Pereira"
+            },
+            "mainEntityOfPage": "https://devsecopspodcast.com.br/posts/devsecops-maturity-model.html",
+            "isPartOf": {
+              "@type": "PodcastSeries",
+              "name": "DevSecOps Podcast",
+              "url": "https://devsecopspodcast.com.br/"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "inLanguage": "pt-BR",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "O que é DevSecOps?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "DevSecOps é uma abordagem que integra segurança ao processo DevOps e a prioriza em todas as etapas do desenvolvimento de software."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Como modelos de maturidade podem melhorar a segurança?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Modelos de maturidade oferecem uma estrutura para avaliar práticas atuais, identificar lacunas e criar planos de melhoria acionáveis."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "O DSOMM é aplicável a todas as organizações?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sim. O DSOMM pode ser adaptado a organizações de diferentes portes e setores."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body class="blog-post-page">
+    <header class="top">
+      <div class="wrap topbar">
+        <a class="brand" href="/" aria-label="DevSecOps Podcast">
+          <img class="brand-logo" src="../assets/logo-devsecops.png" alt="DevSecOps Podcast" />
+          <span class="brand-text">
+            <span class="brand-name">DevSecOps</span>
+            <span class="brand-sub">podcast</span>
+          </span>
+        </a>
+        <nav class="nav">
+          <a href="../#episodios" data-i18n="nav.episodes">Episódios</a>
+          <a href="../#manifesto" data-i18n="nav.manifesto">Manifesto</a>
+          <a href="../#assinar" data-i18n="nav.subscribe">Assinar</a>
+          <button class="lang-toggle" id="langToggle" aria-label="Alternar idioma" data-i18n-aria-label="language.toggle">EN</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <article class="episode blog-post">
+        <p class="kicker"><time datetime="2026-07-27" data-i18n="post.dsomm.date">27 de julho de 2026</time> · <span data-i18n="post.dsomm.articleLabel">ARTIGO</span></p>
+        <h1 data-i18n="post.dsomm.title">Modelo de Maturidade DevSecOps: integrando segurança ao desenvolvimento</h1>
+        <p class="blog-post-lead" data-i18n="post.dsomm.lead">DevSecOps combina desenvolvimento, segurança e operações. Em um cenário no qual ameaças e ciclos de entrega evoluem rapidamente, integrar segurança em todas as etapas deixou de ser opcional.</p>
+
+        <div class="content">
+          <p data-i18n="post.dsomm.intro">Cada vez mais organizações reconhecem a importância de incorporar segurança ao processo de desenvolvimento. O DevSecOps Maturity Model ajuda a transformar essa intenção em avaliação, prioridades e melhorias concretas.</p>
+
+          <h2 data-i18n="post.dsomm.whatTitle">O que é o DevSecOps Maturity Model?</h2>
+          <p data-i18n="post.dsomm.whatText">O DevSecOps Maturity Model, hoje mantido como projeto da OWASP e conhecido pela sigla DSOMM, é um framework que ajuda organizações a avaliar suas práticas de segurança ao longo do ciclo de desenvolvimento de software. Ele oferece uma forma estruturada de medir quanto a segurança está integrada aos processos DevOps e de identificar onde melhorar.</p>
+
+          <h3 data-i18n="post.dsomm.originsTitle">Origens do DSOMM</h3>
+          <p data-i18n="post.dsomm.originsText">As origens do modelo remontam a 2016, quando Timo Pagel, consultor independente e arquiteto DevSecOps, desenvolvia sua dissertação de mestrado. Ao perceber a necessidade de integrar segurança às práticas DevOps em expansão, ele estruturou um modelo que ajudasse equipes a priorizar segurança em seus fluxos de desenvolvimento.</p>
+
+          <h3 data-i18n="post.dsomm.importanceTitle">A importância dos modelos de maturidade</h3>
+          <p data-i18n="post.dsomm.importanceText">Modelos como o DSOMM permitem comparar práticas atuais com uma referência estabelecida. Essa visão ajuda as equipes a entender onde estão, quais lacunas representam maior risco e quais passos podem elevar a maturidade de forma incremental e mensurável.</p>
+
+          <h2 data-i18n="post.dsomm.useTitle">Como usar o DevSecOps Maturity Model</h2>
+          <h3 data-i18n="post.dsomm.assessTitle">Avalie sua posição atual</h3>
+          <p data-i18n="post.dsomm.assessText">O primeiro passo é avaliar as práticas de segurança existentes em diferentes dimensões do processo DevOps:</p>
+          <ul>
+            <li><strong data-i18n="post.dsomm.awarenessLabel">Conscientização em segurança:</strong> <span data-i18n="post.dsomm.awarenessText">as pessoas da equipe recebem treinamento sobre boas práticas?</span></li>
+            <li><strong data-i18n="post.dsomm.toolsLabel">Integração de ferramentas:</strong> <span data-i18n="post.dsomm.toolsText">as ferramentas de segurança fazem parte do pipeline de CI/CD?</span></li>
+            <li><strong data-i18n="post.dsomm.incidentLabel">Resposta a incidentes:</strong> <span data-i18n="post.dsomm.incidentText">existe um processo definido para responder a incidentes de segurança?</span></li>
+          </ul>
+
+          <h3 data-i18n="post.dsomm.roadmapTitle">Crie um roadmap de melhoria</h3>
+          <p data-i18n="post.dsomm.roadmapText">Depois de identificar a posição atual, transforme os resultados em um plano de evolução:</p>
+          <ul>
+            <li data-i18n="post.dsomm.roadmap1">Defina objetivos específicos e mensuráveis para aprimorar as práticas de segurança.</li>
+            <li data-i18n="post.dsomm.roadmap2">Identifique os responsáveis por implementar cada melhoria.</li>
+            <li data-i18n="post.dsomm.roadmap3">Revise o progresso regularmente e ajuste a estratégia quando necessário.</li>
+          </ul>
+
+          <h2 data-i18n="post.dsomm.benefitsTitle">Benefícios da implementação do DSOMM</h2>
+          <h3 data-i18n="post.dsomm.securityTitle">Postura de segurança mais forte</h3>
+          <p data-i18n="post.dsomm.securityText">Ao seguir o modelo, as organizações passam a adotar boas práticas de forma proativa, reduzindo a probabilidade e o impacto de falhas de segurança.</p>
+
+          <h3 data-i18n="post.dsomm.collaborationTitle">Melhor colaboração</h3>
+          <p data-i18n="post.dsomm.collaborationText">O DSOMM aproxima desenvolvimento, segurança e operações. Quando a segurança faz parte do processo, as equipes conseguem identificar e reduzir riscos em conjunto, em vez de trabalhar em silos.</p>
+
+          <h3 data-i18n="post.dsomm.efficiencyTitle">Mais eficiência</h3>
+          <p data-i18n="post.dsomm.efficiencyText">Tratar segurança cedo evita correções caras no fim do ciclo de software. Além de reduzir retrabalho, essa abordagem economiza tempo e recursos.</p>
+
+          <h2 data-i18n="post.dsomm.conclusionTitle">Conclusão</h2>
+          <p data-i18n="post.dsomm.conclusionText">O DevSecOps Maturity Model é um framework poderoso para organizações que desejam fortalecer a segurança dentro do desenvolvimento de software. Ao avaliar práticas atuais, criar um roadmap e estimular a colaboração, empresas constroem uma postura mais robusta e capaz de acompanhar um cenário de ameaças em rápida evolução.</p>
+
+          <h2 data-i18n="post.dsomm.takeawaysTitle">Principais aprendizados</h2>
+          <ul>
+            <li data-i18n="post.dsomm.takeaway1">O DSOMM ajuda a avaliar e aprimorar práticas de segurança em ambientes DevOps.</li>
+            <li data-i18n="post.dsomm.takeaway2">O modelo surgiu do trabalho de Timo Pagel em 2016 e hoje é um projeto da OWASP.</li>
+            <li data-i18n="post.dsomm.takeaway3">Sua adoção melhora a postura de segurança, a colaboração e a eficiência.</li>
+          </ul>
+
+          <h2 data-i18n="post.dsomm.faqTitle">Perguntas frequentes</h2>
+          <h3 data-i18n="post.dsomm.faq1Question">O que é DevSecOps?</h3>
+          <p data-i18n="post.dsomm.faq1Answer">DevSecOps é uma abordagem que integra segurança ao processo DevOps, garantindo que ela seja priorizada em todas as etapas do desenvolvimento de software.</p>
+
+          <h3 data-i18n="post.dsomm.faq2Question">Como modelos de maturidade podem melhorar a segurança?</h3>
+          <p data-i18n="post.dsomm.faq2Answer">Eles oferecem uma estrutura para avaliar práticas atuais, identificar lacunas e criar planos de melhoria acionáveis.</p>
+
+          <h3 data-i18n="post.dsomm.faq3Question">O DSOMM é aplicável a todas as organizações?</h3>
+          <p data-i18n="post.dsomm.faq3Answer">Sim. O modelo pode ser adaptado a organizações de diferentes portes e setores, o que o torna uma ferramenta flexível para aprimorar práticas de segurança.</p>
+
+          <h2 data-i18n="post.dsomm.continueTitle">Comece sua avaliação</h2>
+          <p><span data-i18n="post.dsomm.continuePrefix">Explore o</span> <a href="https://dsomm.owasp.org/usage" target="_blank" rel="noreferrer" data-i18n="post.dsomm.officialLink">DevSecOps Maturity Model oficial da OWASP</a> <span data-i18n="post.dsomm.continueSuffix">e use o modelo para transformar lacunas de segurança em um roadmap mensurável.</span></p>
+        </div>
+
+        <p class="blog-post-episode-link">
+          <a class="pill pill-accent" href="../#episodios" data-i18n="post.dsomm.episodesCta">Explorar episódios do podcast</a>
+        </p>
+      </article>
+
+      <footer class="footer">
+        <a class="muted" href="/" data-i18n="post.dsomm.back">Voltar ao DevSecOps Podcast</a>
+        <span class="muted">DevSecOps Podcast</span>
+      </footer>
+    </main>
+    <script src="../assets/i18n.js?v=20260727-1"></script>
+    <script src="../assets/posts/devsecops-maturity-model.i18n.js?v=20260727-1"></script>
+    <script src="../assets/lang.js?v=20260722-1"></script>
+  </body>
+</html>

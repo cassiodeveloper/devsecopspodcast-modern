@@ -4,6 +4,13 @@ const vm = require("node:vm");
 
 const root = path.resolve(__dirname, "..");
 const i18nSource = fs.readFileSync(path.join(root, "assets", "i18n.js"), "utf8");
+const postsDirectory = path.join(root, "posts");
+const postCatalogDirectory = path.join(root, "assets", "posts");
+const postI18nSource = fs.readdirSync(postCatalogDirectory)
+  .filter(function (file) { return file.endsWith(".i18n.js"); })
+  .map(function (file) { return fs.readFileSync(path.join(postCatalogDirectory, file), "utf8"); })
+  .join("\n");
+const combinedI18nSource = i18nSource + "\n" + postI18nSource;
 const langSource = fs.readFileSync(path.join(root, "assets", "lang.js"), "utf8");
 const context = {
   window: {},
@@ -15,7 +22,7 @@ const context = {
 };
 
 vm.createContext(context);
-vm.runInContext(i18nSource + "\nwindow.__I18N_EXPORT = I18N;", context);
+vm.runInContext(combinedI18nSource + "\nwindow.__I18N_EXPORT = I18N;", context);
 
 const dictionaries = context.window.__I18N_EXPORT;
 const languages = Object.keys(dictionaries);
@@ -26,7 +33,9 @@ const sourceFiles = [
   "episode.html",
   "assets/app.js",
   "assets/episode.js",
-  "posts/t8e07-from-conflict-to-collaboration.html"
+  ...fs.readdirSync(postsDirectory)
+    .filter(function (file) { return file.endsWith(".html"); })
+    .map(function (file) { return path.join("posts", file); })
 ];
 
 function collectMatches(source, pattern) {
@@ -122,7 +131,7 @@ const toggleContext = {
 
 vm.createContext(toggleContext);
 vm.runInContext(
-  i18nSource + "\n" + langSource +
+  combinedI18nSource + "\n" + langSource +
   "\napplyLang('en');" +
   "\nwindow.__sample = translate('status.showing', { shown: 10, total: 20 });",
   toggleContext
