@@ -6,6 +6,23 @@
   },
   "episodes": [
     {
+      "id": "t8e08-dsoom-devsecops-maturity-model",
+      "slug": "t8e08-dsoom-devsecops-maturity-model",
+      "title": "T08E08 - DevSecOps Maturity Model",
+      "date": "2026-07-29",
+      "author": "Cássio Batista Pereira",
+      "excerpt": "How mature is your DevSecOps program, and how do you know what to improve next?...",
+      "contentHtml": "In this episode, we talk with Timo Pagel, creator of DSOOM, the DevSecOps Maturity Model, about why organizations need structured guidance to build security into software development without turning maturity into a bureaucratic checkbox exercise.<br /><br />",
+      "mp3": "https://api.spreaker.com/v2/episodes/73190821/download.mp3",
+      "download": "https://api.spreaker.com/v2/episodes/73190821/download.mp3",
+      "youtube": "https://www.youtube.com/watch?v=vW5-_HcrjsQ",
+      "transcriptUrl": "transcripts/t8e08-dsoom-devsecops-maturity-model.txt",
+      "blogPostUrl": "posts/devsecops-maturity-model.html",
+      "tags": ["AppSec", "DSOOM", "DevSecOps", "Maturity Model", "Frameowork"],
+      "spreakerId": "73190821",
+      "code": "T08E08"
+    },
+    {
       "id": "t8e07-from-conflict-to-collaboration",
       "slug": "t8e07-from-conflict-to-collaboration",
       "title": "T08E07 - From conflict to collaboration",

@@ -1,0 +1,516 @@
+Cássio Pereira (00:26.503)
+Well well well starting one more episode of Dev Sacops podcast, I am Cássio Pereira.
+
+Ben-Hur (00:32.961)
+I am Bangor.
+
+Marcos Santos (00:33.524)
+Marcos Santos.
+
+Cássio Pereira (00:36.009)
+That's great to see you back, Marcus. We were all missing you. All missing. Every everybody missed you. Last what three or four episodes were not here. Two. The internet broke, man. Two and thousand millions of comments, like, where is Marcos? Where is Marcos? But here it is. He's back. He's back. And we have an That's that's fine.
+
+Marcos Santos (00:40.254)
+my god.
+
+No no, true. Just the last two I didn't count.
+
+here I'm here I'm back salary pay my my my my payment my salary is staying in my account that's fine now
+
+Cássio Pereira (01:02.387)
+That's fine. That's fine. And you came back on a very nice day because we have an amazing guest today, a very special. Every guest is very special. But this guy, I mean, he he's very nice. And I will introduce him in a moment. Before that, because I mean the topic of today is like very nice. It's something that I was wondering when we're gonna talk about it. We talked about about about Wasp Sun, for example, in the past. but today we will be talking about DSOM or the DevSecOps maturity model.
+
+Right. So I think it's it's a very nice project from OASP as well. Something that we use every day, like as users and provide our services as well. And for sure it's will be a pleasure to talk with the creator or the mind or lead of the project on OASP behind it in a moment, because let's talk first about Nova 8, which is the distributor of check marks and SNC in the Latin America and some markets in Europe.
+
+Purple bird security that they will take care of you during and after an incident. Convisual application security, that they are specialized in services on application security. Also, gold security, with specialized services as well. Digital woke, that they have a full portfolio of application solutions for you. And new partner is to come. I can mention already some things, but secure habits will soon join us. So
+
+Ben-Hur (01:59.158)
+Yeah.
+
+Cássio Pereira (02:27.559)
+Stay up, guys. Stay stay tuned that we'll have more news soon enough. But Timo, welcome, thank you for your time. Thank you for I mean, first accepting prompt my my invitation. feel free to introduce yourself, talk about you, about your projects, and then we jump straight to the topic. Welcome and thank you one more time.
+
+Timo Pagel (02:49.949)
+Yeah, thank you for the nice introduction. I'm Timo Pager from Hamburg. I got in contact with computers at the age of 10. Since then, I love being in front of the keyboard. So I'm kind of a nerd. I love application development and security. That's why my main role is a DevSecOps architect as an independent consulting.
+
+person. Yeah, and I'm happy to talk about the death leg of the mod today.
+
+Cássio Pereira (03:25.279)
+That's nice. And I think it's the first time that we brought someone from the roots of the podcast, right? It's DevSecOps podcast. So definitely needed someone from DevSecOps, right? We are all developers and security and so on. But I think Timo will will bring this this concept deeper to us. And maybe I would start with a first question like when the DSOM project started, when when you had the idea or when you leaded the project, like how it's all started? Because you know, our audience might not
+
+be familiar with the with the whole project in general. But we of course we are, but I want to make sure that all of them now will know about the DSOM and maybe you can give us the light, like why you started the project, when we had the idea, or this kind of things.
+
+Timo Pagel (04:09.897)
+All right, yeah, it started 2016. was about, no, I had to write my master's thesis and at that time DevOps were rising, but you had to think about how to integrate security in it and that's why my master's thesis was with the title, evaluation of DevOps strategy and how to integrate security in it.
+
+So I started with looking around, how to do it, reading papers on hardening pipelines and Docker and so on. And very quickly I figured out that I need a maturity model. So because first you see that there a lot of things you have to do, right? A lot of different DevOps dimensions. And then I figured out...
+
+Cássio Pereira (04:58.994)
+Okay, okay.
+
+Timo Pagel (05:07.561)
+There is so much to do. How can I apply this in a real world? At that time, I was in a startup, the founder of a startup. It failed, but that's another story. So I thought, what can I apply to my startup and how? I had to prioritize, and that's how I came to the... So the end result was the Deathscape of Maturity 1.
+
+Cássio Pereira (05:20.881)
+Mm-hmm.
+
+Cássio Pereira (05:38.709)
+Okay, that's that's a great story, I would say. And and and and I had failed my startup as well. Who never, right? We are built on from failures, right? That's how you grow. I think it's it's it's a good story and good experience as well. about the maturity model, maybe I would bring the word to Benyur and Marcus. Have you guys used any maturity model, like assessments to customers or in your own teams? I mean DSOM or SAM or any other things. Is it I have maybe I have the feeling that
+
+Marcos Santos (05:57.755)
+Okay.
+
+Cássio Pereira (06:07.612)
+small or agile companies, they are not that much fan of this kind of things. They don't have time to measure maturity. Let's just code and deploy everything, you know? How how you how you feel about this? And then I would bring the same question to Timo after you guys comments.
+
+Ben-Hur (06:24.267)
+Good, perfect. Timon, it's a pleasure with you because this one is one of the projects that I'm really interested in. my entire career was based practically in OASP and DSOM. So thank you so much for creating this this project. Well, across the my time working in development application security, I practically found two three types of company, right?
+
+The runners. Hey, we are small and we are running, and the best maturity model is what we can deliver tomorrow. And then the second level that is okay, we are getting bigger. Then we probably will need a maturity model to start knowing how to do the things. And a little bit larger companies that okay.
+
+We are big enough, we need a maturity model because if not, we will crash everything here. Okay. So and for this specifically, usually most of the companies do not have a devops process well defined, right? Or not only the process, but the devops culture well defined it.
+
+So we start working trying to define a good DevOps to have everything in place. You can repeat the process, you can do the things, you can have one centralized way to do the things or anything like that. And then when we try to, hey, let's apply security, right? For me, the that in the DevOps part.
+
+Is the easiest part to start adding security to something. You know, you cannot I'm not saying start blocking everyone, but is the place where you can start getting visibility at scale for the security. You know, because every part of the software passed to the DevOps phase, you can check the things there, you can get some visibility, you start knowing, hey, we have this.
+
+Ben-Hur (08:47.957)
+much types of vulnerabilities here at scale. So this is where I use mod most of the the maturity models. Yeah.
+
+Cássio Pereira (08:58.952)
+Maturity models, yeah. Okay. Marcus, you had the same experience?
+
+Marcos Santos (09:02.522)
+Okay. No, I I agree the most part of when Benor said, but I just use the OSP Sun I think two times in my life because they were the enterprise when I work didn't have the doesn't have the sufficient maturity to apply or make its own appliance. I used him I think six months ago for making a first appliance on the company when I work.
+
+But after this, never use more and the company don't have time to to make the second appliance and the third, etc. And this is a problem. And this one I saw the project, but the opportunity to use it is not it's the same. I I don't the company don't have time to use it, talk with the colleagues and the make the appliance and talking about the devs of example, or about cybersecurity in general.
+
+Sometimes it's too much easier to create some webinar or create one page for training, but the people don't don't don't get this the the level of the the importance level from security when we think and about and we we put
+
+Cássio Pereira (10:15.71)
+Good, good that you started. We don't have the maturity to do a maturity assessment. That's that's some that sometimes it's it's true, right? I I don't even know that I need a maturity assessment, right? But that's fun. And and Timo, do do you see this way as well? Like some companies they don't even know that they have they need to do something like this, or sometimes they don't need actually to do like how how do you see this? You know, how see the appliance of the project itself or the methodology itself?
+
+Marcos Santos (10:20.509)
+Yeah. Okay.
+
+Timo Pagel (10:42.313)
+Yeah, I think we need to decide different use cases which you have with it. If you do a SAM assessment, just by the way, Markus, I feel two times is already more than most people did. So I did eight SAM assessments in my life. And I feel that there are only a couple of helpful people who did it more often, right? mean, yeah. But however,
+
+Cássio Pereira (10:56.372)
+Mm-hmm.
+
+Timo Pagel (11:08.233)
+I think you need to differentiate use cases. SAM you mainly use to perform an assessment. If you use SAM, then you want to assess your own maturity model. Maybe you want to benchmark it against others. You want to set your target and that's it. While DSAM you can use for that part as well. But I never did a full DSAM assessment. I normally need to...
+
+think beforehand about what questions I want to ask. So maybe I just do level one to level three. And in level three, I mostly already remove half of the activities, which we are based on in pre-interview with one architect, for example. And then I do the assessment. And then you can use DSIM. And that is a key difference to other assessment frameworks or maturity models.
+
+You can use it as your own internal assessment model, or if you want to say it a bit more advanced, maybe as your own application security program guidance or DevSecOps. At least the DevSecOps is very, covered. So you can create your application security program based on vSIM. So you pick different activities which you would like to have. And then...
+
+you assess your applications against it on a regular base. So that's why I would see the two use cases here.
+
+Cássio Pereira (12:42.3)
+Okay. Yeah, I think I think when I used this one one time was exactly to to try to measure some of the domains. I think it's seventeen or eighteen in total, if I'm not if I remember good. But anyway, from all those domains, I think there was one or two that I wanted to to somehow have a guidance on on a specific team that I was working. And was very nice because showed us showed us a bit of maturity and we were like very happy. But that was the best team.
+
+Rest of the company was even zero. You know, no maturity at all, no practice at all. So that we were happy from one side, but if you consider the the assessment the same as I did for some, for example, like you're you are assessing, make an assessment for the for a company, and usually you don't level up, right? You level down because if someone is not doing something, the whole compliance is let's say it's down, right? You you put the the level down.
+
+So one guy is doing logging, for example, but the whole company doesn't, then you cannot say the company does logging, right? It doesn't do logging. So yeah, it it showed us a very good way of of moving forward and where we were for that specific team, even though the big bigger picture was was not the one we wanted. But anyway, and maybe maybe my next question would be regarding the the applicability of the project on New Word, right? Because
+
+We have software development. I coded 10 during 10 years, more than 20 already in the industry. And from the waterfall to agile to the goal, go horse extreme, all the metadollars that you can imagine, even the no metadollars at all. And now we are on the AI era, right? Vibe coding, agents, whatever building everything for you. Does the model apply
+
+Marcos Santos (14:25.973)
+Vibe coding.
+
+Cássio Pereira (14:33.78)
+apply the same, does it make sense? Do you need to how to say update some things or change some things on the D Son itself, or even it's a different model? How how do you see that?
+
+Timo Pagel (14:50.215)
+That question goes to me. All right, yeah, good. Yeah, I'm currently working on a draft to integrate agentic coding. there are some, a lot of things that I would say, they're kind of the same for agentic development and for DevOps development. But there are also some small things which needs to be adjusted. That's why I'm thinking about.
+
+Cássio Pereira (14:51.708)
+Yeah.
+
+Timo Pagel (15:17.627)
+adding a new dimension for agentic development. For example, I think that tests like static applications, unit tests, are more important now with AI so that you can find out security bugs earlier in your development than the AI can correct itself, right? Or
+
+Cássio Pereira (15:22.644)
+Mm.
+
+Timo Pagel (15:42.762)
+It depends on the maturity you have again. If you, for example, open cloud code on your desktop, it has access to all keys. So you want to isolate it. Isolation is normally on level two in December right now. But my current feeling is that if you do it with AI and you open cloud code, you should put it in isolation, for example, a Docker container.
+
+using a Docker container so that I only mount the current folder and the AI has not access to the folders outside of it. So it cannot just grab my SSH key, for example, which it did in the past. So I have personal experience that it tried to access keys. mean, not the SSH key, but I think another key. It just figured out, there's a key and I want to load it. So that's something we can prevent with just isolation.
+
+Cássio Pereira (16:20.628)
+Mm-hmm.
+
+Cássio Pereira (16:25.748)
+Mm-hmm, mm-hmm.
+
+Timo Pagel (16:41.321)
+There are examples of changes with very slight adjustments. there, normally you don't want redundancy in such a model. But here I'm thinking to have two activities, one for DevSecOps normal development, and then one other activity in the AI dimension, redundancy, which says, you need to test on level one already.
+
+Cássio Pereira (17:06.96)
+Okay. And maybe a follow-up question on that and then I would ask you guys some comments. Is that an so it looks like an update on the DSO, like a version two, not a different model for AI. Because as you said, it it looks like most of the same might be new domains or things there. So that's what people can expect, I would say, maybe something like this, a new version or a different model.
+
+Timo Pagel (17:33.865)
+Yeah, I would say it's a new major version because the other dimensions will still be there. I would also add things like Spectrum development wasn't there, but you need to add security rules, at least on a higher level to do it context specific. So some things are also new, but it's just a new dimension in the model. It's not completely rewritten. I throw out half of the things. it's just...
+
+Cássio Pereira (17:52.868)
+Mm-hmm.
+
+Timo Pagel (18:01.01)
+adding something so yes it's just a new major release
+
+Cássio Pereira (18:04.998)
+Okay, okay. I think everybody's waiting for that, right? As any as any projects, nice projects from OASP, like everybody, okay, when is gonna be the next OWASP top ten or whatever? And then when is gonna be the new version of OASP Sun? Now when is the new version of of this on and so on? Yeah, it's because I I also have a personal feeling that app sec in general, a lot of companies, you know, engineering teams and so on, they need some guidance. They need some, okay, what I do.
+
+Marcos Santos (18:09.448)
+Yeah.
+
+Cássio Pereira (18:33.696)
+I hear that I need to care about security, but okay, what I should do. They they don't have kind of starting point. And that's personally, I think OWASP sits. Okay, guys, you don't know anything, start from here. Start from top 10, start from some, start from the D so, you know. The OSP as an institution, I think, helps a lot on this guidance on or North path that people should follow or might follow. You know, anyway, I think everybody's waiting for.
+
+Marcos Santos (19:01.384)
+And
+
+Timo Pagel (19:02.097)
+I have a small addition to it. I think the easiest thing, the thing you should do first, because I review a lot of these agentic engineering created applications, and then I'm not even HTTP headers removed. You see the engines and the versions. I'm like, that is something you can easily clarify with a security rule, right? So that is something where people need guidance, obviously.
+
+Cássio Pereira (19:06.292)
+Mm-hmm.
+
+Cássio Pereira (19:14.588)
+Mm.
+
+Cássio Pereira (19:19.654)
+Okay.
+
+Cássio Pereira (19:31.354)
+Yeah. I I would say guys, please read the proactive controls at least. It like you don't need nothing else in your life to be minimally, minimally secure, right? So that's that's that's a that's a fair point. I I is I used to give some some classes in universities back there in Brazil, and I was saying, Okay guys, you don't want to do anything that that's fine. Take the proactive controls and I think the number five or three, I don't remember, it's validate all inputs. Like do that.
+
+Marcos Santos (19:32.521)
+I don't know.
+
+Cássio Pereira (19:59.164)
+Have that in mind every day when you are coding. And that I assure you, 80% of your problems will not be there. Just make sure that you are applying this. Other things will be there and so on, but at least this point. So, next question to Bayur: how how you say this? You think AI will dominate everything? You are the guy of how to say this back to the future movie, right? The Skynet and so on.
+
+Marcos Santos (20:12.342)
+Yeah.
+
+Ben-Hur (20:26.233)
+could you hear me? Yeah. well yes, but with some maybe if well, because for example, we already know that most of the AI companies are not profitable, right? They are cash burning, they are in the red line, they are not
+
+Getting more money than you are expending, and practically is the worst case ever, right? For example, for each user, they are spending 10 times more money than the subscription of that user, right? So for sure, for some years we can afford it, right? But if in two years this continues to be the reality and no clear path to be profitable.
+
+We will have a problem, right? To continue adding that scalability to the AI adoption that you are seeing right now. Because maybe you cannot trust that the company will still alive in two years, and I'm creating my entire company automation, augmented things, and et cetera, based in a company that's not profitable for four years, five years, sex six years, right? So we have some risk there. But
+
+For me at least, yes, they I will not leave anymore. Because if those companies start not getting the perfect results, we still have the local models, we still have other things that we are already working, right? So in in my opinion, yes, it will never live, at least not for now. It's I I think it's part of our game. And for sure you will need different controls.
+
+And what's the most difficult part here in these different controls? Because it's evolving too fast, and the protocols are creating from the day to night. That's not creating the correct environment for us to create default patterns or standards. You need to secure this in this way because tomorrow there's another pattern, there's another framework, there's another protocol.
+
+Ben-Hur (22:47.933)
+And the way we are using the MCP, maybe the MCP itself changed. You know, and the standards that we are working on could change as well. So it's evolving fast enough to my opinion, it's really difficult to create a strong standard of security. Hey, from now on, this is the correct way to implement this. Because in six months.
+
+Changes, you know?
+
+Marcos Santos (23:18.819)
+Not six, two months. Kimi launches the Kimi 2.7 one month ago. Now is Kimi 3. I know he's launched yesterday. Three trillions of parameters. No, yes, I I have I have one more point. Been we're talking about the MCP. The MCP was changed too much. But the companies was starting to develop new software today.
+
+Ben-Hur (23:21.357)
+Yeah.
+
+Ben-Hur (23:25.613)
+Exactly.
+
+Cássio Pereira (23:27.249)
+Yeah. I sorry, I I had another question. Marcus, you want to add more on that? It's fine.
+
+Marcos Santos (23:47.296)
+need to think to create the EMCPs to communicate with AI. And then and when we start to create the EMCPs, you put some vulnerabilities inside of your software. Or need to put the ACP, A to A to communicate agent to agent, and another of other technology when we didn't think like two years ago for example, and we don't imagine the how how big these new features starts to stay
+
+Today, for example.
+
+Cássio Pereira (24:18.803)
+I would yeah, I would bring maybe some pepper to this point, and I I want to to listen from Timo first. I agree what you guys said now, but I see the industry also focusing on the technology itself to create controls. Like I need to protect AI. Like maybe we still need to focus on least privilege principle, right? Give the least access, as Timo was mentioning, isolation and this kind of things. Maybe we should
+
+Ben-Hur (24:46.509)
+But this is AI security as well. In fact, the AI security is what is around the AI, you know?
+
+Cássio Pereira (24:48.9)
+Yeah, yeah.
+
+Cássio Pereira (24:53.195)
+Exactly. But you know, my my point is we are still coming back to the basics. Like basic stuff, they will still they will still apply, and that's exactly where people are still failing.
+
+Marcos Santos (25:01.724)
+Yes, but you you're talking about the biggest enterprise, but now you are in the year when when we have a lot of small companies when start to develop and launch a product without any security, and sometimes this one guy.
+
+Cássio Pereira (25:16.665)
+Yeah yeah, I agree, but the they speed on this. My my point is the focus of security itself, it they are still the same as they were years ago. Like for example, my my AI agent is checking my SSH keys on the machine. Like it should have isolation. Or your keys should be stored in a vault, not on the machine. I don't know.
+
+You know, the same the same in-depth controls that we should have already from the books from eighties, like how you should apply security, isolation, access control, validation, least privilege, blah, blah, blah, blah, blah. Right? Timo, do do you think do you see the same or you disagree on this? Like we are still failing on the basics as security in general, you know, because if you focus on the technology itself, then as Ben Ru said, tomorrow you need to change everything again because there's no standard.
+
+Marcos Santos (26:05.666)
+Before Timo said, just just say one thing. yesterday I started to put on the GitHub OpenAPI key. I saw a lot of repository with the API key from OpenAI for example.
+
+Cássio Pereira (26:21.011)
+So so you see it's still secret hard-coded. Like anyway, Timo, please.
+
+Marcos Santos (26:24.662)
+Yes, the basic
+
+Timo Pagel (26:30.093)
+Yeah, I think AI is just another layer. For example, there are these MCP servers and they might be needed, for example, for IMAP, because the protocol doesn't allow to differentiate, and maybe you want to control that a bit. But for most other things, like for example, if it interacts with GitHub, or with the Git version control system platform, you should be able to adjust the permissions very granularly.
+
+and then give only the permissions you need and then you don't need an MCP server around it. So if you do the basics right, you're in a good set for AI. Already there are some things, as I said, which might be only for the AI, but most things are the basics.
+
+Cássio Pereira (27:22.257)
+Yeah, I I I I see these memes often, like we are in two thousand twenty-six and you still don't have cars flying, right? Let's imagine you had cars flying. What exactly would change in that in the traffic laws and control? You still have speed limit control, maybe where you can turn or not, the air is more like more free than the roads, right? But you still need to watch the the vehicle behind you, next to you, still have limit speed limit, you still need a license to drive, you still need to do the course, like.
+
+Still, the process are the same, even the technology is different, but the principles are the same. And often I see we are still failing on the same things. and maybe next question would be to Timo again, and then you guys can comment. How do you see the the industry, EPSEC industry, if we can call it like that, on on training or education or even awareness? I don't like awareness because I'm I'm I think everybody's aware.
+
+Ben-Hur (28:17.213)
+Yeah.
+
+Cássio Pereira (28:18.459)
+of problems. They just don't do what they should do. So do you see where we are still failing on training on this kind of things or I don't know or even how this one can contribute? Yeah, go on, go on.
+
+Ben-Hur (28:22.987)
+I have a nuclear o I have a
+
+I have a a nuclear opinion about it. It ca Casu Casa will hate me forever.
+
+Cássio Pereira (28:31.763)
+Please please
+
+Let's fight, let's fight.
+
+Ben-Hur (28:40.511)
+Well, we are in a transition, right? So some companies adopting AI. So it's not fully, hey, AI here is the new normal, right? It's like before the pan the pandemics that hey, we have a sector of development because my industry is not technology. Pandemics come. Every company is a is technology developers everywhere, right? And okay.
+
+Cássio Pereira (29:08.05)
+Okay.
+
+Ben-Hur (29:09.837)
+So we all of us agree that we are in a transition to be and adopting AI, at least for most of the things that we want in our company, because the world, the world has a promise, a promise that if we adopt AI, we can ship faster, we can do 10 times more, probably will not cost less than what we are doing today, but we are shipping more. Okay? We are doing more. So
+
+Cássio Pereira (29:20.315)
+Okay.
+
+Cássio Pereira (29:34.696)
+Mm-hmm.
+
+Ben-Hur (29:40.193)
+The training should be different, or it's cooked. Because, for example, I run developer trainings to try to tell them how we secure software, right? What's a SQL injection, what's a night or what's a whatever. The developer will not give a shit for this in three months, you know? Because okay, I will teach my Pokemon here. His name is David.
+
+Cássio Pereira (29:55.155)
+Okay.
+
+Mm, mm.
+
+Cássio Pereira (30:08.743)
+Mm-hmm.
+
+Ben-Hur (30:10.317)
+Okay, so I will add a skill for something, I will add the context for my agent, I will run a specialized agent that will do the thing. So I don't need to know that kind of shit that you're trying to teach me because
+
+Cássio Pereira (30:24.283)
+You need because as you said, you need to tell your Pokemon how to do. So if you don't know, you will not tell.
+
+Ben-Hur (30:28.203)
+for this for this reason that the trainings should change or it's good the that the training no yeah yeah for what I'm saying this is today what we are seeing like security champions security development training and everything like that should be adapted well yeah and I don't know if the way we are doing that
+
+Cássio Pereira (30:35.325)
+But they'll still be there.
+
+Cássio Pereira (30:52.915)
+Perfect, agreed. Agreed.
+
+Ben-Hur (30:58.407)
+should be like traditional training because because for ex because because for example and if I have a thousand developers and what's the most important part I cannot control directly what each developer before ai okay I cannot control what each developer is doing right now so I am tr running trainings to make them
+
+Cássio Pereira (31:01.533)
+okay. Agree, agree.
+
+Cássio Pereira (31:18.643)
+Mm-mm.
+
+Ben-Hur (31:28.001)
+Creating code more securely, right? But maybe at organization level, I can control which agents we are running. Right? We can have some controls. Because we need to govern. Yes, we need to control the we need to govern and we need to to watch and secure the agent behavior across my company, because the agent itself.
+
+Cássio Pereira (31:37.733)
+Mm-hmm. Even the prompts, even everything, right?
+
+Marcos Santos (31:42.366)
+The harness, the guardian rails.
+
+Ben-Hur (31:57.421)
+Could be a risk to my company, right? So every company wants to know what's running and control some behavior. If I can control some behavior remotely, I also maybe can control what you do about what you're doing right now in your agent. So for this reason, it's not clear to me because we do not we also do not have this: hey, here is your software to control all your agents.
+
+Cássio Pereira (31:59.442)
+Okay.
+
+Cássio Pereira (32:13.276)
+Okay.
+
+Ben-Hur (32:23.753)
+Across your company, and you click here, you approve or disapprove MCP and the skills and etc. And everything runs smoothly, easiest like I don't know, CrowdStrike or Prisma or whatever. Is still evolving. You already have some tools in the market that's trying to do that, but it's still evolving. The question is: if I can automatically add something or
+
+Cássio Pereira (32:34.65)
+Yeah, it's still randomly, yeah.
+
+Ben-Hur (32:51.625)
+in the pipeline, for example, because the DevOps and DevSecOps in my way now is more important than ever.
+
+If I can do something there to detect and fix the vulnerability directly when we run the pipeline, do we still need the training? You know? Because automat we automatically detect and fix those vulnerabilities. So yeah, for me is a gray area now that we need to rethink.
+
+Cássio Pereira (33:14.247)
+Mm-hmm.
+
+Cássio Pereira (33:20.882)
+Timo, what's your thoughts on this?
+
+Timo Pagel (33:22.601)
+Yeah, I would start one step earlier than Ben Huah. So you said you want to verify. I think the first thing is you need to train the AI to have the right security rules. So for example, don't put the engine's version. It removes the engine's version header. And then you need to train your developers maybe less security and more only how to use the AI in the right way, because the AI learned to stay
+
+So to already to create a secure, at least parts are secure, right? I mean, I'm still not convinced that it could do a full threat modeling like I could do it. At least when I try it with AI, gives a lot of shit out. Sorry for that word. So there are parts where human are still needed. I think you need to train the people who are using AI where...
+
+are these parts where we still need a human review, for example, and where are the parts we can just trust on our rules and on our verification process.
+
+Cássio Pereira (34:30.634)
+Yeah, it's a it's a hard topic because for example, I have friends living in some countries and they I don't know, you go to the shop every week and you buy a beer. But one day you have guests and then you go to the shop and you buy five beers. And the next day the someone from the government will be in your house, like, why are you buying more alcohol than usual? It's like there's monitoring, you know.
+
+Why are you buying more than usual? Your behavior changes, everything fine, you are getting to depression, you're going to suicide. No, no, it's all fine. I had guests. Okay, all fine. What you said, Benure, I see the companies kind of can do this way. Like, okay, you can prompt whatever you want to any AI agent, but to intercept all the prompts, and you are asking for a new logging page. And then I identify that. And the prompt to the agent actually is: I need a login page, PCI compliance, you need to encrypt the user and data, you need to have a capture in it to log all the logging attempts.
+
+It's securely, like I don't need to ask that. The developer didn't have any idea. But as a company, I'm making sure that all the prompts are secure, let's say, the way I want. And my models are trained to deliver that. That would be the perfect work, right? So we were already doing the kind of thread modeling there. You can apply frameworks there, stride whatever, all the all the all the controls you want. Is that correct? It should be that this way. I don't I don't know. I I love the idea, but I have my concerns.
+
+That you can even know everything or inters I mean, I don't know. It's a big discussion I'd say.
+
+Ben-Hur (35:56.46)
+Well, yeah, yeah, because we are in the transition. Okay, it's it's it's okay to because not every company is doing the same, right? For example, what what what I'm seeing today is practically every ep sec control that we already have, devsec ops, cloud security, development security, etc. Everything is now more important than never.
+
+Cássio Pereira (36:09.018)
+Mm-hmm.
+
+Ben-Hur (36:26.079)
+And why? Because you are shipping 10 times more code and you are not giving a shit for our code practically. Because, for example, it's yeah, it's it's a fast development. Some of the companies include some development managers and applications application security managers told me, Hey, I need I need securities right now because it's not only my developer that's creating code right now.
+
+Cássio Pereira (36:29.425)
+Mm.
+
+Cássio Pereira (36:33.092)
+Mm-hmm. Because it works fast. It's working.
+
+Ben-Hur (36:54.165)
+Some people from the HR created a platform to evaluate the yeah, you know, so it's it's everywhere. So the barriers who can create code and ship code just gone, right? And for this reason, all the controls that we already have is still applying because at the end of the day, we are doing a lot of things to create the code that we need to validate, right? In the same way.
+
+Cássio Pereira (36:56.524)
+Mm-hmm. Everybody's developer.
+
+Ben-Hur (37:23.595)
+That we already have because this practical what I'm seeing continues the same. We do a lot of things, we have a lot of agents, but at the end we have a code committed, push it to the repository, open up a request, and that follows the same process, right? Well, another thing that is a little bit different that this is important question for for Timo is okay. Yesterday we run
+
+Cássio Pereira (37:33.838)
+It's the same. Yeah.
+
+Ben-Hur (37:52.575)
+A CLI command in the pipeline to check some things. Now an agent gets that pull request and take the decision for what we will do about that pull request, right? And if it's an agent, all the risk for AI could be there. And we already know a top lot of vulnerability disclosures about hey.
+
+If you open up a request to a public repository, there's an agent and we exploited the agent because of the description of the pull request, right? We have another threat surface, another set of risks, and we are using that same agent everywhere. Exists, for example, one of the incredible repositories that's Kagent, K agent for Kubernetes, for example.
+
+That helps a lot to troubleshooting and see the things in in Kubernetes. So practically every part of our development, we use some AI agent to do something. And for sure, if we what we are expecting in the application security, if I run the pipeline on the CI CD and if I found some vulnerabilities, I also use an AI agent to propose the fix for that vulnerability directly in the pull request, right? Something that you can use. Well, but
+
+Question for for Timo.
+
+Okay, we have the DSOM for the DevSecOps maturity. Do you plan to add some something to DSOM about using AI agents connected to the pipeline or to the DevOps process?
+
+Timo Pagel (39:40.426)
+Yes, one activity which pops up in my mind is the question do we need a human approval and that could be on an issue first so that before the agent starts you need a human approval for the ticket and then also that you might want to sign the approvals so that the content is not able to change afterwards without detection.
+
+So that is something I have in my mind which takes that problem.
+
+Cássio Pereira (40:16.92)
+Okay. Yeah, it it's a problem. my question to Tim of most important question of of ever. When do you plan to release all that? is there a date in mind? Is there I mean, you are you guys looking for collaboration, the community can collaborate? How how the project in general looks like? I think other people might help as well.
+
+Timo Pagel (40:38.633)
+There is no timeline, but so far only I wrote it. As I'm not an English native speaker, I also used AI to generate some of the descriptions. But I think the need to see, yes, this is a request for comments. The pull request is created. There is a draft in the DSIM data repository.
+
+I can open it, maybe you can add it to the show notes, the link, and every comment is welcome.
+
+Cássio Pereira (41:14.52)
+Bayer. You see, you can spend all your life now commenting to the project and collaborate as well. Also that, yeah. Cool. Go.
+
+Ben-Hur (41:22.284)
+Sloppy.
+
+Ben-Hur (41:26.881)
+Yeah, this this is this is a pretty bullshit of this world of AI, right? Because everyone everyone has an opinion, but it's not their opinion. It's I I have one colleague here in my company, he knows because he's my is a he's a good friend, I can tell it. But always always that he tries to explain something in the middle of of a hard conversation, they hey, here is my opinion, and he copy and paste
+
+Cássio Pereira (41:43.698)
+Mm-hmm.
+
+Ben-Hur (41:56.769)
+The result of the AI, including with the header markdowns face just just j yeah, just to shit the entire conversation. Yeah.
+
+Cássio Pereira (41:59.186)
+Cássio Pereira (42:07.394)
+Everything everybody has his opinion. And I think it's even a bigger problem. Like everybody thinks that they must have an opinion about some in general, right? And sometimes you don't. Like, I don't know. I don't need to have an opinion on everything. I but I have opinions, some two or three things, and that's all. That's fine. But I think we are being pushed to have opinions on everything, maybe because of social media or whatever. I don't know. Yeah, but I think as as a no ask project, of course, as Timo mentioned, you guys are
+
+we here and and all the audience free to collaborate, comments, you know, I think you'll be trying to help somehow. Or if you don't have to collaborate, don't give your opinion. Sometimes it's better to shut than bother, right? Usually usually it's like this.
+
+Timo Pagel (42:54.025)
+Yeah, and even better, you could create a succession. Not only an issue, you can create an issue with your opinion or directly make a pull request. This is how I would like to have it.
+
+Cássio Pereira (42:58.233)
+Os
+
+Awesome. Yeah, cool, cool. Suggestions are different than issues, yeah. That's totally cool. we are on the time. Timo, any other comments, anything else that you wanted to share? Maybe something we didn't ask? We can we can wrap up, I think.
+
+Timo Pagel (43:17.001)
+We were talking about application security programs and that a lot of people are not having activities on level one. And what popped in my mind at that moment was that
+
+It's very important if you create your own maturity model for the company that at level one, there's a lot of green activities which every application has. Otherwise it's very demotivating because mostly when I consult people, come with a model where they have, for most things, even on level two, are not covered by most of the teams. So that's very demotivating. So in your organization, should make sure level one is a motivating part. is what nearly everyone should have already.
+
+Cássio Pereira (44:06.17)
+Interesting, interesting point actually. I didn't thought this way, which is good. Unless you you need to do something, I don't know, some internal auditing for some regulation. Like then then you you need actually to see the wrong things in order to fix. But yeah, I think it's very good point. Yeah, yeah. When you grow on the model, yeah. That's true, that's true. Nice, nice, nice. Cool.
+
+Timo Pagel (44:20.329)
+You see the wrong things on level 2 and 3, right? Because then it's missing there.
+
+Cássio Pereira (44:29.314)
+I will be sharing the links from the DSOM if you already don't know. Timo, for sure, I can share your linkeding on the link of the on the description of this video as well. yeah, I think that that was very nice talk. I mean, especially from from Timo being here. I think it's it's it's a very good mind on the industry that we definitely need to take things out of his brain and to share to the to the community as well. I had the opportunity to meet him in Vienna, OSP Global a few weeks ago.
+
+few weeks ago, yeah, it was was very nice. Cool. Guys, any any last comments? Marcos, Benur, Timo, maybe as well.
+
+fine, just buy. Just buy. Okay, cool. So see you next week. Timo again. Thank you for your time. Thank you for sharing with us. Thank you for this one. I think it's a very huge collaboration to the community, and we can't wait to have version two, let's say, soon enough. Cool. Guys, thank you. I'm Casio Pereira.
+
+Marcos Santos (45:09.72)
+Everything's fine. Yeah.
+
+Ben-Hur (45:18.455)
+Thank you so much.
+
+Marcos Santos (45:20.644)
+Thank you, Timo.
+
+Ben-Hur (45:33.036)
+I'm Baynor.
+
+Marcos Santos (45:34.213)
+I'm Marcos Santos.
+
+Cássio Pereira (45:35.44)
+And we had our guest today, Timo Paggio. Is correct? Paggio? Pagel. Awesome. Pagel. Timo Pagel. Okay, see you guys. Thank you.
+
+Timo Pagel (45:39.485)
+Okay.
+
+Ben-Hur (45:40.983)
+Pagle.
+
+Ben-Hur (45:45.335)
+Thank you so much.
+
+Marcos Santos (45:46.021)
+Thank you. Thank you very much.
+
