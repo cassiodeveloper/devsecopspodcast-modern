@@ -6,6 +6,23 @@
   },
   "episodes": [
     {
+      "id": "t8e09-cybersec-games-cybersec-conversations-on-the-table",
+      "slug": "t8e09-cybersec-games-cybersec-conversations-on-the-table",
+      "title": "T08E09 - CyberSec Games: CyberSec Conversations on the Table",
+      "date": "2026-08-05",
+      "author": "Cássio Batista Pereira",
+      "excerpt": "In a world dominated by screens, how do we reignite the joy of face-to-face interaction?...",
+      "contentHtml": "In a world dominated by screens, how do we reignite the joy of face-to-face interaction? In this episode, Cássio Pereira and Marcos Santos sit down with Devika Gibbs, co-founder of Cybersec Games, to explore the transformative power of physical games in cybersecurity training. Devika reveals how her passion for board games is reshaping the way teams learn and collaborate, proving that true connection happens in person, not behind a screen. Devika shares the origin story of Cybersec Games, sparked by a simple index card idea, and explains why physical interaction is essential for building trust within teams.<br /><br />",
+      "mp3": "https://api.spreaker.com/v2/episodes/73379478/download.mp3",
+      "download": "https://api.spreaker.com/v2/episodes/73379478/download.mp3",
+      "youtube": "https://youtu.be/9irpDEM75sM",
+      "transcriptUrl": "transcripts/t8e09-cybersecgames.txt",
+      "blogPostUrl": "posts/cybersec-games-cybersec-conversations-on-the-table.html",
+      "tags": ["CyberSec", "Games", "Gamer", "Fun", "Frameowork", "Learn", "Training", "CyberSec Games"],
+      "spreakerId": "73190821",
+      "code": "T08E09"
+    },
+    {
       "id": "t8e08-dsoom-devsecops-maturity-model",
       "slug": "t8e08-dsoom-devsecops-maturity-model",
       "title": "T08E08 - DevSecOps Maturity Model",

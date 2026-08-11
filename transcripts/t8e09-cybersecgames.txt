@@ -1,0 +1,655 @@
+Cássio Pereira (00:24.722)
+Hello everyone, welcome to one more episode of DevSecOps Podcast. I'm Casio Pereira. And thanks God Benur's not here today. Right, Marcos, it's only me and you and an amazing guest that we will introduce in a moment. And to be honest, I always say this when you are not here, Marcos. And it's me and Benura thanks God, Marcos is not here today. So I may I make fun about you and I also make fun about Benur. But we are all friends. We we you know we can get along together, right? That's not a problem, I would say.
+
+Marcos Santos (00:30.991)
+Marcos Santos.
+
+Marcos Santos (00:35.663)
+haha
+
+Marcos Santos (00:39.215)
+Yes.
+
+Cássio Pereira (00:54.964)
+Cool. Yeah, everything's fine. Cool. Before jumping to the episode of today, and of course introducing our amazing guests that I had the opportunity to meet in person a few weeks ago, I would say, in the global OASP Global EPSEC in Vienna. Let's not forget that the DevSecOps podcast has all the support from Nova 8, which is the distributor of check marks and sneak in the Latin America and also someplace in Europe. Also, Purple Bird.
+
+Marcos Santos (00:56.111)
+Tudo bem.
+
+Cássio Pereira (01:24.83)
+That they will take care about you during and after an incident. Convisual application security, that they are specialized in application security services, gold security, that they have also specialized security of application security services. Digital woke, that they have a full portfolio of application security solutions for you. And Secure Habits, now our new partner that we are about to announce, still to.
+
+To complete some, let's say, bureaucracy part, but Secure Habits will be here with us as well. Cool. Now let's talk with our guest. I don't want to pronounce her name wrong, but I would assume that I can say Devica from Cybersec Games. it's it's a pleasure. First, because I I knew the brand from before, I I was already engaging in in this kind of board games and let's say physical games.
+
+Devika Gibbs (02:09.624)
+Perfect.
+
+Cássio Pereira (02:22.214)
+It's something that I I really enjoy. For sure you as well are gonna tell us this story. But first, thank you for your time. Thank you for being here with us today. Let's I mean, let's start introducing yourself and from there we jump into our conversation. Welcome one more time.
+
+Devika Gibbs (02:38.498)
+Thank you, Cassio. yes, so I am Davica Gibbs. I am one of the co-founders of this company called Cyberseg Games. the name of the company is enough to to tell you what we do, and that was deliberate from experience. so yeah, we we we make, sell, and talk about games in cybersecurity. in a nutshell, that's that's what we do. So you've got an idea,
+
+you know, you you're interested to explore games, then we want to make that happen
+
+Cássio Pereira (03:11.944)
+That's awesome. And also I need to mention, of course, our audience might know, some of them might not know that I'm also creating a game myself, and we are also having this kind of conversations. but but my first question would be something like because you know, we are in the digital era, everybody on the screens, everybody on the internet, on social media, like nobody even talks to each other anymore. We are all we are always on the phone.
+
+Or, I mean, not on the TV, even anymore, right? It's phone all the time or computer, etc. And the Cybersek Games has this philosophy of the of not bringing back, I would say, but keeping these physical games and interaction and so on, like going on, even betting on this as well, investing and so on. My question would be how to fight? Because it's a it's a huge fight, right? Everybody on the screens, and you are bringing something which is not on the screen anymore, or
+
+Devika Gibbs (03:41.155)
+Yeah.
+
+Cássio Pereira (04:06.732)
+as it was in the past. H it is a fight, how is it?
+
+Devika Gibbs (04:11.426)
+You know what? the way you're the way you're talking about it as a fight, i i that never in a way crossed our mind. you know, when we thought about games, when we came across games, that's kind of another story. Like how did we how did games come into this this this thinking of ours? we never we never thought about it from a digital point of view. For me, the gold standard of playing games is people being in the same room together.
+
+Cássio Pereira (04:19.538)
+No
+
+Devika Gibbs (04:41.154)
+having conversations, joking, you know, sharing their thoughts. it's always been physical. when you talk about digital games, for me, I see certain there are certain kinds of games in this industry that are best played digitally, you know, with with consoles and you know, those things where you, you know, you go into a different kind of universe, you're navigating through you know, certain things that you just can't do physically, you know.
+
+But for me, games have always, always been in the format of a physical situation. And so it's never a fight. It's never a fight for me. I think the true value of games comes out when you're in the same room. And I think people do understand that. You know, whenever people have asked us about a digital format, it's been as a result of some constraint.
+
+you know, that they can't be in the same room or or you know, it's mostly that, you know, when we talk about remote teams. But actually we did find a way to solve that problem as well, using physical resources. Because again we felt you know turning the game which you know which is supposed to be played physically, turning into a digital format because people have constraints, it's never been the same thing. So it's not a fight in my opinion.
+
+I think the true value comes out when people are using the game as a physical you know resource. And and and it's never hard to communicate that value. we do have to deal with constraints, but yeah, that's how I feel about games.
+
+Cássio Pereira (06:18.643)
+Okay. I I would I would share the same feeling, I would say. When I mentioned being a fight, is like I know that every I mean, at least from the new generations, right? I'm old. I would say, yeah, to me it's good to sit on the on me and Marcus, for example, in the past we're just sitting, you know, sharing moment, having a beer and so on. But these new generations, they are too much on the screens all the time. So that's when comes to my mind, maybe the second question that comes to my mind.
+
+Devika Gibbs (06:23.416)
+Thanks.
+
+Devika Gibbs (06:37.805)
+Yeah.
+
+Devika Gibbs (06:41.731)
+Yeah.
+
+Cássio Pereira (06:46.471)
+Companies using this kind of resources to train their developers or their cybersecurity teams or whatever. Yeah, let's put everybody on a room, let's make fun, let's laugh, let's discuss topics and learn together. rather than okay, you are in somewhere else in the world, we connect in a screen again to do something, of course, because we are physically far and separately. So that was my my fight in my mind that this new generation, they are more on this on this sense.
+
+Devika Gibbs (07:12.429)
+Yeah.
+
+Devika Gibbs (07:15.828)
+You're you're you're right. you know, i i i I I I I don't wanna I I guess I don't wanna you know, behave like I don't understand that there are you know the the the world is becoming increasingly digital. I do understand that. You know, we spend a lot of time on our phones. you know, we we text each other rather than call each other, you know. and and it sometimes people find it
+
+Cássio Pereira (07:25.117)
+Mm-hmm.
+
+Devika Gibbs (07:34.241)
+Easier because of the fact that they're physically far apart. It's just easier to go on a digital screen because you don't need to invest in being together in the same room and using a physical resource. But I still think that when people experience those formats, you know, there are things that they feel they don't experience. And that's where I feel that we don't, you know, when it comes to us helping people understand the value of.
+
+games in their physical format, it's not a very hard job. People understand when they play a game physically the kind of experience they get. You know, it's little things where you know when you're when you're joking and you know and you're you're having a conversation, it's not all scripted. It's not something that has to be timed. You know you share feelings that you otherwise wouldn't and and that's actually quite a big component in building that that trust with each other which
+
+When you start bringing those games in a professional context to help people share insights and ideas, then you realise that actually when you play the game in their physical formats, that's when you actually get that value out of it. Otherwise, you just don't. Otherwise you can spend time online, go through a training, go through some sort of you know, a tutorial or PowerPoint presentation.
+
+But you just don't get that same result from it. So you've invested the time, you've probably invested the money, but the output you get is not the same. And the output you get from those, you know, playing the game, the ones that we we particularly promote on CypherSeg games, you know, around the the outcomes around trust and empathy that drive that cultural change, you just won't get that with a digital game.
+
+Cássio Pereira (09:05.459)
+Yeah.
+
+Cássio Pereira (09:20.697)
+Yeah, even even the the experience itself is different, right? You might be online, you have let's say a comfort of being alone on your room watching something on the headset, for example, while you are doing your laundry or cooking or whatever else that will take your this I mean it would distract you from the main point, which is that presentation or that game or session, whatever, while everybody's in the same room focusing one activity.
+
+Devika Gibbs (09:32.259)
+Yeah.
+
+Devika Gibbs (09:45.251)
+Yeah.
+
+Cássio Pereira (09:49.67)
+Either in group or even individual sometimes, like but but you are only there, right? You are you're physically present on that specific moment. You're like, you don't have the laundry to do, you don't have someone knocking your door with a package. You have that moment. And and I and I think that people are in general, our generation, let's say this this moment, we are losing that with all the digital world and so on and so forth. That maybe question to Marcus, that pandemic helped us bring that back. We were
+
+Devika Gibbs (09:50.028)
+Yeah.
+
+Devika Gibbs (10:03.181)
+Yeah.
+
+Cássio Pereira (10:19.699)
+Too much online. And then okay, COVID, pandemic, everybody home, like lockdown. Then we were like, what the hell? How how is that work? Like I need to be in the same place for 24 hours and talk to people? No, give my black screen. I want to know what to do. Good that AI was not there back then, because people would be like go crazy. And and I remember a lot of friends, they were like bringing back this.
+
+Board game stuff because like, okay, we are sitting home. What the hell are we going to do? Well, let's play a game. Let's, you know, we need to to make the time go, right? Make the time fly and and games come back. So then Marcos, would be a question for you. Do you believe that pandemic in general, right? The pandemic that what happened helped us re rescue, no bring back this culture of playing, interacting, being together.
+
+Devika Gibbs (10:55.66)
+Yeah.
+
+Marcos Santos (11:12.12)
+eu estou tão velho e para mim é um pouco diferente porque quando mais jovem e eu gosto de jogar como Dijon Dragons, Vampire the Mask e outros de e para mim a pandemia me ajudou a voltar ao passado e jogar esses jogos com meu irmão juntos e me ajudaram a mais tempo com minha família e eu não...
+
+Cássio Pereira (11:13.414)
+Yeah.
+
+Marcos Santos (11:38.99)
+Eu não gosto muito de jogar jogos online. Eu sou muito competente. Eu só jogo jogos como Shot ou Racing. Exatamente. E para mim, quando eu fico com duas ou mais pessoas, eu gosto de jogar jogos Eu sento na sala, pego todas as churras, sento juntos, falo, beijo, e beijo algo. E jogo cartão, exemplo.
+
+Cássio Pereira (11:45.011)
+And online the guys are too much advanced, right? You're gonna lose all the time.
+
+Marcos Santos (12:06.481)
+Eu tão jovem, não tão jovem.
+
+Cássio Pereira (12:06.663)
+I I Yeah, I I I remember I remember when we we we I mean you, me, other friends, we we engage in a lot of fights when you were playing Uno, right? Because U Uno is the third war, just nobody knows yet, but you know, create a lot of tension and so on and so forth. And that kind of thing you do I mean you might have online when you see a lot of guys like
+
+Marcos Santos (12:14.449)
+É?
+
+Marcos Santos (12:19.409)
+Exatamente.
+
+Devika Gibbs (12:19.512)
+A ver.
+
+Cássio Pereira (12:30.525)
+Breaking their consoles, breaking the joystick, like they are nervous and so on, but they are alone. You know, that experience is is individual. When we sit on the table, as as Devica mentioned, we sit on the table with four people, eight people, whatever, it it's a totally different experience. Nobody will punch anybody, hopefully. But but that that that joy, yeah, that joy and the experience like comes only on that specific table. And maybe it's the next question, Davica.
+
+Marcos Santos (12:47.889)
+Talvez.
+
+Cássio Pereira (12:56.357)
+When did you have the idea? I mean you and I know you have you have a business partner as well. When do you guys had this idea of okay, let's create a company to create, share, sell games on the cybersecurity area? Like where this idea came from?
+
+Devika Gibbs (13:01.154)
+Yes.
+
+Devika Gibbs (13:12.47)
+Yeah, so that's that that that's a story in itself. I'll keep it short. but but believe it or not, it it all started with a physical index card. and and and the people always say, games, index cards. yeah, so it's all started with an index card. It was Simon, who's my partner, you know, in i in crime. he's the other co-founder of of the company. he's an engineer. So
+
+Cássio Pereira (13:14.867)
+Mm.
+
+Cássio Pereira (13:28.456)
+Mm.
+
+Devika Gibbs (13:40.665)
+We were literally away, you know, and sitting in a hotel, and he had this thought about a problem he'd been experiencing at work. they had a like a like a Kanban board, a whiteboard with their user stories and tasks, and he he felt that he couldn't quite read the information on the index card, which was displayed on the whiteboard. And he just thought, he looked at the problem and he he had some ideas around how he could make it better.
+
+well the more about right, what would make better, but the, you know, what would be a better product, and then the how came later. But we were away and he drew a little kind of like a image of an index card, which he thought would solve some of those problems, which made it hard for him to read that information on the card. things, little things like the lines were too close together. So people were using like a Sharpie or a Biro, but as a result they were writing too small. The fact that the index card was like it was colored paper.
+
+Which makes that contrast harder. Little things like that. I mean, I know, i i you might be thinking, hang on maybe, because that would you talk about when you go away on holiday? we did. so yeah, so he So exactly. Exactly. So he, you know, we saw a problem. He drew the prototype on a hotel napkin. I went away.
+
+Cássio Pereira (14:47.153)
+Hmm. That's what engineers does, right?
+
+Devika Gibbs (15:00.022)
+And that's where my role comes in into the business. I'm all about the operations. I I I I like the doing part. He's the conceptual kind of ideas thinker. And I come in with, well, this is quite a simple thing we can change if it delivers, you know, if it solves a problem and delivers a better product. So we did. So I went away, we got a bunch of cards manufactured, you know, we didn't have our own processes then, but it was we were all doing our full-time jobs. Got these bunch of cards, sold them on Amazon.
+
+They actually did sell out, and we were like, hang on, there is an opportunity here. Not enough to justify us leaving our jobs just yet, but enough to say, let's do more of it. And then from then on, we actually went to discover more things. So we obviously were we were kind of meeting the needs of software engineers at the time, so index cars, you know, Kanban boards, white boards, visualization sort of tools.
+
+Cássio Pereira (15:35.985)
+Mm-hmm, mm-hmm.
+
+Devika Gibbs (15:53.717)
+As we get got deeper into that situation, so kind of like agile teams, we started to come across tools like plan poker, retrospective tools and cards and things like that. There were already things out there, believe it or not. And we were like, well, this is quite a big area. And if we're dealing with printing like these cards, you know, can we expand our horizon into seeing can we print cards like playing cards style or format?
+
+And that's how we formed this company called Agile Stationery. That was how we got started in producing physical resources for agile teams slash kind of software engineers. And in this process, we then came across Adam Schostak's elevation of privilege card game, the threat modeling card game. That piqued our interest a lot. partly because it was if you look, if you look at the original designs, they were v- you know, they were very creative, very colourful. They had
+
+no difficulty in you know getting someone's attention. So we looked into that and we found that not only did it exist in a full kind of card deck format, people were actually talking about it, using it. So we spoke to Adam and we said, right, we're making physical cards. can we make your game? He was
+
+Extremely delighted to hear that because he'd been looking for someone to produce these decks on a regular basis. Otherwise, it was kind of going on print on demand as and when required. And then from kind of that point, we we we we kind of came across this.
+
+creative community of cybersecurity professionals. You know, like yourself, Cassio. You you you're one of those prime examples of, you know, people working in cybersecurity, spotting a problem and thinking about how can I make it better in a medium that that works and and and you thought about a game to achieve that. So we came across people like yourself and thought, wow, okay, this is this is a community that's excited about this and and and they want to do more and there's an audience who wants to learn more.
+
+Devika Gibbs (17:59.393)
+And and that's how we got started. and the the kind of the the principle behind us doing all this was, you know, this kind of goes back to that that that start where we, you know, we were kind of like problem solvers. So we looked at a situation, thought about how to make it better, and as a result produced something that solved that problem. yeah. So it started with an Indus card.
+
+Cássio Pereira (18:25.317)
+Yeah, I I I love this this story in general because I am the kind of person I'm I'm a lazy guy, to be honest. I was a developer for 12 years, and I I I remember spending a lot of time trying to automate something that takes me five minutes to do, but I need to do every day. So I spend an hour to automate that five minute test because I don't want to do the same thing every day. You know, so so I'm lazy by definition. So I want to do something, make effort, understand the problem, etc. Okay.
+
+That problem is fixed, it will run automatically for me. Now with AI, this joy went over because you know AI is doing everything for you. but what is the point here is you you took we are let's say cybersec games is taking something, a process that is sometimes not pleasant for everyone, which is learn something. Like me and Marcos often we need to go to companies and teach people how to do.
+
+Devika Gibbs (19:14.531)
+Mm-hmm.
+
+Cássio Pereira (19:21.531)
+Application security, how to do threat modeling, how to do A, B, or C. And if that specific topic is not interesting for that specific audience or a person, you know, they they the end the end result might be not there. You will be learning actually. They'll just be there listening. And that's that's annoying for us because we want to deliver, we want to make people to learn, and you know, next step. The game changed this totally because.
+
+Every I mean, not everybody, everybody's too much people, right? But everybody likes to play, likes to have fun, likes to have joy. Maybe not like people to be together and so on, but we have people more introvert. But the point is, you are taking a problem, which is whatever, and through the game, the game is the way, right? Teaching that, like I could learn how to cook with a game, with a card game, or whatever. Whatever activity you can you can transform into a game and make that.
+
+Fun enough for whatever reason. So this this is the magic I see behind the the story that you said and the company itself, which is like, okay, teaching is not easy. I was teaching universities for six years. Basically, you have slides, next, next, next, talking, talking, talking. You sometimes you have demos, labs, and so on, right, Marcos? You were my student. I was a very good teacher, but you know, you were my student, you know how it is.
+
+Devika Gibbs (20:35.149)
+Yeah.
+
+Marcos Santos (20:41.33)
+Não muito bom, mas que é suficiente?
+
+Cássio Pereira (20:42.45)
+So the thing is, you need to grab the people, the personal attention, you need to bring the content. It is a challenge in general, plus the language, plus a lot of barriers, plus the environment, etc. etc. So the game, in my in my conception, game brings breaks a lot of barriers there, make all of that easier while giving pleasure, I would say, together to that specific audience, you know. So may maybe the next question would be this do you think or
+
+Devika Gibbs (21:08.354)
+Yes.
+
+Cássio Pereira (21:12.246)
+Or how do you see? Because you were mentioning these index cards, the lines close together. And I imagine also designing a game. You know, you need to think about the colors of the cards or or no the design itself. I I'm I mean I'm engineered as well. For me, the most white and black things are the better. But you know, sometimes you have a card that you want to catch attention or you know make a warn or whatever. So the colors, the design, the lines, whatever.
+
+Devika Gibbs (21:36.973)
+Yes.
+
+Cássio Pereira (21:39.492)
+Is that a challenge as well? Especially especially because of cybersecurity. The audience usually the audience is usually engineers, I would say. But I mean, I'm just thinking out loud how that design part is is is the challenge for you. Is it challenge or how it is?
+
+Devika Gibbs (21:48.898)
+Yeah.
+
+Devika Gibbs (21:53.583)
+It can be a challenge sometimes. It really does depend on the game. I would say actually goes back a step. It depends on the outcome you're trying to achieve. And then it depends on, you know, who the creator is. You know, what is what is the vision they have in their head about how they want the game to be used, who they want it to be used by, what sort of feeling do they want to create before, during, and after. You know, the content itself.
+
+And I think over the years, you know, starting with Agile Stationery and now with Cybersecurity Games, you know, I've I've been in a I would say in a very kind of fortunate position to have worked with a few creators. and I I I've enjoyed that challenge in the sense that i i I I can't say there's a set format that I follow. I I I tend to
+
+Just get to know the person first, the creator first, what it is that they're trying to achieve. And then after that, things do fall into place. Like I would say, if I may, I one of the one of the games that I recently worked on with the creators context and cringe. And you may have seen that in the when we came to Vienna, and Kim, Kim Wyattes and Abby Duglan, who are the creators of the game, they were winners of our competition last year, where they submitted their idea for the game.
+
+Cássio Pereira (23:04.049)
+Mm-hmm.
+
+Devika Gibbs (23:15.534)
+It was so interesting working with them because their game was a game I hadn't worked on before. They what they were trying to achieve was a certain feeling in their audience. So it wasn't like our threat modeling games where you are achieving collaboration amongst engineers to help them threat model a system. So if you're looking at a concrete work output, they're essentially coming up with, you know, threats or risks that they can enter in a Jira as a Jira ticket. You know, with context and cringe, they were trying to
+
+achieve a feeling, a feeling of cringe when when their delegates sorry when their when the players play this game. something that you know it's an application privacy game and and and their trainers they they provide training but it was something that they were unable to achieve through their training. So with that in mind things started to fall in place. They wanted
+
+bright colours, they wanted naughty colours, you know, something that would not just pique interest but also kind of you know create a feeling of what is that? You know, what is this about? This is a serious game stall and what are we looking at here? So something that conflicts in your head. So all those things put together, it starts with you know the creator and what the outcome and the vision that they have in mind. And then everything just starts to fall in place. It's just it's a very organic process.
+
+and it just it just falls in place once you get to know that in as much detail as possible. so those things are important. and that's yeah.
+
+Cássio Pereira (24:46.738)
+Yeah.
+
+Cássio Pereira (24:50.598)
+Yeah, I asked this because I when we were discussing, I had in mind, remember Marcos, we were in English we we would call it Monopoly. In Brazil in Portuguese, we were from Brazil, in Portuguese, we called Banco Imobiliário, like it's totally different name, I would say. But anyway, Monopoly usually use like money, right? Normal cash, right? And then there was a new version with this card machine. And I was like excited, card machine, now you have a card, you just like the card and you are making the payment, etc.
+
+Marcos Santos (24:58.707)
+É.
+
+Devika Gibbs (24:58.821)
+yes.
+
+Cássio Pereira (25:20.432)
+And it was a disaster. It was much more fun when it was literally cash. You count the cash. Usually I played the the guy in the bank. I was a lot stealing a lot, cheating a lot on the game because I always wanted to win. But you know, with the with the cash was much more fun. I mean, we we were old, we were used with the cash and so on. With the with the machine, of the card, card machine, was slow. The game was slower, you know, we were too much
+
+Devika Gibbs (25:46.028)
+Interesting.
+
+Cássio Pereira (25:46.48)
+Like used to count the the the money like quicker. I mean to me was like this Marcus, you have the same feeling, like with the card was not that the same game, you know, but
+
+Marcos Santos (25:54.228)
+Eu só toco uma vez com a e nunca mais.
+
+Cássio Pereira (25:58.469)
+Yeah. I think I played two, three times, but cash was much more fun. Yeah. I mean
+
+Devika Gibbs (26:01.55)
+That's an interesting example actually. that's an interesting example because it looks like it it it attracted your attention initially. You were like, we play with banknotes, now you're gonna play with a card machine. It's interesting, but it didn't work out when you actually played it. Yeah.
+
+Marcos Santos (26:03.219)
+Agora eu vou um.
+
+Cássio Pereira (26:16.87)
+And and funny, on the life, I prefer to use cards. I mean, I don't even have cash with myself. But to the game, the cash was much more fun. Like, I don't know, I just used to count the cash and and you know. But
+
+Marcos Santos (26:30.131)
+Para mim é difícil de tirar no jogo se eu usar a máquina.
+
+Cássio Pereira (26:34.194)
+Y also that you can to cheat with the with the cards are harder. Also that
+
+Devika Gibbs (26:40.975)
+That's interesting. I was actually I'm finding that actually quite interesting because that you're you're talking about how different components led to certain kind of emotions or feelings or what do you call it, like little experiences within the game. And and and sometimes it you know, sometimes one of the experiences you look for is is slowing people down. It it might sound counterintuitive, or counterproductive in the sense that hang on, why would you slow people down in a game? But sometimes you need to slow people down.
+
+Cássio Pereira (27:04.241)
+Mm-hmm.
+
+Devika Gibbs (27:09.814)
+Because that has the effect of helping them engage better, you know, if it's too fast. You know, yeah.
+
+Cássio Pereira (27:14.34)
+Yes, that's what you want, right?
+
+Because now I'm thinking today to make payments, we are mostly using our phones, right? You just tap the phone or even the smartwatch and so on. Not even the card itself, not the physical card anymore. I even have them, but I'm not using the card itself, just the phone, right? Before was the card, then before was just the cash. But for the game specifically, I literally prefer the cash to play, to have more, to be more dynamic. I don't know. The card was just the card machine was just strange to me. but thinking on the on
+
+Marcos Santos (27:47.285)
+E eu tenho mais um ponto, Kassil. Para crianças, exemplo, é muito mais fácil ensinar os crianças como aprender, como calcar o dinheiro, como separar, e depois você usa a máquina. Quando nós jogamos com crianças, é muito mais fácil para mim, jogar com o real Cache.
+
+Cássio Pereira (27:49.222)
+Go on, go on, go
+
+Cássio Pereira (27:55.731)
+Mm.
+
+It's easier. Yeah. I would yeah. I would agree, even though when they will be adults, there will be no cash anymore, right? It will be everything digital, but but but but yeah, I totally agree with the with the experience. You're making them learn something, right? And this something is to count the money, to to know how to is plus, minus, etcetera, etc. Not make the payment itself, you know, like that that's that's the point. And that was my question on this, you know, small elements.
+
+Marcos Santos (28:12.212)
+É?
+
+Devika Gibbs (28:16.654)
+Yeah.
+
+Marcos Santos (28:18.132)
+Não.
+
+Devika Gibbs (28:21.634)
+Yeah.
+
+Marcos Santos (28:24.308)
+Exatamente.
+
+Cássio Pereira (28:30.16)
+during the game or something like change the whole experience of who is playing and for the creator itself. You might have something in mind, that way would work for me, but not for the others. I I mean, I don't know.
+
+Devika Gibbs (28:42.786)
+And you know, sometimes and I know I c gave a kind of a very what's the word, like a theoretical answer to how we you know work through those components. But you know, the practicalities do come in. You know, once you start designing, once you start creating a prototype, we actually strongly believe in in we do believe in playtesting. So when I work with creators, and that's what we did with the with the last year's winners, you know, we we would encourage them to have a prototype, play test it, get feedback, don't just design and press the button and get
+
+Cássio Pereira (28:49.905)
+Mm-hmm.
+
+Devika Gibbs (29:12.834)
+Hundreds of units prepared. You know, so playtesting is actually quite important. And some of these details do come out then, you know, in terms of like, so for example, you know, in the same context and cringe game, you know, the the it's important to time a certain part of the game when people are talking about a certain thing. and you know, they say allow 30 seconds for that to happen per player. and we had a choice between using a digital timer, people could use their phones, or we have one of those sand timers. And guess which one we went for?
+
+Cássio Pereira (29:41.1)
+Hmm. Send timers. And this is old. Come on. This is very old, right?
+
+Devika Gibbs (29:43.843)
+The sand timer. So yeah. Yeah, exactly. Well, th th the the things in our head were you know, this is a game, everyone's engaged in the room. Now suddenly there's a dependency on someone getting their phone out and timing. Right. You've broken that engagement. Like someone's gonna have to like press buttons, you know, and someone's gonna have to operate it whilst you think, surely a digital timer much easier.
+
+Cássio Pereira (30:00.173)
+Yes. You already broke the whole experience, right?
+
+Yeah.
+
+Devika Gibbs (30:13.226)
+No, actually, little details. Someone's had to come out, press those buttons, which means they'd have to disengage from the game. But having a sand timer does its job. Simple solution. So Exactly. But these things certain things just work, right? They're timeless. No pun intended.
+
+Cássio Pereira (30:20.006)
+Yes.
+
+Cássio Pereira (30:25.09)
+As as old times I'd say.
+
+Yeah, that that's that's amaz that's that's an amazing example again. and you may we mentioned already two times this winners, competition, challenge. Can yeah, could you bring more to the audience? What is this challenge? I know of course, but what is this challenge? What is this competition? Marcus, you will not beat me. I already own the challenge, I'm for sure I will win. but tell tell us tell us what is this challenge, what how it looks like, what people must do, and so on.
+
+Devika Gibbs (30:39.274)
+Yes.
+
+Devika Gibbs (30:44.439)
+Yes.
+
+Devika Gibbs (30:53.463)
+Yeah.
+
+Devika Gibbs (30:56.876)
+Sure. So this is this is actually quite an important event that we we've now this is our second year. I would have liked to say we've run this for many years, but no. what we felt was with when we started Cyberset Games, we started getting you know interest from game creators on they've got a game and they want us to do something about it. some people have constraints around the cant, they don't want to invest in it because they've got other priorities and they have full-time jobs, but they don't have enough feedback, you know. Who how to take it from
+
+That idea stage to the next stage. And you know what? I mean, a lot of the times we don't feel we're 100% qualified to judge someone's idea. Now, I I was a business analyst in my background, in my career, before I started the company. Simon's a software engineer. We both are problem solvers, but we're not cybersecurity experts. You know, we're not in the best place to judge somebody's cybersecurity themed idea. And that's when we thought, well, why don't we get people
+
+you know experts in the industry together and get you know start a process where people can can share their ideas and and and we can do something about it. And but you know at the same time we realize that no one's going to be working full time on this you know to judge ideas and go through that process. And we thought, right, okay, combine the two situations. Let's make it fun, but also for a limited period of time get these experts together in a room and assess these ideas and give them feedback.
+
+Cássio Pereira (32:13.25)
+Mm-hmm.
+
+Devika Gibbs (32:24.62)
+That's what the competition is about. We basically ask anyone and everyone, if they have an idea that solves a cybersecurity problem, any cybersecurity problem, and it can take you know, and it's in a physical format, then we want them to submit this idea. And it's important, stressing on the word idea, not finished game. we don't expect them to have you know done a prototype, play tested it, and have it in a finished format. We're looking for the idea, what the idea is about.
+
+you know how it's going to be played and how does the gameplay basically achieve the outcome that they wanted to achieve in terms of solving that cybersecurity problem. Basically that's it. When you look at the form which is online it it's all about understanding the idea and not, you know, all the components, all the features, all the rules of the final finished game. We have a brilliant set of judges this year.
+
+we have last year's winner Kim White, Context and Cringe. we have Veronica, we have Claudius Link, we have Til Hashback. their details are online. They're all passionate about games. they've all achieved in their own way, they've they've achieved sort of solutions around how to engage the cybersecurity community. so I I think we're we're we're in for a treat this year in terms of you know having these people involved, giving their feedback.
+
+on on these you know on on a cyber security idea game idea
+
+Cássio Pereira (33:57.113)
+Okay. And we are let's say we are recording July, August we are. So they still can submit twenty twenty six, right? Maybe you're listening to this in the future, twenty years from now, then might be the competition still, but anyway. So we are now in July, August twenty sixth, two thousand twenty six. the competition will I mean they can submit the ideas because the winners and so on will be like October, November, something like this, as far as I know, right?
+
+Devika Gibbs (34:22.73)
+Right. 9th of October is the deadline for submitting your idea. and then we'll start the judging process, which will last a few weeks, three to four weeks, and then we hope to announce the winners in November. And from then on, once the winners are announced, we actually have three places now for the winners. I won't bore you with all the details, but the first prize will go go go to the person. obviously the whoever gets the first prize, their game will be prototyped.
+
+Cássio Pereira (34:43.442)
+Mm-hmm.
+
+Devika Gibbs (34:51.338)
+and professionally created by us to be retailed on Cyperseg Games, on a royalties arrangement. in on the other two ideas sorry, other two places, they'll they'll get feedback.
+
+and the second place will also get the prototype of their game. So we went to last year, we only had like a top position. and we actually felt, god, this doesn't seem like justice because there were so many ideas. We actually got about 16 submissions last year, and that was great for us. You know, we're we know we're a niche kind of working in a niche market. not everyone's making cybersecurity games. So getting, you know, 16 submissions was like, my goodness, that's great. I was I was gonna be happy with five.
+
+Cássio Pereira (35:17.688)
+Nice, nice.
+
+Cássio Pereira (35:32.465)
+Yeah, but to be honest, it it's I mean, I I'm I'm very excited. I have my idea for two years in my head, maybe even more, and you know, stuck in here and there what to do, or then I met you guys and so on, and here we are. But if more professionals, because I I have this feeling that as more senior we get, we have more responsibility, even as professionals, to train the newcomers, the juniors, and people starting the career and so on. So this is also
+
+Devika Gibbs (35:39.319)
+Yeah.
+
+Devika Gibbs (35:44.045)
+Yes.
+
+Cássio Pereira (35:59.357)
+Part of the legacy we leave as professionals to the industry, not only cybersecurity, but would say any other industry, that it's possible to do something like this. So the games idea of for at least for our area, I think it's fantastic because if more people were creating games, would be like you go to a I don't know, game and how to say toys place, you know, to buy th something for kids. There are a bunch of brands, different toys and so on and so forth.
+
+But you try to say, okay, I want to train my team about something. You you don't have much options. You need to find an expert, pay very expensive hourly rate, bring come to my company or virtually and do a training. And the games allow us to explore this new universe of different experiences to actually make a training or teach people or so and so on. So I I really like the idea, and that's why I wanted to talk about this challenge. So people
+
+Please, if you're listening to this somewhere somehow, join, submit your idea. I think it's it's it's a very good opportunity. to you know, not not only to share your idea, but maybe win and then get the game outside or I the feedback itself is already very nice. Yeah.
+
+Devika Gibbs (37:08.172)
+To get feedback. And one of the selling points for us is just to encourage people to, you know, submit their idea to get feedback. You know, this is a rare opportunity where we have these judges, these experts, you know, people who've made games, who who, you know, who believe that games is the only way. You know, these are people who are really passionate. and they're there to give you feedback. So, if nothing else, feedback to help your idea grow.
+
+Yeah, so that's what I say to people. you know, sometimes it can be daunting kind of competing, but yeah, this is a great opportunity to get feedback.
+
+Cássio Pereira (37:44.604)
+Cool. Marcus, any questions you have in mind? I have I have one more here, but we are almost going to the end, I would say. So I want to save mine to the end.
+
+Marcos Santos (37:51.735)
+Eu tenho uma pergunta, não sei se é uma pergunta mas eu comecei a pensar, como você balance a técnica com as reais durante os jogos? Porque eu acho que uma parte do jogo, uma das partes difíceis, é que faz a balança para as pessoas que têm alguma confiança e jogam os jogos bem, é um balanceado e isso faz muito bem para jogar e eu ainda ajudo.
+
+em como se balancear
+
+Devika Gibbs (38:24.064)
+Balance the technical component with the with the game mechanic. So interestingly, we had Till Hashback, who is who's actually one of our judges this year. and you know he's he's an innovator. He believes he's actually created this game called Moonshot, which is an innovation game. And it's a game that you play to help you innovate i i it through through play. and we asked him this question.
+
+Marcos Santos (38:27.578)
+Sim, exatamente.
+
+Devika Gibbs (38:52.566)
+actually last year we did a little interview with him you know just to help people kind of you know how do you how how do you exactly how do you balance that you know his answer the the first thing he said was think about the outcome first that you're trying to achieve don't go in with a kind of blue sky you don't know what you want there are a few things around you work things out no think clearly about the outcome that you're trying to achieve when you're developing a game
+
+Marcos Santos (39:00.278)
+É.
+
+Devika Gibbs (39:22.422)
+And from then on, the things start to fall in place into achieving that balance between, right, you've got an outcome, you want to teach people about stride. I don't know, for example, think about now the the second that they'll come to your mind is okay, you've got all these this technical, you know, this literature, this, this, this content which makes up stride, you know, in the form of threats and things like that. So you've got all those components.
+
+Then think about, okay, well, how do you want people to experience that game that you think will engage, keep them engaged? It's a technical comp, you know, it's a technical, it's technical content. It's quite dull and boring in, you know, to some people maybe. but you want to keep them engaged without losing their, you know, not lose their attention because it's also technical. Then you start thinking about those components when it comes to the game mechanic, but always start with the problem that you're trying to solve and the outcome that you're trying to achieve.
+
+And then after that, those things start falling into place. then you do, you know, like I said before, you do you need to do your play testings, you need to get your you know, pieces of paper printed out with the content that you've got on there, cut them out, really literally at that point, don't even think about fancy processes, cut them out, get one or two people together, think about what's going on. Is it too much? Is it too little? Is it keeping them engaged? Those those things then come, they they come.
+
+after that initial thought. and that's how you start developing the game and and and that's how things start to balance together. but i it's all about keeping the objective in mind and then all the other components just fit in with that objective and the feelings that you're trying to create. he gave yeah it's it's yeah and and it's those feelings that you're trying to drive that then determine the mechanic.
+
+Marcos Santos (41:11.254)
+Oh, só thanks.
+
+Cássio Pereira (41:12.562)
+Yeah, it's it's not easy because at least for me, like I'm I'm too much technical, and sometimes I need to okay to who I'm communicating something. And why I remember when I when I started as a teacher on on the universities, for example, my audience, the the students, they were usually young, very young, with some kind of ideas in mind, and I was there already like
+
+Devika Gibbs (41:23.223)
+Yes.
+
+Cássio Pereira (41:39.676)
+Trying to communicate something, why you should learn this. I mean, they are there sometimes, they don't even know why they are there, but why you should learn this? Why is this important? First, I needed to work a lot on the whys. Then on the content itself. Like, why you should care about AppSec? because if you don't, why you should put the seatbelt on the car.
+
+Devika Gibbs (41:50.454)
+Yeah. Yes.
+
+Cássio Pereira (41:58.692)
+Look someone on an accident, what can happen, you know. okay, so that's why I need a seatbelt. Why you shouldn't drink before driving? Look at another accident video, look at about this example, apart from the law itself, you know, but that the the whys were were more important than than the content itself. Usually usually usually I try to say that people are already aware about a lot of things, they just ignore. So the we need this process of education.
+
+Devika Gibbs (42:15.501)
+Yes, that's great.
+
+Cássio Pereira (42:24.868)
+Or educating them on the whys itself. They already know that. Why you should eat healthy. Like everybody knows that eat healthy is healthy, right? But we go like McDonald's or whatever every day or every week, et cetera, et cetera. You have some exceptions and so on. But everybody's already aware about that. You know, it's it's it's just a matter of like, okay, I'll have a discipline, I'll be educated about this and I'll follow this, not only, you know, be on the theory and so on. Yeah.
+
+Devika Gibbs (42:54.113)
+That's true.
+
+Cássio Pereira (42:54.918)
+Devica, any last comments, message, whatever you want to say? Marcus, any other questions? I think we are we are heading to the end, so we need to wrap up. I would love to have this two, three hours conversation. We could even transform this into a game itself, but we don't have time.
+
+Devika Gibbs (43:11.37)
+That would be that would be interesting. We would have to meet in person though, may I just say? We're not that far. about about you know, two hours flight.
+
+Marcos Santos (43:12.983)
+e
+
+Cássio Pereira (43:16.082)
+Definitely, definitely. Yeah. Two hours light, pretty much easy. Yeah, that's okay. We can handle. We can handle. So Marcos, any any last questions? Anything that you want to ask? Something?
+
+Marcos Santos (43:17.687)
+É.
+
+Devika Gibbs (43:23.822)
+Okay.
+
+Marcos Santos (43:29.367)
+Agora, eu estou tentando dizer obrigado a Devka, é muito útil e eu aprendi muito hoje. É uma ótima explicação e eu tenho muitas notas aqui.
+
+Cássio Pereira (43:40.659)
+Are are you going you're going to join the challenge?
+
+Devika Gibbs (43:41.27)
+Marcos Santos (43:44.919)
+Eu tento,
+
+Cássio Pereira (43:46.266)
+You should, you should.
+
+Devika Gibbs (43:48.431)
+Sim s it doesn't have to be complicated. It doesn't sometimes I've noticed that the the simplest games achieve the best outcomes. you know, so there's no there's no rule, there's no criteria like that. but no, I mean I'm thank you for having me guys. I I don't often get to talk about Cyberset games or or myself. busy always trying to produce games, which is great. I love that. but no, it's been great sharing my thoughts and and hearing from you guys as well.
+
+Cássio Pereira (44:11.771)
+Mm-hmm.
+
+Devika Gibbs (44:17.516)
+you know, on on the processes you go through. especially Cassio, you you mentioned things you went through to come up with your game and you know, answering some of the questions around the why certain things should exist. So yeah, very insightful.
+
+Cássio Pereira (44:28.713)
+Yeah. Yeah. And and I have I have two daughters. the oldest is almost four years. And I see she has some kind of books, not only normal books with pages, but books with magnetics or kind of puzzles in the in the pages of the book itself. So I'm always like, this is interesting. It's a different way of learning something, of learning how to read or learning how to interact, not the classical and old way of some game or whatever activity it is.
+
+Devika Gibbs (44:57.729)
+Yeah.
+
+Cássio Pereira (44:58.531)
+Even the I running the besides here, even the badge of last year, the badge was like of a puzzle because she has a wooden puzzle that you can you need to it's just squares, circles, and you need to put all of them together. So I I look to this, okay. Our badge needs to be like this. So once you solve the puzzle, I mean you need to unmount it, and then you have some hidden something, and then you need to mount again the badge to have something nice badge and so on. So I'm always looking to the things, even for her from her toys, how to
+
+Devika Gibbs (45:06.381)
+Yeah.
+
+Devika Gibbs (45:15.235)
+Yeah.
+
+Cássio Pereira (45:28.197)
+bring that to life on my area. How could I teach? How could it be a product? How could be I don't know a gun or weapon or I don't know. Something like this.
+
+Devika Gibbs (45:32.119)
+Yes.
+
+Devika Gibbs (45:36.43)
+No, it's fun yeah, no, that sounds that sounds very exciting. And yeah, I wish I could see this this this puzzle you're working on for the B-Sides badge. That that's sounds intriguing.
+
+Cássio Pereira (45:42.511)
+Mm-hmm.
+
+Cássio Pereira (45:50.406)
+Yeah, that for sure is on our w website. For sure. Well if it's not there, I can I can share. But anyway. guys, thank you very much, Marcus. Thank you, Devica, again for the time. for sure we'll see and meet again. last thing, we because last episode I forgot, Marcus.
+
+Devika Gibbs (45:53.228)
+Okay.
+
+Yes.
+
+Marcos Santos (46:07.607)
+Oh!
+
+Cássio Pereira (46:14.209)
+We have we have a moment here on the DevSecOps Podcast where we try to suggest some things to make a developer cry. Because there is, you know, it's to make fun. usually we don't like developers, usually they don't like us just for joke. So we always try to make something funny for them to cry. I I already have my idea, Marcus. You want you have something in mind, you want to share?
+
+Marcos Santos (46:35.895)
+Ainda só digo.
+
+Cássio Pereira (46:37.563)
+To me, I I go go on, go on. You can be first. You are the guest.
+
+Devika Gibbs (46:38.838)
+something.
+
+Marcos Santos (46:39.991)
+Ok, vamos!
+
+Devika Gibbs (46:41.366)
+PowerPoint presentation.
+
+Cássio Pereira (46:43.537)
+by definition, this is already terrible for them. They would hate this. Yeah. Yeah, definitely. No, to me, it would be something like there would be a Uno version of secure cybersecurity, where they need to play in order to onboard to any new project and so on. So they could only code if they win on this Uno, that they don't know the cards, only the security guys knows the cards in advance.
+
+Devika Gibbs (46:47.182)
+Call me biased. I'd rather introduce the game.
+
+Devika Gibbs (46:55.564)
+yeah.
+
+Cássio Pereira (47:09.051)
+So they will always make them buy new cards and they will never win. They will dare infinity it so they could not be able to code. That's totally crazy, but yeah, that that would be something to make the developers prime. And of course they need to go to the office and stay there to see your PowerPoint presentation and to play the games, right?
+
+Devika Gibbs (47:24.376)
+Wow, that would that would make them cry. A hundred percent.
+
+Marcos Santos (47:26.295)
+Ok, eu uma ideia.
+
+Cássio Pereira (47:28.431)
+Yeah. Mar Marcus, you want to add something to this or you have a new idea?
+
+Marcos Santos (47:32.855)
+Sim, só tome o jogo, só beba café se ganhar o jogo.
+
+Cássio Pereira (47:38.385)
+It would be already yeah, it would make them cry already. If Ben Ur would be here, they would he would say, Yeah, and every card on the game would be on a spreadsheet that you need to print and read. Yeah, for in a PDF even like he would make even worse. Yeah, he would be even even worse.
+
+Devika Gibbs (47:38.644)
+Marcos Santos (47:47.575)
+Oh meu Deus! Benyur colocou tudo na mode Benyur é...
+
+Devika Gibbs (47:54.04)
+No, don't allow them to print. Do you have to access the PDF on their tiny phones?
+
+Cássio Pereira (47:58.661)
+we can be we can be evil when we want, as you see. All right, guys, that was the DevSecOps podcast one more time. I think we are more if the production guys can can give us the number, I think we are on the episode number two hundred and seven, if I'm not wrong. So there is a there are a lot of content out there. But anyway, I'm Casio Pereira.
+
+Marcos Santos (47:59.607)
+Oh meu Deus! E eles marcaram para escrever.
+
+Devika Gibbs (48:06.05)
+Okay.
+
+Marcos Santos (48:09.367)
+Ok.
+
+Marcos Santos (48:26.871)
+Eu Marcos Santos.
+
+Cássio Pereira (48:28.175)
+And we had today our amazing guest, Devika Gibbs, right? Awesome. Guys, see you next week. Bye bye.
+
+Devika Gibbs (48:32.982)
+That's right.
+
+Marcos Santos (48:37.175)
+Bye bye!
+
+Devika Gibbs (48:37.88)
+Thank you for having me.
+
