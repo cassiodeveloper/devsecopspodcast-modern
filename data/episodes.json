@@ -6,6 +6,23 @@
   },
   "episodes": [
     {
+      "id": "t8e10-how-to-teach-kids-about-ai",
+      "slug": "t8e10-how-to-teach-kids-about-ai",
+      "title": "T08E10 - How to Teach Kids about AI",
+      "date": "2026-08-12",
+      "author": "Cássio Batista Pereira",
+      "excerpt": "AI may seem reliable, but it can make unpredictable mistakes, leading to dangerous assumptions....",
+      "contentHtml": "In a world where AI is rapidly becoming the cornerstone of technology, understanding its intricacies is more crucial than ever. Join Rob van der Veer, a veteran in the AI field with over three decades of experience, as he unveils essential insights from his journey, including the pivotal lessons that every child—and adult—needs to grasp about artificial intelligence.<br /><br />",
+      "mp3": "https://api.spreaker.com/v2/episodes/73822771/download.mp3",
+      "download": "https://api.spreaker.com/v2/episodes/73822771/download.mp3",
+      "youtube": "https://www.youtube.com/watch?v=QoOplkwTHfU",
+      "transcriptUrl": "transcripts/t8e10-teaching-kids.txt",
+      "blogPostUrl": "posts/how-to-teach-kids-about-ai.html",
+      "tags": ["CyberSec", "Fun", "Book", "Learn", "Kids", "AI", "Artificial Intelligence"],
+      "spreakerId": "73822771",
+      "code": "T08E10"
+    },
+    {
       "id": "t8e09-cybersec-games-cybersec-conversations-on-the-table",
       "slug": "t8e09-cybersec-games-cybersec-conversations-on-the-table",
       "title": "T08E09 - CyberSec Games: CyberSec Conversations on the Table",

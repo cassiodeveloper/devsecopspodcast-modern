@@ -1,0 +1,452 @@
+Cássio Pereira (00:22.812)
+Here we are, Marcus, for one more episode of DevSecOps podcast. Again, two two hundred two hundred and eighty episodes, two hundred and eight episodes already. And yeah, Ben Ru is not here today, but you but you are, right? That's the most important. That's that's the most important thing. And and and today we have we have a very special guest. I mean the this co OASP Global AppSec Global Conference in Vienna.
+
+Marcos Santos (00:26.392)
+Again, I miss being here.
+
+Rob van der Veer (00:32.966)
+Thank
+
+Marcos Santos (00:37.718)
+Yeah. we're so cutie Casio.
+
+Rob van der Veer (00:39.782)
+you
+
+Cássio Pereira (00:49.98)
+Two, three weeks ago, I don't remember anymore, was so much valuable for me and for the podcast because I could meet a lot of all of interesting people and people out there making a lot of interesting projects. Episodes ago, we just talked to with people from Cybergames that they are building board games for cybersecurity and so on, which is something like amazing. I really like you you like this episode as well, right? That that was amazing. That was amazing. And today we have a guest, a gay guest also that is connected to.
+
+Marcos Santos (01:05.666)
+Yeah, that's very nice.
+
+Yes, I love it.
+
+Cássio Pereira (01:17.882)
+physical world I would say, even though he's an AI specialist, but we will be going to talk about books and you know and and other topics that I don't want to give spoilers in the beginning. Let's first remember that the DevSecOps podcast has the support from Nova 8, which is the distributor of check marks and sneak in the Latin America and also in Europe for some countries. Purple bird security that they will take care of of you during and after an incident. For sure you're gonna need this guys because you know everybody's being hacked today.
+
+Rob van der Veer (01:23.686)
+Thank
+
+Rob van der Veer (01:38.214)
+We'll
+
+Cássio Pereira (01:47.272)
+Con Visual Application Security as well, they will be helping you with all the application security process that you need on your company. Gold Security, they also provide specialized services on the application security realm. And Digital Woke, they have a full portfolio of application security solutions for you. And our new partner that we are about to announce officially, but there is still coming, still some things to
+
+Rob van der Veer (01:55.258)
+and
+
+Cássio Pereira (02:14.12)
+To agree on, which is secure habits. So for sure you'll be listening more about secure habits soon enough. But okay, enough of bullshit. Let's go straight to the important things. Rob van der Veer, if I'm didn't pronounce wrong, welcome for joining. welcome to the DevSecOps Podcast. Thank you for joining us, thank you for our time. And please introduce yourself, talk about your projects and so on, and then we can jump straight to the conversation.
+
+Rob van der Veer (02:37.84)
+Thank
+
+Cássio Pereira (02:43.954)
+Thank you one more time.
+
+Rob van der Veer (02:45.19)
+Thank you so much. Wow. 208 episodes. What a, what a number. Congratulations. Uh, it's a pleasure and an honor to be your guests. Uh, I'm Rob van de Veer. Uh, I have a long history with AI, uh, 34 years now. I started in the AI industry as a builder, as an entrepreneur, as a data scientist, as an AI engineer, a researcher, and I spent
+
+A lot of time in that industry learned a lot, made many mistakes. And this was way before AI was, was, was cool, but we did some very cool things with, for example, predictive policing back in the day, predicting crime, very, you know, cutting edge, cutting edge stuff, really new. And 14 years ago, I joined software improvement group and made a switch from a builder to a consultant because the things that I learned, love really.
+
+working with organizations to make their software development better, to make their systems more secure. So I'm a software engineer by heart. I'm a programmer since a very young age. I love AI and I really find security super important because we connect AI to everything. We trusted with all our data because it's so great. We don't know how to protect it really well. So we're working on that.
+
+It has an enormous attack service and we're in a hurry to reap the benefits. So this is a perfect storm for AI becoming the number one target for adversaries. And that's my driver really to make a difference there using the things that I like to do, which is make complex things simple, bringing people together. And I found that a good way to do this is through OWASP.
+
+I've created the OpenCRE project with Spiros Gastratos. I started the OWASP AI exchange, which really exploded and became a flagship project and became really the connecting tissue between international standardization and OWASP, about which I'm very proud. It's actually a think tank of about 150 experts globally who work together in this OWASP projects, who publish it on owaspai.org.
+
+Rob van der Veer (05:07.664)
+There's 300 pages of material on how to secure AI systems. And we share that with international standards, with ISO standards, with AI Act standards, and we connect standard organizations together in an initiative called MOSAIC. So OpenCRE, MOSAIC, and the OSPI exchange are the three projects that I founded and co-founded about which I'm really proud. And that's Software Improvement Group. I'm Chief AI Officer. I am allowed.
+
+I am actually invited by my employer to do this standardization work, including being the co-editor of the AI Act security standard here in Europe and spread the word, spread the frameworks that we develop at Software Improvement Group. And next to that, I work with clients all around the world, like for example, GitLab in making their AI systems more secure. Maybe that's me in a bit long nutshell, I guess, but...
+
+Yep, that's it.
+
+Cássio Pereira (06:08.999)
+That that's cool to see. Sometimes I I feel myself doing a lot of things. And it's nice to see other folks are doing the same, which is which is your case as well, Rob. You're doing a lot of things and sp especially the projects from OWASP that like by OASP nature, like share into the community and give at least this guidance. I feel a lot of people miss this guidance nowadays. And that's that's amazing. I mean, thank you for for all the involvement in all these things that help all of us as professionals as well.
+
+Marcos Santos (06:17.775)
+Hmm.
+
+Cássio Pereira (06:37.535)
+and you mentioned like you were in AI like long time ago from long time ago. I remember when I was back in Brazil doing some studies, I remember to to read a book. Translation would be something like natural programming. But the book was about fishes, ants, birds' behavior, because the the the writer, Professor Leandro, something like this, Nunes, Leandro Nunes, it was about exactly how to observe.
+
+These kind of animals' behaviors and translate that into algorithms to in the AI and other all kinds of algorithms to fix real world problems like traffic jams, how the fishes behavior in a lot of fishes and so on. So it was amazing. But I read and of course I gave up because I was a developer. I said, no, this is too much for me. I'll keep doing my C sharp here, easy peasy, just commercial websites. And then okay, much more fun to go to security. Then I migrate as well. But anyway, and you mentioned also.
+
+Something about this complicated topics to make them simple. And maybe would be my first question to you. Where where the idea came from? I mean, you already mentioned, like, okay, you like this as a passion, but when when it was this start, okay, like maybe we'll write a book about this, which is the case of Luna and the Magic AI paintbrush, if I'm not wrong. I missed the opportunity to buy, by the way, for my daughter in in you know in Vienna, but anyway, I can I can grab it after. how how this idea came? Okay, I have a
+
+Rob van der Veer (07:57.862)
+Mm-hmm.
+
+Cássio Pereira (08:06.215)
+Complicated topic, and I need to maybe teach and train people. But kids, like where this idea came from.
+
+Rob van der Veer (08:14.267)
+Yeah, kids, the new generation is going to be AI native, right? So they better get it right. And if you have a normal upbringing as a child, you learn how humans work, but then you encounter AI. And if you know how humans work and you encounter AI, you are going to work with AI based on the number of assumptions that are not correct. I mean, it sounds...
+
+human, appears human, it appears right, but it's not always right. It seems that you can leave it every type of task and then get a great result, but actually it makes types of mistakes that you don't really anticipate. taking responsibility, accountability, staying in control, review, all these important aspects that we are getting to learn by experimenting with AI is essential.
+
+are essential lessons for kids. And the idea was to put this into a story like you do with, you know, the typical children book with the nice illustrations, with a bit of texts that it's so this for ages five to eight. it's children that can hardly read till children, who can read, but it's an excellent book for parents also to read to their children and also maybe pick up some lessons. and I felt that.
+
+between all that standardization and, you know, guiding practitioners, why not do something more fundamental and teach the key lessons? So this is not about, mythos or finding vulnerabilities. Obviously this is about the big issues, of humans working with AI in a nice story. And we're hoping that when children read this, that they pick up, you know, this was a nice story. I loved it, but they pick up some of the key lessons in there.
+
+Cássio Pereira (10:12.081)
+That's awesome. And and one important thing for me now with two kids on my own. The first one is turning to four next two months. The second one is six months. So she still has some time. and and the oldest one, she's already she she doesn't like to read itself. I mean, she doesn't even know, but she loves me and mom, grandparents to read for her. Like it's if she's not playing something all the time, could you read it for me a book? Usually stories and so on. So she's already engaged that.
+
+Rob van der Veer (10:20.135)
+Hmm
+
+Cássio Pereira (10:41.403)
+I think it would be easier to introduce this kind of topics, for example, at least on on my example, for her. and it's impressive how how this mindset comes because humans, right? We need to learn, we are learning constantly. Every day you are learning something, even by your own mistakes and so on. And you mentioned, like, okay, you're being interacting with AI, and AI is not always right. And it's important to know that the AI is not right. Okay, how you fix, how you're gonna ask properly, how you're gonna even tell, hey, this is wrong, you need to do it again.
+
+Because you have some fundamentals, you have some baseline, let's say, that you get with your life experience, right? And maybe my question to you, Marcus, would be now: do you see us every day, every day over and over, still trying to teach or to educate developers, engineering teams, and so on about how security is important? Or you think that they are already educated, we are all secure, don't need to worry about this anymore.
+
+Marcos Santos (11:36.592)
+No, this is our job is try to educate the developers every day by webinars, using some games, for example, or create some... We need to create some different strategies for training different types of developers. I have developers when the developer is more visual and I need to create some presentation, I need to put some infographics, I need to put the mo... I need to create some graphics.
+
+to show to this developer how to put security into the code. But I have other developers when the guys is more listening. I need to talk more, I need to explain better, I need to send. I need to talk more than we show the presentation. Depends on the developer, we have some different strategy to teach this guy for input security into the code and input security in the
+
+future of the company and it's very hard and when we talk about the kids I think it's more harder than we talk with some adults.
+
+Cássio Pereira (12:46.013)
+Yeah, that that would be my second question to to you, Rob. Like, is that more it's harder? Like I I I imagine that you deal also with adults all the time, you know, teaching or explaining topics. It's a challenge for kids. How how do you feel about this?
+
+Rob van der Veer (12:47.367)
+Thank
+
+Rob van der Veer (13:00.812)
+I think the lesson in Luna and the Magic AI Paintbrush, the lessons in there are not hard for kids to understand. That's, I mean, that was the whole intention. Let's take it to the fundamentals and explain that the AI cannot read your mind and that the AI appears to do something that is a perfectly sound, but it's been trained on
+
+not an infinite set, but a finite set of things. And therefore there is limitations to what it can do. is something to be aware of. I think you can make that really apparent for, for, for people, adults and children to understand. So the fundamentals I think are clear. What is difficult are the, really the discipline that people
+
+including developers, need to develop in order to not to rely on AI too much if they're in a hurry. mean, we are turning from creators into reviewers and we don't like review. It's hard to measure how good a review was. We get tired from review. At some point we don't see it anymore. We find it hard to be alert to that and
+
+What it requires is discipline. And I think that's an important part of, well, security, but development in general, looking at the quality of what you produce, maintaining that discipline of checking if things that you got are really the things that you need. And that requires carrots. So showing the importance, but it also requires sticks, meaning that really
+
+yeah, enforcing, certain behavior like spending time on code review and signing off on specific code that it's, that it, that is high risk and really, Overviewing the work of people doesn't sound like a lot of fun, but discipline doesn't come automatically. And I think that is the big challenge of AI today, for, for, for knowledge workers.
+
+Cássio Pereira (15:21.127)
+Yeah, I'm I'm you're talking, I'm thinking here like how how challenge is even like let's take the technical thing aside. Like I still need to teach my daughter why you cannot have ice creams twenty-four hours a day. Like it's on the dessert after after the lunch. Why you cannot have you stay on the pool every day on the weekends, you know? Why you need to sleep now while it's it's already nine, eight, eight, nine PM.
+
+But it's still sunny, at least here here in Poland, it's still sunny, right? And she's like, but it's still daylight. Why I need to sleep, you know? She doesn't still have the time conception in her mind. And and we, as parents or or or guardians or whatever, you are always there making sure that this concept or fundaments or whatever values, you know, religion and and any kind of thing, i they are going there to that kid or or or or or or your daughter's son, whatever, etc. etc.
+
+And you have your own beliefs, your own way of doing, of course, some let's say some social acceptance around some things. But the point is, we are the guardians, right? We are the accountable and responsible for doing that. When when it comes to security in general, sometimes we make this confusion. Like companies hire us as application security engineers, for example, to protect their software, protect their data and assets. But this protection even has some limitations.
+
+For example, you go to a doctor, you have a doctor, the doctor is gonna tell you you need to have some medication, A or B. But the doctor goesn't go home with you. Take your hands, make sure you're taking the medication every day, every time, and so on. He just recommends you, you know, you go home and that's all. Hopefully you don't die, hopefully you get you get better. eventually you can come back, ask for more advice, etc., etc. And companies, we make this confusion. Sometimes the security folks think that they are the parents, like they will be blocking.
+
+Developers or whatever, you cannot do this, you are not allowed to do that, you cannot use AI. while the business will be, hey, we need to deliver, we need still need to be fast, we still need to sell, you know, business is business, and security is security. So there is even this conflict every day. And my point would be who who is this guidance? Who who would be the parent? Because I worked in companies where the security team was actually the the father.
+
+Rob van der Veer (17:21.746)
+Mm.
+
+Cássio Pereira (17:44.889)
+Like I have the power to block to you not deploy something while I are worked in companies as well that you were the doctor. Like, hey, you should fix this one day if you have time, but don't bother. You know, it's a critical vulnerability that can shut the company down. But when you have time, of course, sales is much more important, which it is, but the secret as well, how do you see this balance? Is is there a balance for at least AI, like
+
+As you said, we are trusting too much. we get tired of reviewing. You ask AI to review other AI. How how you see this this balance of security itself and the this fast pace that we're
+
+Rob van der Veer (18:26.02)
+Yeah, this is a topic that's fascinating. All of us, right? How do you, how do you work this balance and make security success and not something that is, you know, a hundred percent secure, but secure enough. I've learned a big lesson this year about this, which is that I normally would work with organizations starting with explaining the things that can go wrong.
+
+But this is an era where leaders are more than ever aiming to reap benefits as soon as possible. So this is not a good situation to come up with a list of risks. It hardly ever is, but especially now it doesn't work. What does work is working with leaders and explaining that
+
+It's not about me telling you the things that can go wrong. It's about me helping you to maintain your speed so you don't crash. So you don't run into a hole in the ground and crash your car and need to go back again, because that will delay you. So not paying attention to all the security feels like you're going fast, but in the end, you will reach the end result later because you'll have incidents, you'll have rework. You'll at some point.
+
+Conclude that a certain way of working simply doesn't hold. So you need to rework and that's all expensive. Now, if you understand your risks while you have this speed, it's like having a co-pilot in a rally car. You're much more aware of your situation and that co-pilot also wants to win the race, but it also knows where the obstacles are. And framing conversations with leadership, because I think that's where the energy comes from. That's where the culture comes from.
+
+when it comes to security, but when it comes to any cultural aspect and priority work with CEOs and make them understand that being aware of security risks, feels like going slow, but it's actually helping you to gain speed. If you start with the speed story, have much more, much more success. And I think that's type of framing and emphasis and way of
+
+Rob van der Veer (20:48.893)
+Telling the story, especially in this age of AI needs to be on maintaining speed, increasing speed and not on dispensing warnings. Because once you do that, people immediately shut off. Like, no, I don't want to hear that. I just want to go ahead. So framing narrative and starting with leadership, because you can have all kinds of dynamics on the work floor.
+
+Cássio Pereira (21:08.27)
+Yeah.
+
+Rob van der Veer (21:15.913)
+If leadership is not behind it, the end, security will lose.
+
+Cássio Pereira (21:20.868)
+I I I always try to touch the the one of the security principles, which is psychol psychological acceptance. Marcos, maybe maybe the next n I want to hear this comment from you. we already know this example. Like okay, I want to get into a building. It's acceptable that I show my ID as a visitor, right? I show my ID or I have a badge, I go into some kind of access control and I can go inside, right? Even to get this badge or or the or the
+
+Or the or the you know, present the documentation and so on. But it's not acceptable, like, okay, I need to present my physical documentation signed by the legal entity from my parents and my grandparents, like would be much more safe, you know, to identify me and to allow me into a building. But it's not acceptable, right? It's not feasible. You're not keeping the speed, let's say, of a person just going to a building. And and it's one of the principles in cybersecurity is to keep this psychological acceptance. You are
+
+Adding security in any point, let's say in software development or whatever, there will be inevitably a performance issue, UI or usability. There will be, even if it's a small impact or a bigger impact. Do you believe that software development nowadays they they think this way? Like we just build and deliver, or no, like we need to.
+
+properly put security here on a way that is acceptable or we leave security for tomorrow.
+
+Marcos Santos (22:54.225)
+That's a very good question, the security, because security is everything with us and nowadays I didn't think in anything without security. For example, if I try to construct a software in Vibe coding, use AI. I put some security parameters for AI following when need to construct my software. Or if I need to talk with you about some software.
+
+I try to think about least privilege, about some less scale ejection, Nucleosight scripting. In my head, it's not possible I make anything without security more. I have this inside of me, in my culture, in my person. I think in security, cybersecurity in general, when I try to construct something, when I need to talk about something, when I need to, for example, to access my email, I didn't think more about the access my email without the 2FA or about the...
+
+OTP, I don't know how the person's thinking anything without security in all these, because every day we see a lot of leaking, lot of some, some injection in the code, incidents in general. That's very hard. We, we don't think in security.
+
+Cássio Pereira (24:12.216)
+Inc incidence incidence in general, yeah.
+
+Cássio Pereira (24:20.964)
+Yeah, it's it's it's critical, I would say, because we are from security. So for us, as as you said, we are all the time thinking about something on on a secure. Like I I can give another example and and and would be the next question for for for Rob as well. we are from Brazil. It's it's very easy to get robbed on the streets, you know, someone getting to your house. I mean, not that very easy, but isn't it's common, right? It it's for us, it's just not natural and normal.
+
+Marcos Santos (24:24.953)
+Yeah, exactly.
+
+Rob van der Veer (24:31.274)
+Thank
+
+Rob van der Veer (24:39.146)
+Thank
+
+Marcos Santos (24:40.529)
+Is that another part?
+
+Cássio Pereira (24:50.362)
+Here in Poland, it no, it's definitely not. So even when my daughter is playing on the streets, I never let her alone. I'm always there. You know, if it's in someone's house, I I'm there with them, etc. etc. Even though other parents here they don't bother much. It it's okay for them because it the environment is safe, I would say, right? But
+
+Rob van der Veer (24:55.562)
+Thank
+
+Rob van der Veer (25:05.204)
+Thank
+
+Marcos Santos (25:08.113)
+Another example, when we walk on the street I put my phone in my pocket. I didn't walk with my phone in my hand.
+
+Cássio Pereira (25:13.044)
+yeah yeah yeah yeah kind of problems that thanks god we don't have here and then and at least many many of the places in Europe doesn't have this, which is which is very good. But we wouldn't walk in Sao Paulo, for example, at night with the phone on the hand, taking pictures, right? We know in real life, don't even mention, right? so so so out. My point is the environment also makes you behave accordingly. So if I have
+
+Marcos Santos (25:18.618)
+Yeah.
+
+Marcos Santos (25:29.073)
+Yeah.
+
+Cássio Pereira (25:40.445)
+company that has a security culture, it's easier for me to code and to perform or whatever, because the guardrails will be there or the policies will be there and so on, and I behave accordingly. If I am not, if I'm on a company like, okay, we want to sell, we don't care about security, that's your target. You need to your metrics, keep the eyes, whatever is based on your delivers. And so whatever is going to slow you down, give up, focus on the coding, focus on the on the delivery, right? So
+
+Rob van der Veer (25:49.194)
+Thank
+
+Rob van der Veer (25:56.906)
+Thank
+
+Cássio Pereira (26:10.116)
+Maybe my question to Rob now would be are you ad I mean you were you're a consultant as well? Are you are you advising business like you know, high level management, C levels, like hey guys, let's think also on this way. Let's think on this direction of also protecting our business. Not only the business itself, because like if I have a bank, unfortunately I don't, but if I have a bank and my bank fails for some whatever reason is, I'm affecting the society itself. No
+
+people's money. Or if I have, I don't know, an autonomous car and my car fails, I it's a person life, right? So I have an impact on the society. Not only on my pocket or or on the shares and so on. So are you also talking this direction to this kind of of of people or high management, so on to business itself, to think this way.
+
+Rob van der Veer (26:59.112)
+Yes. it's, it's, so security is always a matter of maturity. and different organizations are at different levels and you can't force things to happen overnight. You can't force culture overnight. you can't force, you know, the technical infrastructure that's needed overnight. So you need to know where you are. So that's always where we start. So where are you guys on this journey?
+
+and then create a roadmap where you can do this step by step. And an important step is, you say, understanding why, you're, dealing with these security risks because risks have impact. And the question is how bad is this impact really is, we doing this for compliance or are we doing this for, for business continuity or for, for reputation? Threat modeling, connecting it to risk analysis.
+
+and prioritizing based on that is a bit of an art form. There's no real easy way to do it, but if you've set it up correctly, you can really make sure that you're not building unnecessary security countermeasures. Like for example, in AI, you have all kinds of ways that you can fool an AI model.
+
+like if it's an image recognition model, you can fool it to, recognize a monkey picture as guacamole, which is super interesting. And organizations may want to prevent that and spend a lot of money building the controls in. But first I should wonder how bad is it really? I mean, who's, who's gonna worry if one person really does a lot of effort and has this monkey picture and has it interpreted as guacamole.
+
+How bad is that for our business? can be a reputation thing, but you really need to think through what is the impact really? How likely is it that this is going to happen? And if you apply that mentality, you start with a very long list of threats and potential problems, but you can quickly, you know, reduce them to a smallest and then suddenly security becomes much more manageable. And especially in AI, this is, this is how I always work. have this long list, embrace the complexity of AI, but then once you start
+
+Rob van der Veer (29:21.002)
+putting it into perspective of the real world, it turns out that a whole lot of things you can easily strike through as super unlikely, negligible impact. For example, if you have an internal chatbot that is meant to answer questions for colleagues to get information on documents in the company. If people manage to make it provide a cupcake,
+
+recipes, some regard this as a security breach, because the model is not behaving as it's intended. If people manage to make it say offensive things, some would say, well, that's, that's a hack, we need to build something against it. But you can also wonder if somebody really puts a lot of effort in, in a chatbot internally in a company, to make it say something bad about whatever about the company. Who's
+
+Who's harmed by this, right? It's really important to think from that perspective and then make the decision. In other situations, a chatbot being offensive, there's no real good way to prevent it by the way, but it would at least require you to do some homework and try to prevent that or select a model that it's already quite resilient against those attacks. But in many cases, it's just not something worth spending money on. So indeed putting things into perspective is one of the...
+
+you know, the actual impact is one of the key activities that the company should work on.
+
+Cássio Pereira (30:55.384)
+And and this that you said matches exactly with the biggest I would say biggest by experience, but no no no data on that. Biggest challenge of VapSec today, which is we have tools scanning and doing a lot of good work, but then we have 100, 1000, 1 million vulnerabilities reported in your Jira backboard or whatever. And then yeah, they are all vulnerabilities. Let's say you take 50% of them because they're false positives, it's still a high number.
+
+And that's what you said. Like, okay, which of these actually can damage me, actually can create an impact on the business, on the reputation, on a legal perspective, compliance, whatever. Because that that's that's a manual work. AI can help and sometimes support with this, but you still need someone to say, Hey, actually, I have a SQL injection here, which is on a you know, irrelevant database. So it doesn't matter, like it can happen that.
+
+No harm for us, like risk one from from zero to ten, right? On the other hand, you might have a encryption key on the memory of a server that if it leaks, they have access to your whole company. Okay, it's still on an internal environment on the cloud, that should require a lot of effort from the attacker to get there. But if it gets, it will have a big problem. So you would probably protect or give more guard rails here than
+
+Taking care of that database, which is relevant for you. And you mentioned this guacamole monkey stuff. I remember the case of, I think it was California or Chicago, something like this. The guy had a car and on the car and on the car plate, he he wrote kind of an injection and he was speeding up when the camera took it. he basically dropped the whole database of of five of finance, penalty, right, for for the drivers because there was an injection and there was no validation and so on.
+
+Rob van der Veer (32:46.453)
+So then.
+
+Cássio Pereira (32:47.234)
+Yeah, yeah. That like simple thing that someone wake up tomorrow today and say, okay, I'll try to inject something on the on the traffic light system and and and see what happened and it happened. yeah, but this is a very good example that you mentioned about the chat bot. How much effort you would put there if someone internally on the company is getting offended by what a chat bot set up. It's manageable, right? Different that it's a chat bot interacting with your customer, for example, on an e-commerce or or something like this.
+
+So yeah, definitely we need to do a a work, let's say, on this
+
+Business impact analysis, I would say, right? Which is which is which is hard because you need to dedicate time, people need to be there and so on. Yeah, just just comment on on what you said.
+
+Rob van der Veer (33:32.63)
+this, but there's another way of looking at it also. And that is if hygiene is cheap, you don't need risk analysis to decide whether you do it or not, you simply do it. So you can sort of spare some time in doing all that risk analysis. I mean, if you have a long list of CVEs, and you need to decide and prioritize, you can spend time on doing an analysis, but you can also just simply patch.
+
+Cássio Pereira (33:50.372)
+Mm, mm, mm.
+
+Rob van der Veer (34:01.62)
+Right? So it's, it's, if patching is easy, those situations, it's, it's not worth really contemplating on whether it is the best priority. just, you just do it. If, you get a decision to, how do you want to work with queries? You use parameterized queries because it's in many cases, it's just as easy and you got the whole SQL injection problem.
+
+problem solve. it's a combination of hygiene. then for those situations where you have expensive controls and in AI, many of the controls are expensive. Like adversarial training is a very expensive security control. We really need to think about the impact.
+
+Cássio Pereira (34:47.117)
+Yeah, it's like the putting the seat belt, right? It's cheap. You just put the seat belt. You are kind of secure, right? If you are two hundred kilometers per hour, maybe not, but but but yeah, it's it's it's seatbelt. Like exactly. And it's easy, right? Okay, maybe last question for sure. We'll go to the end with this one. You want to say something, Marcus, please?
+
+Rob van der Veer (34:51.948)
+Thank you.
+
+Rob van der Veer (34:56.416)
+But it mitigates, right? Yeah.
+
+Thank you.
+
+Marcos Santos (35:06.803)
+No no no, everything is fine. I... Yeah... No no, just click on the button. Yeah...
+
+Cássio Pereira (35:09.039)
+You were you were with the button touched there, so he wants to say something?
+
+Okay, you just want to bother. okay, that's fine. Rob, maybe next question would be about the seriously simple project. Like, what is it? because when I was I was checking a few of this data, I was already thinking, okay, I have an idea, I'll for sure try to collaborate somehow. I see no Portuguese there. I would be willing to to collaborate and translate all the content there to Portuguese, for example, to to countries that speak Portuguese for sure and need to bring this this kind of materials.
+
+Rob van der Veer (35:44.684)
+noted.
+
+Cássio Pereira (35:44.99)
+but but yeah, talk about the project, what is it, is it open for collaboration and so on, this kind of thing.
+
+Rob van der Veer (35:50.765)
+Yes. So Seriously Simple Books is by Bessie Schenk. It's her brainchild to provide books, children books that make seriously topics simple. And she approached me, we had worked together professionally in, you know, the advisory work. And she approached me saying, Hey, you're an AI expert.
+
+how about creating a book on AI for children? And it immediately said, yes, no negotiations, right? Let's do this. And I created the story. I worked with Bessie closely because I don't know how to children books, and she does. I didn't know that children books have a really typically a certain formula.
+
+Cássio Pereira (36:23.649)
+Mm-hmm.
+
+Rob van der Veer (36:44.044)
+And they end with a certain motto. So we needed to think about the motto. And then she works with a fantastic illustrator called Mirai van Ipere, who turned the story into pictures. And I never forget the moment that I saw that first draft, you know, I have something in my mind and then it gets illustrated so nicely with all the feelings in it. It really gives me goosebumps just thinking about that collaboration.
+
+And it turned into a really nice book available in Dutch, in English and in Spanish, not in Portuguese indeed, but I made a note that you might, might, might help whenever we do that. It's available on Amazon. So a series of simple books is a micro publishing. So using, using Amazon as a, as a network, which is pretty, pretty efficient, I would say. And it's yeah, just a regular book.
+
+Cássio Pereira (37:23.803)
+Farsher. Mm-hmm.
+
+Rob van der Veer (37:42.053)
+but the looks of it with fantastic illustrations, a nice story, but it does instill a number of, number of lessons, key lessons on AI. It's about Luna who discovers an AI paintbrush because she really wants to, be faster in creating nice drawings and better. So she leaves it to the AI paintbrush and it doesn't make what she wants. but it looks great.
+
+And then it turns out there was a couple of mistakes in it that she couldn't see. So this is a lesson like you shouldn't create something and publish it without you having the ability to really check if it's okay or not. Because you're accountable for what you create with AI. There's a number of lessons that she learns how AI works, how it is strange that it never saw pictures of a horse lying down. it figured the AI figured well,
+
+If I need to paint a horse lying down, I just put it upside down with the feet up, but it doesn't work like that. Then she needs to explain what she has in her mind and all the context and learns that if you want to work with AI, really get to sort of find a way to collaborate with it. Have yourself augmented and hold that paintbrush in your hand while creating something together. And that's the final lesson. And the motto is that the magic still comes from Luna and not from the paintbrush.
+
+And all those key lessons that we are sort of encountering every day when working with AI, the things that we notice that mistakes by AI are hard to notice, for example, are in this little children's book.
+
+Cássio Pereira (39:27.439)
+That that's I mean, I I really like this idea of you know education stuff and so on, because especially for our area, it's we we lack a lot on this kind of content, especially for kids, even teenagers would say, right? Too much focus on adults, already professionals, even on our let's say our niche, AppSec, DevSecOps, it's too much already focused on someone who already is a developer or security champion or engineer and like has already an experience, even for juniors, it's hard to find good content.
+
+That's why I wrote two books about this. They are only digital. I also was using Amazon as publisher. one of them, by the way, is for free. All these links that we are mentioning here from Rob, also mine, they will be available on the YouTube description of this video. But I wanted to ask about the because seriously simple, it's a project, and then you have Luna as the first book of this series. And I was checking on the website, there will be a second one already, which is Cyber Made Simple. Is that
+
+Rob van der Veer (40:20.694)
+Yes.
+
+Cássio Pereira (40:26.115)
+Something that you were involved as well or
+
+Rob van der Veer (40:29.429)
+I know that this being worked on, I'm not the expert in that book. I'm thinking of a new book, which is in this series, but it's very early stage and it's about deep fakes in general. So about the idea of that what you see online may not be real.
+
+And that's an important theme, but also a difficult theme to get across without scaring these children. So I'm working on some storylines for that one.
+
+Cássio Pereira (41:07.959)
+That's that's awesome. I already have the app sec made simple idea, so for sure for sure I'll to talk later. Go on, Marcus, go on.
+
+Marcos Santos (41:15.828)
+No, no, it's about the deep fake. I think that's a very good topic for kids because I remember when I was young and a kid and my my parents said, oh, don't talk with strangers. Don't take anything from strangers. And the deep fake now is I think is this case. But nowadays when the guys, yeah, in virtual days because
+
+Cássio Pereira (41:38.028)
+Virtual days, right?
+
+Marcos Santos (41:41.64)
+The wanna do the guide have a possible to change this face and talk with a kid on WhatsApp or on a video chat. And I think that's a very important thing.
+
+Cássio Pereira (41:50.48)
+Yeah, like like trying to to be someone that he doesn't, right? Or or this kind of things. It's yeah, it's it's risky as well for for for a lot of reasons. And I remember when I was developer twenty years ago, I'm already old, there was a book, HML for babies. It was literally a HML book, they were teaching tags, like you open the tag, HML, you open a div, a table, like and they were small book, but a page was the whole tag. It was not
+
+Rob van der Veer (42:16.747)
+you
+
+Cássio Pereira (42:18.159)
+Text, you know, it's just a does that HML tag for sure is some you can find somewhere. And there was the JavaScript for babies. The same, like the the function, you know, the the keywords on like huge font, like huge text. Like now you learn. You you open the tag, you close the tag. It was it was very fun. I think I even bought one when I was in the US, by the way. But yeah, it it's it's really interesting how this project and these ideas, especially to educate kids,
+
+As you said, right in the beginning, they are the new generation, they are the future in general. So we are we are building things now that for sure they will be the the customers, the consumers, the builders of the future. And they will also suffer from the on the future with the mistakes that we're doing now, for sure, right? From from any kind of of perspective. So I I really like this idea. That's why I when I saw the project, I was I was I saw you. I said, okay, definitely need to collaborate somehow and and and
+
+for sure that can bring some value also for for our realm and zap sec and so on. But anyway, that's a different topic. any final words, Marcus? Any other questions? I think we can we can wrap up.
+
+Marcos Santos (43:24.021)
+Let me cry you forgot it
+
+Cássio Pereira (43:26.683)
+vo very good, very good. Just a second.
+
+Cássio Pereira (43:37.07)
+We I love this this crying of the developer. Rob, we have we have here on the on the podcast it's kind of a part where where we make developers cry. Of course it's a fun, it's a joke, but I I think it's easier today to make a developer cry. I would write a book for kids, but every developer should read this book. I mean, with illustrations, you know, for five years old kids that they need to go over each page, each illustration, and understand the story, and they need, of course, to write
+
+what they understood, what lessons they took from that specific book, which is for kids, I think would make a developer cry. They already don't like to read documentations, so so it's something that would be would be hard for them. Fun, but somehow hard I would say. You have any ideas, Marcus? And then Rob, you can add something if you want.
+
+Rob van der Veer (44:09.557)
+Hmm.
+
+Marcos Santos (44:23.381)
+I think that was nice if we put the developer to create a resume about the book and try to explain about the junior developer about the book.
+
+Cássio Pereira (44:35.417)
+A summary about the book and to explain someone okay, okay. Yeah. They they would hate it, I would say. Rob, you want to collaborate? You want to make a developer cry for fun, or you want to pass?
+
+Marcos Santos (44:42.185)
+That's probably.
+
+Rob van der Veer (44:46.381)
+I mean, it's an interesting experiment because there's a couple of deep worries and sorrows for developers right now that are like elephants in the room. So we can sort of avoid them, but we can also talk about them. So I actually like this experiment. And one of the elephants is that
+
+It requires good programmers to review. If our work is shifting to reviewing, we're not programming anymore. So we're losing the ability to program, which means we're losing the ability to review, which means we are eroding our skills. The only way to maintain being good reviewers
+
+and understanding architecture. You don't have to review all the code, but certainly there are types of use cases, applications, and parts of systems that require human accountability and involvement. And therefore the ability to review and therefore sharpening the saw, which means that engineers need to code, but AI can write all the code for you. So how do we solve that? I think that's one of the big questions of this time. And the...
+
+Solution direction, I like to call empowering AI, where AI is not doing everything. It's leaving some things to the humans, the things that provide the most learning value and ability to maintain your skills and don't necessarily need to take a lot of time. But for example, if you're a researcher, let's say if you're at university and you're a student.
+
+You don't have to read every scientific paper. You can ask AI to summarize them, but a good supporting system would at some point say, just like a colleague, now read this entire scientific paper from the beginning to the end, because you will understand how scientists work and you will be much more able to really judge this work and assess what's going on. So occasionally doing some work that lets you maintain your skills is I think
+
+Rob van der Veer (47:09.71)
+a holy grail right now in software engineering. And I think it makes developers, can make developers cry if you think that we won't succeed in that because that means that the senior developers of this time, of this moment will be the last of their kind. But I'm sure we'll find a solution, but I don't know what it looks like.
+
+Cássio Pereira (47:31.469)
+Yeah, I I remember jumping into a huge fight one day when I said developers are Lego builders because all the components and everything were already there, written by third party libraries. They just need to put them together, not actually build an algorithm of or ordering something. Bubble sort, merge sort, all these kind of things. and it was a huge fight. So now those fights is even ending. Like you're not even Lego builders anymore. You were telling someone to do, and they are doing for you, and as you said.
+
+the the the ability, the skill itself will not be coding anymore, but rather reviewing. But in order to review, you need to know how to code. Otherwise, how are you gonna say if it's wrong or not? Right? The same I I like to say the same for us from the blue team side, we need to defend in order to protect something, you need to know how they're gonna attack you, right? How the attacks work, how is the anatomy of an attack? What is a sequel injection? What is, you know, a prompt injection or whatever, in order to protect from that. If you don't know how they're gonna attack you, how are you gonna protect? So
+
+You need to know that both words. And as you said, the seniors nowadays, they might be the last of their kind. That I I would agree with that for sure. All right. Any final words, Rob? Last message.
+
+Final words like you're not dying, just let final message.
+
+Rob van der Veer (48:49.186)
+Yes, I have one. People don't expect that people are expecting you to know everything about AI because that creates too much stress, unnecessary stress. If you get a question, if you're a security professional, you get a question on AI, it's okay to say, I'll get back to you later. We'll look that up instead of making something up and hallucinating instead of the AI human hallucinating because the human believes
+
+the human has all needs to have all the answers. It's just too much is going on. It's too hard to keep up. It's okay to not know everything.
+
+Cássio Pereira (49:28.759)
+Okay, that's a cool message. I would say I'll not add anything there. Marcus, any final words?
+
+Marcos Santos (49:34.262)
+Just say thank you to Robby. Robby taught me too much today. Everything was very fine and for me that's very good to ingest this information. I'm very happy and thank you very much Robby.
+
+Rob van der Veer (49:50.104)
+Thank you so much guys, and thank you for having me. Really.
+
+Cássio Pereira (49:52.647)
+And I need I need to change the sentence. I cannot say final words. Like you're not dying. You know, I'm not killing you. Like any final message. Yeah, it's it's in my mind all the time this way. But anyway, people under you guys understood, right? Not my native language, but anyway. Rob, again, thank you for your time. Thank you for being here with us. That was one of more episodes of Dev Sacross Podcast. For sure, see you all next week. Bye-bye.
+
+Marcos Santos (49:55.222)
+Yes, the final message
+
+Rob van der Veer (50:01.357)
+yeah, yeah, yeah.
+
+Marcos Santos (50:16.629)
+Bye.
+
+Rob van der Veer (50:16.802)
+Take care.
+
