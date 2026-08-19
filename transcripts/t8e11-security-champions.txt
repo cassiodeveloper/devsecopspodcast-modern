@@ -1,0 +1,441 @@
+Cássio Pereira (00:23.412)
+Here we are Ben Your one more episode of the Sacops podcast. This is the number two hundred eight or nine, if I'm not wrong. But I'm Cassio Pereira.
+
+Ben-Hur (00:34.008)
+I am Bayner.
+
+Cássio Pereira (00:35.392)
+And here today we have an amazing guest. I'll introduce in a moment, without without further discussions, but in a moment I'll introduce her. I mean, this conference that I was in Vienna, OASP Global, was one of one of the most, how to say, one of the most productive, I would say. Not only by the talks that were very nice, but of the people that I met, had the opportunity to discuss and talk about a lot of things, even make some business. And of course, people.
+
+To talk and to bring a lot of content and nice content for us to the DevSecOps Podcast audience. So in a moment, I'll talk about her. But let's not forget that DevSecOps Podcast has the support of Nova 8, which is the distributor of check marks and SNC in Latin and also in some countries in in Europe. Purple Bird Security, that they will take care of you during and after an incident. For sure you're gonna need them. convisual application security, they are specialized in application security services, gold security.
+
+They also have specialized security programs and they can help you with Secure Champions, the topic of today, and anything that you might need. Digital woke, they have a full portfolio of application security solutions for you. So if you need the scanner, if you need the, I don't know, S-bone management, whatever, talk to these guys. And our new partner, Secure Habits, they are with us as well and they provide a full, full, I would say, full set of professionals.
+
+To handle your application security program and your application security project in general. That said, welcome, Lisi. Thank you for being with us. Thank you for your time. Thank you for the awesome presentation that you delivered in in Vienna as well. And feel free to introduce yourself once again. Thank you for talking.
+
+Lisi Hocke (02:23.665)
+Well thank you all for having me. So I'm Lisi. I've been working in tech now for over 17 years, something around that. Most of my career actually hands-on in product development teams. So I'm coming from the testing and quality area, which is basically meaning I'm a specialized generalist. now that I've fully moved into security.
+
+It's basically still the same. I'm a specialized generalist in all things application and product security. And it's also very similar to the work I've done before, which I keep being fascinated about every day that I am now in this full time role. What I love is basically doing good work together with other people, building great products that actually provide value to people, and doing this hopefully also in a secure manner so that we protect.
+
+people from harm. So yeah, that's about me. The talk that you mentioned, a shout out here to my partner in crime here, Mireia Cano, because without her, I wouldn't have been there on stage and we wouldn't have met.
+
+Cássio Pereira (03:31.926)
+Cool, cool. Thank you for coming and thank you for this introduction. And I I must be honest and make a confession. You did something on that presentation that I'm I'm sometimes I'm I'm have giving some presentations here and there as well. And I'm I'm talking to another friend. Hey, hi hey guy, we need to stop doing presentations like next next slides and just talking. People see, ask questions, we go home, right? This is over already. We need to make something different, you know, engage people.
+
+And you did that, exactly that, with this role play of the developer and security champions was awesome. Unfortunately, I was not the first one, you did first. But I mean, just congratulations because this is very nice. Keep the audience, get the attention. I think it's something that I wanted to to congratulate anyway. but maybe I would come already to the first question or to start our conversation.
+
+This kind of catching attention of people, you know, or putting attention on something that sometimes they don't they want, they are there to listen to something, so on. But as secure champions, for example, we can discuss on this program, for example, how to catch attention of people who they are not security, right? How to catch attention of developers, how to catch attention from from high management, product leads, that they have other goals, how how how to do that?
+
+Lisi Hocke (04:55.729)
+That's a core question to a lot of people to answer, right? It's also actually in other roles. I think we're not that special in security in that sense. But obviously, for security, it's it's one of those areas where you need to get their attention and the awareness before bad things happen, or at least that's the goal. Of course, when things have already happened, usually that getting that attention is rather easy. but that's exactly the harm we want to prevent, right.
+
+So getting their attention up front, I think what we definitely need to do is know our audience and meet the people where they are right now, what their needs are, what they are caring about, finding those synergy effects that we can also well, can we speak their language completely? Maybe not. Maybe because we're not in their role, we're not in their shoes. But we can try to find.
+
+wording and vocabulary that actually is more understandable instead of like throwing around I don't know the deepest security terms that and and assuming people know that right we we can't. So I would rather start with inquiry, curious inquiry actually, to see where they are, what their needs are, and if there's a way, a sweet spot to actually meet them there to convey risks, to convey
+
+bad things that could happen that are relevant to our business. Because if it's not contextual, it's often so abstract and so far away, so off from reality, right? That is also not really touching their lives in that in that real sense. That in itself, I think, does a a great step already. It's probably not enough. Of course, we need to also convey you know actual content, concepts also
+
+Cássio Pereira (06:31.362)
+Mm-hmm.
+
+Lisi Hocke (06:45.745)
+But to just first see where the other person is, I think does a lot of service already.
+
+Cássio Pereira (06:50.493)
+Okay. Piur, maybe to comment on top what Liz mentioned, I think at least my perspective in general, the market is already mature on tooling, right? We already know all the scanners, everything does does the job for us, finding problems, right? But communicating, connecting to what Lizzie said, communicating those problems, it's still an issue, right? Like you okay, you have a SQL injection on that line of the code, and it's critical.
+
+Right. Okay. So so what? Or you have a heap inspection on this part of the code and it's a low vulnerability. No, okay. Is it low, but there's the encryption of the whole company and that SQL injection is on a database which is, I don't know, irrelevant for the business. What what is your take on this? how tools communicate to even to us as AppSec? Because we know the content and so on, but even to us, right?
+
+Ben-Hur (07:48.332)
+Great question. Well, the part of the tools are well defined. I think we're are getting a little shift right now, right? Because I think traditional security tools like SAS, SCA, DAST, yeah, we are you're having good results from the from the market.
+
+I would say this, I ever say this, no tool is perfect. Some of the time no tool is good because we want the tool to do the things in our way, right? But today they I change it a little bit how we face security, right? Because for example, we ha we are having skills for security, MCPs for security, agents for security, models for security. We are facing security for security.
+
+Cássio Pereira (08:36.961)
+Security for security.
+
+Ben-Hur (08:39.35)
+We are you are having new tools that we need to check and see, hey, it will work or not, and at which cost, for example, right? But for the part of the tools, okay. But one of the challenges is let's say communication, right? For example, if I found something in the market, this tactic analysis tool that we already use have one specific issue.
+
+Should I trust this output or not? For example, we have a lot of false positives. We have a lot of points that, hey, this could be a vulnerability, but is this exploitable or not? Is this a false positive or not? And another face of the the trustness is and what I missed, right? So the false negatives.
+
+Right now, I think AI is helping us a lot in terms of explain me this because I can send a finding and try to, hey, explain me this and if it's okay or not, if it's expoil or not. But in we came to the same question again. Should I trust this AI that's telling me this? Or is it hallucinating? Is a hundred percent correct? You know? So
+
+In this case, I still do not have confidence that developers trust the security ecosystem because of a lot of this uncertainty, you know?
+
+Cássio Pereira (10:23.658)
+Mm.
+
+Cássio Pereira (10:29.409)
+Man, you you brought something important now and made me made me realize if it even if we do trust, even if we do trust, because I I think it and and then next next bowl, kicking the next ball to Lizzie. I I feel that as EpSec also I feel that this we are always trying to build our trust even internally. Like, hey guys, I I know the tool, I are we are scanning, we found a problem, this is the problem you need to fix, right? That basically that is that's the flow.
+
+Lisi Hocke (10:37.937)
+Mm-hmm.
+
+Cássio Pereira (10:59.639)
+But sometimes we deeply we're like, yeah, there's a problem. I don't know the application, it's I don't know the code. I have some idea, but I don't know the business context, maybe fully. And yeah, but it's a critical in a in a specific product. Yeah, let's fix it. We need to prioritize, right? Sometimes, even for us, it's hard to trust deeply on that finding. And you bring also some important thing. How about things that I don't know? How about the findings that they are there?
+
+But the scanner doesn't show me. Often I'm I'm I'm building a problem, a product as well with with AI and so on. And often I give the prompt like, okay, build me this login page, compliance, whatever, encrypt the data, put a captcha, all the security things there and requirements there. And then I ask another AI, could you review for abuse cases and so on? And there's a lot of findings, like, what's wrong? I told you to build it already properly. So
+
+Maybe the next point to Lizzie is AppSec is also trusting this ecosystem as being your how how is your feeling? You know, do I mean you got the point, right? Are we are we also trusting on this? Or we have trust issues.
+
+Lisi Hocke (12:12.367)
+I do think trust is actually a key word here in in a lot of ways. So one, as as Ben already mentioned, right? Like trust in the output that we get from automated tools, trust from also what other people maybe also tell us, or what they believe, what their current state is, even if it's like external resources. Like let's say the news claims it's like there's this huge thing, everybody instantly jump and fix it. Really? Like are we
+
+blindly following in that sense because someone says or a tool says it's important, the AI says like this is super critical. But is it actually and do we have enough information to gauge that make that decision is like what is the actual criticality in the context of our business, in the context of the system, with all the other layers of defense that we may have? Is it like
+
+Is it even reachable, right? Is it exploitable? Is it actively exploited? Yeah, then like do we have proof? Do we have indicators? That's a whole different story. But I think way too often what I've been seeing is we're like in all kinds of roles as well. We're jumping into that panic mode, that crisis that is actually rather artificial before because we're already jumping to that conclusion before we actually have the information.
+
+And I think that's the part where we could increase our level of trust if we would have better information to really make good judgment on. Because I think that's without kind of data points that that we have at our hands, I think it's pure guessing sometimes, based on surely based on past experiences as well, like stories that we we are still tr good in trying to.
+
+Cássio Pereira (13:59.467)
+Mm-hmm.
+
+Lisi Hocke (14:03.889)
+pull other data points and then if others are missing, right? But then it's like an an argument even or like a standoff, even between security people, right? So how do we then speak with that one voice to, for example, engineers if we're already not like aligned? So I think this kind of trust issue in what is the actual situation and then what how we want to respond to it, I think this is a really a key point.
+
+Do I have the final answer yet? No, definitely not. We're still finding it out every day for every different situation actually. So
+
+Cássio Pereira (14:41.756)
+Yeah, and and and I remember I mean after also a decade working in in security of being working with I don't know Veracode, Checkmark, Sneak, Op G SemGreb, and a lot of tools. And just for giving an example, right? We got I was doing POCs in other companies, for example, so we got the classic web goat or or juice shop from OASP and we scan and the three vendors, right? And the results they might be similar, let's say from an enterprise level, but still.
+
+Vendor A will find you 10 problems, vendor B nine problems, vendor C 11 problems. Like what I do, you know, and and and one difference or another, it might be that critical that might impact your company, or the one who found 11 might have more false for false positives. The one who found nine might have the nine true positives. Like it's very hard to get to this, it's very hard to get an answer, and usually and
+
+Most usually most of the cases, we are trusting those tools. And it and it's not that they are wrong, they are doing an awesome job, I would say, but it it is this, you know, feeling that 100% I cannot trust. maybe the the other example would be we we have usually as humans, we have problems, right? Healthy problems, and you go to the doctor because you have a pain, a symptom in general. And the doctor will investigate that specifically symptom.
+
+Will not go over your whole body or whole history of life. No, you have a pain in the back. I'll check your back. Your neck, maybe, and and that's all. I'll not check your feet or your heart or whatever. If that doesn't fix, it might go deeper and deeper and deeper to try to find the root cause, right? And and I'm trying to make this parallel in NAPSEC. We we don't do that, right? Okay, I want to find the specific problem in my code or my application. Like scan everything.
+
+Hopefully you find all the problems I have, I'll try to fix them. And I don't know if we industry, right, should should change that. I don't know. I'm just sticking out loud here. Before the next question, which is how how do we how do we try to scale EPSEC? Because because it's also a challenge, right? It's one of us against like this 300 of Sparta, right? It's one of us against 300 of of developers, not against, but you know.
+
+Cássio Pereira (17:01.6)
+To support them and and to facilitate. How do you see Lizzie? Then Ben Yu can you can comment as well. How do you see this scalability? Because the Secure Champion programs they are more popular. I've seen them failing like epically. personally, I failed four times. I'm on the fifth, and it's doing well because of one thing I'm doing different. I I will share after as well. but please bring bring your thoughts on this, and then Ben Yuriu could comment as well.
+
+Lisi Hocke (17:31.141)
+Yeah, scaling is is definitely a big question. one answer you already provided that people made popular is the security champions programs. And yes, I've also seen reports that most of them actually fail due to various reasons. There are some common let's say traps to avoid. If it works and if you manage to get
+
+that kind of advocacy right in the engineering teams and also maybe not non-engineering teams, right? Like across the company, to have people who know a bit more than their peers and can bring that up to the table right in the moment when decisions are being made, right? That's absolutely helping with the scaling part because then pe the especially to spread the awareness. If they're also hands on and can like mitigate things, prevent issues even better, right? But just
+
+Spreading this kind of educational part can work well through a champions program. Of course, education can also be done differently, because in some way or form we still need to spread the word.
+
+But it also can fail epically if you like, I don't know, just provide some e-learning courses and everybody just ticks the box because they have to comply with the regulation internally, so they pass the audit and whatnot, right? Like it's not like then then it's past the point of the meaning behind it, right? The other way, of course, that or of course, that I see how we can scale is through automation and basically systems.
+
+Cássio Pereira (19:04.747)
+Mm.
+
+Lisi Hocke (19:14.907)
+providing making security easier, like having the the path that's the easiest to go also be at the same time secure without you having even to know about it, right? Especially if we're really thinking across the company for all kinds of people. I mean right now we're speaking about mostly about application security, but that's also more than engineers. So if we have tooling or rather systems in place that
+
+Already adhere to good principles so people cannot as easily do the wrong thing in that sense from a security point of view. That I think takes away a lot of the scaling pressure. Besides that, it still needs education, or in our case, the champions program, for example, or some way to spread the word and set priorities and.
+
+Convey like convey also the trust in okay, this is now really important. But I think systems are also needed at the same time. So that would be my answer. I'm curious what do you think then?
+
+Cássio Pereira (20:21.537)
+Bayer.
+
+Ben-Hur (20:26.828)
+Well, like everyone in application security, we have sometimes some time in the time we tried and failed the security champions program, right? But it's it's security champions program, it's something really difficult to have a single standard because it depends on a lot of things like culture, how the company is organized. But
+
+Some of the things that I failed and I learned about it and I changed it entirely, not only in the security champions program, but in the way I do application product security, i security, whatever, software security in general, is in the beginning, the security champions, I was thinking, hey, these that security champion is my security arm.
+
+In that team. Okay. So I've started, hey, you will know security to help prevent vulnerabilities, for example, right? But this is extremely difficult to scale because the developer already has to do a lot of things, right? performancing, performance, code, design, etc. And we want to turn them in a security guy, but
+
+We do not have the security, the development knowledge in the same way that we know they have security. So I it took some time for me to understand because in the beginning we think it's always people problem, right? That guy do not want to learn, that guy do not want to apply the security. So in that in a specific moment in my career, I shift, hey.
+
+What the developer wants about the security. Get rid of that security thing because they need to build a product. That's it. So if we have, for example, an SCA block in the pipeline because a dependency is vulnerable or something like that, they do not want
+
+Ben-Hur (22:50.73)
+Be truly only us want to learn that thing, right? No one wants to learn that shit. So that guy does not want to learn about the security finding it. They need okay, how can I fix this quickly and get back to my work? So I understand that the security champions, when I succeed the first time, the security champions.
+
+Ben-Hur (23:20.46)
+They are s they are someone that
+
+Help the team to get the security things out of the way without need to reach me. So I need to provide the easiest solutions for the things that we are creating the company. And they helped me to support the team around that. For example, I will never teach a security champion to run a proper threat modeling.
+
+They can have, for example, top one, two, three, four, or five security practices in mind. But it's exactly what you said, Lit. Auto mentioned. For example, they will they will not review the code, even this age of AI, right? That we are not even reviewing any code. So they will not review the code to find SQL injection. But if the pipeline blocks him because they have a SQL injection,
+
+Hey, this is because of this. But if we expect them to know all the things about application security, know the thing about security coding and everything that we do not create the automation that provides the security guidance for them in a way they can help the team get rid of that security blocking in the easiest way, we will not scale. Because at the end of the day, for example,
+
+Hey, we need the authentication part done. Okay, good, good. They do not need to build authentication every time they found a vulnerability about authentication. They need to use the security default about authentication. And my job is to go to all my security champions because we cannot stop all the company to can you do you have a minute to listen the security world?
+
+Cássio Pereira (25:24.288)
+Mm-hmm.
+
+Ben-Hur (25:24.512)
+Secret word, right? We we cannot stop all the company all the time because of the security. For one of the reasons is okay, let me reduce the blast radius about taking attention from the engineering team or other teams in the company. So let me have the security champions from each area because it's my focus point, right? And my work there is: hey, there is a new security default.
+
+There is a new security practice. There is a new good thing about security that I need to tell you right now that to help everyone here in the team. So, but the work starts with me building the security practices and not throwing in their shoulders: here is the problems and how the world solved this. Learn and spread the word. You know, this is my.
+
+I have some more acid opinions, but for now that's it.
+
+Cássio Pereira (26:26.508)
+And and we we mentioned already in other episodes this this your perspective on this way. I agree with 99%. Just the part of the developer does a lot. I totally disagree because we know that they don't do that a lot anymore. I was a developer for 10 years when I needed to make work F-word JS in Internet Explorer six, five, seven.
+
+That was developing something, you know, maybe even hacking the CSS files to make it work on different browsers. And then I saw that evolution of coding is not no longer building algorithms, but it's rather taking libraries here and there that's making everything that you need and you put them together, which is then I call them as Lego builders just on software. And now, and now we are it's even easier their life and mine as well, because I'm still developing.
+
+Because I have AI. I just say what I want and they and I can say sp specifically, okay, build this for me in Java using this specific library, this specific framework. That's all, right? Build for me and they will build it. I don't need to code itself anymore. I of course I have those skills to review if I want. You also mentioned nobody's reviewing. They are doing the reviewer as QA, maybe as as Lizzie said, right? She was testing before, etc.
+
+Lisi Hocke (27:48.217)
+Mm.
+
+Cássio Pereira (27:49.172)
+It was like that so that the developers' work today is much 20,000% easier because they just ask. So as app sec, I would be now pushing even more for security practices because now they have even more time. Even to write that prompt to ask a feature, you can write it properly with security requirements. You you don't know how to do threat modeling. I agree with you. It's very hard to do threat modeling in general and to teach and to scale.
+
+But now you have an agent can do for you. You can have a template how to prompt, okay, list for me a few abuse cases on this feature, or use the stride model to identify threats on this specific scenario and give me the the fix implementations for that. So that's that's my comment, I would say. I I believe that the develop not only developers, right? People building software because it's developer, QA, DBAs, product owners, right? Everybody is involved. We we blame too much the developers, I I understand, but
+
+Let's say everybody involved on the STLC, they have more time, more knowledge now, more tools in general. I I also Lizzie might not know. Usually I totally disagree with the word awareness. We are aware of the things. We just don't do it. I am aware that alcohol is bad, but still I can drink a bottle of vodka every day.
+
+I'm aware that eating one kilo of bacon every day might me get me a heart attack one day, but I still eat bacon because it's my you agree with everything, right? So we are aware of those things, of those threats, let's say, but as humans, we we just fall, right? We just do it. So I my my perspective is that sometimes and then next question, Lizzy, that sometimes we need we lack on this on this higher power support.
+
+And I'll give you an example. I I saw a documentary one day about allergy, food allergy, right? There are seven or eight categories of allergens, food allergies that that can affect people, like seafood, nuts, this kind of milk, this kind of things. And I remember one guy, his daughter, was born with six of them. So she had basically allergy to everything, just not water and oxygen, maybe, right? Unfortunately. So he built a restaurant.
+
+Cássio Pereira (30:12.991)
+That the whole structure of the restaurant, kind of not a fast food, but McDonald's has a very nice structure of producing the burger, right? The meat, the the bun, it's the salad, et cetera, et cetera. So the restaurant is specialized in people who has food allergy. So from the beginning of the order, the waiters and so on, and they they have a ways of noting the that specific order in different colors. What is the ingredient that you have allergies? Because you can die, right? Depends on the allergy that you have and the things that you eat.
+
+And then this order gets to the to the kitchen. This people who will prep the person who will cook or prepare has already a double check to don't put that specific ingredient. Then goes to someone after cooking and so on, someone to review that order before delivering to the table. So there is a whole structured way of making sure that who is going to eat or not die. So from the waiter to the chef and to the person cooking. So the point is the waiter could just say.
+
+It's a problem of the chef of the cooker. I'm not cooking. I'm just taking the order. I noted what they wanted or what they didn't want. So let's say that the allergy itself is the security stuff, right? It's a problem in this case. And everybody involved on this cycle is responsible for that security. Each one with their own accountability, right? Of course, the waiter is not cooking, that's the same as the the chef and the cooker is not bringing the the dish to the table. So he should someone should double-check. My question, Lizzie.
+
+Do you agree that people are aware of those problems? Sometimes we just don't do because maybe we don't have this higher management support. Like someone from the company, hey, we are a bank, we build secure things. We don't we want to block, we don't deploy, and that's how we do. Or it's my company, we deploy everything, we put on backlog, and we see tomorrow. Like, how do you see this?
+
+Lisi Hocke (32:01.723)
+gonna lead into this with a classic tester answer. It depends.
+
+So I think you ta you both touched on a lot of things here.
+
+Generally, I saw most of folks involved in developing products in all kinds of roles, they usually want to do a good job. Most of the people actually want to do a good job. And I think that the main job here, no matter the tools they currently have at hand, is to solve a problem. So with all that comes to it, and I think do they have it easier today? I think they have it differently difficult today. It's just
+
+Jobs are changing, roles are changing as we go with the tools we have, with the business, with the whole geopolitical environment as well. It's just different from my point of view and it keeps changing, which is also actually an interesting part of it. Are they aware?
+
+Also here I really think it really it it differs. I've especially with mo most of my career being in testing and quality roles, I had to learn and learn and unlearn again and learn to not assume anymore where people are and what they already know and what they're aware of because
+
+Lisi Hocke (33:28.687)
+I always realize the more teams I've been working in, the more people I met who came from very different backgrounds, while they were literally wanna do a good job and they do the best in their current knowledge.
+
+Often I found like fundamental basics missing where I realized, of course, yes, I'm growing in my career. So for me, it's now like what isn't easy for me now wasn't easy for me back then, right? So it's everything is so relative. Right now I'm also encountering people every day who some are actually aware of certain security issues because some came across some news. Maybe they heard a personal story of a of a friend encountering something.
+
+But many things that have been around for ages, like not really new attacks or something. I've I'm still meeting a lot of people who are literally not aware. And especially that this is happening like every second, right? Or the minute you bring something on the internet, like what happens then, right? So I do come back to again meeting people where they are, finding out, and then trying to.
+
+Not or offer like give an offer on what what else is out there. If they want to follow that path, they will be in intrinsically curious to learn more. But I cannot assume that awareness is there. And no and also not from stakeholders for business, but also not from my fellow developer here, my my fellow product manager.
+
+it it really differs a lot on what they came across in their past experience and who am I to tell, right? It's it's their past. I don't know it yet. So if I'm not fostering those relationships and finding out, there's no way for me to tell. But I I did learn to assume less, honestly.
+
+Cássio Pereira (35:25.459)
+Good point. You were optimistic because my heart is so darkness. Like I've I really feel that we are aware. Sometimes we just as you and as you said, people also want to do their their good job. So sometimes even on your presentation or some other presentation, I saw that cognitive load when you get something. so sometimes I think it's it's more on that, like, security folks are I have an SCA library to fix, like
+
+I don't even care, I don't even know what is it. Okay. Like in deeply, you know, deeply they I know that security risks are there. Like we all are more or less on this sense. That that's my that's my point of awareness. It's just like, okay, I have something more important to do because my bonus, my metrics, my KPI, whatever, they are not attached to this SCA PDF, whatever report you gave me. So that's that's where we are. Okay, I would focus on what I have to do and
+
+lazy talk after with other people Ben Yura don't care about you so yeah maybe maybe it's this way yeah that's that's the thing okay cool about this maybe next point about this training awareness education how do you feel we as epsec are failing because
+
+Lisi Hocke (36:26.225)
+Where are the incentives in system, right? This is really mattering.
+
+Cássio Pereira (36:47.755)
+Because there are tools, there are platforms, there are everything there are, you know, to help us, to guide and to provide content and so on and so forth. This podcast, I believe I really believe that after 200 episodes, it's definitely something that people can learn something, especially from our guests. But I believe we are still failing. Because as as you said, if people are still not aware, if if we still need kind of secure champion programs.
+
+We are still there as AppSec engineers or leads or whatever. So we are failing. We are doing something wrong. Because if you are providing content, so how you feel? Do you feel we are failing on this point or I mean we as AppSec industry, yeah?
+
+Lisi Hocke (37:33.937)
+think we're failing in two ways mostly, or at least that's what I've seen most often in my experience. One is the I would say even classic, let's just throw a tool in the pipeline, it'll be good. It's like this is usually
+
+doing more harm than any good because you're leaving people alone. You put something in that might even block it, right? Like as Ben said before, then people don't know what to actually do with it. What it does it even mean that I have to solve my problem, right? So we're just gonna suppress that warning because pipeline is green that right. So that's completely beyond the point. And sometimes it's just also alert fatigue because you're getting so many notifications from all over the place and
+
+you somehow try to muddle through and solve your problem because that's where the incentive is, as you also mentioned, Cassiurain. So I think that kind of approach, like leaving people alone with tools, doesn't work. And the same also with training resources. Just hey, here, as you also mentioned before, right? Here's a bunch of things like off you go, become the next security expert. it's it's not realistic.
+
+Because security is just one quality aspect they need to take care of, if they hopefully even have the capacity to take care of any kind of quality as as well. Because again, I'm coming from the general quality part where you have a lot of other aspects as well that are also very important and also can cause a lot of harm, like accessibility, literally causing harm every day with most products that I know.
+
+You also need advocacy for that and also learn a lot about that as well. Then there's other aspects, performance, observability, and so on, like great so many things that are part of the actual problem, but not really well supported by business incentives. So this is definitely a dilemma that we have. And I think in AppSec we're also failing to con to acknowledge that security is an important part, but only a part.
+
+Lisi Hocke (39:43.291)
+So how can we make it easy for people to know just enough to do the right thing and to have the systems to support them, right? But not block them in a way, but more guide them. Because I don't know, I don't know. My philosophy about gatekeeping is people will find their ways around and rightfully so.
+
+Cássio Pereira (40:07.051)
+How many bypass I did myself to bypass the security controls because I needed to do something to my job. And it's a very cool point as you mentioned. Because I I see different, but we're trying to find this common ground in general to help developers and companies. Like security as qualities, they are part of the product, but are not like fundamental and very important parts.
+
+Lisi Hocke (40:13.764)
+Exactly.
+
+Cássio Pereira (40:36.243)
+And of course depends on the business, right? But for example, I I worked for ABB, industrial control systems. they were do basically doing robotics, hardware, and so on with software embedded for factories and so on. So I I I always remember the case where there was a problem, very long time ago. a vodka factory was impacted for a malfunction, whatever a problem. So the vodka factory was shut down for an hour. Okay, what is the impact on the whole humanity?
+
+A vodka factor is shut down for one hour. Like, okay, right? We we can accept that. What is an impact of a food company producing food one hour stopped? Or a pharmacy, right? Medication. Or I don't know, the energy company, water company. They are still software controlling them. And security is part of those softwares. But for some of them, like they're not optional. Cars, for example, they're not optional. Security must be there on the on the
+
+Best of the breed, while my e-commerce selling DevSecOps t-shirts, I don't even care about security. They can be offline, right? There's no impact on the humanity, on the society itself. So I agree with you. Like security is part of it in general. Just I have this feeling that sometimes places that security are a very important part. People don't consider it as such, as key way and quality itself, right? Beur, any thoughts on this?
+
+Do you believe security is important, Baymor?
+
+Lisi Hocke (42:08.081)
+Ha ha ha.
+
+Ben-Hur (42:09.47)
+A little bit. Well, talking about where application security is failing or b it's not because application security is failing overall, right? Because in fact if I we heard a lot about we have AI, so application security is not a problem anymore.
+
+Cássio Pereira (42:29.237)
+Mm-hmm.
+
+Ben-Hur (42:30.954)
+Now it's a problem. Now we need to check it. It's only a different thing, right? But application security is a little bit a large place, right? Pantestrat modeling, security requirements, a lot of things. Let's say where application security is failing in the context of security champions, for example, in the vision of the developer or the security champions. Well, let's see what is aside of the application security in.
+
+The pipeline, for example, the pipe the checking the pipeline. If a developer commits a code and push a code, then it says the build is failing. He trusted that output and check what the build is failing. If the unit tests failed, they trust and check the unit tests. Check what's failing. The end-to-end, the lint, the whatever in a trust. Why?
+
+The fucking security gate when it's running, they say it's failing, they don't trust. You know, because we have three checks before the security and they trust, and then the security, they not a threat. Because let's get out of, let's say it's not the security step, it could be any other step, okay?
+
+Ben-Hur (43:54.551)
+When the build's failing, they know what the build is. They can check what is failing and try to understand what's failing. Right? When the unit test failed, they check where the unit test and check what is failing. When the security is failing, we say you have buffer overflow vulnerability.
+
+Cássio Pereira (44:19.531)
+Clássico.
+
+Ben-Hur (44:24.168)
+So and then we came back to the same point that we talked in the in the beginning of the episode. They don't trust this because they and why is I don't trust? I think in myself in 30 years, for example, when I will be an old guy, everyone here knows an old people that do not trust new things, right? Because they don't understand.
+
+Cássio Pereira (44:28.959)
+Communication.
+
+Lisi Hocke (44:49.945)
+Mm-hmm.
+
+Ben-Hur (44:53.578)
+So they don't trust. It's the same. So we are failing because you are not getting that trust of you will understand what it is. And you are missing a lot of things. Let's say only for SAST. Okay. Hey, this is a SQL injection here, or this is a remote code execution here. Okay, we know what is a remote code execution. We study a lot to know what is a remote code execution.
+
+But they don't. And we know that remote code execution is a problem. But if you have 10,000 remote code execution in your SAST report, you need to prioritize, right? Prioritize why? Why not fix everything? No, because I need to know if what is exploitable or not. Okay, so we are removing the points of the truth, the trust.
+
+Because we have the findings, we do not know what is the false positives, we do not know if it is exploitable, and we know why this is a problem, but the developer do not know what is a problem. And that's the second point, the communication. So they do not know the finding, they do not know if it's okay or not, they do not know if it's exploitable or not. And at the end of the day, they are own they only have a thing that needs to be fixed.
+
+Because the pipeline is blocking, not because they understand the risk. And well, I hope these days that we are right now is better for this because it's a little bit sad because I really love coding, but I understand that we are not coders anymore.
+
+Maybe we could be an code expert that needs to look under the hood and think something, like someone that knows how to fix the compiler, know how to fix the yeah, exactly. Some can do that now. Because when we say code vulnerabilities right now will not be a problem for someone that created the code. It's a problem that the agent created the code. So the agent needs the communication.
+
+Cássio Pereira (47:02.078)
+Assembly clipper.
+
+Ben-Hur (47:21.462)
+To get rid of that vulnerability. You know, it's a the is is a it's a different place right now to deal with the same thing. Right? And other problems will appear in the in this road, but my point of view: the traditional EPSEC that is I will block you because you have a vulnerability, has all these kind of things that I will not repeat. Okay.
+
+Cássio Pereira (47:50.346)
+block you if you well we we we could stay hours and hours talking here but we need to work besides doing the doing the the psychops podcast before the end i want i i promised to share why my one security champion program is is taking off i would say it's because not by my choice but it's because i believe it's because the the high management
+
+Ben-Hur (47:51.298)
+If you tried.
+
+Cássio Pereira (48:17.513)
+The the job description of the developers is officially changed. So, like being a reward developer plus a secret champion on your job role description, whatever, means that your bonus, whatever, KPIs, and so on, 25% are calculated based on the activities that you do for the security champions program. And you opt in, right? So you wanted to be a security champion, you are not forced, and so on and so forth. So this
+
+Makes you like okay, I can have my bonus in the end of the year 100% if I do that, or 75% if I just don't do these activities. So it's your choice. But since it's attached to your pocket, I believe it's one of the motivators. I think Lizzie was presenting about this: the motivators, this kind of things. It's one of the motivators that makes you okay, I will engage first. You opt into the program. Second, right? There is this. So this HR from the whole company structure.
+
+They agreed, like, let's do that like this. So people just don't join. And okay, I joined, I'm a security champion, I don't do anything. Like we want them to progress, we want them to do the things. Also, some promotions are attached to this. So you you are, I don't know, level three developer. You want to be level four, you need to be a secure champion. You will not get promoted because you are doing the same. You need to do more, etc. etc. So it's one point. Some of the things I agree, some others maybe not personally, but it's it's what makes making this program
+
+works and grow and work and run. I don't know. The others totally failed, especially because of this management support. Like one of them just like, okay, do the security program. Then I do. Then then people say, Cassio is asking us to do ARB. no, don't don't bother. Focus on your job. Like so what so what's it what is the purpose of the program itself? You know? So yeah
+
+Lisi Hocke (49:58.928)
+Ha ha
+
+Cássio Pereira (50:04.145)
+I wanted to share this that it's working. Liz, you want to to share some like one thing of the Secure Chapel program that could work and maybe one that is like please don't do it because it will fail and maybe Ben Ru as well, so we can find out.
+
+Lisi Hocke (50:19.319)
+So if I have to opt for one thing only, I think the most crucial part for me for any kind of program, if it's a security champion program or any other community or whatnot, I think is psychological safety. Because that is sort of the starting point, the basis for relations to go well and to hold longer and be sustainable and be more effective. If we are not daring to bring
+
+the actual concerns on the table, the issues that we have, the worries that we have, maybe also a mistake that I just made. And I'm not daring to actually share share that because I might risk even my position, right? Not only destroying a relationship, but like more existential, then we do have a way bigger cultural problem. So fostering psychological safety that people are feeling they can
+
+bring up all those topics without getting retribution for it. And then we can actually work on those together. I think for me that's the most crucial thing. And also very applicable for security champions, where we do talk about things where people might have chosen unfortunate ways to implement a solution or really made a mistake or maybe leak credentials somewhere or like where also like there's a lot of shame attached and also blame I'm seeing
+
+ramp and around. So if we're not investing in psychological safety from the start and also upholding it, I think we're already failing from the start. So I think that's definitely one to maybe that's even on both sides because yeah, it can really go both ways.
+
+Cássio Pereira (52:00.329)
+Yeah. Agree. Totally agree. Bayer, one thing that you would recommend to do or not to do? Don't block
+
+Ben-Hur (52:07.572)
+Yes. For me, instead of bloating from the beginning all the security champions with a lot of things that the you need to do if you want, shows the top one, two, or three actions that is directly connected to your goals. For example, we do not have critical security and dependencies, okay.
+
+So this is hundred percent free, critical security independence. Perfect.
+
+How we can start. Hey, all the dependencies that's only patch version upgrade or patch or minor version upgrade that contains a security critical security should be fixed by the end of the quarter of the first six months. That's it. You know, you get that goal and you spread that goal because it's not perfect. It's not all the critical security vulnerabilities, right? Is
+
+Critical securities and libraries that we can upgrade with patch or minor version. That's it. Low hanging fruits. Easy to fix, but scalable in quantity and risk reduction. Okay? And get those one, two, or three related to your main metrics and start with this.
+
+And not get the perfect that the easiest way to reduce the risk. Start with this. Then we start to going up and up and up with the requirements. For me, this is the perfect way to, hey, I have something that we need to do, but in theory, it's a little bit easier than what we are expecting in the future. But let's start with this. And
+
+Ben-Hur (54:10.89)
+If we can add some for example, hey, validate all I DORS, please.
+
+It helps a lot.
+
+Cássio Pereira (54:18.058)
+And fix all the sust, all the dust, all the secrets hard coded, all the container secret, damn. Since we are on this vibe, last part of the podcast.
+
+Ben-Hur (54:21.282)
+No, no, container security. Container security. Zero vulnerabilities about container security.
+
+Cássio Pereira (54:38.696)
+The best cry on the internet. Benur loves this cry. Lizzie, we have this funny part here where where we try to make developers cry based on secure on security practices. We've been a lot of of crazy shit here. Even Bayur himself was this training that the developer should do a training, one slash a hundred slides, he needed to click one by one, cannot skip, like crazy things.
+
+What Bayer, something something evil for today. You have something it's already preparing. Please, please, please.
+
+Ben-Hur (55:12.502)
+every daily meeting, the security champion should read the ten mandaments of the security, but it's a t it's a it's a ten page memo.
+
+Cássio Pereira (55:19.378)
+Yes.
+
+Cássio Pereira (55:22.922)
+my god, 10 commandments of security. I don't even know them, but anyway, someone needs to read every daily. So every day they need to read this, okay? Okay, I I agree. And need to be printed, right? Cannot be digital, of course. Need to print to bring to the daily.
+
+Ben-Hur (55:40.342)
+No, no, no. It's a ten page memo of how security works in the company that should be read every day because everyone should know this.
+
+Cássio Pereira (55:48.187)
+Okay. And print again, printed. Okay. Okay. And okay, I I don't have an idea for today, but I would add something to you. And your manager needs to sign the new version that you printed for that specific day, right? So it's signed by HR with a stamp, like, okay, they did the ritual for today. Cool. Noss, my god, this company would definitely bankrupt in the two days, right? Nobody would do this.
+
+Ben-Hur (55:50.806)
+Yeah, printed.
+
+Lisi Hocke (55:51.801)
+I would cry definitely.
+
+Cássio Pereira (56:17.084)
+Idea Lizzie, any ideas?
+
+Lisi Hocke (56:19.651)
+Well, I would say the team has a release in six months, like a big one, right? They raise it very early, super cool. And then they keep waiting for security. No response. Just waiting. But it it you they need a sign off, right? So they just keep waiting and waiting and waiting and the day before the release security says nope block.
+
+Cássio Pereira (56:46.762)
+Six months ahead, they could have said that, right? Okay. So the project will be delayed. As we say, how is this term in English? In Portuguese, we would say something like heads will roll, right? People means people will get fired. Like, yeah, cool. I love I love this idea. And they didn't for sure approve before because they were reading the commandments on every daily meeting.
+
+Lisi Hocke (57:14.641)
+No, they missed one day, you know, like that's why
+
+Cássio Pereira (57:16.138)
+yeah, and then you need to go to the CIO to make this the approval. my god. Okay, enough. Enough of this dev may cry today. I'm almost crying myself. Lizzie, any final words? Anything else that you wanted to share? I think we are approaching to the end, but I just want to say thank you. If you can share the slides of that presentation, I can add on the on the description of this video on the YouTube. If you're guys listening, any of other digital platforms, please grab this link on the YouTube.
+
+I'll also add there the LinkedIn of your profile if if that's okay, so people can, you know, ask questions, engage and so on.
+
+Lisi Hocke (57:56.753)
+Absolutely happy to. And may I just say I really enjoyed this conversation. So thanks for having me.
+
+Cássio Pereira (58:02.376)
+Yeah, it was nice. Beer, anything else?
+
+Ben-Hur (58:05.334)
+Thank you so much, Lisi. that's like that's a really, really, really important conversation because I think now is the time to check how the world will go with security champions. Because our role in software security is changing a lot, right? And for sure, the development of software is changing and
+
+Today I think telling a specific vulnerability and show specific vulnerabilities is like showing something the compiler, you know? They are using a lot of AI, and we need to think differently because, for example, should we add to our security champion program? How to use Asian safely?
+
+Cássio Pereira (59:01.59)
+By the way, one one of the programs that I failed is because I decided to change the name of Security Champion to Security Owner. So I created even more ego fights because the guy, no, I'm the security owner. As an owner, I have the power to say no. And the product owner was like, Yeah, but the product is mine. And security is mine. Yeah, so I created even more tension, even though it's fancy, right? But I mean I created more tension than yeah, man.
+
+Ben-Hur (59:17.633)
+Yeah.
+
+Lisi Hocke (59:27.331)
+Okay.
+
+Cássio Pereira (59:29.714)
+I created more tension than I wanted, right? Anyway. All right, guys. Thank you very much. Thank you, Lizzie. Thank you, Bamir, for today. see you all next week. I'm Casu Pereira.
+
+Ben-Hur (59:39.156)
+I am Bangor.
+
+Cássio Pereira (59:40.638)
+And we had today Lisi. Thank you very much, guys. See you.
+

@@ -2,8 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://devsecopspodcast.com.br/</loc>
-    <lastmod>2026-08-05</lastmod>
+    <lastmod>2026-08-19</lastmod>
     <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://devsecopspodcast.com.br/episode.html?slug=t8e11-how-security-champions-can-transform-your-development-teams-approach-to-safety</loc>
+    <lastmod>2026-08-19</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://devsecopspodcast.com.br/posts/security-champions-transform-development-teams.html</loc>
+    <lastmod>2026-08-19</lastmod>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://devsecopspodcast.com.br/episode.html?slug=t8e10-how-to-teach-kids-about-ai</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://devsecopspodcast.com.br/posts/how-to-teach-kids-about-ai.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://devsecopspodcast.com.br/episode.html?slug=t8e09-cybersec-games-cybersec-conversations-on-the-table</loc>
@@ -1064,10 +1084,5 @@
     <loc>https://devsecopspodcast.com.br/episode.html?slug=1-hello-world</loc>
     <lastmod>2020-01-01</lastmod>
     <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://devsecopspodcast.com.br/posts/how-to-teach-kids-about-ai.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <priority>0.90</priority>
   </url>
 </urlset>
