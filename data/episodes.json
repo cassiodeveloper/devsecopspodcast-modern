@@ -6,6 +6,23 @@
   },
   "episodes": [
     {
+      "id": "t8e12-the-surprising-game-that-transformed-application-security-training",
+      "slug": "t8e12-the-surprising-game-that-transformed-application-security-training",
+      "title": "T08E12 - The Surprising Game That Transformed Application Security Training",
+      "date": "2026-08-26",
+      "author": "Cássio Batista Pereira",
+      "excerpt": "Transform your approach to cybersecurity training with this insightful episode featuring Max Alejandro Gomez Sanchez Vergaray, a pioneer in integrating gaming into application security...",
+      "contentHtml": "Transform your approach to cybersecurity training with this insightful episode featuring Max Alejandro Gomez Sanchez Vergaray, a pioneer in integrating gaming into application security.<br /><br />",
+      "mp3": "https://api.spreaker.com/v2/episodes/74631730/download.mp3",
+      "download": "https://api.spreaker.com/v2/episodes/74631730/download.mp3",
+      "youtube": "",
+      "transcriptUrl": "transcripts/t8e12-cornucopia.txt",
+      "blogPostUrl": "posts/owasp-cornucopia-transformed-application-security-training.html",
+      "tags": ["Game", "AppSec", "DevSecOps", "Security Culture", "Developer Education", "Cybersecurity Training", "OWASP", "Cornucopia"],
+      "spreakerId": "74631730",
+      "code": "T08E12"
+    },
+    {
       "id": "t8e11-how-security-champions-can-transform-your-development-teams-approach-to-safety",
       "slug": "t8e11-how-security-champions-can-transform-your-development-teams-approach-to-safety",
       "title": "T08E11 - How Security Champions Can Transform Your Development Teams' Approach to Safety",

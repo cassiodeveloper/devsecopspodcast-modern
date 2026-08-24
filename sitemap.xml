@@ -2,8 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://devsecopspodcast.com.br/</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://devsecopspodcast.com.br/episode.html?slug=t8e12-the-surprising-game-that-transformed-application-security-training</loc>
+    <lastmod>2026-08-26</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://devsecopspodcast.com.br/posts/owasp-cornucopia-transformed-application-security-training.html</loc>
+    <lastmod>2026-08-26</lastmod>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://devsecopspodcast.com.br/episode.html?slug=t8e11-how-security-champions-can-transform-your-development-teams-approach-to-safety</loc>

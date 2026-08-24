@@ -1,0 +1,562 @@
+Ben-Hur (00:01.405)
+No no no worry.
+
+Cássio Pereira (00:02.964)
+Nowers.
+
+Max (00:03.209)
+Ha ha ha.
+
+Cássio Pereira (00:27.881)
+Hello everyone. Thank you for joining us today. We are here for one more episode of DevSecOps podcast. I am Cassio Pereira. I must say that I'm happy with the guest today. In a moment to introduce him, I met him I don't know when anymore, like two months ago in OASP Global UpSec Vienna. It was an awesome conference, by the way. And I had the opportunity to meet a lot of people that you guys already know because.
+
+Ben-Hur (00:36.539)
+I am Bangor.
+
+Cássio Pereira (00:55.059)
+Few of them were here on the podcast with us. but today we have an amazing guest. I'll introduce in a moment. We need to say that it's a pleasure also to don't have Marcos here today with us, right, Baer? To be honest, you know. Again. And in you know that the last episode, you were not here, and I did the same joke about you. So
+
+Ben-Hur (01:08.336)
+Again.
+
+Ben-Hur (01:14.611)
+Fortun. Yeah, because Marcos is the AI guy, right? He's creating agents like Pokemons, so it's extremely fun to see.
+
+Cássio Pereira (01:20.947)
+Mm-hmm. Cool. Cool. Good good good good reference. guys, remember that the DevSecOps podcast has all the support from Nova 8, which is the distributor of check marks and SNC in Brazil, and also a few countries in Europe. Purple bird security that they will take care of you during and after an incident. Conviso application security that I specialize in application security process and services, gold security as well.
+
+Max (01:23.153)
+Cássio Pereira (01:48.434)
+Services about application security. Digital woke, they have a full portfolio for you. And guys from Secure Habits, they have specialized professionals to help you with your application security program. And we have a new partner to come. I can I think I can announce already, which is Cybersec Games. They have incredible games to sell.
+
+To train you, to distribute, you can create your own game, whatever. And it's connected with the topic today that we have our guest, Max. I will not even try your surname. Feel free to feel free to say it because I'm still struggling to learn Polish. Then I need to come back to Spanish. Man, it's too much. But welcome, welcome to DevSecost Podcast.
+
+Thank you first for your time, for being here with us, for your amazing talk back there in in Vienna and the t shirt. I remember your t shirt from your son, something like this. again, thank you. Introduce yourself.
+
+Max (02:43.532)
+Yeah, from my son.
+
+Max (02:48.03)
+thank you very much. It's it's a pleasure for me to be here. Well I am Max Alejandro Gomez Sanchez Vergaray from Lima, Peru. And I am software engineering and I designed and led the application security program of one of the biggest banking Latin America. And I led this program for ten years, almo for almost ten years. And then in the this year I created
+
+my own consulting company focusing on application security programs and in software development secure software development trainings. So I like for example all cyber psychic games. I like the integration of cybersecurity in DevSecOps using checkmarks or another tools and this is my my knowledge area for example. And you know I I know Nariman2 of SecureAbbits
+
+He's a great person. So so it's great. It it it's i i I I believe that it is a a very small world but but it's a great world.
+
+Cássio Pereira (03:54.558)
+Yeah, and man, be before I leave I left Brazil to come to Europe, I was I already had in mind that okay, IT in general is a very small world. And then I moved to Cybersec, okay, even smaller, because I was a developer, right? Then even smaller. And then I s I came to Europe like okay, new world, new people, and everybody knows everybody. So it's still it's still a small world, I would say. but I would start first
+
+Max (04:06.35)
+Mm-hmm.
+
+Max (04:12.577)
+Right.
+
+Cássio Pereira (04:18.643)
+about games in general like did you are you are you are one of the contributors or the creator explain to us what is what was your role on the cornocopia game right because i mean we all know oasp and all the projects etc etc i mean not even all the projects every day they have new projects and and it's a very amazing institution i would say but tell tell a bit about cornucopia and what you did there and then we take from there.
+
+Max (04:42.892)
+Yes, a and that's a great story because a few years ago when I started in application security journey, I one of the first methodologies that I identified or of or one of the first tools that I identify or that that I f found was always cornucopia. And it was very interesting because the most of the people when when the most of the people start to work in cybersecurity
+
+almost all the people hear about OWASP Top 10. But you know OWASP Top 10 is just the the just a a a little bit in all the world of OWASP. So I found OWASP Cornukopia and I discover that using this playing card game we can relate an attack
+
+with a security requirement, with secure coding practices, with security story, and you can create all your traceability metrics only using OSCOM copia. So I started in my previous job trying to to convince all the bank that they really need to consider
+
+Security requirements, the the test cases, the user stories, or security user stories. But you know, the most of the people not necessarily talk in English. So my first job was to find those cards, discover how to play Oz Cornucopia, the value of the playing of Ovos Cornucopia, because the most of the people think that hey, this is to developers having fun.
+
+But I believe that this is the way that developers and all the software development teams can discover the import the importance of integrated cybersecurity in their backlogs, having fun. The having fun is just a a part of all the value that OS Correctopia give you or or give us. So my first job
+
+Max (07:05.89)
+I believe that it was before that Google Translate exists, was making the translation of all cornucopias. So the first official translation to Spanish was mine. And
+
+Cássio Pereira (07:09.822)
+Yeah.
+
+Cássio Pereira (07:19.678)
+Ta thank you for that.
+
+Max (07:21.774)
+that's great. I I and you know in in in in all those years I identified that probably the way that the most of the people play OWASP cornucopia wasn't the best way of playing cornucopia to the organization where where I work. Because a lot of people use OWASP cornucopia to make track modeling.
+
+So I I was studying from the Certified Secure Software Lifecycle Professional Certification a few years ago, and I discovered the concept of of abuse case modeling to identify security requirements or identify security use cases. So then I try, hey what if I can use this concept of OWASP cornucopia.
+
+Not to make thread modeling focusing on architecture because I was talking about a hundred applications. So how can I relate the threads of these hundred applications and relate the security requirements of these hundred applications? Was really impossible. And and I identify, hey, what if I shift left this thread modeling and maybe evolve this thread modeling to
+
+abuse case modeling. But you know in Agility no one uses use cases. They use user stories. So then it changed from abuse cases to ever user stories modeling. And I saw a video of Abby Douglen in YouTube focusing on value-driven thread modeling that was great and was one of my principal references to make this change.
+
+And then I discovered another thing that you know w when you're working in in a company that really needs to deliver software very fast, it's very hard to integrate security in the software development process. So I find or fo found, sorry, one paper that was called Secure Scrum How to Integrate Security in Scrum without the creation of a parallel backlog.
+
+Max (09:50.166)
+Because in in this journey I identify too that at the beginning we have a product backlog and then have a cybersecurity backlog. But in this competition, the cybersecurity backlog never wins. So I really need I I really needed to create unique backlog. A product backlog considering all the security requirements as a task.
+
+of user stories. So I create a variation I don't know if if if it's really a methodology, but I create a variation of how to play was Chromocopia focusing on every user stories modeling. So always formalized it the past year and make the the video publish the video to to to other people and was great it is because it was a a a long year's job. But
+
+was great because you know here in Peru the people no are not talking about hey I need to identify security requirements they they tell you hey I need to play Oscar nucopia so it was the the very the very begin of this beautiful journey and the creation of this variation of the methodology
+
+was the the biggest thing the biggest thing that I have made with OSCOROP, the biggest contribution I believe.
+
+Cássio Pereira (11:21.492)
+Mm.
+
+Max (11:21.635)
+instead of of the translation that was great but be but but you know right now you have chat gpt you have cloud you have google translate so you ask hey please translate this and in one minute translate all the cards. I I took l like a month to to make the translation of all the cards. But the creation of this methodology was great and I believe that was my biggest contribution.
+
+Cássio Pereira (11:36.84)
+Mm-hmm.
+
+Cássio Pereira (11:46.973)
+All right, cool. I think it's it's a lot of things to start, but I would say, I mean, first I would say thank you for the translation without the Google translation. Even though I'm not a native Spanish speaker, I can understand Spanish. But I I assume that for the Spanish people that speak like the language and don't speak English, and you basically open a huge door back then for for them with this work.
+
+Max (11:51.137)
+Yeah.
+
+Cássio Pereira (12:12.454)
+As you said, nowadays with one or two clicks, you have anything translated to any language, right? Not even to the the only popular ones, but I'm I mean I'm learning Polish for five years, and it's not a popular language because only Poland speaks Polish. So so it it takes it takes a lot of effort to learn new language and so on. So I think this is was already a huge collaboration considering the time. And of course, this new methodology as well. I think it's it's it's a way of using something that was already there, as you said, the game.
+
+Max (12:26.114)
+Yeah.
+
+Cássio Pereira (12:41.704)
+Which is already a huge step for us because sometimes, at least in the past, was like sometimes to you see that okay, I need to teach something at the company, provide a training or something. But with a game, I know that managers and these old guys, they would see to this like people should work, not be playing, you know. Maybe nowadays it's a bit different, but and and you did this in a bank, so it
+
+Two miracles translate without the Google translator and implement gaming in inside a bank. and baby, I would bring the ball to you, Baeru. Did you have similar challenges to train teams like not using games, but you know, not not doing the traditional ways, like meetups or talks, you know, maybe games, maybe I don't know, dynamics, other other other ways. I can share one quick before you answer.
+
+Max (13:25.911)
+Yes.
+
+Cássio Pereira (13:34.141)
+I remember worked a company, I think it was a bank as well. During the October, the cybersecurity month, we were doing some kind of theater or roleplay teaching. So basically random people, random day in the office. They arrived like with how it is in English, costume, like fantasy, whatever, like Batman, or you know, random stuff. And one guy was the thief, and like he was just randomly.
+
+Max (13:52.344)
+Hm. Yes.
+
+Yeah.
+
+Cássio Pereira (14:00.371)
+Walking by the desk and mm, I can see your password. I see that you have documents t up not upside down on your desk. I see you have a screen with inf sensitive information, whatever you know, just role playing and the batman came in or the police guy, hey, you were stealing information, you know, this kind of thing to make people aware of this kind of dangers or you know, make them aware of the cyber threats, even the physical threats and so on. So it wasn't.
+
+Max (14:24.931)
+Yeah.
+
+Cássio Pereira (14:28.808)
+total and non traditional way of of trying to teach people, you know. So Bayer, did you have something different, some some challenge like this, or how it is?
+
+Ben-Hur (14:38.675)
+Yeah.
+
+Max (14:38.836)
+Yes, it was very very challenging. Was very ch I'm sorry, Ben Bur, d did you want to talk something?
+
+Ben-Hur (14:45.435)
+Yeah. Well the for me the most challenge thing is because most of the security trainings they are propagated across the company and here this is something mandatory and you need to go there to listen because it will be required the it's yeah it's it's ta if it started in this way.
+
+Cássio Pereira (15:02.332)
+One hour.
+
+Ben-Hur (15:08.701)
+probably you you have some impact in the engagement because it started like this, right? So yes, for sure. every training there is five percent of the the people there that really wants to learn something. Most of their most of the people there that they are there because the it's mandatory, right? And yeah, no choice. for me
+
+Cássio Pereira (15:31.764)
+No choice, right?
+
+Ben-Hur (15:38.064)
+It it's not a security training. It's a security challenge, security leaderboard. It's a s is something like a hackathon, something like a prize, something like I really like to hey, come here because you go you are going to be better as a software engineer.
+
+Not because the security is mandatory. We are here to teaching you a new skill about software development itself and not be of my area or something that no no no. Let's talk about, for example, I really do not like to have a this is the security, I da da la. Say the security, da da da da security for me, for me. If you always create a side channel.
+
+Cássio Pereira (16:17.309)
+Yes.
+
+Ben-Hur (16:37.839)
+security you are not inputting security in the in in the veins of the process right it's like what it yes it's it exactly exactly so that that same philosophy is everywhere for example we have one day of security I don't well we need to check maybe security sh yeah yeah may maybe we should
+
+Cássio Pereira (16:44.284)
+And and just and just like Mark said about this backlog, yeah.
+
+Cássio Pereira (17:00.596)
+We have three hundred and sixty five days of security.
+
+Max (17:04.83)
+Yeah.
+
+Ben-Hur (17:07.357)
+Find a way to have the security in between the things. And for me, the secret is let's talk about security without never, without one single time, say the word security. If you can do that, it helps a lot.
+
+Cássio Pereira (17:28.188)
+And and and just to connect all everything, and you mentioned Max Nadiman from Secure Habits. He was recorded with us two, three episodes ago, and he will be here again. So we'll discuss the cyber cyber resilience act from Europe. He will be presenting about this as well. he was mentioning about the communication challenge as well. And this that you said and Bayur mentioned like
+
+Max (17:44.29)
+Yes.
+
+Cássio Pereira (17:52.873)
+The communication of how we should apply application security in general, it's a huge challenge that f like I would say no one, but you are, I am trying, but you're few of us are trying to change in a way. And for example, as you said, using a game to teach something is already like a huge step for us, rather than as you said, you have a compliance train, you have to do because it's mandatory. We all know what it's mandatory because it's a compliance or whatever.
+
+But you know, we don't want to be forced to more things or do we want to force people to do more things. So this communication would would change a lot. and maybe I would bring to this next question to you, Max, which is you think as you said, corno copia, you said coronocopia people were using more to to do threat modeling, right? And threat modeling it is already not easy. I mean, takes time, you have 10, 12 different frameworks.
+
+It's even hard to choose one. We should I use pasta? Should I use stride? Should I use both of them? By the way, the guy, the guy who invented pasta is Italian, right? That's that's why the name is pasta. That's amazing. I didn't know that. That's amazing. So so how do you see do you see other areas rather than threat modeling that we could use games or different ways to teach people, to make them understand? You know, how do you see this?
+
+Max (18:50.211)
+Yes.
+
+Max (18:58.462)
+No.
+
+Yeah.
+
+Max (19:14.554)
+I I believe that you can use games in all the software development process because for example there are another games that are focusing on incident management and are great. But when you need and I want to be very careful with what I want to to to to talk to you to tell you, sorry, is that one thing is make
+
+one application secure and another thing is make 500 applications secure or 400 so when you really need to to escalate your application security program the gaming process is more difficult
+
+Because when people can tell you, hey, why do I really need to use a game, for example, to make my DevSecOps more secure if I have tools? You need to escalate, you need to to solve some some manual ways. But in in in in in this in in this example about about OS Chronocopia.
+
+We are talking about and I learned this from Sans a few years ago. When you talk about the PCCOPs, you talk about in band practices and the out-of-band practices. So the inband the in-band practices, almost all the in-band practices, you can automate automate them. And probably the word is not that you can, you really need to automate this. But the out-of-band activities.
+
+are not necessarily automated. So you really need to make more stronger the criteria of the person of the people. So you can use the game but it's very important to understand that this gaming phase has a really clear objective, a really clear goal. In this way
+
+Max (21:19.041)
+you can use the gaming to make the awareness and make the cybersecurity culture more stronger. And then you can use this gaming to identify security requirements in a better way and in a more structured way because when you have a lot of software development teams, you have different criteria
+
+Because it's not the same me identify security requirements in one application that probably Casio or probably you Benho the three of us has different criteria. But when you use a structured way to identify security requirements, the difference of criteria reduce. So it's very important the use of gaming and the use of gaming in every phase.
+
+But with one objective, if I I don't know, when I knock every door to to use in gaming to identify secret requirements, I I didn't go to to the managers or the CISO telling them, Hey, I really need that software developers have fun, because
+
+Cássio Pereira (22:26.611)
+Well you could.
+
+Max (22:33.215)
+he would answer i i don't care is if they are having fun or not i i really yes and probably they they like this but the the the really the the the the value of this is a in a structured way having fun you can identify those secret requirements and you can identify this kind of attacks
+
+Cássio Pereira (22:36.883)
+I want them to cry.
+
+Max (23:00.757)
+So this is the the way that we use or the way that we discover the things. Because another way is you use your credit criteria, I will use mine, and then you use yours. But with hundreds of software development teams and with a really really short number of cybersecurity analysts.
+
+It's very hard because you can accompany you can go with every software development teams. So it was really important to at first change our mindset. Because I don't know if you have heard this, but the most of the times the people talk about cybersecurity practices. But what I really needed to understand is this is not a cybersecurity practices.
+
+This is a good software development practices that contributes to cybersecurity. So if you are working in your design and your design isn't secure, it's not a good design. If you are working in your functionality or you are not considering the cybersecurity characteristics that you really need to consider, this is not a a good analysis, or this is a it isn't a good software requirements discovering process. So
+
+Ben-Hur (24:23.165)
+Yeah, that's a good point because the difference between a soft a bug in the software and a vulnerability is what the other side can do, explore that bug, right? If the save button does not save, is a product impact in some ways, but if can if they can input something that can exfiltrate data
+
+Max (24:23.246)
+Yeah.
+
+Ben-Hur (24:51.907)
+Or change something. This this is also a bug, but the impact change from the bug to a vulnerability at the end of the game, what changes is the impact, but the beginning is a software defect, right?
+
+Max (25:03.363)
+Yes. Yes. And that's very important because at the end of the day, you are always talking about a software defect. A cybersecurity defect or another kind of defect. But at the end of the day it's a defect. And accountability of those defects are are of of the software development team.
+
+So what I believe that was the best way in in this beginning is that I was giving the software development teams one tool that can help them to reduce this kind of defects. So they use this and and they I I I can't tell you that they were having a lot of fun because
+
+Cássio Pereira (25:39.515)
+Mm-hmm.
+
+Max (25:58.948)
+They are not always fun If I want to have fun, probably I will play PlayStation. So you you you you you you you and they and once one of them told me if I wanted to have fun, I I can play PlayStation. So yes, y you probably will discover software security requirements.
+
+Cássio Pereira (26:07.833)
+You are right.
+
+Max (26:27.607)
+And you will have fun in this process. It's not the funniest thing in the world, but you can use this kind of I I don't remember how to say this in English, but in Spanish is una maniera ludica in a ludic way to identify the cultural requirements. So it was very important because in a ludic way they were discovering one.
+
+Cássio Pereira (26:45.573)
+Ludicway, yeah.
+
+Max (26:56.075)
+A good software development practices that can help its own team. So the principal value that they found in the using of a play card game wasn't the fun, was that they can, in an easy way, identify the security requirements, having fun, but at the end of the day, what they really wanted was to identify the security requirements.
+
+Cássio Pereira (27:24.399)
+And this this topic is is is really deep because you were talking and I'm processing here. Like you can build the best car, the fastest car on earth without brakes. So doesn't matter, you can throw away your car, like you don't have security at all, you don't have airbags or whatever, but you need brakes, right? It's basic, it's it's minimum, right? And on this point, for example, having fun using games to teach something on a professional way, let's say for us, having fun is a consequence. As you say, I want to have fun, I go to
+
+Max (27:34.819)
+Yes.
+
+Max (27:40.729)
+Yes.
+
+Cássio Pereira (27:54.174)
+Play soccer, football, PlayStation, whatever, not play cornucopia, right? Especially because it's something to my work that I need to learn something new. Gaming is a way of passing that knowledge. And as you said, it's a ludic way. Try quite almost easier to teach. Like you can read, you can watch a video, you can listen, but you might not get that knowledge as you are playing or doing an exercise or something. So it's basically a way of teaching, which is awesome. But as you said,
+
+Max (27:56.644)
+Yes.
+
+Max (28:04.464)
+Yes.
+
+Max (28:16.4)
+Yeah exactly.
+
+Max (28:19.94)
+Yeah.
+
+Cássio Pereira (28:24.153)
+The funny part is a consequence and it will not be for everyone. It's not because there's a game in the world. Okay, we're going to be play a game. So it's funny. No, I don't like to play basketball, for example. I don't like to play volleyball, whatever. So it's not fun, right? For for me. So and and and you were saying also today I had an episode with my daughter. she should eat all the all the lunch and she didn't. I I was not here, she was with my wife, and then she had ice cream. And then I was saying, Did you eat everything?
+
+Max (28:32.856)
+Not necessarily. Yes.
+
+Yes.
+
+Cássio Pereira (28:51.719)
+So you could have ice cream, and she said yes. And then my wife said, No, she didn't eat everything, she ate small. And then she was trying to convince me that she ate a lot. I tell her, show me how how much you ate. And then she did like this with the hands, right? You know, and they will say, But this is even bigger of the plate. You you cannot eat like this. So, you know, I was trying to teach her physics. I was trying to teach her, you know, explain to me how quantity, order. You need to have first the lunch, then the ice cream.
+
+Trying to teach a lot of things there that I don't even know. I was just being a father, right? but on a funny way. Okay, show me the big the house how is the big how big is your belly? your bell your belly is too small. You didn't eat everything that you said. You know, trying to be ludic enough to make her understand. Of course, she was also making fun, etc. etc. She knew that she didn't eat a lot, so but she didn't she wanted the ice creams. but I think it's a good example of of how we should use this.
+
+soft skill, would say, at as we touched two episodes ago, with Julianne, if I'm not wrong. Yes, she was here with us. we touched on this point, like how to communicate differently, you know. I could just say to her, no, you didn't eat everything, you should not have ice cream and go home, right? But you know, I wanted to make fun, I wanted to make her understand, I wanted to make her laugh to play. It's also my time of being with her, etc, etc, etc.
+
+Max (29:56.932)
+You didn't reman.
+
+Max (30:04.846)
+Yes.
+
+Cássio Pereira (30:19.603)
+and developers are not our sons and daughters, but somehow we are taking care of them, not of them itself, but but because you you you mentioned very something very important: the accountability of a buggy, of a bug, or a vulnerability, it's on them. So our job is kind of to protect as the same as the QA, right? It's trying to protect them from this, not them directly, the software and the company, but indirectly, we are kind of protecting
+
+Max (30:27.236)
+Yes.
+
+Cássio Pereira (30:47.981)
+developers or or whoever is involved on the SDLC, right? Whoever is developing a software, not only the developer itself. and yeah, that that that's the whole point. I think to try to to take off this funny part of the gaming, because funny is consequence, right? But how important is to use different ways to try to educate, make make awareness and so on and so forth, right?
+
+Max (31:05.637)
+Yes.
+
+Max (31:13.392)
+This is great because it's very important to understand that it's very different having fun than learning in a funny way. So we use this kind of games to teach in a funny way. So they they learn in a funny way, and we were talking about mindset. So this is good software development practices.
+
+Cássio Pereira (31:23.506)
+Yes.
+
+Cássio Pereira (31:31.335)
+Yes. Perfect.
+
+Max (31:43.632)
+That will allow you to identify security requirements since the beginning. Yes, okay. But I want you to see me not as a policeman, as a policeman that will punish you at the end of the software development process because you are generating what vulnerability. I want you to see me as a partner that will help you and will take you by the hand to probably teach you how to develop.
+
+in a good way software without vulnerabilities or without a higher risk vulnerabilities. So the mindset changed because the most at the beginning the most of the of the cybersecurity analysts wanted to be a policeman. But I I I I was a developer, I don't want a policeman. I don't I yes and you you know we really didn't need a policeman.
+
+Cássio Pereira (32:35.439)
+I I was polisman.
+
+Max (32:41.325)
+We need you to see me, hey, how can I make this more secure? I need a partner.
+
+Cássio Pereira (32:48.219)
+And and just just a a quote there, like the job of the police itself is to fix what is wrong, right? People are doing something wrong, or you need help, you call the police, right? You don't call the police like, hey, help me walk on the street. Like, help me code the software. Help, you know, it's not the job of the policeman, right? It's a job of a of a coach. You can call a coach, a guidance or whatever, you know, but not policemen, right?
+
+Max (32:55.279)
+Yeah.
+
+Max (33:09.566)
+yes.
+
+Max (33:13.157)
+Yes, and that's great because the mindset changed. Hey, I I don't want you to see us as a policeman. I want you to see us as a cybersecurity coach, for example.
+
+Cássio Pereira (33:25.075)
+Yeah, now Bayur, now we are the coaches of Epsec or quant or or how is the how is this word in English? I think it's quant quant quantic quantic coaches is even higher level.
+
+Max (33:30.895)
+Yes, for example.
+
+Max (33:38.162)
+Yes. And that's great because at the end of the day, you are talking about so software development culture, integrating cybersecurity. and the the use of cybersecurity games really help the organizations to make this culture more stronger and to teach in a funny way cybersecurity concepts and probably
+
+Cássio Pereira (33:46.941)
+Yeah.
+
+Max (34:07.781)
+to teach the software development teams how to identify threats, probably incidents, probably security requirements, everything using a funny way and a structured way.
+
+Cássio Pereira (34:21.787)
+And and the and the we what we want in the end of the day is that they learn. So they don't need us tomorrow. So using a ludic, funny, whatever way, non-traditional, even the traditionals, but the idea is that okay, tomorrow when you think about a new feature, you think about validating inputs so you don't have an injection or RC or whatever without needing a game, without needing me, so you have that culture culture already inside you.
+
+Max (34:43.6)
+Yes.
+
+Cássio Pereira (34:50.609)
+Like we wouldn't exist if every developer would be coding securely or even AI, right? So we don't need us. But they still don't, and that's why we are we're doing what we do and to create the protections and guidance and so on. So in the end of the day, we want them to learn and to to get that knowledge for them. So using a game is maybe easier to to fix that. For example, if I'm reading something, I might get, I don't know, twenty percent. If I'm listening, maybe forty. If I'm watching, maybe sixty.
+
+Max (34:56.209)
+Yes.
+
+Cássio Pereira (35:19.611)
+And then when I do and when I teach something, then okay, hundred percent. So reading for me, I takes a lot of energy because I'm I'm an anxious guy, you know, and takes you know an hour to read two, three pages. For me, in an hour I read two books, but you know, very quick and because I want to skip and go quick to the end. So I'm I'm I'll not learn and not observe that. But if I'm listening or watching, it's better for me. So maybe as you said, the gaming or games in general is a way of making that easier. And it again.
+
+Max (35:29.423)
+Yeah.
+
+Cássio Pereira (35:49.211)
+For some might work, for another might not work. Go on, be your
+
+Ben-Hur (35:52.264)
+Yeah. One of the strategies that I really like to do when I need to run some training or something like that, is I always start with a good hack that is easy for someone to understand and exploit by themselves. For example, the exposed git directory. This is a really cool one because I showed the private repository.
+
+The pipeline, the software it's packet and go to production, and then it goes with the dot git folder exposed. And most of the things they what could happen here? And this then it becomes this challenge. And someone, hey, I think we can do that. We can when I said we can extract the full source code, they no way. no, let's see.
+
+Then we create big because it's development commons, right? Everyone there knows how to run it. And I started. Then I do something, okay, it's not good, but it's far away. To get some public that's that's ex really exposed. And let's see. And I started getting when I got this. Hey, let's talk about security now. Because they learned it in that moment.
+
+Cássio Pereira (36:51.036)
+Mm-hmm.
+
+Ben-Hur (37:20.125)
+How to attack someone. Hey, so so this is what what happens? Now we get some engagement. Okay, let's try some other things. And
+
+Cássio Pereira (37:31.768)
+You got you got my curiosity, now you have my attention.
+
+Max (37:35.749)
+Yes. Yes.
+
+Ben-Hur (37:35.868)
+Yeah, yeah. So I always start with easy to exploit but high impact vulnerability. For example, the the log4j for me was incredible because when I have someone from Java, I always try to get the correct vulnerability for the correct stack. For example, if we have someone from JavaScript in React.
+
+Cássio Pereira (37:48.774)
+Mm-hmm.
+
+Ben-Hur (38:06.427)
+I go for a shell in React. If I have someone from Java, I go for the Spring for Shell or Log4 shell. And then I show some of their exploit just to start the conversation. Okay, now we go. Let's get serious from the beginning. So for me it h it's good because I'm not starting with, hey, do you have a minute to hear about the world of security? No, no.
+
+Do have a minute, let's do something fun. No? This is something interesting. And most of the people know a lot of stories about hacking, but do not know how that works. And they are curious. They want to know how that works. For example, I it was countless questions. And every time I go to a training.
+
+I should be prepared to answer about some big hack that happened. For example, some I think yeah, a year and a half ago, I was working in cryptocurrency security. And every time I want to talk with security someone, hey, I work in cryptocurrency security. What happened with Company X? Let's deep dive. Then I explain it.
+
+Okay, go that's that what happened. Yes. Okay. Now, because with this, we explain it the vulnerability, we explain it the risk, we show it the impact, we create a connection because it's a conversation, right? And then we start getting some friends there. Not because they need to learn something. We all all here.
+
+For everyone to learn something and discuss.
+
+Cássio Pereira (40:04.636)
+Fair fair enough. but now I need to remember all of you about
+
+Cássio Pereira (40:17.498)
+We got to the best moment of this podcast, a part of our guest today, which is amazing, which is the dev may cry. Usually, Max, we we try to make some fun and make some ideas or things, processes, whatever that would make a developer cry. We had already amazing stuff here and tools. Maybe we can even create some of them maybe, I think would be a nice idea. Like Julianne, by the way, she was suggesting a time tracker, you know, the the old and gold time tracker.
+
+Taking screenshots from the from the screen. I think you were not here being r when when she was recorded or other one anyway. Time tracker was the best one.
+
+And the and after you need to print and your manager need to sign your your time track. You know, the the best process ever. You need to print something. But anyway, for today, any ideas, Bayern? Any any any anything in your mind? And Max can can think. I think I have something.
+
+Max (41:08.958)
+And can I give you some ideas that maybe can make cry software development teams about answers that cybersecurity sometimes has with them? For example, one idea is hey, you need to do this, you need to make this more secure. Hey, Max, how can I? This is your your job because you are a developer.
+
+Cássio Pereira (41:12.066)
+Yeah, please.
+
+Cássio Pereira (41:22.083)
+Mm.
+
+Cássio Pereira (41:33.179)
+That's that's a good one, you know. Because usually they need help to fix vulnerabilities, for example. We could just say, My ex-boss was saying, Hey, this is your problem. What is the solution? The problem I already know. The solution, that's what I'm asking, that's what I'm paying you for. Okay. I like, I like. We can create a chatbot even internally, even on the Slacker teams, when they call us.
+
+Max (41:36.849)
+Ha ha
+
+Max (41:47.09)
+Yes. Yes, yes, yes.
+
+Cássio Pereira (41:57.807)
+We already automatically reply something like this. Does your question did you find the solution for your question? Like the whole text, you know? Cool, cool one. Something else? Ma any? Uh-huh. he's already with the devil's smile.
+
+Max (42:04.924)
+Mm.
+
+Ben-Hur (42:08.176)
+sure.
+
+Ben-Hur (42:15.943)
+Morning team! This morning you will learn how to fix transitive dependencies.
+
+Cássio Pereira (42:21.399)
+my god. No nobody knows how to fix the dependence.
+
+Max (42:21.406)
+Yeah.
+
+Ben-Hur (42:27.641)
+And and this is the challenge. Look, it's your application.
+
+Max (42:31.939)
+Ha ha ha.
+
+Cássio Pereira (42:33.833)
+One thousand dependencies, transitive dependencies, huh? my god.
+
+Max (42:36.708)
+Ha ha ha.
+
+Ben-Hur (42:36.943)
+what we can do about major versions? This is your problem?
+
+Cássio Pereira (42:41.795)
+This is your problem, not mine. Yeah. You can join the the the open source community of that library and f and release it.
+
+Ben-Hur (42:43.677)
+But but is
+
+Max (42:48.188)
+Because
+
+Ben-Hur (42:48.261)
+It's React Native Fuck.
+
+Cássio Pereira (42:50.165)
+another problem. Another problem that you have. Yeah, I think I think I I love this one. to make it better, I would need I would ask of course require because it's a cybersecurity requirement to have a spreadsheet printed with all those libraries, version by version.
+
+Version by version, and your manager need to sign of course the the printed spreadsheet with a stamp.
+
+Ben-Hur (43:18.053)
+And that and and that tree that breaks the line and return to the other, right, right? Not straightforward, yeah.
+
+Cássio Pereira (43:22.516)
+Yes, yes. So the so the my god, even to print this just to print this shit is already a nightmare. my god. Okay, I think we we did a lot today for for the developers. Okay, guys, stop this. Go go play cornucopy. I think will be much more fun, and you will not cry for sure. we are on our time. Max, any last not last words? Because I often say in English, any last words, like I'm going to kill you. No, no, any any final message.
+
+Max (43:29.106)
+Ha ha ha.
+
+Ben-Hur (43:31.485)
+Mm-hmm.
+
+Max (43:48.42)
+Ha ha ha.
+
+Max (43:52.765)
+Yes, I I I believe that that one of the things that helped me I helped me more in my application security journey is to understand that when we talk about application security, we are not talking about cybersecurity. We are talking about cybersecurity applied to the software development lifecycle.
+
+And this is a a very big difference because as a as a cybersecurity people, I would love that no vulnerability goes to production. But you need to identify some balance between how to solve, what to solve, when when to solve, and to understand that cybersecurity and application security sorry that
+
+to identify or to understand that application security are not good if n if are not helping the software development lifecycle.
+
+Cássio Pereira (44:58.552)
+Yeah, because it's part of the product, not the product itself, right? It's a mean, not the end. So that's that's tot totally agree. Totally agree. well, Max, thank you for your time. I we know that it was hard to find this agenda, but we we managed. Beur, thank you again for joining with being here with us. God Marcos is not here, so thank you also for that.
+
+Max (45:02.396)
+Yes yes.
+
+Max (45:13.19)
+Yeah.
+
+Cássio Pereira (45:21.85)
+see you all next week for sure. please, please share this episode because it's amazing. I mean, we could stay here talking about this two or three hours, but it's 10 p.m. I really need to go to go sleep. You still have rest of your afternoon, Max. So so enjoy for that. I I will share if you allow, I will share your LinkedIn on the description of this video. Any other links that you want, for sure, cornocopia, for sure,
+
+Max (45:33.362)
+Yeah.
+
+Max (45:40.498)
+Thank you very much.
+
+Cássio Pereira (45:52.536)
+Latam Epsec, if I'm not wrong.
+
+Max (45:54.617)
+great, yes, my company. Thank you very much.
+
+Cássio Pereira (45:56.62)
+Yeah, Latin EpSec because it's I mean, we we definitely need this kind of of people, you know, to help us to do AppSec around the world because it's a infinity job, I would say. Cool, guys, thank you very much. See you all next week. Bye bye.
+
+Max (46:08.786)
+Thank you very much. It was a pleasure for me to be here. See you.
+
