@@ -2,8 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://devsecopspodcast.com.br/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://devsecopspodcast.com.br/episode.html?slug=t8e13-the-shocking-truth-about-new-cyber-legislation-that-could-transform-your-business</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://devsecopspodcast.com.br/posts/cyber-resilience-act-nis2-transform-business.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://devsecopspodcast.com.br/episode.html?slug=t8e12-the-surprising-game-that-transformed-application-security-training</loc>

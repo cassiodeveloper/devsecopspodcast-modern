@@ -1,0 +1,815 @@
+Cássio Pereira (00:22)
+Here we are again, my friend Marcos. After a long break, because we all need vacations, we
+
+Marcos Santos (00:27)
+Yes.
+
+Cássio Pereira (00:29)
+all need, you know, to breathe new airs. And I was breathing breathing air from Brazil because I was there for for two weeks. Not that new for me, but you know, take some time off. Then was my birthday, then was we were sick, all the kids sick.
+
+Marcos Santos (00:42)
+Yeah.
+
+Cássio Pereira (00:43)
+Anyway, it was a good opportunity to take a break from the cops podcast. But here we are again, I'm Cassio Pereira.
+
+Marcos Santos (00:49)
+I'm Marco Santos.
+
+Cássio Pereira (00:51)
+Good and we don't have Beur today because for sure he's busy with the with the moving and all those stuff. but yeah, we have a nice guest that we'll introduce in a moment. Guest that if the production guys can pick up for us, he was here on this season already, a few episodes ago.
+
+Cássio Pereira (01:11)
+Let's remember when was it, but anyway. let's always remember that the DevSecOps podcast has the support from Nova 8, which is the distributor of check marks and SNEC and in Brazil and also some countries in Europe. Also purple bird security, that they will take care of you during and after an incident con Visual Application Security. They are specialized in application security for fintechs, manks, health techs, digital platforms. They will help you increase or
+
+Cássio Pereira (01:40)
+improve your software development lifecycle and secure habits with specialized security application security services. So if you are in trouble, talk to these guys, or before you get in trouble, talk to these guys that they will probably help you. you'll be in good hands. So we have today with us again Nadiman.
+
+Cássio Pereira (02:01)
+Thank you for joining us. That was a crazy agenda, but here we are again. Also, a personal thanks to Naniman because he was also here at Besides Krakov helping us and supporting us with our local community. Two months ago. One month ago. We're still in October, right? So one month ago. Man, stage is yours, talk about yourself a bit, and then we'll introduce the topic of today.
+
+Nariman Aga-Tagiyev (02:26)
+Thanks
+
+Nariman Aga-Tagiyev (02:26)
+for having me again, Kasio. I'm very happy to be your guest. You have very dynamic, nice network of friends, listeners, and I'm very happy that I can contribute once again. Last time we touched a bit about soft skills of AppSec side, right? How to build habits, how to influence behavior of people to adapt our AppSec policies. But today I want to talk a bit about new legislations.
+
+Nariman Aga-Tagiyev (02:55)
+That's usually is not the fun part for AppSec people and or developers, but it's very important new legislation that potentially can make our work explode next year, to be honest, because now it's getting very serious in Europe and it will affect not only Europeans, but also Brazilians and the US and China and India and everyone in the world who wants to place products on European market.
+
+Nariman Aga-Tagiyev (03:22)
+Just a bit question to you. Did you hear the news about a fridge attack in France a weeks ago?
+
+Cássio Pereira (03:28)
+yes, yes, yes. I was not deep on it, but yeah, I got some
+
+Marcos Santos (03:30)
+Yeah.
+
+Cássio Pereira (03:33)
+some some some dark groups that we are in. There was a lot of a lot of things about it, but crazy, yeah.
+
+Nariman Aga-Tagiyev (03:40)
+What
+
+Nariman Aga-Tagiyev (03:41)
+happened is about 700 supermarkets were hacked in France. And because of it, lots of supermarkets had limited availability of products also in other European countries, like in Netherlands where I live. Our supermarket here, they had the papers that we are not using all stock here because we are worried for attack that will spread to us as well. But what happened, there was attack on the fridges and...
+
+Nariman Aga-Tagiyev (04:08)
+hackers set the temperature of rich to 50 degrees and for us audiences are counted 22 Fahrenheit and lots of meat and cheese and everything was spoiled so they had to throw it away hundreds of millions of loss and it was a mess in France anyway this week there is a still mess in France because of protests and all other stuff but this was a big and
+
+Nariman Aga-Tagiyev (04:35)
+Europe is actually developing or just introducing some controls to prevent such incidents. We have two legislation at the moment that are very hot, that widely apply. One of them is NISTU. NISTU is about protecting critical infrastructure. And they defined 10 or 12 critical industries like...
+
+Nariman Aga-Tagiyev (05:03)
+food processing, manufacturers, energy providers, water suppliers, logistics suppliers, transportation, those industries, they have to implement certain controls, a bit similar to 27,000 from ISO series. And if board of directors of...
+
+Nariman Aga-Tagiyev (05:26)
+Executive committee does not implement those security controls. They are personal personally liable and they can go to jail and get big fines So now needs to push us to require security controls the basic baseline to all manufacturers to protect the manufacturers but Consumers they were a bit left behind now. There is another new legislation called the European cyber resilience act
+
+Nariman Aga-Tagiyev (05:50)
+that focuses on protecting the consumers. So NIST 2 is about protecting the manufacturers or organizations and CRA is about consumer rights and consumer security.
+
+Nariman Aga-Tagiyev (06:04)
+Now we are focusing about security threats on the products that are placed in the European market, any product with digital components or on-premise software that runs on the premises of European citizens, like on my laptop, on my phone, at my home, on my floor, like if I have vacuum cleaner, smart lamps, fridge, everything. But also on your desktop, maybe you have a CAD software, SolidWorks and any 3D modeling tool.
+
+Nariman Aga-Tagiyev (06:31)
+everything that runs on your premises, on your hardware, now this new CRR low intends to enforce some level of security for manufacturers. If they cannot provide at some level of security, level of trust, they will not be allowed to sell on European market. yeah, also once they sell,
+
+Nariman Aga-Tagiyev (06:54)
+they still, cannot just stop supporting it. So if you buy a vacuum cleaner or a smart camera for home or maybe monitoring camera, one year later, suddenly your app is not updated or not supported anymore, or maybe there is a security critical vulnerability and manufacturer does not roll out any fix, right? And then you're like under risk. So they have to roll it out at least for five years going forward, if they want to sell in Europe.
+
+Nariman Aga-Tagiyev (07:20)
+And all of this is part of the CE mark label. Maybe you know the CE label that you have to put on the toys, on everything you sell basically in Europe.
+
+Nariman Aga-Tagiyev (07:31)
+That demonstrates that this product is secure, safe for consumers, but physically safe or chemically that if there is a CE mark on the toys, it means that children can lick the plastic and they'll be fine. If there's industrial equipment machine and there's a CE mark, it means that there is no open moving parts that your finger will not be caught. There is a stop button nearby. If something happens, you can stop the machine. So all of these rules, they used to get the CE.
+
+Nariman Aga-Tagiyev (08:01)
+you had to make sure that the machine is safe for consumer. But now the security part also is added under the same label. So if you want to sell in Europe, you must get CE mark label. And to get that, you must demonstrate that you did secure by design, secure by default activities. So DevSecOps becomes must do. If you don't have those basics, you cannot sell in Europe going forward as of next year.
+
+Nariman Aga-Tagiyev (08:28)
+So it brings lots of interesting aspects to our work and importance of what we doing.
+
+Cássio Pereira (08:33)
+Yeah, when when you started describing, I was already sad,
+
+Marcos Santos (08:35)
+Mm-hmm.
+
+Cássio Pereira (08:37)
+you know, more, you know, more regulations, more stupid shit.
+
+Marcos Santos (08:40)
+Yeah.
+
+Cássio Pereira (08:41)
+But now you finish with a good sentence. More work for us, Marcos.
+
+Nariman Aga-Tagiyev (08:44)
+You
+
+Cássio Pereira (08:45)
+Right? Like that it was
+
+Marcos Santos (08:45)
+Yes, that's nice.
+
+Cássio Pereira (08:47)
+it was already infinity job because developers are always screwing up with the code and leaving developer and leaving software actually exploitable, right? And then AI came, escalated that even more.
+
+Marcos Santos (08:55)
+Yeah.
+
+Marcos Santos (08:58)
+Yes. And I have a question just because of this. Nerman speak a lot and that's very nice. And in the last weeks, we start to see a lot of problems with some reverse engineer using AI. And I saw a lot of guys start to make reverse engineering televisions in air conditioner and a lot of different...
+
+Marcos Santos (09:25)
+types of electronics. And how can you see this new era when one guy with one AI have a possibility to make reverse engineering anything? Do you think we are safe or we have some tricks to make it for we stay more safe? What's your opinion?
+
+Nariman Aga-Tagiyev (09:49)
+Yeah, you can, let's say reverse engineering a program like AutoCAD or like any business program or from Adobe, for example, now it's popular, license expensive, they reverse engineer it and give it for free. It's same as open source libraries. I mean, I'm not getting into that business aspect. Is it legal? It's not legal, but if I look at the result.
+
+Nariman Aga-Tagiyev (10:15)
+If I reverse engineer Adobe Photoshop or VamTool and place it, it's same as placing open source library on European market. And I mentioned that if you place any product in European market and there is a security problem you have to support for five years. Does it mean that if you are providing open source library or such an open source product, free product,
+
+Nariman Aga-Tagiyev (10:40)
+that now you get also obligations that you have to support for five years going forward. And that if there is a security problem, you must fix it. Because if you don't, and I didn't mention that part, if you are a business, you can lose two and a half percent of your global revenue of all the sales before the expenses, revenue, if you don't comply, if you don't do security by design activities.
+
+Nariman Aga-Tagiyev (11:05)
+If you don't do administrative work, it's one and half percent or two percent, I believe, if you don't do paperwork. So you do secure by design, but you did not declare stuff, technical documentation. If you mislead authorities, you say I do threat modeling, but you actually don't do threat modeling, you get one and half percent fine of your global revenue. And if you don't fix the problems, you will lose CE mark label. You won't be allowed to sell in the market at all. So.
+
+Nariman Aga-Tagiyev (11:33)
+Does it mean now if you deliver these free tools, you cannot and you will give it fine? Actually not. So it only applies when the product is placed on the market and when you make profit of it or profit directly from this product or indirectly. Let's say you are selling, you're putting library like open SSL, like something, open source library. You don't make any money from this. You're not liable, it's fine. You're open source contributor in this case. But if...
+
+Nariman Aga-Tagiyev (12:02)
+You put an AutoCAD, like Autodesk software, like CAD software to draw 3D parts, mechanical parts. You place a free version of it, an alternative open source version that you hacked and start to sell. And you don't get money from that, but you're selling consultancy next to it to use that CAD software. So indirectly, now it's business. The first company to make business or who is directly
+
+Nariman Aga-Tagiyev (12:32)
+benefiting from that product, they will be liable. It means that you are placing that on the market. And the wording in the law says that it's not about selling in the market, it's a placing on the market. So if you place something, you must ensure it's safe. For example, if I have a motorcycle, let's say I'm a motorcycle dealer and I organize a demo day, I'm not selling something, but I give away some devices or gadgets or something for motorcycle.
+
+Nariman Aga-Tagiyev (13:01)
+I didn't sell anything, but I placed it on the market. I imported it from somewhere. Now, that must be secure too. It must be all compliant.
+
+Cássio Pereira (13:08)
+You act
+
+Cássio Pereira (13:09)
+as a as a distributor in this case, right? Even if it's for free, yeah. Mm-hmm.
+
+Nariman Aga-Tagiyev (13:11)
+Yeah, is manufacturer or distributor indeed.
+
+Nariman Aga-Tagiyev (13:14)
+Exactly. That's exactly the word they use, distributor or manufacturer who plays on the market. So it doesn't matter if it's AI generated, is it a fake version of something other companies doing? If you're placing something on the market, if you're not making money out of it, you're probably fine. You're not going to be fine. But if you're also doing consultancy, you have a company registered on your name and you have some benefits from this product for marketing purposes, for example.
+
+Nariman Aga-Tagiyev (13:41)
+Now, if you place it, you must maintain it. You must support it for five years. You must have technical documentation available for 10 years. And if you don't deliver this hot fix, or if you don't have vulnerability management, let's say somebody reported a security flaw in your product, you must report it to European cybersecurity authorities, any set about it that, hey, I placed this product on the market. There is a critical flaw. I have evidence that it's being actively exploited.
+
+Nariman Aga-Tagiyev (14:09)
+You need to report within 24 hours. If you don't report you also get fined because now you have nonconformity against CRA
+
+Marcos Santos (14:21)
+Okay.
+
+Nariman Aga-Tagiyev (14:21)
+Yeah.
+
+Cássio Pereira (14:25)
+I I played the
+
+Marcos Santos (14:25)
+No.
+
+Cássio Pereira (14:26)
+Portuguese version, so I'll play again the
+
+Nariman Aga-Tagiyev (14:29)
+you.
+
+Cássio Pereira (14:31)
+more
+
+Cássio Pereira (14:32)
+more neutral version. man, this is crazy because it it it reminds me when when in Brazil, I don't I don't remember how many years ago, we had the let's say digital laws, like a lot of controls on digital world, this kind of how long you need to keep logs if you're a prov internet provider or a service provider, blah blah blah blah blah. And it became and it was crazy, right? Because no nobody was ready
+
+Cássio Pereira (15:00)
+For that specific level of infrastructure, even though the law doesn't came okay from tomorrow you need to do this. if I'm not wrong, the the KRA, right, or the CRA, the Cyber Resilience Act. And by the way, guys, if you are listening, Cyberresilience Act.au, right, you have all the information there. I think it was adopted in in 2024, and then this September, like a month ago, there was some kind of reporting. But
+
+Cássio Pereira (15:30)
+The full rules and everything will be enforced and required from 2027. If if that's what I understood from even from the website that they that they are presenting. That's the first question. Like when all of that will be already obliged. And the second question is, even on the website, they they have this kind of fast assessment, self-assessment, just to check if you need to comply or not. Apparently, if you are a SaaS provider, like you have a software, but it's a SaaS, right?
+
+Cássio Pereira (16:00)
+People just use the browser to use your software, not actually a product and so on. You don't need to comply. Is am I correct or am I interpreting wrong?
+
+Nariman Aga-Tagiyev (16:10)
+Yeah, you're right. So the
+
+Nariman Aga-Tagiyev (16:11)
+law draft started 2024 and then they had lots of rounds of improvements and discussing with different parties, open source communities. And finally the law started to apply part of it this September, just like the months ago, 11th September. And as of 11th September, manufacturers must notify ENISA authorities of active exploits if there's evidence or if there's so critical bug that
+
+Nariman Aga-Tagiyev (16:38)
+that maybe you don't have evidence it's actively exploited, but for sure it's just a matter of time your product will be compromised. And you have to report this for everything you have manufactured so far. So it's not like last five years. If 10 years you placed the product on the market and somebody informed you that they being hacked because of this product or this product being actively attacked, hacked, you have to notify to ANISA, notify the users, et cetera.
+
+Nariman Aga-Tagiyev (17:05)
+This starts at 11 September, one month ago, 2026. But next year at 2027 December, all other requirements start to apply and then you actually have to do proper stuff, which I will list in the moment. There are so many requirements there, by
+
+Cássio Pereira (17:24)
+Mm.
+
+Nariman Aga-Tagiyev (17:25)
+design, secure by default, vulnerability management and documentation. But before I dip down into that part, again, about the scope.
+
+Nariman Aga-Tagiyev (17:34)
+You said SaaS doesn't apply. So I mentioned that if software runs on your premises, on the consumer side, so that on-premise software that runs on your laptop, like the CAD software or business software, Suite, obviously you're getting, you're running it and you expect some support to give it hotfixes. Yes,
+
+Cássio Pereira (17:53)
+like a mobile app, for example, right?
+
+Nariman Aga-Tagiyev (17:56)
+desktop, mobile app, indeed. If it's a smart device like a vacuum cleaner, fridge, et cetera, you also expect to be supported.
+
+Nariman Aga-Tagiyev (18:04)
+But also if that smart device mobile app connects to the remote data processing service, yeah,
+
+Cássio Pereira (18:09)
+A APIs, whatever.
+
+Nariman Aga-Tagiyev (18:11)
+and without that, if it cannot work, then that part also must be compliant. And then you cannot say that everything happens in the cloud, all the processing. And if you don't protect the cloud, that's also a huge risk. So if you are selling a device that uses remote data processing, that part also must demonstrate all like SBOM, secure by design, threat models and whatnot.
+
+Nariman Aga-Tagiyev (18:33)
+But if you are doing a SaaS offering, like maybe you have a bank web application that people log in or they watch something there inside, you don't have to comply. But as soon as you also have a mobile app for the same thing, suddenly you do have to comply. Let's say you have a Netflix-like service, SaaS web streaming solution like YouTube. Normally not, but...
+
+Nariman Aga-Tagiyev (19:03)
+because they have mobile app, now they have to comply. And today, as soon as you become sort of a serious manufacturer, you would have some mobile apps, you would have some desktop apps.
+
+Cássio Pereira (19:15)
+Yeah.
+
+Nariman Aga-Tagiyev (19:16)
+it's really it's pure SaaS solution these days.
+
+Cássio Pereira (19:20)
+Yeah. And even I have everybody in Europe somehow has electric cars or even not electric cars, but with all the so like I have mine that if it's updating, I cannot turn on the car, use the car and so on, need to wait to update and so on. So if it it's a kind of a product which has a SAS-ish that
+
+Nariman Aga-Tagiyev (19:40)
+Mm-hmm.
+
+Cássio Pereira (19:41)
+relies on the software, APIs and so on. So for sure they need to comply because it's a product that embeds software. It's basically a a normal app.
+
+Cássio Pereira (19:48)
+Mobile web, I would say just the mobile is not a phone, it's a car, right?
+
+Nariman Aga-Tagiyev (19:51)
+Mm-hmm.
+
+Cássio Pereira (19:52)
+I would say it's just any other smart device. So the word of IoT in general is cooked, right? Because a lot of companies is
+
+Marcos Santos (20:01)
+Okay.
+
+Cássio Pereira (20:01)
+actually creating products and delivering such a things that they actually need to comply. And then my I'm just thinking out loud here would be a chaos for some companies that
+
+Cássio Pereira (20:15)
+It's not a listening devsa cops podcast from the previous five years that you would learn how to do application security. That from day tonight, I mean not day tonight, right? From 2024 there was discussions, then month ago, so there's two years already the the CRAB is being discussed, published, and so on. Like, okay, guys, hey, from September 206 will be already no running production, right? So you need to comply, etc. And then 2027, the full rules and so on. So companies have time to plan.
+
+Cássio Pereira (20:45)
+Hire people, hire secure habits, for example, our partner here, in order to make sure that you have a gap analysis assessment and so on and implement all the process that you need. But the point is, everybody needs to do this on a on a on a sense that they need to not only like like the LGPD, you know, okay, I'm taking care of your data. But they not only if you have an incident or someone reports, they need to prove, provide evidence and such things.
+
+Cássio Pereira (21:13)
+As far as I understood, the CRA is a bit different, right? I need to provide how I'm doing vulnerability management, how I'm doing secure by design, no matter what. Is is that correct? Or once a year there will be auditing and they will check if I'm doing or not. How how on the you know, I I'm just afraid that okay, there will be the act, there will be the laws, regulations, etc. Everybody says they are doing until they are not doing.
+
+Cássio Pereira (21:40)
+Unless they have a problem and then you're going to find out that they're not doing, or I need to be proactive, start doing to comply with the regulation and so on and so forth, also providing the evidence for that, right?
+
+Nariman Aga-Tagiyev (21:53)
+think it's good to touch on the categories of products. You mentioned
+
+Cássio Pereira (21:55)
+Mm-hmm.
+
+Nariman Aga-Tagiyev (21:56)
+car, you mentioned IoT. So how it works. If certain product has more specific cybersecurity legislation like cars or medical devices, aviation, railroads, if they have a more specific law like cars do have, it's out of scope for CRA. Because CRA
+
+Cássio Pereira (22:15)
+Okay.
+
+Nariman Aga-Tagiyev (22:15)
+covers like other things. But for cars, most...
+
+Nariman Aga-Tagiyev (22:21)
+most things on the car is not car. I was at a conference in Frankfurt recently and they said hey, the tires are not cars, for example. So like, because
+
+Cássio Pereira (22:26)
+Yeah. Windows are not cars, doors are not Yeah.
+
+Nariman Aga-Tagiyev (22:34)
+there are so many rules for cars that car manufacturers try to remove everything from car and so they have to comply. For example, they say, the...
+
+Nariman Aga-Tagiyev (22:47)
+tire or the wheels company is separately entity, it's not car. It's a component that I can choose one of them and plug it in the entertainment system. don't know, like all the camera system behind all of this is not cars. Almost so many devices that are used on the car are not cars and they have to be CRE compliant today. Then.
+
+Nariman Aga-Tagiyev (23:10)
+If there is specific law like for medical devices also, it's not compliant. And military, like defense industry, they don't have to do it. But then for the rest, you have four categories, they divide. You have default categories, it's one of the B2B things, smart appliances for home, office equipment, printers, on-premise software you're installing. This is default category. And for default, you have to do self-assessment of your compliance, of all the requirements. There are special vertical standards.
+
+Nariman Aga-Tagiyev (23:39)
+sorry, horizontal standards that apply to every type of a product, and you have to do self-assessment, and you have to keep it internally that evidence that you did it next year. And nobody's to come and outwit you unless there is a complaint, like with GDPR.
+
+Cássio Pereira (23:53)
+Okay.
+
+Nariman Aga-Tagiyev (23:55)
+And what can happen, for example, there is a security exploit. Maybe you're selling smart camera and...
+
+Nariman Aga-Tagiyev (24:03)
+It turned out that anyone can find the support online, search it and watch your bedroom, your baby camera remotely.
+
+Cássio Pereira (24:09)
+Mm-hmm.
+
+Nariman Aga-Tagiyev (24:10)
+People call you, inform you about this problem. You say, sorry, I sold it three years ago. I don't care. You shut down. You don't do anything about it. People escalate to government agencies and then they come to you, hey, you were supposed to do it secure by design, secure by default. Why do you have a hard-coded password here in this device that anyone can just go?
+
+Nariman Aga-Tagiyev (24:30)
+Why do you open the port and don't have any authentication on this port in this service? And show me the evidence you did this and you don't have evidence. And here you are. You can get a big fine and probably you will lose a CE mark because you were just ignoring this law. So for default, and that's 90 % of products, consumer products, you have to do self-assessment, but you can maybe ignore it for some time.
+
+Nariman Aga-Tagiyev (24:53)
+But there is an expectation that next December in 2027, lots of products will be pulled up from shelves in electronic shops if they are not compliant. If a company has a strong legal team, legal teams will say, if you don't have evidence of security by design, security by default, we cannot sell in Europe. And they will pull out some products that are not ready yet. So if you're going to buy some electronics next year, do it before December. Now...
+
+Nariman Aga-Tagiyev (25:17)
+That's the default category. Then you have category one that's more like products that are designed for security. We have some security like password managers, some vaults, like some categories. You can look it up in the CRA text category one. For those, you still can do self-assessment if there is a specific harmonized standard for that particular product. So for password managers, you have special standard.
+
+Nariman Aga-Tagiyev (25:45)
+that says exactly what password manager can do or cannot do, like modem, network, switch, device, et cetera. And if there is no specific checklist or standard for controls, you cannot do self-assessment. have to go to certification bodies. It's called notified bodies. They have to audit you. Then category two, like third one, basically, that one is more critical devices. These are like modems, network switches, mobile devices, computers, like more...
+
+Nariman Aga-Tagiyev (26:13)
+If those are compromised, OAS is compromised, it's a big deal. For them, you're not allowed to do self-assessment. You will have to hire a certification body and get external audit. And those audits are very detailed. As a fact, I've been working for a few weeks now, I just started, at the Dutch accreditation office. And this Dutch accreditation office, they authorize certification bodies to do the exams for products.
+
+Nariman Aga-Tagiyev (26:43)
+I see how they prepare. Basically, they look at the law, each of the requirements one by one. They ask you, me the evidence. So if certification bodies don't ask for evidence and don't document that evidence, the certification body will lose their accreditation. So it will be very serious. You cannot say that, yeah, I need to document the intended purpose of the use of this product in my risk assessment. I didn't do it. Why would I do that? Everybody knows what my product is for. But
+
+Cássio Pereira (27:07)
+Mm-hmm.
+
+Nariman Aga-Tagiyev (27:08)
+no, it says you need to document intended use purpose of your product.
+
+Nariman Aga-Tagiyev (27:12)
+You must document it. You cannot just have a threat model and that's it. You must have that. What is your user? What's intended use of your product? What are other expected users? So maybe you thought the baby camera will be used for babies, but people can watch bicycles outside with that baby camera. So you can also write down like what are the possible uses of your product? Why?
+
+Cássio Pereira (27:33)
+Mm-hmm, mm-hmm.
+
+Nariman Aga-Tagiyev (27:35)
+What are type target users? Are they for regular users? Are they admin users? Are they disabled users? Like who is it for?
+
+Cássio Pereira (27:41)
+And
+
+Cássio Pereira (27:42)
+j j just a quote quoting here, this is a threat modeling
+
+Nariman Aga-Tagiyev (27:42)
+Yeah.
+
+Cássio Pereira (27:45)
+already. Who is the actor acting on my product and what are this possible scenarios of of users, right? Just doing
+
+Nariman Aga-Tagiyev (27:51)
+Yeah.
+
+Cássio Pereira (27:52)
+this would help them already understand where the problems can come from, right? But anyway, just just a quote.
+
+Nariman Aga-Tagiyev (27:56)
+Yeah,
+
+Nariman Aga-Tagiyev (27:57)
+doing threat model is one part of it, but before you do threat model, you need to document. I did one risk assessment recently, it's 80 pages. So threat model is like two pages, there three pages. It has 80 pages describing who is the user, what's intended purpose, what are the acceptable risks for this product. Because before you do threat model and before you can say it's acceptable or not, you need to define as a team what is acceptable.
+
+Nariman Aga-Tagiyev (28:22)
+You cannot say this is acceptable. No, before you do that, you need to understand the context of the product. If this product going to be used for watching babies or is it responsible to put up and down the stick that stops you in front of the trains, the slug bums.
+
+Cássio Pereira (28:37)
+Mm-hmm, mm-hmm, mm-hmm, mm-hmm, mm-hmm.
+
+Nariman Aga-Tagiyev (28:39)
+Maybe if that fails, it's more risk, it's critical. But if it's a weather station on your balcony that sends the weather information to your house,
+
+Nariman Aga-Tagiyev (28:49)
+it's acceptable that somebody can compromise that communication. So depending, after describing the context of the product, you need to describe like what is acceptable or what is not acceptable, define a table for the impact, for likelihood, what it means exactly in your context. And then you will try modeling. And for each of these steps that I mentioned, I only mentioned like five examples, like user, intended use, criteria of risk. These are one of those.
+
+Nariman Aga-Tagiyev (29:17)
+100 requirements that you have to do. They're not difficult. Each requirement is easy if you do it, but you have to do it because otherwise certification body will fail you and you're not allowed to sell in European market. So if we do what they're doing today and I don't know how your company works, but I'm pretty sure that you're not compliant. I feel that already because you might do threat modeling. You might have SCA and SBOMS, DAS, SAS,
+
+Nariman Aga-Tagiyev (29:45)
+Everything maybe even likes other smart tools for infrastructure scan secret scan great you cover secure by design secure by default most of them this requirements, but do you have Risk acceptance criteria defined per product type. No, I don't think you did that I I doubt you would do that because you cannot have that the
+
+Cássio Pereira (30:05)
+Mm-hmm.
+
+Nariman Aga-Tagiyev (30:06)
+same risk criteria Applies to every product of your company. No, you have to do it better product going forward
+
+Nariman Aga-Tagiyev (30:12)
+And these are types of things that are missing today on the market. And so we have, I was mentioning categories of products, so some of them we can do self-assessment unless somebody complains, you'll be fine. Then some of them you have to get external audit for sure. But for most critical ones like a power plant equipment, water supply equipment, 5G networking, which is very critical for Europe, you have to get special accreditation certification from European...
+
+Nariman Aga-Tagiyev (30:42)
+conformity organization something, I forgot the name now. But even
+
+Cássio Pereira (30:45)
+Mm, mm-hmm, mm-hmm.
+
+Nariman Aga-Tagiyev (30:46)
+though that certification bodies, is actual government authority that have to certify audit and say, this company Huawei is good enough to sell 5G equipment in Europe, we trust them and there is no security impact. So like there is very tight controls and they have lots of power to allow the company from outside to sell or not.
+
+Cássio Pereira (31:08)
+Man, that's that's something very nice and scary at the same time because I I have the feeling, as you said, not even the feeling, I have the practical life saying that okay, a lot of companies are not ready for this. I mean being compliant, right? from from my perspective, I would I would say it's not that hard.
+
+Cássio Pereira (31:32)
+Each topic, if you you were mentioning scoping, secure by design, vulnerability management,
+
+Marcos Santos (31:39)
+to right modeling.
+
+Cássio Pereira (31:42)
+S-bombs, security updates, so this kind of release and so on, and technical documentations, right? Like something like this. I remember you were mentioning threat modeling. These are things that they are there already at some level, right? Okay, they are doing a release notes.
+
+Cássio Pereira (32:00)
+They know how when or how often they have hot fix or security updates. They might not have that well documented and structured. Like, okay, we had a hot fix once a year. Let's document like this, like that. They might not have clear process internal the company, but it's something that everybody does. Maybe SBOM is something still new. Some some some new like companies are still struggling to do that. Even why we need to do that.
+
+Cássio Pereira (32:28)
+And by the way, though I think there was some kind of regulation also in the US that European companies or whoever is making business in the US should provide the S-Bomb report or something like this, which is already crazy, right? But like vulnerability management, secure bytes, and etc. There are pro it it's practices that companies are already doing. We've been talking with this here on the podcast conference. I mean, it's already the practice, right? The companies are ready for this.
+
+Cássio Pereira (32:56)
+Teams are ready for this. I just have the feeling they're not structured. Like as Nariman mentioned. Auditor comes here, I need to be out there, auditor comes here, show me the evidence. you know, I have evidence for one product, but not for the other. we did this once. It's not the regular stuff that we do here. So I have this feeling that it's it's there, not there. Which is well, that's the problem, right? And comes to my next question. There will be a way of us mortals.
+
+Cássio Pereira (33:25)
+or consumers, I I'm on a market and on the shelf and I see okay this product here I want to buy. There will be some kind of it is it is CRA compliant or not, like some label as you are you are talking about the energy, this kind of thing. There will be something like this is already on the document and so on or not such a thing.
+
+Nariman Aga-Tagiyev (33:46)
+CE mark. So if you see that CE mark, it means that it's CRE compliant as of next December. If there is CE mark, it means it must be CRE compliant, otherwise they cannot sell. Let's say you got a product, you see CE mark next December for Christmas, right? After 11 December, around Christmas time.
+
+Cássio Pereira (34:05)
+No
+
+Cássio Pereira (34:05)
+the the last Black Friday, right? Black Friday will be crazy.
+
+Marcos Santos (34:07)
+Yes.
+
+Nariman Aga-Tagiyev (34:08)
+Yeah,
+
+Nariman Aga-Tagiyev (34:09)
+you took it and you know that vulnerability management requirements of that for your standard says that there must be technical documentation and there must be means to report security exploits directly to the manufacturer and means to ask a question. There should be technical documentation in every language that they sell on Europe.
+
+Nariman Aga-Tagiyev (34:30)
+about security features, like how to change default password, how to wipe the password. So if you have a Wi-Fi password in your vacuum cleaner and you sell it, how do you wipe your Wi-Fi password from it? It must be technical documentation describing how to reset and factory reset everything. And let's say I bought a vacuum cleaner or something next December around Christmas time after that deadline.
+
+Nariman Aga-Tagiyev (34:51)
+I look on their website, I don't find a technical document for security part, how to wipe it. Here, non-conformity. I can inform an ESA or whatever authority is going to watch that, and you're getting 2.5 % revenue, gone. Understand? So it's very easy to check if company actually did what they're supposed to be doing, because there are many things that are publicly facing. Technical documentation, explaining their life cycle, five years.
+
+Nariman Aga-Tagiyev (35:18)
+describing what risks they take care and what risks are on you. So for example, you're selling a camera, you should not share your password with your neighbor of your Wi-Fi, for example, or you need to change your password, default password. Those risks, it's a risk for confidentiality, but you cannot handle that as a manufacturer. You have to transfer this risk to the consumer, this risk. Don't share the password. It must be technical documentation, that explanation, that this is a risk for them. You should not do this or that.
+
+Nariman Aga-Tagiyev (35:46)
+So if you don't have any technical documentation with the risks described, you don't have how to wipe the password, how to change the password properly explained. And it's not in the language that you're selling. So if you're selling in Poland and there is no Polish
+
+Cássio Pereira (35:59)
+Polland.
+
+Nariman Aga-Tagiyev (36:00)
+documentation, so that's why it's easy to catch. And
+
+Cássio Pereira (36:04)
+Mm.
+
+Nariman Aga-Tagiyev (36:05)
+that's why some companies can be very ignorant. Some good entrepreneurs like to take risk. Maybe they will not be caught. But others where the legal department is strong, they will pull out the product.
+
+Nariman Aga-Tagiyev (36:16)
+They will not allow to sell it until that website is fixed, translations are done, everything is done.
+
+Cássio Pereira (36:22)
+And and the consumers will be able, because I see, as a good Brazilian, a very nice opportunity to scam. So will be a way, for example, I bought, I don't know, a vacuum cleaner, and this they are not compliant. So me, Cassio, I want to sue the company just to get some money because I know they are not compliant. That would be such a thing, or no, I just report them because they're not compliant, they need to comply, blah blah blah blah blah. But me personally, I don't get anything, right? It it which makes sense, right? I shouldn't get anything.
+
+Nariman Aga-Tagiyev (36:51)
+I think I'm not sure you're gonna get anything from this. I'm sure about that. I know that in some legislations, consumer that discloses can only conform to get something, but I'm not sure it applies to this one, to be honest.
+
+Cássio Pereira (37:04)
+Because for the
+
+Cássio Pereira (37:04)
+GDPRs, it's my data, right? So I'm not getting
+
+Nariman Aga-Tagiyev (37:07)
+Yeah.
+
+Cássio Pereira (37:07)
+anything, but I should be protected. That's the whole purpose of the law, right? But in this
+
+Nariman Aga-Tagiyev (37:11)
+Yeah.
+
+Cássio Pereira (37:11)
+case, not yeah, it doesn't make sense. I'm just asking because I see that scammers will be suing all the vacuum cleaners company just because they're not con they don't have a specific how to wipe the password. Nobody has how to wipe the full password, right? Competitors, exactly. Exactly.
+
+Nariman Aga-Tagiyev (37:26)
+Competitors would do it for sure.
+
+Cássio Pereira (37:31)
+Good business opportunity, Marcus. You that like to scump people around, so see?
+
+Nariman Aga-Tagiyev (37:34)
+Yeah. Yeah.
+
+Marcos Santos (37:36)
+Yes. And
+
+Marcos Santos (37:38)
+you talking about it. I'm new in this topic specifically, and I don't know too much about the law, about the new topics. And I start to think here. We have a lot of new ANZUS working in cybersecurity,
+
+Cássio Pereira (37:56)
+Mm-hmm.
+
+Marcos Santos (37:58)
+and they start to try to hack anything when they have. And I start to see the...
+
+Marcos Santos (38:05)
+A lot of new vulnerabilities was discovered because the angels have a time and have tokens and they have a sufficient knowledge base or documentation about the software and they start to discover this vulnerability. But by the way, my question is about the SLA. We have all these topics and we have all these topics in the law.
+
+Marcos Santos (38:35)
+or in this case. The companies have some SLA tool to fix these problems or to get the reported and then make anything with it or show or make some explanation.
+
+Nariman Aga-Tagiyev (38:53)
+Yeah.
+
+Marcos Santos (38:53)
+I started thinking about it.
+
+Nariman Aga-Tagiyev (38:56)
+That's actually an excellent question. Nobody asked me this one before, SLA, but
+
+Cássio Pereira (38:59)
+Mm-hmm.
+
+Nariman Aga-Tagiyev (38:59)
+actually, yes, because notification obligations, because next year we have full conformity obligations where you have to do secure by design, secure by default, technical documentation. But as of last September, one month ago, you have notification obligations and you have to notify about two types of problems. One is you have evidence that there is an active exploit of your product on the market. And second, there is a highly likely that
+
+Nariman Aga-Tagiyev (39:26)
+Very soon you will be exploited and there is a huge risk on availability, integrity, and what was the third one? Confidentiality of
+
+Cássio Pereira (39:36)
+Mm-hmm.
+
+Nariman Aga-Tagiyev (39:37)
+your consumer. So if you sell the product that relies on a remote data processing solution, if it does not rely on the remote data processing solution, if it's a vacuum cleaner that doesn't connect anywhere, there is no problem with SLA. It's just there, it works. Well, if it breaks within two years, they have to replace it due to warranty.
+
+Nariman Aga-Tagiyev (39:55)
+But otherwise, if it connects to remote data processing solution and without it, it cannot work. So you have a camera system for outside, but it really relies on the portal. You have to go on mobile app to watch it. It has to go through data center somewhere. And if there is an exploit that results in denial of service and availability,
+
+Nariman Aga-Tagiyev (40:18)
+and you realize you had a hard-coded password on your server or that maybe your camera has a hard-coded certificate that is used to send this information to the cloud. Now, there's a high chance that if it's spread out, leaked, maybe you see evidence that is being leaked, that's secret on the public internet, the result will be reduced SLA, Serious Level Agreement, if that's what you mean, right, SLA.
+
+Nariman Aga-Tagiyev (40:47)
+So less availability. And it means that you also have to notify a NISA right away about it. Because what is the security threat for consumers? It's any threat that results in a reduced integrity, confidentiality, and availability. So any of those go down, you have to notify.
+
+Marcos Santos (41:09)
+Okay, that's Catch
+
+Cássio Pereira (41:10)
+Man, that's crazy.
+
+Cássio Pereira (41:13)
+general, in general, this it's a lot of work for us, I would say. opportunities and so on. But from the in let's looking from the industry perspective, it's it's crazy. before we we wrap up, I just want to mention because I remember Marcos was asking about this reverse engineering and so on. I think we are on a level that
+
+Cássio Pereira (41:35)
+personally, for example, I I had a lot of extensions on my browser just to do some tasks, you know, things here and there. And some of them they have like premium features that you need to pay, blah, blah, blah. Now with AI, I can just clone that extension or small app or whatever. Don't pay anybody anymore. I have my own running locally and I don't care. Right. Some cases, I mean if they're open source, you don't need to
+
+Cássio Pereira (42:04)
+Reverse engineer anything, you just read the code, build, compile, etc. and if you have something working, you can just describe to AI the features, how you want, etc., it will make even better for you. Or you can actually upload the sample, try to decompile and actually reverse engineering the whole source code, right? My point is with AI now, all the I think for now advanced users, let's say.
+
+Cássio Pereira (42:32)
+People with more of this kind of knowledge and so on, they are doing this already. So you don't need to pay more stupid apps to do some small things that you're usually paying a subscription. Now you're just cloning and doing yourself, running locally on your own phone, etc. But sooner we'll get to regular users. Like let's say regular users with some skills that they can just ask AI, I have this app here. Can you just do this for me? As the same. I'm not selling, I'm not commercializing, I'm not.
+
+Cássio Pereira (43:00)
+Distributing is just for my personal use. I will install on my phone or my machine. And I see here a lot of SaaS in general, maybe not even the topic, right? But I see a lot of SaaS companies, SaaS losing kind of their value because of this. Unless they have, you know, service on top, like a huge software that's doing a lot of process and this kind of thing. Yes, but this micro SaaS and small features, people are just reverse engineering and
+
+Cássio Pereira (43:28)
+doing for themselves. yeah, at least I'm doing just to not pay some subscriptions, which is crazier.
+
+Marcos Santos (43:33)
+I think the software now is like a commodity. you know when you
+
+Cássio Pereira (43:37)
+Yeah.
+
+Marcos Santos (43:38)
+have a software who don't have more value for the market, the value is in your business logic or if you have something,
+
+Cássio Pereira (43:46)
+Or services you provide, huh?
+
+Marcos Santos (43:48)
+yeah, or services, something when we have aggregating your software. But the software in itself don't have more value.
+
+Cássio Pereira (43:57)
+I I got an ad these days on Instagram about a so I have a really trouble wearing, like dressing nice, this kind of thing, right? So wait a second. I wait a second. I got
+
+Marcos Santos (44:04)
+Let me show the example.
+
+Cássio Pereira (44:07)
+this ad of a app that you send the pictures of the clothes you have and it organized the looks for you. And I was damn why I didn't think about this before. So I downloaded the app, started to use it, pay four dollars monthly, like fuck.
+
+Cássio Pereira (44:22)
+I don't want to pay for this. So I just hey Claude, please build me this app. I want the same features, the same thing. I will run locally. I now I dress nice for free with the clothes I already have, right? Basically, the AI is organizing your wardrobe, what to dress, etc. etc. But that's my point, right? A lot of companies are small startups, they're basically dying because of this. But anyway, go.
+
+Marcos Santos (44:43)
+Yeah,
+
+Marcos Santos (44:44)
+yes, but the next example when I started to talk is about Spotify. That's very easy you clone the Spotify app. But this value is not in the app. The value is the business behind of this.
+
+Cássio Pereira (44:57)
+Exactly.
+
+Cássio Pereira (44:58)
+The app itself in this case is easy
+
+Marcos Santos (45:00)
+Yeah.
+
+Cássio Pereira (45:00)
+technically, but yeah, the the whole rites of the songs, all this kind of stuff, yeah, that's further.
+
+Nariman Aga-Tagiyev (45:05)
+I have a question for you.
+
+Nariman Aga-Tagiyev (45:07)
+Maybe we don't touch the CRA a bit. You say it's lots of work coming for us, et cetera. What I see is lots of companies are getting away with just having security theater. They have lots of paperwork policies. They're not doing anything. just pretend to be doing threat modeling, just asking AI to generate those things, reports. And then you have lots of companies that...
+
+Nariman Aga-Tagiyev (45:29)
+do activities but don't have any evidence of doing those activities. So like some do very strong paperwork but no activities, some do activities, no paperwork to defend it. So if you would design a control, like for example, you need to do SCA, check the third party vulnerabilities before you release, that there is no new critical. It's a control.
+
+Cássio Pereira (45:50)
+Mm-hmm.
+
+Nariman Aga-Tagiyev (45:50)
+What would be in your control? You would write this policy. What information would you have for that control? I will give you a tip.
+
+Nariman Aga-Tagiyev (45:59)
+It should be describing why you do it, what you do, who does it, when, right? That's
+
+Cássio Pereira (46:05)
+Mm-hmm.
+
+Nariman Aga-Tagiyev (46:05)
+what you would think. What else do you think should be there?
+
+Cássio Pereira (46:09)
+for example today we are doing a I'm doing a personal project on the company to about SCA. So basically each repository, let's say each repository, right? But we have some apps that is a group of repositories. So 12, 10, 20, it doesn't matter. But anyway, so each repository we have the that control in place saying, like, okay, if you have critical SCA vulnerabilities, then each vulnerability create a ticket on Jira. so you already have the traceability.
+
+Cássio Pereira (46:38)
+That specific repo has a file with the code owners or the secure champion or the business owners, something like this, that already assigned that ticket to that person. So that team, that department, everything is already there. and saying, okay, you you are blocked because there's a critical vulnerability. So the ticket is created. You fixed the ticket is closed with a comment.
+
+Cássio Pereira (46:59)
+And we have even automations to to do this. Okay, you have found a vulnerability, even though you already automated, updated, so you fixed already the problem, but you document that you find this problem, right? So you already know where, who is the owner, who is responsible for that repository, what product it belongs to, and then we know already for who, etc. etc. Mm-hmm. Mm-hmm.
+
+Nariman Aga-Tagiyev (47:21)
+I'll add two more because of CRA now, because you need have evidence and compliance,
+
+Nariman Aga-Tagiyev (47:25)
+right? What, when, who, right? When in life cycle this control need to be done, but
+
+Cássio Pereira (47:30)
+Mm-hmm.
+
+Nariman Aga-Tagiyev (47:31)
+also who validated this control, like your manager, like who thinks this control is good enough for the security requirement and sign
+
+Cássio Pereira (47:39)
+Okay.
+
+Nariman Aga-Tagiyev (47:39)
+up when it's validated, who's validated, that signature of that person, maybe you as upside person. Then verification steps, what unit test, how to check this control is actually being done.
+
+Nariman Aga-Tagiyev (47:50)
+Not like what, but how to verify it's being done. Yeah.
+
+Cássio Pereira (47:52)
+Okay, we don't have this who approved
+
+Cássio Pereira (47:55)
+so far. and
+
+Nariman Aga-Tagiyev (47:58)
+For verification, validation is one thing. Who approved it? But the second,
+
+Nariman Aga-Tagiyev (48:02)
+what are the unit tests of this control? How to check it actually has been done? Where in the system you're going to look for evidence that it's actually being done? And then, when last time verification happened, who did it and who signed out on the read that it's okay?
+
+Cássio Pereira (48:16)
+Okay, so for every pull request, that there is this security checks. So every pull
+
+Nariman Aga-Tagiyev (48:22)
+Yeah.
+
+Cássio Pereira (48:22)
+request, so when someone is creating new code, etc. etc., all those checks are there with the date, when happens, and what happens. So you have their SCA scan, green, no green. If it's no green, this process triggers. If it's green, nothing happened. But you don't have the at least we don't have this approval or who validated, even if it is control is checking. But for example, the app sec team is responsible for setting up the scanner.
+
+Cássio Pereira (48:46)
+So if I go down the scanner and disable the I don't know, do not check for library E or B A, B, or C. Like nobody knows about this. On the auditing of the tool, there might have some controls, but we don't have this the whole traceability. We're trusted that security enabled, right? So there are some gaps based on your side.
+
+Nariman Aga-Tagiyev (49:05)
+Yeah, if you have a QA person or somebody who is going to check
+
+Nariman Aga-Tagiyev (49:09)
+one last time that, okay, are we going to release? Let's check that all ACA problems are covered here. And
+
+Cássio Pereira (49:14)
+Mm-hmm, mm-hmm.
+
+Nariman Aga-Tagiyev (49:15)
+then that person did it, they should have a ticket for that to do this task.
+
+Nariman Aga-Tagiyev (49:19)
+And then when they do that, they're gonna sign off, yeah, I checked it. I verified that this control is done. There are no new vulnerabilities, et cetera, or the signatures, or maybe it's a software that checks it. So
+
+Cássio Pereira (49:29)
+okay.
+
+Nariman Aga-Tagiyev (49:29)
+these are small details, but I'm just giving you the level of what you need to have.
+
+Cássio Pereira (49:33)
+That should be there.
+
+Nariman Aga-Tagiyev (49:37)
+so it's not just I have a control. I think I configured it once and nobody checked it again.
+
+Cássio Pereira (49:40)
+Yeah. I'm thinking
+
+Cássio Pereira (49:42)
+here because they is usually when you have a release, you have a ticket, and on this ticket you have like the definition of ready, definition of done, and the tick things that should be there to consider done. And
+
+Nariman Aga-Tagiyev (49:52)
+Yeah.
+
+Cássio Pereira (49:53)
+one of the sticks would be like, okay, someone check that that specific control, there is evidence, blah blah blah. Yeah, it's how I see it. Yeah. Yeah, okay. Yeah.
+
+Nariman Aga-Tagiyev (49:59)
+It doesn't have to be every release, but it should be some verification steps. And these type of things we forget, and that's what this law
+
+Nariman Aga-Tagiyev (50:07)
+makes it more difficult to play the game, to fake the game.
+
+Cássio Pereira (50:11)
+Yeah. So if you are listening, you see how I know how to do it, hire me. Guys, we
+
+Nariman Aga-Tagiyev (50:18)
+Yeah.
+
+Cássio Pereira (50:18)
+are on time. Nariman, thank you again. I think this topic deserves a whole podcast just for this from now on. Like it's too many things just to describe each control, how to do each one of these things. But for sure, some we already covered here. hopefully was very informative for people out there. I think the wait a second.
+
+Cássio Pereira (50:48)
+I think to be compli fully compliant with the SRA is already a dev may cry, right? That make developers cry already. And not only developers, but everybody involved in software development, because it's a lot of work. Just to provide the evidence, as you're asking, What is the evidence that this control is in place, was checked, proper settled, and so on and so forth, right? So it's it's already crazy. Guys, we are on time. Ananiman, thank you again for your time. Thank you for sharing.
+
+Nariman Aga-Tagiyev (51:14)
+Thank you,
+
+Nariman Aga-Tagiyev (51:14)
+Casio. Thanks, Marcos. Nice to meet you.
+
+Marcos Santos (51:16)
+Thank you, nice meeting you, Norman.
+
+Cássio Pereira (51:18)
+Next
+
+Cássio Pereira (51:18)
+week, see you all. That was one more episode of the Security Podcast. And Nariman was here reverse six episodes ago on the actually
+
+Marcos Santos (51:26)
+Mm.
+
+Cássio Pereira (51:27)
+six episode of the this season, right? Season eight. So more to come. See you next week, guys. I'm Casio Pereira.
+
+Marcos Santos (51:34)
+I'm Marcos Sartos.
+
+Cássio Pereira (51:35)
+That's all. Bye bye.
+
+Marcos Santos (51:37)
+Bye.

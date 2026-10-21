@@ -6,6 +6,23 @@
   },
   "episodes": [
     {
+      "id": "t8e13-the-shocking-truth-about-new-cyber-legislation-that-could-transform-your-business",
+      "slug": "t8e13-the-shocking-truth-about-new-cyber-legislation-that-could-transform-your-business",
+      "title": "T08E13 - The Shocking Truth About New Cyber Legislation That Could Transform Your Business",
+      "date": "2026-10-21",
+      "author": "Cássio Batista Pereira",
+      "excerpt": "What happens when a fridge hack disrupts 700 supermarkets in France? Nariman Aga-Tagiyev explains how NIS2 and the Cyber Resilience Act are redefining application security, product compliance, and executive accountability in Europe.",
+      "contentHtml": "<p>What happens when a fridge hack disrupts 700 supermarkets in France? Join Cássio Pereira and Marcos Santos as they explore this startling incident and the legislation redefining application security in Europe and beyond.</p><p>Nariman Aga-Tagiyev returns to explain the implications of NIS2 and the Cyber Resilience Act for developers, manufacturers, security professionals, and business leaders. These regulations are more than bureaucratic hurdles: they introduce security-by-design expectations, lifecycle vulnerability management, reporting obligations, and stronger accountability.</p><p>In this episode, you’ll discover:</p><ul><li>The critical differences between NIS2 and the Cyber Resilience Act and what they mean for organizations.</li><li>How the fridge incident illustrates the need for robust security in connected products and critical environments.</li><li>How new requirements affect software development lifecycles, product compliance, market access, and consumer rights.</li><li>Why evidence, documentation, risk assessment, and incident notification need to become part of daily security practice.</li></ul><p>As these rules take effect, failing to prepare can lead to financial penalties, market restrictions, and loss of customer trust. This conversation is essential for anyone building, securing, or selling digital products in Europe.</p>",
+      "mp3": "https://api.spreaker.com/v2/episodes/75899165/download.mp3",
+      "download": "https://api.spreaker.com/v2/episodes/75899165/download.mp3",
+      "youtube": null,
+      "transcriptUrl": "transcripts/813.txt",
+      "blogPostUrl": "posts/cyber-resilience-act-nis2-transform-business.html",
+      "tags": ["DevSecOps", "AppSec", "Cyber Resilience Act", "NIS2", "Security by Design", "Compliance", "Product Security", "European Union"],
+      "spreakerId": "75899165",
+      "code": "T08E13"
+    },
+    {
       "id": "t8e12-the-surprising-game-that-transformed-application-security-training",
       "slug": "t8e12-the-surprising-game-that-transformed-application-security-training",
       "title": "T08E12 - The Surprising Game That Transformed Application Security Training",
