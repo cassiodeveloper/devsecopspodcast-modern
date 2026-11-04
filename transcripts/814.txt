@@ -1,0 +1,586 @@
+Cássio Pereira (00:04.378)
+e
+
+Cássio Pereira (00:10.17)
+Olá, tudo bem? Sejam muito bem-vindos a mais Devs & Colos Podcast. Eu sou o Caso Pereira. Muito bem, meu bom ter você aqui de volta e não ter o Marcos. É sempre prazer.
+
+Ben-Hur (00:33.102)
+E eu sou Ben Hur.
+
+Cássio Pereira (00:39.962)
+É sempre prazer pra gente poder fazer episódio mais saudável, mais tranquilo. Brincadeiras à parte, nosso amigo Marcos sumiu, a entrou a marcar a agenda hoje e sumiu. O que importa é que estamos aqui. Pessoal, a gente vai fazer episódio de hoje bem especial, porque gente estava falando no offline aqui, Do caos que foi, ainda é, ainda está sendo pra algumas empresas, mas o caos que foi aí há duas, três semanas atrás com Everything for Shell, PHP to Shell, Node for to Shell.
+
+o a 4 puxou e cagou com tudo 70 % da internet foi afetada então já puxou pouquinho aí de é por isso que esse episódio a gente vai chamar de Lessons Learned From Shell o que a gente aprendeu aí nesse nesse nesse caos literalmente e trazer pouquinho da experiência para vocês os insights que o Beirut estava comentando a estava comentando e pouquinho da minha experiência também do que a gente está sofrendo é bom que está fresco
+
+tá fresco e ainda estamos dentro do incidente, certa forma gente não resolveu tudo ainda então dá pra trazer bastante insight. Vamos lembrar sempre também que o DevCop Podcast tem o apoio da Nova8, é atribuidor da Checkmarks e da SNIC no Brasil. Purple Bird Secure, que vai cuidar de você durante e depois de incidente. A Conviso, é especializada segurança de aplicações. Ela ajuda as empresas que lidam com dados sensíveis como FinTechs, bancos, Healthtechs e plataformas digitais a fortalecer toda a gestão de segurança do software, desde o desenvolvimento até a produção.
+
+e o time da Secure Habits, tem serviços especializados segurança de aplicações. Fala com pessoal também que eles têm time lá para ajudar vocês, beleza? Dito isso, não se esqueça também que temos a nossa exclusiva pós-graduação AppSec, que já precisa ser atualizada, eu diria. gente já mal lançou e já tem muita coisa nova. A IA está escalando muito, então a gente precisa realmente dar uma atualizada algumas coisas que constantemente a gente faz esse trabalho ali na pós de estar
+
+atualizando conteúdo enfim tá ligado aí no no que acontece no mercado porque não tem como tirar o pé. Essa é a grande verdade. Por outro lado também dá para atualizar o agrário todo dia. Então tem que ter certo espaçamento ali para pessoal aprender e tal e as coisas novas porque tem muita coisa nova mas não necessariamente consolidado. Tipo negócio que saiu semana passada já já morreu no mês que vem foi só hype e na verdade não vai seguir enfim. Mas só para vocês lembrarem também da POS AppSec beleza? posappsec.com.br
+
+Cássio Pereira (03:05.177)
+Pessoal vamos lá bem urzeira, você ainda tá resolvendo PHP to shell, Node for Shell aí, como é que tá? Aqui tá, o pau tá quebrando ainda mano, como é que tá do seu lado aí?
+
+Ben-Hur (03:11.474)
+Obrigado.
+
+Bem, gente conseguiu remediar muito das coisas porque acho que a gente fez bom trabalho, bom assessment na risco e exposição, de fato, da vulnerabilidade, sabe? E o que acabou ajudando a gente é entender de fato quais são os vetores de ataque e o que categoriza uma...
+
+uma aplicação vulnerável. E quando a gente diz aplicação vulnerável não é só entrar e colar na ponta, mas esse trace, onde ele passa e se alguma coisa está vulnerável nesse caminho. Então, porque às vezes vai bater numa aplicação que está vulnerável, mas existem outras aplicações no meio que não estão monitoradas, que podem estar vulneráveis também no caminho desse pacote. Então acho que a gente fez
+
+Cássio Pereira (03:59.611)
+Uhum.
+
+Cássio Pereira (04:08.122)
+Você nem sabe que tão lá no meio,
+
+Ben-Hur (04:15.886)
+bom trabalho aí, e aí a gente acabou entendendo que nós reduzimos ou eliminamos, digamos assim, o nosso risco da exposição. Agora a gente trabalha para corrigir o que a gente já não estaria mais afetado, digamos assim.
+
+Cássio Pereira (04:38.138)
+Eu queria começar a puxar essa boa introdução, mas eu queria começar a puxar no sentido do seguinte, por exemplo, a minha dor hoje ela não é... E aí a vai trazer exatamente os insights sobre isso. Acho que tem várias vertentes. Uma delas é a a própria pergunta, né? Estou vulnerável? Tipo, como é que você responde isso e fala cara, saiu aí uma vulnerabilidade nova numa libe. Nesse caso, nível de sistema operacional até, né?
+
+Ben-Hur (04:46.734)
+e e
+
+Cássio Pereira (05:07.29)
+não necessariamente uma biblioteca como o Log4j há dois ou três anos atrás. é pouquinho mais... Mesma natureza, pouquinho diferente. Mas a primeira pergunta, estou vulnerável, então como é que uma empresa hoje consegue saber e responder essa pergunta de uma forma fácil? Acho que falar SCA é muito vago hoje. faz SCA e beleza, está resolvido. Nesse caso, não necessariamente, porque está lá no server às vezes.
+
+ou no seu no seu no imagens que você usa do seu docker, no seus docker fire da vida. Não necessariamente é uma libe pacote instalado no seu projeto. Então o S.A. vai te ajudar aqui vai. Eu acho que cobriria cobriria 60 70 % dessa resposta para responder essa pergunta. Mas você tem gap ali de cara o S.A. não vai te responder. Como é que você garante que todo o seu parque de máquinas que roda o PHP por exemplo.
+
+atualizado, tá com patch, SA não vai responder isso, o SA tá falando de AppSec, isso é com governança lá das suas máquinas, cara isso vai longe. Então eu queria primeiro tocar nesse ponto e aí você comenta depois, tá bem? Visibilidade, responder a pergunta, estou vulnerável ou não? E a segunda, que talvez é que eu tô mais sofrendo aqui, aqui fora, que é quem resolve isso? Vou detalhar.
+
+que o que gente tem chamado de ownership, quem é o dono dessa porra, quem resolve isso, coisa toda. Então, beleza, estou vulnerável? Vamos supor que eu já consegui responder, estou. Tem aqui uma lista de aplicações que eu sei que tem aquela versão vulnerável da biblioteca ou que rodam num ambiente com aquela versão instalada na máquina ou numa imagem, etc. E aí eu tenho uma lista de 7, 8 mil repositórios, aplicações e servidores.
+
+Ben-Hur (06:37.458)
+e aí
+
+Ben-Hur (06:53.806)
+e aí
+
+Cássio Pereira (07:00.378)
+Eu vou chutar metade, metade deles. Eu sei quem é o dono, quem a pessoa técnica responsável, quem é o gerente, é o produto, o que aquele recurso está servindo dentro da empresa. Os outros 50 % eu não tenho ideia de quem é o dono. E aí eu tenho a segunda resposta, a segunda pergunta. Como é que eu resolvo isso? Porque não sou eu que vou lá fazer o pedido e resolver essa parada. É o dono, é o responsável, é o centro de custo, é o business, é o squad, é o nome que for. Mas tem alguém que vai responder por aquilo.
+
+Ben-Hur (07:10.522)
+e aí e aí
+
+Cássio Pereira (07:29.21)
+Eu preciso primeiro saber quem é para poder falar, amigão, você tem problema, precisa se resolver. Porque do jeito que eu estou hoje, eu sequer sei quem é. E aí eu fico num trabalho assim de mandar e-mail para o Ben Hur, o Ben Hur tem que falar, putz, eu vi isso, acho que o Marcos é o dono. Aí o Marcos, putz, na verdade, eu fui o dono, último commit foi meu há dois anos atrás. Agora é do Ciclano Beltrano. Você vai num loop de três semanas até achar quem é de fato o dono. Aí você chega num cara que fala, isso aí está descontinuado, pode tirar do ar, não precisa mexer, sabe?
+
+Isso assim, repositório, uma aplicação é uma coisa, 5 mil repositórios é outra. Então eu queria que você comentasse sobre isso, Esses dois pontos. O primeiro, estou vulnerável, como que gente ajudaria as empresas a responder essa pergunta nesse nível de vulnerabilidade que a teve agora? E o segundo, como é endereço isso? Porque é difícil ter essa, vamos dizer assim, esse catálogo de donos de cada recurso dentro da empresa. Como é que você vê isso aí, mano?
+
+Ben-Hur (08:24.73)
+Bem, boa provocação, Que é duas perguntas que elas veem cadeada, né? Estou vulnerável? Sim. Posso ser atacado? São duas coisas, né?
+
+Cássio Pereira (08:35.738)
+Boa? Boa?
+
+Ben-Hur (08:37.87)
+Porque, por exemplo, uma coisa que é bastante comum é o seguinte, eu tenho meu ambiente de produção, eu tenho meu ambiente de stage, meu ambiente de teste, por exemplo. Às vezes o ambiente de stage de teste é prevado, não é VPN e tal, etc. Então o risco dele é menor. Dizer que você não está vulnerável é outra coisa. Porque se você tomar SSRF qualquer lugar ali, o cara vai te explorar de dentro. Então... Porque daí uma coisa encadeia a outra.
+
+Cássio Pereira (08:56.954)
+Uhum.
+
+Ben-Hur (09:07.886)
+ponto com vulnerabilidade de menor risco pode levar a uma vulnerabilidade maior risco. Então vamos lá, primeiro ponto. Estou vulnerável
+
+Isso é parte da premissa que eu sei o que aconteceu, eu sei quais são os componentes envolvidos nessa vulnerabilidade, eu tenho conhecimento aonde, no meu ecossistema, os componentes envolvidos nessa vulnerabilidade podem existir, esse bom. Porque pessoal acha que gerar esse bom é só rodar uma coisinha, gerar JSON e fechou, Vai nessa.
+
+Cássio Pereira (09:48.154)
+Senta lá, Cláudia.
+
+Ben-Hur (09:50.542)
+Lines. Então, assim, é super complexo isso, Gestão de Sibon. Então, é uma vulnerabilidade no PHP, por exemplo? Ok. O que está rodando o PHP aqui dentro?
+
+Eu tenho repositórios? Beleza, o repositório é onde eu vou corrigir a vulnerabilidade. Não significa que eu estou, nesse momento, exposto a uma exploração.
+
+Cássio Pereira (10:28.058)
+Uhum.
+
+Ben-Hur (10:29.134)
+Porque esse repositório precisa gerar uma aplicação. Essa aplicação precisa estar execução. E a execução dessa aplicação precisa ter caminho explorável. Então, se eu tenho a vulnerabilidade... Ok, essa vulnerabilidade está onde? Ela está no PHP versão tal.
+
+Cássio Pereira (10:42.202)
+Uhum.
+
+Ben-Hur (10:58.414)
+ou ela está no WordPress, tal, que às vezes nem sempre, por exemplo, nem sempre é algo seu que você faz gerenciamento no seu repositório. Às vezes você uma empresa que trabalha com outras software houses, outras empresas que gerenciam parte do seu portfólio e fazem subprodutos dentro do seu próprio portfólio que também possuem aquelas tecnologias. Então vou te dar exemplo, Você tem uma empresa que tem produto...
+
+seu, mas o seu suporte quem lida é uma outra empresa, mas está abaixo do seu domínio e lá roda WordPress. Aí o cara lá faz defeito, faz defeito no teu parte de suporte, entendeu? Então, perceba que eu estou vulnerável, vai além do eu tenho repositório com essa dependência.
+
+Cássio Pereira (11:36.538)
+Você se ferrou, você tá vulnerável, entre aspas,
+
+Cássio Pereira (11:52.571)
+E até acrescitaria no que você está falando rodar scan nos níveis de repositório e testes identificação eu diria que é a parte até fácil. Beleza é fácil de fazer open source. Agora.
+
+Ben-Hur (12:02.866)
+Como cerca?
+
+Cássio Pereira (12:08.89)
+Por exemplo, beleza, eu não tenho o componente uma Libre na minha aplicação, mas a minha aplicação roda numa máquina, na AWS, no Azure, na puta que eu pariu, que está com aquele componente instalado na máquina, na versão vulnerável, porque nesse caso não foi uma Libre específica. como é que o DeV ou aquele time, que às vezes nem é ele que controla a infraestrutura de produção, responde por isso, tá ligado?
+
+Ben-Hur (12:15.886)
+Sua E aí
+
+Cássio Pereira (12:38.074)
+tipo mano, é o dono da aplicação você desenvolveu plugin por de pré e você tá rodando a versão vulnerável ou sei lá, qualquer coisa, você não tá com essa versão mas a máquina que eu criei na AVM que eu criei produção pra rodar a tua aplicação lá na AVM tem o componente instalado você teoria não sabe disso ou você sabe a não, sei que tem o teu componente lá porque eu sou o dev e sei que alguém tem que rodar mas você não sabe a versão específica por exemplo, você tem o Python na máquina
+
+Dependendo da Libre que está lá o Python está rodando. Aí você fala não eu preciso do Python 7, 8. Não uma coisa antiga ou 12 ou 13 sei lá. Então meu ponto é esse como é que os times têm essa visibilidade como todo nesse nível. Como é que eu sei que a máquina está com patch, está hardware nizada no nível de sistema operacional mesmo. Acho que essa é uma pergunta que talvez a gente pudesse de alguma forma botar uma luz de.
+
+Ben-Hur (13:13.742)
+aí aí
+
+Cássio Pereira (13:32.443)
+como a galera pudesse fazer isso. aí eu talvez para você comentar cima eu colocaria a seguinte frase assim ó. Você tá fudido porque se você responder essa pergunta eu diria que você precisa de alguns times né. O time de DevOps precisa de mim que chame como quiser infra o time de deve de repente até arquitetura.
+
+Todos eles tem que estar conversando muito bem alinhados, se tudo estiver muito bem documentado teoria, 90 % do caminho andado, você sabe documentado o que está usando, a versão, aquela coisa toda. Mas a galera não se fala. Então, coisa que está rodando infra, cara vai lá e faz o pet, você nem sabe que está rodando sua aplicação, está tudo bem. Então, sei lá, eu queria que você falasse pouquinho nesse sentido também, sabe, de máquina, de como é que a galera poderia expandir essa visibilidade de aplicação, saca?
+
+Ben-Hur (14:23.79)
+Perfeito. Uma das coisas que eu acredito é que existem domínios dentro da área de segurança e cada com responsabilidades diferentes. Então, por exemplo, se eu estou falando de código, tudo que envolve o código da aplicação, e eu sou responsável por isso, até onde vai? Porque às vezes depende do tamanho da empresa. Talvez eu vá fazer tudo. Daí, beleza, eu vou assumir todo esse papel. É, eu vou, relativamente sim, concordo.
+
+Cássio Pereira (14:46.522)
+Tá mais fácil, aí tá mais fácil direita. teoria,
+
+Ben-Hur (14:53.391)
+Concordo. Só a burocracia, por tu dizer pra alguém, é tu que tem que fazer isso. E o cara não tá no meu sprint. Tu já subiu... O que mais ferre é a burocracia, não nem a complexidade do negócio. A burocracia pra decidir quem vai fazer o quê. Big techs funcionam bem assim. Então assim, vamos lá, vamos definir os boundaries e os papéis. Por exemplo, quando tu fala do profissional que é... O profissional que cuida de desenvolvimento de software.
+
+Cássio Pereira (14:55.354)
+E
+
+Cássio Pereira (14:59.514)
+Já era. Ticket... Ticket pra cá, aprovação pra lá. P*** que pariu.
+
+Cássio Pereira (15:12.346)
+Uhum.
+
+Ben-Hur (15:23.598)
+Então, beleza cara, eu componente afetado. Meu escopo é, eu vou cuidar dos repositórios, eu vou cuidar de tudo aquilo que é código da minha aplicação e a minha responsabilidade que garantir que aquilo aí não tenha vulnerabilidade. Então, o meu escopo está no SAA.
+
+Eu tenho meu repositório, eu tenho meu S.C.A. Meu S.C.A. acusou uma vulnerabilidade crítica. Minha responsabilidade é corrigir aquilo à ZAP. Entendeu? Essa é a minha responsabilidade. E aí deveria cair sobre mim a responsabilidade de, surgiu uma vulnerabilidade quando eu estava empresa grande, Empresa grande. Aonde, cara, imagina uma empresa que tu tem, sei lá...
+
+Cássio Pereira (15:54.234)
+Uhum.
+
+Ben-Hur (16:11.47)
+5 mil desenvolvedores, vai pegar cada vulnerabilidade, vai fazer todo mundo sair correndo, não vai... Você vai parar a empresa, a área de seguro vai parar empresa. Então, a tua responsabilidade é, cara, CVS com esse tipo de criticidade, e muitas vezes você pode colocar uma label de Danger nele ali, cara, tu tem 6 horas pra fazer o fix. Só que se eu tiver que sair correndo atrás da empresa toda, eu vou ser explodido antes de ser feito fix. Tá? Porque o tempo de eu gerenciar...
+
+Cássio Pereira (16:25.498)
+Uhum.
+
+Ben-Hur (16:40.494)
+política da empresa e a burocracia da empresa vai levar três, quatro dias.
+
+Cássio Pereira (16:46.874)
+Eu tô há três semanas, mano, eu não consigo responder algumas perguntas, ainda que chega a até agonia no âmago, assim, tipo, caralho, velho, como é que pode?
+
+Ben-Hur (16:52.526)
+E aí a tua exposição ao ataque, ela foi ampliada pela burocracia. Então, seja, olha só, cara, foi detectada uma vulnerabilidade, essa vulnerabilidade aqui, ela entrou num nível especial, porque a gente tem lá, os SLA de política, crítica alta, média e baixa, Beleza, a gente tem as políticas SLA pra aquilo ali. Mas cara, a gente precisa de uma classificação de zero-day, Entendeu?
+
+Cássio Pereira (17:06.874)
+Uhum, uhum.
+
+Cássio Pereira (17:13.018)
+Uhum.
+
+Cássio Pereira (17:17.722)
+Eu diria até no nível de pegando gancho no que está falando, cara que é responsável pelo seu repositório. Olhando para o cenário atual onde as aplicações são mais cluster, Kubernetes, imagem, Docker, essa porra toda, teoria, beleza, é isso que eu queria puxar.
+
+Ben-Hur (17:33.07)
+E aí nós vamos entrar no outro papel, tá?
+
+Cássio Pereira (17:37.531)
+teoria, esse mesmo cara que cuida o repositório já tem essa visibilidade ali. Porque ele que setou como é que o Docker, a imagem do Docker vai rodar, as versões do componente que está ali, qual a imagem base que ele vai subir. teoria já está pouquinho mais controlado. Talvez a máquina mesmo, o CPU lá, o gabinete, o bare metal mesmo, talvez ele não tenha o controle nesse nível. Mas só de setar a imagem base ali e entender o que está rodando já está meio que garantido. Mas...
+
+você ter load balancer na frente, você tem monte de coisa de arquitetura que ainda pode estar afetada, vê que a aplicação pode estar blindada, mas só no nível de arquitetura e infraestrutura você ainda está vulnerável, a aplicação está blindada, os clusters estão bonitinhos, aí tem load balancer na frente que alguém subiu pra essa porra, sei lá, quê, porque precisa de load balancer, e o load balancer está vulnerável, por exemplo, entendeu?
+
+Ben-Hur (18:25.486)
+Aí uniu o escopo. Se o teu escopo tá IAC, o IAC também faz parte dessa política.
+
+Cássio Pereira (18:34.01)
+Sim, é tudo uma coisa só. Perfeito, perfeito.
+
+Ben-Hur (18:35.502)
+Exato. Então, se diz que surgiu isso aqui, a tua estabilidade é manter isso aqui atualizado e corrigido. Entende? Ponto. Nós estamos numa era que não interessa a discussão...
+
+Cássio Pereira (18:42.586)
+Uhum.
+
+Ben-Hur (18:52.878)
+de dias, porque nós vamos levar minutos para ser explorado. Então, algo vai quebrar tudo?
+
+É uma coisa. Mas, velho, às vezes, tu vai fazer isso aqui, Vai fazer upgrade nesse cara, menor verso, vai corrigir a vulnerabilidade, não tem impacto nenhum, e o pessoal fica discutindo horas pra ver o que é que faz.
+
+Cássio Pereira (19:16.922)
+cara eu tava na deixa eu botar pimenta nesse nesse tempero aí tava na reunião hoje a planilha é uma planilha aberta a planilha tá assim ó o nome da aplicação repositório a versão que tá usando da imagem que tá cagada o patch é literalmente é minor sei lá está 2 não lembro o nome da imagem mas 2.21 2.21.1 o update é 2.21.2 tipo o minor
+
+Ben-Hur (19:30.03)
+E aí E aí
+
+Cássio Pereira (19:44.635)
+teoria, não vai quebrar nada, aquela coisa toda. Ou seja, basicamente é uma base mix da aplicação, então você faz deploy novo, Compila, atualiza a versão, compila, faz o deploy. No nosso nível aqui, qual é o downtime dessa porra? Sei lá, segundo, dez segundos, sei lá, aplicação rodando para milhões de clientes, tatatatatá. Tem downtime, é upgrade novo. Aí gerente perguntou, mas qual é o downtime disso? Aí eu, caramba mano, é downtime mesmo que você faz deploy.
+
+Ben-Hur (19:57.902)
+Se gente tomar ataque, vai ser no down time de uma semana, mais ou menos.
+
+Cássio Pereira (20:15.61)
+Aí ficou nesse bate e volta nesse bate volta até que eu falei assim, se a gente tomar ataque, o downtime é... fujo a palavra agora, mas é assim, não consegui estimar. Pode ser dia, pode ser uma semana com essa porra parada. Porque é empresa de trade, então a gente não pode parar no dia do trade e tal, tal. Falar, beleza, tem nível de negócio, de criatividade que você pode falar, beleza, eu não vou fazer update agora, vou fazer update de madrugada, que tá fechada a bolsa, aquela porra toda. Perfeito.
+
+Ben-Hur (20:35.942)
+e aí
+
+Cássio Pereira (20:39.226)
+Agora ficou uma discussão do tipo não, mas vai derrubar aplicação, sabe uma politica, a frase foi essa, cara, se a tomar o hack, o downtime é imprevisível. Aí a tem problema muito sério. E atualizar o negócio é muito simples, número, mudar character, nesse caso no Dockerfile, resolve a parada. E é isso você falou, cara, às vezes entra isso numa discussão, que seja de uma hora.
+
+Ben-Hur (20:58.542)
+Porque sempre que eu recebo uma pergunta tipo, meu, será que vai quebrar? A pergunta que eu tenho é, a gente tem teste, a gente tem pipeline, a gente consegue ver se a aplicação vai quebrar, a gente tem blue-green deployment?
+
+Cássio Pereira (21:07.482)
+que você pode resolver o negócio segundos e fazer o upload, o deploy naquele momento. Abre o ticket, faz o deploy e tá tudo resolvido, entendeu?
+
+Ben-Hur (21:28.302)
+Porque se a gente não tem nada disso, a gente não tem teste, a gente não tem nada, eu falo aí, peraí. É, entendeu? Então, por exemplo, cara, aí nós temos muitas outras coisas que caberiam nessa discussão. Mas a questão é, se eu não consigo validar o ambiente minimamente que vai quebrar, que a aplicação... gente não tem o mínimo de qualidade como engenharia e empresa de software. Não vai ser a segurança que vai salvar, tá? Então...
+
+Cássio Pereira (21:30.874)
+volte 15 casas. Volte 15 casas.
+
+Cássio Pereira (21:56.859)
+E nem segurança é problema a mais, já tem puta problema, né?
+
+Ben-Hur (21:59.79)
+Então não, tu já tá desestruturado. aí é onde é que entra esse escopo, né? Pessoal, essa vulnerabilidade aqui, entrou na nossa categoria lá especial que a precisa ser corrigida hoje. Qual que é o detalhe? Hoje, nós vamos ter uma quantidade enorme de vulnerabilidades... deixa só eu terminar o tempo e gente passa pro SPAC. E aí, beleza. seja, tu tem normalmente o pessoal que cuida de código de desenvolvimento e normalmente tu tem o pessoal de infra.
+
+que cuida da AWS, cuida dos exames, cuida dos containers, cuida de uma série de coisas, né? Então normalmente tem esse papel. O detalhe é, se a vulnerabilidade caiu pro teu papel, tu é o responsável por corrigir aquilo o mais rápido possível. Tu cuida de código, cara, é teu atualizando o código. Cara, caiu numa imagem Docker, caiu numa AME, caiu coisa assim, é tua responsabilidade de manter aquilo atualizado. Entende? Beleza.
+
+Eu, normalmente, que costumo fazer quando as coisas não estão tão maduras assim, eu costumo mapear duas pontas só. Quem é que pode gerar na capa de baixo? é código, tipo assim, código, imagem, ames, tudo que é ok, tudo que a gente tem controle. Cara, eu até posso tentar mapear fornecedor, mas se eu não tenho maturidade pra fazer tudo que eu quero, eu vou começar por...
+
+Cássio Pereira (23:13.882)
+Uhum.
+
+Ben-Hur (23:23.854)
+eu resolver o meu e cobrar os fornecedor tá beleza mas eu vou tentar garantir o meu eu mapeio essa capa de baixo e mapeio a capa de cima o que é capa de cima mapeio de repositório, imagem, ame tudo aquilo que eu consigo atualizar e gerenciar e mapeio a borda o que que está exposto por onde entra tá tudo com firewall
+
+Cássio Pereira (23:24.09)
+O que eu consigo fazer,
+
+Ben-Hur (23:51.694)
+Tá tudo passando por dentro do af e tá tudo gerenciado por intenel. E eu mapei os pontos de entrada. Então o meio, muitas vezes, ficar pouco nebuloso.
+
+Entende?
+
+Cássio Pereira (24:06.01)
+e essas entradas nem são tão difíceis assim mapiadas né se tiver cloudflare da vida registro gerenciador dos seus DNS já tá ali cara
+
+Ben-Hur (24:13.806)
+Se tiver bem configuradinho cima... Cara, e hoje, hoje, antigamente era uma fudida. Hoje, cara, pega agente autônomo, pluga o MCP da Cloudflare, ou a linha de comando CF da Cloudflare modo de leitura.
+
+pega uma linha de comando do GitHub, pega tudo que precisar, uma linha de comando do Datalog, uma linha de comando do teu serviço de logs, entendeu? E fala o seguinte, eu tenho essa vulnerabilidade aqui ó, ó, cara, me ajuda a entendeu? Saca? Então assim, claro, não é tão simples assim, mas o que eu tô dizendo é
+
+Cássio Pereira (24:50.746)
+Me tiga... Me ajuda a mitigar antes de eu fazer o patch.
+
+Ben-Hur (25:01.966)
+Existe uma... Se tu conseguiu mapear os dados, se tu consegue mapear tua empresa, saber onde é ela tá e conseguir orquestrar e arquitetar os dados, o acesso à informação, porque se a tua informação é desestruturada, exemplo, tudo passa pela Cloudflare, exemplo, tá? Se tu não sabe se tudo passa pela Cloudflare, não vai ser assim que tu vai conseguir ver, porque a gente nunca vai saber aquilo, nunca vai descobrir os negócios, entendeu? Exatamente, nenhuma gente vai te ajudar com aquilo, entendeu?
+
+Cássio Pereira (25:23.354)
+Vai ter os famosos blind spots, os pontos cegos né?
+
+Ben-Hur (25:32.078)
+Vai ter que varrer a AWS. Aí tu pega lá o AWS C lá, aí com uma row específica, sabe? Então, cara, ele vai te ajudar monte de coisa. Sabe?
+
+Cássio Pereira (25:37.115)
+Não, aí eu tive uma treta uma vez só botando parênteses aqui que era exatamente a empresa tinha lá benyur.copo.br aí tinha departamento na casa da caceta que tinha lá banana.benyur.copo.br nesse cara rodava wordpress que foi pichado aí foi assim incidente de manhã a gente acordou mano só não tava na notícia porque era empresa grande mas não tava na notícia mas assim aí resolveram
+
+Ben-Hur (26:05.006)
+E aí
+
+Cássio Pereira (26:06.426)
+Eu lembro que eu passei as próximas três semanas mapeando todo mundo que usava WordPress pra poder atualizar plug-in, mais ou menos a mesma história, só como o programa foi no WordPress geral, tinha lá, até no Cali, tem até WordPress WP Scan, que comecei rodar pra verificar vulnerabilidade, plug-in desatualizado, meio que fazer hard-nzinho, guiazinho, e cara, aí desencadiu. Mas assim, tinha cara lá não sei aonde, a gente nem tinha esse DNS controlado, sei lá como que subiu essa porra, não tava na AWS na época que a tava na AWS.
+
+O famoso blind spot que alguém foi lá e pichou e gente ficou sabendo e tal. Enfim, segue a vida aí.
+
+Ben-Hur (26:43.322)
+Então assim, por exemplo, quem que cuida dessa parte de WAF, quem que cuida de balancer, quem que cuida de DNS e tudo?
+
+Qual que é o escopo desse cara? Meu, termina essa vulnerabilidade, cria uma record file.
+
+pra esse cara aqui. Ou então vê se já não tem uma recorde file, tu entende? Então perceba, perceba que no mesmo momento, quando surge algo daqui, eu tento matar na borda, que eu não vou nem discutir. Mas será que a gente tá... Nessa discussão, dois cafés, eu já tomei o ataque hoje. Entendeu? Então assim, hoje a gente tá numa época que é muito explosivo isso tudo. Então...
+
+Cássio Pereira (27:15.93)
+É.
+
+Já fui.
+
+Cássio Pereira (27:29.466)
+E dependendo da empresa que você está, todo mundo é alvo, você só é alvo maior ou menor. sabe? Porque se você é uma empresa, nesse caso aí, é for shell, o cara vai conseguir acesso na rede, máquina, fazer tudo na rede, literalmente. teoria, vamos dizer assim. O cara que minera bitcoin, ganhar acesso aos seus servidores, para ele é vantagem.
+
+Ben-Hur (27:37.55)
+É isso
+
+Cássio Pereira (27:57.306)
+que ele vai botar o minerador dele na sua rede minerar. cara quer fazer uma fraude, talvez a sua empresa não seja a empresa que ele quer fazer fraude. Ele vai querer usar uma empresa financeira, empresa que tenha dados para ele fazer fraude. Mas todo mundo, toda empresa geral tem informação que pode ser vendida. Então, teoria, né? Então, às vezes eu vejo o pessoal se discutindo também. mas a gente, quem vai querer hackear a gente? Quem vai querer hackear o DevCop Podcast? Não, cara, não sei. Exatamente, tem louco para tudo.
+
+Então, às vezes, o cara tem que ter pouquinho dessa sensibilidade e falar, não, espera aí, temos problema, vamos resolver. A gente pode entender lá o qual o impacto de negócio, o EPSS da nossa empresa, essa porra toda, mas é uma discussão que sei lá, cara, acho que já passou por isso, é você falou, o ataque que a gente vai vir minutos,
+
+Ben-Hur (28:45.217)
+Exato porque por exemplo quando surgiu a vulnerabilidade do Brotli da Google lá, né? Que dependia de tu mandar chunk no encodem específico, né? Não fazer Gzip e tu fazer o outro, né? Cara, qual foi a primeira coisa que a fez, por exemplo ali, A gente tem tráfego com esse encodem, com esse compactador específico?
+
+Cássio Pereira (28:52.089)
+Torra. Borra, né?
+
+Cássio Pereira (29:06.713)
+simples assim, nem precisa ter. As perfis de ataque fechou bagulho, vem bloqueio a mais, lindo.
+
+Ben-Hur (29:07.886)
+Deu. Sabe? Exato. E põe uma regra lá pra... Deu, fechou. Entendeu? Agora, perceba. Eu tenho log de tráfico. Se eu não tivesse, não poderia fazer esse check. Né?
+
+Cássio Pereira (29:21.657)
+Muito sequer tem log, ainda mais log de tráfego.
+
+Ben-Hur (29:27.246)
+Exato. Então, seja, olha, não detectamos nos meus domínios, daí você precisa ter lugar gerenciado só com os seus domínios. Tu entende? Então, ou seja, perceba que tudo isso depende dessa arquitetura. E perceba que tudo gente tá falando aqui não é só pro bem da cibersegurança. Cara, eu quero ter log de tráfego. Cara, toda empresa, toda engenharia precisa disso. Entendeu? Não é só a segurança que cuida disso. E aí é outro erro também, não digo que é erro.
+
+Cássio Pereira (29:44.985)
+Mano!
+
+Mano...
+
+Ben-Hur (29:55.534)
+Mas acho que é uma coisa extremamente importante do pessoal de segurança, né? vez de pensar tudo na caixinha fora, é... Chega do lado da equipe de desenvolvimento e vê o que eles querem ou sempre propõe algo que vai ser melhor pra ele do que pra ti ainda. Entendeu? Aí tu consegue o apoio deles pra implementar algo e tu já ganha aquilo de brinde. Sabe? Então... Mas agora vem o outro ponto, né? A gente teve semana passada, foi inferno, né?
+
+Cássio Pereira (30:11.129)
+É... É...
+
+Cássio Pereira (30:24.537)
+A primeira vez, cinco anos que tô aqui na Europa, é a primeira vez que eu trabalho fim de semana. Eu tive que trabalhar sábado e domingo.
+
+Ben-Hur (30:24.782)
+A
+
+Eu dormi muito poucas horas, várias noites. Então assim, a pergunta é, vai parar? A quantidade de vulnerabilidades teve de exposure agora, nos últimos tempos, só aumentando e a questão é, vai subir muito?
+
+Cássio Pereira (30:46.809)
+Coincidência, né?
+
+Cássio Pereira (30:51.737)
+Só joga. Já te hodava o peraí, ó.
+
+Ben-Hur (30:52.462)
+É?
+
+Ben-Hur (30:57.486)
+Mas agora a questão que eu pergunto é... ficar corrigindo... funes?
+
+Cássio Pereira (30:59.865)
+Mas continua coincidência.
+
+Ben-Hur (31:12.654)
+É a forma certa de lidar com as coisas?
+
+Cássio Pereira (31:16.569)
+Mano, já diria vou pegar uma analogia que muita gente não vai gostar. Você eu não sei, vamos ver muita gente não vai gostar. Pablo Marçal, Pablo Marçal disse durante a campanha presidencial, ele falou o seguinte, falou cara, uma ideia que eu acho muito boa. A gente no Brasil precisa investir saúde preventiva, não só.
+
+saúde corretiva. Então você tem problema, vai no médico, descobre o problema, trata o problema. A gente tem que investir nível de saúde para você não ter aquele problema. Por exemplo, eu tenho pedra no rim. Já tem três anos que eu não tive mais crise, aquela coisa toda. Tentei me alimentar melhor, tomar mais água, aquela coisa toda. Antes eu não ligava muito para tomar água, tive pedra no rim. Posso ficar tratando alternamente.
+
+Provavelmente não vou morrer por causa disso, mas posso ficar tratando aderente, ter a crise, tomar remédio. Então a preventiva é, cara, se alimenta melhor, evita algumas coisas, toma mais água. O que eu estou querendo falar aqui com essa analogia real, né? Isso que você falou é muito foda, mano, porque corrigir vulnerabilidade hoje ao mesmo, eu diria que ao mesmo tempo que está mais fácil, porque aí ajuda pra caralho, pra caralho.
+
+Ben-Hur (32:18.993)
+e aí
+
+Cássio Pereira (32:35.929)
+tanto na triagem, se aquilo é problema, não é falso positivo, blá, blá, blá, até na própria correção automática, faz por request pra mim, aprova, beleza, a vida. Isso é uma coisa. Por outro lado, o número de problemas está crescendo muito e aí vai entrar talvez uma contradição até. Problemas novos. Problemas do tipo zero day mesmo, tipo mano, coisas que...
+
+Uma coisa assim, tem CVN não aonde, injection não sei do que, beleza, é uma assinatura, qualquer IA resolve, qualquer dev sênior sabe resolver, vai lá e corrige. Agora, problema novo, o IDOR, bola da vida, que é uma falha lógica, que aí sim eu vejo o poder das IAs malignas, vamos dizer assim, muito grande, já galera usando para o mal, dizer assim, muito grande, é achar esses problemas que ninguém tinha achado antes nas suas aplicações. Aí é o problema.
+
+você não vai corrigir rápido e ainda que se corrige talvez o impacto disso já é muito grande. Saca. Outra analogia idiota mas tipo o próprio câncer né. Se você descobre o câncer antes seja ele qual for a chance de cura blá blá blá 90 % independente de alguns casos aquela coisa toda. Se descobrir mais tarde a chance diminui muito algumas casos já era. Descobriu tarde demais infelizmente né.
+
+Eu diria que isso que você falou agora de corrigir vulnerabilidade não é mais o caminho porque. Está vindo muita coisa nova então se gente ficar focando e vai chegar o scan vai achar a resolver automático e porco que acho a prova. Isso é uma coisa já já passamos isso aí. A gente está no nível agora de. Talvez como eu falei de coincidência antes a escalabilidade de iá e muita gente usando isso também para o mal. A tendência é de cada vez você ter problemas que você nem imaginava que ia ter.
+
+e que você não vai conseguir resolver na velocidade que você precisa resolver. Lembre que eu sempre falo aqui, pra gente se proteger a precisa saber todos os nossos problemas. O cara que vai atacar a gente precisa saber. Mas continue, continue, que você trouxe esse tópico é muito bom.
+
+Ben-Hur (34:49.458)
+Mas esse é bom ponto, porque assim ó...
+
+Inevitabilmente, você vai precisar continuar corrigindo vulnerabilidades? Vai. Só só qual o problema? Vou te dar exemplo. Cara, se ele explorar essa vulnerabilidade aqui, ele vai pegar root lá na aplicação. Vai fazer RCE lá e vai pegar root. Primeira pergunta é, por que essa porra rola como root?
+
+Cássio Pereira (35:15.385)
+Ainda! Estamos 2080, aqui se está rodando o root ainda.
+
+Ben-Hur (35:17.87)
+Então aí a gente começa com isso, Cara, vai cair num container, cara, container, outlast, fechado, entendeu? Então, seja, agora eu acho que mais do que nunca é a hora de a gente pensar arquitetura secure by default, né? Assumir, assumir que tudo vai nascer vulnerável
+
+ou com uma vulnerabilidade encontrada da noite para o dia. Não importa o que aconteça.
+
+Cássio Pereira (35:53.433)
+pode acabar com negócio.
+
+Ben-Hur (35:55.246)
+Exatamente, eu acho que isso deveria ser o padrão agora. Por exemplo, eu estava conversando com gerente importante da área de segurança aqui numa Big Tech do Brasil, e eu comentei com ele seguinte assim, cara, agentes de autônomos, quando tu coloca ele na tua infraestrutura, tu já tem que desenhar ele Assumed Breach. Tu já tem que desenhar ele que ele...
+
+Cássio Pereira (36:20.953)
+E
+
+Ben-Hur (36:23.726)
+Você tem que saber assim, no mesmo que você desenhar, você já tem que assumir que ele vai ser explorado, que ele vai ou alucinar ou fazer alguma besteira, ou ele vai realmente ser atacado e ele vai ser comprometido. Se você não estudou ele e está colocando ele produção sem saber que ele vai ser comprometido no dia zero, você já desenhou a segurança errada. Agora questão é, isso não serve só para agentes autônomos.
+
+Cássio Pereira (36:45.817)
+cida no pé.
+
+Ben-Hur (36:52.014)
+Isso serve para toda nossa infraestrutura a partir de agora. Por exemplo,
+
+Cássio Pereira (36:55.065)
+É aquilo que tu falou no off-line né, resilience by the foe né, resilience by the foe.
+
+Ben-Hur (36:58.446)
+é, Resilient by Default, né? Então... Que é o seguinte, cara, eu estou construindo o código, meu código vai ter uma biblioteca dela que vai ser encontrada na vulnerabilidade amanhã, o que eu faço? Meu código tem uma vulnerabilidade no código dele que vai ser encontrado amanhã, o que eu faço? Eu tenho uma imagem Docker que amanhã vai ter uma vulnerabilidade zero-day, o que eu faço? Eu tenho uma... Tudo que eu criar, que eu colocar e fazer deploy na minha infraestrutura, eu tenho que assumir que ele vai ter misconfiguration,
+
+uma vulnerabilidade encontrada do dia para a noite. que é o meu padrão? Isso tem que estar no desenho. Tem que estar by design. E aí, às vezes, as pessoas cometem erro que é o principal. Elas desenham o meu 70 % da internet, né, cara? Que é o quê? Às vezes, cara, às vezes eu entendo que não dá para te fazer tudo.
+
+Cássio Pereira (37:31.449)
+E como corresponde a isso?
+
+Cássio Pereira (37:45.241)
+Usar PHP. Você tem de ter internet, cara?
+
+Ben-Hur (37:57.422)
+Mas sabe o que elas fazem? Elas escrevem plano de resposta a incidente. Não muda nada o que a tem hoje, Entendeu? A questão é... Cara... Eu preciso entender. Blast Radius...
+
+Default Safe e Upgrade Impact. Essas três grandes coisas são impossivelmente importantes. Tem mais coisas, mas vamos focar nessas três. Quando eu falo assim, primeiro é Blast Radius. Por exemplo, cara, até onde vai impactar tudo isso? Tipo, meu, as pessoas estão... A gente vai usar, por exemplo, e isso é arquitetura padrão, tipo assim...
+
+Cara, nós vamos botar Kubernetes e pessoas vão fazer deploy via Docker. Eu vou ter 5 mil containers, eu vou ter dois ou três clusters EKS, tu entende? Então, olha o blast radius. Se encontrar uma vulnerabilidade no PHPX, qual que é o blast radius aqui dentro? São 200 aplicações. Ok.
+
+Cássio Pereira (38:59.64)
+se jogar no ventilador né, espirra pra onde né
+
+Ben-Hur (39:08.942)
+Qual que é o Upgrade Impact? E quando eu digo Impact é desde que eu descobri até eu ter tudo atualizado.
+
+Cássio Pereira (39:17.176)
+É downtime, genera disposição, porra toda.
+
+Ben-Hur (39:20.526)
+quem que eu preciso contactar, como é é o esforço pra falar do release, como que eu corrijo, como é que eu calculo o break and change, o que que pode quebrar, como eu posso quebrar, entendeu? Isso tudo tem que estar calculado nisso aí. E aí a próxima é, depois de calcular isso, beleza, como que eu reduzo o upgrade impact. Tu cai no default safe. Como por padrão,
+
+eu posso ter o mais seguro possível. Por exemplo, às vezes, tu escolhe, cara, por que que a gente não muda a tecnologia porque ao mudar a tecnologia X... Não tô falando de mudar de linguagem programação porque daí tu sai de problema pra cair outro, né? Mas às vezes tu sai tipo assim, talvez a gente vai usar uma imagem distro-less. Entende? Então, assim, às vezes tu olha assim, vez de tentar resolver probleminha, às vezes tu dá passo pra trás, por que que a gente não muda a tecnologia...
+
+E por causa que a está mudando a tecnologia, gente atinge o mesmo fluxo de negócio, o mesmo resultado, o desenvolvimento é a mesma, tudo, mas a gente não corre risco de segurança.
+
+Cássio Pereira (40:31.672)
+Eu vi mês virou mês já então na última semana do mês passado eu organizo os meetups aqui meetup da b-sides e o John Strand que é o dono da Black Hills Information Security nos Estados Unidos cara o maluco é muito foda estava aqui palestrando com a gente no meetup assim 15 pessoas comendo pizza com ele e depois procuram aí John Strand Black Hills Information Security e algumas coisas que ele falou cara sobre
+
+o Sassopocalipse falando de IA e tudo mais. Cara a IA escalou muito a nossa produtividade geral que seria o tópico de hoje mas o seu Marcos talvez seja a fonte dessa informação hoje não está aqui então a vai no próximo episódio mas a IA e aí Beiu acho que você vai concordar a IA não resolveu nem vai resolver na minha visão a complexidade de segurança.
+
+Ela resolve corrigir uma vulnerabilidade, fazer gestão de vulnerabilidade, resolve scan, resolve monte de coisa de uma forma mais rápida, code review, mas ela não resolve a complexidade de segurança. Que complexidade é essa? Tu acabou de falar, o cara conseguiu root na máquina, na aplicação. Por que a aplicação tá rodando com root? O cara não tem list privilege, não tem isolamento de rede, tem Sabe? Coisas que sempre... Cara, a gente não resolve ainda.
+
+Ben-Hur (41:38.639)
+e aí
+
+Cássio Pereira (41:54.457)
+AD, Active Directory, ainda é cheio de não resolve essa porra. É cheio de bug, cheio de falha, sempre tem uma exposição nova. O Office, quantos anos essa porra, 20 anos essa porra tá aí mano. E a IA resolveu? Nem vai resolver. Então o meu ponto é, a complexidade de segurança, continua. IA não... vai, deu uma pincelada algumas coisas, mas não resolve. Você falou muito bem, burocracias, processos internos.
+
+Ben-Hur (42:08.91)
+E aí
+
+Cássio Pereira (42:23.976)
+o downtime do bagulho, eu já tive treta no Brasil de gerente falar assim, não vamos pausar o release não porque precisa entregar. falei, mano, isso aqui é impacto muito grande. Se a tomar hack, a sua entrega trouxe problema ao invés de trazer valor para o cliente. Aí, mas se a gente não for atacado, e se a gente for? Fica naquela, se der merda, se não der, se der merda, não der. É tipo, caralho, beleza, estou dando o meu ponto de vista.
+
+Ben-Hur (42:42.094)
+Anoai!
+
+Ben-Hur (42:47.278)
+Aí você vai ver qual é tanto de que é mais forte, né?
+
+Cássio Pereira (42:49.24)
+Então, então. era sênior e ele era gerente. Então, o Santo dele era mais forte que o meu nesse caso.
+
+Ben-Hur (42:56.526)
+É, problema é que se não for atacado todo mundo ganha, se ele for atacado... todo mundo perde, né?
+
+Cássio Pereira (43:00.376)
+Todo mundo eu perdi eu perdi porque foi eu que não quis fazer o pet. Mas isso que é foda. Então assim eu acho que a gente tocou no assunto de IA. A IA ela e o John comentou isso nesse Meetup. falou cara a IA não veio resolver esse não resolve essa complexidade de segurança ela resolve tarefas muito específicas de uma forma absurdamente boa scan code review achar problema criar processo beleza.
+
+Ben-Hur (43:19.694)
+Aqui banquinho. Que vai introduzindo faltes aleatoriamente.
+
+Cássio Pereira (43:26.776)
+Mas esse elo como todo, que nem você falou, cara, resilient by default. Como é que eu garanto? Eu lembro de projeto da Netflix, acho que era o Monkey Chaos, Chaos Monkey, é É, acho que da Netflix esse projeto. Vai desligando, vai desligando a cloud, vai desligando, mas bagulho vai ver o que acontece, pra ver como é sua aplicação se comporta, etc, etc. Cara, umas paradas que já tá aí há muito tempo, a gente ainda não faz isso. A gente ainda apanha com...
+
+Você falou, root rodando na aplicação, rodando root, o usuário sendo banco chumbado na aplicação. às vezes eu vejo que pode até ver RCE, não RCE, não, CVE novo, uma vulnerabilidade nova, o caralho que traz puta impacto como é esse caso aí. Mas acho que às vezes a gente facilita também muito, A gente que eu digo, a empresa que desenvolve software facilita demais os ataques, os problemas por continuar negligenciando.
+
+Eu diria negligenciando a própria segurança, próprias boas práticas e tudo mais. Enfim, só minha última pincelada para a gente finalizar. Finalizei também, porque esse tema aqui, a vai longe.
+
+Ben-Hur (44:33.545)
+É, finalizando eu vou deixar só a pitadinha, Porque a IA, ela... Está bem que você falou. Ela resolve uma tarefa. Às vezes bem descrita, às vezes complexa. Mas ela não...
+
+Vejo, ainda não vi, e pelas muitas discussões que eu vi acompanhado, muitas pessoas importantes, não só de segurança, mas da engenharia de software si. Ela não resolve a arquitetura. Ela não resolve como a gente define as coisas. Eu não posso dizer assim, olha, eu tenho problema de security by default na minha AWS, vai lá e resolve.
+
+Cássio Pereira (45:04.408)
+Uhum, uhum.
+
+Cássio Pereira (45:08.6)
+Hum?
+
+Ben-Hur (45:26.254)
+Entende? Beleza, ela pode fazer monte de coisa, mas depois ela vai derrubar e vai quebrar monte de coisa. Então, eu não posso apontar pra minha empresa dizer, make it safe.
+
+Cássio Pereira (45:26.36)
+Até mais!
+
+Cássio Pereira (45:39.033)
+E não cometa erros. Boa mano. Pessoal esse tema é muito bom. Acho que fica pouco de lições aprendidas do que a gente fez não fez está fazendo ainda com relação a esse problema do ponto de vista de upsets que a gente está aqui dentro vivendo upsets implementando processos etc. As dificuldades que também são problema relativamente simples troca caracter se atualiza o está repateado. Não não é só isso tem que falar com.
+
+Ben-Hur (45:42.414)
+É. E aí
+
+Cássio Pereira (46:07.608)
+caralho, gente, pra que lado até você conseguir fazer isso, mas enfim.
+
+Ben-Hur (46:11.794)
+Tá pateado no código, né? E já tá lá?
+
+Cássio Pereira (46:18.52)
+pedaço né? Antes de finalizarmos...
+
+Cássio Pereira (46:28.28)
+O chorinho mais favorito do Ben Hur. Dev May Cry de hoje. Mano, eu acho que Dev May Cry bom pra hoje. Dev May Cry bom pra hoje seria. Só pode usar Liby. Esse tipo de coisa, tá ligado? É tipo 10 versões anteriores. Não pode usar nada, só antigo. Tipo, tudo que é função nova, as coisas não tá lá. Se vira, faz na mão. Tem que usar tudo chumbado, versão chumbada, 10 versões anteriores. Tipo.
+
+Ben-Hur (46:29.39)
+E aí E aí
+
+Cássio Pereira (46:57.944)
+tipo tá no Windows 11, que tá no 11, só pode usar o XP, tá ligado? Só pode usar o Windows XP. Aí quando sair o 12, você vai poder migrar pro milênio, tá ligado? Quando sair o novo, você pode avançar uma versão. Eu faria isso, DevMaker de hoje é isso, você só pode usar Lib, versão anterior. Versão anterior é atrasada mesmo, legada mesmo, nada novo. O que você acha, meu?
+
+Ben-Hur (47:00.334)
+Tô sem.
+
+Ben-Hur (47:25.166)
+Pra mim é... eu quebro por request com vulnerabilidade low Docker. Low pra cima. Low pra cima. Low pra cima. Low pra cima. Low Não vai passar. Não vai passar.
+
+Cássio Pereira (47:29.24)
+Funciona a habilidade de LoL no Dockerfile que... Info, info, põe o info. E quebra pro request, o cara nunca mais faz merge na vida, nunca mais.
+
+Ben-Hur (47:44.046)
+Se tiver uma low e não é incremental, Vou rodar full? Vou rodar full? Pegou low, tá quebrado.
+
+Cássio Pereira (47:48.856)
+Nunca mais tem Merge na empresa, mano. Acabou, nunca mais tem Merge. Isso, você falou de Docker, né? Se for botar SA e SAS, então aí acabou. Melhor vender coco na praia. Nunca mais o cara faz deploy nessa porra.
+
+Ben-Hur (48:02.734)
+fixe alternativas dependências Python.
+
+Cássio Pereira (48:04.568)
+Detalhe, você bloqueou por request mas gera alerta pro cara automatizado numa planilha Excel que ele tem que baixar e atualizar na planilha Excel. Óbvio né?
+
+Ben-Hur (48:13.23)
+E uma coluna de status lá, waiting security review.
+
+Cássio Pereira (48:20.312)
+Né nada de gira não, teens não não não, slack. Pô cara. É boa boa. Bom eu sou Caso Pereira. Mano episódio bom esse aqui eu gostei hein. Fala a mais natural possível do caos que a tá vivendo e é isso. Pessoal nos vemos na semana que vem. Até a próxima.
+
+Ben-Hur (48:23.47)
+Please contact Bob. E aí eu estar até por e-mail, eu nunca sabe se o cara recebeu ou não.
+
+Ben-Hur (48:34.798)
+Eu sou Bayor.
+

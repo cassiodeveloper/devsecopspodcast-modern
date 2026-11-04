@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="post.lessonsShell.metaTitle">O que aprendemos com Node2Shell e PHP2Shell - DevSecOps Podcast</title>
+    <meta name="description" data-i18n-content="post.lessonsShell.description" content="Lições práticas de Node2Shell e PHP2Shell sobre exposição, ownership, contexto, colaboração e resposta a vulnerabilidades." />
+    <meta name="author" content="Cássio Batista Pereira" />
+
+    <link rel="canonical" href="https://devsecopspodcast.com.br/posts/lessons-learned-node2shell-php2shell.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" data-i18n-content="post.lessonsShell.title" content="Lessons learned 2 SHELL: o que aprendemos com Node2Shell e PHP2Shell" />
+    <meta property="og:description" data-i18n-content="post.lessonsShell.description" content="Lições práticas de Node2Shell e PHP2Shell sobre exposição, ownership, contexto, colaboração e resposta a vulnerabilidades." />
+    <meta property="og:url" content="https://devsecopspodcast.com.br/posts/lessons-learned-node2shell-php2shell.html" />
+    <meta property="og:image" content="https://devsecopspodcast.com.br/assets/logo-devsecops.png" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="article:published_time" content="2026-11-04" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" data-i18n-content="post.lessonsShell.title" content="Lessons learned 2 SHELL: o que aprendemos com Node2Shell e PHP2Shell" />
+    <meta name="twitter:description" data-i18n-content="post.lessonsShell.description" content="Lições práticas de Node2Shell e PHP2Shell sobre exposição, ownership, contexto, colaboração e resposta a vulnerabilidades." />
+    <meta name="twitter:image" content="https://devsecopspodcast.com.br/assets/logo-devsecops.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/style.css?v=20260717-1" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Lessons learned 2 SHELL: o que aprendemos com Node2Shell e PHP2Shell",
+        "alternativeHeadline": "Lessons Learned from Node2Shell and PHP2Shell",
+        "description": "Lições práticas de Node2Shell e PHP2Shell sobre exposição, ownership, contexto, colaboração e resposta a vulnerabilidades.",
+        "datePublished": "2026-11-04",
+        "dateModified": "2026-11-04",
+        "inLanguage": ["pt-BR", "en"],
+        "author": {
+          "@type": "Person",
+          "name": "Cássio Batista Pereira"
+        },
+        "mainEntityOfPage": "https://devsecopspodcast.com.br/posts/lessons-learned-node2shell-php2shell.html",
+        "isPartOf": {
+          "@type": "PodcastEpisode",
+          "name": "T08E14 - Lessons learned 2 SHELL - O que aprendemos com Node2Shell & PHP2Shell",
+          "url": "https://devsecopspodcast.com.br/episode.html?slug=t8e14-lessons-learned-2-shell-node2shell-php2shell"
+        },
+        "about": [
+          "Node2Shell",
+          "PHP2Shell",
+          "Vulnerability Management",
+          "Application Security"
+        ]
+      }
+    </script>
+  </head>
+  <body class="blog-post-page">
+    <header class="top">
+      <div class="wrap topbar">
+        <a class="brand" href="/" aria-label="DevSecOps Podcast">
+          <img class="brand-logo" src="../assets/logo-devsecops.png" alt="DevSecOps Podcast" />
+          <span class="brand-text">
+            <span class="brand-name">DevSecOps</span>
+            <span class="brand-sub">podcast</span>
+          </span>
+        </a>
+        <nav class="nav">
+          <a href="../#episodios" data-i18n="nav.episodes">Episódios</a>
+          <a href="../#manifesto" data-i18n="nav.manifesto">Manifesto</a>
+          <a href="../#assinar" data-i18n="nav.subscribe">Assinar</a>
+          <button class="lang-toggle" id="langToggle" aria-label="Alternar idioma" data-i18n-aria-label="language.toggle">EN</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <article class="episode blog-post">
+        <p class="kicker"><time datetime="2026-11-04" data-i18n="post.lessonsShell.date">4 de novembro de 2026</time> · T08E14 · <span data-i18n="post.lessonsShell.articleLabel">ARTIGO DO EPISÓDIO</span></p>
+        <h1 data-i18n="post.lessonsShell.title">Lessons learned 2 SHELL: o que aprendemos com Node2Shell e PHP2Shell</h1>
+        <p class="blog-post-lead" data-i18n="post.lessonsShell.lead">Diante de uma vulnerabilidade crítica, a primeira pergunta parece simples: “estou vulnerável?”. Node2Shell e PHP2Shell mostraram por que a resposta depende de inventário, contexto, ownership e colaboração — não apenas de um scanner.</p>
+
+        <div class="content">
+          <p data-i18n="post.lessonsShell.intro">Neste episódio em português, Cássio Pereira e Ben-Hur revisitam o caos operacional provocado por dois alertas recentes de segurança. A conversa não se limita aos detalhes técnicos: ela investiga o que as organizações descobriram sobre a própria capacidade de enxergar, priorizar e corrigir riscos.</p>
+          <p data-i18n="post.lessonsShell.introResult">A principal lição é desconfortável. Muitas empresas conhecem seus repositórios, mas não conhecem com a mesma precisão tudo o que está efetivamente implantado, exposto e sob sua responsabilidade.</p>
+
+          <h2 data-i18n="post.lessonsShell.technicalTitle">O que foram Node2Shell e PHP2Shell?</h2>
+          <p data-i18n="post.lessonsShell.nodeText">Node2Shell é o nome usado para o CVE-2026-111497, uma falha de escrita fora dos limites no decoder Brotli distribuído com versões do Node.js. Quando uma aplicação descompacta dados Brotli controlados por um atacante, a falha pode provocar crash, exposição de memória ou execução remota de código.</p>
+          <p data-i18n="post.lessonsShell.phpText">PHP2Shell reúne duas vulnerabilidades críticas, CVE-2026-109618 e CVE-2026-109619, corrigidas em versões de segurança do PHP. O projeto recomendou atualização imediata porque as falhas poderiam permitir execução remota de código sem autenticação.</p>
+          <p data-i18n="post.lessonsShell.reachText">A ampla presença de Node.js e PHP tornou os alertas urgentes, mas tecnologia popular não significa que toda instalação esteja vulnerável ou explorável. Versão, configuração, caminho de entrada, componente afetado e ambiente de execução determinam a exposição real.</p>
+
+          <h2 data-i18n="post.lessonsShell.awarenessTitle">Descobrir exposição é mais complexo do que procurar dependências</h2>
+          <p data-i18n="post.lessonsShell.awarenessText">Escanear o repositório é importante, mas oferece apenas uma parte da resposta. A versão vulnerável pode estar em uma imagem antiga, em um runtime instalado diretamente no servidor, em uma função gerenciada, em um appliance ou em um serviço de terceiro.</p>
+          <p data-i18n="post.lessonsShell.awarenessPractice">Uma investigação confiável conecta código, build, artefato, infraestrutura e ambiente de produção. Sem esse encadeamento, a organização pode declarar segurança porque não encontrou o componente no lugar errado — enquanto a exposição permanece ativa em outro ponto.</p>
+
+          <h2 data-i18n="post.lessonsShell.ownershipTitle">Ownership claro reduz o tempo de resposta</h2>
+          <p data-i18n="post.lessonsShell.ownershipText">Encontrar uma vulnerabilidade não resolve a pergunta seguinte: quem deve agir? Em ecossistemas grandes, aplicação, imagem base, pipeline, cluster e serviço compartilhado podem pertencer a equipes diferentes.</p>
+          <p data-i18n="post.lessonsShell.ownershipPractice">Um catálogo atualizado de aplicações, serviços e responsáveis evita ciclos intermináveis de encaminhamento. Ownership precisa incluir autoridade para decidir, canal de contato e uma rota de escalonamento quando o responsável principal não está disponível.</p>
+
+          <h2 data-i18n="post.lessonsShell.contextTitle">Contexto define prioridade</h2>
+          <p data-i18n="post.lessonsShell.contextText">Severidade técnica não é sinônimo de risco idêntico em todos os ambientes. Uma versão vulnerável isolada em desenvolvimento não representa a mesma urgência de um serviço público em produção que processa entrada controlada por usuários.</p>
+          <p data-i18n="post.lessonsShell.contextPractice">A priorização precisa combinar explorabilidade, exposição, criticidade do ativo, dados processados, controles compensatórios e impacto no negócio. Esse contexto permite concentrar esforço onde uma exploração é plausível e suas consequências são maiores.</p>
+
+          <h2 data-i18n="post.lessonsShell.collaborationTitle">Resposta rápida exige colaboração entre times</h2>
+          <p data-i18n="post.lessonsShell.collaborationText">Segurança pode interpretar o alerta, desenvolvimento conhece o comportamento da aplicação e operações enxerga o ambiente implantado. Nenhuma dessas perspectivas, isoladamente, responde com confiança se a organização está exposta.</p>
+          <p data-i18n="post.lessonsShell.collaborationPractice">Canais compartilhados, critérios comuns e exercícios prévios diminuem o tempo gasto traduzindo informações entre equipes. A meta não é eliminar responsabilidades específicas, mas fazer com que elas se conectem durante a resposta.</p>
+
+          <h2 data-i18n="post.lessonsShell.visibilityTitle">Visibilidade inclui componentes e caminhos de entrada</h2>
+          <p data-i18n="post.lessonsShell.visibilityText">Uma lista de versões não mostra, sozinha, se o componente vulnerável é alcançável. É necessário mapear pontos de entrada, protocolos, fluxos de dados, proxies, bibliotecas nativas, imagens e serviços que participam da execução.</p>
+          <p data-i18n="post.lessonsShell.visibilityPractice">SBOMs, inventários de runtime, telemetria de implantação e logs de tráfego se complementam. O objetivo não é acumular ferramentas, mas construir evidência suficiente para ligar um alerta ao sistema que realmente está rodando.</p>
+
+          <h2 data-i18n="post.lessonsShell.preventionTitle">Prevenção precisa vir antes da próxima emergência</h2>
+          <p data-i18n="post.lessonsShell.preventionText">A burocracia fica mais visível quando cada atualização crítica depende de descobrir responsáveis, abrir múltiplas aprovações e reconstruir manualmente o contexto. Em uma crise, esse processo pode consumir dias que a organização não tem.</p>
+          <p data-i18n="post.lessonsShell.preventionPractice">Imagens mantidas, atualizações automatizadas, testes de regressão, estratégias de rollback e controles compensatórios preparados reduzem o risco de escolher entre permanecer vulnerável e quebrar a produção.</p>
+
+          <h2 data-i18n="post.lessonsShell.designTitle">Arquitetura segura por padrão limita impacto</h2>
+          <p data-i18n="post.lessonsShell.designText">Assumir que componentes podem nascer ou se tornar vulneráveis muda o desenho do sistema. Segmentação, privilégio mínimo, redução de superfície, isolamento e saídas de rede controladas diminuem o alcance de uma exploração bem-sucedida.</p>
+          <p data-i18n="post.lessonsShell.designPractice">Segurança por padrão não elimina falhas, mas evita que uma única vulnerabilidade entregue imediatamente todos os recursos do ambiente ao atacante.</p>
+
+          <h2 data-i18n="post.lessonsShell.aiTitle">IA ajuda, mas não substitui o contexto organizacional</h2>
+          <p data-i18n="post.lessonsShell.aiText">IA pode resumir advisories, correlacionar componentes e acelerar consultas, mas não conhece automaticamente a arquitetura real, as exceções históricas ou quem tomou determinada decisão.</p>
+          <p data-i18n="post.lessonsShell.aiPractice">Sem inventário confiável e ownership definido, automação apenas produz respostas mais rápidas sobre dados incompletos. O ganho aparece quando IA trabalha sobre uma base operacional bem estruturada.</p>
+
+          <h2 data-i18n="post.lessonsShell.actionsTitle">Como se preparar para o próximo alerta crítico</h2>
+          <ol>
+            <li><strong data-i18n="post.lessonsShell.inventoryLabel">Mapeie o que está implantado:</strong> <span data-i18n="post.lessonsShell.inventoryText">registre runtimes, imagens, dependências nativas, serviços e ambientes, não apenas repositórios.</span></li>
+            <li><strong data-i18n="post.lessonsShell.ownerLabel">Associe responsáveis:</strong> <span data-i18n="post.lessonsShell.ownerText">cada ativo precisa de owner, contato alternativo e rota de escalonamento.</span></li>
+            <li><strong data-i18n="post.lessonsShell.pathLabel">Modele caminhos de exploração:</strong> <span data-i18n="post.lessonsShell.pathText">verifique se entrada controlada por atacante alcança o componente vulnerável.</span></li>
+            <li><strong data-i18n="post.lessonsShell.priorityLabel">Priorize por risco:</strong> <span data-i18n="post.lessonsShell.priorityText">combine severidade, exposição, criticidade e controles compensatórios.</span></li>
+            <li><strong data-i18n="post.lessonsShell.patchLabel">Prepare atualização e rollback:</strong> <span data-i18n="post.lessonsShell.patchText">automatize testes e mantenha caminhos seguros para aplicar ou reverter correções.</span></li>
+            <li><strong data-i18n="post.lessonsShell.exerciseLabel">Exercite a resposta:</strong> <span data-i18n="post.lessonsShell.exerciseText">simule um alerta crítico para encontrar gargalos antes de uma exploração real.</span></li>
+          </ol>
+
+          <h2 data-i18n="post.lessonsShell.takeawaysTitle">Principais aprendizados</h2>
+          <ul>
+            <li data-i18n="post.lessonsShell.takeaway1">Encontrar um pacote no código não é o mesmo que compreender a exposição em produção.</li>
+            <li data-i18n="post.lessonsShell.takeaway2">Ownership claro transforma descoberta em ação e reduz atrasos burocráticos.</li>
+            <li data-i18n="post.lessonsShell.takeaway3">Contexto operacional determina quais vulnerabilidades devem ser tratadas primeiro.</li>
+            <li data-i18n="post.lessonsShell.takeaway4">Desenvolvimento, operações e segurança precisam combinar suas visões durante a resposta.</li>
+            <li data-i18n="post.lessonsShell.takeaway5">Arquitetura segura por padrão e preparação contínua limitam o impacto da próxima falha.</li>
+          </ul>
+
+          <h2 data-i18n="post.lessonsShell.conclusionTitle">A pergunta certa vai além de “estou vulnerável?”</h2>
+          <p data-i18n="post.lessonsShell.conclusionText">Node2Shell e PHP2Shell reforçam que a resposta não termina em sim ou não. É preciso saber onde o componente está, como pode ser alcançado, o que um atacante obteria, quem pode corrigir e quanto tempo a organização leva para agir. Essa capacidade é construída antes do incidente.</p>
+
+          <p><span data-i18n="post.lessonsShell.sourcesPrefix">Consulte os comunicados oficiais de segurança do</span> <a href="https://nodejs.org/pt/blog/vulnerability/october-2026-security-releases" target="_blank" rel="noreferrer">Node.js</a> <span data-i18n="post.lessonsShell.sourcesMiddle">e do</span> <a href="https://www.php.net/archive/2026.php#2026-10-21-5" target="_blank" rel="noreferrer">PHP</a>.</p>
+        </div>
+
+        <p class="blog-post-episode-link">
+          <a class="pill pill-accent" href="../episode.html?slug=t8e14-lessons-learned-2-shell-node2shell-php2shell" data-i18n="post.lessonsShell.listenCta">Acesse o episódio relacionado</a>
+        </p>
+      </article>
+
+      <footer class="footer">
+        <a class="muted" href="/" data-i18n="post.lessonsShell.back">Voltar ao DevSecOps Podcast</a>
+        <span class="muted">DevSecOps Podcast</span>
+      </footer>
+    </main>
+    <script src="../assets/i18n.js?v=20260727-1"></script>
+    <script src="../assets/posts/lessons-learned-node2shell-php2shell.i18n.js?v=20261104-1"></script>
+    <script src="../assets/lang.js?v=20260722-1"></script>
+  </body>
+</html>

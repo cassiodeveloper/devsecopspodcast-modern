@@ -6,6 +6,23 @@
   },
   "episodes": [
     {
+      "id": "t8e14-lessons-learned-2-shell-node2shell-php2shell",
+      "slug": "t8e14-lessons-learned-2-shell-node2shell-php2shell",
+      "title": "T08E14 - Lessons learned 2 SHELL - O que aprendemos com Node2Shell & PHP2Shell",
+      "date": "2026-11-04",
+      "author": "Cássio Batista Pereira",
+      "excerpt": "Cássio Pereira e Ben-Hur analisam as lições deixadas por Node2Shell e PHP2Shell: como descobrir se uma organização está vulnerável, definir responsabilidades e reagir sem perder contexto, visibilidade ou tempo.",
+      "contentHtml": "<p>Em um cenário no qual vulnerabilidades de software podem gerar impactos em grande escala, Cássio Pereira e Ben-Hur analisam o caos provocado pelos alertas de Node2Shell e PHP2Shell e as lições práticas para segurança de aplicações.</p><p>O episódio discute por que responder à pergunta \"estou vulnerável?\" exige muito mais do que procurar um pacote no repositório. É necessário compreender imagens de servidor, runtimes, componentes transitivos, configurações, serviços de terceiros, ambientes implantados e quem é responsável por cada parte.</p><p>Você vai entender:</p><ul><li>As dificuldades de medir exposição em múltiplas aplicações e ambientes.</li><li>Como classificar vulnerabilidades pelo caminho de exploração e pelo contexto operacional.</li><li>Por que ownership claro reduz o tempo entre descoberta e correção.</li><li>Como colaboração entre desenvolvimento, operações e segurança acelera a resposta.</li><li>Quais práticas aumentam visibilidade sobre componentes, dependências e pontos de entrada.</li></ul><p>Mais do que comentar dois incidentes recentes, a conversa mostra como transformar urgência em aprendizado contínuo, arquitetura segura por padrão e prevenção.</p>",
+      "mp3": "https://api.spreaker.com/v2/episodes/76169768/download.mp3",
+      "download": "https://api.spreaker.com/v2/episodes/76169768/download.mp3",
+      "youtube": null,
+      "transcriptUrl": "transcripts/814.txt",
+      "blogPostUrl": "posts/lessons-learned-node2shell-php2shell.html",
+      "tags": ["DevSecOps", "AppSec", "Node2Shell", "PHP2Shell", "Vulnerability Management", "Incident Response", "Security by Design", "Cybersecurity"],
+      "spreakerId": "76169768",
+      "code": "T08E14"
+    },
+    {
       "id": "t8e13-the-shocking-truth-about-new-cyber-legislation-that-could-transform-your-business",
       "slug": "t8e13-the-shocking-truth-about-new-cyber-legislation-that-could-transform-your-business",
       "title": "T08E13 - The Shocking Truth About New Cyber Legislation That Could Transform Your Business",

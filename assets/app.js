@@ -77,7 +77,12 @@ function renderLatestEpisode() {
   elLastDownload.style.display = episode.download ? "inline-flex" : "none";
   if (episode.download) elLastDownload.href = episode.download;
 
-  if (episode.mp3) elLastAudio.src = episode.mp3;
+  elLastAudio.style.display = episode.mp3 ? "block" : "none";
+  if (episode.mp3) {
+    elLastAudio.src = episode.mp3;
+  } else {
+    elLastAudio.removeAttribute("src");
+  }
 }
 
 function applyFilters() {
@@ -125,7 +130,7 @@ function renderEpisodeItem(ep) {
     <p class="excerpt">${safeExcerpt}</p>
 
     <div class="row">
-      <audio class="audio" controls preload="none" src="${ep.mp3}"></audio>
+      ${ep.mp3 ? `<audio class="audio" controls preload="none" src="${ep.mp3}"></audio>` : ""}
       <div class="links">
         <a class="pill" href="episode.html?slug=${encodeURIComponent(ep.slug)}">${escapeHtml(ui("actions.details"))}</a>
         ${ep.download ? `

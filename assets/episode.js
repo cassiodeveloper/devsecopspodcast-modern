@@ -70,7 +70,7 @@ async function load() {
     <div class="meta">${meta}</div>
 
     <div class="row" style="margin-bottom:14px">
-      <audio class="audio" controls preload="metadata" src="${ep.mp3}"></audio>
+      ${ep.mp3 ? `<audio class="audio" controls preload="metadata" src="${ep.mp3}"></audio>` : ""}
       <div class="links">
         ${ep.download ? `<a class="pill" href="${ep.download}" download>${escapeHtml(ui("actions.downloadAudio"))}</a>` : ""}
         ${ep.youtube ? `<a class="pill" href="${ep.youtube}" target="_blank" rel="noreferrer">YouTube</a>` : ""}
