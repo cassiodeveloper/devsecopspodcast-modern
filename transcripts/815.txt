@@ -1,0 +1,671 @@
+Cássio Pereira (00:34.511)
+Olá a obrigado por nos acompanhar mais episódio do DevCircleOps Podcast. sou Cassio Pereira. Na verdade, eu Cassio Pereira. Eu mixo português e inglês. Cara, está ficando louco esses dias. Ainda estou lutando com o polo, mas sim, está ficando louco. Marcos, bom que você de O último episódio foi só eu e o Ben Eur. Estamos discutindo sobre PHP para Shell. Você perdeu essa discussão. Foi incrível. Como nós...
+
+Marcos Santos (00:41.294)
+E o Marcos Santos?
+
+Marc (00:44.569)
+Marc!
+
+Marcos Santos (00:57.326)
+Sim...
+
+Cássio Pereira (01:03.823)
+todos cozidos por causa de PHP e Node, mas nós não sobrevivemos, certo? Você está enfrentando problemas na sua companhia com isso?
+
+Marcos Santos (01:07.374)
+Yes.
+
+Sim, por causa desse problema, precisamos de 2 ou 3 servidores para evitar algumas coisas, mas não bom. Estou trabalhando por uma semana para resolver alguns problemas, algumas vulnerabilidades, mas não bom.
+
+Cássio Pereira (01:29.135)
+Eu estava falando no último episódio, eu acho que por anos, foi primeira vez que eu trabalhei no final de Sábado e domingo, depois do incidente, eu estava trabalhando, falando com os times e tentando fazer, etc. Eu diria, vamos ficar no passado, mas não o passado, ainda está acontecendo. Mas, de qualquer forma, hoje nós temos uma conversa com guest que eu vou apresentar momento. Só não esquecer que...
+
+Marcos Santos (01:37.87)
+É.
+
+Cássio Pereira (01:55.824)
+DevSecOps podcast tem todo o apoio da Nova 8, é o distribuidor de marcas Brasil e países da Europa também. Também a Purple Bird Security, que eles cuidarão de vocês durante e depois incidente. Conviso à Aplicação Security que eles são especializados software security, de desenvolvimento para produção. Secur Habits, com especializado Aplicação Security. E CyberSec. Por certeza você precisa aprender a E...
+
+Eu acho que CyberSec Games também dos nossos parceiros e conecta tudo com o episódio de hoje, Marcos. Porque hoje nós temos vencedor conosco, que o Marc. Eu conheço ele como Devise na rede, nas mídias e etc. Cara, obrigado por nos acompanhar, obrigado por estar aqui. Porque o episódio de hoje, Marcos, é sobre jogo. Esse cara está criando jogo, para possamos jogar e hack ao mesmo tempo. Tentaremos entender isso minuto, mas Marc...
+
+Marcos Santos (02:46.734)
+Eu amo isso!
+
+Cássio Pereira (02:54.863)
+Por se livre para falar sobre qualquer coisa e obrigado de por nos acompanhar.
+
+Marc (03:00.507)
+Olá, eu sou Marc, sou de Alemanha e estou resgatando a Espanha nos últimos 5 anos, na Málaga. Eu trabalho no Node Protocol, que foi desenvolvimento há 14 meses, eu só que olhar para ver onde estou começando e onde os meus ideais vêm. Olhando para trás, foi uma grande viagem para vir aqui e falar sobre isso e ter...
+
+O jogo, a este ponto, vai ser lançado Eu falarei sobre o lançamento mais porque foi exposto pouco mais do que necessário. Mas isso é mais no Steam. O jogo está, sim, chegando breve. E tentar apoiar público pouco mais no que está acontecendo com o Node e como você pode jogar e aprender.
+
+A começou para mim como uma paixão para o jogo. Quando você tinha alguns jogos de anos como Uplink, 2001, de Interversão, era jogo muito legal. Muitas pessoas jogaram, e game estevido muitas reviews. Todo mundo gostou do jogo. Mas jogo não teve muito tempo de
+
+Você poderia, basicamente, o jogo talvez, 20 horas e depois é feito. Não como open world onde você pode continuar indo sandbox e só continuar tentando, talvez, novas formas de entrar ou pivotear ou ver o que jogo pode fazer mais sobre isso. Então, essa foi a minha ideia. Isso foi mais de ano atrás, claro, quando eu já comecei a que talvez eu precise fazer algo.
+
+é mais parte do o está acontecendo no jogo e como podemos ver como isso evolui. Agora que jogo está estádio porque tem muito a fazer e muito a testar. Meu time de tem estado passando por três ou quatro meses, testando o single player, a co-op. Mas CTF será nova, porque precisamos de muitos para isso. Eu quero fazer uma 6 vs 6.
+
+Marc (05:14.746)
+Então nós podemos testar todo o ângulo dele, ver como ele forte e como os pontos são divididos, como rápido eles podem chegar. Do que eu preciso ajustar certas para garantir que de CTF é CTF, mas não feito 10 minutos, porque não terá ir fora dele. Mas sim, esse é o começo. Então, o é baseado de sandbox. Então te desliza no terminal e você terá seu handler.
+
+e aqui está o seu walkthrough para os primeiros 20 minutos. Depois disso, você vai estar sozinho e terá aprender e começar a ler monte de documentação, porque este jogo não simples alter-hacker. É realmente feito depth. E certos momentos você vai se sentir estuprido. E isso é normal no trabalho, certo? Eu todo mundo já lá. Todo mundo estava trabalhando e certos momentos você precisa ler. E é essa a parte.
+
+Depois do mundo tru, você fazer sua primeira hack. Você vai MetalSploit, você vai entrar pelo... Eu acho que é Nginx 4443CB, que lhe lança de onde você tem que usar limpi, ou ir exploit para ter raízes e depois limpar seus lock, e também tirar sua IP. Então, é uma parte do...
+
+programando lá depois disso, sim, a sandbox é sua e a última vez que cheguei a sandbox não quase 3.000 servidores com mais de 40 diferentes shell e incluindo Windows MT Windows 2000, Windows 7, Windows 10, tudo lá dentro então está realmente ficando mais do que eu realmente pensei que eu ia construir. é o que você começa com algo que você realmente construiu mais do que você provavelmente precisa.
+
+Cássio Pereira (07:02.511)
+É.
+
+Marc (07:07.291)
+E acho que agora tem 85 CVEs lá dentro, e eu não parando, então tem mais vindo. Eu também começando com uma edição de certificado que que todas as plataformas, como a Cinecom Graphics, AIX, OpenVas, vão estar lá dentro. Já está lá fora para os testes e vai ser divertido.
+
+Marcos Santos (07:07.311)
+Uhum.
+
+Cássio Pereira (07:24.687)
+Hmm?
+
+Cássio Pereira (07:32.239)
+É incrível, diria, porque quando nós conversamos, eu estava olhando o jogo na de eu downloadei a demo, mas desde soltava os problemas e a vida, eu não podia começar a jogar a demo, porque é disponível para a demo, então para aqueles interessados, por download e testem. Eu acho que bom começo, eu diria. Estamos gravando isso novembro de 11, então você ainda não lançou, certo? Mas é planificado para novembro de 2 certo?
+
+Marcos Santos (07:58.832)
+É postponente.
+
+Marc (07:59.418)
+Certo. Isso é ponto que eu quero voltar a. O jogo foi empurrado para review no Steam In Time, o dia lançamento, para o 6 de novembro. Mas depois do Steam Next Fest, que eu participava no jogo, eles desbloqueados tantos jogos que eles tomaram de 5 a 7 dias de para quase 2 a 3 semanas para reviewar o jogo. Então, eu não sei onde estou na lista.
+
+Cássio Pereira (08:24.75)
+Aha, ok.
+
+Marc (08:28.891)
+No momento isso, algum momento eu espero que o lindinho verde e eu pressionar o botão e lançar a partida.
+
+Cássio Pereira (08:36.526)
+Ok, e tenho tantas perguntas, mas vamos começar pelo mais Como esse processo Steam funciona? Porque eu estava desenvolvendo apps móveis e você precisa Google Play, Google Store e depois Apple Store, você tem esse tempo para uma revisão, você nunca sabe o seu tempo na lista, mesmo que eles tenham algumas coisas mais ou menos na documentação, tipo, ok, você vai esperar uma ou duas às vezes foi dia, dois dias.
+
+pelo menos para o a Apple levou mais de mês. Mas é algo parecido, você submete seu jogo, eu assumo que eles têm algumas regras e etc. e depois eles te a revisão.
+
+Marc (09:17.658)
+É mais complicado, porque quando você quer lançar jogo no Steam, você tem que registrar, e depois você vai para de I.C. então eles vão ver tudo que você incluindo uma cópia do seu passaporte e algo. Você tem que pagar 100 euros para que você possa lançar o jogo, então é pouco... Para eles, vamos dizer, fio estipulante para pessoas que querem lançar jogos porque eles não vão fazer isso, porque eles nunca conseguir o dinheiro e ninguém vai comprar. Então eu acho é uma coisa na verdade.
+
+Cássio Pereira (09:29.998)
+Aha!
+
+Marc (09:47.739)
+Depois disso, claro, precisa de tudo que sua página Tudo, como as escritórias, arte, e também o trailer e tudo isso. Então quando tudo isso está feito, e eles concordam com tudo isso, eles o cheirmam e o reviewm. Eles te a vida E quando você já fez isso, então você pode submetê-lo para jogo, e depois pode ser processado. Eles o cheirmam, eles veem se você tem games ordem, se você tem Steam Cloud ordem e etc. Então eles estão bem bem contato com esse processo, e eu gosto disso, porque...
+
+Se você fez uma errada por si é processo então você pode fazer erros, eles vão te o que fazer no próximo e como fixá-lo. Então eu acho que Steam está fazendo bom trabalho.
+
+Cássio Pereira (10:25.614)
+Ok.
+
+Ok, mas como eu disse, eles são centralmente isso. Há alguns competidores, mas eles são a plataforma principal nisso. E, por certo, eles podem ser overloadados de vez quando. E agora que estamos quase no GTA 6, acho que os servidores vão ser overloadados, porque todo mundo está esperando isso. Pelo menos as plataformas, não os jogadores que é meu caso. Temos que esperar pouco mais.
+
+Marcos Santos (10:29.487)
+Ok.
+
+Cássio Pereira (10:57.518)
+Eu assumo que eles podem ter monte de trabalho. Mas eu acho que agora é uma jornada de criar jogo. Eu criando jogo, mas é jogo É físico, não digital. É já anonimante e divertido ao mesmo tempo, porque ideias vêm aqui e lá. Eu que eu preciso manter esse escopo, não posso crescer mais, etc. Mas é desafiante.
+
+Marc (11:14.747)
+E aí
+
+Cássio Pereira (11:27.278)
+E qual a sua intenção com o jogo? A parte de talvez ter divertimento, talvez como projeto talvez fazer dinheiro, para os jogadores, você quer que eles aprendam, você quer que tenham divertimento, você quer que acalmem, qual a sua intenção com isso?
+
+Marcos Santos (11:45.327)
+Muito boa pergunta.
+
+Marc (11:45.659)
+A minha primeira intenção foi ter jogo que não baseado fictica. Nós queremos sistemas real exploits, com real conhecimento de como, por exemplo, aborda sistema, como você pode também usar a inteligência Por exemplo, no jogo, você link que óbvio para o link LinkedIn.
+
+Eles têm pessoas onde você pode ver, onde você pode pegar o seu telefone, a sua adressa usar isso, por exemplo, para enviar uma campanha ou tentar, exemplo, Pegasus para pegar o seu telefone e pegar algumas informações. Por exemplo, uma configuração para usar para ligar na sua workstation e depois, para o pivote de dentro da internet. Essas coisas, porém, também acontecem mundo. Isso não uma história louca. Para usar isso na game, você...
+
+e ganhamos realizações sobre como isso está funcionando na real. Minha intenção foi construir algo que possa ser usado para os propósitos Claro que o dinheiro está bom, mas eu não estou fazendo isso para esse propósito. Para mim, como colocar algo na marketing que possa ser usado É também, claro, que apoiando com muitas instituições e eu tenho garantir que eu possa dar as compras para que eles possam usar para os propósitos
+
+Cássio Pereira (13:06.35)
+Sim, isso é incrível, Marcos. Eu ainda tenho muitas perguntas para fazer, mas você tem algo mente?
+
+Marcos Santos (13:07.984)
+Sim, eu tenho algumas perguntas aqui também Quando eu vi sobre o jogo Eu comecei assistir e a ver os vídeos nesta cena E eu vi como terminal Você colocou sandbox dentro do jogo? Ou você criou seu próprio terminal? Como você fez isso?
+
+Marc (13:11.002)
+e
+
+Marc (13:30.811)
+Na verdade, essa é uma que eu tive antes, porque ela se sente realmente real. Especialmente porque você teria todos os cortes de que você usa como a E tudo está lá Então as pessoas começam a entender que isso pode ser realmente legal, mas não é. É só emulado lá Mas funciona assim. Então, literalmente, você pode desligar o seu terminal e ir para o jogo e usar o mesmo...
+
+Marcos Santos (13:47.632)
+É?
+
+Marcos Santos (13:53.488)
+é bom, e aí
+
+Cássio Pereira (13:55.854)
+E a...
+
+Marc (14:01.146)
+e você terá sua Linux.
+
+Cássio Pereira (14:03.79)
+Eu já imagino os caras quebrando a verdade do fundo da caixa na game. Com acesso a... Isso pode ser louco. É, cara. Isso legal. E você mencionou... Sim, vai, vai, vai.
+
+Marcos Santos (14:03.888)
+Isso incrível!
+
+E é isso.
+
+Marc (14:10.97)
+Isso soa mal.
+
+Marcos Santos (14:15.088)
+Sim, deixe-me fazer outra pergunta, porque é mais sobre parte técnica e você está falando sobre algum negócio. E deixe-me pegar minhas dúvidas primeiro. Quando você fala sobre o coop e o P2P, como você faz isso? Você tem algum snapshot? Você faz, eu não sei, esperar 30 segundos para fazer o synchronizador? Como isso funcionou? Porque é bom, 6 versus 6 eu não me lembro, mas você tem...
+
+Cássio Pereira (14:21.71)
+Go on, go on.
+
+Marcos Santos (14:45.008)
+Uma campeonação e como funcionou?
+
+Marc (14:49.435)
+Para o Coop e CTF, você tem ter algum tipo de mecanismo lugar onde você tem host e você os clientes. E eles todos têm estar mundo onde eles têm que compartilhar estado. Por exemplo, no Coop, onde você, como host, terá estado E esse estado de todo mundo trabalha. Por exemplo, Coop, se a primeira pessoa no time atrapalhar a gateway, todo mundo verá...
+
+essa briga na meta-splaite que pode fazer uma sessão e reutilizar essa sessão. Então, este é o estado que tem. Isso é muito legal. É por o micro-op pode trabalhar assim. E para o CTF, você teria o mesmo, mas depois para o seu próprio time. E agora, técnico por trás disso, o estado compartilhamento, é sincronizado entre todos os pessoas neste multiplicador, a cada 30 segundos. Por exemplo, se o host drop-on tem problema com o Internet ou que está acontecendo, ou o computador
+
+parceiro ou cliente vai tomar o nosso snapshot que foi tomado 20 segundos atrás e depois jogo continua. Então não é jogo...
+
+E isso é tudo feito por Steam SDK. Isso não algo feito de base. Steam SDK lhe oferece a informação para fazer isso.
+
+Marcos Santos (16:02.481)
+Ok, não...
+
+Cássio Pereira (16:03.566)
+Isso foi interessante porque isso traz muitas ideias para mas eu preciso parar com ideias, eu tenho muitas coisas a já, mas o Steam SDK ajudando isso, eu acho, permite uma liberdade para os desenvolvedores, algumas coisas que você não precisa se cuidar, você só depende da SDK e algumas funcionalidades já lá, isso ajuda a tempo, diria.
+
+Marc (16:22.203)
+Sim, absolutamente. Não ótimo trabalhar com isso começo, porque você não documentação, mas eu acho que, course, quando você ver isso, vai notar que é realmente útil. É apenas o curto
+
+Cássio Pereira (16:28.014)
+Uhum.
+
+Cássio Pereira (16:36.462)
+Tenho uma pergunta, pode ser difícil, então responda se quiser. Você usou qualquer AI para encodar o jogo?
+
+Marcos Santos (16:36.945)
+Marc (16:44.858)
+Absolutamente. É difícil de negar. Eu faço estúdio e, claro, eu algumas partes. Sim, por exemplo, há 12 NPCs no jogo com uma Todas essas faces são criadas pela AI, porque, claro, não podemos usar as faces no jogo. Então, que isso está lá. E eu acho que se eu não tivesse usado algumas partes, seria muito difícil.
+
+Cássio Pereira (16:53.742)
+Todo mundo está usando, não há escapamento.
+
+Marc (17:13.883)
+Por exemplo, tive bug há alguns meses atrás, para o primeiro controle de Então, Ctf, você pode falar com o seu time. E quando você tem laptop e você sua micrôfone conectada, isso é traduzido para 4-channel audio. Mas Windows Audio API é usado. Mas Go.4.8, que eu usei para desenvolver o jogo, o game engine, ele só usa dois. Então eu tive trazer patch do meu próprio jogo para ter certeza de ele usa 2-channel audio de 4-channel audio.
+
+e estou literalmente trancado por dois dias para pensar.
+
+Cássio Pereira (17:49.006)
+Ok, interessante. Interessante, Big.
+
+Marcos Santos (17:50.226)
+ok, isso bom, e deixe-me fazer outra pergunta, como você escolheu os CVs ou as vulnerabilidades para inserir no jogo? porque é bom ter 7-2 agora nesse momento, eu ler o correto, como você escolheu?
+
+Marc (18:07.963)
+Eu não fiz muita pesquisa, mas você está me Então, que eu fiz foi escolher as eram as óbvias e memoráveis para os sistemas daquele momento. E, claro, tem algumas novas lá dentro. Por exemplo, o Curto Expo pode ser falso, claro. Nós vimos isso há alguns meses. Isso é para todos que sabem sobre isso cibernética. Claro, você pode usar isso de novo. Então, a ideia é trazer patch múltiplo com exploitos que são novos e que podemos usar novamente.
+
+Cássio Pereira (18:09.518)
+como você escolhe os CVEs para colocar no jogo
+
+Marcos Santos (18:10.833)
+The CV is... yeah.
+
+Marc (18:37.466)
+para o jogo a tempo o momento com exploits.
+
+Cássio Pereira (18:41.55)
+É legal, porque isso traz... Não só os cenários Mas é o meu próximo ponto. Porque eu estou jogando para divertir, como CTF, ver como conseguir acesso a ambiente aqui e lá. Mas também, para mim, eu sou mais azul, mesmo que eu conheça algumas ofensivas. Mas não a minha diária.
+
+Marcos Santos (18:41.873)
+Ok, isso é bom.
+
+Cássio Pereira (19:10.926)
+todos os com barbe de ou hackar coisas aqui e lá, ao invés de criar processos para prever flores e vulnerabilidades. é sobre a educativa. Eu não quero setar, sabe, VM, labs, blá, blá, blá, ou pagar platform online para fazer os labs, etc. Eu não diria nem alternativa. Eu acho que o jogo é uma maneira de ajudar, como eu, talvez você, Marcos, também, a se tornar mais ofensivo.
+
+de divertida e mais porque tudo está lá, eu só preciso jogar. Eu preciso ter meu computador, meu computador e meu account. Eu acho que na educativa, o protocolo jogo, joga uma muito importante para permitir, ou vamos permitir esses tipos ofensivas. E eu assumo que no jogo é mais ofensivo, você pode trazer esse tema também. Então, trazer mais ofensivo para pessoas que não ofensivas, para aprender e praticar.
+
+E também dois ofensivos que podem praticar e talvez encontrar bug e reportar você, certo?
+
+Marc (20:15.098)
+Sempre.
+
+Cássio Pereira (20:19.022)
+O que você acha, Marcos? Nesses tipos jogos, você abriria Steam e jogasse algo para aprender, ao invés de divertir?
+
+Marcos Santos (20:27.665)
+Eu acho é muito fácil, porque se você espera para abrir, como Hack the Box, por exemplo, eu nunca entro. É difícil, eu preciso conectar, eu preciso preparar os cenários, eu preciso conectar, eu preciso criar algumas proxias, e não bom, não é fácil. Para mim é muito fácil fazer download no Steam e jogar. E às vezes eu estou na sala e eu tenho a conexão com o meu PC, e eu olho no putumitv e...
+
+Cássio Pereira (20:40.782)
+Você
+
+Cássio Pereira (20:54.734)
+É isso aí.
+
+Marcos Santos (20:57.393)
+Bem, é muito fácil.
+
+Cássio Pereira (20:58.254)
+Sim, estou pensando mais no de porque, novamente, as formas... Eu faço treinamentos para a empresa muito frequentemente. Hoje eu tive por acaso. Que falarmos com os times, uma hora de apresentações, temas teóricamente, algumas Q &A, mais do mesmo. E, para ser honesto, estou cansado de não dar treinamentos, mas o público é sempre o mesmo.
+
+Marcos Santos (21:03.537)
+É.
+
+Cássio Pereira (21:27.022)
+Eu estou criando uma de stand-up de fazer presentações e conversas conferências para ser diferente do mesmo estilo. Acho as estão cansadas, precisam ser diferentes. Não só a stand-up, mas também rolê com outro parceiro e assim por Eu realmente acho que esses jogos, os mesmos que os de de cybersec, que eles só jogos jogos e assim por formas de ensinamento de de atuação, formas de ensinamento de elevação de escalas privilégicas e assim por
+
+diferentes formas de ensinando as pessoas, não apenas ensinando, mas também fazendo divertimento. E eu diria que para quem está aprendendo, eu aprendi mais a ter divertimento e a algo ao invés de ler livro ou ouvir uma áudio. Então eu realmente acredito que este jogo não só potencial para o divertimento e todas as coisas, mas também tem de treinamento para as usarem isso.
+
+É realmente incrível. Estou realmente incrível com este projeto. De parabéns. Eu dizer parabéns 20 mil vezes durante o episódio, porque é uma ideia Nunca pensei assim e acho que algo legal. Vai ser algo mobile também? Ou apenas no PC, talvez nos consoles?
+
+Marc (22:28.25)
+e
+
+Marc (22:42.49)
+Eu não vejo isso, porque é jogo de de E não funciona muito quando você lindinho de E o tamanho da tela, incluindo outro botão conectado. Eu não acho que isso vai funcionar bem para o ser puxado para outras plataformas, de PC, Mac e Linux.
+
+Cássio Pereira (23:01.23)
+Sim, poderia imaginar alguém com o celular conectado ao jogo, com dashboard, sei, algo no celular, nós somos hackers, não Nós somos como a tela e isso é não importa. Sim. E Marc, uma outra pergunta. No jogo, você tem no de single-player, é como campanha, como modo
+
+Marc (23:11.835)
+Acho que a imersão vai parar.
+
+Marcos Santos (23:15.762)
+Olha minha sala, ainda está preto. Com algumas puras.
+
+Marc (23:18.778)
+E
+
+Cássio Pereira (23:30.03)
+Então eu tenho algumas cenárias, eu vou seguida. Ou são apenas tarefas que eu preciso fazer. Como é que
+
+Marc (23:38.139)
+Depois, claro, você vai fazer o walkthrough e você vai sensação de como o jogo está funcionando e você pode usar os ativos. E claro, você precisa comprar mais ativos no Dark Web, que está no jogo. Então você tem portão E missões vão, gradualmente, te dar, na tarefas para fazer. Você começa com nível de zero. Então, quando você fizer par de tarefas, você vai chegar confiança, que vai dar suas mais missões, até, digamos, o número 100 ou 60, onde...
+
+você começa a desmantelar T6. Estes são Coffinbit com AIX Banks. Então tem que, algum momento, fazer uma missão onde você recebe cartel para te para hackar a máquina de e, na verdade, milhões e milhões de dólares a banco Eu contei com alguém que trabalha no sector ele fez uma missão, ele jogador e ele disse que ele ponto com o que ele construiu no jogo.
+
+Cássio Pereira (24:23.373)
+Uhum.
+
+Cássio Pereira (24:29.165)
+Nice!
+
+Cássio Pereira (24:37.293)
+Nice!
+
+Marc (24:37.338)
+É mais difícil de fazer e, algum momento, você terá ir ao manual do operador e ver onde fazer, porque, por exemplo, submissões, você dizer que na rede, mas, por exemplo, pouco de spoiler, não muito, mas algum momento na rede você vai encontrar, por exemplo, apenas servidor que, claro, algumas máquinas por trás disso.
+
+Então, se você conectar ao serial, vai encontrar que máquina nem even bootou. Você só lenta a pruma. E depois você tem que botar e encontrar a sua maneira de e extrair alguns files. Então, isso é como se você estivesse acelerando com diferentes tipos de vozes.
+
+Cássio Pereira (25:11.021)
+Cool.
+
+Marcos Santos (25:11.282)
+Cássio Pereira (25:20.301)
+Não é spoiler, mas o jogo está focado na ofensiva? Ou tem algo de defesa
+
+Marcos Santos (25:21.01)
+Ok.
+
+Marc (25:22.106)
+E aí
+
+Marc (25:29.786)
+Há duas coisas que eu gostaria de dizer agora. Uma é, claro, a operação de Uma deve ter uma máquina que tenha. Não importa como, porque você pode enviar os USB-sticks para a agência, ou fazer o que você quiser. Então, isso é físico. Você pode fazer WIS, encontrar a adressa e enviar o físico. E, espero, uma APC e você C2. Isso é possível.
+
+ou, claro, por Metasploiter ou de outras formas. Mas, na o seu Upsec está lá. Então, quando você log in, você tem que remover o IP do Outlock, claro. E no Syslog, você fez sua... Vamos caminho você tem que remover isso lá também. Então, sim, tem azul também, mas menos azul do que vermelho, eu diria. E a outra parte, eu acho, porque eu estou falando com melhor time, e eu estou pensando ambiente ou jogadores de
+
+Cássio Pereira (26:19.469)
+É.
+
+Marc (26:26.971)
+depois de nós faremos duas semanas de azul contra azul. Uma parte vai tentar segurar os servidores e outra parte vai tentar entrar no serviço. E depois de duas semanas teremos os contatos. Eu ainda estou trabalhando, mas isso pode ser muito divertido.
+
+Cássio Pereira (26:42.669)
+Marcos, não vou fazer nada mais minha vida, só toco, cara. Eu não quero trabalhar mais.
+
+Marcos Santos (26:47.154)
+Sim, mas eu ainda na maior parte do meu dia na macOS e eu preciso turnar os meus Windows para que jogamos juntos.
+
+Cássio Pereira (26:57.517)
+Mano, agora com isso... Porque eu vejo muitas possibilidades com isso. Já estamos falando...
+
+Marcos Santos (27:02.77)
+É bom, para mim é uma boa apresentação. Tentamos jogar esse jogo e usar isso para ensinar ou criar algum conteúdo para mostrar aos jovens quando entram na área. É uma boa forma para isso. Na culturais eu acho que muito legal.
+
+é meu ponto
+
+Cássio Pereira (27:27.981)
+Sim, eu pensando aqui, porque eu estava falando com o Marc há duas ou três semanas antes, para se engajar no Clube aqui também, porque além Clube aqui Cracow, para ter uma sessão para que possam jogar, CTF e este tipo de coisa. Para as pessoas no clube, por exemplo, que já pode ser uma atividade para o clube, por isso as pessoas vão ao Hacker, para hackar.
+
+Marc (27:28.41)
+E aí
+
+Marcos Santos (27:37.778)
+E aí
+
+Marcos Santos (27:45.522)
+É?
+
+Cássio Pereira (27:57.486)
+Mas às vezes você não tem projetos, ou pessoas só querem aprender algo, alguém não disponível para ensinar, esse tipo de coisa. tem computador aqui, você pode jogar. Tem algumas missões, você pode criar seu usua-nome aqui e lá e jogar. Eu acho que dá fazer muitas discussões E outra pergunta. Por que o protocolo Por que esse nome?
+
+Marcos Santos (28:19.347)
+É outra pergunta que tenho.
+
+Marc (28:22.01)
+Eu não posso responder. Eu só peguei da cor
+
+Cássio Pereira (28:26.285)
+Sim, porque eu tive problemas com as minhas variáveis, com funções. Imagine me de jogo e o protocolo soa natural. Ao mesmo tempo, as pessoas podem associar com o o Node.js e tal. O network de Node é apenas Node. Acho que também funciona. Só funciona. É como McDonald's.
+
+Marcos Santos (28:42.067)
+Sim, não JS.
+
+Marc (28:43.322)
+Não muda
+
+Marcos Santos (28:49.587)
+E...
+
+Marc (28:53.21)
+Não posso mudar isso, Bec, é claro. Já lá.
+
+Cássio Pereira (28:54.893)
+E é como McDonald's, quando você McDonald's, não pensa comida, hamburguer, não tem sentido. Mas então é tão famoso que as pessoas sabem o que é. Acho que é só uma né? Nome é difícil, mas não protocolo, acho que é perfeito. Quando é o tempo para o almoço? Você já
+
+Marcos Santos (28:56.563)
+É... É...
+
+Marc (29:18.906)
+Eu gostaria de lhe neste momento, porque eu esperando o processo eu acalmei para novembro, então este mês. Eu espero que nós fazer isso neste mês.
+
+Cássio Pereira (29:24.653)
+Uhum.
+
+Cássio Pereira (29:32.077)
+Ok, vamos esperar que...
+
+Marcos Santos (29:32.947)
+Sim, tentem lançar na Black Friday, que é muito bom.
+
+Cássio Pereira (29:36.205)
+Black Friday seria bom, mas ele...
+
+Marc (29:37.019)
+O problema é eu estou lançando no mesmo mês que GTS 6, não uma opção para jogo de lançamento. Mas é realmente jogo. Eu sei que a demo foi jogada e downloadada 1.700 vezes agora, desde que no Steam Next Fest, e o tempo de foi mais de duas horas. Então eu acho que bem.
+
+Marcos Santos (29:45.107)
+Oi, ei.
+
+Cássio Pereira (30:04.493)
+Sim, com GTA não nem uma competição. Acho que tem duas coisas neste ano. GTA VI e Doomsday Avengers. Todo mundo está esperando isso. Eu estou esperando para ambos. Até GTA eu preciso esperar por causa do PC. É louco. Vamos, Marcos.
+
+Marc (30:08.794)
+Não.
+
+Marcos Santos (30:15.603)
+É.
+
+Marc (30:22.202)
+Sim.
+
+Marcos Santos (30:23.315)
+Eu tenho uma pergunta, porque... Como você simula esse planco dentro do jogo? Você faz isso?
+
+Marc (30:34.042)
+E me dê uma mensagem.
+
+como os sistemas operação e outras coisas
+
+Marcos Santos (30:38.419)
+É.
+
+Marc (30:42.874)
+Não, não, a sua pergunta é como simular as redes e os sistemas operação? Bem, isso é só por exemplo, você tem de Que é, claro, no jogo, porque você começa com de Linux. Então, é o template. Você template para outras máquinas diferentes, como, Damian Flavoured ou Red Hat Flavoured. Você só tem que mudar as
+
+Marcos Santos (30:46.803)
+Sim, porque...
+
+Marcos Santos (30:55.731)
+Uhum.
+
+Marcos Santos (30:59.347)
+Ok?
+
+Marc (31:10.17)
+e tudo é construído modular. Por exemplo, diz Flavorizel e JSON. Você pode se transformar muito rápido e adicionar outro sabor de Linux e ter certeza de ele pareça completamente com CentOS, Debian ou Red Hat. Porque você já tem tudo modulado, então muito fácil se transformar e ir de modo a outro.
+
+Cássio Pereira (31:31.789)
+ok. Isso é interessante. E Marc, talvez outra... Não é uma pergunta mas... Como grande é o seu fazendo isso? Esse é todo time, certo? Esse time de Q &A, de
+
+Marc (31:43.066)
+Sim, você está só olhando ele. Eu não prometo que a ajuda não vai ser na India.
+
+Cássio Pereira (31:54.798)
+Cool, a mesa é também você. Mas essa é talvez uma pergunta. Como é a parte do jogo? Porque ainda é software. Você está cuidando disso? Você está dependendo de 30 partes ou de pesquisa? Porque você é desenvolvedor de muito tempo, você tem experiência. Então há algumas preocupações de eu acho.
+
+Marc (32:14.106)
+É.
+
+Absolutamente. Tem claro, que é o primeiro que todo mundo se lembra, é o jogo que vai ser criado na primeira semana e vai colocado torno. Esse é risco. Todo mundo sabe esse risco, certo? Isso vai acontecer algum momento quando o jogo está ficando pouco mais curioso de pessoas, porque eles gostarão do jogo e provavelmente vão desmantelar. Sim, então isso é inafoiável. Todo mundo sabe que quando alguém tiver software no seu computador, eles podem, claro, criá-lo e colocá-lo torno.
+
+Cássio Pereira (32:31.021)
+Hum.
+
+Marc (32:42.362)
+Então, as coisas que você pode fazer, é traduzir algumas coisas no C +, ou C, tentar aviscar o que possível. Mas todo mundo sabe que com a AI hoje ainda pode ser feito. Então, literalmente uma luta contra algo que não consegue.
+
+Cássio Pereira (32:53.293)
+Tchau!
+
+Cássio Pereira (32:59.373)
+Eu digo, mesmo sem reverso engenharia o jogo, você poderia dizer ao AI, hey, tem jogo, faça o mesmo para mim. Isso Claudio faria para você.
+
+Marc (33:08.123)
+Exatamente. É possível. Vai ser difícil porque o jogo é pouco mais do digamos, jogo que chega no Steam e sobe de estado Porque são simples e todos perderam os jogos Não sei por que, mas acontece. Para replicar e tentar fazer cópia do jogo, eu vou dar a monte de... monte coisa ele possa fazer, mas não vejo isso muito rápido.
+
+Cássio Pereira (33:33.966)
+E que você acha, talvez Marcos, eu peguei para você primeiro, e depois para o o que vocês pensam sobre o de Eu sei, talvez seja uma estúpida, porque é de bilhões, né? As jogam, se apoiam, as empresas estão construindo peças no topo do jogo. Você vê o Asus, todas as empresas estão Como se Rogue, né? Como é que Eu esqueci.
+
+República de E tudo está ao jogo. Mas para desenvolver jogo, não aquele de carnibalismo. Ok, todo mundo está fazendo jogo, e às vezes coisas Às claro, coisinhas como essa. Mas eu vi jogo, ultimamente, que literalmente simulador Você é fucking coco? O jogo começa? Você é coco?
+
+E você está às vezes na palma de ou às vezes você já sentiu da palma de ou você na praia, você está lá. Você é coco. Você tem a 3D, pode rotar. É isso, você não move, você não joga, porque os coco não fazem nada. Eles só ficam lá. Apenas se alguém beber você. Abrindo e bebendo você, certo? Mano, que diabos!
+
+Marcos Santos (34:50.132)
+E
+
+Cássio Pereira (34:56.333)
+Por vocês pensam nisso? Porque qualquer pode fazer qualquer coisa, e é seu competidor, certo? Ele está tomando o tempo de jogar no protocolo e está sendo coco noito algum praia da Tailândia. É estilo mas enfim. O vocês pensam, Marcus, sobre isso?
+
+Marc (35:06.394)
+acho que eu vou fazer isso de
+
+Marcos Santos (35:12.564)
+Na era acho que é muito comum vermos novos e jogos você vê. E agora estamos na vila das do Taskbar. Quando você trabalha e o Taskbar ainda tem jogo, você vai... Eu acho que é esse o momento, porque se você ver 5 ou 8 atrás...
+
+Não normal criar jogo, é difícil. Você precisa trabalhar, você precisa colocar alguns dias. Sim, você precisa desenvolver, você precisa entender a língua, você precisa comprar uma licença, exemplo, engenheiro E não fácil. E agora, com a AI, é muito fácil. E caras e ideias agora é fácil para você. A para o público.
+
+Cássio Pereira (35:48.941)
+Você precisa ter mente, habilidades...
+
+Marcos Santos (36:12.085)
+e esperar se alguém pagar, bom se não pagar, você foi o desenvolver da ideia eu acho que é o momento estamos agora
+
+Cássio Pereira (36:23.597)
+Como você vê essa marca?
+
+Marc (36:25.466)
+Sim, totalmente feliz, Marcus. Na no começo do podcast, eu disse você que antes de se assinar com a você precisa pagar fio de 100 euros, E se você tem, por exemplo, uma 1.000 euros, você não conseguir esse dinheiro de E essas pessoas com as AESLOCK, 70 a dia e eu estou chegando à Steam, 70 games. É por que eu ainda no de refeição. Por causa desse slot que chegando na mercado. Então eu só espero que eles...
+
+e aumentar isso a 1.000 euros por jogo, só para manter isso. Porque isso não pode ser fechado Todo mundo tem uma ideia agora, e é mais do a que você explicou. É ótimo exemplo do problema que você vai ter Steam, verdade.
+
+Cássio Pereira (36:58.829)
+E...
+
+Cássio Pereira (37:10.605)
+E isso é mercado louco, porque não é o jogo mesmo. Você poderia baixar e ser coca-nutão, mas alguém teve ideia de eu ia streamar isso, então eu seria streamer, que eu sou coca-nutão de jeito. E milhares de pessoas estavam vendo que você era coca-nutão de jeito, fazendo nada. E esse retro-fee, esse... Eu sei. E o ponto é que o jogo é basicamente fedendo...
+
+Marcos Santos (37:22.197)
+Cássio Pereira (37:39.278)
+As pessoas que são streamers e a carreira é streamar, jogando jogos. E qualquer jogo que tenham, que seria GTA, certo, e assim por mas também essa estúpida. E não sobre o jogo, é sobre a pessoa jogando o jogo. Temos o muito famoso cara no Brasil, Bistecone. É streamer ele joga muitos jogos
+
+Marcos Santos (37:59.03)
+É.
+
+Cássio Pereira (38:03.789)
+E também esses momentos de merda. Eu acho que vida é 7 8 horas no Twitch, tocando. E ele é muito famoso. Ele tem muitos assistentes, sua audiência é enorme. Mas tem muitas coisas estúpidas também. E eu acho que... Não ele mesmo, claro, mas as pessoas geral também estão tentando ser famosos e não fazer nada, só estremando essa merda. E muitas pessoas estão assistindo.
+
+motivar mais pessoas a assistir e criar jogos estúpidos. Não sei. As pessoas fazem o que querem. Talvez eu tenha tentado... As devem estar jogando Node, hackando coisas e aprendendo fazendo algo, ao invés de nada. Mas também parte de fazer nada. Temos que relaxar e se calmar. Talvez eu falado muito sobre isso. Era só, não se desligar. Vamos lá, é engraçado.
+
+Marc (38:58.01)
+e aí
+
+Cássio Pereira (39:01.005)
+Bem, estamos a 40 minutos. Não quero fazer isso anonhante. Não quero pegar spoilers porque quero que as tomem o jogo. Eu vou tomei, por certeza. Mas talvez minha última pergunta para você, Marc, seria... Como você planeja manter o jogo... Não atualizar, mas manter o jogo interessante? Porque eu acho que, não sei, depois de 20, 40, 8 horas, alguém vai terminar o jogo.
+
+Você tem o multiplayer que você pode divertir por sempre, mas como você planeja, se há algumas planas, e se você quer e não pode falar sobre isso, como você acha que você pode manter o jogo interessante para as verem? Quais mais jogadores, essa é a ideia.
+
+Marc (39:46.011)
+Sim, isso é algo que progresso, mas eu algumas coisas sobre isso. Neste momento, há 35 missões. E essas missões tem diversas a fazer. Por exemplo, algumas vão ignorar a inteligência algumas vão pedir que a rede completa, algumas vão pedir que surfer e você certos pássaros, sem, claro, ter traseiro, então linhas devem ser limpas. E, claro, isso pode ser modificado e com mais missões.
+
+E também, parceiro que eu teamei, o Cyber.Infra, uma instituição Eles têm PPS no jogo. No PPS, onde você pode ligar, vamos fazer desafios. Esses desafios você terá que decoder por si porque no jogo você pode fazer... RET13 e assim por Não vou explicar muito, mas sim, esses vai ser atualizado breve também. Isso significa que há muitas missões para fazer.
+
+E, claro, além disso, eu trabalhando há alguns meses, e jogo nunca vai começar a funcionar. O jogo de envio Isso vai ser grande jogo, então eu não sei o tempo. Mas isso vai melhorar pouco. Mas para completar o jogo você vai enfrentar 200 jogos. Então, não fácil. Não fácil.
+
+Marcos Santos (41:12.693)
+Você teve plano de colocar líderboard? Porque tem muito tempo de
+
+Marc (41:16.091)
+Já lá. Já está na leaderboard. Para jogo de CTF está lá, mas ainda não jogamos CTF. Mas jogo já publicado e a leaderboard já na página e já está rankado. Eu estou no topo.
+
+Marcos Santos (41:22.901)
+Sim.
+
+Cássio Pereira (41:30.636)
+Isso é muito legal. Eu já conversando com o Mark. Além do Crackov, próximo ano, a CTF será o jogo. Não outra maneira de fazer CTFs Mark, está lá?
+
+Marcos Santos (41:30.709)
+Ok... É noite.
+
+Marcos Santos (41:42.581)
+Mas precisamos nos desapoiar, mas não sobre o jogo. Mas seria bom se você colocasse algum ativo sobre o quão rápido você termina o jogo. E que ele a todas as coisas.
+
+Cássio Pereira (41:47.404)
+Uhum.
+
+Cássio Pereira (41:56.204)
+Talvez exista, talvez exista.
+
+Marc (41:59.45)
+Há 53 alcançamentos para terminar o ano inteiro.
+
+Marcos Santos (42:00.278)
+Sim, Sim, mas como CTF, nós tentamos fazer isso rápido, então alguém tentou terminar o jogo rápido e descobrir todas as CVs.
+
+Cássio Pereira (42:01.037)
+Mano, é jogo Por sure tem easter eggs, sure tem escondidas.
+
+Marc (42:08.762)
+Absolutamente.
+
+Cássio Pereira (42:13.42)
+Sim, você pode pegar a flagra e o outro time pega a flagra, então quem pega primeiro é mais e, claro, ele tem mais pontos. É parte das regras do CTF. E você me esquecer a pergunta, Marcos. Obrigado. Então, já que eu esqueci a pergunta, podemos fazer isso.
+
+Marcos Santos (42:23.701)
+E aí
+
+Marcos Santos (42:29.397)
+Desculpe. Desculpe por...
+
+Marc (42:31.706)
+e
+
+Marcos Santos (42:37.813)
+Marc (42:39.29)
+Ok.
+
+Cássio Pereira (42:42.476)
+Nós temos uma parte aqui no podcast que se chama Dev May Cry. O nome também vem de jogo. Por certeza, as antiguas que nós lembramos, Dev May Cry, que foi incrível, favor. Dev May Cry é onde nós tentamos criar algo para fazer os desenvolvedores gritarem coisas que eles não gostam de segurança e que eles odiam. Eu tenho minha já hoje, Marcos. fácil. Você tem alguma mente?
+
+Marcos Santos (42:42.869)
+E aí
+
+Marcos Santos (43:10.869)
+Eu tenho uma coisa na minha mente. Os desenvolvedores só usam a tooling feita pela AI. Nunca mais usam como o Excel ou o Gmail.
+
+Cássio Pereira (43:12.716)
+Sim, vamos.
+
+Cássio Pereira (43:21.068)
+Não posso usar usadas
+
+É bom e terrível ao mesmo tempo, diria.
+
+Marcos Santos (43:31.733)
+Sim, tente usar outro ativo como o Excel.
+
+Marc (43:33.658)
+Por tempo você deve manter o seu jovem no lu.
+
+Cássio Pereira (43:36.204)
+Sim, isso é louco. Para mim, dev pode hoje seria, cada desenvolver que se unir à uma nova companhia ou à companhia, qualquer outra, precisa completar os 200 horas do jogo. Então você está capaz de trabalhar aqui. Agora você oficialmente sabe sobre a segurança. Então você pode trabalhar. Por certeza, 1 % dos candidatos iriam para o intervistão, para teste e o processo porque 200 horas, certo?
+
+Marc (43:39.642)
+e
+
+Marcos Santos (43:56.629)
+2 meses para terminar.
+
+Cássio Pereira (44:06.668)
+É incrível, cara. Marcos, muito Se você quer dizer quer comentar, talvez não pedimos algo.
+
+Marc (44:14.778)
+Não acho que agora. Espero que eu possa definitivamente dizer quando o jogo vai sair na verdade e não apenas mês, porque isso é muito perigoso para a das E eu voltar.
+
+Cássio Pereira (44:22.924)
+Ok?
+
+Cássio Pereira (44:27.308)
+Muito obrigado por seu tempo, pela agenda, pelo projeto. Acho que muito legal para comunidade.
+
+Marcos Santos (44:32.629)
+e e para todos os assistir o link da esteção ainda está no comentário atrás de
+
+Cássio Pereira (44:41.484)
+sim, tudo estará nos comentários, descrição, etc. E não, é isso que eu queria dizer. Marc, muito Essa foi mais da DevSecOps. Produção, você lembra de quantos já
+
+Marc (44:50.074)
+Não há com isso.
+
+Marcos Santos (44:57.973)
+no momento não preciso pegar isso mas é mais do que 200 sim sim
+
+Cássio Pereira (44:59.82)
+Cara, temos, eu posso tomar alguns minutos, 214, então este é 215 do DevSecop Podcast. Então vocês têm mais horas do podcast do o jogo, certo? Então agora vocês têm 400 horas para completar. Agora vocês têm 400 horas à frente. Cool. Eu sou o Cássio Pereira. E nós temos hoje o Marc conosco. Obrigado Marc, obrigada Marcos. Até vocês na semana
+
+Marcos Santos (45:13.045)
+É.
+
+Marc (45:14.01)
+E aí
+
+Marcos Santos (45:19.957)
+Eu Marcos Santos.
+
+Marc (45:21.69)
+E aí
+
+Marcos Santos (45:23.413)
+É. Thank you, see you!
+

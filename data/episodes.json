@@ -6,6 +6,23 @@
   },
   "episodes": [
     {
+      "id": "t8e15-a-hacking-game-meet-node-protocol",
+      "slug": "t8e15-a-hacking-game-meet-node-protocol",
+      "title": "T08E15 - A hacking game? Meet NODE:PROTOCOL",
+      "date": "2026-11-14",
+      "author": "Cássio Batista Pereira",
+      "excerpt": "Cássio Pereira and Marcos Santos meet Marc, the developer behind NODE: PROTOCOL, to explore how real exploits, sandbox environments, community feedback, and iterative development can turn cybersecurity into immersive gameplay.",
+      "contentHtml": "<p>What happens when cybersecurity becomes a game built around real tools, exploits, and adversarial infrastructure? Cássio Pereira and Marcos Santos meet Marc, the German developer behind NODE: PROTOCOL, to explore the intersection of hacking, education, and immersive gameplay.</p><p>Marc shares how his passion for games inspired a sandbox where players can experiment with cybersecurity concepts without real-world consequences. The conversation follows the journey from the first idea to testing, community feedback, Steam submission, and the challenge of balancing technical authenticity with fun.</p><p>In this episode, you’ll discover:</p><ul><li>How real hacking concepts can become engaging game mechanics.</li><li>Why controlled sandbox environments make experimentation and learning safer.</li><li>How iterative testing and player feedback influence game development.</li><li>What developers learn while preparing a first release for Steam.</li><li>How NODE: PROTOCOL approaches solo, co-op, and competitive hacking scenarios.</li></ul><p>Perfect for gamers, developers, security professionals, and anyone curious about learning cybersecurity through play.</p>",
+      "mp3": "https://api.spreaker.com/v2/episodes/76373488/download.mp3",
+      "download": "https://api.spreaker.com/v2/episodes/76373488/download.mp3",
+      "youtube": "https://youtu.be/LaR876qdV7s",
+      "transcriptUrl": "transcripts/815.txt",
+      "blogPostUrl": "posts/node-protocol-hacking-game.html",
+      "tags": ["DevSecOps", "Cybersecurity", "Gaming", "NODE: PROTOCOL", "Hacking Simulation", "Security Education", "Steam", "Sandbox"],
+      "spreakerId": "76373488",
+      "code": "T08E15"
+    },
+    {
       "id": "t8e14-lessons-learned-2-shell-node2shell-php2shell",
       "slug": "t8e14-lessons-learned-2-shell-node2shell-php2shell",
       "title": "T08E14 - Lessons learned 2 SHELL - O que aprendemos com Node2Shell & PHP2Shell",
